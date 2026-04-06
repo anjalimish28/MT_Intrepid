@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="Signal.svg"
+   id="svg17"
+   version="1.1"
+   overflow="hidden"
+   height="344"
+   width="362">
+  <metadata
+     id="metadata21">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:current-layer="g15"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="222.93745"
+     inkscape:cx="116.36006"
+     inkscape:zoom="1.7307672"
+     showgrid="false"
+     id="namedview19"
+     inkscape:window-height="1009"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <defs
+     id="defs5">
+    <clipPath
+       id="clip0">
+      <rect
+         id="rect2"
+         height="344"
+         width="362"
+         y="793"
+         x="1843" />
+    </clipPath>
+  </defs>
+  <g
+     id="g15"
+     transform="translate(-1843 -793)"
+     clip-path="url(#clip0)">
+    <path
+       style="fill:#ffffff;fill-opacity:1"
+       id="path7"
+       fill-rule="evenodd"
+       fill="none"
+       stroke-miterlimit="8"
+       stroke-width="10.3125"
+       stroke="#000000"
+       d="M1848 891.47C1848 839.848 1889.85 798 1941.47 798L2106.53 798C2158.15 798 2200 839.848 2200 891.47L2200 1038.53C2200 1090.15 2158.15 1132 2106.53 1132L1941.47 1132C1889.85 1132 1848 1090.15 1848 1038.53Z" />
+    <text
+       id="text13"
+       transform="matrix(1 0 0 1 1908.31 917)"
+       font-size="55"
+       font-weight="700"
+       font-family="Calibri,Calibri_MSFontService,sans-serif">01101000<tspan
+   id="tspan9"
+   y="66"
+   x="0"
+   font-size="55">01101001</tspan><tspan
+   id="tspan11"
+   y="132"
+   x="0"
+   font-size="55">00001010</tspan></text>
+  </g>
+</svg>

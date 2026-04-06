@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="327.70999"
+   inkscape:export-xdpi="327.70999"
+   inkscape:export-filename="C:\Users\philippc\Documents\icon_Gateway.png"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="icon_Gateway.svg"
+   id="svg15"
+   version="1.1"
+   overflow="hidden"
+   height="102.359"
+   width="87.333">
+  <metadata
+     id="metadata19">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:current-layer="g13"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="94.313957"
+     inkscape:cx="31.064401"
+     inkscape:zoom="3.171875"
+     showgrid="false"
+     id="namedview17"
+     inkscape:window-height="1009"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <defs
+     id="defs5">
+    <clipPath
+       id="clip0">
+      <rect
+         id="rect2"
+         height="720"
+         width="1280"
+         y="0"
+         x="0" />
+    </clipPath>
+  </defs>
+  <g
+     transform="translate(-34.773992,-96.307003)"
+     id="g13"
+     clip-path="url(#clip0)">
+    <path
+       style="fill:#ffffff;fill-opacity:1"
+       id="path9"
+       fill-rule="evenodd"
+       fill="none"
+       stroke-miterlimit="8"
+       stroke-width="8"
+       stroke="#000000"
+       d="M 116.09852,175.98645 H 76.003522 v 14.25 l -34.905,-28.5 34.905,-28.5 v 14.25 h 40.094998 z" />
+    <path
+       id="path11"
+       fill-rule="evenodd"
+       fill="#ffffff"
+       stroke-miterlimit="8"
+       stroke-width="8"
+       stroke="#000000"
+       d="m 41.098522,119.23645 h 43.617 v -14 l 31.382998,28 -31.382998,28 v -14 h -43.617 z" />
+    <rect
+       y="96.306999"
+       x="34.773991"
+       height="102.359"
+       width="87.333"
+       id="rect844"
+       style="opacity:0.536866;fill:#ffffff;fill-opacity:1;stroke-width:3.41577;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke" />
+  </g>
+</svg>

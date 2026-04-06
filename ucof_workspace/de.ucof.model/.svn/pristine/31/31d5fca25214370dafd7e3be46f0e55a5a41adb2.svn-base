@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.ucof.model/src" modelPluginID="de.ucof.model"
+    modelName="Ucof" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>ucof.ecore</foreignModel>
+  <genPackages prefix="Ucof" disposableProviderFactory="true" ecorePackage="ucof.ecore#/">
+    <genClasses ecoreClass="ucof.ecore#//Platform">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//Platform/devices"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//Platform/communication"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//Platform/targetSystems"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//Platform/assignments"/>
+    </genClasses>
+    <nestedGenPackages prefix="Common" disposableProviderFactory="true" generateModelWizard="false"
+        ecorePackage="ucof.ecore#//common">
+      <nestedGenPackages prefix="Enums" disposableProviderFactory="true" generateModelWizard="false"
+          ecorePackage="ucof.ecore#//common/enums">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//common/enums/SelfBoolean">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/SelfBoolean/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/SelfBoolean/true"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/SelfBoolean/false"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//common/enums/TargetDatatype">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/TargetDatatype/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/TargetDatatype/String"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/TargetDatatype/UInt8"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//common/enums/MemoryAccess">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/MemoryAccess/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/MemoryAccess/Read"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/MemoryAccess/ReadWrite"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//common/enums/MemoryType">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/MemoryType/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/MemoryType/Volatile"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/MemoryType/NonVolatile"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//common/enums/PortDirection">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/PortDirection/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/PortDirection/In"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/PortDirection/Out"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/PortDirection/InOut"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//common/enums/SingleDirectionType">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/SingleDirectionType/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/SingleDirectionType/In"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/SingleDirectionType/Out"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//common/enums/YesNoType">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/YesNoType/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/YesNoType/No"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/YesNoType/Yes"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//common/enums/SDITypes">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/SDITypes/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/SDITypes/ZERO"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/SDITypes/ONE"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/SDITypes/TWO"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//common/enums/SDITypes/THREE"/>
+        </genEnums>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Etypes" disposableProviderFactory="true" generateModelWizard="false"
+          ecorePackage="ucof.ecore#//common/etypes">
+        <genClasses image="false" ecoreClass="ucof.ecore#//common/etypes/SuperIdentifierType">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//common/etypes/SuperIdentifierType/id"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//common/etypes/SuperIdentifierType/name"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="ucof.ecore#//common/etypes/SuperTrackingType">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//common/etypes/SuperTrackingType/documentation"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//common/etypes/SuperTrackingType/modified"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//common/etypes/SuperTrackingType/modifier"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//common/etypes/SuperTrackingType/traceLink"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//common/etypes/SuperTrackingType/created"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//common/etypes/SuperTrackingType/creator"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//common/etypes/SuperTrackingType/version"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="ucof.ecore#//common/etypes/SuperSetType">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//common/etypes/SuperSetType/setname"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//common/etypes/Memory">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//common/etypes/Memory/memoryRequirements"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//common/etypes/MemoryRequirement">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//common/etypes/MemoryRequirement/access"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//common/etypes/MemoryRequirement/memoryType"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//common/etypes/MemoryRequirement/size"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//common/etypes/MemoryRequirement/address"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Edata" disposableProviderFactory="true" ecorePackage="ucof.ecore#//common/edata">
+        <genDataTypes ecoreDataType="ucof.ecore#//common/edata/DecOrHexValueType"/>
+        <genDataTypes ecoreDataType="ucof.ecore#//common/edata/HexAddressType"/>
+        <genDataTypes ecoreDataType="ucof.ecore#//common/edata/IdentifierValueType"/>
+        <genDataTypes ecoreDataType="ucof.ecore#//common/edata/UUIDType"/>
+        <genDataTypes ecoreDataType="ucof.ecore#//common/edata/IPAddressType"/>
+        <genDataTypes ecoreDataType="ucof.ecore#//common/edata/NameType"/>
+        <genDataTypes ecoreDataType="ucof.ecore#//common/edata/PortType"/>
+        <genDataTypes ecoreDataType="ucof.ecore#//common/edata/PositiveIntType"/>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Devices" disposableProviderFactory="true" generateModelWizard="false"
+        ecorePackage="ucof.ecore#//devices">
+      <genClasses ecoreClass="ucof.ecore#//devices/Devices">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/Devices/device"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="ucof.ecore#//devices/SuperDeviceType">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/SuperDeviceType/configurationLink"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/SuperDeviceType/deviceFunctions"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/SuperDeviceType/ports"/>
+      </genClasses>
+      <nestedGenPackages prefix="Devicetypes" disposableProviderFactory="true" generateModelWizard="false"
+          ecorePackage="ucof.ecore#//devices/devicetypes">
+        <genClasses image="false" ecoreClass="ucof.ecore#//devices/devicetypes/SuperA653ModuleType">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/SuperA653ModuleType/healthManagement"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/SuperA653ModuleType/moduleSchedulee"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/SuperA653ModuleType/partitions"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/A653P1Module"/>
+        <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/A653P4Module"/>
+        <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/IOModule"/>
+        <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/Periphery">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/Periphery/peripheryType"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="ucof.ecore#//devices/devicetypes/SuperSwitchType"/>
+        <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/A664Switch"/>
+        <nestedGenPackages prefix="A653components" disposableProviderFactory="true"
+            generateModelWizard="false" ecorePackage="ucof.ecore#//devices/devicetypes/a653components">
+          <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/ModuleSchedule">
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/ModuleSchedule/partitionTimeWindow"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/MemoryRegion">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/MemoryRegion/size"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/MemoryRegion/address"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/MemoryRegion/accessRights"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/PartitionTimeWindow">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/PartitionTimeWindow/duration"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/PartitionTimeWindow/offset"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/PartitionTimeWindow/periodicProcessingStart"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/PartitionTimeWindow/partitioOrPortID"/>
+          </genClasses>
+          <nestedGenPackages prefix="A653partition" disposableProviderFactory="true"
+              ecorePackage="ucof.ecore#//devices/devicetypes/a653components/a653partition">
+            <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//devices/devicetypes/a653components/a653partition/ProcessDeadlineDefinition">
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/a653partition/ProcessDeadlineDefinition/NotSet"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/a653partition/ProcessDeadlineDefinition/Hard"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/a653partition/ProcessDeadlineDefinition/Soft"/>
+            </genEnums>
+            <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//devices/devicetypes/a653components/a653partition/ProcessSynchronicity">
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/a653partition/ProcessSynchronicity/NotSet"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/a653partition/ProcessSynchronicity/Synchronous"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/a653partition/ProcessSynchronicity/Asynchronous"/>
+            </genEnums>
+            <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//devices/devicetypes/a653components/a653partition/Criticality">
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/a653partition/Criticality/NotSet"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/a653partition/Criticality/LevelA"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/a653partition/Criticality/LevelB"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/a653partition/Criticality/LevelC"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/a653partition/Criticality/LevelD"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/a653partition/Criticality/LevelE"/>
+            </genEnums>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/a653partition/ModulePartitions">
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/a653partition/ModulePartitions/partition"/>
+            </genClasses>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/a653partition/Partition">
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/a653partition/Partition/criticality"/>
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/a653partition/Partition/entryPoint"/>
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/a653partition/Partition/partitionPerioid"/>
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/a653partition/Partition/partitionDuration"/>
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/a653partition/Partition/memory"/>
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/a653partition/Partition/hmTable"/>
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/a653partition/Partition/intrapartitionCommunication"/>
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/a653partition/Partition/processes"/>
+            </genClasses>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/a653partition/Processes">
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/a653partition/Processes/process"/>
+            </genClasses>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/a653partition/Process">
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/a653partition/Process/entryPoint"/>
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/a653partition/Process/stackSize"/>
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/a653partition/Process/basePriority"/>
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/a653partition/Process/period"/>
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/a653partition/Process/timeCapacity"/>
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/a653partition/Process/deadline"/>
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/a653partition/Process/synchronicity"/>
+            </genClasses>
+          </nestedGenPackages>
+          <nestedGenPackages prefix="Healthmanagement" disposableProviderFactory="true"
+              ecorePackage="ucof.ecore#//devices/devicetypes/a653components/healthmanagement">
+            <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorCode">
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorCode/NotSet"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorCode/DeadlineMissed"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorCode/ApplicationError"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorCode/NumericError"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorCode/IllegalRequest"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorCode/StackOverflow"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorCode/MemoryViolation"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorCode/HardwareFault"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorCode/PowerFail"/>
+            </genEnums>
+            <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorLevelPartition">
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorLevelPartition/NotSet"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorLevelPartition/Partition"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorLevelPartition/Process"/>
+            </genEnums>
+            <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorLevelModule">
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorLevelModule/NotSet"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorLevelModule/Module"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorLevelModule/Partition"/>
+            </genEnums>
+            <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ModuleRecoveryActions">
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ModuleRecoveryActions/NotSet"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ModuleRecoveryActions/Ignore"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ModuleRecoveryActions/ShutdownModule"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ModuleRecoveryActions/ResetModule"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ModuleRecoveryActions/Custom"/>
+            </genEnums>
+            <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/PartitionRecoveryActions">
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/PartitionRecoveryActions/NotSet"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/PartitionRecoveryActions/Ignore"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/PartitionRecoveryActions/Idle"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/PartitionRecoveryActions/WarmRestart"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/PartitionRecoveryActions/ColdRestart"/>
+            </genEnums>
+            <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ProcessRecoveryActions">
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ProcessRecoveryActions/NotSet"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ProcessRecoveryActions/IgnoreAndLog"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ProcessRecoveryActions/IgnoreNTimesBeforeAction"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ProcessRecoveryActions/StopAndReinitializeFromEntryAddress"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ProcessRecoveryActions/StopProcessAndStartOtherProcess"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ProcessRecoveryActions/StopProcess"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ProcessRecoveryActions/PartitionColdRestart"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ProcessRecoveryActions/PartitionWarmRestart"/>
+              <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ProcessRecoveryActions/PartitionSetIdle"/>
+            </genEnums>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/HealthManagement">
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/healthmanagement/HealthManagement/moduleTable"/>
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/healthmanagement/HealthManagement/multiPartitionTables"/>
+            </genClasses>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ModuleTable">
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ModuleTable/stateDescription"/>
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ModuleTable/stateID"/>
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ModuleTable/errorInfo"/>
+            </genClasses>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/MultiPartitionTables">
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/healthmanagement/MultiPartitionTables/multiPartitionTable"/>
+            </genClasses>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/MultiPartitionTable">
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/healthmanagement/MultiPartitionTable/tableID"/>
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/healthmanagement/MultiPartitionTable/tableName"/>
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/healthmanagement/MultiPartitionTable/errorInfo"/>
+            </genClasses>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/HMTable">
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/healthmanagement/HMTable/tableIdentifier"/>
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/healthmanagement/HMTable/tableName"/>
+              <genFeatures notify="false" createChild="false" propertySortChoices="true"
+                  ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/healthmanagement/HMTable/multiPartitionHMTableNameRef"/>
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/healthmanagement/HMTable/errorInfo"/>
+            </genClasses>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorInfoSuper">
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorInfoSuper/errorIdentifier"/>
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorInfoSuper/errorDescription"/>
+            </genClasses>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorInfoModule">
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorInfoModule/moduleRecoveryAction"/>
+            </genClasses>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErroInfoPartition">
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErroInfoPartition/errorLevel"/>
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErroInfoPartition/recoveryAction"/>
+            </genClasses>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorInfoMultiPartition">
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorInfoMultiPartition/errorLevel"/>
+              <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ErrorInfoMultiPartition/recoveryAction"/>
+            </genClasses>
+            <genClasses image="false" ecoreClass="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ModulePartitionLevelAction"/>
+            <genClasses image="false" ecoreClass="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/PartitionProcessLevelAction"/>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ModuleRecoveryAction">
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ModuleRecoveryAction/recoveryAction"/>
+            </genClasses>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/PartitionRecoveryAction">
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/healthmanagement/PartitionRecoveryAction/recoveryAction"/>
+            </genClasses>
+            <genClasses ecoreClass="ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ProcessRevoceryAction">
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ProcessRevoceryAction/errorCode"/>
+              <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/devicetypes/a653components/healthmanagement/ProcessRevoceryAction/recoveryAction"/>
+            </genClasses>
+          </nestedGenPackages>
+        </nestedGenPackages>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Functions" disposableProviderFactory="true" generateModelWizard="false"
+          ecorePackage="ucof.ecore#//devices/functions">
+        <genClasses ecoreClass="ucof.ecore#//devices/functions/DeviceFunctions">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/functions/DeviceFunctions/function"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//devices/functions/FunctionLink">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/functions/FunctionLink/functionFile"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="ucof.ecore#//devices/functions/FunctionSuper">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/functions/FunctionSuper/functionLink"/>
+        </genClasses>
+        <nestedGenPackages prefix="Routing" disposableProviderFactory="true" generateModelWizard="false"
+            ecorePackage="ucof.ecore#//devices/functions/routing">
+          <genClasses ecoreClass="ucof.ecore#//devices/functions/routing/Routing">
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/functions/routing/Routing/payloadRouting"/>
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/functions/routing/Routing/signalRouting"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//devices/functions/routing/PayloadRouting">
+            <genFeatures notify="false" createChild="false" propertySortChoices="true"
+                ecoreFeature="ecore:EReference ucof.ecore#//devices/functions/routing/PayloadRouting/inPayload"/>
+            <genFeatures notify="false" createChild="false" propertySortChoices="true"
+                ecoreFeature="ecore:EReference ucof.ecore#//devices/functions/routing/PayloadRouting/outPayload"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//devices/functions/routing/SignalRouting">
+            <genFeatures notify="false" createChild="false" propertySortChoices="true"
+                ecoreFeature="ecore:EReference ucof.ecore#//devices/functions/routing/SignalRouting/inSignal"/>
+            <genFeatures notify="false" createChild="false" propertySortChoices="true"
+                ecoreFeature="ecore:EReference ucof.ecore#//devices/functions/routing/SignalRouting/outSignal"/>
+          </genClasses>
+        </nestedGenPackages>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Ports" disposableProviderFactory="true" ecorePackage="ucof.ecore#//devices/ports">
+        <genClasses image="false" ecoreClass="ucof.ecore#//devices/ports/SuperPortType">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/ports/SuperPortType/maxMessageSize"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/ports/SuperPortType/portDirection"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//devices/ports/DevicePorts">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/ports/DevicePorts/port"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="ucof.ecore#//devices/ports/SuperDevicePortType"/>
+        <genClasses ecoreClass="ucof.ecore#//devices/ports/SamplingPort">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/ports/SamplingPort/refreshPeriodORTransmissionRate"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//devices/ports/QueuingPort">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/ports/QueuingPort/maxNumberOfMessages"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//devices/ports/IntrapartitionPorts">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//devices/ports/IntrapartitionPorts/intrapartitionCommunication"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="ucof.ecore#//devices/ports/SuperIntrapartitionCommunicationType"/>
+        <genClasses ecoreClass="ucof.ecore#//devices/ports/Blackboard"/>
+        <genClasses ecoreClass="ucof.ecore#//devices/ports/Buffer">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//devices/ports/Buffer/maxNumberOfMessages"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Communication" disposableProviderFactory="true" generateModelWizard="false"
+        ecorePackage="ucof.ecore#//communication">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//communication/DataTypes">
+        <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/DataTypes/NotSet"/>
+        <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/DataTypes/Bool"/>
+        <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/DataTypes/Char"/>
+        <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/DataTypes/Int"/>
+        <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/DataTypes/Float"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//communication/Endianess">
+        <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/Endianess/NotSet"/>
+        <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/Endianess/BIG"/>
+        <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/Endianess/LITTLE"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//communication/SignedUnsigned">
+        <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/SignedUnsigned/NotSet"/>
+        <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/SignedUnsigned/Signed"/>
+        <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/SignedUnsigned/Unsigned"/>
+      </genEnums>
+      <genClasses ecoreClass="ucof.ecore#//communication/Communication">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//communication/Communication/database"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//communication/Communication/connectors"/>
+      </genClasses>
+      <genClasses ecoreClass="ucof.ecore#//communication/Database">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//communication/Database/communicationSet"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="ucof.ecore#//communication/CommunicationSetType"/>
+      <genClasses ecoreClass="ucof.ecore#//communication/InterfaceSet">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//communication/InterfaceSet/interface"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="ucof.ecore#//communication/SuperCommunicationInterfaceType"/>
+      <genClasses ecoreClass="ucof.ecore#//communication/MessageSet">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//communication/MessageSet/message"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="ucof.ecore#//communication/SuperMessageType"/>
+      <genClasses ecoreClass="ucof.ecore#//communication/PayloadSet">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//communication/PayloadSet/payload"/>
+      </genClasses>
+      <genClasses ecoreClass="ucof.ecore#//communication/Payload"/>
+      <genClasses ecoreClass="ucof.ecore#//communication/SignalSet">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//communication/SignalSet/signal"/>
+      </genClasses>
+      <genClasses ecoreClass="ucof.ecore#//communication/Signal">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/Signal/dataType"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/Signal/signedness"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/Signal/bitLength"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/Signal/factor"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/Signal/offset"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/Signal/minValue"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/Signal/maxValue"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/Signal/unit"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/Signal/byteOrder"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//communication/Signal/a429Specification"/>
+      </genClasses>
+      <nestedGenPackages prefix="Arinc429" disposableProviderFactory="true" generateModelWizard="false"
+          ecorePackage="ucof.ecore#//communication/arinc429">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//communication/arinc429/ParityTypes">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc429/ParityTypes/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc429/ParityTypes/High"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc429/ParityTypes/Low"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//communication/arinc429/CodingTypes">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc429/CodingTypes/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc429/CodingTypes/BNR"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc429/CodingTypes/BCD"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//communication/arinc429/SSMTypes">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc429/SSMTypes/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc429/SSMTypes/Plus_North_East_Right_To_Above"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc429/SSMTypes/No_Computed_Data"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc429/SSMTypes/Functional_Test"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc429/SSMTypes/Minus_South_West_Left_From_Below"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc429/SSMTypes/Verified_Data_Normal_Operation"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc429/SSMTypes/Failure_Warning"/>
+        </genEnums>
+        <genClasses ecoreClass="ucof.ecore#//communication/arinc429/A429Bus">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/arinc429/A429Bus/parityType"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//communication/arinc429/A429Message">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/arinc429/A429Message/sdi"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/arinc429/A429Message/a429Label"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/arinc429/A429Message/a429SSM"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//communication/arinc429/A429SignalSpecification">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/arinc429/A429SignalSpecification/codingType"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/arinc429/A429SignalSpecification/fieldLength"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Arinc825" disposableProviderFactory="true" generateModelWizard="false"
+          ecorePackage="ucof.ecore#//communication/arinc825">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//communication/arinc825/DLC">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc825/DLC/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc825/DLC/Zero"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc825/DLC/One"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc825/DLC/Two"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc825/DLC/Three"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc825/DLC/Four"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc825/DLC/Five"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc825/DLC/Six"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc825/DLC/Seven"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/arinc825/DLC/Eight"/>
+        </genEnums>
+        <genClasses ecoreClass="ucof.ecore#//communication/arinc825/A825Bus">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/arinc825/A825Bus/baudRate"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//communication/arinc825/A825Message">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/arinc825/A825Message/dLC"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/arinc825/A825Message/canID"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/arinc825/A825Message/canFD"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Basedonethernet" disposableProviderFactory="true"
+          generateModelWizard="false" ecorePackage="ucof.ecore#//communication/basedonethernet">
+        <genClasses ecoreClass="ucof.ecore#//communication/basedonethernet/EthernetPort">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/basedonethernet/EthernetPort/iPAddress"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/basedonethernet/EthernetPort/subnetMask"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="ucof.ecore#//communication/basedonethernet/SuperEthernetMessageType"/>
+        <genClasses ecoreClass="ucof.ecore#//communication/basedonethernet/EthernetTX">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/basedonethernet/EthernetTX/destinationAdress"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/basedonethernet/EthernetTX/destinationPort"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//communication/basedonethernet/EthernetRX">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/basedonethernet/EthernetRX/sourcePort"/>
+        </genClasses>
+        <nestedGenPackages prefix="Arinc664" disposableProviderFactory="true" ecorePackage="ucof.ecore#//communication/basedonethernet/arinc664">
+          <genClasses ecoreClass="ucof.ecore#//communication/basedonethernet/arinc664/A664Bus">
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//communication/basedonethernet/arinc664/A664Bus/virtualLink"/>
+          </genClasses>
+          <genClasses image="false" ecoreClass="ucof.ecore#//communication/basedonethernet/arinc664/A664VirtualLinkSuper"/>
+          <genClasses ecoreClass="ucof.ecore#//communication/basedonethernet/arinc664/A664VirtualLinkIn">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/basedonethernet/arinc664/A664VirtualLinkIn/maxSkew"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//communication/basedonethernet/arinc664/A664VirtualLinkOut">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/basedonethernet/arinc664/A664VirtualLinkOut/bAG"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/basedonethernet/arinc664/A664VirtualLinkOut/maxFrameSize"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/basedonethernet/arinc664/A664VirtualLinkOut/overSampling"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/basedonethernet/arinc664/A664VirtualLinkOut/phase"/>
+          </genClasses>
+        </nestedGenPackages>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Basedonwired" disposableProviderFactory="true" ecorePackage="ucof.ecore#//communication/basedonwired">
+        <genClasses ecoreClass="ucof.ecore#//communication/basedonwired/WiredInterfaces">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//communication/basedonwired/WiredInterfaces/wiredInterface"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="ucof.ecore#//communication/basedonwired/WiredSuper">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference ucof.ecore#//communication/basedonwired/WiredSuper/connector"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//communication/basedonwired/Analogue">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/basedonwired/Analogue/incCountStepSize"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/basedonwired/Analogue/decCountStepSize"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//communication/basedonwired/Discrete"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Connectors" disposableProviderFactory="true" ecorePackage="ucof.ecore#//communication/connectors">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//communication/connectors/LineType">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/connectors/LineType/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/connectors/LineType/A664"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/connectors/LineType/A429"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/connectors/LineType/A825"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/connectors/LineType/Analagoue"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/connectors/LineType/Discrete"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//communication/connectors/LineType/Ethernet"/>
+        </genEnums>
+        <genClasses ecoreClass="ucof.ecore#//communication/connectors/Connectors">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//communication/connectors/Connectors/connectorGroup"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//communication/connectors/ConnectorGroup">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//communication/connectors/ConnectorGroup/connector"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//communication/connectors/Connector">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/connectors/Connector/connectorType"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/connectors/Connector/lineType"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//communication/connectors/Connector/connectionPin"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//communication/connectors/ConnectionPin">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//communication/connectors/ConnectionPin/connectionPinRole"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="TargetConfiguration" disposableProviderFactory="true"
+        ecorePackage="ucof.ecore#//targetConfiguration">
+      <genClasses ecoreClass="ucof.ecore#//targetConfiguration/TargetSystems">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/TargetSystems/targetConfiguration"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="ucof.ecore#//targetConfiguration/SuperTargetType">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/SuperTargetType/projectName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/SuperTargetType/applicationName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/SuperTargetType/modelTopologyName"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="ucof.ecore#//targetConfiguration/SuperIOHardwareType">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/SuperIOHardwareType/assignmentSpecification"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="ucof.ecore#//targetConfiguration/SuperClassExtensionType">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/SuperClassExtensionType/extendedClassID"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="ucof.ecore#//targetConfiguration/SuperAssignmentSpecificationType">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/SuperAssignmentSpecificationType/referencedAssignmentID"/>
+      </genClasses>
+      <genClasses ecoreClass="ucof.ecore#//targetConfiguration/AttributeDatatypeConversion">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/AttributeDatatypeConversion/attributeName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/AttributeDatatypeConversion/targetDatatype"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/AttributeDatatypeConversion/valuePrefix"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/AttributeDatatypeConversion/valuePostfix"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="ucof.ecore#//targetConfiguration/HardwareInformation">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/HardwareInformation/hardwareTopologyName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/HardwareInformation/nameOfHardwareSystem"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/HardwareInformation/iPAddressOfHardwareSystem"/>
+      </genClasses>
+      <nestedGenPackages prefix="Configdesk" disposableProviderFactory="true" generateModelWizard="false"
+          ecorePackage="ucof.ecore#//targetConfiguration/configdesk">
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/ConfigurationDesk">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configdesk/ConfigurationDesk/configurationDeskIOHardware"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="ucof.ecore#//targetConfiguration/configdesk/SuperConfigurationDeskIOHardwareType"/>
+        <nestedGenPackages prefix="DSpaceArinc825" disposableProviderFactory="true"
+            generateModelWizard="false" ecorePackage="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825">
+          <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelAccess">
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelAccess/NotSet"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelAccess/Enabled"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelAccess/Disabled"/>
+          </genEnums>
+          <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelAccessiblePortsRX">
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelAccessiblePortsRX/NotSet"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelAccessiblePortsRX/DataVector"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelAccessiblePortsRX/VectorSize"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelAccessiblePortsRX/SourceIPAddress"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelAccessiblePortsRX/SourcePort"/>
+          </genEnums>
+          <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelAccessiblePortsTX">
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelAccessiblePortsTX/NotSet"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelAccessiblePortsTX/DataVector"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelAccessiblePortsTX/MaxVectorSize"/>
+          </genEnums>
+          <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelPortBlockStructure">
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelPortBlockStructure/NotSet"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelPortBlockStructure/Ungrouped"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/ModelPortBlockStructure/Grouped"/>
+          </genEnums>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/A825Configuration">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/A825Configuration/channelName"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/A825Configuration/terminated"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/A825Configuration/assignedChannelSet"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/A825Configuration/canChannel"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/A825Configuration/modelAccess"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/A825Configuration/modelPortBlockStructure"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/A825Configuration/eCU"/>
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/A825Configuration/statusExtension"/>
+          </genClasses>
+          <genClasses image="false" ecoreClass="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/SuperConfigurationDeskA825StatusExtensionType"/>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/SignalModelAccessStatus">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/SignalModelAccessStatus/modelAccessEnabled"/>
+          </genClasses>
+          <genClasses image="false" ecoreClass="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/SuperFeatureType"/>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureTrigger">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureTrigger/trigger"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureCyclicTimingControl">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureCyclicTimingControl/controlPeriodModelAccess"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureCyclicTimingControl/controlOffsetModelAccess"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureRawData">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureRawData/rawDataModelAccess"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureEnable">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureEnable/enableModelAccess"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureFrameAccess">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureFrameAccess/triggerModelAccess"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureFrameAccess/lengthModelAccess"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureFrameAccess/rawDataModelAccess"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureFrameAccess/identifierModelAccess"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureFrameAccess/extendedAddressingModelAccess"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureFrameAccess/canFDFrameSupportModelAccess"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/dSpaceArinc825/FeatureFrameAccess/bitRateSwitchModelAccess"/>
+          </genClasses>
+        </nestedGenPackages>
+        <nestedGenPackages prefix="Ethernet" disposableProviderFactory="true" generateModelWizard="false"
+            ecorePackage="ucof.ecore#//targetConfiguration/configdesk/ethernet">
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/ethernet/ETHSetup">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/ethernet/ETHSetup/channelSet"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/ethernet/ETHSetup/channel"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/ethernet/ETHSetup/modelAccessiblePorts"/>
+            <genFeatures notify="false" createChild="false" propertySortChoices="true"
+                ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configdesk/ethernet/ETHSetup/ethernetPort"/>
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configdesk/ethernet/ETHSetup/uDPConnection"/>
+          </genClasses>
+          <genClasses image="false" ecoreClass="ucof.ecore#//targetConfiguration/configdesk/ethernet/UDPConnection">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/ethernet/UDPConnection/maxVectorSize"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/ethernet/UDPTX">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/ethernet/UDPTX/modelAccessiblePorts"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/ethernet/UDPTX/variableVectorSize"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/ethernet/UDPRX">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configdesk/ethernet/UDPRX/modelAccessiblePorts"/>
+          </genClasses>
+        </nestedGenPackages>
+        <nestedGenPackages prefix="Wired" disposableProviderFactory="true" generateModelWizard="false"
+            ecorePackage="ucof.ecore#//targetConfiguration/configdesk/wired">
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/wired/Analogues"/>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/wired/Analogue"/>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/wired/Digitals"/>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configdesk/wired/Digital"/>
+        </nestedGenPackages>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Tricore299a653p4" resource="XML" disposableProviderFactory="true"
+          ecorePackage="ucof.ecore#//targetConfiguration/tricore299a653p4">
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/tricore299a653p4/TriCore299">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/tricore299a653p4/TriCore299/iODriver"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="ucof.ecore#//targetConfiguration/tricore299a653p4/SuperTriCore299IOHardwareType"/>
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/tricore299a653p4/A825DriverConfiguration">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/tricore299a653p4/A825DriverConfiguration/firstMsgBox"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/tricore299a653p4/A825DriverConfiguration/node"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/tricore299a653p4/A825DriverConfiguration/rJW"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/tricore299a653p4/A825DriverConfiguration/rXSEL"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/tricore299a653p4/MessagePostBoxSpecifier">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/tricore299a653p4/MessagePostBoxSpecifier/postBox"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Simulink" disposableProviderFactory="true" ecorePackage="ucof.ecore#//targetConfiguration/simulink"/>
+      <nestedGenPackages prefix="A653capabletarget" disposableProviderFactory="true"
+          ecorePackage="ucof.ecore#//targetConfiguration/a653capabletarget">
+        <genClasses image="false" ecoreClass="ucof.ecore#//targetConfiguration/a653capabletarget/SuperA653CapableTargetType">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/a653capabletarget/SuperA653CapableTargetType/operatingSytem"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/a653capabletarget/OperatingSystem">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/a653capabletarget/OperatingSystem/memory"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/a653capabletarget/OperatingSystem/processes"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Vxworksa653" disposableProviderFactory="true" ecorePackage="ucof.ecore#//targetConfiguration/vxworksa653">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/law"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/rst"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/pamu"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/i2c0"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/i2c1"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/i2c2"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/i2c3"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/espi"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/esdhc"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/usb0"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/usb1"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/uart0"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/uart0poll"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/uart1"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/uart1poll"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/uart2"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/uart2poll"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/uart3"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/uart3poll"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/pcie1"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/pcie2"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/pcie3"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/pcie4"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/rio"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/sata0"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/sata1"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/dma0"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/dma1"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/qman"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/bman"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/portal0"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/portal1"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/portal2"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/portal3"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/portal4"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/portal5"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/portal6"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/portal7"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/portal8"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/portal9"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/fman"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/memac0"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/memac1"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/memac2"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/memac3"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/memac4"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/memac5"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/memac8"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/memac9"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/mdio0"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/mdio1"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/mpic_cpu_private"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/mpic"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/picTimerA"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/picTimerB"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/dcfg"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/gpio0"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/gpio1"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/gpio2"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/gpio3"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/qixis"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/nvram"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/vxnvram"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevicesList/mdio_shared"/>
+        </genEnums>
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/vxworksa653/VxWorksA653"/>
+        <genClasses image="false" ecoreClass="ucof.ecore#//targetConfiguration/vxworksa653/SuperVxWorksAssignmentSpecificationType"/>
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevices">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/vxworksa653/SimulatedDevices/simulatedDevices"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="ConfigECIC" disposableProviderFactory="true" ecorePackage="ucof.ecore#//targetConfiguration/configECIC">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//targetConfiguration/configECIC/StandardRevisionType">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configECIC/StandardRevisionType/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configECIC/StandardRevisionType/A"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//targetConfiguration/configECIC/ComponentTypeType">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configECIC/ComponentTypeType/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configECIC/ComponentTypeType/Virtual"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configECIC/ComponentTypeType/Bridge"/>
+        </genEnums>
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/ED247ComponentInstanceConfiguration">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/ED247ComponentInstanceConfiguration/standardRevision"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/ED247ComponentInstanceConfiguration/componentVersion"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/ED247ComponentInstanceConfiguration/componentType"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/ED247ComponentInstanceConfiguration/channels"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/ED247ComponentInstanceConfiguration/fileProducer"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/FileProducer"/>
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/Channels">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/Channels/channel"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/Channel">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/Channel/frameFormat"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/Channel/comInterface"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/Channel/header"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/Channel/stream"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/ComInterface">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/ComInterface/udpSockets"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/UDPSockets">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/UDPSockets/udpSocket"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/UDPSocket">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/UDPSocket/multicastInterfaceIP"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/UDPSocket/multicastTTL"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/UDPSocket/srcDirectionExtension"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/UDPSocket/direction"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/UDPSocket/ipAdress"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/UDPSocket/port"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/srcDirectionExtension">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/srcDirectionExtension/ipAdress"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/srcDirectionExtension/port"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/Header">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/Header/enable"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/Header/transportTimestamp"/>
+        </genClasses>
+        <nestedGenPackages prefix="StreamTypes" disposableProviderFactory="true" ecorePackage="ucof.ecore#//targetConfiguration/configECIC/streamTypes">
+          <genClasses image="false" ecoreClass="ucof.ecore#//targetConfiguration/configECIC/streamTypes/SuperStreamType">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/SuperStreamType/sampleMaxNumber"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/SuperStreamType/icd"/>
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/streamTypes/SuperStreamType/dataTimestamp"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/streamTypes/A429Stream">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/A429Stream/direction"/>
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/streamTypes/A429Stream/a429PacketStrategy"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/A429Stream/errors"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/streamTypes/A825Stream">
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/streamTypes/A825Stream/a825PacketStrategy"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/A825Stream/errors"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/streamTypes/A664Stream">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/A664Stream/direction"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/A664Stream/sampleMaxSizeBytes"/>
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/streamTypes/A664Stream/a664PacketStrategy"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/A664Stream/errors"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/streamTypes/ETHStream">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/ETHStream/direction"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/ETHStream/sampleMaxSizeBytes"/>
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/streamTypes/ETHStream/ethPacketStrategy"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/ETHStream/errors"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/streamTypes/DISStream">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/DISStream/direction"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/DISStream/sampleMaxSizeBytes"/>
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/streamTypes/DISStream/disPacketStrategy"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/streamTypes/ANAStream">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/ANAStream/direction"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/ANAStream/sampleMaxSizeBytes"/>
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/streamTypes/ANAStream/anaPacketStrategy"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/streamTypes/NADStream">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/NADStream/direction"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/NADStream/sampleMaxSizeBytes"/>
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/streamTypes/NADStream/nadPacketStrategy"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/streamTypes/DataTimestamp">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/DataTimestamp/enable"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/streamTypes/DataTimestamp/sampleDataTimestampOffset"/>
+          </genClasses>
+        </nestedGenPackages>
+        <nestedGenPackages prefix="PackageStrategyTypes" disposableProviderFactory="true"
+            ecorePackage="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes">
+          <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/LLCType">
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/LLCType/NotSet"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/LLCType/ZERO"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/LLCType/ONE"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/LLCType/TWO"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/LLCType/THREE"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/LLCType/FOUR"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/LLCType/FIVE"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/LLCType/SIX"/>
+            <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/LLCType/SEVEN"/>
+          </genEnums>
+          <genClasses image="false" ecoreClass="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/SuperPacketStrategyType">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/SuperPacketStrategyType/PeriodNs"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/A429PacketStrategy">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/A429PacketStrategy/Direction"/>
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/A429PacketStrategy/Gap"/>
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/A429PacketStrategy/TriggerWords"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/A825PacketStrategy">
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/A825PacketStrategy/Frames"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/A664PacketStrategy"/>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/ETHPacketStrategy"/>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/DISPacketStrategy">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/DISPacketStrategy/ResetPeriodicTimer"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/ANAPacketStrategy"/>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/NADPacketStrategy"/>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/Gap">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/Gap/DurationNs"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/Gap/ResetPeriodicTimer"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/TriggerWords">
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/TriggerWords/TriggerWord"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/TriggerWord">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/TriggerWord/Label"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/TriggerWord/SDI"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/TriggerWord/ResetPeriodicTimer"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/Frame">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/Frame/A825ID"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/Frame/ResetPeriodicTimer"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/LLC">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/LLC/LLC"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/LLC/ResetPeriodicTimer"/>
+          </genClasses>
+          <genClasses ecoreClass="ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/Frames">
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/Frames/Frame"/>
+            <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//targetConfiguration/configECIC/packageStrategyTypes/Frames/LLC"/>
+          </genClasses>
+        </nestedGenPackages>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Assignments" disposableProviderFactory="true" ecorePackage="ucof.ecore#//assignments">
+      <genClasses ecoreClass="ucof.ecore#//assignments/Assignments">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//assignments/Assignments/assignmentSet"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="ucof.ecore#//assignments/SuperAssignmentSetType"/>
+      <genClasses image="false" ecoreClass="ucof.ecore#//assignments/SuperAssignmentType">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//assignments/SuperAssignmentType/sourceID"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//assignments/SuperAssignmentType/targetID"/>
+      </genClasses>
+      <genClasses ecoreClass="ucof.ecore#//assignments/InterfaceToPortAssignmentSet">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//assignments/InterfaceToPortAssignmentSet/interfaceToPortAssignment"/>
+      </genClasses>
+      <genClasses ecoreClass="ucof.ecore#//assignments/InterfaceToPortAssignment"/>
+      <genClasses ecoreClass="ucof.ecore#//assignments/DeviceToImplementationAssignmentSet">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//assignments/DeviceToImplementationAssignmentSet/deviceToImplementationAssignment"/>
+      </genClasses>
+      <genClasses ecoreClass="ucof.ecore#//assignments/DeviceToImplementationAssignment"/>
+      <genClasses ecoreClass="ucof.ecore#//assignments/InterfaceToHardwareAssignmentSet">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//assignments/InterfaceToHardwareAssignmentSet/interfaceToHardwareAssignment"/>
+      </genClasses>
+      <genClasses ecoreClass="ucof.ecore#//assignments/InterfaceToHardwareAssignment"/>
+      <genClasses ecoreClass="ucof.ecore#//assignments/PortToPortAssignmentSet">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//assignments/PortToPortAssignmentSet/portToPortAssignment"/>
+      </genClasses>
+      <genClasses ecoreClass="ucof.ecore#//assignments/PortToPortAssignment"/>
+      <nestedGenPackages prefix="Database" disposableProviderFactory="true" ecorePackage="ucof.ecore#//assignments/database">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//assignments/database/signalTargets">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/signalTargets/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/signalTargets/Port"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/signalTargets/Interface"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/signalTargets/Message"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/signalTargets/Payload"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/signalTargets/DISSTREAM"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/signalTargets/ANAStream"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/signalTargets/NADStream"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//assignments/database/payloadTargets">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/payloadTargets/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/payloadTargets/Port"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/payloadTargets/Interface"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/payloadTargets/Message"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="ucof.ecore#//assignments/database/messageTargets">
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/messageTargets/NotSet"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/messageTargets/Port"/>
+          <genEnumLiterals ecoreEnumLiteral="ucof.ecore#//assignments/database/messageTargets/Interface"/>
+        </genEnums>
+        <genClasses ecoreClass="ucof.ecore#//assignments/database/SignalToTargetAssignmentSet">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//assignments/database/SignalToTargetAssignmentSet/signalToTargetAssignment"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//assignments/database/SignalToTargetAssignment">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//assignments/database/SignalToTargetAssignment/startBit"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//assignments/database/SignalToTargetAssignment/assignmentTargetType"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//assignments/database/PayloadToTargetAssignmentSet">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//assignments/database/PayloadToTargetAssignmentSet/payloadToTargetAssignment"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//assignments/database/PayloadToTargetAssignment">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//assignments/database/PayloadToTargetAssignment/assignmentTargetType"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//assignments/database/MessageToTargetAssignmentSet">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucof.ecore#//assignments/database/MessageToTargetAssignmentSet/messageToTargetAssignment"/>
+        </genClasses>
+        <genClasses ecoreClass="ucof.ecore#//assignments/database/MessageToTargetAssignment">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucof.ecore#//assignments/database/MessageToTargetAssignment/assignmentTargetType"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>
