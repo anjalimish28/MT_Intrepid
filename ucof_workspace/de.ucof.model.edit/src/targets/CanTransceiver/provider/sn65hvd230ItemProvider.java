@@ -20,6 +20,8 @@ import targets.CanTransceiver.CanTransceiverFactory;
 import targets.CanTransceiver.CanTransceiverPackage;
 import targets.CanTransceiver.sn65hvd230;
 
+import targets.powergrid.PowergridFactory;
+import targets.powergrid.PowergridPackage;
 import targets.provider.SuperTargetTypeItemProvider;
 
 import ucof.provider.UcofEditPlugin;
@@ -68,6 +70,7 @@ public class sn65hvd230ItemProvider extends SuperTargetTypeItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
+			childrenFeatures.add(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES);
 			childrenFeatures.add(CanTransceiverPackage.Literals.SN65HVD230__PORTS);
 		}
 		return childrenFeatures;
@@ -124,6 +127,7 @@ public class sn65hvd230ItemProvider extends SuperTargetTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(sn65hvd230.class)) {
+			case CanTransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES:
 			case CanTransceiverPackage.SN65HVD230__PORTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -141,6 +145,11 @@ public class sn65hvd230ItemProvider extends SuperTargetTypeItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES,
+				 PowergridFactory.eINSTANCE.createEletrcialInterfaces()));
 
 		newChildDescriptors.add
 			(createChildParameter

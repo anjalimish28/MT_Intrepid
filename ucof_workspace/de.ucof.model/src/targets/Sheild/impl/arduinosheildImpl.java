@@ -22,6 +22,9 @@ import targets.SuperAssignmentSpecificationType;
 import targets.SuperIOHardwareType;
 import targets.TargetsPackage;
 import targets.impl.SuperTargetTypeImpl;
+import targets.powergrid.EletrcialInterfaces;
+import targets.powergrid.PowergridPackage;
+import targets.powergrid.SuperPowerType;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,6 +35,7 @@ import targets.impl.SuperTargetTypeImpl;
  * </p>
  * <ul>
  *   <li>{@link targets.Sheild.impl.arduinosheildImpl#getAssignmentSpecification <em>Assignment Specification</em>}</li>
+ *   <li>{@link targets.Sheild.impl.arduinosheildImpl#getElectricalInterfaces <em>Electrical Interfaces</em>}</li>
  *   <li>{@link targets.Sheild.impl.arduinosheildImpl#getPorts <em>Ports</em>}</li>
  * </ul>
  *
@@ -47,6 +51,15 @@ public class arduinosheildImpl extends SuperTargetTypeImpl implements arduinoshe
 	 * @ordered
 	 */
 	protected EList<SuperAssignmentSpecificationType> assignmentSpecification;
+	/**
+	 * The cached value of the '{@link #getElectricalInterfaces() <em>Electrical Interfaces</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getElectricalInterfaces()
+	 * @generated
+	 * @ordered
+	 */
+	protected EletrcialInterfaces electricalInterfaces;
 	/**
 	 * The cached value of the '{@link #getPorts() <em>Ports</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -85,6 +98,49 @@ public class arduinosheildImpl extends SuperTargetTypeImpl implements arduinoshe
 			assignmentSpecification = new EObjectContainmentEList<SuperAssignmentSpecificationType>(SuperAssignmentSpecificationType.class, this, SheildPackage.ARDUINOSHEILD__ASSIGNMENT_SPECIFICATION);
 		}
 		return assignmentSpecification;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EletrcialInterfaces getElectricalInterfaces() {
+		return electricalInterfaces;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetElectricalInterfaces(EletrcialInterfaces newElectricalInterfaces, NotificationChain msgs) {
+		EletrcialInterfaces oldElectricalInterfaces = electricalInterfaces;
+		electricalInterfaces = newElectricalInterfaces;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SheildPackage.ARDUINOSHEILD__ELECTRICAL_INTERFACES, oldElectricalInterfaces, newElectricalInterfaces);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setElectricalInterfaces(EletrcialInterfaces newElectricalInterfaces) {
+		if (newElectricalInterfaces != electricalInterfaces) {
+			NotificationChain msgs = null;
+			if (electricalInterfaces != null)
+				msgs = ((InternalEObject)electricalInterfaces).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SheildPackage.ARDUINOSHEILD__ELECTRICAL_INTERFACES, null, msgs);
+			if (newElectricalInterfaces != null)
+				msgs = ((InternalEObject)newElectricalInterfaces).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SheildPackage.ARDUINOSHEILD__ELECTRICAL_INTERFACES, null, msgs);
+			msgs = basicSetElectricalInterfaces(newElectricalInterfaces, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SheildPackage.ARDUINOSHEILD__ELECTRICAL_INTERFACES, newElectricalInterfaces, newElectricalInterfaces));
 	}
 
 	/**
@@ -140,6 +196,8 @@ public class arduinosheildImpl extends SuperTargetTypeImpl implements arduinoshe
 		switch (featureID) {
 			case SheildPackage.ARDUINOSHEILD__ASSIGNMENT_SPECIFICATION:
 				return ((InternalEList<?>)getAssignmentSpecification()).basicRemove(otherEnd, msgs);
+			case SheildPackage.ARDUINOSHEILD__ELECTRICAL_INTERFACES:
+				return basicSetElectricalInterfaces(null, msgs);
 			case SheildPackage.ARDUINOSHEILD__PORTS:
 				return basicSetPorts(null, msgs);
 		}
@@ -156,6 +214,8 @@ public class arduinosheildImpl extends SuperTargetTypeImpl implements arduinoshe
 		switch (featureID) {
 			case SheildPackage.ARDUINOSHEILD__ASSIGNMENT_SPECIFICATION:
 				return getAssignmentSpecification();
+			case SheildPackage.ARDUINOSHEILD__ELECTRICAL_INTERFACES:
+				return getElectricalInterfaces();
 			case SheildPackage.ARDUINOSHEILD__PORTS:
 				return getPorts();
 		}
@@ -175,6 +235,9 @@ public class arduinosheildImpl extends SuperTargetTypeImpl implements arduinoshe
 				getAssignmentSpecification().clear();
 				getAssignmentSpecification().addAll((Collection<? extends SuperAssignmentSpecificationType>)newValue);
 				return;
+			case SheildPackage.ARDUINOSHEILD__ELECTRICAL_INTERFACES:
+				setElectricalInterfaces((EletrcialInterfaces)newValue);
+				return;
 			case SheildPackage.ARDUINOSHEILD__PORTS:
 				setPorts((sheildPorts)newValue);
 				return;
@@ -193,6 +256,9 @@ public class arduinosheildImpl extends SuperTargetTypeImpl implements arduinoshe
 			case SheildPackage.ARDUINOSHEILD__ASSIGNMENT_SPECIFICATION:
 				getAssignmentSpecification().clear();
 				return;
+			case SheildPackage.ARDUINOSHEILD__ELECTRICAL_INTERFACES:
+				setElectricalInterfaces((EletrcialInterfaces)null);
+				return;
 			case SheildPackage.ARDUINOSHEILD__PORTS:
 				setPorts((sheildPorts)null);
 				return;
@@ -210,6 +276,8 @@ public class arduinosheildImpl extends SuperTargetTypeImpl implements arduinoshe
 		switch (featureID) {
 			case SheildPackage.ARDUINOSHEILD__ASSIGNMENT_SPECIFICATION:
 				return assignmentSpecification != null && !assignmentSpecification.isEmpty();
+			case SheildPackage.ARDUINOSHEILD__ELECTRICAL_INTERFACES:
+				return electricalInterfaces != null;
 			case SheildPackage.ARDUINOSHEILD__PORTS:
 				return ports != null;
 		}
@@ -229,6 +297,12 @@ public class arduinosheildImpl extends SuperTargetTypeImpl implements arduinoshe
 				default: return -1;
 			}
 		}
+		if (baseClass == SuperPowerType.class) {
+			switch (derivedFeatureID) {
+				case SheildPackage.ARDUINOSHEILD__ELECTRICAL_INTERFACES: return PowergridPackage.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES;
+				default: return -1;
+			}
+		}
 		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
 	}
 
@@ -242,6 +316,12 @@ public class arduinosheildImpl extends SuperTargetTypeImpl implements arduinoshe
 		if (baseClass == SuperIOHardwareType.class) {
 			switch (baseFeatureID) {
 				case TargetsPackage.SUPER_IO_HARDWARE_TYPE__ASSIGNMENT_SPECIFICATION: return SheildPackage.ARDUINOSHEILD__ASSIGNMENT_SPECIFICATION;
+				default: return -1;
+			}
+		}
+		if (baseClass == SuperPowerType.class) {
+			switch (baseFeatureID) {
+				case PowergridPackage.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES: return SheildPackage.ARDUINOSHEILD__ELECTRICAL_INTERFACES;
 				default: return -1;
 			}
 		}

@@ -334,6 +334,19 @@
    <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
       <!-- @generated ucof -->
       <factory
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/powergrid"
+            class="targets.powergrid.provider.PowergridItemProviderAdapterFactory"
+            supportedTypes=
+              "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
+               org.eclipse.emf.edit.provider.IStructuredItemContentProvider
+               org.eclipse.emf.edit.provider.ITreeItemContentProvider
+               org.eclipse.emf.edit.provider.IItemLabelProvider
+               org.eclipse.emf.edit.provider.IItemPropertySource"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
+      <!-- @generated ucof -->
+      <factory
             uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc"
             class="targets.RDC.provider.RDCItemProviderAdapterFactory"
             supportedTypes=
@@ -425,8 +438,8 @@
    <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
       <!-- @generated ucof -->
       <factory
-            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/powerrail"
-            class="targets.PowerRail.provider.PowerRailItemProviderAdapterFactory"
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidpowergrid"
+            class="targets.IntrepidPowerGrid.provider.IntrepidPowerGridItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider

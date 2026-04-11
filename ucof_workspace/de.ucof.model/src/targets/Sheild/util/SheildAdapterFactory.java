@@ -15,6 +15,7 @@ import targets.SuperHardwarePortType;
 import targets.SuperIOHardwareType;
 import targets.SuperTargetType;
 
+import targets.powergrid.SuperPowerType;
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
@@ -101,6 +102,10 @@ public class SheildAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseSuperIOHardwareType(SuperIOHardwareType object) {
 				return createSuperIOHardwareTypeAdapter();
+			}
+			@Override
+			public Adapter caseSuperPowerType(SuperPowerType object) {
+				return createSuperPowerTypeAdapter();
 			}
 			@Override
 			public Adapter caseSuperHardwarePortType(SuperHardwarePortType object) {
@@ -221,6 +226,20 @@ public class SheildAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSuperIOHardwareTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link targets.powergrid.SuperPowerType <em>Super Power Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see targets.powergrid.SuperPowerType
+	 * @generated
+	 */
+	public Adapter createSuperPowerTypeAdapter() {
 		return null;
 	}
 

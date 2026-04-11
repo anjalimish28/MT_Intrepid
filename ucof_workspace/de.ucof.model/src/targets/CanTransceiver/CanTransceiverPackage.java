@@ -161,13 +161,22 @@ public interface CanTransceiverPackage extends EPackage {
 	int SN65HVD230__PROJECT_NAME = TargetsPackage.SUPER_TARGET_TYPE__PROJECT_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Electrical Interfaces</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SN65HVD230__ELECTRICAL_INTERFACES = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Ports</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SN65HVD230__PORTS = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 0;
+	int SN65HVD230__PORTS = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>sn65hvd230</em>' class.
@@ -176,7 +185,7 @@ public interface CanTransceiverPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SN65HVD230_FEATURE_COUNT = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 1;
+	int SN65HVD230_FEATURE_COUNT = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>sn65hvd230</em>' class.

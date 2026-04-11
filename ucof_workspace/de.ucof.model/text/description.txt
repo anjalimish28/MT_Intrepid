@@ -21,6 +21,8 @@ Package targets <https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets>
 
   Class Targets -> SuperIdentifierType, SuperTrackingType
     Reference targetConfiguration : SuperTargetType<<0..*>>
+    Reference powerConnectionSet : PowerConnectionSet<<0..*>>
+    Reference electricalPowerGridSet : ElectricalPowerGridSet<<0..*>>
 
   Class SuperTargetType -> SuperIdentifierType, SuperTrackingType
     Attribute projectName : EString

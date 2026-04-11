@@ -1,0 +1,431 @@
+[comment encoding = UTF-8 /]
+[module ecore2html('http://www.eclipse.org/emf/2002/Ecore')/]
+
+[template public ecore2html(entryPoint : EPackage)]	
+[comment @main/]
+[let root : ecore::EPackage = self.getRootPackage(entryPoint)]
+[file (root.name + '_ecore_doc.html', false)]
+[root.printTableOfContents()/]
+		[root.renderEPackage(0)/]
+	</div>
+</body>
+</html>
+[/file]
+[/let]
+
+[/template]
+
+[template private printTableOfContents(r : EPackage)]
+<!DOCTYPE html>
+<html lang="en">
+<!-- ====================================================================== -->
+<!-- This documentation was automatically generated from an ecore model! -->
+<!-- Genrator by Philipp Chrysalidis 2025 -->
+<!-- ====================================================================== -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCOF Ecore Model Documentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+			/* Global page settings */
+			body {
+			    font-family: 'Inter', sans-serif;
+			    background-color: #f8f8f8;
+			    color: #333;
+			}
+			
+			.container {
+			    max-width: 1200px;
+			    margin: 0 auto;
+			    padding: 2rem;
+			}
+			
+			/* Header */
+			.header {
+			    background-color: #4a90e2;
+			    color: white;
+			    padding: 1.5rem;
+			    border-radius: 0.5rem;
+			    margin-bottom: 2rem;
+			    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			}
+			
+			.epackage {
+			    border: 2px solid #1a365d;
+			    padding: 1rem;
+			    margin: 1rem 0;
+			    border-radius: 0.5rem;
+			    background-color: #f0f4f8;
+			}
+			
+			/* Headings inside epackage */
+			.epackage > h2 {
+			    font-size: 1.875rem;
+			    font-weight: 700;
+			    color: #1a365d;
+			    border-bottom: 3px solid #1a365d;
+			    padding-bottom: 0.5rem;
+			    margin-bottom: 1rem;
+			}
+			
+			.epackage > h3 {
+			    font-size: 1.5rem;
+			    font-weight: 600;
+			    color: #3182ce;
+			    border-bottom: 2px solid #3182ce;
+			    padding-bottom: 0.25rem;
+			    margin-bottom: 0.75rem;
+			}
+			.epackage > h4 {
+			    font-size: 1.25rem;
+			    font-weight: 500;
+			    color: #4a90e2;  /* lighter blue */
+			    border-bottom: 1px solid #4a90e2;
+			    padding-bottom: 0.25rem;
+			    margin-bottom: 0.5rem;
+			}
+			
+			.epackage > h5 {
+			    font-size: 1rem;
+			    font-weight: 500;
+			    color: #63b3ed;  /* even lighter blue */
+			    border-bottom: 1px solid #63b3ed;
+			    padding-bottom: 0.2rem;
+			    margin-bottom: 0.4rem;
+			}
+		
+			/* EClass styling */
+			.eclass-card {
+			    border: 1px solid #333; /* black border */
+			    border-radius: 0.5rem;
+			    background-color: white;
+			    padding: 1rem;
+			    margin-bottom: 1rem;
+			}
+			
+			.eclass-card > h4, .eclass-title {
+			    font-weight: bold;
+			    font-size: 1.25rem;
+			    color: #000;
+			    margin-bottom: 0.5rem;
+			}
+			
+			/* Tables inside EClass */
+			.eclass-table {
+			    width: 100%;
+			    border-collapse: collapse;
+			    margin-bottom: 1rem;
+			}
+			
+			.eclass-table th, .eclass-table td {
+			    border: 1px solid #ccc;
+			    padding: 0.5rem;
+			    text-align: left;
+			}
+			
+			.eclass-table th {
+			    background-color: #f0f0f0;
+			    font-weight: 600;
+			}
+			
+			.eclass-table td a {
+			    text-decoration: underline;
+			    color: black;
+			}
+			
+			.eclass-table td a:hover {
+			    color: #4a90e2;
+			}
+			
+			/* Lists */
+			ul {
+			    list-style-type: disc;
+			    margin-left: 1.25rem;
+			    margin-bottom: 0.5rem;
+			}
+			
+			ol {
+			    list-style-type: decimal;
+			    margin-left: 1.25rem;
+			    margin-bottom: 0.5rem;
+			}
+			
+			li {
+			    margin-bottom: 0.25rem;
+			}
+			
+			/* Links */
+			a {
+			    color: #4a90e2;
+			    text-decoration: none;
+			}
+			
+			a:hover {
+			    text-decoration: underline;
+			}
+			
+			/* Tables in general */
+			table {
+			    width: 100%;
+			    border-collapse: collapse;
+			    margin-top: 1rem;
+			    margin-bottom: 1rem;
+			}
+			
+			th, td {
+			    border: 1px solid #e2e8f0;
+			    padding: 0.75rem;
+			    text-align: left;
+			}
+			
+			th {
+			    background-color: #edf2f7;
+			    font-weight: 600;
+			    color: #2d3748;
+			}
+			
+			/* Table of contents */
+			.toc ul {
+			    list-style-type: none;
+			    padding-left: 0;
+			}
+			
+			.toc ul ul {
+			    padding-left: 1.5rem;
+			}
+		</style>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1 class="text-4xl font-bold text-center">[r.name.toUpper()/] Ecore Model Documentation</h1>
+			<p class="text-center mt-2">Comprehensive documentation for the `[r.name/].ecore` model.</p>
+		</header>
+		<section id="table-of-contents" class="card toc">
+			<h2 class="section-title">Table of Contents</h2>
+			<ul>
+				[r.generateIndex()/]
+			</ul>
+		</section>
+[/template]
+
+[template private generateIndex(r : EPackage)]
+[comment Write the line for the current package /]
+<li><a href="#[r.eClass().name.toLower()/]-[r.name.toLower()/]">[r.eClass().name/]: [r.name/]</a>
+[comment Check if there are classifiers or subpackages /]
+[if not r.eClassifiers->isEmpty() or not r.eSubpackages->isEmpty()]
+	<ul>
+	[comment Write lines for classifiers /]
+    [for (c : ecore::EClassifier | r.eClassifiers)]
+		<li><a href="#[c.eClass().name.toLower()/]-[c.name.toLower()/]">[c.eClass().name/]: [c.name/]</a></li>
+    [/for]
+    [comment Recursively write lines for subpackages /]
+    [for (sub : ecore::EPackage | r.eSubpackages)]
+    	[self.generateIndex(sub)/]
+    [/for]
+	</ul>
+[/if]
+</li>
+[/template]
+
+[template public renderEPackage(p : EPackage, level : Integer)]
+<section id="[makePkgId(p)/]" class="epackage">
+	<!-- Package heading -->
+	<[headingTag(level)/] class="[headingClass(level)/]">EPackage: [p.name/]</[headingTag(level)/]>
+	<!-- Package details -->
+	<ul>
+		<li><strong>NS URI:</strong> [p.nsURI/]</li>
+		<li><strong>NS Prefix:</strong> [p.nsPrefix/]</li>
+		[p.getDocumentation()/]
+	</ul>
+	[if p.eSubpackages->notEmpty()]
+	<!-- Subpackages -->
+	<[headingTag(level+1)/] class="[headingClass(level+1)/]">ESubpackages</[headingTag(level+1)/]>
+		[for (sp : EPackage | p.eSubpackages)]
+		[sp.renderEPackage(level+1)/]
+		[/for]
+	[/if]
+    [if p.eClassifiers->notEmpty()]
+	<!-- Classifiers -->
+	<[headingTag(level+1)/] class="[headingClass(level+1)/]">EClassifiers</[headingTag(level+1)/]>
+	[for (c : EClassifier | p.eClassifiers)]
+	<section class="eclass-card">
+		[c.renderClassifier(level+1)/]
+	</section>
+	[/for]
+	[/if]
+</section>
+[/template]
+
+[template public renderClassifier(c : EClassifier, level : Integer)]
+[comment all in one line to surpress new line/]
+[if c.oclIsTypeOf(EClass)][c.oclAsType(EClass).renderEClass(level)/][elseif c.oclIsTypeOf(EDataType)][c.oclAsType(EDataType).renderEDataType(level)/][elseif c.oclIsTypeOf(EEnum)][c.oclAsType(EEnum).renderEEnum(level)/][/if]
+[/template]
+
+[template private renderEClass(c : EClass, level : Integer)]
+<div class="eclass-card">
+	<[headingTag(level)/] class="[headingClass(level)/] eclass-title" id="[makeId(c)/]">
+		[c.name/][if c.abstract] (Abstract)[/if]
+	</[headingTag(level)/]>
+    [if c.eSuperTypes->notEmpty()]
+	<!-- Supertypes Table -->
+	<table class="eclass-table">
+		<thead>
+			<tr><th colspan="1">Supertypes</th></tr>
+		</thead>
+		<tbody>
+		[for (s : EClass | c.eSuperTypes)]
+			<tr><td><a href="#[makeId(s)/]" class="text-black underline">[s.name/]</a></td></tr>
+		[/for]
+		</tbody>
+	</table>
+    [/if]
+    [if c.eStructuralFeatures->select(f | not f.oclIsKindOf(EReference))->notEmpty()]
+	<!-- Features Table -->
+	<table class="eclass-table">
+		<thead>
+			<tr>
+				<th>Feature</th>
+				<th>Type</th>
+				<th>Documentation</th>
+			</tr>
+		</thead>
+		<tbody>
+		[for (f : EStructuralFeature | c.eStructuralFeatures->select(f | not f.oclIsKindOf(EReference)))]
+			<tr>
+				<td>[f.name/]</td>
+				<td>[f.eType.name/]</td>
+				<td>[f.getFeatureDoc()/]</td>
+			</tr>
+		[/for]
+		</tbody>
+	</table>
+	[/if]
+    [if c.eStructuralFeatures->select(f | f.oclIsKindOf(EReference))->notEmpty()]
+    <!-- References Table -->
+	<table class="eclass-table">
+		<thead>
+			<tr>
+				<th>Reference</th>
+				<th>Type</th>
+				<th>Multiplicity</th>
+			</tr>
+		</thead>
+		<tbody>
+		[for (r : EReference | c.eStructuralFeatures->select(f | f.oclIsKindOf(EReference))->collect(f | f.oclAsType(EReference)))]
+			<tr>
+				<td>[r.name/]</td>
+				<td><a href="#[makeId(r.eType)/]">[r.eType.name/]</a></td>
+				<td>[r.lowerBound/]..[r.upperBound/]</td>
+			</tr>
+		[/for]
+		</tbody>
+	</table>
+	[/if]
+</div>
+[/template]
+
+[template private renderEDataType(d : EDataType, level : Integer)]
+<div class="card">
+	<[headingTag(level)/] class="[headingClass(level)/] text-black" id="[makeId(d)/]">
+		[d.name/] (Instance Class: [d.instanceClassName/])
+	</[headingTag(level)/]>
+	<ul>
+	[for (a : EAnnotation | d.eAnnotations)]
+		[for (entry : EStringToStringMapEntry | a.details)]
+		<li>[toUpperFirst(entry.key)/]: [entry.value/] </li>
+		[/for]
+	[/for]
+	</ul>
+</div>
+[/template]
+
+[template private renderEEnum(e : EEnum, level : Integer)]
+<div class="card">
+	<[headingTag(level)/] class="[headingClass(level)/] text-black" id="[makeId(e)/]">
+		[e.name/] (Enum)
+	</[headingTag(level)/]>
+	<ul>
+	[comment Show annotations for the enum itself /]
+	[for (a : EAnnotation | e.eAnnotations)]
+		[for (entry : EStringToStringMapEntry | a.details)]
+		<li><strong>[toUpperFirst(entry.key)/]:</strong> [entry.value/]</li>
+		[/for]
+	[/for]
+	[comment List all enum literals /]
+	[for (lit : EEnumLiteral | e.eLiterals)]
+		<li>[lit.value/] = [lit.literal/]</li>
+		[comment Optional: show literal annotations /]
+		[for (a : EAnnotation | lit.eAnnotations)]
+			[for (entry : EStringToStringMapEntry | a.details)]
+		<li><em>[toUpperFirst(entry.key)/]:</em> [entry.value/]</li>
+			[/for]
+		[/for]
+	[/for]
+	</ul>
+</div>
+[/template]
+
+[template private getDocumentation(e : ENamedElement)]
+[comment all inline to prevent creation of unwanted newlines/]
+[for (a : EAnnotation | e.eAnnotations)][for (entry : EStringToStringMapEntry | a.details)][if entry.key = 'documentation']<li><strong>Documentation:</strong> [entry.value/]</li>[/if][/for][/for]
+[/template]
+
+[template private getFeatureDoc(e : EStructuralFeature)]
+[for (a : EAnnotation | e.eAnnotations)]
+    [for (entry : EStringToStringMapEntry | a.details)]
+		[if entry.key = 'documentation']
+[entry.value/]
+		[/if]
+    [/for]
+[/for]
+[/template]
+
+[query public getRootPackage(p : ecore::EPackage) : ecore::EPackage =
+    if p.eContainer().oclIsUndefined() 
+    then p 
+    else getRootPackage(p.eContainer().oclAsType(ecore::EPackage)) 
+    endif
+/]
+
+[query public makeId(e : ENamedElement) : String =
+  e.eClass().name.toLower() + '-' + e.name.toLower()
+/]
+
+
+[query public makePkgId(p : EPackage) : String =
+  'epackage-' + p.name.toLower().replaceAll(' ','-')
+/]
+
+[query public headingTag(level : Integer) : String =
+  if level = 0 then 'h2'
+  else if level = 1 then 'h3'
+  else if level = 2 then 'h4'
+  else 'h5' endif endif endif
+/]
+
+[query public headingClass(level : Integer) : String =
+  if level = 0 then 'section-title'
+  else if level = 1 then 'subsection-title'
+  else 'subsubsection-title' endif endif
+/]
+
+[query public getAnnotationValue(e : ENamedElement, key : String) : String =
+  let ann : Sequence(EAnnotation) = e.eAnnotations->select(a | a.source = 'http://www.eclipse.org/emf/2002/GenModel')->asSequence()
+  in if ann->notEmpty() then
+       let details : Sequence(EStringToStringMapEntry) = ann->first().details->asSequence()
+       in if details->exists(d | d.key = key) then
+            details->select(d | d.key = key)->first().value
+          else
+            ''
+          endif
+     else
+       ''
+     endif
+/]
+
+[query public toUpperFirst(s : String) : String =
+  s.substring(1,1).toUpper() + s.substring(2, s.size())
+/]

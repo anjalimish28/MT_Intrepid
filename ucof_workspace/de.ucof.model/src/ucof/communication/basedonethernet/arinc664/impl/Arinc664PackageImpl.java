@@ -17,16 +17,18 @@ import targets.CanTransceiver.CanTransceiverPackage;
 import targets.CanTransceiver.impl.CanTransceiverPackageImpl;
 import targets.HallSensor.HallSensorPackage;
 import targets.HallSensor.impl.HallSensorPackageImpl;
+import targets.IntrepidPowerGrid.IntrepidPowerGridPackage;
+import targets.IntrepidPowerGrid.impl.IntrepidPowerGridPackageImpl;
 import targets.MotorController.MotorControllerPackage;
 import targets.MotorController.impl.MotorControllerPackageImpl;
-import targets.PowerRail.PowerRailPackage;
-import targets.PowerRail.impl.PowerRailPackageImpl;
 import targets.RDC.RDCPackage;
 import targets.RDC.impl.RDCPackageImpl;
 import targets.Sheild.SheildPackage;
 import targets.Sheild.impl.SheildPackageImpl;
 import targets.TargetsPackage;
 import targets.impl.TargetsPackageImpl;
+import targets.powergrid.PowergridPackage;
+import targets.powergrid.impl.PowergridPackageImpl;
 import ucof.UcofPackage;
 
 import ucof.assignments.AssignmentsPackage;
@@ -266,6 +268,8 @@ public class Arinc664PackageImpl extends EPackageImpl implements Arinc664Package
 		DatabasePackageImpl theDatabasePackage = (DatabasePackageImpl)(registeredPackage instanceof DatabasePackageImpl ? registeredPackage : DatabasePackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TargetsPackage.eNS_URI);
 		TargetsPackageImpl theTargetsPackage = (TargetsPackageImpl)(registeredPackage instanceof TargetsPackageImpl ? registeredPackage : TargetsPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PowergridPackage.eNS_URI);
+		PowergridPackageImpl thePowergridPackage = (PowergridPackageImpl)(registeredPackage instanceof PowergridPackageImpl ? registeredPackage : PowergridPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(RDCPackage.eNS_URI);
 		RDCPackageImpl theRDCPackage = (RDCPackageImpl)(registeredPackage instanceof RDCPackageImpl ? registeredPackage : RDCPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ADCPackage.eNS_URI);
@@ -280,8 +284,8 @@ public class Arinc664PackageImpl extends EPackageImpl implements Arinc664Package
 		HallSensorPackageImpl theHallSensorPackage = (HallSensorPackageImpl)(registeredPackage instanceof HallSensorPackageImpl ? registeredPackage : HallSensorPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CCDPUPackage.eNS_URI);
 		CCDPUPackageImpl theCCDPUPackage = (CCDPUPackageImpl)(registeredPackage instanceof CCDPUPackageImpl ? registeredPackage : CCDPUPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PowerRailPackage.eNS_URI);
-		PowerRailPackageImpl thePowerRailPackage = (PowerRailPackageImpl)(registeredPackage instanceof PowerRailPackageImpl ? registeredPackage : PowerRailPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(IntrepidPowerGridPackage.eNS_URI);
+		IntrepidPowerGridPackageImpl theIntrepidPowerGridPackage = (IntrepidPowerGridPackageImpl)(registeredPackage instanceof IntrepidPowerGridPackageImpl ? registeredPackage : IntrepidPowerGridPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theArinc664Package.createPackageContents();
@@ -311,6 +315,7 @@ public class Arinc664PackageImpl extends EPackageImpl implements Arinc664Package
 		theAssignmentsPackage.createPackageContents();
 		theDatabasePackage.createPackageContents();
 		theTargetsPackage.createPackageContents();
+		thePowergridPackage.createPackageContents();
 		theRDCPackage.createPackageContents();
 		theADCPackage.createPackageContents();
 		theSheildPackage.createPackageContents();
@@ -318,7 +323,7 @@ public class Arinc664PackageImpl extends EPackageImpl implements Arinc664Package
 		theCanTransceiverPackage.createPackageContents();
 		theHallSensorPackage.createPackageContents();
 		theCCDPUPackage.createPackageContents();
-		thePowerRailPackage.createPackageContents();
+		theIntrepidPowerGridPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theArinc664Package.initializePackageContents();
@@ -348,6 +353,7 @@ public class Arinc664PackageImpl extends EPackageImpl implements Arinc664Package
 		theAssignmentsPackage.initializePackageContents();
 		theDatabasePackage.initializePackageContents();
 		theTargetsPackage.initializePackageContents();
+		thePowergridPackage.initializePackageContents();
 		theRDCPackage.initializePackageContents();
 		theADCPackage.initializePackageContents();
 		theSheildPackage.initializePackageContents();
@@ -355,7 +361,7 @@ public class Arinc664PackageImpl extends EPackageImpl implements Arinc664Package
 		theCanTransceiverPackage.initializePackageContents();
 		theHallSensorPackage.initializePackageContents();
 		theCCDPUPackage.initializePackageContents();
-		thePowerRailPackage.initializePackageContents();
+		theIntrepidPowerGridPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theArinc664Package.freeze();

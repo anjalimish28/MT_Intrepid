@@ -158,13 +158,31 @@ public interface TargetsPackage extends EPackage {
 	int TARGETS__TARGET_CONFIGURATION = EtypesPackage.SUPER_IDENTIFIER_TYPE_FEATURE_COUNT + 7;
 
 	/**
+	 * The feature id for the '<em><b>Power Connection Set</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TARGETS__POWER_CONNECTION_SET = EtypesPackage.SUPER_IDENTIFIER_TYPE_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Electrical Power Grid Set</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TARGETS__ELECTRICAL_POWER_GRID_SET = EtypesPackage.SUPER_IDENTIFIER_TYPE_FEATURE_COUNT + 9;
+
+	/**
 	 * The number of structural features of the '<em>Targets</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TARGETS_FEATURE_COUNT = EtypesPackage.SUPER_IDENTIFIER_TYPE_FEATURE_COUNT + 8;
+	int TARGETS_FEATURE_COUNT = EtypesPackage.SUPER_IDENTIFIER_TYPE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of operations of the '<em>Targets</em>' class.
@@ -1134,6 +1152,28 @@ public interface TargetsPackage extends EPackage {
 	EReference getTargets_TargetConfiguration();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link targets.Targets#getPowerConnectionSet <em>Power Connection Set</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Power Connection Set</em>'.
+	 * @see targets.Targets#getPowerConnectionSet()
+	 * @see #getTargets()
+	 * @generated
+	 */
+	EReference getTargets_PowerConnectionSet();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link targets.Targets#getElectricalPowerGridSet <em>Electrical Power Grid Set</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Electrical Power Grid Set</em>'.
+	 * @see targets.Targets#getElectricalPowerGridSet()
+	 * @see #getTargets()
+	 * @generated
+	 */
+	EReference getTargets_ElectricalPowerGridSet();
+
+	/**
 	 * Returns the meta object for class '{@link targets.SuperTargetType <em>Super Target Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1407,6 +1447,22 @@ public interface TargetsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference TARGETS__TARGET_CONFIGURATION = eINSTANCE.getTargets_TargetConfiguration();
+
+		/**
+		 * The meta object literal for the '<em><b>Power Connection Set</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TARGETS__POWER_CONNECTION_SET = eINSTANCE.getTargets_PowerConnectionSet();
+
+		/**
+		 * The meta object literal for the '<em><b>Electrical Power Grid Set</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TARGETS__ELECTRICAL_POWER_GRID_SET = eINSTANCE.getTargets_ElectricalPowerGridSet();
 
 		/**
 		 * The meta object literal for the '{@link targets.impl.SuperTargetTypeImpl <em>Super Target Type</em>}' class.

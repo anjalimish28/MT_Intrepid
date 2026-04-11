@@ -20,6 +20,8 @@ import targets.HallSensor.HallSensorFactory;
 import targets.HallSensor.HallSensorPackage;
 import targets.HallSensor.mts360;
 
+import targets.powergrid.PowergridFactory;
+import targets.powergrid.PowergridPackage;
 import targets.provider.SuperTargetTypeItemProvider;
 
 import ucof.provider.UcofEditPlugin;
@@ -68,6 +70,7 @@ public class mts360ItemProvider extends SuperTargetTypeItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
+			childrenFeatures.add(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES);
 			childrenFeatures.add(HallSensorPackage.Literals.MTS360__PORTS);
 		}
 		return childrenFeatures;
@@ -124,6 +127,7 @@ public class mts360ItemProvider extends SuperTargetTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(mts360.class)) {
+			case HallSensorPackage.MTS360__ELECTRICAL_INTERFACES:
 			case HallSensorPackage.MTS360__PORTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -141,6 +145,11 @@ public class mts360ItemProvider extends SuperTargetTypeItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES,
+				 PowergridFactory.eINSTANCE.createEletrcialInterfaces()));
 
 		newChildDescriptors.add
 			(createChildParameter

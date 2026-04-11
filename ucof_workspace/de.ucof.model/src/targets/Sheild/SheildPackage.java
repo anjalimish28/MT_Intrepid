@@ -170,13 +170,22 @@ public interface SheildPackage extends EPackage {
 	int ARDUINOSHEILD__ASSIGNMENT_SPECIFICATION = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Electrical Interfaces</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARDUINOSHEILD__ELECTRICAL_INTERFACES = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 1;
+
+	/**
 	 * The feature id for the '<em><b>Ports</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ARDUINOSHEILD__PORTS = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 1;
+	int ARDUINOSHEILD__PORTS = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>arduinosheild</em>' class.
@@ -185,7 +194,7 @@ public interface SheildPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARDUINOSHEILD_FEATURE_COUNT = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 2;
+	int ARDUINOSHEILD_FEATURE_COUNT = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of operations of the '<em>arduinosheild</em>' class.

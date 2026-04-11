@@ -23,11 +23,11 @@ import targets.CCDPU.CCDPUFactory;
 import targets.CanTransceiver.CanTransceiverFactory;
 import targets.HallSensor.HallSensorFactory;
 import targets.MotorController.MotorControllerFactory;
-import targets.PowerRail.PowerRailFactory;
 import targets.RDC.RDCFactory;
 import targets.Sheild.SheildFactory;
 import targets.Targets;
 import targets.TargetsPackage;
+import targets.powergrid.PowergridFactory;
 import ucof.common.etypes.EtypesPackage;
 import ucof.common.etypes.provider.SuperIdentifierTypeItemProvider;
 import ucof.provider.UcofEditPlugin;
@@ -239,6 +239,8 @@ public class TargetsItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(TargetsPackage.Literals.TARGETS__TARGET_CONFIGURATION);
+			childrenFeatures.add(TargetsPackage.Literals.TARGETS__POWER_CONNECTION_SET);
+			childrenFeatures.add(TargetsPackage.Literals.TARGETS__ELECTRICAL_POWER_GRID_SET);
 		}
 		return childrenFeatures;
 	}
@@ -304,6 +306,8 @@ public class TargetsItemProvider
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case TargetsPackage.TARGETS__TARGET_CONFIGURATION:
+			case TargetsPackage.TARGETS__POWER_CONNECTION_SET:
+			case TargetsPackage.TARGETS__ELECTRICAL_POWER_GRID_SET:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -358,8 +362,13 @@ public class TargetsItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(TargetsPackage.Literals.TARGETS__TARGET_CONFIGURATION,
-				 PowerRailFactory.eINSTANCE.createpowerRailTarget()));
+				(TargetsPackage.Literals.TARGETS__POWER_CONNECTION_SET,
+				 PowergridFactory.eINSTANCE.createPowerConnectionSet()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TargetsPackage.Literals.TARGETS__ELECTRICAL_POWER_GRID_SET,
+				 PowergridFactory.eINSTANCE.createElectricalPowerGridSet()));
 	}
 
 	/**

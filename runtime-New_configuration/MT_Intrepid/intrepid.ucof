@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<de.ucof.model:Platform xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.ucof.model="https://gitlab.com/ucof/ucof.de/model/v001/ucof" xmlns:de.ucof.model.assignments="https://gitlab.com/ucof/ucof.de/model/v001/ucof/assignments" xmlns:de.ucof.model.common.etypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/common/etypes" xmlns:de.ucof.model.communication="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication" xmlns:de.ucof.model.communication.arinc825="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/arinc825" xmlns:de.ucof.model.communication.i2c="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/i2c" xmlns:de.ucof.model.devices.devicetypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/devicetypes" xmlns:de.ucof.model.targets="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets" xmlns:de.ucof.model.targets.adc="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/adc" xmlns:de.ucof.model.targets.cantransceiver="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cantransceiver" xmlns:de.ucof.model.targets.ccdpu="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/ccdpu" xmlns:de.ucof.model.targets.hallsensor="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/hallsensor" xmlns:de.ucof.model.targets.motorcontroller="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/motorcontroller" xmlns:de.ucof.model.targets.powerrail="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/powerrail" xmlns:de.ucof.model.targets.rdc="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc" xmlns:de.ucof.model.targets.sheild="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/sheild" id="1e21f09c-95ba-49f7-9f34-d46e434da93d">
+<de.ucof.model:Platform xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.ucof.model="https://gitlab.com/ucof/ucof.de/model/v001/ucof" xmlns:de.ucof.model.assignments="https://gitlab.com/ucof/ucof.de/model/v001/ucof/assignments" xmlns:de.ucof.model.common.etypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/common/etypes" xmlns:de.ucof.model.communication="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication" xmlns:de.ucof.model.communication.arinc825="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/arinc825" xmlns:de.ucof.model.communication.i2c="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/i2c" xmlns:de.ucof.model.devices.devicetypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/devicetypes" xmlns:de.ucof.model.targets="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets" xmlns:de.ucof.model.targets.adc="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/adc" xmlns:de.ucof.model.targets.cantransceiver="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cantransceiver" xmlns:de.ucof.model.targets.ccdpu="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/ccdpu" xmlns:de.ucof.model.targets.hallsensor="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/hallsensor" xmlns:de.ucof.model.targets.intrepidpowergrid="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidpowergrid" xmlns:de.ucof.model.targets.motorcontroller="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/motorcontroller" xmlns:de.ucof.model.targets.rdc="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc" xmlns:de.ucof.model.targets.sheild="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/sheild" id="1e21f09c-95ba-49f7-9f34-d46e434da93d">
   <devices>
     <device xsi:type="de.ucof.model.devices.devicetypes:IOModule" id="86e9d0c4-5eb4-4f52-9ba0-08415d300cac" name="RDC" implementationType="Hardware">
       <ports>
@@ -18,12 +18,7 @@
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="add53a49-b1e5-4379-9bee-d1372ad7cd2f" name="SE2_Speed_PWM" portDirection="Out"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="ce213a64-e14b-45ec-8e97-795ae7514a91" name="ADDR_1" portDirection="Out"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="0c0bc0a6-0282-43d9-ae28-79b8cb7e58c4" name="ADDR_2" portDirection="Out"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="3f32e418-3ebf-4695-8bbe-225753425443" name="GND" portDirection="In"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="d50a7140-bf46-4a0a-bfa9-5a5d0b7a724a" name="3V3" portDirection="In"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="2c2b5c9a-12ae-4cd7-b27a-bf4b573141c4" name="5V" portDirection="In"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="1e7352c5-fb5c-4982-8db2-678e1c22dfeb" name="Vin" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="93b69bef-79c3-47c3-876b-9f440c521c9b" name="RESET" portDirection="InOut"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="751fd6b8-0562-48be-8057-7ab399a598c0" name="Aref" portDirection="Out"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="016f2ed1-0b88-4d79-a0d6-afb3ad6be038" name="A0" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="4bb731d2-f2c4-4633-966d-99b37f5c5582" name="A1" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="9eb44911-ef36-4407-85a0-a060d18a4f70" name="A2" portDirection="In"/>
@@ -41,8 +36,6 @@
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="a65dd2c5-021a-41d0-b246-1e37a330a4b5" name="SDA" portDirection="InOut"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="f7a90ca3-6cc6-4954-bb4b-4994e0f52f5d" name="ADDR" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="8fc68015-27e0-4370-a83f-636235ec8957" name="ALERT" portDirection="Out"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="1b66400f-e5be-4235-ae80-b1c5f2b1889d" name="GND" portDirection="In"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="e2c1667c-d764-4a4d-9f1b-3d3995ed9ccb" name="VDD" portDirection="In"/>
       </ports>
     </device>
     <device xsi:type="de.ucof.model.devices.devicetypes:Peripheral" id="e08b6627-4d91-4348-88d3-075808218d15" name="ADC_Right" implementationType="Hardware" peripheralType="ADC">
@@ -55,8 +48,6 @@
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="ff98b027-920f-4c06-8b9d-2b224e32ffea" name="SCL" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="78b3b8e8-a0e0-4d95-9366-d5ed486c9c84" name="ADDR" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="c30ffe04-9c18-4a8a-a1f9-be014216eec6" name="ALERT" portDirection="Out"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="9e2dc1fb-181c-4de9-a39f-2a57d6c29df6" name="GND" portDirection="In"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="6693b82b-c338-4cec-b6a1-dab4f648b4eb" name="VDD" portDirection="In"/>
       </ports>
     </device>
     <device xsi:type="de.ucof.model.devices.devicetypes:IOModule" id="fee6700f-14b3-432c-bf01-128a57b543a6" name="SHEILD" implementationType="Hardware">
@@ -80,15 +71,10 @@
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="9dda890b-cfe4-420d-a488-cedf070e401e" name="ADDR_1" portDirection="Out"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="a1bb9fe9-d6e1-4e04-8999-f96da74e43c8" name="ADDR_2" portDirection="Out"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="4c8b9700-3629-42f1-9e43-363273a2daac" name="RESET" portDirection="InOut"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="d3cde70c-0693-4037-83cb-ba8b0489860d" name="3.3V" portDirection="Out"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="81ec4eb1-313e-49c2-9a2d-e9259b691c60" name="5V" portDirection="In"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="15b8f4ef-4a46-44d3-b599-59069edc888e" name="GND" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="30e75fda-6e86-4e3f-a347-dde33b0bcc93" name="SW_1" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="2babe0f5-5f38-4d81-b097-8907e89dd153" name="SW_2" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="5d21f4fa-910b-4a32-ba08-0ad42c2345e4" name="SW_3" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="21184e4c-b9e9-40d3-ac12-682d4b76be9f" name="SW_4" portDirection="In"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="2783b877-0089-4b04-aa68-821fc2390a90" name="Aref" portDirection="In"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="dd5bf6df-3d38-47f9-aea5-a3055feb1608" name="Vin" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="6e5117ea-5d60-4d40-8342-91fb5e599458" name="A0" portDirection="Out"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="5553b734-8d1b-4cf6-8d83-7740f18fac5b" name="A1" portDirection="Out"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="4b806264-6bde-4ca1-af30-a831ae0280c1" name="A2" portDirection="Out"/>
@@ -105,8 +91,6 @@
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="fd267fce-041b-4175-a97d-cc2cd2ad121d" name="DigIN/OUT 3" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="be21ee39-74a9-4a20-ad71-33590b97e577" name="DigIN 2" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="9afa223a-20c9-49d2-bbb4-a87549dfb108" name="AnOUT 1" portDirection="Out"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="c3ef460b-c7d1-4e5e-b433-040b1241d24a" name="0 V" portDirection="In"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="4196b3db-0da4-493b-b1b8-eff340d19c95" name="+ V" portDirection="In"/>
       </ports>
     </device>
     <device xsi:type="de.ucof.model.devices.devicetypes:Peripheral" id="5fe5bd47-ecc0-43c7-a94a-2c0f370f514a" name="ESCON_2" implementationType="Hardware" peripheralType="Peripheral">
@@ -116,8 +100,6 @@
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="7ab806f8-e5cd-446c-9b17-02b49e0b721b" name="DigIN 2" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="916ef4c3-ce32-480c-832c-41284cab6150" name="AnOUT 1" portDirection="Out"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="81029f21-4c26-4ac6-a42e-5b278ca6736e" name="AnOUT 2" portDirection="Out"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="185fa9fb-2ea6-43c9-8290-bddb35a83267" name="0 V" portDirection="In"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="cc6b47c5-7b98-44c8-95b5-9404e5b098b7" name="+ V" portDirection="In"/>
       </ports>
     </device>
     <device xsi:type="de.ucof.model.devices.devicetypes:Peripheral" id="420fcbe6-3484-46f3-8cbf-73dae7fd4ca0" name="ESCON_3" implementationType="Hardware" peripheralType="Peripheral">
@@ -127,16 +109,12 @@
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="dc4f7444-0ae8-4553-b3ba-dc706da8f29d" name="DigIN 2" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="96c81c93-98bb-4acc-b1e4-1c6e7efd53b8" name="AnOUT 1" portDirection="Out"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="d8132c2c-300a-40da-a60f-7b014a73a410" name="AnOUT 2" portDirection="Out"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="4583276e-5afe-4eab-9867-62b728871717" name="0 V" portDirection="In"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="17ff6111-646c-4834-8f0f-f40dc19f65f9" name="+ V" portDirection="In"/>
       </ports>
     </device>
     <device xsi:type="de.ucof.model.devices.devicetypes:Peripheral" id="c2466dae-bd95-4617-8d2b-e7388979fb5f" name="CAN TRANSCEIVER" implementationType="Hardware">
       <ports>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="74e851f8-b051-4112-8764-a73b3ff55578" name="TX" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="be44a09a-7903-46c3-9084-15427c2ff896" name="RX" portDirection="Out"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="126b32a9-0a7c-465e-a913-0983e11c302e" name="VDD" portDirection="In"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="c8bc45a2-e717-41ea-8154-e01b165fd9e0" name="GND" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="0699dd9c-f426-4a88-9ed5-2788cc52a0cb" name="CANL" portDirection="InOut"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="ed7a4c2d-26b6-4e38-9a48-9085e0bf1c77" name="CANH" portDirection="InOut"/>
       </ports>
@@ -144,23 +122,13 @@
     <device xsi:type="de.ucof.model.devices.devicetypes:Peripheral" id="c556b4cc-cafe-4c67-bdd2-d11f0e5f9dd1" name="HALL SENSOR" implementationType="Hardware" peripheralType="Sensor">
       <ports>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="fb456831-f13f-45bb-940b-631ff02f81b0" name="SIGNAL" portDirection="Out"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="146e57eb-f845-4f11-b04e-5f3c17d1c580" name="VDD" portDirection="In"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="673b9392-56bb-40fa-90c2-2dbd2159817f" name="GND" portDirection="In"/>
       </ports>
     </device>
     <device xsi:type="de.ucof.model.devices.devicetypes:ComputingModule" id="abb8dd03-d7c5-44e7-ad4f-e0010f14b8bc" name="CCDPU" implementationType="Hardware" processorFamily="Arm® Cortex®-M4" vendor="Vorago Technologies" model="va41620">
       <ports name="PEB1">
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="a26ab63f-c577-432c-85bd-25e6185fca84" name="CANL" portDirection="InOut"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="5c1d22f2-9e1e-4e5d-97e5-e28ac1590e62" name="CANH" portDirection="InOut"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="3b395fee-81ae-443a-93f5-5e010b79852f" name="VCC" portDirection="In"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="0028cf6d-4a0d-4181-9f49-48fc07d9dd02" name="GND" portDirection="In"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="a18d4942-033c-4a1c-bcc9-29612aee3364" name="RESISTOR"/>
-      </ports>
-    </device>
-    <device xsi:type="de.ucof.model.devices.devicetypes:PowerRail" id="ca5616ad-5e42-42f4-9313-35be53767a2f" name="SUPPLY" implementationType="Hardware">
-      <ports name="SUPPLY">
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="585735aa-6f47-4613-96f5-219cac96b6ad" name="GND" portDirection="Out"/>
-        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" name="VDD" portDirection="Out"/>
       </ports>
     </device>
   </devices>
@@ -204,17 +172,6 @@
       <portToPortAssignment id="5868cf60-29a0-4c77-b242-606c8954c3dc" name="SE2_Direction_TO_ESCON3_IN2" creator="Mishra, Anjali" sourceID="0c724295-adb3-4e45-b62c-863ddf4af730" targetID="487c8435-6a5f-4524-a71f-3e8a8fb7aaa9"/>
       <portToPortAssignment id="bc34bc24-9fbf-45cd-86fe-675b5aad5a59" name="SE2_Speed_PWM_TO_ESCON3_IN3" creator="Mishra, Anjali" sourceID="add53a49-b1e5-4379-9bee-d1372ad7cd2f" targetID="62f30f19-6d68-4c47-bc99-da7441317621"/>
       <portToPortAssignment id="e36f6a51-67c0-47ae-a07c-c88a10f3d973" name="CAN_TX_Port_TO_TX" creator="Mishra, Anjali" sourceID="3be3654c-54eb-4446-8590-1382cef228a5" targetID="74e851f8-b051-4112-8764-a73b3ff55578"/>
-      <portToPortAssignment id="41a3f413-9d65-45b4-8c57-cfa72ccd49b7" name="0V_2_0 V" creator="Mishra, Anjali" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="c3ef460b-c7d1-4e5e-b433-040b1241d24a"/>
-      <portToPortAssignment id="6a8a6b4e-9b05-48f4-b8c0-a80679cec925" name="0V_2_0 V" creator="Mishra, Anjali" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="185fa9fb-2ea6-43c9-8290-bddb35a83267"/>
-      <portToPortAssignment id="a74fe4b7-e052-4b2d-9327-d90eb8b0be24" name="0V_2_0 V" creator="Mishra, Anjali" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="4583276e-5afe-4eab-9867-62b728871717"/>
-      <portToPortAssignment id="ca391228-a85d-4b7f-80a2-e46f9fa08c06" name="0V_2_GND" creator="Mishra, Anjali" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="673b9392-56bb-40fa-90c2-2dbd2159817f"/>
-      <portToPortAssignment id="26632a4b-f7c4-41ad-9896-2dac70ad9a96" name="0V_2_GND" creator="Mishra, Anjali" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="15b8f4ef-4a46-44d3-b599-59069edc888e"/>
-      <portToPortAssignment id="da8242d6-850c-4cfe-8b8e-f0baa6808061" name="0V_2_GND" creator="Mishra, Anjali" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="3f32e418-3ebf-4695-8bbe-225753425443"/>
-      <portToPortAssignment id="76e50274-e5af-48e0-b187-78274a31587b" name="0V_2_GND" creator="Mishra, Anjali" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="1b66400f-e5be-4235-ae80-b1c5f2b1889d"/>
-      <portToPortAssignment id="3b29ad73-b8c6-476a-8066-66d12c1e31b9" name="0V_2_GND" creator="Mishra, Anjali" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="9e2dc1fb-181c-4de9-a39f-2a57d6c29df6"/>
-      <portToPortAssignment id="999501cd-bd49-41a6-bafe-dc9e49351004" name="0V_2_GND" creator="Mishra, Anjali" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="c8bc45a2-e717-41ea-8154-e01b165fd9e0"/>
-      <portToPortAssignment id="8ceee3fb-132f-4850-a3eb-413dab5035bd" name="0V_2_GND" creator="Mishra, Anjali" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="0028cf6d-4a0d-4181-9f49-48fc07d9dd02"/>
-      <portToPortAssignment id="c7391a5b-fccb-496a-8c8a-4a3cfc01c40f" name="0V_2_ADDR" creator="Mishra, Anjali" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="f7a90ca3-6cc6-4954-bb4b-4994e0f52f5d"/>
       <portToPortAssignment id="a4236c59-16e4-43bc-8280-260b02a7fa89" name="SDA_2_SDA" creator="Mishra, Anjali" sourceID="a65dd2c5-021a-41d0-b246-1e37a330a4b5" targetID="a33398df-86bb-44c8-a525-21567440f52d"/>
       <portToPortAssignment id="47d2e5cc-48b9-4e2f-9e28-dc12d49cc234" name="SDA_2_SDA" creator="Mishra, Anjali" sourceID="cd61385f-5ee6-4116-9990-489504a39d7c" targetID="a33398df-86bb-44c8-a525-21567440f52d"/>
       <portToPortAssignment id="7faeba46-b693-4089-b0f4-86d700381685" name="SDA_2_I2C_SDA_Port" creator="Mishra, Anjali" sourceID="a33398df-86bb-44c8-a525-21567440f52d" targetID="1cadc165-b6be-481f-8d03-f9b48b7e7e21"/>
@@ -222,43 +179,18 @@
       <portToPortAssignment id="8a539f7f-5551-4345-80b2-c18f34ca09ca" name="SCL_2_SCL" creator="Mishra, Anjali" sourceID="7e73624e-5fd2-4b25-bb33-0be5b8a1ff1f" targetID="ff98b027-920f-4c06-8b9d-2b224e32ffea"/>
       <portToPortAssignment id="b86d25e9-4027-48e0-b8e6-a11e34594141" name="SCL_2_SCL" creator="Mishra, Anjali" sourceID="7e73624e-5fd2-4b25-bb33-0be5b8a1ff1f" targetID="99fe4dcf-59df-4888-ad09-1c19254fec99"/>
       <portToPortAssignment id="8e2b061b-b2bd-4328-9240-09ee27f5e1b7" name="SW_2_2_SW_1" creator="Mishra, Anjali" sourceID="2babe0f5-5f38-4d81-b097-8907e89dd153" targetID="30e75fda-6e86-4e3f-a347-dde33b0bcc93"/>
-      <portToPortAssignment id="1bab95f7-7097-4c7f-b1c1-cee6d624677f" name="0V_2_SW_2" creator="Mishra, Anjali" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="2babe0f5-5f38-4d81-b097-8907e89dd153"/>
-      <portToPortAssignment id="c412e41f-d64b-4ad0-bd1c-7a51e99e1636" name="0V_2_SW_1" creator="Mishra, Anjali" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="30e75fda-6e86-4e3f-a347-dde33b0bcc93"/>
       <portToPortAssignment id="e09f29fb-d8b7-45ca-8443-653805d495d8" name="ADDR_1_2_ADDR_1" creator="Mishra, Anjali" sourceID="ce213a64-e14b-45ec-8e97-795ae7514a91" targetID="9dda890b-cfe4-420d-a488-cedf070e401e"/>
       <portToPortAssignment id="9c276750-a7ce-4ceb-87c9-7535d25b8bd9" name="ADDR_2_2_ADDR_2" creator="Mishra, Anjali" sourceID="0c0bc0a6-0282-43d9-ae28-79b8cb7e58c4" targetID="a1bb9fe9-d6e1-4e04-8999-f96da74e43c8"/>
       <portToPortAssignment id="ec60390c-c102-46c9-87e7-40263cdc0709" name="ADDR_1_2_SW_3" creator="Mishra, Anjali" sourceID="9dda890b-cfe4-420d-a488-cedf070e401e" targetID="5d21f4fa-910b-4a32-ba08-0ad42c2345e4"/>
       <portToPortAssignment id="94874086-7af8-496a-a301-1fd89c8ed1c9" name="ADDR_2_2_SW_4" creator="Mishra, Anjali" sourceID="a1bb9fe9-d6e1-4e04-8999-f96da74e43c8" targetID="21184e4c-b9e9-40d3-ac12-682d4b76be9f"/>
-      <portToPortAssignment id="c6a0d026-f626-41c9-9bef-b42c10506642" name="CANH_2_CANH" creator="Mishra, Anjali" sourceID="5c1d22f2-9e1e-4e5d-97e5-e28ac1590e62" targetID="ed7a4c2d-26b6-4e38-9a48-9085e0bf1c77"/>
       <portToPortAssignment id="2d851c8b-5250-4dc7-8e9b-71c4f2a1d95f" name="CANL_2_CANL" creator="Mishra, Anjali" sourceID="a26ab63f-c577-432c-85bd-25e6185fca84" targetID="0699dd9c-f426-4a88-9ed5-2788cc52a0cb"/>
       <portToPortAssignment id="71ecfa7b-61c0-4a98-a200-f963c7084166" name="CANH_2_CANH" creator="Mishra, Anjali" sourceID="ed7a4c2d-26b6-4e38-9a48-9085e0bf1c77" targetID="5c1d22f2-9e1e-4e5d-97e5-e28ac1590e62"/>
-      <portToPortAssignment id="11f966ed-fdd8-4ca1-9044-513e0b31e2b8" name="CANL_2_CANL" creator="Mishra, Anjali" sourceID="0699dd9c-f426-4a88-9ed5-2788cc52a0cb" targetID="a26ab63f-c577-432c-85bd-25e6185fca84"/>
       <portToPortAssignment id="5ceea377-c257-4256-b3a0-59b8e1304628" name="RX_2_CAN_RX_Port" creator="Mishra, Anjali" sourceID="be44a09a-7903-46c3-9084-15427c2ff896" targetID="e98f493d-aec4-4eae-9385-6a07dc166d8d"/>
-      <portToPortAssignment id="b2abda81-991c-44f1-b217-ef7b731d9d77" name="I2C_SDA_Port_2_SDA" creator="Mishra, Anjali" sourceID="1cadc165-b6be-481f-8d03-f9b48b7e7e21" targetID="a33398df-86bb-44c8-a525-21567440f52d"/>
-      <portToPortAssignment id="c48cc6f1-7fb6-43c4-af6e-9f72f6d9c18c" name="RESET_TO_RESET" creator="Mishra, Anjali" sourceID="93b69bef-79c3-47c3-876b-9f440c521c9b" targetID="4c8b9700-3629-42f1-9e43-363273a2daac"/>
       <portToPortAssignment id="0bf31568-c26d-43e1-8572-00e1ff43f132" name="RESET_TO_RESET" creator="Mishra, Anjali" sourceID="4c8b9700-3629-42f1-9e43-363273a2daac" targetID="93b69bef-79c3-47c3-876b-9f440c521c9b"/>
-      <portToPortAssignment id="12801fee-1453-43e3-a069-eebd87febaf4" name="Aref_TO_Aref" creator="Mishra, Anjali" sourceID="751fd6b8-0562-48be-8057-7ab399a598c0" targetID="2783b877-0089-4b04-aa68-821fc2390a90"/>
       <portToPortAssignment id="46c78d43-7b62-4bbf-95b7-b78195800a0f" name="A0_TO_A0" creator="Mishra, Anjali" sourceID="6e5117ea-5d60-4d40-8342-91fb5e599458" targetID="016f2ed1-0b88-4d79-a0d6-afb3ad6be038"/>
       <portToPortAssignment id="4e1b204e-9799-48eb-8ddd-42f9f71a6234" name="A1_TO_A1" creator="Mishra, Anjali" sourceID="5553b734-8d1b-4cf6-8d83-7740f18fac5b" targetID="4bb731d2-f2c4-4633-966d-99b37f5c5582"/>
       <portToPortAssignment id="e845a155-8ca7-4062-826d-a2ed9c3ea035" name="A2_TO_A2" creator="Mishra, Anjali" sourceID="4b806264-6bde-4ca1-af30-a831ae0280c1" targetID="9eb44911-ef36-4407-85a0-a060d18a4f70"/>
       <portToPortAssignment id="697a217b-536f-41b5-936c-558642de3d34" name="A3_TO_A3" creator="Mishra, Anjali" sourceID="729d9ca2-8b58-4b12-a64d-87f8906a6761" targetID="053f912c-8097-4966-941e-80c32b8089c3"/>
-      <portToPortAssignment id="6904ea92-3508-4b1f-8d83-4aaeb8e271fb" name="VDD_TO_Vin" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="dd5bf6df-3d38-47f9-aea5-a3055feb1608"/>
-      <portToPortAssignment id="c198e8ae-ab93-4cd5-a4a9-b8d96f309533" name="VDD_TO_VDD" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="146e57eb-f845-4f11-b04e-5f3c17d1c580"/>
-      <portToPortAssignment id="d429f19b-d09a-49d7-862a-1da85d1c72d4" name="VDD_TO_+ V" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="4196b3db-0da4-493b-b1b8-eff340d19c95"/>
-      <portToPortAssignment id="4854f1cd-9ee7-429a-9356-78b4994c0e82" name="VDD_TO_+ V" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="cc6b47c5-7b98-44c8-95b5-9404e5b098b7"/>
-      <portToPortAssignment id="df7be759-fe7a-4dce-81b9-1cbf6d3b464a" name="VDD_TO_+ V" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="17ff6111-646c-4834-8f0f-f40dc19f65f9"/>
-      <portToPortAssignment id="2eaa324a-b836-41a5-b8a4-0e2cb5050c51" name="VDD_TO_Vin" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="1e7352c5-fb5c-4982-8db2-678e1c22dfeb"/>
-      <portToPortAssignment id="5340e6a8-9d2d-4ade-a5aa-029df77012ab" name="VDD_TO_VCC" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="3b395fee-81ae-443a-93f5-5e010b79852f"/>
-      <portToPortAssignment id="71762c6f-7e46-4f78-8478-c0c2589249f6" name="VDD_TO_5V" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="2c2b5c9a-12ae-4cd7-b27a-bf4b573141c4"/>
-      <portToPortAssignment id="59063b49-c235-42a6-9824-ca2c522465a2" name="VDD_TO_VDD" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="126b32a9-0a7c-465e-a913-0983e11c302e"/>
-      <portToPortAssignment id="2c54d94f-c4d7-497d-952b-0ac66e814a87" name="VDD_TO_3V3" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="d50a7140-bf46-4a0a-bfa9-5a5d0b7a724a"/>
-      <portToPortAssignment id="9f1112dc-0bf8-4244-a99c-d458338e194c" name="VDD_TO_ADDR" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="78b3b8e8-a0e0-4d95-9366-d5ed486c9c84"/>
-      <portToPortAssignment id="fcd29117-2c47-407e-ba1d-de296bcdfe80" name="VDD_TO_VDD" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="6693b82b-c338-4cec-b6a1-dab4f648b4eb"/>
-      <portToPortAssignment id="324d7627-e3b4-4bd8-a0b4-df32fb1284c5" name="VDD_TO_VDD" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="e2c1667c-d764-4a4d-9f1b-3d3995ed9ccb"/>
-      <portToPortAssignment id="ca30932d-0340-4c5d-987a-971fd022fe05" name="VDD_TO_3.3V" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="d3cde70c-0693-4037-83cb-ba8b0489860d"/>
-      <portToPortAssignment id="42af86f4-beff-4f2f-ae4e-7e632d90e66f" name="VDD_TO_5V" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="81ec4eb1-313e-49c2-9a2d-e9259b691c60"/>
-      <portToPortAssignment id="26dc4101-3c5a-4826-af9c-b9025e95fc50" name="R2_ON_VDD_TO_SDA" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="a33398df-86bb-44c8-a525-21567440f52d"/>
-      <portToPortAssignment id="cd50075c-dc36-43cd-8269-6e2b43665096" name="R1_ON_VDD_TO_SCL" creator="Mishra, Anjali" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="7e73624e-5fd2-4b25-bb33-0be5b8a1ff1f"/>
-      <portToPortAssignment id="c59ec441-2dc9-432b-b803-5a95e70517dc" name="GND_TO_SCREW0" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="f3c4c01a-af69-4316-86a4-b3b31d4fa39d"/>
       <portToPortAssignment id="9a6c78e6-b74d-48a6-8506-b6d5035635ed" name="D0_TO_D0" sourceID="a2677fc4-85ef-4c61-b915-21f7f0da35be" targetID="97a24e53-86c7-4c72-8a5f-d099ebb852bc"/>
       <portToPortAssignment id="ee339f40-54ad-465b-a34e-b4ead35e0d4b" name="D1_TO_D1" sourceID="d14ed658-9a80-444e-a34d-e26590029bcf" targetID="4fcde639-5976-44c0-9410-78666e957b93"/>
       <portToPortAssignment id="7ae852d5-aa82-4ae5-bff7-1fa42270d122" name="D5_TO_D5" sourceID="43bf281a-466e-4d36-9589-5b2576746fc1" targetID="f775ffe8-13af-49e8-ae8e-43bf40909cdd"/>
@@ -300,11 +232,6 @@
       <swPortToHWPortAssignment id="f4488112-2be6-46f0-b6ac-7546f9915183" name="RDC_A1" sourceID="4bb731d2-f2c4-4633-966d-99b37f5c5582" targetID="5fac1ec1-25e4-4f67-96fd-806c062042ee"/>
       <swPortToHWPortAssignment id="77e340a6-ba38-4544-837b-0e2d9f171d53" name="RDC_A2" sourceID="9eb44911-ef36-4407-85a0-a060d18a4f70" targetID="d67100a2-9ed1-48df-a245-924eae37866b"/>
       <swPortToHWPortAssignment id="17a620da-7d58-4de9-b8a0-1883795d20d3" name="RDC_A3" sourceID="053f912c-8097-4966-941e-80c32b8089c3" targetID="0da53268-431a-4138-ae82-6a9487d41dcc"/>
-      <swPortToHWPortAssignment id="d40eb13d-8a6c-43a1-8ad3-14c0f34187ec" name="RDC_3V3" sourceID="d50a7140-bf46-4a0a-bfa9-5a5d0b7a724a" targetID="64cd11d0-7201-466f-8909-5367969fa0b9"/>
-      <swPortToHWPortAssignment id="a1cfda6e-0ece-4c07-8016-0a17dea3e7ca" name="RDC_5V" sourceID="2c2b5c9a-12ae-4cd7-b27a-bf4b573141c4" targetID="cd646fb6-0373-4de2-be77-872bc2f32716"/>
-      <swPortToHWPortAssignment id="079ca1f9-a122-4edd-850a-796fb16452cd" name="RDC_Vin" sourceID="1e7352c5-fb5c-4982-8db2-678e1c22dfeb" targetID="4d955e1f-bf8e-4f9e-9033-b8faef13951c"/>
-      <swPortToHWPortAssignment id="c3f76f5f-061d-4c50-b6d2-e9a6aa9d25c8" name="RDC_GND" sourceID="3f32e418-3ebf-4695-8bbe-225753425443" targetID="ff622de2-3ca4-48cd-ad9f-bf4f963b1310"/>
-      <swPortToHWPortAssignment id="49f5a111-6819-43f8-9b94-89bfb108d06d" name="RDC_Aref_IOREF" sourceID="751fd6b8-0562-48be-8057-7ab399a598c0" targetID="1575c5f8-6243-4e73-a432-ad495b9d5c7f"/>
       <swPortToHWPortAssignment id="720c4eaf-1763-4404-8125-67a61eed2c47" name="RDC_RESET_NRST" sourceID="93b69bef-79c3-47c3-876b-9f440c521c9b" targetID="b8047673-2bdf-4497-9c80-f37b0f5de476"/>
       <swPortToHWPortAssignment id="c93c9e98-a87c-4fdd-8a31-f98eb3b23598" name="SHIELD_SDA_A4" sourceID="a33398df-86bb-44c8-a525-21567440f52d" targetID="0704abc2-066a-4b0a-b65a-cc501cb50c07"/>
       <swPortToHWPortAssignment id="a539caa4-4bc7-42dc-bb91-a8515999b3be" name="SHIELD_SCL_A5" sourceID="7e73624e-5fd2-4b25-bb33-0be5b8a1ff1f" targetID="e425f4e6-1c54-4e8d-8d24-5f41c046e1bc"/>
@@ -322,70 +249,54 @@
       <swPortToHWPortAssignment id="29395c76-5366-4074-88da-96b64b3fe205" name="SHIELD_A2" sourceID="4b806264-6bde-4ca1-af30-a831ae0280c1" targetID="8bf3abdd-a2b5-494b-90de-c7783a4b25e1"/>
       <swPortToHWPortAssignment id="70f35e37-a83c-4b19-9178-06684f2406b9" name="SHIELD_A3" sourceID="729d9ca2-8b58-4b12-a64d-87f8906a6761" targetID="36016713-589e-4850-b720-816427173101"/>
       <swPortToHWPortAssignment id="ea666cf2-f42f-426a-805c-5ea57693fd87" name="SHIELD_SCREW0" sourceID="f3c4c01a-af69-4316-86a4-b3b31d4fa39d" targetID="cfba8011-e2a5-4c96-a5f6-aeae1110f67c"/>
-      <swPortToHWPortAssignment id="7b8d5e6c-4543-41f4-8689-c72289084bc6" name="SHIELD_3V3" sourceID="d3cde70c-0693-4037-83cb-ba8b0489860d" targetID="7a12c031-c180-41a1-8037-75f51216f3e5"/>
-      <swPortToHWPortAssignment id="0463e064-9824-401b-b664-4c3eda7e418d" name="SHIELD_5V" sourceID="81ec4eb1-313e-49c2-9a2d-e9259b691c60" targetID="ca363801-2732-4dd4-a4c4-18813bf69724"/>
-      <swPortToHWPortAssignment id="4a755926-b5e9-4f25-8efd-33b3e6cec730" name="SHIELD_Vin" sourceID="dd5bf6df-3d38-47f9-aea5-a3055feb1608" targetID="43030c3f-0ed6-4e27-ab05-8a57ce51df0c"/>
-      <swPortToHWPortAssignment id="6d5bd50c-cdcf-4405-a54c-18af42c1de64" name="SHIELD_GND" sourceID="15b8f4ef-4a46-44d3-b599-59069edc888e" targetID="bbc2bf4b-221c-45ec-89e2-410f167b0a0c"/>
-      <swPortToHWPortAssignment id="ec4dc1eb-f067-4833-a4ae-daa8450ea680" name="SHIELD_Aref" sourceID="2783b877-0089-4b04-aa68-821fc2390a90" targetID="9b8e7eaa-8599-446d-bba8-11d7a1408c46"/>
       <swPortToHWPortAssignment id="fbb2c4aa-2328-4560-a9c7-db12f943165c" name="SHIELD_RESET" sourceID="4c8b9700-3629-42f1-9e43-363273a2daac" targetID="dd742693-6938-4f3f-9694-ac02508da9c8"/>
       <swPortToHWPortAssignment id="45c84b90-3e79-4670-b120-7a8d8058b3fc" name="CAN_TX_D_pin1" sourceID="74e851f8-b051-4112-8764-a73b3ff55578" targetID="62044969-b3af-4c0d-a089-7d4635fdb145"/>
       <swPortToHWPortAssignment id="2bcace89-e268-4d8f-9988-5064053ed219" name="CAN_RX_R_pin4" sourceID="be44a09a-7903-46c3-9084-15427c2ff896" targetID="4c244678-d18b-4c49-86be-eaa18c4fc08b"/>
-      <swPortToHWPortAssignment id="0e6f198f-1bc2-4a1e-b034-6d1f3ca9bb36" name="CAN_VDD_VCC_pin3" sourceID="126b32a9-0a7c-465e-a913-0983e11c302e" targetID="ab8a3d78-8799-43ce-8b52-df3b8e20ad2b"/>
-      <swPortToHWPortAssignment id="8027fae5-ede2-447d-8bf9-cf444a00b073" name="CAN_GND_pin2" sourceID="c8bc45a2-e717-41ea-8154-e01b165fd9e0" targetID="1a4bc451-e6db-4747-864b-4c45b2290b5c"/>
       <swPortToHWPortAssignment id="c91f16ea-aeb4-447f-b8ed-a62118fd122a" name="CAN_CANL_pin6" sourceID="0699dd9c-f426-4a88-9ed5-2788cc52a0cb" targetID="36420397-4540-440f-ae38-f9a74ba2ddd7"/>
       <swPortToHWPortAssignment id="713ceb68-814e-4c14-abf6-4cb31263d8a7" name="CAN_CANH_pin7" sourceID="ed7a4c2d-26b6-4e38-9a48-9085e0bf1c77" targetID="571382a1-4fd7-4a3a-9ced-0a9fc7612e50"/>
       <swPortToHWPortAssignment id="d84b76d7-0451-4512-b09e-f62c4e6804e6" name="HALL_SIGNAL_OUTPUT" sourceID="fb456831-f13f-45bb-940b-631ff02f81b0" targetID="d29dabdf-9807-4f1d-9d38-a466d066ba0e"/>
-      <swPortToHWPortAssignment id="c5a76225-c5ca-4841-8691-885ee411c333" name="HALL_VDD" sourceID="146e57eb-f845-4f11-b04e-5f3c17d1c580" targetID="0e5a78f3-f025-431e-af2d-f471cd4c5332"/>
-      <swPortToHWPortAssignment id="2286d754-e85e-4ebb-bd49-bc4f497775b5" name="HALL_GND" sourceID="673b9392-56bb-40fa-90c2-2dbd2159817f" targetID="c28c7e50-6abf-4e47-bf17-f6fd917f410b"/>
       <swPortToHWPortAssignment id="f6dc3184-5eaa-4665-ae37-b305ed95d0eb" name="CCDPU_CANH_J61_pin2" sourceID="5c1d22f2-9e1e-4e5d-97e5-e28ac1590e62" targetID="70ce3df6-e3ed-4252-bfab-1b5294bd407b"/>
       <swPortToHWPortAssignment id="7d79aaa3-8e54-496b-9530-11b534c27e9b" name="CCDPU_CANL_J61_pin3" sourceID="a26ab63f-c577-432c-85bd-25e6185fca84" targetID="ad672fc7-4a11-4812-bd6f-225d07527e10"/>
-      <swPortToHWPortAssignment id="eb64deda-9f7d-4fbf-a9df-f2ac12649aff" name="CCDPU_VCC_J61_CVCC_pin1" sourceID="3b395fee-81ae-443a-93f5-5e010b79852f" targetID="6031c7dd-a23d-4764-b400-3843a10d7b54"/>
-      <swPortToHWPortAssignment id="44417eb8-bb61-44b2-be6a-32c54f646f36" name="CCDPU_GND_J61_CGND_pin4" sourceID="0028cf6d-4a0d-4181-9f49-48fc07d9dd02" targetID="c90a4166-23a1-44ea-a94e-a3cd96894f98"/>
       <swPortToHWPortAssignment id="cb42301a-addf-41de-ae65-a2e235152796" name="CCDPU_RESISTOR_JP61_R60" sourceID="a18d4942-033c-4a1c-bcc9-29612aee3364" targetID="5213dc1e-d8fa-462c-82af-baacd3f7ccd3"/>
-      <swPortToHWPortAssignment id="edb2d178-5d9b-44fb-9946-aad0d846baa3" name="+V_SUPPLY" sourceID="a838e18e-e441-4f7a-b2b6-baa5b97c81bd" targetID="84623fcf-e9cf-41c9-9bdc-f858a8edf425"/>
-      <swPortToHWPortAssignment id="05f6d057-6e81-47e5-a238-766cf43304bb" name="-V_SUPPLY" sourceID="585735aa-6f47-4613-96f5-219cac96b6ad" targetID="aae040c7-dc21-4037-bba7-013660d0f2aa"/>
-      <swPortToHWPortAssignment name="DigIN 1_TO_Enable" sourceID="e29fa1e9-c7be-4fd6-9d25-1f105f7afe6e" targetID="1e0aecb4-c6e3-4f03-9f0a-733af7bf7673"/>
-      <swPortToHWPortAssignment name="DigIN 2_TO_Direction" sourceID="be21ee39-74a9-4a20-ad71-33590b97e577" targetID="7bed69e7-c763-43f4-a1e9-1f96dbb39d76"/>
-      <swPortToHWPortAssignment name="DigIN/OUT 3_TO_Speed_PWM" sourceID="fd267fce-041b-4175-a97d-cc2cd2ad121d" targetID="01bf245b-2f59-4071-8133-12a69ed618f7"/>
-      <swPortToHWPortAssignment name="AnOUT 1_TO_Speed_Current" sourceID="9afa223a-20c9-49d2-bbb4-a87549dfb108" targetID="8d4b8e08-cc46-49b6-bb0c-307ff31cfd05"/>
-      <swPortToHWPortAssignment name="DigIN 1_TO_Enable" sourceID="99af6618-fcb8-4170-88ae-be8e81893367" targetID="1e0aecb4-c6e3-4f03-9f0a-733af7bf7673"/>
-      <swPortToHWPortAssignment name="DigIN 2_TO_Direction" sourceID="7ab806f8-e5cd-446c-9b17-02b49e0b721b" targetID="7bed69e7-c763-43f4-a1e9-1f96dbb39d76"/>
-      <swPortToHWPortAssignment name="DigIN/OUT 3_TO_Speed_PWM" sourceID="6004d47c-ac00-433d-934b-2738d193e352" targetID="01bf245b-2f59-4071-8133-12a69ed618f7"/>
-      <swPortToHWPortAssignment name="AnOUT 1_TO_Speed_Current" sourceID="916ef4c3-ce32-480c-832c-41284cab6150" targetID="8d4b8e08-cc46-49b6-bb0c-307ff31cfd05"/>
-      <swPortToHWPortAssignment name="AnOUT 2_TO_Speed_Average" sourceID="81029f21-4c26-4ac6-a42e-5b278ca6736e" targetID="f74ed90a-d9a7-4e9a-b9cc-ea5a78108234"/>
-      <swPortToHWPortAssignment name="DigIN 1_TO_Enable" sourceID="5313177d-5157-435f-acfa-0e3baf069db7" targetID="1e0aecb4-c6e3-4f03-9f0a-733af7bf7673"/>
-      <swPortToHWPortAssignment name="DigIN 2_TO_Direction" sourceID="dc4f7444-0ae8-4553-b3ba-dc706da8f29d" targetID="7bed69e7-c763-43f4-a1e9-1f96dbb39d76"/>
-      <swPortToHWPortAssignment name="DigIN/OUT 3_TO_Speed_PWM" sourceID="f5d749f3-9f0a-42bd-957a-86542fe335ac" targetID="01bf245b-2f59-4071-8133-12a69ed618f7"/>
-      <swPortToHWPortAssignment name="AnOUT 1_TO_Speed_Current" sourceID="96c81c93-98bb-4acc-b1e4-1c6e7efd53b8" targetID="8d4b8e08-cc46-49b6-bb0c-307ff31cfd05"/>
-      <swPortToHWPortAssignment name="AnOUT 2_TO_Speed_Average" sourceID="d8132c2c-300a-40da-a60f-7b014a73a410" targetID="f74ed90a-d9a7-4e9a-b9cc-ea5a78108234"/>
-      <swPortToHWPortAssignment name="0 V_TO_GND" sourceID="c3ef460b-c7d1-4e5e-b433-040b1241d24a" targetID="adb3a654-584c-414e-9206-65246d360320"/>
-      <swPortToHWPortAssignment name="+ V_TO_SUPPLY" sourceID="4196b3db-0da4-493b-b1b8-eff340d19c95" targetID="e6914f78-b112-4250-9d20-2865465db41f"/>
-      <swPortToHWPortAssignment name="0 V_TO_GND" sourceID="185fa9fb-2ea6-43c9-8290-bddb35a83267" targetID="adb3a654-584c-414e-9206-65246d360320"/>
-      <swPortToHWPortAssignment name="+ V_TO_SUPPLY" sourceID="cc6b47c5-7b98-44c8-95b5-9404e5b098b7" targetID="e6914f78-b112-4250-9d20-2865465db41f"/>
-      <swPortToHWPortAssignment name="0 V_TO_GND" sourceID="4583276e-5afe-4eab-9867-62b728871717" targetID="adb3a654-584c-414e-9206-65246d360320"/>
-      <swPortToHWPortAssignment name="+ V_TO_SUPPLY" sourceID="17ff6111-646c-4834-8f0f-f40dc19f65f9" targetID="e6914f78-b112-4250-9d20-2865465db41f"/>
-      <swPortToHWPortAssignment name="IN0_TO_A0" sourceID="f2e2b8f1-02ca-453b-a59c-e0ce7f7c69dc" targetID="aaa8337a-eeec-49c2-8b83-814e8e123cea"/>
-      <swPortToHWPortAssignment name="IN1_TO_A1" sourceID="522bb5b7-4a8e-4110-ba57-b8d006749e76" targetID="55898ada-8c8e-4e28-93ed-d613d93a7222"/>
-      <swPortToHWPortAssignment name="IN2_TO_A2" sourceID="9faec90b-84ed-4c7c-bc6f-fd72e27c5050" targetID="c5eaa18e-59d7-49e3-883c-1fc1d2c44b40"/>
-      <swPortToHWPortAssignment name="IN3_TO_A3" sourceID="ed103717-7d0b-4080-bd9e-304d20791ef7" targetID="17530d5b-a5aa-4cc1-96e5-875a0e6b0ecc"/>
-      <swPortToHWPortAssignment name="ADDR_TO_ADDRESS" sourceID="78b3b8e8-a0e0-4d95-9366-d5ed486c9c84" targetID="3ed931e7-7552-45db-a863-068c8f74aa4b"/>
-      <swPortToHWPortAssignment name="ALERT_TO_ALRT" sourceID="c30ffe04-9c18-4a8a-a1f9-be014216eec6" targetID="a384828b-7189-4b0a-a1d0-ad09c706d202"/>
-      <swPortToHWPortAssignment name="GND_TO_GND" sourceID="9e2dc1fb-181c-4de9-a39f-2a57d6c29df6" targetID="f1728af6-8288-4ac8-b56a-e6665ac9ebf3"/>
-      <swPortToHWPortAssignment name="VDD_TO_VDD" sourceID="6693b82b-c338-4cec-b6a1-dab4f648b4eb" targetID="69c9d4e2-bc3a-45f1-869f-f6281d638c99"/>
-      <swPortToHWPortAssignment name="SDA_TO_SDA" sourceID="cd61385f-5ee6-4116-9990-489504a39d7c" targetID="64e578f1-2c84-42d0-94d3-3f0a6b58db65"/>
-      <swPortToHWPortAssignment name="SCL_TO_SCL" sourceID="ff98b027-920f-4c06-8b9d-2b224e32ffea" targetID="760590e1-e7c1-4190-8f44-c6c508a2777a"/>
-      <swPortToHWPortAssignment name="IN2_TO_A2" sourceID="7df8cf5c-c68f-47a7-ae15-3852f1dd77ef" targetID="c5eaa18e-59d7-49e3-883c-1fc1d2c44b40"/>
-      <swPortToHWPortAssignment name="IN3_TO_A3" sourceID="51d8d7fd-ff66-40cb-bb87-e62b1a568e8b" targetID="17530d5b-a5aa-4cc1-96e5-875a0e6b0ecc"/>
-      <swPortToHWPortAssignment name="ADDR_TO_ADDRESS" sourceID="f7a90ca3-6cc6-4954-bb4b-4994e0f52f5d" targetID="3ed931e7-7552-45db-a863-068c8f74aa4b"/>
-      <swPortToHWPortAssignment name="ALERT_TO_ALRT" sourceID="8fc68015-27e0-4370-a83f-636235ec8957" targetID="a384828b-7189-4b0a-a1d0-ad09c706d202"/>
-      <swPortToHWPortAssignment name="GND_TO_GND" sourceID="1b66400f-e5be-4235-ae80-b1c5f2b1889d" targetID="f1728af6-8288-4ac8-b56a-e6665ac9ebf3"/>
-      <swPortToHWPortAssignment name="VDD_TO_VDD" sourceID="e2c1667c-d764-4a4d-9f1b-3d3995ed9ccb" targetID="69c9d4e2-bc3a-45f1-869f-f6281d638c99"/>
-      <swPortToHWPortAssignment name="SDA_TO_SDA" sourceID="a65dd2c5-021a-41d0-b246-1e37a330a4b5" targetID="64e578f1-2c84-42d0-94d3-3f0a6b58db65"/>
-      <swPortToHWPortAssignment name="SCL_TO_SCL" sourceID="99fe4dcf-59df-4888-ad09-1c19254fec99" targetID="760590e1-e7c1-4190-8f44-c6c508a2777a"/>
+      <swPortToHWPortAssignment id="1604ec9b-33f6-4054-b7a9-ee80a18ab3c8" name="DigIN 1_TO_Enable" sourceID="e29fa1e9-c7be-4fd6-9d25-1f105f7afe6e" targetID="1e0aecb4-c6e3-4f03-9f0a-733af7bf7673"/>
+      <swPortToHWPortAssignment id="5f888a6b-cc0d-4574-bbd4-c2dcafed521e" name="DigIN 2_TO_Direction" sourceID="be21ee39-74a9-4a20-ad71-33590b97e577" targetID="7bed69e7-c763-43f4-a1e9-1f96dbb39d76"/>
+      <swPortToHWPortAssignment id="e9b1d47a-6994-4df6-9406-722ee81773ec" name="DigIN/OUT 3_TO_Speed_PWM" sourceID="fd267fce-041b-4175-a97d-cc2cd2ad121d" targetID="01bf245b-2f59-4071-8133-12a69ed618f7"/>
+      <swPortToHWPortAssignment id="d5f11bdb-3ac1-47ef-939d-e256884f40b6" name="AnOUT 1_TO_Speed_Current" sourceID="9afa223a-20c9-49d2-bbb4-a87549dfb108" targetID="8d4b8e08-cc46-49b6-bb0c-307ff31cfd05"/>
+      <swPortToHWPortAssignment id="d5a2aeaf-0f61-4679-b6f6-a834a5d9634a" name="DigIN 1_TO_Enable" sourceID="99af6618-fcb8-4170-88ae-be8e81893367" targetID="1e0aecb4-c6e3-4f03-9f0a-733af7bf7673"/>
+      <swPortToHWPortAssignment id="c0c317d0-6d98-4cc9-a69f-488971d2bc35" name="DigIN 2_TO_Direction" sourceID="7ab806f8-e5cd-446c-9b17-02b49e0b721b" targetID="7bed69e7-c763-43f4-a1e9-1f96dbb39d76"/>
+      <swPortToHWPortAssignment id="28536cc8-2b7b-4442-a334-f31ec738e7b2" name="DigIN/OUT 3_TO_Speed_PWM" sourceID="6004d47c-ac00-433d-934b-2738d193e352" targetID="01bf245b-2f59-4071-8133-12a69ed618f7"/>
+      <swPortToHWPortAssignment id="38748a84-63db-41a6-a2c6-3c57898e22a3" name="AnOUT 1_TO_Speed_Current" sourceID="916ef4c3-ce32-480c-832c-41284cab6150" targetID="8d4b8e08-cc46-49b6-bb0c-307ff31cfd05"/>
+      <swPortToHWPortAssignment id="5b774e40-e0b4-442d-8207-793e40084547" name="AnOUT 2_TO_Speed_Average" sourceID="81029f21-4c26-4ac6-a42e-5b278ca6736e" targetID="f74ed90a-d9a7-4e9a-b9cc-ea5a78108234"/>
+      <swPortToHWPortAssignment id="9c73767f-7627-4b32-8a04-1799059a9a76" name="DigIN 1_TO_Enable" sourceID="5313177d-5157-435f-acfa-0e3baf069db7" targetID="1e0aecb4-c6e3-4f03-9f0a-733af7bf7673"/>
+      <swPortToHWPortAssignment id="ed1d42c1-01a6-4a65-8e6f-4716f2f8ca2b" name="DigIN 2_TO_Direction" sourceID="dc4f7444-0ae8-4553-b3ba-dc706da8f29d" targetID="7bed69e7-c763-43f4-a1e9-1f96dbb39d76"/>
+      <swPortToHWPortAssignment id="2c205691-a16a-40d8-b104-79ed29c79d45" name="DigIN/OUT 3_TO_Speed_PWM" sourceID="f5d749f3-9f0a-42bd-957a-86542fe335ac" targetID="01bf245b-2f59-4071-8133-12a69ed618f7"/>
+      <swPortToHWPortAssignment id="62049c27-554c-42af-bd1c-ff524552d4a4" name="AnOUT 1_TO_Speed_Current" sourceID="96c81c93-98bb-4acc-b1e4-1c6e7efd53b8" targetID="8d4b8e08-cc46-49b6-bb0c-307ff31cfd05"/>
+      <swPortToHWPortAssignment id="70e26323-cff6-46aa-b29e-fe29fd358ff0" name="AnOUT 2_TO_Speed_Average" sourceID="d8132c2c-300a-40da-a60f-7b014a73a410" targetID="f74ed90a-d9a7-4e9a-b9cc-ea5a78108234"/>
+      <swPortToHWPortAssignment id="d81f1b80-26fc-4dee-9765-76b648bf64ea" name="IN0_TO_A0" sourceID="f2e2b8f1-02ca-453b-a59c-e0ce7f7c69dc" targetID="aaa8337a-eeec-49c2-8b83-814e8e123cea"/>
+      <swPortToHWPortAssignment id="49d2680d-b919-4d9d-bd35-7e6851e45fc4" name="IN1_TO_A1" sourceID="522bb5b7-4a8e-4110-ba57-b8d006749e76" targetID="55898ada-8c8e-4e28-93ed-d613d93a7222"/>
+      <swPortToHWPortAssignment id="9ad09e6d-2141-4ed4-9b19-4accd2151e49" name="IN2_TO_A2" sourceID="9faec90b-84ed-4c7c-bc6f-fd72e27c5050" targetID="c5eaa18e-59d7-49e3-883c-1fc1d2c44b40"/>
+      <swPortToHWPortAssignment id="84a5161e-39a3-47bc-a8b4-14fed276ce04" name="IN3_TO_A3" sourceID="ed103717-7d0b-4080-bd9e-304d20791ef7" targetID="17530d5b-a5aa-4cc1-96e5-875a0e6b0ecc"/>
+      <swPortToHWPortAssignment id="48d2e558-01b9-470f-928a-b5957a738d2c" name="ADDR_TO_ADDRESS" sourceID="78b3b8e8-a0e0-4d95-9366-d5ed486c9c84" targetID="3ed931e7-7552-45db-a863-068c8f74aa4b"/>
+      <swPortToHWPortAssignment id="c8b60ca6-59cb-493c-a460-1ba8e5c9260a" name="ALERT_TO_ALRT" sourceID="c30ffe04-9c18-4a8a-a1f9-be014216eec6" targetID="a384828b-7189-4b0a-a1d0-ad09c706d202"/>
+      <swPortToHWPortAssignment id="fe1fe19a-311b-4579-8ca8-819e71b1fd29" name="SDA_TO_SDA" sourceID="cd61385f-5ee6-4116-9990-489504a39d7c" targetID="64e578f1-2c84-42d0-94d3-3f0a6b58db65"/>
+      <swPortToHWPortAssignment id="8577364c-ce9f-41cf-9f79-6edbaf149ea1" name="SCL_TO_SCL" sourceID="ff98b027-920f-4c06-8b9d-2b224e32ffea" targetID="760590e1-e7c1-4190-8f44-c6c508a2777a"/>
+      <swPortToHWPortAssignment id="88f1b753-1d11-4d0b-a107-ec2ac5a653cf" name="IN2_TO_A2" sourceID="7df8cf5c-c68f-47a7-ae15-3852f1dd77ef" targetID="c5eaa18e-59d7-49e3-883c-1fc1d2c44b40"/>
+      <swPortToHWPortAssignment id="d102b75e-803c-4fe0-8856-cbdcc29089bd" name="IN3_TO_A3" sourceID="51d8d7fd-ff66-40cb-bb87-e62b1a568e8b" targetID="17530d5b-a5aa-4cc1-96e5-875a0e6b0ecc"/>
+      <swPortToHWPortAssignment id="099e7157-f7ac-496d-9a64-3749f29d6204" name="ADDR_TO_ADDRESS" sourceID="f7a90ca3-6cc6-4954-bb4b-4994e0f52f5d" targetID="3ed931e7-7552-45db-a863-068c8f74aa4b"/>
+      <swPortToHWPortAssignment id="2fcee8de-c9e5-4d4f-b40f-9f456df63d89" name="ALERT_TO_ALRT" sourceID="8fc68015-27e0-4370-a83f-636235ec8957" targetID="a384828b-7189-4b0a-a1d0-ad09c706d202"/>
+      <swPortToHWPortAssignment id="5cd03c68-ca32-4df1-9c5a-3ebab774fda6" name="SDA_TO_SDA" sourceID="a65dd2c5-021a-41d0-b246-1e37a330a4b5" targetID="64e578f1-2c84-42d0-94d3-3f0a6b58db65"/>
+      <swPortToHWPortAssignment id="2e599163-bf25-43e1-9ce8-d4c4bfee1f82" name="SCL_TO_SCL" sourceID="99fe4dcf-59df-4888-ad09-1c19254fec99" targetID="760590e1-e7c1-4190-8f44-c6c508a2777a"/>
     </assignmentSet>
   </assignments>
   <targets id="922cb2e4-26e4-46ac-9ba8-547aa85dccc9">
     <targetConfiguration xsi:type="de.ucof.model.targets.rdc:stm32f446re" id="09dc9bb6-0501-46d1-ba7d-edf1299a03a4" name=" stm32">
+      <electricalInterfaces id="aa472069-f492-492e-a9bd-43381c4610fc">
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="61ad3980-d1fc-4e5b-a5ad-4354a5ea16a4" name="VDD_5V" minVoltage="4.75" maxVoltage="5.25" type="sinkSource"/>
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="e68608af-f59d-4697-b9f1-954c107ba3b8" name="VDD_3.3V" minVoltage="3.6" maxVoltage="3.0" type="source"/>
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="8a277821-630d-44d3-b926-4a5aa14329ad" name="VIN" minVoltage="7.0" maxVoltage="12.0" type="sink"/>
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="3b2a2072-9386-4109-b626-be92bc8f703d" name="IOREF" minVoltage="3.0" maxVoltage="3.6" type="analogReference"/>
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="414defad-1d2f-4ea0-be26-3d8cfcc9fec3" name="GND" type="sink"/>
+      </electricalInterfaces>
       <ports name=" stm32">
         <port id="03c32fa8-d0a6-479d-8af8-d6486fd8c753" name="Balance_Engine_0_Enable" pinName="D7" pinNumber="41"/>
         <port id="3955dea2-f6af-4070-afdd-1bc4c8414777" name="Balance_Engine_0_Speed_PWM" pinName="PWM/D3" pinNumber="55"/>
@@ -402,11 +313,6 @@
         <port id="d60628e7-4987-4c2a-b784-fa4acf73562d" name="I2C_SDA" pinName="A4" pinNumber="9"/>
         <port id="f121a5ab-1db0-4e78-b2b7-214e037a3853" name="Address_1" pinName="D2" pinNumber="43"/>
         <port id="749e38e7-d589-462e-8291-4fa8e4b26f9a" name="Address_2" pinName="D4" pinNumber="57"/>
-        <port id="ff622de2-3ca4-48cd-ad9f-bf4f963b1310" name="GND" pinName="GND"/>
-        <port id="64cd11d0-7201-466f-8909-5367969fa0b9" name="VDD_3.3V" pinName="3V3"/>
-        <port id="cd646fb6-0373-4de2-be77-872bc2f32716" name="VDD_5V" pinName="5V"/>
-        <port id="4d955e1f-bf8e-4f9e-9033-b8faef13951c" name="VIN" pinName="VIN"/>
-        <port id="1575c5f8-6243-4e73-a432-ad495b9d5c7f" name="IOREF" pinName="IOREF"/>
         <port id="b8047673-2bdf-4497-9c80-f37b0f5de476" name="RESET" pinName="NRST"/>
         <port id="5e42e839-3b27-4937-8349-939e37640b06" name="RX/D0" pinName="RX/D0"/>
         <port id="1b532a44-5e1e-47bf-879d-1edba4881173" name="TX/D1" pinName="TX/D1"/>
@@ -420,6 +326,13 @@
     <targetConfiguration xsi:type="de.ucof.model.targets.sheild:arduinosheild" id="c164fd4e-9e7d-412c-b0dd-1208c1c5b74f" name="sheild">
       <assignmentSpecification xsi:type="de.ucof.model.targets:ResistorInfo" id="d5b92aea-48c5-415b-aa16-32c8c8577607" name="R2" referencedAssignmentID="26dc4101-3c5a-4826-af9c-b9025e95fc50" resistanceOhm="4700" resistorPartNumber="R2" mountLocation="ProtoShield_I2C_SDA_line"/>
       <assignmentSpecification xsi:type="de.ucof.model.targets:ResistorInfo" id="0e323982-12cc-4bd0-af20-e669b5cbafb1" name="R1" referencedAssignmentID="cd50075c-dc36-43cd-8269-6e2b43665096" resistanceOhm="4700" resistorPartNumber="R1" mountLocation="ProtoShield_I2C_SCL_line"/>
+      <electricalInterfaces id="b7511a44-623d-4949-b7a9-cca26436bb2f" name="Rdc Power Ports">
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="e5afff1e-3a48-4081-97f1-bb0e916ff309" name="3.3V" minVoltage="3.0" maxVoltage="3.6" type="sinkSource"/>
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="fe65b985-f083-4c8f-9810-01ec4deb4b1f" name="5V" minVoltage="4.75" maxVoltage="5.25" type="sink"/>
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="e8109a9a-46ea-4dc0-8189-8f23d190818f" name="VIN" minVoltage="7.0" maxVoltage="12.0" type="sink"/>
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="1e4d2159-2021-47b1-80a7-461642ccb8ba" name="Aref" minVoltage="3.0" maxVoltage="3.6" type="analogReference"/>
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="cb2eda97-740b-459a-a43d-9ecc13c47775" name="GND" type="sink"/>
+      </electricalInterfaces>
       <ports id="c90b42a0-75e8-4ee0-84d3-eb519a3568e9" name="axis_1">
         <port id="167ec559-806d-4848-8c48-565e5279ddaa" name="Balance_Engine_0_Enable" pinName="D7"/>
         <port id="6361246e-47b0-47cc-ab37-0c69aaa9ddcc" name="Balance_Engine_0_Speed_PWM" pinName="D3"/>
@@ -444,11 +357,6 @@
         <port id="522fbaeb-7446-4f7a-b352-fd59a94ea322" name="SW_3" pinName="SW_3"/>
         <port id="732fbd1d-7c3c-4c8d-9a17-2490bff85227" name="SW_4" pinName="SW_4"/>
         <port id="dd742693-6938-4f3f-9694-ac02508da9c8" name="RESET" pinName="RST"/>
-        <port id="7a12c031-c180-41a1-8037-75f51216f3e5" name="3.3V" pinName="3.3V"/>
-        <port id="ca363801-2732-4dd4-a4c4-18813bf69724" name="5V" pinName="5V"/>
-        <port id="43030c3f-0ed6-4e27-ab05-8a57ce51df0c" name="VIN" pinName="VIN"/>
-        <port id="bbc2bf4b-221c-45ec-89e2-410f167b0a0c" name="GND" pinName="GND"/>
-        <port id="9b8e7eaa-8599-446d-bba8-11d7a1408c46" name="Aref" pinName="Aref"/>
         <port id="9f366fa8-e974-469a-8701-583b12e38329" name="D0" pinName="D0"/>
         <port id="deb6b24a-d231-4ae6-97e3-bb2ec0043c62" name="D1" pinName="D1"/>
         <port id="c8fd7a8f-8ef0-4c64-8ddc-e1a8806d5c59" name="D5" pinName="D5"/>
@@ -460,17 +368,23 @@
       </ports>
     </targetConfiguration>
     <targetConfiguration xsi:type="de.ucof.model.targets.motorcontroller:escon409510" id="99935791-a447-457d-b303-79d5cf0d673f" name="escon">
+      <electricalInterfaces id="655ce108-b60a-4a21-a36f-53257977b708" name="Sheild Power Ports">
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="f47e0b65-8a3c-42bc-90cb-2616d32356f5" name="SUPPLY" minVoltage="10.0" maxVoltage="50.0" type="sink"/>
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="58f5dc2b-17ad-4920-b26d-c2f97bc03248" name="GND" type="sink"/>
+      </electricalInterfaces>
       <ports name="escon">
         <port id="1e0aecb4-c6e3-4f03-9f0a-733af7bf7673" name="Enable" pinName="DigIN 1"/>
         <port id="01bf245b-2f59-4071-8133-12a69ed618f7" name="Speed_PWM" pinName="DigINOUT 3"/>
         <port id="7bed69e7-c763-43f4-a1e9-1f96dbb39d76" name="Direction" pinName="DigIN 2"/>
         <port id="8d4b8e08-cc46-49b6-bb0c-307ff31cfd05" name="Speed_Current" pinName="AnOUT 1"/>
         <port id="f74ed90a-d9a7-4e9a-b9cc-ea5a78108234" name="Speed_Average" pinName="AnOUT 2"/>
-        <port id="adb3a654-584c-414e-9206-65246d360320" name="GND" pinName="0V"/>
-        <port id="e6914f78-b112-4250-9d20-2865465db41f" name="SUPPLY" pinName="+V"/>
       </ports>
     </targetConfiguration>
     <targetConfiguration xsi:type="de.ucof.model.targets.adc:ads1115" id="c6fcd30b-bd1a-4b43-a131-40143bcc6835" name="adc">
+      <electricalInterfaces id="706137c5-a103-4855-b2cd-6a96f9f903d1" name="ADC Power Ports">
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="e20d633c-a5d3-4974-bbe3-7af7dfc4bf70" name="VDD" minVoltage="2.0" maxVoltage="5.5" type="sink"/>
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="36bd8da4-2354-4013-961a-89f2ad18736f" name="GND" type="sink"/>
+      </electricalInterfaces>
       <ports id="b052008b-f510-4e27-abf2-3f53a3f5ff8c" name="adc">
         <port id="17530d5b-a5aa-4cc1-96e5-875a0e6b0ecc" name="A3" pinName="AIN3"/>
         <port id="c5eaa18e-59d7-49e3-883c-1fc1d2c44b40" name="A2" pinName="AIN2"/>
@@ -480,41 +394,65 @@
         <port id="760590e1-e7c1-4190-8f44-c6c508a2777a" name="SCL" pinName="SCL"/>
         <port id="3ed931e7-7552-45db-a863-068c8f74aa4b" name="ADDRESS" pinName="ADDR"/>
         <port id="a384828b-7189-4b0a-a1d0-ad09c706d202" name="ALRT" pinName="ALERT"/>
-        <port id="69c9d4e2-bc3a-45f1-869f-f6281d638c99" name="VDD" pinName="VDD"/>
-        <port id="f1728af6-8288-4ac8-b56a-e6665ac9ebf3" name="GND" pinName="GND"/>
       </ports>
     </targetConfiguration>
     <targetConfiguration xsi:type="de.ucof.model.targets.cantransceiver:sn65hvd230" id="3680e468-fe2f-47bc-815f-878bddf1c332" name="can transceiver">
+      <electricalInterfaces id="7ea071a3-d237-42a6-a9e0-933493a6a95d" name="CAN Transceiver Power Ports">
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="74a840c1-86f5-4b3c-b2d1-8b50197bd810" name="3V3" minVoltage="3.0" maxVoltage="3.6" type="sink"/>
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="3ac96841-607e-4152-933e-e690d0593de9" name="GND" type="sink"/>
+      </electricalInterfaces>
       <ports name="can transceiver">
         <port id="62044969-b3af-4c0d-a089-7d4635fdb145" name="CTX" pinName="D" pinNumber="1"/>
         <port id="4c244678-d18b-4c49-86be-eaa18c4fc08b" name="CRX" pinName="R" pinNumber="4"/>
-        <port id="ab8a3d78-8799-43ce-8b52-df3b8e20ad2b" name="3V3" pinName="VCC" pinNumber="3"/>
-        <port id="1a4bc451-e6db-4747-864b-4c45b2290b5c" name="GND" pinName="GND" pinNumber="2"/>
         <port id="36420397-4540-440f-ae38-f9a74ba2ddd7" name="CAN_LOW_BUS" pinName="CANL" pinNumber="6"/>
         <port id="571382a1-4fd7-4a3a-9ced-0a9fc7612e50" name="CAN_HIGH_BUS" pinName="CANH" pinNumber="7"/>
       </ports>
     </targetConfiguration>
     <targetConfiguration xsi:type="de.ucof.model.targets.hallsensor:mts360" id="ea57b129-dcb5-4b26-bbab-30a29e859f91" name="hall sensor">
+      <electricalInterfaces id="182ffcaf-f1a3-4932-8e10-c396d9489f47" name="Hall Sensor Power Ports">
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="8b9368ec-33b4-4565-a50b-715bb1437531" name="VDD" minVoltage="4.5" maxVoltage="5.5" type="sink"/>
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="e35287bd-7f44-41ff-bfe5-09da9b70f79b" name="GND" type="sink"/>
+      </electricalInterfaces>
       <ports name="hall sensor">
         <port id="d29dabdf-9807-4f1d-9d38-a466d066ba0e" name="SIGNAL_OUTPUT" pinName="SIGNAL_OUTPUT" pinNumber="5"/>
-        <port id="c28c7e50-6abf-4e47-bf17-f6fd917f410b" name="GND" pinName="Ground" pinNumber="2"/>
-        <port id="0e5a78f3-f025-431e-af2d-f471cd4c5332" name="VDD" pinName="Supply" pinNumber="4"/>
       </ports>
     </targetConfiguration>
     <targetConfiguration xsi:type="de.ucof.model.targets.ccdpu:va41620peb1" id="efa5d5e8-0a01-417d-8241-60b48ae1d48b" name="ebi-ethernet board">
+      <electricalInterfaces id="5f7f12aa-ed2f-434b-a877-98980e9cc2c1" name="Vorago Power Ports">
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="1be1dd18-277f-467c-8447-354cd41ac4a2" name="CVCC" minVoltage="3.0" maxVoltage="3.6" type="sink"/>
+        <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="784eddaa-7ee6-47fe-8207-99b07153bbdb" name="GND" type="sink"/>
+      </electricalInterfaces>
       <ports name="ebi-ethernet board">
-        <port id="6031c7dd-a23d-4764-b400-3843a10d7b54" name="J61_CVCC" pinName="CAN0_VCC" pinNumber="1"/>
         <port id="ad672fc7-4a11-4812-bd6f-225d07527e10" name="J61_CANL" pinName="CAN0 N" pinNumber="3"/>
-        <port id="c90a4166-23a1-44ea-a94e-a3cd96894f98" name="J61_CGND" pinName="GND" pinNumber="4"/>
         <port id="70ce3df6-e3ed-4252-bfab-1b5294bd407b" name="J61_CANH" pinName="CAN0 P" pinNumber="2"/>
         <port id="5213dc1e-d8fa-462c-82af-baacd3f7ccd3" name="JP61_R60" pinName="R60"/>
       </ports>
     </targetConfiguration>
-    <targetConfiguration xsi:type="de.ucof.model.targets.powerrail:powerRailTarget" id="01824d11-ff10-45c2-8b9c-be3cfc3b9370" name="supply">
-      <ports name="supply">
-        <port id="84623fcf-e9cf-41c9-9bdc-f858a8edf425" name="+V"/>
-        <port id="aae040c7-dc21-4037-bba7-013660d0f2aa" name="-V"/>
-      </ports>
-    </targetConfiguration>
+    <powerConnectionSet id="28bab16b-2f72-4ca9-8c15-02d404a3afa3">
+      <powerConnection id="4ab1226e-bb99-45f1-97cf-fefbc4b6897b" name="3.3V_TO_VDD" sourceID="e5afff1e-3a48-4081-97f1-bb0e916ff309" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="d85c9b6a-53c2-4a3d-895a-d5732689df06" name="5V_TO_VDD" sourceID="fe65b985-f083-4c8f-9810-01ec4deb4b1f" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="4e0921c0-fe3e-4573-a304-961c5f57e76a" name="Aref_TO_VDD" sourceID="1e4d2159-2021-47b1-80a7-461642ccb8ba" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="d85fe65b-8994-4de6-a810-5f9a75422f1d" name="VIN_TO_VDD" sourceID="e8109a9a-46ea-4dc0-8189-8f23d190818f" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="34cd559d-4e1e-4faa-afb1-1e4a219aa5ee" name="SUPPLY_TO_VDD" sourceID="f47e0b65-8a3c-42bc-90cb-2616d32356f5" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="a54c95cd-faae-4f92-ad43-d75531f151f4" name="VDD_TO_VDD" sourceID="e20d633c-a5d3-4974-bbe3-7af7dfc4bf70" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="9c3210b2-d1b8-40c7-b15f-e3e272cf6fef" name="VDD_3.3V_TO_VDD" sourceID="e68608af-f59d-4697-b9f1-954c107ba3b8" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="25829a7a-822a-4ffb-8cd6-e5ae4d841867" name="VDD_5V_TO_VDD" sourceID="61ad3980-d1fc-4e5b-a5ad-4354a5ea16a4" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="8df10723-f2e8-4d53-a1ca-5522b57570fd" name="IOREF_TO_VDD" sourceID="3b2a2072-9386-4109-b626-be92bc8f703d" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="3560cce8-1787-4aba-b719-ca6474436da2" name="VIN_TO_VDD" sourceID="8a277821-630d-44d3-b926-4a5aa14329ad" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="51186b3a-1113-4d5a-9472-a9951afa8e84" name="3V3_TO_VDD" sourceID="74a840c1-86f5-4b3c-b2d1-8b50197bd810" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="f5de7638-9c6b-45f4-becc-0233e7421d0f" name="CVCC_TO_VDD" sourceID="1be1dd18-277f-467c-8447-354cd41ac4a2" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="33b68eb9-58e9-40a9-8ba3-0690d5422103" name="VDD_TO_VDD" sourceID="8b9368ec-33b4-4565-a50b-715bb1437531" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="b7a5b4e4-810c-47df-9c9b-809ae5303622" name="GND_TO_GND" sourceID="58f5dc2b-17ad-4920-b26d-c2f97bc03248" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
+      <powerConnection id="612796b0-5c90-4f9f-84fd-4db64bcb7c41" name="GND_TO_GND" sourceID="e35287bd-7f44-41ff-bfe5-09da9b70f79b" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
+      <powerConnection id="b797859e-d28e-44cb-8857-d4a3879d631f" name="GND_TO_GND" sourceID="414defad-1d2f-4ea0-be26-3d8cfcc9fec3" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
+      <powerConnection id="73ae61a9-eb51-4e12-8ccf-b28aba0a7cc5" name="GND_TO_GND" sourceID="cb2eda97-740b-459a-a43d-9ecc13c47775" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
+      <powerConnection id="c02247ab-82ad-46cb-839b-2137bd232d8d" name="GND_TO_GND" sourceID="3ac96841-607e-4152-933e-e690d0593de9" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
+      <powerConnection id="ed60487c-96cc-47e5-9e6f-a7aa50047bce" name="GND_TO_GND" sourceID="784eddaa-7ee6-47fe-8207-99b07153bbdb" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
+      <powerConnection id="c5d2d708-9180-4511-b5ca-130ab2ca5b15" name="GND_TO_GND" sourceID="36bd8da4-2354-4013-961a-89f2ad18736f" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
+    </powerConnectionSet>
+    <electricalPowerGridSet id="892ed132-874e-4b31-b1e0-115335672081">
+      <electricalGrid xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalGrid" id="9045fd64-d782-412b-91fc-86e77418b9d0" name="GND" definedVoltage="true"/>
+      <electricalGrid xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalGrid" id="587196bd-a7e1-4d8a-a2b9-7b3a3164c650" name="VDD"/>
+    </electricalPowerGridSet>
   </targets>
 </de.ucof.model:Platform>

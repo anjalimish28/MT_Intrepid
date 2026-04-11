@@ -12,6 +12,7 @@ import targets.CCDPU.*;
 import targets.SuperHardwarePortType;
 import targets.SuperTargetType;
 
+import targets.powergrid.SuperPowerType;
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
@@ -76,6 +77,7 @@ public class CCDPUSwitch<T> extends Switch<T> {
 				va41620peb1 va41620peb1 = (va41620peb1)theEObject;
 				T result = caseva41620peb1(va41620peb1);
 				if (result == null) result = caseSuperTargetType(va41620peb1);
+				if (result == null) result = caseSuperPowerType(va41620peb1);
 				if (result == null) result = caseSuperIdentifierType(va41620peb1);
 				if (result == null) result = caseSuperTrackingType(va41620peb1);
 				if (result == null) result = defaultCase(theEObject);
@@ -189,6 +191,21 @@ public class CCDPUSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSuperTargetType(SuperTargetType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Super Power Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Super Power Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSuperPowerType(SuperPowerType object) {
 		return null;
 	}
 

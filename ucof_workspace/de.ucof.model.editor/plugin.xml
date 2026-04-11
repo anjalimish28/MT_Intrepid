@@ -344,6 +344,34 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
+            id="targets.powergrid.presentation.PowergridModelWizardID"
+            name="%_UI_PowergridModelWizard_label"
+            class="targets.powergrid.presentation.PowergridModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/PowergridModelFile.gif">
+         <description>%_UI_PowergridModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="targets.powergrid.presentation.PowergridEditorID"
+            name="%_UI_PowergridEditor_label"
+            icon="icons/full/obj16/PowergridModelFile.gif"
+            extensions="powergrid"
+            class="targets.powergrid.presentation.PowergridEditor"
+            contributorClass="targets.powergrid.presentation.PowergridActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated ucof -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
             id="targets.RDC.presentation.RDCModelWizardID"
             name="%_UI_RDCModelWizard_label"
             class="targets.RDC.presentation.RDCModelWizard"
@@ -540,12 +568,12 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="targets.PowerRail.presentation.PowerRailModelWizardID"
-            name="%_UI_PowerRailModelWizard_label"
-            class="targets.PowerRail.presentation.PowerRailModelWizard"
+            id="targets.IntrepidPowerGrid.presentation.IntrepidPowerGridModelWizardID"
+            name="%_UI_IntrepidPowerGridModelWizard_label"
+            class="targets.IntrepidPowerGrid.presentation.IntrepidPowerGridModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/PowerRailModelFile.gif">
-         <description>%_UI_PowerRailModelWizard_description</description>
+            icon="icons/full/obj16/IntrepidPowerGridModelFile.gif">
+         <description>%_UI_IntrepidPowerGridModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
    </extension>
@@ -553,12 +581,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated ucof -->
       <editor
-            id="targets.PowerRail.presentation.PowerRailEditorID"
-            name="%_UI_PowerRailEditor_label"
-            icon="icons/full/obj16/PowerRailModelFile.gif"
-            extensions="powerrail"
-            class="targets.PowerRail.presentation.PowerRailEditor"
-            contributorClass="targets.PowerRail.presentation.PowerRailActionBarContributor">
+            id="targets.IntrepidPowerGrid.presentation.IntrepidPowerGridEditorID"
+            name="%_UI_IntrepidPowerGridEditor_label"
+            icon="icons/full/obj16/IntrepidPowerGridModelFile.gif"
+            extensions="intrepidpowergrid"
+            class="targets.IntrepidPowerGrid.presentation.IntrepidPowerGridEditor"
+            contributorClass="targets.IntrepidPowerGrid.presentation.IntrepidPowerGridActionBarContributor">
       </editor>
    </extension>
 

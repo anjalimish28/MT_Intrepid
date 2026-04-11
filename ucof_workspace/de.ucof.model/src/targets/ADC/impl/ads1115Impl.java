@@ -15,6 +15,9 @@ import targets.ADC.adcPorts;
 import targets.ADC.ads1115;
 
 import targets.impl.SuperTargetTypeImpl;
+import targets.powergrid.EletrcialInterfaces;
+import targets.powergrid.PowergridPackage;
+import targets.powergrid.SuperPowerType;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,12 +27,22 @@ import targets.impl.SuperTargetTypeImpl;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link targets.ADC.impl.ads1115Impl#getElectricalInterfaces <em>Electrical Interfaces</em>}</li>
  *   <li>{@link targets.ADC.impl.ads1115Impl#getPorts <em>Ports</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class ads1115Impl extends SuperTargetTypeImpl implements ads1115 {
+	/**
+	 * The cached value of the '{@link #getElectricalInterfaces() <em>Electrical Interfaces</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getElectricalInterfaces()
+	 * @generated
+	 * @ordered
+	 */
+	protected EletrcialInterfaces electricalInterfaces;
 	/**
 	 * The cached value of the '{@link #getPorts() <em>Ports</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -56,6 +69,49 @@ public class ads1115Impl extends SuperTargetTypeImpl implements ads1115 {
 	@Override
 	protected EClass eStaticClass() {
 		return ADCPackage.Literals.ADS1115;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EletrcialInterfaces getElectricalInterfaces() {
+		return electricalInterfaces;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetElectricalInterfaces(EletrcialInterfaces newElectricalInterfaces, NotificationChain msgs) {
+		EletrcialInterfaces oldElectricalInterfaces = electricalInterfaces;
+		electricalInterfaces = newElectricalInterfaces;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ADCPackage.ADS1115__ELECTRICAL_INTERFACES, oldElectricalInterfaces, newElectricalInterfaces);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setElectricalInterfaces(EletrcialInterfaces newElectricalInterfaces) {
+		if (newElectricalInterfaces != electricalInterfaces) {
+			NotificationChain msgs = null;
+			if (electricalInterfaces != null)
+				msgs = ((InternalEObject)electricalInterfaces).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ADCPackage.ADS1115__ELECTRICAL_INTERFACES, null, msgs);
+			if (newElectricalInterfaces != null)
+				msgs = ((InternalEObject)newElectricalInterfaces).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ADCPackage.ADS1115__ELECTRICAL_INTERFACES, null, msgs);
+			msgs = basicSetElectricalInterfaces(newElectricalInterfaces, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ADCPackage.ADS1115__ELECTRICAL_INTERFACES, newElectricalInterfaces, newElectricalInterfaces));
 	}
 
 	/**
@@ -109,6 +165,8 @@ public class ads1115Impl extends SuperTargetTypeImpl implements ads1115 {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case ADCPackage.ADS1115__ELECTRICAL_INTERFACES:
+				return basicSetElectricalInterfaces(null, msgs);
 			case ADCPackage.ADS1115__PORTS:
 				return basicSetPorts(null, msgs);
 		}
@@ -123,6 +181,8 @@ public class ads1115Impl extends SuperTargetTypeImpl implements ads1115 {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case ADCPackage.ADS1115__ELECTRICAL_INTERFACES:
+				return getElectricalInterfaces();
 			case ADCPackage.ADS1115__PORTS:
 				return getPorts();
 		}
@@ -137,6 +197,9 @@ public class ads1115Impl extends SuperTargetTypeImpl implements ads1115 {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case ADCPackage.ADS1115__ELECTRICAL_INTERFACES:
+				setElectricalInterfaces((EletrcialInterfaces)newValue);
+				return;
 			case ADCPackage.ADS1115__PORTS:
 				setPorts((adcPorts)newValue);
 				return;
@@ -152,6 +215,9 @@ public class ads1115Impl extends SuperTargetTypeImpl implements ads1115 {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case ADCPackage.ADS1115__ELECTRICAL_INTERFACES:
+				setElectricalInterfaces((EletrcialInterfaces)null);
+				return;
 			case ADCPackage.ADS1115__PORTS:
 				setPorts((adcPorts)null);
 				return;
@@ -167,10 +233,44 @@ public class ads1115Impl extends SuperTargetTypeImpl implements ads1115 {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case ADCPackage.ADS1115__ELECTRICAL_INTERFACES:
+				return electricalInterfaces != null;
 			case ADCPackage.ADS1115__PORTS:
 				return ports != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == SuperPowerType.class) {
+			switch (derivedFeatureID) {
+				case ADCPackage.ADS1115__ELECTRICAL_INTERFACES: return PowergridPackage.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == SuperPowerType.class) {
+			switch (baseFeatureID) {
+				case PowergridPackage.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES: return ADCPackage.ADS1115__ELECTRICAL_INTERFACES;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 } //ads1115Impl

@@ -161,13 +161,22 @@ public interface CCDPUPackage extends EPackage {
 	int VA41620PEB1__PROJECT_NAME = TargetsPackage.SUPER_TARGET_TYPE__PROJECT_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Electrical Interfaces</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VA41620PEB1__ELECTRICAL_INTERFACES = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Ports</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VA41620PEB1__PORTS = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 0;
+	int VA41620PEB1__PORTS = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>va41620peb1</em>' class.
@@ -176,7 +185,7 @@ public interface CCDPUPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VA41620PEB1_FEATURE_COUNT = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 1;
+	int VA41620PEB1_FEATURE_COUNT = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>va41620peb1</em>' class.

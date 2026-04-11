@@ -12,6 +12,7 @@ import targets.CanTransceiver.*;
 import targets.SuperHardwarePortType;
 import targets.SuperTargetType;
 
+import targets.powergrid.SuperPowerType;
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
@@ -76,6 +77,7 @@ public class CanTransceiverSwitch<T> extends Switch<T> {
 				sn65hvd230 sn65hvd230 = (sn65hvd230)theEObject;
 				T result = casesn65hvd230(sn65hvd230);
 				if (result == null) result = caseSuperTargetType(sn65hvd230);
+				if (result == null) result = caseSuperPowerType(sn65hvd230);
 				if (result == null) result = caseSuperIdentifierType(sn65hvd230);
 				if (result == null) result = caseSuperTrackingType(sn65hvd230);
 				if (result == null) result = defaultCase(theEObject);
@@ -189,6 +191,21 @@ public class CanTransceiverSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSuperTargetType(SuperTargetType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Super Power Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Super Power Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSuperPowerType(SuperPowerType object) {
 		return null;
 	}
 

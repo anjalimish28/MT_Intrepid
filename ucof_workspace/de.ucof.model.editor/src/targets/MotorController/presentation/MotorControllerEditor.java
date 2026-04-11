@@ -164,11 +164,12 @@ import targets.ADC.provider.ADCItemProviderAdapterFactory;
 import targets.CCDPU.provider.CCDPUItemProviderAdapterFactory;
 import targets.CanTransceiver.provider.CanTransceiverItemProviderAdapterFactory;
 import targets.HallSensor.provider.HallSensorItemProviderAdapterFactory;
-import targets.PowerRail.provider.PowerRailItemProviderAdapterFactory;
+import targets.IntrepidPowerGrid.provider.IntrepidPowerGridItemProviderAdapterFactory;
 import targets.RDC.provider.RDCItemProviderAdapterFactory;
 
 import targets.Sheild.provider.SheildItemProviderAdapterFactory;
 
+import targets.powergrid.provider.PowergridItemProviderAdapterFactory;
 import targets.provider.TargetsItemProviderAdapterFactory;
 
 import ucof.assignments.database.provider.DatabaseItemProviderAdapterFactory;
@@ -786,6 +787,7 @@ public class MotorControllerEditor
 		adapterFactory.addAdapterFactory(new AssignmentsItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new DatabaseItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new TargetsItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new PowergridItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new RDCItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ADCItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new SheildItemProviderAdapterFactory());
@@ -793,7 +795,7 @@ public class MotorControllerEditor
 		adapterFactory.addAdapterFactory(new CanTransceiverItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new HallSensorItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new CCDPUItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new PowerRailItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new IntrepidPowerGridItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
 		// Create the command stack that will notify this editor as commands are executed.

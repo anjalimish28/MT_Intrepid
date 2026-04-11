@@ -8,6 +8,10 @@
   <eClassifiers xsi:type="ecore:EClass" name="Targets" eSuperTypes="ucof.ecore#//common/etypes/SuperIdentifierType ucof.ecore#//common/etypes/SuperTrackingType">
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetConfiguration" upperBound="-1"
         eType="#//SuperTargetType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="powerConnectionSet" upperBound="-1"
+        eType="#//powergrid/PowerConnectionSet" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="electricalPowerGridSet"
+        upperBound="-1" eType="#//powergrid/ElectricalPowerGridSet" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SuperTargetType" abstract="true" eSuperTypes="ucof.ecore#//common/etypes/SuperIdentifierType ucof.ecore#//common/etypes/SuperTrackingType">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="projectName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -45,9 +49,55 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SuperHardwarePortType" abstract="true"
       eSuperTypes="ucof.ecore#//common/etypes/SuperIdentifierType ucof.ecore#//common/etypes/SuperTrackingType"/>
+  <eSubpackages name="powergrid" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/powergrid"
+      nsPrefix="de.ucof.model.targets.powergrid">
+    <eClassifiers xsi:type="ecore:EClass" name="SuperPowerType" abstract="true">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="electricalInterfaces"
+          eType="#//powergrid/EletrcialInterfaces" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="EletrcialInterfaces" eSuperTypes="ucof.ecore#//common/etypes/SuperIdentifierType ucof.ecore#//common/etypes/SuperTrackingType">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="electricalInterface"
+          upperBound="-1" eType="#//powergrid/SuperElectricalInterfaceType" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SuperElectricalInterfaceType" abstract="true"
+        eSuperTypes="ucof.ecore#//common/etypes/SuperIdentifierType ucof.ecore#//common/etypes/SuperTrackingType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="minVoltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxVoltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//powergrid/interfaceType"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="interfaceType">
+      <eLiterals name="NotSet"/>
+      <eLiterals name="sink" value="1"/>
+      <eLiterals name="source" value="2"/>
+      <eLiterals name="sinkSource" value="3"/>
+      <eLiterals name="analogReference" value="4"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SuperElectricalGridType" abstract="true"
+        eSuperTypes="ucof.ecore#//common/etypes/SuperIdentifierType ucof.ecore#//common/etypes/SuperTrackingType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="definedVoltage" eType="ecore:EEnum ucof.ecore#//common/enums/booleanType"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominalVoltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="gridType">
+      <eLiterals name="NotSet"/>
+      <eLiterals name="Supply" value="1"/>
+      <eLiterals name="Ground" value="2"/>
+      <eLiterals name="analogReference" value="3"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="PowerConnectionSet" eSuperTypes="ucof.ecore#//common/etypes/SuperIdentifierType ucof.ecore#//common/etypes/SuperTrackingType">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="powerConnection" upperBound="-1"
+          eType="#//powergrid/PowerConnection" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="PowerConnection" eSuperTypes="ucof.ecore#//assignments/SuperAssignmentType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="resistance" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ElectricalPowerGridSet" eSuperTypes="ucof.ecore#//common/etypes/SuperIdentifierType ucof.ecore#//common/etypes/SuperTrackingType">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="electricalGrid" upperBound="-1"
+          eType="#//powergrid/SuperElectricalGridType" containment="true"/>
+    </eClassifiers>
+  </eSubpackages>
   <eSubpackages name="RDC" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc"
       nsPrefix="de.ucof.model.targets.rdc">
-    <eClassifiers xsi:type="ecore:EClass" name="stm32f446re" eSuperTypes="#//SuperTargetType">
+    <eClassifiers xsi:type="ecore:EClass" name="stm32f446re" eSuperTypes="#//SuperTargetType #//powergrid/SuperPowerType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//RDC/stmPorts"
           containment="true"/>
     </eClassifiers>
@@ -62,7 +112,7 @@
   </eSubpackages>
   <eSubpackages name="ADC" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/adc"
       nsPrefix="de.ucof.model.targets.adc">
-    <eClassifiers xsi:type="ecore:EClass" name="ads1115" eSuperTypes="#//SuperTargetType">
+    <eClassifiers xsi:type="ecore:EClass" name="ads1115" eSuperTypes="#//SuperTargetType #//powergrid/SuperPowerType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//ADC/adcPorts"
           containment="true"/>
     </eClassifiers>
@@ -76,7 +126,7 @@
   </eSubpackages>
   <eSubpackages name="Sheild" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/sheild"
       nsPrefix="de.ucof.model.targets.sheild">
-    <eClassifiers xsi:type="ecore:EClass" name="arduinosheild" eSuperTypes="#//SuperTargetType #//SuperIOHardwareType">
+    <eClassifiers xsi:type="ecore:EClass" name="arduinosheild" eSuperTypes="#//SuperTargetType #//SuperIOHardwareType #//powergrid/SuperPowerType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//Sheild/sheildPorts"
           containment="true"/>
     </eClassifiers>
@@ -90,7 +140,7 @@
   </eSubpackages>
   <eSubpackages name="MotorController" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/motorcontroller"
       nsPrefix="de.ucof.model.targets.motorcontroller">
-    <eClassifiers xsi:type="ecore:EClass" name="escon409510" eSuperTypes="#//SuperTargetType">
+    <eClassifiers xsi:type="ecore:EClass" name="escon409510" eSuperTypes="#//SuperTargetType #//powergrid/SuperPowerType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//MotorController/esconPorts"
           containment="true"/>
     </eClassifiers>
@@ -104,7 +154,7 @@
   </eSubpackages>
   <eSubpackages name="CanTransceiver" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cantransceiver"
       nsPrefix="de.ucof.model.targets.cantransceiver">
-    <eClassifiers xsi:type="ecore:EClass" name="sn65hvd230" eSuperTypes="#//SuperTargetType">
+    <eClassifiers xsi:type="ecore:EClass" name="sn65hvd230" eSuperTypes="#//SuperTargetType #//powergrid/SuperPowerType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//CanTransceiver/canTransceiverPorts"
           containment="true"/>
     </eClassifiers>
@@ -119,7 +169,7 @@
   </eSubpackages>
   <eSubpackages name="HallSensor" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/hallsensor"
       nsPrefix="de.ucof.model.targets.hallsensor">
-    <eClassifiers xsi:type="ecore:EClass" name="mts360" eSuperTypes="#//SuperTargetType">
+    <eClassifiers xsi:type="ecore:EClass" name="mts360" eSuperTypes="#//SuperTargetType #//powergrid/SuperPowerType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//HallSensor/hallPorts"
           containment="true"/>
     </eClassifiers>
@@ -134,7 +184,7 @@
   </eSubpackages>
   <eSubpackages name="CCDPU" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/ccdpu"
       nsPrefix="de.ucof.model.targets.ccdpu">
-    <eClassifiers xsi:type="ecore:EClass" name="va41620peb1" eSuperTypes="#//SuperTargetType">
+    <eClassifiers xsi:type="ecore:EClass" name="va41620peb1" eSuperTypes="#//SuperTargetType #//powergrid/SuperPowerType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//CCDPU/voragoPorts"
           containment="true"/>
     </eClassifiers>
@@ -147,18 +197,9 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="PowerRail" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/powerrail"
-      nsPrefix="de.ucof.model.targets.powerrail">
-    <eClassifiers xsi:type="ecore:EClass" name="powerRailTarget" eSuperTypes="#//SuperTargetType">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//PowerRail/powerRailPorts"
-          containment="true"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="powerRailPorts" eSuperTypes="ucof.ecore#//common/etypes/SuperTrackingType ucof.ecore#//common/etypes/SuperIdentifierType">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="port" upperBound="-1"
-          eType="#//PowerRail/powerRailPort" containment="true"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="powerRailPort" eSuperTypes="#//SuperHardwarePortType">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    </eClassifiers>
+  <eSubpackages name="IntrepidPowerGrid" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidpowergrid"
+      nsPrefix="de.ucof.model.targets.intrepidpowergrid">
+    <eClassifiers xsi:type="ecore:EClass" name="intrepidElectricalGrid" eSuperTypes="#//powergrid/SuperElectricalGridType"/>
+    <eClassifiers xsi:type="ecore:EClass" name="intrepidElectricalInterface" eSuperTypes="#//powergrid/SuperElectricalInterfaceType"/>
   </eSubpackages>
 </ecore:EPackage>
