@@ -3,6 +3,7 @@
 package targets.CCDPU;
 
 import targets.SuperTargetType;
+import targets.powergrid.SuperPowerType;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,7 +21,7 @@ import targets.SuperTargetType;
  * @model
  * @generated
  */
-public interface va41620peb1 extends SuperTargetType {
+public interface va41620peb1 extends SuperTargetType, SuperPowerType {
 	/**
 	 * Returns the value of the '<em><b>Ports</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

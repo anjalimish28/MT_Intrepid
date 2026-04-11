@@ -19,10 +19,10 @@ import targets.CanTransceiver.impl.CanTransceiverPackageImpl;
 import targets.HallSensor.HallSensorPackage;
 import targets.HallSensor.impl.HallSensorPackageImpl;
 import targets.HardwareInformation;
+import targets.IntrepidPowerGrid.IntrepidPowerGridPackage;
+import targets.IntrepidPowerGrid.impl.IntrepidPowerGridPackageImpl;
 import targets.MotorController.MotorControllerPackage;
 import targets.MotorController.impl.MotorControllerPackageImpl;
-import targets.PowerRail.PowerRailPackage;
-import targets.PowerRail.impl.PowerRailPackageImpl;
 import targets.RDC.RDCPackage;
 import targets.RDC.impl.RDCPackageImpl;
 import targets.ResistorInfo;
@@ -36,6 +36,8 @@ import targets.SuperTargetType;
 import targets.Targets;
 import targets.TargetsFactory;
 import targets.TargetsPackage;
+import targets.powergrid.PowergridPackage;
+import targets.powergrid.impl.PowergridPackageImpl;
 import ucof.UcofPackage;
 
 import ucof.assignments.AssignmentsPackage;
@@ -307,6 +309,8 @@ public class TargetsPackageImpl extends EPackageImpl implements TargetsPackage {
 		AssignmentsPackageImpl theAssignmentsPackage = (AssignmentsPackageImpl)(registeredPackage instanceof AssignmentsPackageImpl ? registeredPackage : AssignmentsPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(DatabasePackage.eNS_URI);
 		DatabasePackageImpl theDatabasePackage = (DatabasePackageImpl)(registeredPackage instanceof DatabasePackageImpl ? registeredPackage : DatabasePackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PowergridPackage.eNS_URI);
+		PowergridPackageImpl thePowergridPackage = (PowergridPackageImpl)(registeredPackage instanceof PowergridPackageImpl ? registeredPackage : PowergridPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(RDCPackage.eNS_URI);
 		RDCPackageImpl theRDCPackage = (RDCPackageImpl)(registeredPackage instanceof RDCPackageImpl ? registeredPackage : RDCPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ADCPackage.eNS_URI);
@@ -321,8 +325,8 @@ public class TargetsPackageImpl extends EPackageImpl implements TargetsPackage {
 		HallSensorPackageImpl theHallSensorPackage = (HallSensorPackageImpl)(registeredPackage instanceof HallSensorPackageImpl ? registeredPackage : HallSensorPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CCDPUPackage.eNS_URI);
 		CCDPUPackageImpl theCCDPUPackage = (CCDPUPackageImpl)(registeredPackage instanceof CCDPUPackageImpl ? registeredPackage : CCDPUPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PowerRailPackage.eNS_URI);
-		PowerRailPackageImpl thePowerRailPackage = (PowerRailPackageImpl)(registeredPackage instanceof PowerRailPackageImpl ? registeredPackage : PowerRailPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(IntrepidPowerGridPackage.eNS_URI);
+		IntrepidPowerGridPackageImpl theIntrepidPowerGridPackage = (IntrepidPowerGridPackageImpl)(registeredPackage instanceof IntrepidPowerGridPackageImpl ? registeredPackage : IntrepidPowerGridPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theTargetsPackage.createPackageContents();
@@ -352,6 +356,7 @@ public class TargetsPackageImpl extends EPackageImpl implements TargetsPackage {
 		theI2cPackage.createPackageContents();
 		theAssignmentsPackage.createPackageContents();
 		theDatabasePackage.createPackageContents();
+		thePowergridPackage.createPackageContents();
 		theRDCPackage.createPackageContents();
 		theADCPackage.createPackageContents();
 		theSheildPackage.createPackageContents();
@@ -359,7 +364,7 @@ public class TargetsPackageImpl extends EPackageImpl implements TargetsPackage {
 		theCanTransceiverPackage.createPackageContents();
 		theHallSensorPackage.createPackageContents();
 		theCCDPUPackage.createPackageContents();
-		thePowerRailPackage.createPackageContents();
+		theIntrepidPowerGridPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theTargetsPackage.initializePackageContents();
@@ -389,6 +394,7 @@ public class TargetsPackageImpl extends EPackageImpl implements TargetsPackage {
 		theI2cPackage.initializePackageContents();
 		theAssignmentsPackage.initializePackageContents();
 		theDatabasePackage.initializePackageContents();
+		thePowergridPackage.initializePackageContents();
 		theRDCPackage.initializePackageContents();
 		theADCPackage.initializePackageContents();
 		theSheildPackage.initializePackageContents();
@@ -396,7 +402,7 @@ public class TargetsPackageImpl extends EPackageImpl implements TargetsPackage {
 		theCanTransceiverPackage.initializePackageContents();
 		theHallSensorPackage.initializePackageContents();
 		theCCDPUPackage.initializePackageContents();
-		thePowerRailPackage.initializePackageContents();
+		theIntrepidPowerGridPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theTargetsPackage.freeze();
@@ -422,6 +428,24 @@ public class TargetsPackageImpl extends EPackageImpl implements TargetsPackage {
 	 */
 	public EReference getTargets_TargetConfiguration() {
 		return (EReference)targetsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getTargets_PowerConnectionSet() {
+		return (EReference)targetsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getTargets_ElectricalPowerGridSet() {
+		return (EReference)targetsEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -652,6 +676,8 @@ public class TargetsPackageImpl extends EPackageImpl implements TargetsPackage {
 		// Create classes and their features
 		targetsEClass = createEClass(TARGETS);
 		createEReference(targetsEClass, TARGETS__TARGET_CONFIGURATION);
+		createEReference(targetsEClass, TARGETS__POWER_CONNECTION_SET);
+		createEReference(targetsEClass, TARGETS__ELECTRICAL_POWER_GRID_SET);
 
 		superTargetTypeEClass = createEClass(SUPER_TARGET_TYPE);
 		createEAttribute(superTargetTypeEClass, SUPER_TARGET_TYPE__PROJECT_NAME);
@@ -708,6 +734,7 @@ public class TargetsPackageImpl extends EPackageImpl implements TargetsPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
+		PowergridPackage thePowergridPackage = (PowergridPackage)EPackage.Registry.INSTANCE.getEPackage(PowergridPackage.eNS_URI);
 		RDCPackage theRDCPackage = (RDCPackage)EPackage.Registry.INSTANCE.getEPackage(RDCPackage.eNS_URI);
 		ADCPackage theADCPackage = (ADCPackage)EPackage.Registry.INSTANCE.getEPackage(ADCPackage.eNS_URI);
 		SheildPackage theSheildPackage = (SheildPackage)EPackage.Registry.INSTANCE.getEPackage(SheildPackage.eNS_URI);
@@ -715,12 +742,13 @@ public class TargetsPackageImpl extends EPackageImpl implements TargetsPackage {
 		CanTransceiverPackage theCanTransceiverPackage = (CanTransceiverPackage)EPackage.Registry.INSTANCE.getEPackage(CanTransceiverPackage.eNS_URI);
 		HallSensorPackage theHallSensorPackage = (HallSensorPackage)EPackage.Registry.INSTANCE.getEPackage(HallSensorPackage.eNS_URI);
 		CCDPUPackage theCCDPUPackage = (CCDPUPackage)EPackage.Registry.INSTANCE.getEPackage(CCDPUPackage.eNS_URI);
-		PowerRailPackage thePowerRailPackage = (PowerRailPackage)EPackage.Registry.INSTANCE.getEPackage(PowerRailPackage.eNS_URI);
+		IntrepidPowerGridPackage theIntrepidPowerGridPackage = (IntrepidPowerGridPackage)EPackage.Registry.INSTANCE.getEPackage(IntrepidPowerGridPackage.eNS_URI);
 		EtypesPackage theEtypesPackage = (EtypesPackage)EPackage.Registry.INSTANCE.getEPackage(EtypesPackage.eNS_URI);
 		EdataPackage theEdataPackage = (EdataPackage)EPackage.Registry.INSTANCE.getEPackage(EdataPackage.eNS_URI);
 		EnumsPackage theEnumsPackage = (EnumsPackage)EPackage.Registry.INSTANCE.getEPackage(EnumsPackage.eNS_URI);
 
 		// Add subpackages
+		getESubpackages().add(thePowergridPackage);
 		getESubpackages().add(theRDCPackage);
 		getESubpackages().add(theADCPackage);
 		getESubpackages().add(theSheildPackage);
@@ -728,7 +756,7 @@ public class TargetsPackageImpl extends EPackageImpl implements TargetsPackage {
 		getESubpackages().add(theCanTransceiverPackage);
 		getESubpackages().add(theHallSensorPackage);
 		getESubpackages().add(theCCDPUPackage);
-		getESubpackages().add(thePowerRailPackage);
+		getESubpackages().add(theIntrepidPowerGridPackage);
 
 		// Create type parameters
 
@@ -753,6 +781,8 @@ public class TargetsPackageImpl extends EPackageImpl implements TargetsPackage {
 		// Initialize classes, features, and operations; add parameters
 		initEClass(targetsEClass, Targets.class, "Targets", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTargets_TargetConfiguration(), this.getSuperTargetType(), null, "targetConfiguration", null, 0, -1, Targets.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTargets_PowerConnectionSet(), thePowergridPackage.getPowerConnectionSet(), null, "powerConnectionSet", null, 0, -1, Targets.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTargets_ElectricalPowerGridSet(), thePowergridPackage.getElectricalPowerGridSet(), null, "electricalPowerGridSet", null, 0, -1, Targets.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(superTargetTypeEClass, SuperTargetType.class, "SuperTargetType", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSuperTargetType_ProjectName(), ecorePackage.getEString(), "projectName", null, 0, 1, SuperTargetType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

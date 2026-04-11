@@ -4,6 +4,7 @@ package targets.Sheild;
 
 import targets.SuperIOHardwareType;
 import targets.SuperTargetType;
+import targets.powergrid.SuperPowerType;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,7 +22,7 @@ import targets.SuperTargetType;
  * @model
  * @generated
  */
-public interface arduinosheild extends SuperTargetType, SuperIOHardwareType {
+public interface arduinosheild extends SuperTargetType, SuperIOHardwareType, SuperPowerType {
 	/**
 	 * Returns the value of the '<em><b>Ports</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

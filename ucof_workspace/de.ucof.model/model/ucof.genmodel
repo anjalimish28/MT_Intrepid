@@ -876,6 +876,8 @@
   <genPackages prefix="Targets" generateModelWizard="false" ecorePackage="targets.ecore#/">
     <genClasses ecoreClass="targets.ecore#//Targets">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//Targets/targetConfiguration"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//Targets/powerConnectionSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//Targets/electricalPowerGridSet"/>
     </genClasses>
     <genClasses image="false" ecoreClass="targets.ecore#//SuperTargetType">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//SuperTargetType/projectName"/>
@@ -906,6 +908,45 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//HardwareInformation/iPAddressOfHardwareSystem"/>
     </genClasses>
     <genClasses image="false" ecoreClass="targets.ecore#//SuperHardwarePortType"/>
+    <nestedGenPackages prefix="Powergrid" disposableProviderFactory="true" ecorePackage="targets.ecore#//powergrid">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="targets.ecore#//powergrid/interfaceType">
+        <genEnumLiterals ecoreEnumLiteral="targets.ecore#//powergrid/interfaceType/NotSet"/>
+        <genEnumLiterals ecoreEnumLiteral="targets.ecore#//powergrid/interfaceType/sink"/>
+        <genEnumLiterals ecoreEnumLiteral="targets.ecore#//powergrid/interfaceType/source"/>
+        <genEnumLiterals ecoreEnumLiteral="targets.ecore#//powergrid/interfaceType/sinkSource"/>
+        <genEnumLiterals ecoreEnumLiteral="targets.ecore#//powergrid/interfaceType/analogReference"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="targets.ecore#//powergrid/gridType">
+        <genEnumLiterals ecoreEnumLiteral="targets.ecore#//powergrid/gridType/NotSet"/>
+        <genEnumLiterals ecoreEnumLiteral="targets.ecore#//powergrid/gridType/Supply"/>
+        <genEnumLiterals ecoreEnumLiteral="targets.ecore#//powergrid/gridType/Ground"/>
+        <genEnumLiterals ecoreEnumLiteral="targets.ecore#//powergrid/gridType/analogReference"/>
+      </genEnums>
+      <genClasses image="false" ecoreClass="targets.ecore#//powergrid/SuperPowerType">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//powergrid/SuperPowerType/electricalInterfaces"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//powergrid/EletrcialInterfaces">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//powergrid/EletrcialInterfaces/electricalInterface"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="targets.ecore#//powergrid/SuperElectricalInterfaceType">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//powergrid/SuperElectricalInterfaceType/minVoltage"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//powergrid/SuperElectricalInterfaceType/maxVoltage"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//powergrid/SuperElectricalInterfaceType/type"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="targets.ecore#//powergrid/SuperElectricalGridType">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//powergrid/SuperElectricalGridType/definedVoltage"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//powergrid/SuperElectricalGridType/nominalVoltage"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//powergrid/PowerConnectionSet">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//powergrid/PowerConnectionSet/powerConnection"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//powergrid/PowerConnection">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//powergrid/PowerConnection/resistance"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//powergrid/ElectricalPowerGridSet">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//powergrid/ElectricalPowerGridSet/electricalGrid"/>
+      </genClasses>
+    </nestedGenPackages>
     <nestedGenPackages prefix="RDC" basePackage="targets" disposableProviderFactory="true"
         ecorePackage="targets.ecore#//RDC">
       <genClasses ecoreClass="targets.ecore#//RDC/stm32f446re">
@@ -991,16 +1032,10 @@
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//CCDPU/voragoPort/pinNumber"/>
       </genClasses>
     </nestedGenPackages>
-    <nestedGenPackages prefix="PowerRail" disposableProviderFactory="true" ecorePackage="targets.ecore#//PowerRail">
-      <genClasses ecoreClass="targets.ecore#//PowerRail/powerRailTarget">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//PowerRail/powerRailTarget/ports"/>
-      </genClasses>
-      <genClasses ecoreClass="targets.ecore#//PowerRail/powerRailPorts">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//PowerRail/powerRailPorts/port"/>
-      </genClasses>
-      <genClasses ecoreClass="targets.ecore#//PowerRail/powerRailPort">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//PowerRail/powerRailPort/pinName"/>
-      </genClasses>
+    <nestedGenPackages prefix="IntrepidPowerGrid" disposableProviderFactory="true"
+        ecorePackage="targets.ecore#//IntrepidPowerGrid">
+      <genClasses ecoreClass="targets.ecore#//IntrepidPowerGrid/intrepidElectricalGrid"/>
+      <genClasses ecoreClass="targets.ecore#//IntrepidPowerGrid/intrepidElectricalInterface"/>
     </nestedGenPackages>
   </genPackages>
 </genmodel:GenModel>

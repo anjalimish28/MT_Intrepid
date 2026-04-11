@@ -19,6 +19,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
 import targets.SuperTargetType;
 import targets.Targets;
 import targets.TargetsPackage;
+import targets.powergrid.ElectricalPowerGridSet;
+import targets.powergrid.PowerConnectionSet;
 import ucof.common.etypes.EtypesPackage;
 import ucof.common.etypes.SuperTrackingType;
 import ucof.common.etypes.impl.SuperIdentifierTypeImpl;
@@ -39,6 +41,8 @@ import ucof.common.etypes.impl.SuperIdentifierTypeImpl;
  *   <li>{@link targets.impl.TargetsImpl#getCreator <em>Creator</em>}</li>
  *   <li>{@link targets.impl.TargetsImpl#getVersion <em>Version</em>}</li>
  *   <li>{@link targets.impl.TargetsImpl#getTargetConfiguration <em>Target Configuration</em>}</li>
+ *   <li>{@link targets.impl.TargetsImpl#getPowerConnectionSet <em>Power Connection Set</em>}</li>
+ *   <li>{@link targets.impl.TargetsImpl#getElectricalPowerGridSet <em>Electrical Power Grid Set</em>}</li>
  * </ul>
  *
  * @generated
@@ -179,6 +183,25 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected EList<SuperTargetType> targetConfiguration;
+
+	/**
+	 * The cached value of the '{@link #getPowerConnectionSet() <em>Power Connection Set</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPowerConnectionSet()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<PowerConnectionSet> powerConnectionSet;
+	/**
+	 * The cached value of the '{@link #getElectricalPowerGridSet() <em>Electrical Power Grid Set</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getElectricalPowerGridSet()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<ElectricalPowerGridSet> electricalPowerGridSet;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -363,11 +386,39 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<PowerConnectionSet> getPowerConnectionSet() {
+		if (powerConnectionSet == null) {
+			powerConnectionSet = new EObjectContainmentEList<PowerConnectionSet>(PowerConnectionSet.class, this, TargetsPackage.TARGETS__POWER_CONNECTION_SET);
+		}
+		return powerConnectionSet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ElectricalPowerGridSet> getElectricalPowerGridSet() {
+		if (electricalPowerGridSet == null) {
+			electricalPowerGridSet = new EObjectContainmentEList<ElectricalPowerGridSet>(ElectricalPowerGridSet.class, this, TargetsPackage.TARGETS__ELECTRICAL_POWER_GRID_SET);
+		}
+		return electricalPowerGridSet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case TargetsPackage.TARGETS__TARGET_CONFIGURATION:
 				return ((InternalEList<?>)getTargetConfiguration()).basicRemove(otherEnd, msgs);
+			case TargetsPackage.TARGETS__POWER_CONNECTION_SET:
+				return ((InternalEList<?>)getPowerConnectionSet()).basicRemove(otherEnd, msgs);
+			case TargetsPackage.TARGETS__ELECTRICAL_POWER_GRID_SET:
+				return ((InternalEList<?>)getElectricalPowerGridSet()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -396,6 +447,10 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 				return getVersion();
 			case TargetsPackage.TARGETS__TARGET_CONFIGURATION:
 				return getTargetConfiguration();
+			case TargetsPackage.TARGETS__POWER_CONNECTION_SET:
+				return getPowerConnectionSet();
+			case TargetsPackage.TARGETS__ELECTRICAL_POWER_GRID_SET:
+				return getElectricalPowerGridSet();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -434,6 +489,14 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 				getTargetConfiguration().clear();
 				getTargetConfiguration().addAll((Collection<? extends SuperTargetType>)newValue);
 				return;
+			case TargetsPackage.TARGETS__POWER_CONNECTION_SET:
+				getPowerConnectionSet().clear();
+				getPowerConnectionSet().addAll((Collection<? extends PowerConnectionSet>)newValue);
+				return;
+			case TargetsPackage.TARGETS__ELECTRICAL_POWER_GRID_SET:
+				getElectricalPowerGridSet().clear();
+				getElectricalPowerGridSet().addAll((Collection<? extends ElectricalPowerGridSet>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -470,6 +533,12 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 			case TargetsPackage.TARGETS__TARGET_CONFIGURATION:
 				getTargetConfiguration().clear();
 				return;
+			case TargetsPackage.TARGETS__POWER_CONNECTION_SET:
+				getPowerConnectionSet().clear();
+				return;
+			case TargetsPackage.TARGETS__ELECTRICAL_POWER_GRID_SET:
+				getElectricalPowerGridSet().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -498,6 +567,10 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 				return version != VERSION_EDEFAULT;
 			case TargetsPackage.TARGETS__TARGET_CONFIGURATION:
 				return targetConfiguration != null && !targetConfiguration.isEmpty();
+			case TargetsPackage.TARGETS__POWER_CONNECTION_SET:
+				return powerConnectionSet != null && !powerConnectionSet.isEmpty();
+			case TargetsPackage.TARGETS__ELECTRICAL_POWER_GRID_SET:
+				return electricalPowerGridSet != null && !electricalPowerGridSet.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

@@ -3,6 +3,7 @@
 package targets.RDC;
 
 import targets.SuperTargetType;
+import targets.powergrid.SuperPowerType;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,7 +21,7 @@ import targets.SuperTargetType;
  * @model
  * @generated
  */
-public interface stm32f446re extends SuperTargetType {
+public interface stm32f446re extends SuperTargetType, SuperPowerType {
 	/**
 	 * Returns the value of the '<em><b>Ports</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

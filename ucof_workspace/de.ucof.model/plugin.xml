@@ -225,6 +225,14 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated ucof -->
       <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/powergrid"
+            class="targets.powergrid.PowergridPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
             uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc"
             class="targets.RDC.RDCPackage"
             genModel="model/ucof.genmodel"/>
@@ -281,8 +289,8 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated ucof -->
       <package
-            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/powerrail"
-            class="targets.PowerRail.PowerRailPackage"
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidpowergrid"
+            class="targets.IntrepidPowerGrid.IntrepidPowerGridPackage"
             genModel="model/ucof.genmodel"/>
    </extension>
 

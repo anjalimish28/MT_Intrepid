@@ -22,6 +22,8 @@ import targets.Sheild.arduinosheild;
 
 import targets.TargetsFactory;
 import targets.TargetsPackage;
+import targets.powergrid.PowergridFactory;
+import targets.powergrid.PowergridPackage;
 import targets.provider.SuperTargetTypeItemProvider;
 
 import ucof.provider.UcofEditPlugin;
@@ -71,6 +73,7 @@ public class arduinosheildItemProvider extends SuperTargetTypeItemProvider {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(TargetsPackage.Literals.SUPER_IO_HARDWARE_TYPE__ASSIGNMENT_SPECIFICATION);
+			childrenFeatures.add(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES);
 			childrenFeatures.add(SheildPackage.Literals.ARDUINOSHEILD__PORTS);
 		}
 		return childrenFeatures;
@@ -128,6 +131,7 @@ public class arduinosheildItemProvider extends SuperTargetTypeItemProvider {
 
 		switch (notification.getFeatureID(arduinosheild.class)) {
 			case SheildPackage.ARDUINOSHEILD__ASSIGNMENT_SPECIFICATION:
+			case SheildPackage.ARDUINOSHEILD__ELECTRICAL_INTERFACES:
 			case SheildPackage.ARDUINOSHEILD__PORTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -155,6 +159,11 @@ public class arduinosheildItemProvider extends SuperTargetTypeItemProvider {
 			(createChildParameter
 				(TargetsPackage.Literals.SUPER_IO_HARDWARE_TYPE__ASSIGNMENT_SPECIFICATION,
 				 TargetsFactory.eINSTANCE.createResistorInfo()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES,
+				 PowergridFactory.eINSTANCE.createEletrcialInterfaces()));
 
 		newChildDescriptors.add
 			(createChildParameter

@@ -161,13 +161,22 @@ public interface HallSensorPackage extends EPackage {
 	int MTS360__PROJECT_NAME = TargetsPackage.SUPER_TARGET_TYPE__PROJECT_NAME;
 
 	/**
+	 * The feature id for the '<em><b>Electrical Interfaces</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MTS360__ELECTRICAL_INTERFACES = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Ports</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MTS360__PORTS = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 0;
+	int MTS360__PORTS = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>mts360</em>' class.
@@ -176,7 +185,7 @@ public interface HallSensorPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MTS360_FEATURE_COUNT = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 1;
+	int MTS360_FEATURE_COUNT = TargetsPackage.SUPER_TARGET_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>mts360</em>' class.

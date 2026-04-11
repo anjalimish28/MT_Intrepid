@@ -19,14 +19,13 @@ import targets.CanTransceiver.CanTransceiverPackage;
 import targets.CanTransceiver.impl.CanTransceiverPackageImpl;
 import targets.HallSensor.HallSensorPackage;
 import targets.HallSensor.impl.HallSensorPackageImpl;
+import targets.IntrepidPowerGrid.IntrepidPowerGridPackage;
+import targets.IntrepidPowerGrid.impl.IntrepidPowerGridPackageImpl;
 import targets.MotorController.MotorControllerFactory;
 import targets.MotorController.MotorControllerPackage;
 import targets.MotorController.escon409510;
 import targets.MotorController.esconPort;
 import targets.MotorController.esconPorts;
-
-import targets.PowerRail.PowerRailPackage;
-import targets.PowerRail.impl.PowerRailPackageImpl;
 import targets.RDC.RDCPackage;
 
 import targets.RDC.impl.RDCPackageImpl;
@@ -39,6 +38,8 @@ import targets.TargetsPackage;
 
 import targets.impl.TargetsPackageImpl;
 
+import targets.powergrid.PowergridPackage;
+import targets.powergrid.impl.PowergridPackageImpl;
 import ucof.UcofPackage;
 
 import ucof.assignments.AssignmentsPackage;
@@ -270,6 +271,8 @@ public class MotorControllerPackageImpl extends EPackageImpl implements MotorCon
 		DatabasePackageImpl theDatabasePackage = (DatabasePackageImpl)(registeredPackage instanceof DatabasePackageImpl ? registeredPackage : DatabasePackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TargetsPackage.eNS_URI);
 		TargetsPackageImpl theTargetsPackage = (TargetsPackageImpl)(registeredPackage instanceof TargetsPackageImpl ? registeredPackage : TargetsPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PowergridPackage.eNS_URI);
+		PowergridPackageImpl thePowergridPackage = (PowergridPackageImpl)(registeredPackage instanceof PowergridPackageImpl ? registeredPackage : PowergridPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(RDCPackage.eNS_URI);
 		RDCPackageImpl theRDCPackage = (RDCPackageImpl)(registeredPackage instanceof RDCPackageImpl ? registeredPackage : RDCPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ADCPackage.eNS_URI);
@@ -282,8 +285,8 @@ public class MotorControllerPackageImpl extends EPackageImpl implements MotorCon
 		HallSensorPackageImpl theHallSensorPackage = (HallSensorPackageImpl)(registeredPackage instanceof HallSensorPackageImpl ? registeredPackage : HallSensorPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CCDPUPackage.eNS_URI);
 		CCDPUPackageImpl theCCDPUPackage = (CCDPUPackageImpl)(registeredPackage instanceof CCDPUPackageImpl ? registeredPackage : CCDPUPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PowerRailPackage.eNS_URI);
-		PowerRailPackageImpl thePowerRailPackage = (PowerRailPackageImpl)(registeredPackage instanceof PowerRailPackageImpl ? registeredPackage : PowerRailPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(IntrepidPowerGridPackage.eNS_URI);
+		IntrepidPowerGridPackageImpl theIntrepidPowerGridPackage = (IntrepidPowerGridPackageImpl)(registeredPackage instanceof IntrepidPowerGridPackageImpl ? registeredPackage : IntrepidPowerGridPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theMotorControllerPackage.createPackageContents();
@@ -314,13 +317,14 @@ public class MotorControllerPackageImpl extends EPackageImpl implements MotorCon
 		theAssignmentsPackage.createPackageContents();
 		theDatabasePackage.createPackageContents();
 		theTargetsPackage.createPackageContents();
+		thePowergridPackage.createPackageContents();
 		theRDCPackage.createPackageContents();
 		theADCPackage.createPackageContents();
 		theSheildPackage.createPackageContents();
 		theCanTransceiverPackage.createPackageContents();
 		theHallSensorPackage.createPackageContents();
 		theCCDPUPackage.createPackageContents();
-		thePowerRailPackage.createPackageContents();
+		theIntrepidPowerGridPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theMotorControllerPackage.initializePackageContents();
@@ -351,13 +355,14 @@ public class MotorControllerPackageImpl extends EPackageImpl implements MotorCon
 		theAssignmentsPackage.initializePackageContents();
 		theDatabasePackage.initializePackageContents();
 		theTargetsPackage.initializePackageContents();
+		thePowergridPackage.initializePackageContents();
 		theRDCPackage.initializePackageContents();
 		theADCPackage.initializePackageContents();
 		theSheildPackage.initializePackageContents();
 		theCanTransceiverPackage.initializePackageContents();
 		theHallSensorPackage.initializePackageContents();
 		theCCDPUPackage.initializePackageContents();
-		thePowerRailPackage.initializePackageContents();
+		theIntrepidPowerGridPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theMotorControllerPackage.freeze();
@@ -484,6 +489,7 @@ public class MotorControllerPackageImpl extends EPackageImpl implements MotorCon
 
 		// Obtain other dependent packages
 		TargetsPackage theTargetsPackage = (TargetsPackage)EPackage.Registry.INSTANCE.getEPackage(TargetsPackage.eNS_URI);
+		PowergridPackage thePowergridPackage = (PowergridPackage)EPackage.Registry.INSTANCE.getEPackage(PowergridPackage.eNS_URI);
 		EtypesPackage theEtypesPackage = (EtypesPackage)EPackage.Registry.INSTANCE.getEPackage(EtypesPackage.eNS_URI);
 
 		// Create type parameters
@@ -492,6 +498,7 @@ public class MotorControllerPackageImpl extends EPackageImpl implements MotorCon
 
 		// Add supertypes to classes
 		escon409510EClass.getESuperTypes().add(theTargetsPackage.getSuperTargetType());
+		escon409510EClass.getESuperTypes().add(thePowergridPackage.getSuperPowerType());
 		esconPortsEClass.getESuperTypes().add(theEtypesPackage.getSuperTrackingType());
 		esconPortsEClass.getESuperTypes().add(theEtypesPackage.getSuperIdentifierType());
 		esconPortEClass.getESuperTypes().add(theTargetsPackage.getSuperHardwarePortType());

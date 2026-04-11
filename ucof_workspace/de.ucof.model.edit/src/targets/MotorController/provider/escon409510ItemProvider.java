@@ -20,6 +20,8 @@ import targets.MotorController.MotorControllerFactory;
 import targets.MotorController.MotorControllerPackage;
 import targets.MotorController.escon409510;
 
+import targets.powergrid.PowergridFactory;
+import targets.powergrid.PowergridPackage;
 import targets.provider.SuperTargetTypeItemProvider;
 
 import ucof.provider.UcofEditPlugin;
@@ -68,6 +70,7 @@ public class escon409510ItemProvider extends SuperTargetTypeItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
+			childrenFeatures.add(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES);
 			childrenFeatures.add(MotorControllerPackage.Literals.ESCON409510__PORTS);
 		}
 		return childrenFeatures;
@@ -124,6 +127,7 @@ public class escon409510ItemProvider extends SuperTargetTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(escon409510.class)) {
+			case MotorControllerPackage.ESCON409510__ELECTRICAL_INTERFACES:
 			case MotorControllerPackage.ESCON409510__PORTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -141,6 +145,11 @@ public class escon409510ItemProvider extends SuperTargetTypeItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES,
+				 PowergridFactory.eINSTANCE.createEletrcialInterfaces()));
 
 		newChildDescriptors.add
 			(createChildParameter

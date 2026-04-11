@@ -1,0 +1,207 @@
+[comment encoding = UTF-8 /]
+[module Ecore2Python('http://www.eclipse.org/emf/2002/Ecore')/]
+
+[template public Ecore2Python(e : EClass)]
+[let rootPkg : EPackage = getRootPackage(e.eContainer())]
+[comment @main /]
+[file (e.name.concat('.py'), false)]
+import xml.etree.ElementTree as ET  
+from pathlib import Path
+import xml.dom.minidom
+#import super types
+[for (s : EClass | e.eSuperTypes)]
+from [s.name /] import [s.name /]
+[/for]
+
+#import children classes
+[for (r : EReference | e.eAllReferences)]
+from [r.eType.name /] import [r.eType.name /]
+[getInstancesOfSuperClasses(rootPkg, r.eType.name)/]
+[/for]
+
+# -------------------------------------------------------------------
+# Automatically generated class from ecore model!! [e.name /].
+# Don't change here, change in source ecore model
+# Code generator by Philipp Chrysalidis in 2025
+# ======================================================================
+
+class [e.name /]([for (s : EClass | e.eSuperTypes) separator (', ')][s.name /][/for]):
+  def __init__(self):
+    #attributes
+    [for (a : EAttribute | e.eAllAttributes)]
+    self.[pythonName(a.name) /] = None
+    [/for]
+    #children (references)
+    [for (r : EReference | e.eAllReferences)]
+    [if (r.upperBound <> 1)]    #Check if it's a collection (i.e., upperBound <> 1)
+    self.[pythonName(r.name) /]_list = list()  #Initialize as an empty list for multiple children
+    [else]
+    self.[pythonName(r.name) /] = None  #Initialize as a single child (None by default)
+    [/if]
+    [/for]
+    self.parent = None #default is no parent, but can be set for every element
+	
+  [for (r : EReference | e.eAllReferences)]
+  [if (r.upperBound <> 1)]    #Check if it's a collection (i.e., upperBound <> 1)
+  def add_[pythonName(r.name) /](self, [pythonName(r.name) /]): #function for adding child
+    self.[pythonName(r.name) /]_list.append([pythonName(r.name) /])
+    [pythonName(r.name) /].parent = self #link child to parent
+  [/if]
+  [/for]
+
+  def to_xml(self, reference_name = None):
+    [if (toLowerFirst(e.name)  = 'platform')]
+    ET.register_namespace("xmi", "http://www.omg.org/XMI")
+    ET.register_namespace("xsi", "http://www.w3.org/2001/XMLSchema-instance")
+    [e.ePackage.printAllSubPackageNamespace() /][e.printReferencedPackages() /]
+    element = ET.Element("ucof:Platform", { 
+      "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+      "xmlns:xmi": "http://www.omg.org/XMI",
+      "xmlns:ucof": "https://gitlab.com/ucof/ucof.de/model/v001/ucof",
+      [e.ePackage.addNamespaces() /][e.addReferencedNamespaces() /]
+    })
+    [else]
+    element = ET.Element(reference_name)
+    if not reference_name == "[e.ePackage.name/]" and not reference_name.lower() == "[e.name.toLower()/]":
+      element.set("xsi:type", "[e.ePackage.nsPrefix/]:[e.name/]")  
+    [/if]
+    # Convert attributes to XML attributes
+    [for (a : EAttribute | e.eAllAttributes)]
+    if self.[pythonName(a.name) /] is not None:
+      element.set("[a.name /]", str(self.[pythonName(a.name) /]))  
+    [/for]
+    # Convert children to nested XML elements
+    [for (r : EReference | e.eAllReferences)]
+    [if (r.upperBound <> 1)]  # Multiple children
+    for child in self.[pythonName(r.name) /]_list:  
+      element.append(child.to_xml("[pythonName(r.name) /]"))  
+    [else]  # Single child
+    if self.[pythonName(r.name) /] is not None:
+      element.append(self.[pythonName(r.name) /].to_xml("[pythonName(r.name) /]"))  
+    [/if]
+    [/for]
+    return element
+
+  def from_xml(self, xml_element):
+    # Instantiate an object of type [e.name/]
+    obj = [e.name/]()  
+    # Convert XML attributes into object attributes
+    [for (a : EAttribute | e.eAllAttributes)]
+    if "[a.name/]" in xml_element.attrib:
+        obj.[pythonName(a.name)/] = xml_element.get("[a.name/]")
+    [/for]
+    # Process children (references)
+    [for (r : EReference | e.eAllReferences)]
+    [if (r.upperBound <> 1)]
+    # Reference with multiplicity: initialize a list and append each child object
+    obj.[pythonName(r.name)/]_list = list()
+    for child_element in xml_element.findall("[pythonName(r.name)/]"):
+      xsi_type = child_element.get("{http://www.w3.org/2001/XMLSchema-instance}type")
+      if not xsi_type:
+        child = [r.eType.name/].from_xml(self, child_element)
+        child.parent = obj
+        obj.[pythonName(r.name)/]_list.append(child)
+      [getInstancesOfSingleSuperClassForList(r, rootPkg , r.eType.name)/]
+    [else]
+    # Reference with a single value: find the child element and set the field if it exists
+    child_element = xml_element.find("[pythonName(r.name)/]")
+    if child_element is not None:  
+      xsi_type = child_element.get("{http://www.w3.org/2001/XMLSchema-instance}type")
+      if (not xsi_type) or (xsi_type.split(":", 1)['['/] 1 [']'/].lower() == "[r.eType.name.toLower()/]"):
+        child = [r.eType.name/].from_xml(self, child_element)
+        child.parent = obj
+        obj.[pythonName(r.name)/] = child        
+      [getInstancesOfSingleSuperClassForSingleElement(r, rootPkg , r.eType.name)/]
+    [/if]
+    [/for]
+    return obj
+    
+  def save_xml(self, filename):
+    self_xml = self.to_xml(None)
+    xml_string = ET.tostring(self_xml, encoding="utf-8").decode("utf-8")
+    dom = xml.dom.minidom.parseString(xml_string)
+    with open(filename, 'w') as f:
+       f.write(dom.toprettyxml(indent="  "))
+[/file]	
+[/let]	
+[/template]
+
+
+[template private printAllSubPackageNamespace(p : EPackage)]
+ET.register_namespace('[p.nsPrefix /]', '[p.nsURI /]')
+[for (c : EPackage | p.eSubpackages)][ c.printAllSubPackageNamespace() /][/for]
+[/template]
+
+[template private addNamespaces(p : EPackage)]
+"xmlns:[p.nsPrefix /]": "[p.nsURI /]",
+[for (c : EPackage | p.eSubpackages)][ c.addNamespaces()/][/for]
+[/template]
+
+[template private printReferencedPackages(e : EClass)]
+[let skipList : Sequence(String) = e.ePackage.eSubpackages->collect(sp | sp.name)->asSequence()][for (r : EReference | e.eAllReferences->reject(y | skipList ->includes(y.name)))][r.eType.ePackage.printAllSubPackageNamespace()/][/for][/let]
+[/template]
+
+[template private addReferencedNamespaces(e : EClass)]
+[let skipList : Sequence(String) = e.ePackage.eSubpackages->collect(sp | sp.name)->asSequence()][for (r : EReference | e.eAllReferences->reject(y | skipList ->includes(y.name)))][r.eType.ePackage.addNamespaces()/][/for][/let]
+[/template]
+
+[template private pythonName(n : String)]
+[comment check for python keywords and append "_" to the attribute name if one is detected/]
+[if (n.equalsIgnoreCase('if') or n.equalsIgnoreCase('elif') or n.equalsIgnoreCase('def')) ][n.concat('_')/][else][n/][/if]
+[/template]
+
+[template public getInstancesOfSuperClasses(e : EPackage, r : EString) post(trim())]
+[for (f : EClass | e.eAllContents(EClass))]
+[for (z : EClass | f.eSuperTypes)]
+[if z.name = r]from [f.name /] import [f.name /]
+[getInstancesOfSuperClasses(e, f.name)/]
+[/if]
+[/for]
+[/for]
+[/template]
+
+[template public getInstancesOfSingleSuperClassForList(t : EReference, e : EPackage, r : EString) post(trim())]
+[for (f : EClass | e.eAllContents(EClass))]
+[for (z : EClass | f.eSuperTypes)]
+[if z.name = r]
+elif xsi_type.split(":", 1)['['/] 1 [']'/].lower() == "[(f.name).toLower() /]":
+  child = [f.name /].from_xml(self, child_element)
+  child.parent = obj
+  obj.[pythonName(t.name)/]_list.append(child)
+[getInstancesOfSingleSuperClassForList(t, e, f.name)/]
+[/if]
+[/for]
+[/for]
+[/template]
+
+[template public getInstancesOfSingleSuperClassForSingleElement(t : EReference, e : EPackage , r : EString) post(trim())]
+[for (f : EClass | e.eAllContents(EClass))]
+[for (z : EClass | f.eSuperTypes)]
+[if z.name = r]  
+elif xsi_type.split(":", 1)['['/] 1 [']'/].lower() == "[(f.name).toLower() /]":
+  child = [f.name /].from_xml(self, child_element)
+  child.parent = obj
+  obj.[pythonName(t.name)/] = child
+[getInstancesOfSingleSuperClassForSingleElement(t, e, f.name)/]
+[/if]
+[/for]
+[/for]
+[/template]
+
+[query public getClassFromReferenceName(e : EClass, referenceName : String) : EClass =
+  e.eAllReferences->select(r | r.name = referenceName)
+    ->collect(r | r.eType.oclAsType(EClass))
+    ->first()
+/]
+
+[query public toLowerFirst(s : String) : String =
+  s.substring(1,1).toLower() + s.substring(2, s.size())
+/]
+
+[query public getRootPackage(e : EObject) : EPackage =
+    if e.oclIsKindOf(EPackage) and e.eContainer().oclIsUndefined() then
+        e.oclAsType(EPackage)
+    else
+        getRootPackage(e.eContainer())
+    endif
+/]

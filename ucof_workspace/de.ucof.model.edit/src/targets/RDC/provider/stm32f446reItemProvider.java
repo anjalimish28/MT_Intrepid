@@ -20,6 +20,8 @@ import targets.RDC.RDCFactory;
 import targets.RDC.RDCPackage;
 import targets.RDC.stm32f446re;
 
+import targets.powergrid.PowergridFactory;
+import targets.powergrid.PowergridPackage;
 import targets.provider.SuperTargetTypeItemProvider;
 
 import ucof.provider.UcofEditPlugin;
@@ -68,6 +70,7 @@ public class stm32f446reItemProvider extends SuperTargetTypeItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
+			childrenFeatures.add(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES);
 			childrenFeatures.add(RDCPackage.Literals.STM32F446RE__PORTS);
 		}
 		return childrenFeatures;
@@ -124,6 +127,7 @@ public class stm32f446reItemProvider extends SuperTargetTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(stm32f446re.class)) {
+			case RDCPackage.STM32F446RE__ELECTRICAL_INTERFACES:
 			case RDCPackage.STM32F446RE__PORTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -141,6 +145,11 @@ public class stm32f446reItemProvider extends SuperTargetTypeItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES,
+				 PowergridFactory.eINSTANCE.createEletrcialInterfaces()));
 
 		newChildDescriptors.add
 			(createChildParameter

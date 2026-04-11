@@ -647,5 +647,66 @@
         </toolSections>
       </defaultLayer>
     </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Power Grid" domainClass="ucof::Platform" enablePopupBars="true">
+      <metamodel href="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#/"/>
+      <metamodel href="https://gitlab.com/ucof/ucof.de/model/v001/ucof#/"/>
+      <metamodel href="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//powergrid"/>
+      <metamodel href="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//IntrepidPowerGrid"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="ElectricalGrid" semanticCandidatesExpression="aql:self.eAllContents()->filter(powergrid::SuperElectricalGridType)" domainClass="powergrid::SuperElectricalGridType">
+          <style xsi:type="style:EllipseNodeDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="PowerConnection" sourceMapping="//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']" targetMapping="//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@nodeMappings[name='ElectricalGrid']" targetFinderExpression="aql: self.ancestors()->filter(ucof::Platform)->first().eAllContents() ->filter(powergrid::SuperElectricalGridType)->select(p | p.id = self.targetID)->first()" sourceFinderExpression="aql: self.ancestors()->filter(ucof::Platform)->first().eAllContents() ->filter(powergrid::SuperElectricalInterfaceType)->select(p | p.id = self.sourceID)->first()" domainClass="powergrid::PowerConnection" useDomainElement="true">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="targetContainer" semanticCandidatesExpression="aql:self.eAllContents()->filter(targets::SuperTargetType)" domainClass="targets::SuperTargetType">
+          <subNodeMappings name="electricalInterface" semanticCandidatesExpression="aql: self.electricalInterfaces.electricalInterface" domainClass="powergrid::SuperElectricalInterfaceType">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+            <conditionnalStyles predicateExpression="aql: self.type = powergrid::interfaceType::sink">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="2" resizeKind="NSEW" workspacePath="/sirius.ucof.design/icons/icon_Inport.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql: self.portDirection = enums::PortDirectionType::Out">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="2" resizeKind="NSEW" workspacePath="/sirius.ucof.design/icons/icon_Outport.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+          </subNodeMappings>
+        </containerMappings>
+        <toolSections name="Tool Section">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="powerConnectionCreator" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: self.ancestors()->filter(ucof::Platform)->first().eAllContents() ->filter(powergrid::PowerConnectionSet)->first()">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="powergrid::PowerConnection" referenceName="powerConnection" variableName="newAssignment">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="sourceID" valueExpression="aql:source.id"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="targetID" valueExpression="aql:target.id"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql: generateUUID()"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql: source.name + '_TO_' + target.name"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
   </ownedViewpoints>
 </description:Group>

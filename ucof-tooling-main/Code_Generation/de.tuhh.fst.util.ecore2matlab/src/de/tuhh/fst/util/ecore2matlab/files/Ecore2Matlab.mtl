@@ -1,0 +1,592 @@
+[comment encoding = UTF-8 /]
+[module Ecore2Matlab('http://www.eclipse.org/emf/2002/Ecore')/]
+
+[template public Ecore2Matlab(e : EClass)]
+	
+[comment @main /]
+[file ('@'.concat(e.name.concat('/'.concat(e.name.concat('.m')))), false)]
+
+% ======================================================================
+%> @brief class [e.name /].
+%
+%> This class was automatically generated from an ecore model!
+%> Genrator by Philipp Chrysalidis 2025 based on work from Björn Annighöfer
+%
+%> @author Philipp Chrysalidis (Author of Generator)
+% ======================================================================
+
+classdef [e.name /] < handle[for (s : EClass | e.eSuperTypes)] & [s.name /][/for]
+[for (n : EAnnotation | e.eAnnotations)] 
+% [n.source /]
+[/for]
+    properties
+        [comment if e.eAllSuperTypes->isEmpty() /]
+        [if (e.name.equalsIgnoreCase('SuperIdentifierType'))]
+        %> The index of the object when it is included in an array. This value is set automatically if the add... method of a parent is called
+    	m_id = 0;
+    	%> Contains the handle to the parent object if exsiting. It is ['[]'/] otherwise. This value is set automatically if the add... method of a parent is called
+    	m_parent = ['[]'/];
+    	%> Contains the name of the parents containment variable this object is part of. If this object is not contained this variable is empty. This value is set automatically if the add... method of a parent is called
+    	m_containmentName = '';
+    	[/if]
+    	%% Attributes and Referenes retrieved from model
+        [for (a : EAttribute | e.eAttributes)]
+        [if a.eAttributeType.instanceClassName <> null]
+        [if (a.eAttributeType.instanceClassName.contains('String'))]
+        [matlabName(matlabName(a.name)) /] = '[if a.defaultValueLiteral <> null][a.defaultValueLiteral/][/if]'; %[for (n : EAnnotation | a.eAnnotations)] [n.source /][/for]
+        [elseif (a.eAttributeType.instanceClassName.contains('double')) ] 
+		[matlabName(a.name) /] = double([if a.defaultValueLiteral <> null][a.defaultValueLiteral/][else]0[/if]); %[for (n : EAnnotation | a.eAnnotations)] [n.source /][/for]
+        [elseif (a.eAttributeType.instanceClassName.contains('float'))]
+        [matlabName(a.name) /] = single([if a.defaultValueLiteral <> null][a.defaultValueLiteral/][else]0[/if]); %[for (n : EAnnotation | a.eAnnotations)] [n.source /][/for]
+        [elseif (a.eAttributeType.instanceClassName.contains('int'))]
+        [matlabName(a.name) /] = int32([if a.defaultValueLiteral <> null][a.defaultValueLiteral/][else]0[/if]); %[for (n : EAnnotation | a.eAnnotations)] [n.source /][/for]       
+        [elseif (a.eAttributeType.instanceClassName.contains('decimal'))]
+        [matlabName(a.name) /] = double([if a.defaultValueLiteral <> null][a.defaultValueLiteral/][else]0[/if]); %[for (n : EAnnotation | a.eAnnotations)] [n.source /][/for]
+        [elseif (a.eAttributeType.instanceClassName.contains('short'))]
+        [matlabName(a.name) /] = int16([if a.defaultValueLiteral <> null][a.defaultValueLiteral/][else]0[/if]); %[for (n : EAnnotation | a.eAnnotations)] [n.source /][/for]
+        [elseif (a.eAttributeType.instanceClassName.contains('long'))]
+        [matlabName(a.name) /] = int32([if a.defaultValueLiteral <> null][a.defaultValueLiteral/][else]0[/if]); %[for (n : EAnnotation | a.eAnnotations)] [n.source /][/for]
+        [elseif (a.eAttributeType.instanceClassName.contains('byte'))]
+        [matlabName(a.name) /] = uint8([if a.defaultValueLiteral <> null][a.defaultValueLiteral/][else]0[/if]); %[for (n : EAnnotation | a.eAnnotations)] [n.source /][/for]
+        [elseif (a.eAttributeType.instanceClassName.contains('char'))]
+        [matlabName(a.name) /] = int8([if a.defaultValueLiteral <> null][a.defaultValueLiteral/][else]0[/if]); %[for (n : EAnnotation | a.eAnnotations)] [n.source /][/for]
+        [elseif (a.eAttributeType.instanceClassName.contains('boolean'))]
+        [matlabName(a.name) /] = logical([if (a.defaultValueLiteral <> null) and (a.defaultValueLiteral.equalsIgnoreCase('true'))]1[else]0[/if]); %[for (n : EAnnotation | a.eAnnotations)] [n.source /][/for]  
+		[else]
+        [matlabName(a.name) /] = [if a.defaultValueLiteral <> null][a.defaultValueLiteral/][else]['[]'/][/if] %[for (n : EAnnotation | a.eAnnotations)] [n.source /][/for]	
+        [/if]
+	    [else]
+		[if (a.eAttributeType.oclIsTypeOf(EEnum))]
+        [matlabName(a.name) /] = '[a.eAttributeType.oclAsType(EEnum).defaultValue.oclAsType(EEnumLiteral).literal /]';
+		[else]
+        [matlabName(a.name) /] = [if a.defaultValueLiteral <> null]'[a.defaultValueLiteral/]'[else]['[]'/][/if] %[for (n : EAnnotation | a.eAnnotations)] [n.source /][/for]	
+        [/if]
+		[/if]
+        [/for]
+        [for (r : EReference | e.eReferences)]
+        [if r.upperBound=1 ]
+        [matlabName(r.name) /] = ['[]' /]; %[for (n : EAnnotation | r.eAnnotations)] [n.source /][/for]
+        [else]
+        [matlabName(r.name) /] = {}; %[for (n : EAnnotation | r.eAnnotations)] [n.source /][/for]
+        [/if]
+        [/for]
+    end
+    methods
+	    % ======================================================================
+	    %> @brief Class constructor
+	    %>
+	    %> Constructor call with all or no argument. No argument result in 
+	    %> default values for all attributes.
+	    %>
+	    %> @return instance of the [e.name /] class.
+	    % ======================================================================
+        function obj = [e.name /](m_id[for (a : EAttribute | e.eAllAttributes) ], [matlabName(a.name) /][/for][for (r : EReference | e.eAllReferences)], [matlabName(r.name) /][/for])
+            if(nargin > 0)
+                obj.m_id = m_id;
+                [for (a : EAttribute | e.eAllAttributes) ] 
+                obj.[matlabName(a.name) /] = [matlabName(a.name) /];
+                [/for]
+                [for (r : EReference | e.eAllReferences)]
+                obj.[matlabName(r.name) /] = [matlabName(r.name) /];	
+                [/for]
+            end
+        end 
+
+		 % ======================================================================
+	    %> @brief Clone function to make a copy of the handle class
+	    %>
+	    %> @return instance of the [e.name /] class.
+	    % ======================================================================
+        function new[e.name.toUpperFirst() /] = clone(obj)
+			['['/]new[e.name.toUpperFirst() /],unresolvedReferences[']'/] = obj.cloneContainment(obj);
+			for i=1:length(unresolvedReferences)
+				eval(sprintf('unresolvedReferences{i}{1}.%s = new[e.name.toUpperFirst() /].%s;',unresolvedReferences{i}{2},unresolvedReferences{i}{3}));
+			end
+        end 
+
+        % ======================================================================
+	    %> @brief Clone function to make a copy of the handle class
+	    %>
+	    %> @return instance of the [e.name /] class.
+	    % ======================================================================
+        function ['['/]new[e.name.toUpperFirst() /],unresolvedReferences[']'/] = cloneContainment(obj,root)
+            %create new class
+            new[e.name.toUpperFirst() /] = [e.name /]();
+            
+            %copy attributes
+            new[e.name.toUpperFirst() /].m_id = obj.m_id;
+            [for (a : EAttribute | e.eAllAttributes) ] 
+            new[e.name.toUpperFirst() /].[matlabName(a.name) /] = obj.[matlabName(a.name) /];
+            [/for]
+
+			%prevent identical uuids
+			InitializeIObject(new[e.name.toUpperFirst() /]);
+            
+            %copy children by calling clone for each child
+			unresolvedReferences = {};
+            [for (r : EReference | e.eAllReferences)]
+            [if (r.containment) ]
+			new[matlabName(r.name).toUpperFirst() /] = cell(1,length(obj.[matlabName(r.name) /]));
+            for i=1:length(obj.[matlabName(r.name) /])
+                    ['['/]new[matlabName(r.name).toUpperFirst() /]{i},unresolvedChildReferences[']'/] = obj.[matlabName(r.name) /]{i}.cloneContainment(root);
+					unresolvedReferences = ['['/]unresolvedReferences,unresolvedChildReferences[']'/];
+            end
+			new[e.name.toUpperFirst() /].add[matlabName(r.name).toUpperFirst() /](new[matlabName(r.name).toUpperFirst() /]);
+            [else]
+			
+			%check if the reference is contained in the same root than we must renew it later on
+			nref = length(obj.[matlabName(r.name) /]);
+			if(1==nref)
+				ref = {obj.[matlabName(r.name) /]}; %fake a cell
+			else
+				ref = obj.[matlabName(r.name) /];
+			end
+			for i=1:nref
+				isContainedInSameRoot = false;
+				refPath = ref{i}.m_containmentName;
+				if(ref{i}.m_id > 0)
+					refPath = sprintf('%s{%d}',refPath,ref{i}.m_id);
+				end
+				currentParrent = ref{i}.m_parent;
+				while(~isempty(currentParrent) && currentParrent~=root) 
+					if(currentParrent.m_id > 0)
+						refPath = sprintf('%s{%d}.%s',currentParrent.m_containmentName,currentParrent.m_id,refPath);
+					else
+						refPath = sprintf('%s.%s',currentParrent.m_containmentName,refPath);
+					end
+					currentParrent = currentParrent.m_parent;
+				end
+				if(currentParrent==root)
+					isContainedInSameRoot = true;
+				end
+				if(isContainedInSameRoot)
+					[if r.upperBound=1 ]
+	            	new[e.name.toUpperFirst() /].[matlabName(r.name) /] = ['[]'/];
+					unresolvedReferences{end+1} = {new[e.name.toUpperFirst() /],'[matlabName(r.name) /]',refPath};
+					[else]
+					new[e.name.toUpperFirst() /].[matlabName(r.name) /]{i} = ['[]'/];
+					unresolvedReferences{end+1} = {new[e.name.toUpperFirst() /],sprintf('[matlabName(r.name) /]{%d}',i),refPath};
+					[/if]
+				else
+					[if r.upperBound=1 ]
+	            	new[e.name.toUpperFirst() /].[matlabName(r.name) /] = obj.[matlabName(r.name) /];
+					[else]
+					new[e.name.toUpperFirst() /].[matlabName(r.name) /]{i} = obj.[matlabName(r.name) /]{i};
+					[/if]
+				end
+			end
+			    
+            [/if]
+            [/for]
+        end 
+        [for (r : EReference | e.eReferences)]
+        % ======================================================================
+	    %> @brief Add one ore more [r.eType.name/] to [matlabName(r.name) /]
+	    % ======================================================================
+        function add[matlabName(r.name).toUpperFirst() /] (obj, [r.eType.name.toLowerFirst() /], skipOpposite, checkPreviousInsertion)
+
+			if(~iscell([r.eType.name.toLowerFirst() /]))
+				[r.eType.name.toLowerFirst() /] = {[r.eType.name.toLowerFirst() /]}; %fake a cell
+			end
+            l = length(obj.[matlabName(r.name) /]);
+			nl = length([r.eType.name.toLowerFirst() /]);
+			
+			if(~exist('checkPreviousInsertion','var'))
+                checkPreviousInsertion = false;
+            end
+
+			%check if object was already added
+			if(checkPreviousInsertion)
+				for i=1:nl 
+					[if r.upperBound=1 ]
+		            if ([r.eType.name.toLowerFirst() /]{i}==obj.[matlabName(r.name) /])
+						return;
+					end
+		            [else]
+		            for j=1:l
+						if ([r.eType.name.toLowerFirst() /]{i}==obj.[matlabName(r.name) /]{j})
+							[r.eType.name.toLowerFirst() /](i) = ['[]'/];
+							break;
+						end
+					end
+		            [/if]
+				end
+			end
+			
+			nl = length([r.eType.name.toLowerFirst() /]);
+            
+            [if (r.containment) ]
+			for i=1:nl
+	            [if r.upperBound=1 ]
+	            [r.eType.name.toLowerFirst() /]{i}.m_id = 0;
+	            [else]
+	            [r.eType.name.toLowerFirst() /]{i}.m_id = l+i;
+	            [/if]
+	            [r.eType.name.toLowerFirst() /]{i}.m_parent = obj;
+	            [r.eType.name.toLowerFirst() /]{i}.m_containmentName = '[matlabName(r.name) /]';
+	        end
+			[/if]
+			[if (not r.eOpposite.oclIsUndefined())]
+			if(~exist('skipOpposite','var'))
+				skipOpposite = false;
+			end
+			if(~skipOpposite)
+				for i=1:nl
+		            [r.eType.name.toLowerFirst() /]{i}.add[matlabName(r.eOpposite.name).toUpperFirst() /](obj,true,true);
+				end
+			end
+			[/if]
+            [if r.upperBound=1 ]
+            obj.[matlabName(r.name) /] = [r.eType.name.toLowerFirst() /]{1};
+            [else]
+            obj.[matlabName(r.name) /] = ['[' /]obj.[matlabName(r.name) /] [r.eType.name.toLowerFirst() /][']' /];
+            [/if]
+        end
+
+        % ======================================================================
+	    %> @brief Removes one [r.eType.name/] from [matlabName(r.name) /]
+	    % ======================================================================
+        function remove[matlabName(r.name).toUpperFirst() /] (obj, [r.eType.name.toLowerFirst() /],skipOpposite)
+            
+
+            [if r.upperBound=1 ]
+            obj.[matlabName(r.name) /] = ['[]' /];
+			deleteIndex = 1;
+            [else]
+ 			
+            %set the m_id to 0
+           
+			deleteIndex = 0;
+            for i=1:length(obj.[matlabName(r.name) /])
+				if(obj.[matlabName(r.name) /]{i} ==  [r.eType.name.toLowerFirst() /])
+					deleteIndex = i;
+					break;
+				end
+			end
+			%delete the object
+			if(deleteIndex>0)
+				
+				obj.[matlabName(r.name)/](deleteIndex) =  ['[]' /];
+
+				%correct the indices
+				for i=deleteIndex:length(obj.[matlabName(r.name) /])
+					obj.[matlabName(r.name)/]{i}.m_id = i;
+				end
+			end
+            
+			[/if]
+			if(deleteIndex>0) %check if deletion took place
+				[if (r.containment) ]
+	 			[r.eType.name.toLowerFirst() /].m_id = 0;
+				[r.eType.name.toLowerFirst() /].m_parent = ['[]' /];
+	        	[r.eType.name.toLowerFirst() /].m_containmentName = ['[]' /];
+				[/if]
+				[if (not r.eOpposite.oclIsUndefined())]
+				if(~exist('skipOpposite','var'))
+					skipOpposite = false;
+				end
+				if(~skipOpposite)
+			        [r.eType.name.toLowerFirst() /].remove[matlabName(r.eOpposite.name).toUpperFirst() /](obj,true);
+				end
+				[/if]
+			end
+		end	
+        [/for]
+        % ======================================================================
+	    %> @brief returns if the member reference is a containment
+	    %>
+	    % ======================================================================
+        function b = isContainment(obj,referenceName)
+        	b = logical(false);
+        	switch(referenceName)
+	        	[for (r : EReference | e.eReferences)]
+	            [if (r.containment) ]
+	            case '[matlabName(r.name) /]'
+	            	b = logical(true);
+	            [/if]
+	        	[/for]
+	        	otherwise 
+	        		b = logical(false)[for (s : EClass | e.eSuperTypes)] | isContainment@[s.name /](obj,referenceName)[/for];
+	        end
+        end
+        
+        % ======================================================================
+	    %> @brief Parse the Document Object Tree (DOM)
+	    %>
+	    %> Parse the Document Object Tree (DOM) node for this class and retrieve the attributes 
+        %> as well as the children from it. This function is part of the XML loading routine.
+	    % ======================================================================
+        function parseDom(obj,node)
+            %read attributes
+            [for (a : EAttribute | e.eAllAttributes) ] 
+            [if not a.transient]
+            
+            attribute = node.getAttribute('[a.name /]');
+            if(attribute.length() ~= 0)
+            	[if a.eAttributeType.instanceClassName <> null]
+                [if (a.eAttributeType.instanceClassName.contains('String'))]
+                obj.[matlabName(a.name) /] = char(attribute);
+                [elseif (a.eAttributeType.instanceClassName.contains('double')) ] 
+				obj.[matlabName(a.name) /] = str2num(char(attribute));
+				[elseif (a.eAttributeType.instanceClassName.contains('float'))]
+		        obj.[matlabName(a.name) /] = str2num(char(attribute));
+		        [elseif (a.eAttributeType.instanceClassName.contains('decimal'))]
+		        obj.[matlabName(a.name) /] = str2num(char(attribute));
+		        [elseif (a.eAttributeType.instanceClassName.contains('int'))]
+		        obj.[matlabName(a.name) /] = str2num(char(attribute));
+		        [elseif (a.eAttributeType.instanceClassName.contains('short'))]
+		        obj.[matlabName(a.name) /] = str2num(char(attribute));
+		        [elseif (a.eAttributeType.instanceClassName.contains('long'))]
+		        obj.[matlabName(a.name) /] = str2num(char(attribute));
+		        [elseif (a.eAttributeType.instanceClassName.contains('byte'))]
+		        obj.[matlabName(a.name) /] = str2num(char(attribute));
+		        [elseif (a.eAttributeType.instanceClassName.contains('boolean'))]
+		        if(strcmp('true',char(attribute)))
+		        	obj.[matlabName(a.name) /] = logical(1);
+	        	else
+		        	obj.[matlabName(a.name) /] = logical(0);
+	        	end
+                [else]
+                obj.[matlabName(a.name) /] = char(attribute);
+                [/if]
+            	[else]
+            	obj.[matlabName(a.name) /] = char(attribute);
+            	[/if]
+            end
+            [/if]
+            [/for]
+            %parse child nodes
+            childNode = node.getFirstChild();
+            while(~isempty(childNode))
+                if(childNode.ELEMENT_NODE == childNode.getNodeType())
+                    switch(char(childNode.getTagName()))
+                    [for (r : EReference | e.eAllReferences)]
+                    [if (r.containment) ]
+                        case '[matlabName(r.name).toLowerFirst() /]'
+                        	attribute = char(childNode.getAttribute('xsi:type'));
+                        	if(~isempty(attribute))
+                        		[ '[token, remain]' /] = strtok(attribute,':');
+                        		className = remain(2:end);
+                        		eval([ '[' /] 'new[r.eType.name /] = ',className,'();'[ ']' /]);
+                        	else
+                            	new[r.eType.name /] = [r.eType.name /]();
+                            end
+                            new[r.eType.name /].parseDom(childNode);
+                            obj.add[matlabName(r.name).toUpperFirst() /](new[r.eType.name /]);
+                    [/if]      
+                    [/for]
+                    end
+                end
+            childNode = childNode.getNextSibling();
+            end %while(~isempty(childNode))
+        end
+        %% Resolve eCore references that are no containments. This has to be done after 
+        % the parsing off all contained children is complete since references can be 
+        % forward. This function is part of the XML loading routine.
+        function parseDomReferences(obj,rootObject,node)
+            %references are stored as xpath string in attributes
+            [for (r : EReference | e.eAllReferences)]
+            [if (not r.containment) ]
+            [if (r.eOpposite <> null and r.eOpposite.containment) ]
+            %resolve refereces whose opposite is a containment reference
+            attribute = node.getAttribute('[r.name /]');
+            if(isa(obj.m_parent,'[r.eType.name /]'))
+            	obj.add[matlabName(r.name).toUpperFirst() /](obj.m_parent,true,true);
+            end
+            [else]
+            %resolve left references by parsing xpath expressions in attributes
+            attribute = node.getAttribute('[r.name /]');
+            if(attribute.length() ~= 0)
+                eReferenceString = char(attribute);
+                ['['/]xPath,remaining[']'/] = strtok(eReferenceString,' '); %single xpaths are seperated by a space
+                while(~isempty(xPath))
+                    mPath = xPath2MPath(xPath); 
+                    eval(strcat('referencedObject = rootObject',mPath,';'));  
+                    obj.add[matlabName(r.name).toUpperFirst() /](referencedObject,true,true);
+                    
+                    ['['/]xPath,remaining[']'/] = strtok(remaining,' ');
+                end
+            end
+            [/if]
+            [/if]      
+            [/for]
+            
+            %parse child nodes
+            [for (r : EReference | e.eAllReferences)]
+            [if (r.containment) ]  
+            n[matlabName(r.name).toUpperFirst() /] = 1;        
+            [/if]      
+            [/for]
+            
+            childNode = node.getFirstChild();
+            
+            %this DOM parsing is needed again to match each DOM node 
+            %with an class object
+            while(~isempty(childNode))
+                if(childNode.ELEMENT_NODE == childNode.getNodeType())
+                    switch(char(childNode.getTagName()))
+                    [for (r : EReference | e.eAllReferences)]
+                    [if (r.containment) ]
+                        case '[r.name.toLowerFirst() /]'
+                        	[if r.upperBound=1 ]
+                            obj.[matlabName(r.name) /].parseDomReferences(rootObject,childNode);
+                            [else]
+                            obj.[matlabName(r.name) /]{n[matlabName(r.name).toUpperFirst() /]}.parseDomReferences(rootObject,childNode);
+                            [/if]
+                            n[matlabName(r.name).toUpperFirst() /] = n[matlabName(r.name).toUpperFirst() /]+1;
+                    [/if]      
+                    [/for]
+                    end
+                end
+            childNode = childNode.getNextSibling();
+            end %while(~isempty(childNode))
+        end
+        
+       
+        % ======================================================================
+	    %> @brief Load the complete data structure from a ecore based xml
+	    %>
+	    %> Load the complete data structure from a ecore based xml file corresponding to 
+        %> the model used for generation. Root tag in the xml file has to be "[e.name/]"
+	    % ======================================================================
+        function loadXml(obj,filename)
+            %try
+            xDoc = xmlread(filename);
+            xRoot = xDoc.getDocumentElement();
+           
+            %parse the DOM and create class structure 
+            %with attributes and containted references
+            obj.parseDom(xRoot);	
+            
+            %uncontainded references, however, are resoleved 
+            %in a second parsing step
+            obj.parseDomReferences(obj,xRoot);
+            
+            %catch exception
+            %   error('Failed to read XML file %s.',filename);
+            %end
+        end
+        % ======================================================================
+	    %> @brief Build the Document object tree (DOM) for saving into a xml file
+	    % ======================================================================
+        function buildDom(obj,docNode,node,xsiType)
+			
+			if(xsiType)
+				className = class(obj);
+				node.setAttribute('xsi:type',['['/]'[e.ePackage.nsPrefix /]:',className[']'/]);
+			end
+			
+			% write attributes
+			value = ['[]'/];
+			[for (a : EAttribute | e.eAllAttributes) ]  
+			[if not a.transient]          
+            %attribute = docNode.createAttribute('[a.name /]');
+            [if a.eAttributeType.instanceClassName <> null]
+            [if (a.eAttributeType.instanceClassName.contains('String'))]
+            value = obj.[matlabName(a.name) /];
+            [elseif (a.eAttributeType.instanceClassName.contains('boolean'))]
+            if(obj.[matlabName(a.name) /])
+            	value = 'true';
+            else
+            	value = 'false';
+            end
+            [else]
+            if(~isempty(obj.[matlabName(a.name) /]))
+            	value = num2str(obj.[matlabName(a.name) /]);
+            end
+            [/if]
+            [else]
+            value = obj.[matlabName(a.name) /];
+            [/if]
+            if(~isempty(value))
+            	node.setAttribute('[a.name /]',value);
+            end
+            [/if]
+            [/for]
+            
+            % create children
+            [for (r : EReference | e.eAllReferences)]
+            [if (r.containment) ]
+            for i=1:length(obj.[matlabName(r.name).toLowerFirst() /])
+            	childNode = docNode.createElement('[r.name.toLowerFirst() /]');
+            	[if r.upperBound=1 ]
+            	child = obj.[matlabName(r.name).toLowerFirst() /](i);
+            	[else]
+            	child = obj.[matlabName(r.name).toLowerFirst() /]{i};
+            	[/if]
+            	className = class(child);
+            	xsiType = 0; 
+            	if(~strcmp('[r.eType.name /]',className))
+            		xsiType = 1; 
+            	end
+            	child.buildDom(docNode,childNode,xsiType)
+            	node.appendChild(childNode);
+            end
+            [else]
+            xPath = cell(length(obj.[matlabName(r.name).toLowerFirst() /]),1);
+            for i=1:length(obj.[matlabName(r.name).toLowerFirst() /])
+            	xPath{i} = '';
+            	[if r.upperBound=1 ]
+            	classObject = obj.[matlabName(r.name).toLowerFirst() /];
+            	[else]
+            	classObject = obj.[matlabName(r.name).toLowerFirst() /]{i};
+            	[/if]
+            	while(0 < length(classObject.m_parent))
+            	    indexString = '';
+            	    if(classObject.m_id)
+            	    	indexString = ['['/]'.',num2str(classObject.m_id-1)[']'/];
+            	    end
+            		xPath{i} = ['['/]'/@',classObject.m_containmentName,indexString,xPath{i}[']'/];
+            		classObject = classObject.m_parent;
+            	end
+            	xPath{i} = ['['/]' /',xPath{i}[']'/];
+            end
+            
+            if(length(xPath))
+            	xPathFull = xPath{1};
+            	for i=2:length(xPath)
+            		xPathFull = ['['/]xPathFull,' ',xPath{i}[']'/];
+            	end
+            	node.setAttribute('[r.name.toLowerFirst() /]',xPathFull);
+            end
+            [/if]      
+            [/for]
+        end
+        
+        % ======================================================================
+	    %> @brief Save the complete data structure to a ecore based xml file 
+	    %>
+	    %> Save the complete data structure to a ecore based xml file corresponding to 
+        %> the model used for generation. Root tag in the xml file has to be "[e.name/]"
+	    % ======================================================================
+        function saveXml(obj,filename)
+            docNode = com.mathworks.xml.XMLUtils.createDocument('[e.ePackage.nsPrefix /]:[e.name/]');
+			docRootNode = docNode.getDocumentElement;
+			docRootNode.setAttribute('xmi:version','2.0');
+            docRootNode.setAttribute('xmlns:xmi','http://www.omg.org/XMI');
+            docRootNode.setAttribute('xmlns:xsi','http://www.w3.org/2001/XMLSchema-instance');
+            
+            [ e.ePackage.printAllSubPackageNamespace() /]
+			
+			obj.buildDom(docNode,docRootNode,0);
+			
+			% Save the sample XML document.
+			xmlwrite(filename,docNode);
+        end
+    end
+end	[/file]	
+	
+[/template]
+
+
+[template private printAllSubPackageNamespace(p : EPackage)]
+docRootNode.setAttribute('xmlns:[p.nsPrefix /]','[p.nsURI /]');
+[for (c : EPackage | p.eSubpackages)][ c.printAllSubPackageNamespace() /][/for]
+[/template]
+
+
+[template private matlabName(n : String)]
+[comment check for matlab keywords and append "_" to the attribute name if one is detected/]
+[if (n.equalsIgnoreCase('end') or n.equalsIgnoreCase('if') or n.equalsIgnoreCase('function')) ][n.concat('_')/][else][n/][/if]
+[/template]
+

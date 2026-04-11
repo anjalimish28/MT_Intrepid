@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<de.ucof.model:Platform xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.ucof.model="https://gitlab.com/ucof/ucof.de/model/v001/ucof" xmlns:de.ucof.model.assignments="https://gitlab.com/ucof/ucof.de/model/v001/ucof/assignments" xmlns:de.ucof.model.assignments.database="https://gitlab.com/ucof/ucof.de/model/v001/ucof/assignments/database" xmlns:de.ucof.model.common.etypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/common/etypes" xmlns:de.ucof.model.communication="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication" xmlns:de.ucof.model.communication.comDevices="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/comDevices" xmlns:de.ucof.model.communication.configECIC.streamTypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/configECIC/streamTypes" xmlns:de.ucof.model.devices.devicetypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/devicetypes" id="36a827f2-20f3-41be-ad6a-0bb1689b7d6e">
+  <devices>
+    <device xsi:type="de.ucof.model.devices.devicetypes:Peripheral" id="5cb1077d-adb1-4828-a5b2-c134f66d73da" name="Sen1" peripheralType="Sensor">
+      <ports>
+        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="a58ac706-6f91-4253-9e64-619c5cb30c0d" name="GW1" portDirection="Out"/>
+      </ports>
+    </device>
+    <device xsi:type="de.ucof.model.devices.devicetypes:Peripheral" id="3d16ecc6-60ad-4edb-a544-81e510a985b4" name="Sen2" peripheralType="Sensor">
+      <ports>
+        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="d112e1d7-ec87-434c-b4aa-e74aad57af96" name="GW1" portDirection="Out"/>
+      </ports>
+    </device>
+    <device xsi:type="de.ucof.model.devices.devicetypes:IOModule" id="fe64e517-2c49-4c18-8e00-6a45dff02204" name="RDC">
+      <ports>
+        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="09ea81f3-c8d6-469e-94ed-07df8e1a4679" name="GW1_1" portDirection="In"/>
+        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="3968746a-adf9-4245-a765-89fee4ca8ff1" name="GW1_2" portDirection="In"/>
+        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="fc1912ce-fdff-40e8-9f40-05d96aa65279" name="RDC" portDirection="Out"/>
+      </ports>
+    </device>
+    <device xsi:type="de.ucof.model.devices.devicetypes:A653P1Module" id="7cc10e7b-8a53-4d84-acc0-f4d9217dd7e8" name="CPM">
+      <ports>
+        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="e990bffd-e0fa-410d-b6d8-60a882b00fb8" name="GW2" portDirection="In"/>
+        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="e95f973d-09ff-4528-a739-38d4c243dc0e" name="GW3" portDirection="Out"/>
+      </ports>
+    </device>
+    <device xsi:type="de.ucof.model.devices.devicetypes:Peripheral" id="13dec704-3c08-4571-bac3-0d47eab7dec2" name="Fan" peripheralType="Fan">
+      <ports>
+        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="e504f321-d08d-4ca2-b6c0-2b03c08db74e" name="GW3" portDirection="In"/>
+      </ports>
+    </device>
+  </devices>
+  <communication>
+    <database id="ddbdd41a-f7f1-4731-8a5d-c89bfc72485a">
+      <communicationSet xsi:type="de.ucof.model.communication:SignalSet" id="32a9e215-b8a9-423e-87fb-85b7cf708d7a">
+        <signal id="0276e5ef-4fee-4e8e-8c11-0861faba5339" name="sig_1" dataType="Float" bitLength="32" byteOrder="BIG"/>
+      </communicationSet>
+      <communicationSet xsi:type="de.ucof.model.communication:PayloadSet" id="65ecfb83-25f7-41f4-ab64-1d4d582b6d17">
+        <payload id="320b70ba-1e08-4827-b1fd-02b2847d2475" name="pay1"/>
+        <payload id="b78ad319-e122-4c2c-8581-e127239e9963" name="pay2"/>
+        <payload id="22e5b328-a45f-4d03-9156-0eed8cd75140" name="pay3"/>
+      </communicationSet>
+    </database>
+    <ed247Configurations id="086900d7-3cf7-436f-af39-a947d22afa9a">
+      <ed247Configuration id="fa97db97-6d1d-4dea-b2b1-5180019f8e8b" name="ECIC" standardRevision="A" componentType="Virtual">
+        <channels id="d4e38731-91fa-4569-8761-9c82b44e0b28">
+          <channel id="dd221375-bc05-4d29-8a3d-b14ae3f1fa3b" name="" frameFormat="A">
+            <header id="97007f9c-2beb-401d-88dc-4a98973c3794" enable="Yes" transportTimestamp="Yes"/>
+            <stream xsi:type="de.ucof.model.communication.configECIC.streamTypes:ANAStream" id="36629b2f-4035-4584-98f6-e431d1a04e1f" name="Sen1_GW1" direction="Out"/>
+          </channel>
+          <channel id="cad51f69-931f-46b6-be11-439c44ec02ef" name="">
+            <header id="f8d3cbbf-954b-416d-8b31-cfff9a8e43e9" enable="Yes" transportTimestamp="Yes"/>
+            <stream xsi:type="de.ucof.model.communication.configECIC.streamTypes:ANAStream" id="891166c3-0add-447b-b2ec-7d9dd51fc571" name="Sen2_GW1" direction="Out"/>
+          </channel>
+          <channel id="8b7f33c3-b46d-49f6-a16c-855857d2f284">
+            <header id="1df2ba95-cb7b-494e-a6fb-b469b59f66d8"/>
+            <stream xsi:type="de.ucof.model.communication.configECIC.streamTypes:ANAStream" id="1f189c12-bed1-4294-90c6-bf0890768b20" name="GW1_RDC_1" direction="Out"/>
+          </channel>
+          <channel id="c17c92f6-3701-454b-a922-7d62598fa4b7">
+            <header id="a2494a59-c9cc-4a3b-b3da-61673234a520"/>
+            <stream xsi:type="de.ucof.model.communication.configECIC.streamTypes:ANAStream" id="ffadc1c3-638b-4be8-97e6-de8b824ad3df" name="GW2_CPM" direction="Out"/>
+          </channel>
+          <channel id="2aef4175-a52a-422e-a071-7ddb20e17418">
+            <header id="508d1205-2145-4209-b657-be05e35ed146"/>
+            <stream xsi:type="de.ucof.model.communication.configECIC.streamTypes:A664Stream" id="2d260696-5565-4b9f-a61f-58738d8b4dce" name="RDC_GW2" direction="Out"/>
+          </channel>
+          <channel id="0863a8a6-c224-4853-ae73-20da71561f55">
+            <header id="891fb7ce-f93f-4ca8-a0ea-0bcdffa2b371"/>
+            <stream xsi:type="de.ucof.model.communication.configECIC.streamTypes:A664Stream" id="4948848f-6039-45b7-908f-205c909f8494" name="GW1_RDC_2" direction="Out"/>
+          </channel>
+          <channel id="cc626e2d-70eb-4618-9dbf-f13bb38cbed4">
+            <header id="07b2b69e-74f6-4434-ae31-75aaf34926f8"/>
+            <stream xsi:type="de.ucof.model.communication.configECIC.streamTypes:A825Stream" id="9d56931c-08c9-4243-a171-e8069c131d44" name="CPM_GW3"/>
+          </channel>
+          <channel id="2a83459c-78e9-4d1a-9b5b-4733e66cddeb">
+            <header id="2d66654f-e12a-4579-8ecc-31161b8c704d"/>
+            <stream xsi:type="de.ucof.model.communication.configECIC.streamTypes:A825Stream" id="0165fd21-28c5-4a2f-8c96-39715c6aa177" name="GW3_Fan"/>
+          </channel>
+        </channels>
+      </ed247Configuration>
+    </ed247Configurations>
+    <communicationDevices id="0119cfe2-54c2-44a2-ab26-87d9ca1306c3">
+      <communicationDevice xsi:type="de.ucof.model.communication.comDevices:ED247Gateway" id="5cd99f56-566a-4c3b-9c39-5fdec018656a" name="GW1">
+        <ports>
+          <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="5a441a63-418b-423a-ad77-45fa3194357f" name="Sen1" portDirection="In"/>
+          <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="bd4bd6e0-2645-4c84-807c-9f2c0af83ae9" name="Sen2" portDirection="In"/>
+          <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="8a89ad5a-203e-45a2-ae45-0c299b688a4e" name="RDC_1" portDirection="Out"/>
+          <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="0adc6aa7-b22b-4c32-945e-9f2c4ab7a2de" name="RDC_2" portDirection="Out"/>
+        </ports>
+      </communicationDevice>
+      <communicationDevice xsi:type="de.ucof.model.communication.comDevices:ED247Gateway" id="f10301b3-3187-455d-87ab-37c396616213" name="GW2">
+        <ports>
+          <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="419d6c06-250e-435f-8f28-b2bfaa337113" name="RDC" portDirection="In"/>
+          <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="e4b04093-5745-4e53-90ae-022e851c3da1" name="CPM" portDirection="Out"/>
+        </ports>
+      </communicationDevice>
+      <communicationDevice xsi:type="de.ucof.model.communication.comDevices:ED247Gateway" id="2a66d571-a71b-4705-9f33-2df8a75a342b" name="GW3">
+        <ports>
+          <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="4a42851d-8b80-4ac2-b220-b7c06a8a95bc" name="CPM" portDirection="In"/>
+          <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="4b38fb81-5ec8-4993-849a-b280b25638d1" name="Fan" portDirection="Out"/>
+        </ports>
+      </communicationDevice>
+    </communicationDevices>
+  </communication>
+  <assignments id="2f5ada7d-7240-448d-87e8-f23394f0f515">
+    <assignmentSet xsi:type="de.ucof.model.assignments:PortToPortAssignmentSet" id="615cc13b-e7ee-4a46-bf5c-d675f57bb7bd" name="default">
+      <portToPortAssignment id="d51880cc-da01-45b3-a700-51642a207302" name="GW1_TO_Sen1" sourceID="a58ac706-6f91-4253-9e64-619c5cb30c0d" targetID="5a441a63-418b-423a-ad77-45fa3194357f"/>
+      <portToPortAssignment id="e5d1be24-f7d1-4285-9a5a-9963995c3f4c" name="GW1_TO_Sen2" sourceID="d112e1d7-ec87-434c-b4aa-e74aad57af96" targetID="bd4bd6e0-2645-4c84-807c-9f2c0af83ae9"/>
+      <portToPortAssignment id="71354fb1-bb94-407e-8779-9633416ef0eb" name="RDC_1_TO_GW1_1" sourceID="8a89ad5a-203e-45a2-ae45-0c299b688a4e" targetID="09ea81f3-c8d6-469e-94ed-07df8e1a4679"/>
+      <portToPortAssignment id="3022e8e7-7905-4982-9b4c-e3d2dfd3f899" name="RDC_TO_2_GW1_2" sourceID="0adc6aa7-b22b-4c32-945e-9f2c4ab7a2de" targetID="3968746a-adf9-4245-a765-89fee4ca8ff1"/>
+      <portToPortAssignment id="e83f5f3e-aef2-4f05-9bad-df79c12941c8" name="RDC_TO_RDC" sourceID="fc1912ce-fdff-40e8-9f40-05d96aa65279" targetID="419d6c06-250e-435f-8f28-b2bfaa337113"/>
+      <portToPortAssignment id="5a83e4e1-941b-4f27-81b0-a1dfe289a55b" name="CPM_TO_GW2" sourceID="e4b04093-5745-4e53-90ae-022e851c3da1" targetID="e990bffd-e0fa-410d-b6d8-60a882b00fb8"/>
+      <portToPortAssignment id="29b1478a-5603-4b92-9750-11911688c11b" name="GW3_TO_CPM" sourceID="e95f973d-09ff-4528-a739-38d4c243dc0e" targetID="4a42851d-8b80-4ac2-b220-b7c06a8a95bc"/>
+      <portToPortAssignment id="415c10c6-2ae7-4012-a236-b63a92d5488f" name="Fan_TO_GW3" sourceID="4b38fb81-5ec8-4993-849a-b280b25638d1" targetID="e504f321-d08d-4ca2-b6c0-2b03c08db74e"/>
+    </assignmentSet>
+    <assignmentSet xsi:type="de.ucof.model.assignments:ED247AssignmentSet" id="99bddf26-f2ec-44c5-bcad-c05111605cd4" name="default">
+      <ed247Assignment id="22026115-a8b2-4df1-9d8d-99400e5645ca" name="Sen1_GW1_TO_GW1_TO_Sen1" sourceID="36629b2f-4035-4584-98f6-e431d1a04e1f">
+        <udpSocketExtension id="c419ac08-4f4d-4671-884c-61431abbe1a7" portSelection="In" ipAdress="127.0.0.1" port="2042"/>
+      </ed247Assignment>
+      <ed247Assignment id="5ac82f5d-71cd-482b-b8c5-c8df7ce8117f" name="Sen1_GW1_TO_GW1_TO_Sen1" sourceID="36629b2f-4035-4584-98f6-e431d1a04e1f" targetID="d51880cc-da01-45b3-a700-51642a207302">
+        <udpSocketExtension id="9eacaf92-93cc-42c4-b629-e1f12880ab6b" portSelection="In" ipAdress="127.0.0.1" port="2042"/>
+      </ed247Assignment>
+      <ed247Assignment id="d740b00a-8280-4a4b-8a80-34d2dd747c03" name="Sen2_GW1_TO_GW1_TO_Sen2" sourceID="891166c3-0add-447b-b2ec-7d9dd51fc571" targetID="e5d1be24-f7d1-4285-9a5a-9963995c3f4c">
+        <udpSocketExtension id="9b0be618-a72f-4d49-ae77-056631e8f72e" portSelection="In" ipAdress="127.0.0.1" port="2042"/>
+      </ed247Assignment>
+      <ed247Assignment id="0e396570-8570-454d-9500-9820cb82d173" name="GW1_RDC_1_TO_RDC_1_TO_GW1_1" sourceID="1f189c12-bed1-4294-90c6-bf0890768b20" targetID="71354fb1-bb94-407e-8779-9633416ef0eb">
+        <udpSocketExtension id="e0d01ebb-e785-49e0-aa26-5cef7823b92c" portSelection="In" ipAdress="127.0.0.1" port="2042"/>
+      </ed247Assignment>
+      <ed247Assignment name="GW1_RDC_2_TO_RDC_TO_2_GW1_2" sourceID="4948848f-6039-45b7-908f-205c909f8494" targetID="3022e8e7-7905-4982-9b4c-e3d2dfd3f899">
+        <udpSocketExtension portSelection="In" ipAdress="127.0.0.1" port="2042"/>
+      </ed247Assignment>
+      <ed247Assignment name="RDC_GW2_TO_RDC_TO_RDC" sourceID="2d260696-5565-4b9f-a61f-58738d8b4dce" targetID="e83f5f3e-aef2-4f05-9bad-df79c12941c8">
+        <udpSocketExtension portSelection="In" ipAdress="127.0.0.1" port="2042"/>
+      </ed247Assignment>
+      <ed247Assignment name="GW2_CPM_TO_CPM_TO_GW2" sourceID="ffadc1c3-638b-4be8-97e6-de8b824ad3df" targetID="5a83e4e1-941b-4f27-81b0-a1dfe289a55b">
+        <udpSocketExtension portSelection="In" ipAdress="127.0.0.1" port="2042"/>
+      </ed247Assignment>
+      <ed247Assignment name="CPM_GW3_TO_GW3_TO_CPM" sourceID="9d56931c-08c9-4243-a171-e8069c131d44" targetID="29b1478a-5603-4b92-9750-11911688c11b">
+        <udpSocketExtension portSelection="In" ipAdress="127.0.0.1" port="2042"/>
+      </ed247Assignment>
+      <ed247Assignment name="GW3_Fan_TO_Fan_TO_GW3" sourceID="0165fd21-28c5-4a2f-8c96-39715c6aa177" targetID="415c10c6-2ae7-4012-a236-b63a92d5488f">
+        <udpSocketExtension portSelection="In" ipAdress="127.0.0.1" port="2042"/>
+      </ed247Assignment>
+    </assignmentSet>
+    <assignmentSet xsi:type="de.ucof.model.assignments.database:SignalToTargetAssignmentSet" id="8f0610c6-efc6-4777-907f-ad9203ecbf82" name="default">
+      <signalToTargetAssignment name="sig_1_TO_GW1_TO_Sen1" sourceID="0276e5ef-4fee-4e8e-8c11-0861faba5339" targetID="d51880cc-da01-45b3-a700-51642a207302"/>
+      <signalToTargetAssignment name="sig_1_TO_GW1_TO_Sen2" sourceID="0276e5ef-4fee-4e8e-8c11-0861faba5339" targetID="e5d1be24-f7d1-4285-9a5a-9963995c3f4c"/>
+      <signalToTargetAssignment name="sig_1_TO_RDC_1_TO_GW1_1" sourceID="0276e5ef-4fee-4e8e-8c11-0861faba5339" targetID="71354fb1-bb94-407e-8779-9633416ef0eb"/>
+      <signalToTargetAssignment name="sig_1_TO_RDC_TO_2_GW1_2" sourceID="0276e5ef-4fee-4e8e-8c11-0861faba5339" targetID="3022e8e7-7905-4982-9b4c-e3d2dfd3f899"/>
+      <signalToTargetAssignment name="sig_1_TO_RDC_TO_RDC" sourceID="0276e5ef-4fee-4e8e-8c11-0861faba5339" targetID="e83f5f3e-aef2-4f05-9bad-df79c12941c8"/>
+      <signalToTargetAssignment name="sig_1_TO_CPM_TO_GW2" sourceID="0276e5ef-4fee-4e8e-8c11-0861faba5339" targetID="5a83e4e1-941b-4f27-81b0-a1dfe289a55b"/>
+      <signalToTargetAssignment name="sig_1_TO_GW3_TO_CPM" sourceID="0276e5ef-4fee-4e8e-8c11-0861faba5339" targetID="29b1478a-5603-4b92-9750-11911688c11b"/>
+      <signalToTargetAssignment name="sig_1_TO_Fan_TO_GW3" sourceID="0276e5ef-4fee-4e8e-8c11-0861faba5339" targetID="415c10c6-2ae7-4012-a236-b63a92d5488f"/>
+    </assignmentSet>
+  </assignments>
+</de.ucof.model:Platform>

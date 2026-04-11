@@ -8,6 +8,8 @@ import org.eclipse.emf.common.util.EList;
 
 import targets.SuperAssignmentSpecificationType;
 import targets.SuperTargetType;
+import targets.powergrid.ElectricalPowerGridSet;
+import targets.powergrid.PowerConnectionSet;
 
 /**
  * A sample validator interface for {@link targets.Targets}.
@@ -19,6 +21,10 @@ public interface TargetsValidator {
 	boolean validate();
 
 	boolean validateTargetConfiguration(EList<SuperTargetType> value);
+
+	boolean validatePowerConnectionSet(EList<PowerConnectionSet> value);
+
+	boolean validateElectricalPowerGridSet(EList<ElectricalPowerGridSet> value);
 
 	boolean validateAssignmentSpecification(EList<SuperAssignmentSpecificationType> value);
 }
