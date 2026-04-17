@@ -324,8 +324,8 @@
       </ports>
     </targetConfiguration>
     <targetConfiguration xsi:type="de.ucof.model.targets.sheild:arduinosheild" id="c164fd4e-9e7d-412c-b0dd-1208c1c5b74f" name="sheild">
-      <assignmentSpecification xsi:type="de.ucof.model.targets:ResistorInfo" id="d5b92aea-48c5-415b-aa16-32c8c8577607" name="R2" referencedAssignmentID="26dc4101-3c5a-4826-af9c-b9025e95fc50" resistanceOhm="4700" resistorPartNumber="R2" mountLocation="ProtoShield_I2C_SDA_line"/>
-      <assignmentSpecification xsi:type="de.ucof.model.targets:ResistorInfo" id="0e323982-12cc-4bd0-af20-e669b5cbafb1" name="R1" referencedAssignmentID="cd50075c-dc36-43cd-8269-6e2b43665096" resistanceOhm="4700" resistorPartNumber="R1" mountLocation="ProtoShield_I2C_SCL_line"/>
+      <assignmentSpecification xsi:type="de.ucof.model.targets:ResistorInfo" id="d5b92aea-48c5-415b-aa16-32c8c8577607" name="R2" referencedAssignmentID="b4ac4e0a-d448-44b7-b955-a46ebe232ffd" resistanceOhm="4700" resistorPartNumber="R2" mountLocation="ProtoShield_I2C_SDA_line"/>
+      <assignmentSpecification xsi:type="de.ucof.model.targets:ResistorInfo" id="0e323982-12cc-4bd0-af20-e669b5cbafb1" name="R1" referencedAssignmentID="94373880-250d-4363-a491-77d4ab680e2c" resistanceOhm="4700" resistorPartNumber="R1" mountLocation="ProtoShield_I2C_SCL_line"/>
       <electricalInterfaces id="b7511a44-623d-4949-b7a9-cca26436bb2f" name="Rdc Power Ports">
         <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="e5afff1e-3a48-4081-97f1-bb0e916ff309" name="3.3V" minVoltage="3.0" maxVoltage="3.6" type="sinkSource"/>
         <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="fe65b985-f083-4c8f-9810-01ec4deb4b1f" name="5V" minVoltage="4.75" maxVoltage="5.25" type="sink"/>
@@ -448,7 +448,14 @@
       <powerConnection id="73ae61a9-eb51-4e12-8ccf-b28aba0a7cc5" name="GND_TO_GND" sourceID="cb2eda97-740b-459a-a43d-9ecc13c47775" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
       <powerConnection id="c02247ab-82ad-46cb-839b-2137bd232d8d" name="GND_TO_GND" sourceID="3ac96841-607e-4152-933e-e690d0593de9" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
       <powerConnection id="ed60487c-96cc-47e5-9e6f-a7aa50047bce" name="GND_TO_GND" sourceID="784eddaa-7ee6-47fe-8207-99b07153bbdb" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
-      <powerConnection id="c5d2d708-9180-4511-b5ca-130ab2ca5b15" name="GND_TO_GND" sourceID="36bd8da4-2354-4013-961a-89f2ad18736f" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
+      <powerConnection id="dd71633b-c668-4226-8c6c-652f7db2b52a" name="A1_TO_VDD" sourceID="55898ada-8c8e-4e28-93ed-d613d93a7222" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="94373880-250d-4363-a491-77d4ab680e2c" name="I2C_SCL_TO_VDD" sourceID="e425f4e6-1c54-4e8d-8d24-5f41c046e1bc" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="b4ac4e0a-d448-44b7-b955-a46ebe232ffd" name="I2C_SDA_TO_VDD" sourceID="0704abc2-066a-4b0a-b65a-cc501cb50c07" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="d13e19d2-b103-425f-bcef-5221f7f380af" name="SW_2_TO_GND" sourceID="0b9dba9d-1524-4a86-b085-322847c395f1" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
+      <powerConnection id="3c0ff35f-4367-4164-8419-33f4ae87a938" name="SW_1_TO_GND" sourceID="8f3220ea-0f26-4fa5-bd9a-f8b6abad9b9a" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
+      <powerConnection id="daf2265c-23da-4105-9220-c9694f9e040f" name="GND_TO_GND" sourceID="36bd8da4-2354-4013-961a-89f2ad18736f" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
+      <powerConnection id="5bc48f9f-ad95-4638-84d0-d6f91b659784" name="ADDRESS_TO_VDD" sourceID="3ed931e7-7552-45db-a863-068c8f74aa4b" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
+      <powerConnection id="037e10e8-954d-4b3e-98f7-31771912e145" name="ADDRESS_TO_GND" sourceID="3ed931e7-7552-45db-a863-068c8f74aa4b" targetID="9045fd64-d782-412b-91fc-86e77418b9d0"/>
     </powerConnectionSet>
     <electricalPowerGridSet id="892ed132-874e-4b31-b1e0-115335672081">
       <electricalGrid xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalGrid" id="9045fd64-d782-412b-91fc-86e77418b9d0" name="GND" definedVoltage="true"/>

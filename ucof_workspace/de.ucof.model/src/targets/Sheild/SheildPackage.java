@@ -415,13 +415,40 @@ public interface SheildPackage extends EPackage {
 	int SHEILD_PORT__VERSION = TargetsPackage.SUPER_HARDWARE_PORT_TYPE__VERSION;
 
 	/**
+	 * The feature id for the '<em><b>Min Voltage</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHEILD_PORT__MIN_VOLTAGE = TargetsPackage.SUPER_HARDWARE_PORT_TYPE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Max Voltage</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHEILD_PORT__MAX_VOLTAGE = TargetsPackage.SUPER_HARDWARE_PORT_TYPE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHEILD_PORT__TYPE = TargetsPackage.SUPER_HARDWARE_PORT_TYPE_FEATURE_COUNT + 2;
+
+	/**
 	 * The feature id for the '<em><b>Pin Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHEILD_PORT__PIN_NAME = TargetsPackage.SUPER_HARDWARE_PORT_TYPE_FEATURE_COUNT + 0;
+	int SHEILD_PORT__PIN_NAME = TargetsPackage.SUPER_HARDWARE_PORT_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>sheild Port</em>' class.
@@ -430,7 +457,7 @@ public interface SheildPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHEILD_PORT_FEATURE_COUNT = TargetsPackage.SUPER_HARDWARE_PORT_TYPE_FEATURE_COUNT + 1;
+	int SHEILD_PORT_FEATURE_COUNT = TargetsPackage.SUPER_HARDWARE_PORT_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of operations of the '<em>sheild Port</em>' class.

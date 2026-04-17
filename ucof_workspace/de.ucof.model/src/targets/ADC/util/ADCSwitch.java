@@ -12,6 +12,7 @@ import targets.ADC.*;
 import targets.SuperHardwarePortType;
 import targets.SuperTargetType;
 
+import targets.powergrid.SuperElectricalInterfaceType;
 import targets.powergrid.SuperPowerType;
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
@@ -95,6 +96,7 @@ public class ADCSwitch<T> extends Switch<T> {
 				adcPort adcPort = (adcPort)theEObject;
 				T result = caseadcPort(adcPort);
 				if (result == null) result = caseSuperHardwarePortType(adcPort);
+				if (result == null) result = caseSuperElectricalInterfaceType(adcPort);
 				if (result == null) result = caseSuperIdentifierType(adcPort);
 				if (result == null) result = caseSuperTrackingType(adcPort);
 				if (result == null) result = defaultCase(theEObject);
@@ -221,6 +223,21 @@ public class ADCSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSuperHardwarePortType(SuperHardwarePortType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Super Electrical Interface Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Super Electrical Interface Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSuperElectricalInterfaceType(SuperElectricalInterfaceType object) {
 		return null;
 	}
 

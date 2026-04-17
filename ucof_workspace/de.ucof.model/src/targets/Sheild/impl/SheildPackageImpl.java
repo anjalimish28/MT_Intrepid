@@ -503,6 +503,7 @@ public class SheildPackageImpl extends EPackageImpl implements SheildPackage {
 		sheildPortsEClass.getESuperTypes().add(theEtypesPackage.getSuperTrackingType());
 		sheildPortsEClass.getESuperTypes().add(theEtypesPackage.getSuperIdentifierType());
 		sheildPortEClass.getESuperTypes().add(theTargetsPackage.getSuperHardwarePortType());
+		sheildPortEClass.getESuperTypes().add(thePowergridPackage.getSuperElectricalInterfaceType());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(arduinosheildEClass, arduinosheild.class, "arduinosheild", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

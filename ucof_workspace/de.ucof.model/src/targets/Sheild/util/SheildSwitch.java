@@ -13,6 +13,7 @@ import targets.SuperHardwarePortType;
 import targets.SuperIOHardwareType;
 import targets.SuperTargetType;
 
+import targets.powergrid.SuperElectricalInterfaceType;
 import targets.powergrid.SuperPowerType;
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
@@ -97,6 +98,7 @@ public class SheildSwitch<T> extends Switch<T> {
 				sheildPort sheildPort = (sheildPort)theEObject;
 				T result = casesheildPort(sheildPort);
 				if (result == null) result = caseSuperHardwarePortType(sheildPort);
+				if (result == null) result = caseSuperElectricalInterfaceType(sheildPort);
 				if (result == null) result = caseSuperIdentifierType(sheildPort);
 				if (result == null) result = caseSuperTrackingType(sheildPort);
 				if (result == null) result = defaultCase(theEObject);
@@ -238,6 +240,21 @@ public class SheildSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSuperHardwarePortType(SuperHardwarePortType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Super Electrical Interface Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Super Electrical Interface Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSuperElectricalInterfaceType(SuperElectricalInterfaceType object) {
 		return null;
 	}
 

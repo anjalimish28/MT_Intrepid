@@ -3,6 +3,7 @@
 package targets.Sheild;
 
 import targets.SuperHardwarePortType;
+import targets.powergrid.SuperElectricalInterfaceType;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,7 +21,7 @@ import targets.SuperHardwarePortType;
  * @model
  * @generated
  */
-public interface sheildPort extends SuperHardwarePortType {
+public interface sheildPort extends SuperHardwarePortType, SuperElectricalInterfaceType {
 	/**
 	 * Returns the value of the '<em><b>Pin Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

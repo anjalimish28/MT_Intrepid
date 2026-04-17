@@ -120,7 +120,7 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="port" upperBound="-1"
           eType="#//ADC/adcPort" containment="true"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="adcPort" eSuperTypes="#//SuperHardwarePortType">
+    <eClassifiers xsi:type="ecore:EClass" name="adcPort" eSuperTypes="#//SuperHardwarePortType #//powergrid/SuperElectricalInterfaceType">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
   </eSubpackages>
@@ -134,7 +134,7 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="port" upperBound="-1"
           eType="#//Sheild/sheildPort" containment="true"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="sheildPort" eSuperTypes="#//SuperHardwarePortType">
+    <eClassifiers xsi:type="ecore:EClass" name="sheildPort" eSuperTypes="#//SuperHardwarePortType #//powergrid/SuperElectricalInterfaceType">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
   </eSubpackages>

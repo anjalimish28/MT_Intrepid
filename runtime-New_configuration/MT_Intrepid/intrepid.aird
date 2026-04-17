@@ -25,7 +25,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Hardware%20Assignment']"/>
         <target xmi:type="de.ucof.model:Platform" href="intrepid.ucof#1e21f09c-95ba-49f7-9f34-d46e434da93d"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_SPoCsDTnEfGc8arTlxXT3g" name="Power Grid" repPath="#_SPhVADTnEfGc8arTlxXT3g" changeId="1775926207212">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_SPoCsDTnEfGc8arTlxXT3g" name="Power Grid" repPath="#_SPhVADTnEfGc8arTlxXT3g" changeId="1776427322183">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']"/>
         <target xmi:type="de.ucof.model:Platform" href="intrepid.ucof#1e21f09c-95ba-49f7-9f34-d46e434da93d"/>
       </ownedRepresentationDescriptors>
@@ -5859,7 +5859,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WvcCYjWWEfGKiYJ8pPo7HA"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_WolMcTWWEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WolMcjWWEfGKiYJ8pPo7HA" x="26" y="39" width="16" height="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WolMcjWWEfGKiYJ8pPo7HA" x="61" y="39" width="16" height="12"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_WuRkwDWWEfGKiYJ8pPo7HA" type="3007" element="_WoAktTWWEfGKiYJ8pPo7HA">
               <children xmi:type="notation:Node" xmi:id="_WuRkwzWWEfGKiYJ8pPo7HA" type="5003">
@@ -5870,7 +5870,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WvcCZTWWEfGKiYJ8pPo7HA"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_WuRkwTWWEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WuRkwjWWEfGKiYJ8pPo7HA" x="24" y="69" width="20" height="13"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WuRkwjWWEfGKiYJ8pPo7HA" x="59" y="69" width="20" height="13"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_Wur0cDWWEfGKiYJ8pPo7HA" type="3007" element="_WoBLwjWWEfGKiYJ8pPo7HA">
               <children xmi:type="notation:Node" xmi:id="_Wur0czWWEfGKiYJ8pPo7HA" type="5003">
@@ -5881,7 +5881,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WvcCaDWWEfGKiYJ8pPo7HA"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_Wur0cTWWEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Wur0cjWWEfGKiYJ8pPo7HA" x="24" y="124" width="20" height="13"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Wur0cjWWEfGKiYJ8pPo7HA" x="59" y="124" width="20" height="13"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_Wu86MDWWEfGKiYJ8pPo7HA" type="3007" element="_WoBLxTWWEfGKiYJ8pPo7HA">
               <children xmi:type="notation:Node" xmi:id="_Wu9hQDWWEfGKiYJ8pPo7HA" type="5003">
@@ -5892,7 +5892,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WvcCazWWEfGKiYJ8pPo7HA"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_Wu86MTWWEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Wu86MjWWEfGKiYJ8pPo7HA" x="26" y="99" width="16" height="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Wu86MjWWEfGKiYJ8pPo7HA" x="61" y="99" width="16" height="12"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_WvN_8DWWEfGKiYJ8pPo7HA" type="3007" element="_WoBy0TWWEfGKiYJ8pPo7HA">
               <children xmi:type="notation:Node" xmi:id="_WvOnADWWEfGKiYJ8pPo7HA" type="5003">
@@ -5903,13 +5903,354 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WvcpcjWWEfGKiYJ8pPo7HA"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_WvN_8TWWEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WvN_8jWWEfGKiYJ8pPo7HA" x="24" y="149" width="20" height="13"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WvN_8jWWEfGKiYJ8pPo7HA" x="59" y="149" width="20" height="13"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nS3pQDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nRvA0TmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nTAzMDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nTAzMTmYEfGTro2sD9CXMw" x="-33" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npA4YDmYEfGTro2sD9CXMw" type="3005" element="_nRvn4DmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npA4YTmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npA4YjmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nS4QUDmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nS4QUTmYEfGTro2sD9CXMw" x="160" y="239" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nfX0MDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nRwO8DmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nfX0MzmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nfX0NDmYEfGTro2sD9CXMw" x="131" y="33"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npCGgDmYEfGTro2sD9CXMw" type="3005" element="_nRwO8TmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npCGgTmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npCGgjmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nfX0MTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfX0MjmYEfGTro2sD9CXMw" x="160" y="327" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nfr9QDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nRwO8zmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nfskUDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nfskUTmYEfGTro2sD9CXMw" x="-41" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npCGgzmYEfGTro2sD9CXMw" type="3005" element="_nRwO9DmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npCGhDmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npCGhTmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nfr9QTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfr9QjmYEfGTro2sD9CXMw" x="661" y="133" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nf-4MDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nRw2ATmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nf_fQDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nf_fQTmYEfGTro2sD9CXMw" x="131" y="33"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npCtkDmYEfGTro2sD9CXMw" type="3005" element="_nRw2AjmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npCtkTmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npCtkjmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nf-4MTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nf-4MjmYEfGTro2sD9CXMw" x="482" y="31" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ngTBQDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nRw2BDmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_ngToUDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_ngToUTmYEfGTro2sD9CXMw" x="-31" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npCtkzmYEfGTro2sD9CXMw" type="3005" element="_nRxdEDmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npCtlDmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npCtlTmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_ngTBQTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ngTBQjmYEfGTro2sD9CXMw" x="981" y="221" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ngsC0DmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nRxdEjmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_ngsp4DmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_ngsp4TmYEfGTro2sD9CXMw" x="-52" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npDUoDmYEfGTro2sD9CXMw" type="3005" element="_nRxdEzmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npDUoTmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npDUojmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_ngsC0TmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ngsC0jmYEfGTro2sD9CXMw" x="1141" y="265" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nhJV0DmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nRxdFTmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nhJ84DmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nhJ84TmYEfGTro2sD9CXMw" x="-40" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npDUozmYEfGTro2sD9CXMw" type="3005" element="_nRyEIDmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npDUpDmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npDUpTmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nhJV0TmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nhJV0jmYEfGTro2sD9CXMw" x="1301" y="309" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nhhwUDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nRyEIjmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nhiXYDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nhiXYTmYEfGTro2sD9CXMw" x="131" y="33"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npDUpjmYEfGTro2sD9CXMw" type="3005" element="_nRyEIzmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npDUpzmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npDUqDmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nhhwUTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nhhwUjmYEfGTro2sD9CXMw" x="1461" y="353" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nh8AADmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nRyEJTmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nh8nEDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nh8nETmYEfGTro2sD9CXMw" x="131" y="33"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npEiwDmYEfGTro2sD9CXMw" type="3005" element="_nRyEJjmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npEiwTmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npEiwjmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nh8AATmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nh8AAjmYEfGTro2sD9CXMw" x="1451" y="48" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nijEADmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nRyrMDmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nik5MDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nik5MTmYEfGTro2sD9CXMw" x="-32" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npFJ0DmYEfGTro2sD9CXMw" type="3005" element="_nRyrMTmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npFJ0TmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npFJ0jmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nijrEDmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nijrETmYEfGTro2sD9CXMw" x="1401" y="69" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_njBlIDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nRyrMzmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_njBlIzmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_njBlJDmYEfGTro2sD9CXMw" x="-53" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npFJ0zmYEfGTro2sD9CXMw" type="3005" element="_nRyrNDmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npFJ1DmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npFJ1TmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_njBlITmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_njBlIjmYEfGTro2sD9CXMw" x="1941" y="485" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_njZ_oDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nRzSQTmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_njamsDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_njamsTmYEfGTro2sD9CXMw" x="-41" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npFw4DmYEfGTro2sD9CXMw" type="3005" element="_nRzSQjmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npFw4TmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npFw4jmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_njZ_oTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_njZ_ojmYEfGTro2sD9CXMw" x="2101" y="529" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nj_OcDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nRz5UDmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nj_1gDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nj_1gTmYEfGTro2sD9CXMw" x="131" y="33"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npGX8DmYEfGTro2sD9CXMw" type="3005" element="_nRz5UTmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npGX8TmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npGX8jmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nj_OcTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nj_OcjmYEfGTro2sD9CXMw" x="2173" y="422" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nkY3EDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nRz5UzmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nkY3EzmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nkY3FDmYEfGTro2sD9CXMw" x="131" y="33"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npGX8zmYEfGTro2sD9CXMw" type="3005" element="_nRz5VDmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npGX9DmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npGX9TmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nkY3ETmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nkY3EjmYEfGTro2sD9CXMw" x="2138" y="337" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nktnMDmYEfGTro2sD9CXMw" type="3007" element="_nRz5VjmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nkuOQDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nkuOQTmYEfGTro2sD9CXMw" x="19"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npGX9jmYEfGTro2sD9CXMw" type="3005" element="_nR0gYDmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npGX9zmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npGX-DmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nktnMTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nktnMjmYEfGTro2sD9CXMw" x="60" y="176" width="18" height="14"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nk-s8DmYEfGTro2sD9CXMw" type="3007" element="_nR0gYjmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nk_UADmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nk_UATmYEfGTro2sD9CXMw" x="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npG_ADmYEfGTro2sD9CXMw" type="3005" element="_nR0gYzmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npG_ATmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npG_AjmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nk-s8TmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nk-s8jmYEfGTro2sD9CXMw" x="59" y="201" width="19" height="14"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nlPLoDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR1HcDmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nlPLozmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nlPLpDmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npG_AzmYEfGTro2sD9CXMw" type="3005" element="_nR1HcTmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npG_BDmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npG_BTmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nlPLoTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nlPLojmYEfGTro2sD9CXMw" x="2665" y="342" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nlfqUDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR1HczmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nlgRYDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nlgRYTmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npG_BjmYEfGTro2sD9CXMw" type="3005" element="_nR1HdDmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npG_BzmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npG_CDmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nlfqUTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nlfqUjmYEfGTro2sD9CXMw" x="3061" y="793" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nlx-MDmYEfGTro2sD9CXMw" type="3007" element="_nR1HdjmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nlylQDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nlylQTmYEfGTro2sD9CXMw" x="22"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npG_CTmYEfGTro2sD9CXMw" type="3005" element="_nR1ugDmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npG_CjmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npG_CzmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nlx-MTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nlx-MjmYEfGTro2sD9CXMw" x="58" y="226" width="21" height="16"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nmESEDmYEfGTro2sD9CXMw" type="3007" element="_nR1ugjmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nmE5IDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nmE5ITmYEfGTro2sD9CXMw" x="17"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npHmEDmYEfGTro2sD9CXMw" type="3005" element="_nR1ugzmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npHmETmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npHmEjmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nmESETmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nmESEjmYEfGTro2sD9CXMw" x="61" y="256" width="16" height="14"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nmSUgDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR1uhTmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nmTioDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nmTioTmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npHmEzmYEfGTro2sD9CXMw" type="3005" element="_nR1uhjmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npHmFDmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npHmFTmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nmSUgTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nmSUgjmYEfGTro2sD9CXMw" x="3541" y="925" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nmjaQDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR1uiDmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nmjaQzmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nmjaRDmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npHmFjmYEfGTro2sD9CXMw" type="3005" element="_nR1uiTmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npHmFzmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npHmGDmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nmjaQTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nmjaQjmYEfGTro2sD9CXMw" x="3701" y="969" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nmyDwDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR2VkTmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nmyq0DmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nmyq0TmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npHmGTmYEfGTro2sD9CXMw" type="3005" element="_nR2VkjmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npHmGjmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npHmGzmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nmyDwTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nmyDwjmYEfGTro2sD9CXMw" x="3861" y="1013" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nnB7YDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR2VlDmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nnB7YzmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nnB7ZDmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npINIDmYEfGTro2sD9CXMw" type="3005" element="_nR2VlTmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npINITmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npINIjmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nnB7YTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nnB7YjmYEfGTro2sD9CXMw" x="4021" y="1057" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nnRL8DmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR2VlzmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nnRzADmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nnRzATmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npINIzmYEfGTro2sD9CXMw" type="3005" element="_nR28oDmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npINJDmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npINJTmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nnRL8TmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nnRL8jmYEfGTro2sD9CXMw" x="4181" y="1101" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nnhDkDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR28ojmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nniRsDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nniRsTmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npINJjmYEfGTro2sD9CXMw" type="3005" element="_nR28ozmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npINJzmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npINKDmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nnhDkTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nnhDkjmYEfGTro2sD9CXMw" x="4341" y="1145" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nn3o4DmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR3jsTmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nn43ADmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nn43ATmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npINKTmYEfGTro2sD9CXMw" type="3005" element="_nR3jsjmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npINKjmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npINKzmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nn3o4TmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nn3o4jmYEfGTro2sD9CXMw" x="4501" y="1189" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_noFEQDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR3jtDmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_noFEQzmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_noFERDmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npI0MDmYEfGTro2sD9CXMw" type="3005" element="_nR3jtTmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npI0MTmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npI0MjmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_noFEQTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_noFEQjmYEfGTro2sD9CXMw" x="4661" y="1233" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_noTtwDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR4KwTmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_noTtwzmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_noTtxDmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npI0MzmYEfGTro2sD9CXMw" type="3005" element="_nR4x0DmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npI0NDmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npI0NTmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_noTtwTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_noTtwjmYEfGTro2sD9CXMw" x="4821" y="1277" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nohJIDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR4x0jmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nohwMDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nohwMTmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npI0NjmYEfGTro2sD9CXMw" type="3005" element="_nR4x0zmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npI0NzmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npI0ODmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nohJITmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nohJIjmYEfGTro2sD9CXMw" x="4981" y="1321" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_noukgDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR4x1TmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_noukgzmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_noukhDmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_npI0OTmYEfGTro2sD9CXMw" type="3005" element="_nR4x1jmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_npI0OjmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npI0OzmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_noukgTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_noukgjmYEfGTro2sD9CXMw" x="5141" y="1365" width="130" height="89"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_SySq4jTnEfGc8arTlxXT3g"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_SySq4zTnEfGc8arTlxXT3g"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_SySD0TTnEfGc8arTlxXT3g" fontName="Segoe UI" fillColor="15784895"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SySD0jTnEfGc8arTlxXT3g" x="880" y="260" width="148" height="205"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SySD0jTnEfGc8arTlxXT3g" x="855" y="170" width="223" height="300"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_SySq5DTnEfGc8arTlxXT3g" type="2002" element="_SxYr8TTnEfGc8arTlxXT3g">
           <children xmi:type="notation:Node" xmi:id="_SyTR8DTnEfGc8arTlxXT3g" type="5006"/>
@@ -5954,7 +6295,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WwPTojWWEfGKiYJ8pPo7HA"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_Wv25JDWWEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Wv25JTWWEfGKiYJ8pPo7HA" x="15" y="24" width="20" height="13"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Wv25JTWWEfGKiYJ8pPo7HA" x="21" y="24" width="20" height="13"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_WwDtcDWWEfGKiYJ8pPo7HA" type="3007" element="_WoEPETWWEfGKiYJ8pPo7HA">
               <children xmi:type="notation:Node" xmi:id="_WwDtczWWEfGKiYJ8pPo7HA" type="5003">
@@ -5965,13 +6306,101 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WwP6sjWWEfGKiYJ8pPo7HA"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_WwDtcTWWEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WwDtcjWWEfGKiYJ8pPo7HA" x="15" y="44" width="20" height="13"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WwDtcjWWEfGKiYJ8pPo7HA" x="21" y="44" width="20" height="13"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_npJbQDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR6nBDmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_npJbQzmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_npJbRDmYEfGTro2sD9CXMw" x="17"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_nrrx4DmYEfGTro2sD9CXMw" type="3005" element="_nR7OEDmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_nrrx4TmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nrrx4jmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_npJbQTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npJbQjmYEfGTro2sD9CXMw" x="273" y="74" width="16" height="14"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nqEBQDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR7OEjmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nqFPYDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nqFPYTmYEfGTro2sD9CXMw" x="16"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_nrsY8DmYEfGTro2sD9CXMw" type="3005" element="_nR71IDmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_nrsY8TmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nrsY8jmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nqEBQTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nqEBQjmYEfGTro2sD9CXMw" x="273" y="99" width="15" height="14"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nqUf8DmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR71IjmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nqUf8zmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nqUf9DmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_nrsY8zmYEfGTro2sD9CXMw" type="3005" element="_nR71IzmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_nrsY9DmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nrsY9TmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nqUf8TmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nqUf8jmYEfGTro2sD9CXMw" x="616" y="118" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nqh7UDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR8cMDmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nqiiYDmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nqiiYTmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_nrsY9jmYEfGTro2sD9CXMw" type="3005" element="_nR8cMTmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_nrsY9zmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nrsY-DmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nqh7UTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nqh7UjmYEfGTro2sD9CXMw" x="776" y="162" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nquIkDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR9DQDmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nquIkzmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nquIlDmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_nrsY-TmYEfGTro2sD9CXMw" type="3005" element="_nR9DQTmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_nrsY-jmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nrsY-zmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nquIkTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nquIkjmYEfGTro2sD9CXMw" x="936" y="206" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nq_1YDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR9DQzmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nq_1YzmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nq_1ZDmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_nrtAADmYEfGTro2sD9CXMw" type="3005" element="_nR9DRDmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_nrtAATmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nrtAAjmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nq_1YTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nq_1YjmYEfGTro2sD9CXMw" x="1096" y="250" width="130" height="89"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nrOe4DmYEfGTro2sD9CXMw" type="3007" element="_nR9DRjmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nrOe4zmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nrOe5DmYEfGTro2sD9CXMw" x="18"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_nrtAAzmYEfGTro2sD9CXMw" type="3005" element="_nR9qUDmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_nrtABDmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nrtABTmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nrOe4TmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nrOe4jmYEfGTro2sD9CXMw" x="22" y="71" width="17" height="15"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_nreWgDmYEfGTro2sD9CXMw" visible="false" type="3007" element="_nR9qUjmYEfGTro2sD9CXMw">
+              <children xmi:type="notation:Node" xmi:id="_nreWgzmYEfGTro2sD9CXMw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_nreWhDmYEfGTro2sD9CXMw" y="-23"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_nrtABjmYEfGTro2sD9CXMw" type="3005" element="_nR9qUzmYEfGTro2sD9CXMw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_nrtABzmYEfGTro2sD9CXMw" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nrtACDmYEfGTro2sD9CXMw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_nreWgTmYEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nreWgjmYEfGTro2sD9CXMw" x="1416" y="338" width="130" height="89"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_SyTR-TTnEfGc8arTlxXT3g"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_SyTR-jTnEfGc8arTlxXT3g"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_SyTR9TTnEfGc8arTlxXT3g" fontName="Segoe UI" fillColor="13434879"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SyTR9jTnEfGc8arTlxXT3g" x="685" y="515" width="102" height="78"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SyTR9jTnEfGc8arTlxXT3g" x="665" y="500" width="178" height="128"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_SyTR-zTnEfGc8arTlxXT3g" type="2002" element="_SxZTATTnEfGc8arTlxXT3g">
           <children xmi:type="notation:Node" xmi:id="_SyT5ADTnEfGc8arTlxXT3g" type="5006"/>
@@ -6091,64 +6520,64 @@
         <styles xmi:type="notation:DiagramStyle" xmi:id="_SxL3ojTnEfGc8arTlxXT3g"/>
         <edges xmi:type="notation:Edge" xmi:id="_CkYMYDWYEfGKiYJ8pPo7HA" type="4001" element="_CkNNQDWYEfGKiYJ8pPo7HA" source="_WolMcDWWEfGKiYJ8pPo7HA" target="_WoYYIDWWEfGKiYJ8pPo7HA">
           <children xmi:type="notation:Node" xmi:id="_CkYMZDWYEfGKiYJ8pPo7HA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CkYMZTWYEfGKiYJ8pPo7HA" x="3"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CkYMZTWYEfGKiYJ8pPo7HA" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_CkYzcDWYEfGKiYJ8pPo7HA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CkYzcTWYEfGKiYJ8pPo7HA" x="-12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CkYzcTWYEfGKiYJ8pPo7HA" x="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_CkYzcjWYEfGKiYJ8pPo7HA" type="6003">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CkYzczWYEfGKiYJ8pPo7HA" y="-10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_CkYMYTWYEfGKiYJ8pPo7HA" lineColor="2697711"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_CkYMYjWYEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CkYMYzWYEfGKiYJ8pPo7HA" points="[1, 2, 132, 181]$[0, -163, 131, 16]$[0, -176, 131, 3]$[-91, -176, 40, 3]$[-124, -176, 7, 3]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CkYMYzWYEfGKiYJ8pPo7HA" points="[0, 1, 141, 90]$[0, -89, 141, 0]$[-134, -89, 7, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CkYzdDWYEfGKiYJ8pPo7HA" id="(0.5625,0.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CkYzdTWYEfGKiYJ8pPo7HA" id="(0.8939393939393939,0.7538461538461538)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_Eh_voDWYEfGKiYJ8pPo7HA" type="4001" element="_Eh5B9DWYEfGKiYJ8pPo7HA" source="_WuRkwDWWEfGKiYJ8pPo7HA" target="_WoYYIDWWEfGKiYJ8pPo7HA">
           <children xmi:type="notation:Node" xmi:id="_Eh_vpDWYEfGKiYJ8pPo7HA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Eh_vpTWYEfGKiYJ8pPo7HA" x="-89" y="-4"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Eh_vpTWYEfGKiYJ8pPo7HA" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_EiAWsDWYEfGKiYJ8pPo7HA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EiAWsTWYEfGKiYJ8pPo7HA" x="2"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EiAWsTWYEfGKiYJ8pPo7HA" x="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_EiAWsjWYEfGKiYJ8pPo7HA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EiAWszWYEfGKiYJ8pPo7HA" x="1" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EiAWszWYEfGKiYJ8pPo7HA" y="-10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_Eh_voTWYEfGKiYJ8pPo7HA" lineColor="2697711"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_Eh_vojWYEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Eh_vozWYEfGKiYJ8pPo7HA" points="[-6, 5, 143, 204]$[-25, 5, 124, 204]$[-25, -161, 124, 38]$[-25, -199, 124, 0]$[-123, -199, 26, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Eh_vozWYEfGKiYJ8pPo7HA" points="[1, -1, 160, 108]$[0, -109, 159, 0]$[-133, -109, 26, 0]"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EiAWtTWYEfGKiYJ8pPo7HA" id="(0.6060606060606061,1.0)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_F7LwLDWYEfGKiYJ8pPo7HA" type="4001" element="_F7IFyDWYEfGKiYJ8pPo7HA" source="_Wu86MDWWEfGKiYJ8pPo7HA" target="_WoYYIDWWEfGKiYJ8pPo7HA">
           <children xmi:type="notation:Node" xmi:id="_F7M-QDWYEfGKiYJ8pPo7HA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F7M-QTWYEfGKiYJ8pPo7HA" x="92"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F7M-QTWYEfGKiYJ8pPo7HA" x="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_F7M-QjWYEfGKiYJ8pPo7HA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F7M-QzWYEfGKiYJ8pPo7HA" x="19"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F7M-QzWYEfGKiYJ8pPo7HA" x="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_F7M-RDWYEfGKiYJ8pPo7HA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F7M-RTWYEfGKiYJ8pPo7HA" x="3" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F7M-RTWYEfGKiYJ8pPo7HA" y="-10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_F7LwLTWYEfGKiYJ8pPo7HA" lineColor="2697711"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_F7LwLjWYEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_F7LwLzWYEfGKiYJ8pPo7HA" points="[-12, 0, 124, 254]$[-55, 0, 81, 254]$[-55, -252, 81, 2]$[-75, -252, 61, 2]$[-104, -252, 32, 2]$[-128, -252, 8, 2]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_F7LwLzWYEfGKiYJ8pPo7HA" points="[0, -6, 146, 158]$[0, -164, 146, 0]$[-138, -164, 8, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_F7M-RjWYEfGKiYJ8pPo7HA" id="(0.8125,0.5833333333333334)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_F7M-RzWYEfGKiYJ8pPo7HA" id="(0.8787878787878788,0.6307692307692307)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_G1W5YDWYEfGKiYJ8pPo7HA" type="4001" element="_G1NIbDWYEfGKiYJ8pPo7HA" source="_Wur0cDWWEfGKiYJ8pPo7HA" target="_WoYYIDWWEfGKiYJ8pPo7HA">
           <children xmi:type="notation:Node" xmi:id="_G1W5ZDWYEfGKiYJ8pPo7HA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G1W5ZTWYEfGKiYJ8pPo7HA" x="9" y="5"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G1W5ZTWYEfGKiYJ8pPo7HA" x="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_G1W5ZjWYEfGKiYJ8pPo7HA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G1W5ZzWYEfGKiYJ8pPo7HA" x="-9" y="-5"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G1W5ZzWYEfGKiYJ8pPo7HA" x="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_G1XgcDWYEfGKiYJ8pPo7HA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G1XgcTWYEfGKiYJ8pPo7HA" x="-9" y="-5"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G1XgcTWYEfGKiYJ8pPo7HA" y="-10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_G1W5YTWYEfGKiYJ8pPo7HA" lineColor="2697711"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_G1W5YjWYEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G1W5YzWYEfGKiYJ8pPo7HA" points="[0, 4, 150, 252]$[-150, -248, 0, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G1W5YzWYEfGKiYJ8pPo7HA" points="[-6, 7, 154, 165]$[-6, -158, 154, 0]$[-134, -158, 26, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G1XgcjWYEfGKiYJ8pPo7HA" id="(0.55,0.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G1XgczWYEfGKiYJ8pPo7HA" id="(0.6060606060606061,1.0)"/>
         </edges>
@@ -6170,17 +6599,17 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_Ji9vIDWYEfGKiYJ8pPo7HA" type="4001" element="_Ji4PqDWYEfGKiYJ8pPo7HA" source="_Wv25IzWWEfGKiYJ8pPo7HA" target="_WoYYIDWWEfGKiYJ8pPo7HA">
           <children xmi:type="notation:Node" xmi:id="_Ji9vJDWYEfGKiYJ8pPo7HA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ji9vJTWYEfGKiYJ8pPo7HA" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ji9vJTWYEfGKiYJ8pPo7HA" x="2" y="-1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_Ji9vJjWYEfGKiYJ8pPo7HA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ji-WMDWYEfGKiYJ8pPo7HA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ji-WMDWYEfGKiYJ8pPo7HA" x="3" y="1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_Ji-WMTWYEfGKiYJ8pPo7HA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ji-WMjWYEfGKiYJ8pPo7HA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ji-WMjWYEfGKiYJ8pPo7HA"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_Ji9vITWYEfGKiYJ8pPo7HA" lineColor="2697711"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_Ji9vIjWYEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ji9vIzWYEfGKiYJ8pPo7HA" points="[0, 0, -50, 403]$[50, -403, 0, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ji9vIzWYEfGKiYJ8pPo7HA" points="[0, 0, -64, 388]$[64, -388, 0, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ji-WMzWYEfGKiYJ8pPo7HA" id="(0.5,0.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ji-WNDWYEfGKiYJ8pPo7HA" id="(0.5303030303030303,1.0)"/>
         </edges>
@@ -6228,7 +6657,7 @@
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_LZvDgTWYEfGKiYJ8pPo7HA" lineColor="2697711"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_LZvDgjWYEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LZvDgzWYEfGKiYJ8pPo7HA" points="[1, -2, -45, 261]$[0, -74, -46, 189]$[0, -104, -46, 159]$[0, -226, -46, 37]$[0, -234, -46, 29]$[0, -263, -46, 0]$[45, -263, -1, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LZvDgzWYEfGKiYJ8pPo7HA" points="[1, -2, -45, 261]$[0, -74, -46, 189]$[0, -104, -46, 159]$[0, -158, -46, 105]$[0, -226, -46, 37]$[0, -234, -46, 29]$[0, -263, -46, 0]$[45, -263, -1, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LZvDijWYEfGKiYJ8pPo7HA" id="(0.0,0.23076923076923078)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LZvDizWYEfGKiYJ8pPo7HA" id="(0.015151515151515152,0.4307692307692308)"/>
         </edges>
@@ -6292,7 +6721,7 @@
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_28_AkTWZEfGKiYJ8pPo7HA" lineColor="2697711"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_28_AkjWZEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_28_AkzWZEfGKiYJ8pPo7HA" points="[1, 6, 126, 404]$[0, -55, 125, 343]$[0, -398, 125, 0]$[-60, -398, 65, 0]$[-110, -398, 15, 0]$[-114, -398, 11, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_28_AkzWZEfGKiYJ8pPo7HA" points="[1, 5, 126, 403]$[0, -55, 125, 343]$[0, -398, 125, 0]$[-60, -398, 65, 0]$[-110, -398, 15, 0]$[-114, -398, 11, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_28_npjWZEfGKiYJ8pPo7HA" id="(0.5,0.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_28_npzWZEfGKiYJ8pPo7HA" id="(0.8333333333333334,1.0)"/>
         </edges>
@@ -6346,17 +6775,17 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_d_IJ8DWbEfGKiYJ8pPo7HA" type="4001" element="_d_CDdjWbEfGKiYJ8pPo7HA" source="_WvN_8DWWEfGKiYJ8pPo7HA" target="_VCsjEDTuEfGfOsYHPpkAXg">
           <children xmi:type="notation:Node" xmi:id="_d_IxADWbEfGKiYJ8pPo7HA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d_IxATWbEfGKiYJ8pPo7HA" x="9" y="-2"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d_IxATWbEfGKiYJ8pPo7HA" x="-25" y="1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_d_IxAjWbEfGKiYJ8pPo7HA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d_IxAzWbEfGKiYJ8pPo7HA" x="-16" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d_IxAzWbEfGKiYJ8pPo7HA" x="3" y="-2"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_d_IxBDWbEfGKiYJ8pPo7HA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d_IxBTWbEfGKiYJ8pPo7HA" x="3" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d_IxBTWbEfGKiYJ8pPo7HA" x="-15"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_d_IJ8TWbEfGKiYJ8pPo7HA"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_d_IJ8jWbEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_d_IJ8zWbEfGKiYJ8pPo7HA" points="[-6, -1, 118, -288]$[-6, 0, 118, -287]$[84, 0, 208, -287]$[84, 287, 208, 0]$[-80, 287, 44, 0]$[-100, 287, 24, 0]$[-124, 287, 0, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_d_IJ8zWbEfGKiYJ8pPo7HA" points="[-7, -1, 127, -378]$[-45, 0, 89, -377]$[-45, 377, 89, 0]$[-134, 377, 0, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d_IxBjWbEfGKiYJ8pPo7HA" id="(0.55,1.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d_IxBzWbEfGKiYJ8pPo7HA" id="(1.0,0.45454545454545453)"/>
         </edges>
@@ -6392,21 +6821,132 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oH3UijWbEfGKiYJ8pPo7HA" id="(1.0,0.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oH3UizWbEfGKiYJ8pPo7HA" id="(0.0,0.45454545454545453)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_whc1oDWbEfGKiYJ8pPo7HA" type="4001" element="_whSdsDWbEfGKiYJ8pPo7HA" source="_WwDtcDWWEfGKiYJ8pPo7HA" target="_VCsjEDTuEfGfOsYHPpkAXg">
-          <children xmi:type="notation:Node" xmi:id="_whdcsDWbEfGKiYJ8pPo7HA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_whdcsTWbEfGKiYJ8pPo7HA" x="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_UmTnADmZEfGTro2sD9CXMw" visible="false" type="4001" element="_UliK8DmZEfGTro2sD9CXMw" source="_nqUf8DmYEfGTro2sD9CXMw" target="_WoYYIDWWEfGKiYJ8pPo7HA">
+          <children xmi:type="notation:Node" xmi:id="_UmWDQDmZEfGTro2sD9CXMw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UmWDQTmZEfGTro2sD9CXMw" x="7" y="-7"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_whdcsjWbEfGKiYJ8pPo7HA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_whdcszWbEfGKiYJ8pPo7HA" x="10"/>
+          <children xmi:type="notation:Node" xmi:id="_UmWqUDmZEfGTro2sD9CXMw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UmWqUTmZEfGTro2sD9CXMw" x="-9" y="9"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_whdctDWbEfGKiYJ8pPo7HA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_whdctTWbEfGKiYJ8pPo7HA" x="10"/>
+          <children xmi:type="notation:Node" xmi:id="_UmWqUjmZEfGTro2sD9CXMw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UmWqUzmZEfGTro2sD9CXMw" x="-9" y="8"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_whc1oTWbEfGKiYJ8pPo7HA"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_whc1ojWbEfGKiYJ8pPo7HA" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_whc1ozWbEfGKiYJ8pPo7HA" points="[1, -5, -24, -112]$[0, 136, -25, 29]$[10, 136, -15, 29]$[15, 126, -10, 19]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_whdctjWbEfGKiYJ8pPo7HA" id="(0.5,1.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_whdctzWbEfGKiYJ8pPo7HA" id="(0.15151515151515152,0.0)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_UmTnATmZEfGTro2sD9CXMw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_UmTnAjmZEfGTro2sD9CXMw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UmTnAzmZEfGTro2sD9CXMw" points="[0, 0, 1359, 557]$[-1359, -557, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UmX4cDmZEfGTro2sD9CXMw" id="(0.06153846153846154,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UmX4cTmZEfGTro2sD9CXMw" id="(0.30303030303030304,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cKuREDpREfGGPa0YNCW_HQ" type="4001" element="_cJvZoDpREfGGPa0YNCW_HQ" source="_nktnMDmYEfGTro2sD9CXMw" target="_WoYYIDWWEfGKiYJ8pPo7HA">
+          <children xmi:type="notation:Node" xmi:id="_cK8TgDpREfGGPa0YNCW_HQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cK8TgTpREfGGPa0YNCW_HQ" x="-141"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cK-vwDpREfGGPa0YNCW_HQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cK-vwTpREfGGPa0YNCW_HQ" x="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cK_94DpREfGGPa0YNCW_HQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cK_94TpREfGGPa0YNCW_HQ" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cKuRETpREfGGPa0YNCW_HQ" lineColor="2697711"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cKuREjpREfGGPa0YNCW_HQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cKuREzpREfGGPa0YNCW_HQ" points="[0, 5, 169, 225]$[0, -38, 169, 182]$[0, -220, 169, 0]$[-129, -220, 40, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cLEPUDpREfGGPa0YNCW_HQ" id="(0.2777777777777778,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cLEPUTpREfGGPa0YNCW_HQ" id="(0.3939393939393939,0.8461538461538461)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_hgI2kDpREfGGPa0YNCW_HQ" type="4001" element="_hf0GojpREfGGPa0YNCW_HQ" source="_nk-s8DmYEfGTro2sD9CXMw" target="_WoYYIDWWEfGKiYJ8pPo7HA">
+          <children xmi:type="notation:Node" xmi:id="_hgJdoDpREfGGPa0YNCW_HQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hgJdoTpREfGGPa0YNCW_HQ" x="-144"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hgJdojpREfGGPa0YNCW_HQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hgJdozpREfGGPa0YNCW_HQ" x="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hgJdpDpREfGGPa0YNCW_HQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hgJdpTpREfGGPa0YNCW_HQ" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_hgI2kTpREfGGPa0YNCW_HQ" lineColor="2697711"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_hgI2kjpREfGGPa0YNCW_HQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hgI2kzpREfGGPa0YNCW_HQ" points="[0, 2, 164, 250]$[0, -73, 164, 175]$[0, -248, 164, 0]$[-129, -248, 35, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hgKEsDpREfGGPa0YNCW_HQ" id="(0.3157894736842105,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hgKEsTpREfGGPa0YNCW_HQ" id="(0.4696969696969697,0.8)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_l8uWoDpREfGGPa0YNCW_HQ" type="4001" element="_l8fGRjpREfGGPa0YNCW_HQ" source="_nmESEDmYEfGTro2sD9CXMw" target="_VCsjEDTuEfGfOsYHPpkAXg">
+          <children xmi:type="notation:Node" xmi:id="_l8uWpDpREfGGPa0YNCW_HQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l8uWpTpREfGGPa0YNCW_HQ" x="-24" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_l8uWpjpREfGGPa0YNCW_HQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l8uWpzpREfGGPa0YNCW_HQ" x="27" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_l8uWqDpREfGGPa0YNCW_HQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l8uWqTpREfGGPa0YNCW_HQ" x="101" y="-4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_l8uWoTpREfGGPa0YNCW_HQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_l8uWojpREfGGPa0YNCW_HQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_l8uWozpREfGGPa0YNCW_HQ" points="[0, -3, 144, -273]$[0, 29, 144, -241]$[85, 29, 229, -241]$[180, 29, 324, -241]$[180, 264, 324, -6]$[-100, 264, 44, -6]$[-134, 264, 10, -6]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_l8uWqjpREfGGPa0YNCW_HQ" id="(0.5625,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_l8u9sDpREfGGPa0YNCW_HQ" id="(0.8484848484848485,0.4696969696969697)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mtd3EDpREfGGPa0YNCW_HQ" type="4001" element="_mtS4GjpREfGGPa0YNCW_HQ" source="_nlx-MDmYEfGTro2sD9CXMw" target="_VCsjEDTuEfGfOsYHPpkAXg">
+          <children xmi:type="notation:Node" xmi:id="_mteeIDpREfGGPa0YNCW_HQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mteeITpREfGGPa0YNCW_HQ" x="-194" y="81"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mteeIjpREfGGPa0YNCW_HQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mteeIzpREfGGPa0YNCW_HQ" x="-9" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mteeJDpREfGGPa0YNCW_HQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mteeJTpREfGGPa0YNCW_HQ" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mtd3ETpREfGGPa0YNCW_HQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mtd3EjpREfGGPa0YNCW_HQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mtd3EzpREfGGPa0YNCW_HQ" points="[0, -5, 138, -291]$[0, 6, 138, -280]$[100, 6, 238, -280]$[170, 6, 308, -280]$[175, 6, 313, -280]$[175, 12, 313, -274]$[175, 166, 313, -120]$[175, 282, 313, -4]$[-134, 282, 4, -4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mteeJjpREfGGPa0YNCW_HQ" id="(0.5714285714285714,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mteeJzpREfGGPa0YNCW_HQ" id="(0.9393939393939394,0.2878787878787879)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_W-9hYDpSEfGGPa0YNCW_HQ" type="4001" element="_W-1lxjpSEfGGPa0YNCW_HQ" source="_WwDtcDWWEfGKiYJ8pPo7HA" target="_VCsjEDTuEfGfOsYHPpkAXg">
+          <children xmi:type="notation:Node" xmi:id="_W--IczpSEfGGPa0YNCW_HQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W--IdDpSEfGGPa0YNCW_HQ" x="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_W--IdTpSEfGGPa0YNCW_HQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W--IdjpSEfGGPa0YNCW_HQ" x="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_W--IdzpSEfGGPa0YNCW_HQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W--IeDpSEfGGPa0YNCW_HQ" x="1" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_W--IcDpSEfGGPa0YNCW_HQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_W--IcTpSEfGGPa0YNCW_HQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_W--IcjpSEfGGPa0YNCW_HQ" points="[-6, -1, -36, -153]$[-26, 0, -56, -152]$[-26, 152, -56, 0]$[30, 152, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_W--vgDpSEfGGPa0YNCW_HQ" id="(0.45,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_W--vgTpSEfGGPa0YNCW_HQ" id="(0.0,0.45454545454545453)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_GNvfkDpVEfGGPa0YNCW_HQ" type="4001" element="_GNMtLDpVEfGGPa0YNCW_HQ" source="_nrOe4DmYEfGTro2sD9CXMw" target="_WoYYIDWWEfGKiYJ8pPo7HA">
+          <children xmi:type="notation:Node" xmi:id="_GNvflDpVEfGGPa0YNCW_HQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GNvflTpVEfGGPa0YNCW_HQ" x="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_GNwGoDpVEfGGPa0YNCW_HQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GNwGoTpVEfGGPa0YNCW_HQ" x="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_GNwGojpVEfGGPa0YNCW_HQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GNwGozpVEfGGPa0YNCW_HQ" x="2" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_GNvfkTpVEfGGPa0YNCW_HQ" lineColor="2697711"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_GNvfkjpVEfGGPa0YNCW_HQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GNvfkzpVEfGGPa0YNCW_HQ" points="[-5, 6, -50, 448]$[-56, 6, -101, 448]$[-56, -364, -101, 78]$[45, -442, 0, 0]"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GNwGpTpVEfGGPa0YNCW_HQ" id="(0.22727272727272727,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ND3C0DpVEfGGPa0YNCW_HQ" type="4001" element="_NDQmKDpVEfGGPa0YNCW_HQ" source="_nrOe4DmYEfGTro2sD9CXMw" target="_VCsjEDTuEfGfOsYHPpkAXg">
+          <children xmi:type="notation:Node" xmi:id="_ND3C1DpVEfGGPa0YNCW_HQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ND3C1TpVEfGGPa0YNCW_HQ" x="-14"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ND3C1jpVEfGGPa0YNCW_HQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ND3C1zpVEfGGPa0YNCW_HQ" x="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ND3C2DpVEfGGPa0YNCW_HQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ND3C2TpVEfGGPa0YNCW_HQ" x="3" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ND3C0TpVEfGGPa0YNCW_HQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ND3C0jpVEfGGPa0YNCW_HQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ND3C0zpVEfGGPa0YNCW_HQ" points="[-7, -3, -42, -128]$[-6, 93, -41, -32]$[30, 120, -5, -5]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ND3C2jpVEfGGPa0YNCW_HQ" id="(0.47058823529411764,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ND3C2zpVEfGGPa0YNCW_HQ" id="(0.07575757575757576,0.48484848484848486)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
@@ -6502,6 +7042,281 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
       </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRvA0TmYEfGTro2sD9CXMw" name="Balance_Engine_0_Enable" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#167ec559-806d-4848-8c48-565e5279ddaa"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#167ec559-806d-4848-8c48-565e5279ddaa"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_kdWdUDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nRvn4DmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRwO8DmYEfGTro2sD9CXMw" name="Balance_Engine_0_Speed_PWM" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#6361246e-47b0-47cc-ab37-0c69aaa9ddcc"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#6361246e-47b0-47cc-ab37-0c69aaa9ddcc"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_k92iUDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nRwO8TmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRwO8zmYEfGTro2sD9CXMw" name="Balance_Engine_0_Direction" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#23560f1c-a09c-4c06-b7cd-ab4abc0a4397"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#23560f1c-a09c-4c06-b7cd-ab4abc0a4397"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_mtsIQDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nRwO9DmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRw2ATmYEfGTro2sD9CXMw" name="Balance_Engine_0_Speed_Current" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#a262a8d2-2c9a-4c05-b872-3278f05510b9"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#a262a8d2-2c9a-4c05-b872-3278f05510b9"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_nbZi0DpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nRw2AjmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRw2BDmYEfGTro2sD9CXMw" name="Gimbal_Engine_1_Enable" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#ef957e8a-9ca9-4a31-b3e9-9620ba2a3752"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#ef957e8a-9ca9-4a31-b3e9-9620ba2a3752"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_oLb4oDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nRxdEDmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRxdEjmYEfGTro2sD9CXMw" name="Gimbal_Engine_1_Speed_PWM" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#9c5f8755-e6fb-4356-9759-007da45958ce"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#9c5f8755-e6fb-4356-9759-007da45958ce"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_ombLgDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nRxdEzmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRxdFTmYEfGTro2sD9CXMw" name="Gimbal_Engine_1_Direction" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#61bfaf48-8a17-482c-b776-c86200ed8b79"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#61bfaf48-8a17-482c-b776-c86200ed8b79"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_o3TgIDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nRyEIDmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRyEIjmYEfGTro2sD9CXMw" name="Gimbal_Engine_1_Speed_Current" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#726660ac-9324-4feb-b4db-a0151e16da6c"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#726660ac-9324-4feb-b4db-a0151e16da6c"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_pjlXUDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nRyEIzmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRyEJTmYEfGTro2sD9CXMw" name="Gimbal_Engine_1_Speed_Average" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#29e7f1c1-39c9-47f6-a030-c0b1cf5c4ff7"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#29e7f1c1-39c9-47f6-a030-c0b1cf5c4ff7"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_qYvdsDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nRyEJjmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRyrMDmYEfGTro2sD9CXMw" name="Spindal_Engine_2_Enable" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#692ce7b3-066f-4dfb-a2ca-ef7641becf2b"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#692ce7b3-066f-4dfb-a2ca-ef7641becf2b"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_q1IewDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nRyrMTmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRyrMzmYEfGTro2sD9CXMw" name="Spindal_Engine_2_Speed_PWM" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#94833f61-5898-4caf-b5c0-00ebd566f5ca"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#94833f61-5898-4caf-b5c0-00ebd566f5ca"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_rg5_oDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nRyrNDmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRzSQTmYEfGTro2sD9CXMw" name="Spindal_Engine_2_Direction" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#2d679548-752c-4f4e-988b-42c98ae42086"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#2d679548-752c-4f4e-988b-42c98ae42086"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_sPrKIDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nRzSQjmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRz5UDmYEfGTro2sD9CXMw" name="Spindal_Engine_2_Speed_Current" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#59f6a0c6-8ae6-4c3e-85e6-058da2b2050c"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#59f6a0c6-8ae6-4c3e-85e6-058da2b2050c"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_sjk9kDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nRz5UTmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRz5UzmYEfGTro2sD9CXMw" name="Spindal_Engine_2_Speed_Average" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#28af8f4b-7050-4de6-9407-2b4baad91454"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#28af8f4b-7050-4de6-9407-2b4baad91454"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_s7UIIDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nRz5VDmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nRz5VjmYEfGTro2sD9CXMw" name="I2C_SCL" outgoingEdges="_cJvZoDpREfGGPa0YNCW_HQ" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#e425f4e6-1c54-4e8d-8d24-5f41c046e1bc"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#e425f4e6-1c54-4e8d-8d24-5f41c046e1bc"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR0gYDmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR0gYjmYEfGTro2sD9CXMw" name="I2C_SDA" outgoingEdges="_hf0GojpREfGGPa0YNCW_HQ" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#0704abc2-066a-4b0a-b65a-cc501cb50c07"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#0704abc2-066a-4b0a-b65a-cc501cb50c07"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR0gYzmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR1HcDmYEfGTro2sD9CXMw" name="Address_1" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#086ce9a7-dbc7-40c8-9551-2d368c2634df"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#086ce9a7-dbc7-40c8-9551-2d368c2634df"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_1RIjkDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR1HcTmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR1HczmYEfGTro2sD9CXMw" name="Address_2" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#da3e8189-745a-482b-a90d-ad90ee70dc19"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#da3e8189-745a-482b-a90d-ad90ee70dc19"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_2t7RsDpLEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR1HdDmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR1HdjmYEfGTro2sD9CXMw" name="SW_1" outgoingEdges="_mtS4GjpREfGGPa0YNCW_HQ" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#8f3220ea-0f26-4fa5-bd9a-f8b6abad9b9a"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#8f3220ea-0f26-4fa5-bd9a-f8b6abad9b9a"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR1ugDmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR1ugjmYEfGTro2sD9CXMw" name="SW_2" outgoingEdges="_l8fGRjpREfGGPa0YNCW_HQ" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#0b9dba9d-1524-4a86-b085-322847c395f1"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#0b9dba9d-1524-4a86-b085-322847c395f1"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR1ugzmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR1uhTmYEfGTro2sD9CXMw" name="SW_3" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#522fbaeb-7446-4f7a-b352-fd59a94ea322"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#522fbaeb-7446-4f7a-b352-fd59a94ea322"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_r2AQcDpMEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR1uhjmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR1uiDmYEfGTro2sD9CXMw" name="SW_4" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#732fbd1d-7c3c-4c8d-9a17-2490bff85227"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#732fbd1d-7c3c-4c8d-9a17-2490bff85227"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_sFSCkDpMEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR1uiTmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR2VkTmYEfGTro2sD9CXMw" name="RESET" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#dd742693-6938-4f3f-9694-ac02508da9c8"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#dd742693-6938-4f3f-9694-ac02508da9c8"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_stFpcDpMEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR2VkjmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR2VlDmYEfGTro2sD9CXMw" name="D0" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#9f366fa8-e974-469a-8701-583b12e38329"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#9f366fa8-e974-469a-8701-583b12e38329"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_s4bWwDpMEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR2VlTmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR2VlzmYEfGTro2sD9CXMw" name="D1" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#deb6b24a-d231-4ae6-97e3-bb2ec0043c62"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#deb6b24a-d231-4ae6-97e3-bb2ec0043c62"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_tFbQ8DpMEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR28oDmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR28ojmYEfGTro2sD9CXMw" name="D5" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#c8fd7a8f-8ef0-4c64-8ddc-e1a8806d5c59"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#c8fd7a8f-8ef0-4c64-8ddc-e1a8806d5c59"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_tf4YUDpMEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR28ozmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR3jsTmYEfGTro2sD9CXMw" name="A0" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#363a4305-9611-40fd-88cb-bf964a6df524"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#363a4305-9611-40fd-88cb-bf964a6df524"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_tnZVkDpMEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR3jsjmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR3jtDmYEfGTro2sD9CXMw" name="A1" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#edbf9a90-cfca-4941-87c8-52b37ccd9880"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#edbf9a90-cfca-4941-87c8-52b37ccd9880"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_tuy-EDpMEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR3jtTmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR4KwTmYEfGTro2sD9CXMw" name="A2" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#8bf3abdd-a2b5-494b-90de-c7783a4b25e1"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#8bf3abdd-a2b5-494b-90de-c7783a4b25e1"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_t25xMDpMEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR4x0DmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR4x0jmYEfGTro2sD9CXMw" name="A3" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#36016713-589e-4850-b720-816427173101"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#36016713-589e-4850-b720-816427173101"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_uNrScDpMEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR4x0zmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR4x1TmYEfGTro2sD9CXMw" name="SCREW0" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#cfba8011-e2a5-4c96-a5f6-aeae1110f67c"/>
+        <semanticElements xmi:type="de.ucof.model.targets.sheild:sheildPort" href="intrepid.ucof#cfba8011-e2a5-4c96-a5f6-aeae1110f67c"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_ulgjoDpMEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR4x1jmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_SxYr8TTnEfGc8arTlxXT3g">
       <target xmi:type="de.ucof.model.targets.motorcontroller:escon409510" href="intrepid.ucof#99935791-a447-457d-b303-79d5cf0d673f"/>
@@ -6536,11 +7351,82 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" uid="_WoEPETWWEfGKiYJ8pPo7HA" name="GND" outgoingEdges="_whSdsDWbEfGKiYJ8pPo7HA" width="2" height="2" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_WoEPETWWEfGKiYJ8pPo7HA" name="GND" outgoingEdges="_W-1lxjpSEfGGPa0YNCW_HQ" width="2" height="2" resizeKind="NSEW">
         <target xmi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" href="intrepid.ucof#36bd8da4-2354-4013-961a-89f2ad18736f"/>
         <semanticElements xmi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" href="intrepid.ucof#36bd8da4-2354-4013-961a-89f2ad18736f"/>
         <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WoEPEjWWEfGKiYJ8pPo7HA" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_Inport.svg">
           <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR6nBDmYEfGTro2sD9CXMw" name="A3" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#17530d5b-a5aa-4cc1-96e5-875a0e6b0ecc"/>
+        <semanticElements xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#17530d5b-a5aa-4cc1-96e5-875a0e6b0ecc"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_RPEtwDpPEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR7OEDmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR7OEjmYEfGTro2sD9CXMw" name="A2" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#c5eaa18e-59d7-49e3-883c-1fc1d2c44b40"/>
+        <semanticElements xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#c5eaa18e-59d7-49e3-883c-1fc1d2c44b40"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_ReEMADpPEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR71IDmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR71IjmYEfGTro2sD9CXMw" name="A1" visible="false" outgoingEdges="_UliK8DmZEfGTro2sD9CXMw" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#55898ada-8c8e-4e28-93ed-d613d93a7222"/>
+        <semanticElements xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#55898ada-8c8e-4e28-93ed-d613d93a7222"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_R_cawDpPEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR71IzmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR8cMDmYEfGTro2sD9CXMw" name="A0" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#aaa8337a-eeec-49c2-8b83-814e8e123cea"/>
+        <semanticElements xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#aaa8337a-eeec-49c2-8b83-814e8e123cea"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_SWb-cDpPEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR8cMTmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR9DQDmYEfGTro2sD9CXMw" name="SDA" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#64e578f1-2c84-42d0-94d3-3f0a6b58db65"/>
+        <semanticElements xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#64e578f1-2c84-42d0-94d3-3f0a6b58db65"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_TD4TQDpPEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR9DQTmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR9DQzmYEfGTro2sD9CXMw" name="SCL" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#760590e1-e7c1-4190-8f44-c6c508a2777a"/>
+        <semanticElements xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#760590e1-e7c1-4190-8f44-c6c508a2777a"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_TMzlwDpPEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR9DRDmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR9DRjmYEfGTro2sD9CXMw" name="ADDRESS" outgoingEdges="_GNMtLDpVEfGGPa0YNCW_HQ _NDQmKDpVEfGGPa0YNCW_HQ" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#3ed931e7-7552-45db-a863-068c8f74aa4b"/>
+        <semanticElements xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#3ed931e7-7552-45db-a863-068c8f74aa4b"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR9qUDmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_nR9qUjmYEfGTro2sD9CXMw" name="ALRT" visible="false" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#a384828b-7189-4b0a-a1d0-ad09c706d202"/>
+        <semanticElements xmi:type="de.ucof.model.targets.adc:adcPort" href="intrepid.ucof#a384828b-7189-4b0a-a1d0-ad09c706d202"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_VdP-YDpPEfGGPa0YNCW_HQ"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_nR9qUzmYEfGTro2sD9CXMw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
       </ownedDiagramElements>
@@ -6608,7 +7494,7 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_VCPQEDTuEfGfOsYHPpkAXg" name="GND" incomingEdges="_W7wN2DWbEfGKiYJ8pPo7HA _YVH0njWbEfGKiYJ8pPo7HA _Z5OrsjWbEfGKiYJ8pPo7HA _d_CDdjWbEfGKiYJ8pPo7HA _lvSTujWbEfGKiYJ8pPo7HA _oHzDJjWbEfGKiYJ8pPo7HA _whSdsDWbEfGKiYJ8pPo7HA" width="3" height="3" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_VCPQEDTuEfGfOsYHPpkAXg" name="GND" incomingEdges="_W7wN2DWbEfGKiYJ8pPo7HA _YVH0njWbEfGKiYJ8pPo7HA _Z5OrsjWbEfGKiYJ8pPo7HA _d_CDdjWbEfGKiYJ8pPo7HA _lvSTujWbEfGKiYJ8pPo7HA _oHzDJjWbEfGKiYJ8pPo7HA _l8fGRjpREfGGPa0YNCW_HQ _mtS4GjpREfGGPa0YNCW_HQ _W-1lxjpSEfGGPa0YNCW_HQ _NDQmKDpVEfGGPa0YNCW_HQ" width="3" height="3" resizeKind="NSEW">
       <target xmi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalGrid" href="intrepid.ucof#9045fd64-d782-412b-91fc-86e77418b9d0"/>
       <semanticElements xmi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalGrid" href="intrepid.ucof#9045fd64-d782-412b-91fc-86e77418b9d0"/>
       <ownedStyle xmi:type="diagram:Ellipse" uid="_VCWk0DTuEfGfOsYHPpkAXg" labelSize="12" labelPosition="node" color="209,209,209">
@@ -6617,7 +7503,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@nodeMappings[name='ElectricalGrid']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Wn7FIDWWEfGKiYJ8pPo7HA" name="VDD" incomingEdges="_CkNNQDWYEfGKiYJ8pPo7HA _Eh5B9DWYEfGKiYJ8pPo7HA _F7IFyDWYEfGKiYJ8pPo7HA _G1NIbDWYEfGKiYJ8pPo7HA _IDpRgDWYEfGKiYJ8pPo7HA _Ji4PqDWYEfGKiYJ8pPo7HA _KMyvXDWYEfGKiYJ8pPo7HA _Kyut8DWYEfGKiYJ8pPo7HA _LZqLIjWYEfGKiYJ8pPo7HA _L5ycuDWYEfGKiYJ8pPo7HA _Mm0h2jWYEfGKiYJ8pPo7HA _NYGN0DWYEfGKiYJ8pPo7HA _286IQDWZEfGKiYJ8pPo7HA" width="3" height="3" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Wn7FIDWWEfGKiYJ8pPo7HA" name="VDD" incomingEdges="_CkNNQDWYEfGKiYJ8pPo7HA _Eh5B9DWYEfGKiYJ8pPo7HA _F7IFyDWYEfGKiYJ8pPo7HA _G1NIbDWYEfGKiYJ8pPo7HA _IDpRgDWYEfGKiYJ8pPo7HA _Ji4PqDWYEfGKiYJ8pPo7HA _KMyvXDWYEfGKiYJ8pPo7HA _Kyut8DWYEfGKiYJ8pPo7HA _LZqLIjWYEfGKiYJ8pPo7HA _L5ycuDWYEfGKiYJ8pPo7HA _Mm0h2jWYEfGKiYJ8pPo7HA _NYGN0DWYEfGKiYJ8pPo7HA _286IQDWZEfGKiYJ8pPo7HA _UliK8DmZEfGTro2sD9CXMw _cJvZoDpREfGGPa0YNCW_HQ _hf0GojpREfGGPa0YNCW_HQ _GNMtLDpVEfGGPa0YNCW_HQ" width="3" height="3" resizeKind="NSEW">
       <target xmi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalGrid" href="intrepid.ucof#587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
       <semanticElements xmi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalGrid" href="intrepid.ucof#587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>
       <ownedStyle xmi:type="diagram:Ellipse" uid="_Wn7sMDWWEfGKiYJ8pPo7HA" labelSize="12" labelPosition="node" color="246,139,139">
@@ -6809,12 +7695,78 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_whSdsDWbEfGKiYJ8pPo7HA" sourceNode="_WoEPETWWEfGKiYJ8pPo7HA" targetNode="_VCPQEDTuEfGfOsYHPpkAXg">
-      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#c5d2d708-9180-4511-b5ca-130ab2ca5b15"/>
-      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#c5d2d708-9180-4511-b5ca-130ab2ca5b15"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_whSdsTWbEfGKiYJ8pPo7HA" size="2">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_UliK8DmZEfGTro2sD9CXMw" visible="false" sourceNode="_nR71IjmYEfGTro2sD9CXMw" targetNode="_Wn7FIDWWEfGKiYJ8pPo7HA">
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#dd71633b-c668-4226-8c6c-652f7db2b52a"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#dd71633b-c668-4226-8c6c-652f7db2b52a"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_UljZEDmZEfGTro2sD9CXMw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_whSdsjWbEfGKiYJ8pPo7HA" labelSize="12"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_UljZETmZEfGTro2sD9CXMw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cJvZoDpREfGGPa0YNCW_HQ" sourceNode="_nRz5VjmYEfGTro2sD9CXMw" targetNode="_Wn7FIDWWEfGKiYJ8pPo7HA">
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.20"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.20"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cJ0SIDpREfGGPa0YNCW_HQ" size="2" strokeColor="239,41,41">
+        <customFeatures>strokeColor</customFeatures>
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_cJ0SITpREfGGPa0YNCW_HQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hf0GojpREfGGPa0YNCW_HQ" sourceNode="_nR0gYjmYEfGTro2sD9CXMw" targetNode="_Wn7FIDWWEfGKiYJ8pPo7HA">
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.21"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.21"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hf0tgDpREfGGPa0YNCW_HQ" size="2" strokeColor="239,41,41">
+        <customFeatures>strokeColor</customFeatures>
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hf0tgTpREfGGPa0YNCW_HQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_l8fGRjpREfGGPa0YNCW_HQ" sourceNode="_nR1ugjmYEfGTro2sD9CXMw" targetNode="_VCPQEDTuEfGfOsYHPpkAXg">
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.22"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.22"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_l8ftIDpREfGGPa0YNCW_HQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_l8ftITpREfGGPa0YNCW_HQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mtS4GjpREfGGPa0YNCW_HQ" sourceNode="_nR1HdjmYEfGTro2sD9CXMw" targetNode="_VCPQEDTuEfGfOsYHPpkAXg">
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.23"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.23"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mtS4GzpREfGGPa0YNCW_HQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_mtS4HDpREfGGPa0YNCW_HQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_W-1lxjpSEfGGPa0YNCW_HQ" sourceNode="_WoEPETWWEfGKiYJ8pPo7HA" targetNode="_VCPQEDTuEfGfOsYHPpkAXg">
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.24"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.24"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_W-1lxzpSEfGGPa0YNCW_HQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_W-1lyDpSEfGGPa0YNCW_HQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_GNMtLDpVEfGGPa0YNCW_HQ" sourceNode="_nR9DRjmYEfGTro2sD9CXMw" targetNode="_Wn7FIDWWEfGKiYJ8pPo7HA">
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.25"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.25"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_GNMtLTpVEfGGPa0YNCW_HQ" size="2" strokeColor="239,41,41">
+        <customFeatures>strokeColor</customFeatures>
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_GNMtLjpVEfGGPa0YNCW_HQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_NDQmKDpVEfGGPa0YNCW_HQ" sourceNode="_nR9DRjmYEfGTro2sD9CXMw" targetNode="_VCPQEDTuEfGfOsYHPpkAXg">
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.26"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.26"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_NDRM8DpVEfGGPa0YNCW_HQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_NDRM8TpVEfGGPa0YNCW_HQ" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
     </ownedDiagramElements>

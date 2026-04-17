@@ -17,7 +17,9 @@ import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+import targets.ADC.ADCFactory;
 import targets.IntrepidPowerGrid.IntrepidPowerGridFactory;
+import targets.Sheild.SheildFactory;
 import targets.powergrid.EletrcialInterfaces;
 import targets.powergrid.PowergridPackage;
 
@@ -314,6 +316,16 @@ public class EletrcialInterfacesItemProvider extends SuperIdentifierTypeItemProv
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(PowergridPackage.Literals.ELETRCIAL_INTERFACES__ELECTRICAL_INTERFACE,
+				 ADCFactory.eINSTANCE.createadcPort()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(PowergridPackage.Literals.ELETRCIAL_INTERFACES__ELECTRICAL_INTERFACE,
+				 SheildFactory.eINSTANCE.createsheildPort()));
 
 		newChildDescriptors.add
 			(createChildParameter
