@@ -4,7 +4,7 @@
     <semanticResources>intrepid.ucof</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_pzE-oCzTEfG9zOh0OE6F7g">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_6Im1QCg2EfGUHurXM_vvvA" name="System Design" repPath="#_6IQP8Cg2EfGUHurXM_vvvA" changeId="1775918170199">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_6Im1QCg2EfGUHurXM_vvvA" name="System Design" repPath="#_6IQP8Cg2EfGUHurXM_vvvA" changeId="1776427215173">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Devices%20Diagram']"/>
         <target xmi:type="de.ucof.model:Platform" href="intrepid.ucof#1e21f09c-95ba-49f7-9f34-d46e434da93d"/>
       </ownedRepresentationDescriptors>
@@ -322,7 +322,7 @@
               <styles xmi:type="notation:ShapeStyle" xmi:id="_6UNoUSg2EfGUHurXM_vvvA" fontName="Segoe UI" fontHeight="12"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6UNoUig2EfGUHurXM_vvvA" x="25" y="148" width="20" height="14"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_6UWLMCg2EfGUHurXM_vvvA" type="3007" element="_6LPShSg2EfGUHurXM_vvvA">
+            <children xmi:type="notation:Node" xmi:id="_6UWLMCg2EfGUHurXM_vvvA" visible="false" type="3007" element="_6LPShSg2EfGUHurXM_vvvA">
               <children xmi:type="notation:Node" xmi:id="_6UWLMyg2EfGUHurXM_vvvA" type="5003">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_6UWLNCg2EfGUHurXM_vvvA" x="21" y="-3"/>
               </children>
@@ -333,7 +333,7 @@
               <styles xmi:type="notation:ShapeStyle" xmi:id="_6UWLMSg2EfGUHurXM_vvvA" fontName="Segoe UI" fontHeight="12"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6UWLMig2EfGUHurXM_vvvA" x="261" y="136" width="20" height="13"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_6UcR0Cg2EfGUHurXM_vvvA" type="3007" element="_6LPSiCg2EfGUHurXM_vvvA">
+            <children xmi:type="notation:Node" xmi:id="_6UcR0Cg2EfGUHurXM_vvvA" visible="false" type="3007" element="_6LPSiCg2EfGUHurXM_vvvA">
               <children xmi:type="notation:Node" xmi:id="_6Uc44Cg2EfGUHurXM_vvvA" type="5003">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_6Uc44Sg2EfGUHurXM_vvvA" x="21" y="-3"/>
               </children>
@@ -419,7 +419,7 @@
               <styles xmi:type="notation:ShapeStyle" xmi:id="_6VZUESg2EfGUHurXM_vvvA" fontName="Segoe UI" fontHeight="12"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6VZUEig2EfGUHurXM_vvvA" x="12" y="174" width="20" height="13"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_6VhP4Cg2EfGUHurXM_vvvA" type="3007" element="_6LSV0ig2EfGUHurXM_vvvA">
+            <children xmi:type="notation:Node" xmi:id="_6VhP4Cg2EfGUHurXM_vvvA" visible="false" type="3007" element="_6LSV0ig2EfGUHurXM_vvvA">
               <children xmi:type="notation:Node" xmi:id="_6VhP4yg2EfGUHurXM_vvvA" type="5003">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_6VhP5Cg2EfGUHurXM_vvvA" x="21" y="-3"/>
               </children>
@@ -430,7 +430,7 @@
               <styles xmi:type="notation:ShapeStyle" xmi:id="_6VhP4Sg2EfGUHurXM_vvvA" fontName="Segoe UI" fontHeight="12"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6VhP4ig2EfGUHurXM_vvvA" x="247" y="180" width="20" height="13"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_6VpLsCg2EfGUHurXM_vvvA" type="3007" element="_6LSV1Sg2EfGUHurXM_vvvA">
+            <children xmi:type="notation:Node" xmi:id="_6VpLsCg2EfGUHurXM_vvvA" visible="false" type="3007" element="_6LSV1Sg2EfGUHurXM_vvvA">
               <children xmi:type="notation:Node" xmi:id="_6VpywCg2EfGUHurXM_vvvA" type="5003">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_6VpywSg2EfGUHurXM_vvvA" x="21" y="-3"/>
               </children>
@@ -2160,17 +2160,19 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Devices%20Diagram']/@defaultLayer/@containerMappings[name='deviceContainer']/@subNodeMappings[name='devicePort']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" uid="_6LPShSg2EfGUHurXM_vvvA" name="ADDR" width="2" height="2" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_6LPShSg2EfGUHurXM_vvvA" name="ADDR" visible="false" width="2" height="2" resizeKind="NSEW">
         <target xmi:type="de.ucof.model.common.etypes:SamplingPort" href="intrepid.ucof#f7a90ca3-6cc6-4954-bb4b-4994e0f52f5d"/>
         <semanticElements xmi:type="de.ucof.model.common.etypes:SamplingPort" href="intrepid.ucof#f7a90ca3-6cc6-4954-bb4b-4994e0f52f5d"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_-sbDMDpUEfGGPa0YNCW_HQ"/>
         <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6LPShig2EfGUHurXM_vvvA" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_Inport.svg">
           <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Devices%20Diagram']/@defaultLayer/@containerMappings[name='deviceContainer']/@subNodeMappings[name='devicePort']/@conditionnalStyles.0/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Devices%20Diagram']/@defaultLayer/@containerMappings[name='deviceContainer']/@subNodeMappings[name='devicePort']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" uid="_6LPSiCg2EfGUHurXM_vvvA" name="ALERT" width="2" height="2" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_6LPSiCg2EfGUHurXM_vvvA" name="ALERT" visible="false" width="2" height="2" resizeKind="NSEW">
         <target xmi:type="de.ucof.model.common.etypes:SamplingPort" href="intrepid.ucof#8fc68015-27e0-4370-a83f-636235ec8957"/>
         <semanticElements xmi:type="de.ucof.model.common.etypes:SamplingPort" href="intrepid.ucof#8fc68015-27e0-4370-a83f-636235ec8957"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="__sziIDpUEfGGPa0YNCW_HQ"/>
         <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6LPSiSg2EfGUHurXM_vvvA" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_Outport.svg">
           <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Devices%20Diagram']/@defaultLayer/@containerMappings[name='deviceContainer']/@subNodeMappings[name='devicePort']/@conditionnalStyles.1/@style"/>
         </ownedStyle>
@@ -2229,17 +2231,19 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Devices%20Diagram']/@defaultLayer/@containerMappings[name='deviceContainer']/@subNodeMappings[name='devicePort']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" uid="_6LSV0ig2EfGUHurXM_vvvA" name="ADDR" width="2" height="2" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_6LSV0ig2EfGUHurXM_vvvA" name="ADDR" visible="false" width="2" height="2" resizeKind="NSEW">
         <target xmi:type="de.ucof.model.common.etypes:SamplingPort" href="intrepid.ucof#78b3b8e8-a0e0-4d95-9366-d5ed486c9c84"/>
         <semanticElements xmi:type="de.ucof.model.common.etypes:SamplingPort" href="intrepid.ucof#78b3b8e8-a0e0-4d95-9366-d5ed486c9c84"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_-Vei0DpUEfGGPa0YNCW_HQ"/>
         <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6LSV0yg2EfGUHurXM_vvvA" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_Inport.svg">
           <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Devices%20Diagram']/@defaultLayer/@containerMappings[name='deviceContainer']/@subNodeMappings[name='devicePort']/@conditionnalStyles.0/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Devices%20Diagram']/@defaultLayer/@containerMappings[name='deviceContainer']/@subNodeMappings[name='devicePort']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" uid="_6LSV1Sg2EfGUHurXM_vvvA" name="ALERT" width="2" height="2" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_6LSV1Sg2EfGUHurXM_vvvA" name="ALERT" visible="false" width="2" height="2" resizeKind="NSEW">
         <target xmi:type="de.ucof.model.common.etypes:SamplingPort" href="intrepid.ucof#c30ffe04-9c18-4a8a-a1f9-be014216eec6"/>
         <semanticElements xmi:type="de.ucof.model.common.etypes:SamplingPort" href="intrepid.ucof#c30ffe04-9c18-4a8a-a1f9-be014216eec6"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="__brV4DpUEfGGPa0YNCW_HQ"/>
         <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6LS84Cg2EfGUHurXM_vvvA" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_Outport.svg">
           <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Devices%20Diagram']/@defaultLayer/@containerMappings[name='deviceContainer']/@subNodeMappings[name='devicePort']/@conditionnalStyles.1/@style"/>
         </ownedStyle>

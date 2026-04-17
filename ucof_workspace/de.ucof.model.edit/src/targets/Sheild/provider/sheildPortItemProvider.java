@@ -19,6 +19,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
 import targets.Sheild.SheildPackage;
 import targets.Sheild.sheildPort;
 
+import targets.powergrid.PowergridPackage;
 import targets.provider.SuperHardwarePortTypeItemProvider;
 import ucof.provider.UcofEditPlugin;
 
@@ -50,9 +51,78 @@ public class sheildPortItemProvider extends SuperHardwarePortTypeItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addMinVoltagePropertyDescriptor(object);
+			addMaxVoltagePropertyDescriptor(object);
+			addTypePropertyDescriptor(object);
 			addPinNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Min Voltage feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addMinVoltagePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperElectricalInterfaceType_minVoltage_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperElectricalInterfaceType_minVoltage_feature", "_UI_SuperElectricalInterfaceType_type"),
+				 PowergridPackage.Literals.SUPER_ELECTRICAL_INTERFACE_TYPE__MIN_VOLTAGE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Max Voltage feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addMaxVoltagePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperElectricalInterfaceType_maxVoltage_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperElectricalInterfaceType_maxVoltage_feature", "_UI_SuperElectricalInterfaceType_type"),
+				 PowergridPackage.Literals.SUPER_ELECTRICAL_INTERFACE_TYPE__MAX_VOLTAGE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Type feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTypePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperElectricalInterfaceType_type_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperElectricalInterfaceType_type_feature", "_UI_SuperElectricalInterfaceType_type"),
+				 PowergridPackage.Literals.SUPER_ELECTRICAL_INTERFACE_TYPE__TYPE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
 	}
 
 	/**
@@ -115,6 +185,9 @@ public class sheildPortItemProvider extends SuperHardwarePortTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(sheildPort.class)) {
+			case SheildPackage.SHEILD_PORT__MIN_VOLTAGE:
+			case SheildPackage.SHEILD_PORT__MAX_VOLTAGE:
+			case SheildPackage.SHEILD_PORT__TYPE:
 			case SheildPackage.SHEILD_PORT__PIN_NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;

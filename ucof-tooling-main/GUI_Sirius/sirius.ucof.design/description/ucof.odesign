@@ -669,7 +669,7 @@
           </style>
         </edgeMappings>
         <containerMappings name="targetContainer" semanticCandidatesExpression="aql:self.eAllContents()->filter(targets::SuperTargetType)" domainClass="targets::SuperTargetType">
-          <subNodeMappings name="electricalInterface" semanticCandidatesExpression="aql: self.electricalInterfaces.electricalInterface" domainClass="powergrid::SuperElectricalInterfaceType">
+          <subNodeMappings name="electricalInterface" semanticCandidatesExpression="aql: self.electricalInterfaces.electricalInterface->union(self.ports.port)" domainClass="powergrid::SuperElectricalInterfaceType">
             <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>

@@ -12,6 +12,9 @@ import targets.ADC.ADCPackage;
 import targets.ADC.adcPort;
 
 import targets.impl.SuperHardwarePortTypeImpl;
+import targets.powergrid.PowergridPackage;
+import targets.powergrid.SuperElectricalInterfaceType;
+import targets.powergrid.interfaceType;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,12 +24,75 @@ import targets.impl.SuperHardwarePortTypeImpl;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link targets.ADC.impl.adcPortImpl#getMinVoltage <em>Min Voltage</em>}</li>
+ *   <li>{@link targets.ADC.impl.adcPortImpl#getMaxVoltage <em>Max Voltage</em>}</li>
+ *   <li>{@link targets.ADC.impl.adcPortImpl#getType <em>Type</em>}</li>
  *   <li>{@link targets.ADC.impl.adcPortImpl#getPinName <em>Pin Name</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
+	/**
+	 * The default value of the '{@link #getMinVoltage() <em>Min Voltage</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMinVoltage()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double MIN_VOLTAGE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getMinVoltage() <em>Min Voltage</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMinVoltage()
+	 * @generated
+	 * @ordered
+	 */
+	protected double minVoltage = MIN_VOLTAGE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getMaxVoltage() <em>Max Voltage</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMaxVoltage()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double MAX_VOLTAGE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getMaxVoltage() <em>Max Voltage</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMaxVoltage()
+	 * @generated
+	 * @ordered
+	 */
+	protected double maxVoltage = MAX_VOLTAGE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getType() <em>Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getType()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final interfaceType TYPE_EDEFAULT = interfaceType.NOT_SET;
+
+	/**
+	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getType()
+	 * @generated
+	 * @ordered
+	 */
+	protected interfaceType type = TYPE_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getPinName() <em>Pin Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -71,6 +137,69 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public double getMinVoltage() {
+		return minVoltage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setMinVoltage(double newMinVoltage) {
+		double oldMinVoltage = minVoltage;
+		minVoltage = newMinVoltage;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ADCPackage.ADC_PORT__MIN_VOLTAGE, oldMinVoltage, minVoltage));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getMaxVoltage() {
+		return maxVoltage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setMaxVoltage(double newMaxVoltage) {
+		double oldMaxVoltage = maxVoltage;
+		maxVoltage = newMaxVoltage;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ADCPackage.ADC_PORT__MAX_VOLTAGE, oldMaxVoltage, maxVoltage));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public interfaceType getType() {
+		return type;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setType(interfaceType newType) {
+		interfaceType oldType = type;
+		type = newType == null ? TYPE_EDEFAULT : newType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ADCPackage.ADC_PORT__TYPE, oldType, type));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public String getPinName() {
 		return pinName;
 	}
@@ -95,6 +224,12 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case ADCPackage.ADC_PORT__MIN_VOLTAGE:
+				return getMinVoltage();
+			case ADCPackage.ADC_PORT__MAX_VOLTAGE:
+				return getMaxVoltage();
+			case ADCPackage.ADC_PORT__TYPE:
+				return getType();
 			case ADCPackage.ADC_PORT__PIN_NAME:
 				return getPinName();
 		}
@@ -109,6 +244,15 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case ADCPackage.ADC_PORT__MIN_VOLTAGE:
+				setMinVoltage((Double)newValue);
+				return;
+			case ADCPackage.ADC_PORT__MAX_VOLTAGE:
+				setMaxVoltage((Double)newValue);
+				return;
+			case ADCPackage.ADC_PORT__TYPE:
+				setType((interfaceType)newValue);
+				return;
 			case ADCPackage.ADC_PORT__PIN_NAME:
 				setPinName((String)newValue);
 				return;
@@ -124,6 +268,15 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case ADCPackage.ADC_PORT__MIN_VOLTAGE:
+				setMinVoltage(MIN_VOLTAGE_EDEFAULT);
+				return;
+			case ADCPackage.ADC_PORT__MAX_VOLTAGE:
+				setMaxVoltage(MAX_VOLTAGE_EDEFAULT);
+				return;
+			case ADCPackage.ADC_PORT__TYPE:
+				setType(TYPE_EDEFAULT);
+				return;
 			case ADCPackage.ADC_PORT__PIN_NAME:
 				setPinName(PIN_NAME_EDEFAULT);
 				return;
@@ -139,6 +292,12 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case ADCPackage.ADC_PORT__MIN_VOLTAGE:
+				return minVoltage != MIN_VOLTAGE_EDEFAULT;
+			case ADCPackage.ADC_PORT__MAX_VOLTAGE:
+				return maxVoltage != MAX_VOLTAGE_EDEFAULT;
+			case ADCPackage.ADC_PORT__TYPE:
+				return type != TYPE_EDEFAULT;
 			case ADCPackage.ADC_PORT__PIN_NAME:
 				return PIN_NAME_EDEFAULT == null ? pinName != null : !PIN_NAME_EDEFAULT.equals(pinName);
 		}
@@ -151,11 +310,53 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 	 * @generated
 	 */
 	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == SuperElectricalInterfaceType.class) {
+			switch (derivedFeatureID) {
+				case ADCPackage.ADC_PORT__MIN_VOLTAGE: return PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__MIN_VOLTAGE;
+				case ADCPackage.ADC_PORT__MAX_VOLTAGE: return PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__MAX_VOLTAGE;
+				case ADCPackage.ADC_PORT__TYPE: return PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__TYPE;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == SuperElectricalInterfaceType.class) {
+			switch (baseFeatureID) {
+				case PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__MIN_VOLTAGE: return ADCPackage.ADC_PORT__MIN_VOLTAGE;
+				case PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__MAX_VOLTAGE: return ADCPackage.ADC_PORT__MAX_VOLTAGE;
+				case PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__TYPE: return ADCPackage.ADC_PORT__TYPE;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (pinName: ");
+		result.append(" (minVoltage: ");
+		result.append(minVoltage);
+		result.append(", maxVoltage: ");
+		result.append(maxVoltage);
+		result.append(", type: ");
+		result.append(type);
+		result.append(", pinName: ");
 		result.append(pinName);
 		result.append(')');
 		return result.toString();

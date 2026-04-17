@@ -498,6 +498,7 @@ public class ADCPackageImpl extends EPackageImpl implements ADCPackage {
 		adcPortsEClass.getESuperTypes().add(theEtypesPackage.getSuperTrackingType());
 		adcPortsEClass.getESuperTypes().add(theEtypesPackage.getSuperIdentifierType());
 		adcPortEClass.getESuperTypes().add(theTargetsPackage.getSuperHardwarePortType());
+		adcPortEClass.getESuperTypes().add(thePowergridPackage.getSuperElectricalInterfaceType());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(ads1115EClass, ads1115.class, "ads1115", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
