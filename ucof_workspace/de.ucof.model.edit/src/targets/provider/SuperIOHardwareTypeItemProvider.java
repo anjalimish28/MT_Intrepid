@@ -21,8 +21,11 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
 import targets.SuperIOHardwareType;
 import targets.TargetsFactory;
 import targets.TargetsPackage;
+
 import ucof.common.etypes.EtypesPackage;
+
 import ucof.common.etypes.provider.SuperIdentifierTypeItemProvider;
+
 import ucof.provider.UcofEditPlugin;
 
 /**
@@ -31,8 +34,7 @@ import ucof.provider.UcofEditPlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class SuperIOHardwareTypeItemProvider 
-	extends SuperIdentifierTypeItemProvider {
+public class SuperIOHardwareTypeItemProvider extends SuperIdentifierTypeItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->

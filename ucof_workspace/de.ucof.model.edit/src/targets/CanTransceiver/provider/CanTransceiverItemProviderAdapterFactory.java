@@ -1,6 +1,6 @@
 /**
  */
-package targets.CanTransceiver.provider;
+package targets.cantransceiver.provider;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,7 +21,7 @@ import org.eclipse.emf.edit.provider.INotifyChangedListener;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 
-import targets.CanTransceiver.util.CanTransceiverAdapterFactory;
+import targets.cantransceiver.util.CantransceiverAdapterFactory;
 
 /**
  * This is the factory that is used to provide the interfaces needed to support Viewers.
@@ -32,7 +32,7 @@ import targets.CanTransceiver.util.CanTransceiverAdapterFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class CanTransceiverItemProviderAdapterFactory extends CanTransceiverAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
+public class CantransceiverItemProviderAdapterFactory extends CantransceiverAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
 	/**
 	 * This keeps track of the root adapter factory that delegates to this adapter factory.
 	 * <!-- begin-user-doc -->
@@ -63,7 +63,7 @@ public class CanTransceiverItemProviderAdapterFactory extends CanTransceiverAdap
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CanTransceiverItemProviderAdapterFactory() {
+	public CantransceiverItemProviderAdapterFactory() {
 		supportedTypes.add(IEditingDomainItemProvider.class);
 		supportedTypes.add(IStructuredItemContentProvider.class);
 		supportedTypes.add(ITreeItemContentProvider.class);
@@ -72,7 +72,7 @@ public class CanTransceiverItemProviderAdapterFactory extends CanTransceiverAdap
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.CanTransceiver.sn65hvd230} instances.
+	 * This keeps track of the one adapter used for all {@link targets.cantransceiver.sn65hvd230} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -80,7 +80,7 @@ public class CanTransceiverItemProviderAdapterFactory extends CanTransceiverAdap
 	protected sn65hvd230ItemProvider sn65hvd230ItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.CanTransceiver.sn65hvd230}.
+	 * This creates an adapter for a {@link targets.cantransceiver.sn65hvd230}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -95,7 +95,7 @@ public class CanTransceiverItemProviderAdapterFactory extends CanTransceiverAdap
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.CanTransceiver.canTransceiverPorts} instances.
+	 * This keeps track of the one adapter used for all {@link targets.cantransceiver.canTransceiverPorts} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -103,7 +103,7 @@ public class CanTransceiverItemProviderAdapterFactory extends CanTransceiverAdap
 	protected canTransceiverPortsItemProvider canTransceiverPortsItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.CanTransceiver.canTransceiverPorts}.
+	 * This creates an adapter for a {@link targets.cantransceiver.canTransceiverPorts}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -118,7 +118,7 @@ public class CanTransceiverItemProviderAdapterFactory extends CanTransceiverAdap
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.CanTransceiver.canTransceiverPort} instances.
+	 * This keeps track of the one adapter used for all {@link targets.cantransceiver.canTransceiverPort} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -126,7 +126,7 @@ public class CanTransceiverItemProviderAdapterFactory extends CanTransceiverAdap
 	protected canTransceiverPortItemProvider canTransceiverPortItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.CanTransceiver.canTransceiverPort}.
+	 * This creates an adapter for a {@link targets.cantransceiver.canTransceiverPort}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

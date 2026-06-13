@@ -41,6 +41,7 @@ public class SWPortToHWPortAssignmentSetImpl extends SuperAssignmentSetTypeImpl 
 	 * @ordered
 	 */
 	protected EList<SWPortToHWPortAssignment> swPortToHWPortAssignment;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -577,7 +577,6 @@ public interface EtypesPackage extends EPackage {
 	 */
 	int MEMORY_REQUIREMENT_OPERATION_COUNT = SUPER_IDENTIFIER_TYPE_OPERATION_COUNT + 0;
 
-
 	/**
 	 * The meta object id for the '{@link ucof.common.etypes.impl.SuperDeviceTypeImpl <em>Super Device Type</em>}' class.
 	 * <!-- begin-user-doc -->

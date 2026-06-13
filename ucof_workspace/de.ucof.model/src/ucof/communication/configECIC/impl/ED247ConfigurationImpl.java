@@ -9,7 +9,9 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import ucof.common.etypes.impl.SuperSetTypeImpl;
+
 import ucof.communication.configECIC.Channels;
 import ucof.communication.configECIC.ComponentTypeType;
 import ucof.communication.configECIC.ConfigECICPackage;

@@ -17,7 +17,9 @@ import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-import targets.IntrepidPowerGrid.IntrepidPowerGridFactory;
+
+import targets.intrepidpowergrid.IntrepidpowergridFactory;
+
 import targets.powergrid.ElectricalPowerGridSet;
 import targets.powergrid.PowergridPackage;
 
@@ -318,7 +320,7 @@ public class ElectricalPowerGridSetItemProvider extends SuperIdentifierTypeItemP
 		newChildDescriptors.add
 			(createChildParameter
 				(PowergridPackage.Literals.ELECTRICAL_POWER_GRID_SET__ELECTRICAL_GRID,
-				 IntrepidPowerGridFactory.eINSTANCE.createintrepidElectricalGrid()));
+				 IntrepidpowergridFactory.eINSTANCE.createintrepidElectricalGrid()));
 	}
 
 	/**

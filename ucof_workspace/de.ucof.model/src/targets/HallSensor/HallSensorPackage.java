@@ -1,6 +1,6 @@
 /**
  */
-package targets.HallSensor;
+package targets.hallsensor;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -23,18 +23,18 @@ import ucof.common.etypes.EtypesPackage;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see targets.HallSensor.HallSensorFactory
+ * @see targets.hallsensor.HallsensorFactory
  * @model kind="package"
  * @generated
  */
-public interface HallSensorPackage extends EPackage {
+public interface HallsensorPackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNAME = "HallSensor";
+	String eNAME = "hallsensor";
 
 	/**
 	 * The package namespace URI.
@@ -58,14 +58,14 @@ public interface HallSensorPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	HallSensorPackage eINSTANCE = targets.HallSensor.impl.HallSensorPackageImpl.init();
+	HallsensorPackage eINSTANCE = targets.hallsensor.impl.HallsensorPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link targets.HallSensor.impl.mts360Impl <em>mts360</em>}' class.
+	 * The meta object id for the '{@link targets.hallsensor.impl.mts360Impl <em>mts360</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.HallSensor.impl.mts360Impl
-	 * @see targets.HallSensor.impl.HallSensorPackageImpl#getmts360()
+	 * @see targets.hallsensor.impl.mts360Impl
+	 * @see targets.hallsensor.impl.HallsensorPackageImpl#getmts360()
 	 * @generated
 	 */
 	int MTS360 = 0;
@@ -197,11 +197,11 @@ public interface HallSensorPackage extends EPackage {
 	int MTS360_OPERATION_COUNT = TargetsPackage.SUPER_TARGET_TYPE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link targets.HallSensor.impl.hallPortsImpl <em>hall Ports</em>}' class.
+	 * The meta object id for the '{@link targets.hallsensor.impl.hallPortsImpl <em>hall Ports</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.HallSensor.impl.hallPortsImpl
-	 * @see targets.HallSensor.impl.HallSensorPackageImpl#gethallPorts()
+	 * @see targets.hallsensor.impl.hallPortsImpl
+	 * @see targets.hallsensor.impl.HallsensorPackageImpl#gethallPorts()
 	 * @generated
 	 */
 	int HALL_PORTS = 1;
@@ -315,11 +315,11 @@ public interface HallSensorPackage extends EPackage {
 	int HALL_PORTS_OPERATION_COUNT = EtypesPackage.SUPER_TRACKING_TYPE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link targets.HallSensor.impl.hallPortImpl <em>hall Port</em>}' class.
+	 * The meta object id for the '{@link targets.hallsensor.impl.hallPortImpl <em>hall Port</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.HallSensor.impl.hallPortImpl
-	 * @see targets.HallSensor.impl.HallSensorPackageImpl#gethallPort()
+	 * @see targets.hallsensor.impl.hallPortImpl
+	 * @see targets.hallsensor.impl.HallsensorPackageImpl#gethallPort()
 	 * @generated
 	 */
 	int HALL_PORT = 2;
@@ -443,74 +443,74 @@ public interface HallSensorPackage extends EPackage {
 
 
 	/**
-	 * Returns the meta object for class '{@link targets.HallSensor.mts360 <em>mts360</em>}'.
+	 * Returns the meta object for class '{@link targets.hallsensor.mts360 <em>mts360</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>mts360</em>'.
-	 * @see targets.HallSensor.mts360
+	 * @see targets.hallsensor.mts360
 	 * @generated
 	 */
 	EClass getmts360();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link targets.HallSensor.mts360#getPorts <em>Ports</em>}'.
+	 * Returns the meta object for the containment reference '{@link targets.hallsensor.mts360#getPorts <em>Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Ports</em>'.
-	 * @see targets.HallSensor.mts360#getPorts()
+	 * @see targets.hallsensor.mts360#getPorts()
 	 * @see #getmts360()
 	 * @generated
 	 */
 	EReference getmts360_Ports();
 
 	/**
-	 * Returns the meta object for class '{@link targets.HallSensor.hallPorts <em>hall Ports</em>}'.
+	 * Returns the meta object for class '{@link targets.hallsensor.hallPorts <em>hall Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>hall Ports</em>'.
-	 * @see targets.HallSensor.hallPorts
+	 * @see targets.hallsensor.hallPorts
 	 * @generated
 	 */
 	EClass gethallPorts();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link targets.HallSensor.hallPorts#getPort <em>Port</em>}'.
+	 * Returns the meta object for the containment reference list '{@link targets.hallsensor.hallPorts#getPort <em>Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Port</em>'.
-	 * @see targets.HallSensor.hallPorts#getPort()
+	 * @see targets.hallsensor.hallPorts#getPort()
 	 * @see #gethallPorts()
 	 * @generated
 	 */
 	EReference gethallPorts_Port();
 
 	/**
-	 * Returns the meta object for class '{@link targets.HallSensor.hallPort <em>hall Port</em>}'.
+	 * Returns the meta object for class '{@link targets.hallsensor.hallPort <em>hall Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>hall Port</em>'.
-	 * @see targets.HallSensor.hallPort
+	 * @see targets.hallsensor.hallPort
 	 * @generated
 	 */
 	EClass gethallPort();
 
 	/**
-	 * Returns the meta object for the attribute '{@link targets.HallSensor.hallPort#getPinName <em>Pin Name</em>}'.
+	 * Returns the meta object for the attribute '{@link targets.hallsensor.hallPort#getPinName <em>Pin Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Pin Name</em>'.
-	 * @see targets.HallSensor.hallPort#getPinName()
+	 * @see targets.hallsensor.hallPort#getPinName()
 	 * @see #gethallPort()
 	 * @generated
 	 */
 	EAttribute gethallPort_PinName();
 
 	/**
-	 * Returns the meta object for the attribute '{@link targets.HallSensor.hallPort#getPinNumber <em>Pin Number</em>}'.
+	 * Returns the meta object for the attribute '{@link targets.hallsensor.hallPort#getPinNumber <em>Pin Number</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Pin Number</em>'.
-	 * @see targets.HallSensor.hallPort#getPinNumber()
+	 * @see targets.hallsensor.hallPort#getPinNumber()
 	 * @see #gethallPort()
 	 * @generated
 	 */
@@ -523,7 +523,7 @@ public interface HallSensorPackage extends EPackage {
 	 * @return the factory that creates the instances of the model.
 	 * @generated
 	 */
-	HallSensorFactory getHallSensorFactory();
+	HallsensorFactory getHallsensorFactory();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -540,11 +540,11 @@ public interface HallSensorPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link targets.HallSensor.impl.mts360Impl <em>mts360</em>}' class.
+		 * The meta object literal for the '{@link targets.hallsensor.impl.mts360Impl <em>mts360</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.HallSensor.impl.mts360Impl
-		 * @see targets.HallSensor.impl.HallSensorPackageImpl#getmts360()
+		 * @see targets.hallsensor.impl.mts360Impl
+		 * @see targets.hallsensor.impl.HallsensorPackageImpl#getmts360()
 		 * @generated
 		 */
 		EClass MTS360 = eINSTANCE.getmts360();
@@ -558,11 +558,11 @@ public interface HallSensorPackage extends EPackage {
 		EReference MTS360__PORTS = eINSTANCE.getmts360_Ports();
 
 		/**
-		 * The meta object literal for the '{@link targets.HallSensor.impl.hallPortsImpl <em>hall Ports</em>}' class.
+		 * The meta object literal for the '{@link targets.hallsensor.impl.hallPortsImpl <em>hall Ports</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.HallSensor.impl.hallPortsImpl
-		 * @see targets.HallSensor.impl.HallSensorPackageImpl#gethallPorts()
+		 * @see targets.hallsensor.impl.hallPortsImpl
+		 * @see targets.hallsensor.impl.HallsensorPackageImpl#gethallPorts()
 		 * @generated
 		 */
 		EClass HALL_PORTS = eINSTANCE.gethallPorts();
@@ -576,11 +576,11 @@ public interface HallSensorPackage extends EPackage {
 		EReference HALL_PORTS__PORT = eINSTANCE.gethallPorts_Port();
 
 		/**
-		 * The meta object literal for the '{@link targets.HallSensor.impl.hallPortImpl <em>hall Port</em>}' class.
+		 * The meta object literal for the '{@link targets.hallsensor.impl.hallPortImpl <em>hall Port</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.HallSensor.impl.hallPortImpl
-		 * @see targets.HallSensor.impl.HallSensorPackageImpl#gethallPort()
+		 * @see targets.hallsensor.impl.hallPortImpl
+		 * @see targets.hallsensor.impl.HallsensorPackageImpl#gethallPort()
 		 * @generated
 		 */
 		EClass HALL_PORT = eINSTANCE.gethallPort();
@@ -603,4 +603,4 @@ public interface HallSensorPackage extends EPackage {
 
 	}
 
-} //HallSensorPackage
+} //HallsensorPackage

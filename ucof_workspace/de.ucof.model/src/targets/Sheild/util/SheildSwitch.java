@@ -1,13 +1,11 @@
 /**
  */
-package targets.Sheild.util;
+package targets.sheild.util;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
-
-import targets.Sheild.*;
 
 import targets.SuperHardwarePortType;
 import targets.SuperIOHardwareType;
@@ -15,6 +13,9 @@ import targets.SuperTargetType;
 
 import targets.powergrid.SuperElectricalInterfaceType;
 import targets.powergrid.SuperPowerType;
+
+import targets.sheild.*;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
@@ -28,7 +29,7 @@ import ucof.common.etypes.SuperTrackingType;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see targets.Sheild.SheildPackage
+ * @see targets.sheild.SheildPackage
  * @generated
  */
 public class SheildSwitch<T> extends Switch<T> {

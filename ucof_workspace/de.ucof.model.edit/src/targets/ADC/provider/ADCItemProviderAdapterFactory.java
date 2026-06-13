@@ -1,6 +1,6 @@
 /**
  */
-package targets.ADC.provider;
+package targets.adc.provider;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,7 +21,7 @@ import org.eclipse.emf.edit.provider.INotifyChangedListener;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 
-import targets.ADC.util.ADCAdapterFactory;
+import targets.adc.util.AdcAdapterFactory;
 
 /**
  * This is the factory that is used to provide the interfaces needed to support Viewers.
@@ -32,7 +32,7 @@ import targets.ADC.util.ADCAdapterFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ADCItemProviderAdapterFactory extends ADCAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
+public class AdcItemProviderAdapterFactory extends AdcAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
 	/**
 	 * This keeps track of the root adapter factory that delegates to this adapter factory.
 	 * <!-- begin-user-doc -->
@@ -63,7 +63,7 @@ public class ADCItemProviderAdapterFactory extends ADCAdapterFactory implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ADCItemProviderAdapterFactory() {
+	public AdcItemProviderAdapterFactory() {
 		supportedTypes.add(IEditingDomainItemProvider.class);
 		supportedTypes.add(IStructuredItemContentProvider.class);
 		supportedTypes.add(ITreeItemContentProvider.class);
@@ -72,7 +72,7 @@ public class ADCItemProviderAdapterFactory extends ADCAdapterFactory implements 
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.ADC.ads1115} instances.
+	 * This keeps track of the one adapter used for all {@link targets.adc.ads1115} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -80,7 +80,7 @@ public class ADCItemProviderAdapterFactory extends ADCAdapterFactory implements 
 	protected ads1115ItemProvider ads1115ItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.ADC.ads1115}.
+	 * This creates an adapter for a {@link targets.adc.ads1115}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -95,7 +95,7 @@ public class ADCItemProviderAdapterFactory extends ADCAdapterFactory implements 
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.ADC.adcPorts} instances.
+	 * This keeps track of the one adapter used for all {@link targets.adc.adcPorts} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -103,7 +103,7 @@ public class ADCItemProviderAdapterFactory extends ADCAdapterFactory implements 
 	protected adcPortsItemProvider adcPortsItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.ADC.adcPorts}.
+	 * This creates an adapter for a {@link targets.adc.adcPorts}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -118,7 +118,7 @@ public class ADCItemProviderAdapterFactory extends ADCAdapterFactory implements 
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.ADC.adcPort} instances.
+	 * This keeps track of the one adapter used for all {@link targets.adc.adcPort} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -126,7 +126,7 @@ public class ADCItemProviderAdapterFactory extends ADCAdapterFactory implements 
 	protected adcPortItemProvider adcPortItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.ADC.adcPort}.
+	 * This creates an adapter for a {@link targets.adc.adcPort}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

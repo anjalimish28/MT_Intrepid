@@ -15,5 +15,4 @@ import ucof.common.etypes.SuperDeviceType;
  * @generated
  */
 public interface SuperCommunicationDeviceType extends SuperDeviceType {
-
 } // SuperCommunicationDeviceType

@@ -3,8 +3,10 @@
 package ucof.devices.devicetypes.impl;
 
 import org.eclipse.emf.ecore.EClass;
+
 import ucof.devices.devicetypes.DevicetypesPackage;
 import ucof.devices.devicetypes.PowerRail;
+
 import ucof.devices.impl.SuperPlatformDeviceTypeImpl;
 
 /**

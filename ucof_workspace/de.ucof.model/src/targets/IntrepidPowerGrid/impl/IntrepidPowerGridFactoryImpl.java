@@ -1,6 +1,6 @@
 /**
  */
-package targets.IntrepidPowerGrid.impl;
+package targets.intrepidpowergrid.impl;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -10,7 +10,7 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
-import targets.IntrepidPowerGrid.*;
+import targets.intrepidpowergrid.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,24 +18,24 @@ import targets.IntrepidPowerGrid.*;
  * <!-- end-user-doc -->
  * @generated
  */
-public class IntrepidPowerGridFactoryImpl extends EFactoryImpl implements IntrepidPowerGridFactory {
+public class IntrepidpowergridFactoryImpl extends EFactoryImpl implements IntrepidpowergridFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static IntrepidPowerGridFactory init() {
+	public static IntrepidpowergridFactory init() {
 		try {
-			IntrepidPowerGridFactory theIntrepidPowerGridFactory = (IntrepidPowerGridFactory)EPackage.Registry.INSTANCE.getEFactory(IntrepidPowerGridPackage.eNS_URI);
-			if (theIntrepidPowerGridFactory != null) {
-				return theIntrepidPowerGridFactory;
+			IntrepidpowergridFactory theIntrepidpowergridFactory = (IntrepidpowergridFactory)EPackage.Registry.INSTANCE.getEFactory(IntrepidpowergridPackage.eNS_URI);
+			if (theIntrepidpowergridFactory != null) {
+				return theIntrepidpowergridFactory;
 			}
 		}
 		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
-		return new IntrepidPowerGridFactoryImpl();
+		return new IntrepidpowergridFactoryImpl();
 	}
 
 	/**
@@ -44,7 +44,7 @@ public class IntrepidPowerGridFactoryImpl extends EFactoryImpl implements Intrep
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntrepidPowerGridFactoryImpl() {
+	public IntrepidpowergridFactoryImpl() {
 		super();
 	}
 
@@ -56,8 +56,8 @@ public class IntrepidPowerGridFactoryImpl extends EFactoryImpl implements Intrep
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case IntrepidPowerGridPackage.INTREPID_ELECTRICAL_GRID: return createintrepidElectricalGrid();
-			case IntrepidPowerGridPackage.INTREPID_ELECTRICAL_INTERFACE: return createintrepidElectricalInterface();
+			case IntrepidpowergridPackage.INTREPID_ELECTRICAL_GRID: return createintrepidElectricalGrid();
+			case IntrepidpowergridPackage.INTREPID_ELECTRICAL_INTERFACE: return createintrepidElectricalInterface();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -88,8 +88,8 @@ public class IntrepidPowerGridFactoryImpl extends EFactoryImpl implements Intrep
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntrepidPowerGridPackage getIntrepidPowerGridPackage() {
-		return (IntrepidPowerGridPackage)getEPackage();
+	public IntrepidpowergridPackage getIntrepidpowergridPackage() {
+		return (IntrepidpowergridPackage)getEPackage();
 	}
 
 	/**
@@ -99,8 +99,8 @@ public class IntrepidPowerGridFactoryImpl extends EFactoryImpl implements Intrep
 	 * @generated
 	 */
 	@Deprecated
-	public static IntrepidPowerGridPackage getPackage() {
-		return IntrepidPowerGridPackage.eINSTANCE;
+	public static IntrepidpowergridPackage getPackage() {
+		return IntrepidpowergridPackage.eINSTANCE;
 	}
 
-} //IntrepidPowerGridFactoryImpl
+} //IntrepidpowergridFactoryImpl

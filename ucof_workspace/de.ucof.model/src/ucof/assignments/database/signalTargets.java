@@ -36,7 +36,9 @@ public enum signalTargets implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PORT2_PORT(1, "Port2Port", "Port2Port"), /**
+	PORT2_PORT(1, "Port2Port", "Port2Port"),
+
+	/**
 	 * The '<em><b>Interface</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -94,7 +96,9 @@ public enum signalTargets implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	NAD_STREAM(7, "NADStream", "NADStream"), /**
+	NAD_STREAM(7, "NADStream", "NADStream"),
+
+	/**
 	 * The '<em><b>HW Port</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

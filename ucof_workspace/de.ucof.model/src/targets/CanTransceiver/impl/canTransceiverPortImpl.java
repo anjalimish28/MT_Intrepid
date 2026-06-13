@@ -1,14 +1,16 @@
 /**
  */
-package targets.CanTransceiver.impl;
+package targets.cantransceiver.impl;
 
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import targets.CanTransceiver.CanTransceiverPackage;
-import targets.CanTransceiver.canTransceiverPort;
+
+import targets.cantransceiver.CantransceiverPackage;
+import targets.cantransceiver.canTransceiverPort;
+
 import targets.impl.SuperHardwarePortTypeImpl;
 
 /**
@@ -19,8 +21,8 @@ import targets.impl.SuperHardwarePortTypeImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link targets.CanTransceiver.impl.canTransceiverPortImpl#getPinName <em>Pin Name</em>}</li>
- *   <li>{@link targets.CanTransceiver.impl.canTransceiverPortImpl#getPinNumber <em>Pin Number</em>}</li>
+ *   <li>{@link targets.cantransceiver.impl.canTransceiverPortImpl#getPinName <em>Pin Name</em>}</li>
+ *   <li>{@link targets.cantransceiver.impl.canTransceiverPortImpl#getPinNumber <em>Pin Number</em>}</li>
  * </ul>
  *
  * @generated
@@ -82,7 +84,7 @@ public class canTransceiverPortImpl extends SuperHardwarePortTypeImpl implements
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return CanTransceiverPackage.Literals.CAN_TRANSCEIVER_PORT;
+		return CantransceiverPackage.Literals.CAN_TRANSCEIVER_PORT;
 	}
 
 	/**
@@ -103,7 +105,7 @@ public class canTransceiverPortImpl extends SuperHardwarePortTypeImpl implements
 		String oldPinName = pinName;
 		pinName = newPinName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CanTransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NAME, oldPinName, pinName));
+			eNotify(new ENotificationImpl(this, Notification.SET, CantransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NAME, oldPinName, pinName));
 	}
 
 	/**
@@ -124,7 +126,7 @@ public class canTransceiverPortImpl extends SuperHardwarePortTypeImpl implements
 		int oldPinNumber = pinNumber;
 		pinNumber = newPinNumber;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CanTransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NUMBER, oldPinNumber, pinNumber));
+			eNotify(new ENotificationImpl(this, Notification.SET, CantransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NUMBER, oldPinNumber, pinNumber));
 	}
 
 	/**
@@ -135,9 +137,9 @@ public class canTransceiverPortImpl extends SuperHardwarePortTypeImpl implements
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NAME:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NAME:
 				return getPinName();
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NUMBER:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NUMBER:
 				return getPinNumber();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -151,10 +153,10 @@ public class canTransceiverPortImpl extends SuperHardwarePortTypeImpl implements
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NAME:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NAME:
 				setPinName((String)newValue);
 				return;
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NUMBER:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NUMBER:
 				setPinNumber((Integer)newValue);
 				return;
 		}
@@ -169,10 +171,10 @@ public class canTransceiverPortImpl extends SuperHardwarePortTypeImpl implements
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NAME:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NAME:
 				setPinName(PIN_NAME_EDEFAULT);
 				return;
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NUMBER:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NUMBER:
 				setPinNumber(PIN_NUMBER_EDEFAULT);
 				return;
 		}
@@ -187,9 +189,9 @@ public class canTransceiverPortImpl extends SuperHardwarePortTypeImpl implements
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NAME:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NAME:
 				return PIN_NAME_EDEFAULT == null ? pinName != null : !PIN_NAME_EDEFAULT.equals(pinName);
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NUMBER:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NUMBER:
 				return pinNumber != PIN_NUMBER_EDEFAULT;
 		}
 		return super.eIsSet(featureID);

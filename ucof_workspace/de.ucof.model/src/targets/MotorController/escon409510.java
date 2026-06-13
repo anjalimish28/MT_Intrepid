@@ -1,8 +1,9 @@
 /**
  */
-package targets.MotorController;
+package targets.motorcontroller;
 
 import targets.SuperTargetType;
+
 import targets.powergrid.SuperPowerType;
 
 /**
@@ -14,10 +15,10 @@ import targets.powergrid.SuperPowerType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link targets.MotorController.escon409510#getPorts <em>Ports</em>}</li>
+ *   <li>{@link targets.motorcontroller.escon409510#getPorts <em>Ports</em>}</li>
  * </ul>
  *
- * @see targets.MotorController.MotorControllerPackage#getescon409510()
+ * @see targets.motorcontroller.MotorcontrollerPackage#getescon409510()
  * @model
  * @generated
  */
@@ -28,14 +29,14 @@ public interface escon409510 extends SuperTargetType, SuperPowerType {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ports</em>' containment reference.
 	 * @see #setPorts(esconPorts)
-	 * @see targets.MotorController.MotorControllerPackage#getescon409510_Ports()
+	 * @see targets.motorcontroller.MotorcontrollerPackage#getescon409510_Ports()
 	 * @model containment="true"
 	 * @generated
 	 */
 	esconPorts getPorts();
 
 	/**
-	 * Sets the value of the '{@link targets.MotorController.escon409510#getPorts <em>Ports</em>}' containment reference.
+	 * Sets the value of the '{@link targets.motorcontroller.escon409510#getPorts <em>Ports</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Ports</em>' containment reference.

@@ -4,7 +4,7 @@
     <semanticResources>intrepid.ucof</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_pzE-oCzTEfG9zOh0OE6F7g">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_6Im1QCg2EfGUHurXM_vvvA" name="System Design" repPath="#_6IQP8Cg2EfGUHurXM_vvvA" changeId="1776427215173">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_6Im1QCg2EfGUHurXM_vvvA" name="System Design" repPath="#_6IQP8Cg2EfGUHurXM_vvvA" changeId="1781342448284">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Devices%20Diagram']"/>
         <target xmi:type="de.ucof.model:Platform" href="intrepid.ucof#1e21f09c-95ba-49f7-9f34-d46e434da93d"/>
       </ownedRepresentationDescriptors>
@@ -2674,8 +2674,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_6LBQECg2EfGUHurXM_vvvA" name="HALL SENSOR">
       <target xmi:type="de.ucof.model.devices.devicetypes:Peripheral" href="intrepid.ucof#c556b4cc-cafe-4c67-bdd2-d11f0e5f9dd1"/>
       <semanticElements xmi:type="de.ucof.model.devices.devicetypes:Peripheral" href="intrepid.ucof#c556b4cc-cafe-4c67-bdd2-d11f0e5f9dd1"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6LBQESg2EfGUHurXM_vvvA" labelSize="20" showIcon="false" workspacePath="/sirius.ucof.design/icons/Sensor.svg">
-        <labelFormat>bold</labelFormat>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6LBQESg2EfGUHurXM_vvvA" labelSize="12" workspacePath="/sirius.ucof.design/icons/Sensor.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Devices%20Diagram']/@defaultLayer/@containerMappings[name='deviceContainer']/@conditionnalStyles.7/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Devices%20Diagram']/@defaultLayer/@containerMappings[name='deviceContainer']"/>

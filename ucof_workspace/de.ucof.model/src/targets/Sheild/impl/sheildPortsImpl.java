@@ -1,8 +1,9 @@
 /**
  */
-package targets.Sheild.impl;
+package targets.sheild.impl;
 
 import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -16,12 +17,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import targets.Sheild.SheildPackage;
-import targets.Sheild.sheildPort;
-import targets.Sheild.sheildPorts;
+import targets.sheild.SheildPackage;
+import targets.sheild.sheildPort;
+import targets.sheild.sheildPorts;
 
 import ucof.common.etypes.EtypesPackage;
 import ucof.common.etypes.SuperIdentifierType;
+
 import ucof.common.etypes.impl.SuperTrackingTypeImpl;
 
 /**
@@ -32,9 +34,9 @@ import ucof.common.etypes.impl.SuperTrackingTypeImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link targets.Sheild.impl.sheildPortsImpl#getId <em>Id</em>}</li>
- *   <li>{@link targets.Sheild.impl.sheildPortsImpl#getName <em>Name</em>}</li>
- *   <li>{@link targets.Sheild.impl.sheildPortsImpl#getPort <em>Port</em>}</li>
+ *   <li>{@link targets.sheild.impl.sheildPortsImpl#getId <em>Id</em>}</li>
+ *   <li>{@link targets.sheild.impl.sheildPortsImpl#getName <em>Name</em>}</li>
+ *   <li>{@link targets.sheild.impl.sheildPortsImpl#getPort <em>Port</em>}</li>
  * </ul>
  *
  * @generated

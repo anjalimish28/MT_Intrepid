@@ -1,6 +1,6 @@
 /**
  */
-package targets.Sheild.presentation;
+package targets.sheild.presentation;
 
 
 import java.util.ArrayList;
@@ -69,8 +69,8 @@ import org.eclipse.ui.dialogs.WizardNewFileCreationPage;
 import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.ui.part.ISetSelectionTarget;
 
-import targets.Sheild.SheildFactory;
-import targets.Sheild.SheildPackage;
+import targets.sheild.SheildFactory;
+import targets.sheild.SheildPackage;
 import ucof.provider.UcofEditPlugin;
 
 

@@ -24,7 +24,9 @@ import ucof.devices.devicetypes.a653components.A653componentsFactory;
 import ucof.devices.devicetypes.a653components.a653partition.A653partitionFactory;
 
 import ucof.devices.devicetypes.a653components.healthmanagement.HealthmanagementFactory;
+
 import ucof.devices.provider.SuperPlatformDeviceTypeItemProvider;
+
 import ucof.provider.UcofEditPlugin;
 
 /**

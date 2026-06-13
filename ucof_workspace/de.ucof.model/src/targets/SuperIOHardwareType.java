@@ -3,6 +3,7 @@
 package targets;
 
 import org.eclipse.emf.common.util.EList;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" uid="__n1s0GQuEe6QSa0qYL7l9Q" selectedViews="__p6wcGQuEe6QSa0qYL7l9Q" version="15.4.1.202403191723">
+  <semanticResources>platform:/resource/ucfCommon/model/ucfCommon.ecore</semanticResources>
+  <semanticResources>platform:/resource/ucfDevice/model/ucfDevice.ecore</semanticResources>
+  <semanticResources>platform:/resource/ucfConfigDesk/model/ucfConfigDesk.ecore</semanticResources>
+  <semanticResources>platform:/resource/ucfCommunication/model/ucfCommunication.ecore</semanticResources>
+  <semanticResources>platform:/resource/ucfFunctions/model/ucfFunctions.ecore</semanticResources>
+  <semanticResources>platform:/resource/ucfNetwork/model/ucfNetwork.ecore</semanticResources>
+  <semanticResources>platform:/resource/ucfTesting/model/ucfTesting.ecore</semanticResources>
+  <semanticResources>../build.properties</semanticResources>
+  <semanticResources>../plugin.properties</semanticResources>
+  <semanticResources>pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml</semanticResources>
+  <semanticResources>pathmap://UML_PROFILES/Standard.profile.uml</semanticResources>
+  <semanticResources>pathmap://UML_METAMODELS/UML.metamodel.uml</semanticResources>
+  <semanticResources>pathmap://UML_METAMODELS/Ecore.metamodel.uml</semanticResources>
+  <semanticResources>pathmap://UML_PROFILES/Ecore.profile.uml</semanticResources>
+  <semanticResources>pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml</semanticResources>
+  <semanticResources>pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml</semanticResources>
+  <semanticResources>http://www.example.org/ucof</semanticResources>
+  <semanticResources>uCoF.di</semanticResources>
+  <semanticResources>../plugin.xml</semanticResources>
+  <semanticResources>platform:/resource/models/Database.ecore</semanticResources>
+  <semanticResources>oaam.ecore</semanticResources>
+  <semanticResources>oaam.genmodel</semanticResources>
+  <semanticResources>ucof.ecore</semanticResources>
+  <semanticResources>uCoF.ecore</semanticResources>
+  <semanticResources>ucof.genmodel</semanticResources>
+  <ownedViews xmi:type="viewpoint:DView" uid="__p6wcGQuEe6QSa0qYL7l9Q">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>

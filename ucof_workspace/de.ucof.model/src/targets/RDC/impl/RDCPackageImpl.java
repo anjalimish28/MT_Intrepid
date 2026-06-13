@@ -1,6 +1,6 @@
 /**
  */
-package targets.RDC.impl;
+package targets.rdc.impl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -9,31 +9,53 @@ import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import targets.ADC.ADCPackage;
-import targets.ADC.impl.ADCPackageImpl;
-import targets.CCDPU.CCDPUPackage;
-import targets.CCDPU.impl.CCDPUPackageImpl;
-import targets.CanTransceiver.CanTransceiverPackage;
-import targets.CanTransceiver.impl.CanTransceiverPackageImpl;
-import targets.HallSensor.HallSensorPackage;
-import targets.HallSensor.impl.HallSensorPackageImpl;
-import targets.IntrepidPowerGrid.IntrepidPowerGridPackage;
-import targets.IntrepidPowerGrid.impl.IntrepidPowerGridPackageImpl;
-import targets.MotorController.MotorControllerPackage;
-import targets.MotorController.impl.MotorControllerPackageImpl;
-import targets.RDC.RDCFactory;
-import targets.RDC.RDCPackage;
-import targets.RDC.stm32f446re;
-import targets.RDC.stmPort;
-import targets.RDC.stmPorts;
-import targets.Sheild.SheildPackage;
-import targets.Sheild.impl.SheildPackageImpl;
 import targets.TargetsPackage;
+
+import targets.adc.AdcPackage;
+
+import targets.adc.impl.AdcPackageImpl;
+
+import targets.cantransceiver.CantransceiverPackage;
+
+import targets.cantransceiver.impl.CantransceiverPackageImpl;
+
+import targets.cpn.CpnPackage;
+
+import targets.cpn.impl.CpnPackageImpl;
+
+import targets.hallsensor.HallsensorPackage;
+
+import targets.hallsensor.impl.HallsensorPackageImpl;
 
 import targets.impl.TargetsPackageImpl;
 
+import targets.intrepidgateway.IntrepidgatewayPackage;
+
+import targets.intrepidgateway.impl.IntrepidgatewayPackageImpl;
+
+import targets.intrepidpowergrid.IntrepidpowergridPackage;
+
+import targets.intrepidpowergrid.impl.IntrepidpowergridPackageImpl;
+
+import targets.motorcontroller.MotorcontrollerPackage;
+
+import targets.motorcontroller.impl.MotorcontrollerPackageImpl;
+
 import targets.powergrid.PowergridPackage;
+
 import targets.powergrid.impl.PowergridPackageImpl;
+
+import targets.rdc.RdcFactory;
+import targets.rdc.RdcPackage;
+import targets.rdc.stm32f446re;
+import targets.rdc.stmPort;
+import targets.rdc.stmPorts;
+import targets.rdc.stmTimingConfig;
+
+import targets.sheild.SheildPackage;
+
+import targets.sheild.impl.SheildPackageImpl;
+
 import ucof.UcofPackage;
 
 import ucof.assignments.AssignmentsPackage;
@@ -99,7 +121,9 @@ import ucof.communication.connectors.ConnectorsPackage;
 import ucof.communication.connectors.impl.ConnectorsPackageImpl;
 
 import ucof.communication.i2c.I2cPackage;
+
 import ucof.communication.i2c.impl.I2cPackageImpl;
+
 import ucof.communication.impl.CommunicationPackageImpl;
 
 import ucof.devices.DevicesPackage;
@@ -142,13 +166,20 @@ import ucof.impl.UcofPackageImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class RDCPackageImpl extends EPackageImpl implements RDCPackage {
+public class RdcPackageImpl extends EPackageImpl implements RdcPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	private EClass stm32f446reEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass stmTimingConfigEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -175,12 +206,12 @@ public class RDCPackageImpl extends EPackageImpl implements RDCPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see targets.RDC.RDCPackage#eNS_URI
+	 * @see targets.rdc.RdcPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
-	private RDCPackageImpl() {
-		super(eNS_URI, RDCFactory.eINSTANCE);
+	private RdcPackageImpl() {
+		super(eNS_URI, RdcFactory.eINSTANCE);
 	}
 	/**
 	 * <!-- begin-user-doc -->
@@ -192,7 +223,7 @@ public class RDCPackageImpl extends EPackageImpl implements RDCPackage {
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
 	 *
-	 * <p>This method is used to initialize {@link RDCPackage#eINSTANCE} when that field is accessed.
+	 * <p>This method is used to initialize {@link RdcPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -201,12 +232,12 @@ public class RDCPackageImpl extends EPackageImpl implements RDCPackage {
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static RDCPackage init() {
-		if (isInited) return (RDCPackage)EPackage.Registry.INSTANCE.getEPackage(RDCPackage.eNS_URI);
+	public static RdcPackage init() {
+		if (isInited) return (RdcPackage)EPackage.Registry.INSTANCE.getEPackage(RdcPackage.eNS_URI);
 
 		// Obtain or create and register package
-		Object registeredRDCPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
-		RDCPackageImpl theRDCPackage = registeredRDCPackage instanceof RDCPackageImpl ? (RDCPackageImpl)registeredRDCPackage : new RDCPackageImpl();
+		Object registeredRdcPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		RdcPackageImpl theRdcPackage = registeredRdcPackage instanceof RdcPackageImpl ? (RdcPackageImpl)registeredRdcPackage : new RdcPackageImpl();
 
 		isInited = true;
 
@@ -267,23 +298,25 @@ public class RDCPackageImpl extends EPackageImpl implements RDCPackage {
 		TargetsPackageImpl theTargetsPackage = (TargetsPackageImpl)(registeredPackage instanceof TargetsPackageImpl ? registeredPackage : TargetsPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PowergridPackage.eNS_URI);
 		PowergridPackageImpl thePowergridPackage = (PowergridPackageImpl)(registeredPackage instanceof PowergridPackageImpl ? registeredPackage : PowergridPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ADCPackage.eNS_URI);
-		ADCPackageImpl theADCPackage = (ADCPackageImpl)(registeredPackage instanceof ADCPackageImpl ? registeredPackage : ADCPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AdcPackage.eNS_URI);
+		AdcPackageImpl theAdcPackage = (AdcPackageImpl)(registeredPackage instanceof AdcPackageImpl ? registeredPackage : AdcPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(SheildPackage.eNS_URI);
 		SheildPackageImpl theSheildPackage = (SheildPackageImpl)(registeredPackage instanceof SheildPackageImpl ? registeredPackage : SheildPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MotorControllerPackage.eNS_URI);
-		MotorControllerPackageImpl theMotorControllerPackage = (MotorControllerPackageImpl)(registeredPackage instanceof MotorControllerPackageImpl ? registeredPackage : MotorControllerPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CanTransceiverPackage.eNS_URI);
-		CanTransceiverPackageImpl theCanTransceiverPackage = (CanTransceiverPackageImpl)(registeredPackage instanceof CanTransceiverPackageImpl ? registeredPackage : CanTransceiverPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(HallSensorPackage.eNS_URI);
-		HallSensorPackageImpl theHallSensorPackage = (HallSensorPackageImpl)(registeredPackage instanceof HallSensorPackageImpl ? registeredPackage : HallSensorPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CCDPUPackage.eNS_URI);
-		CCDPUPackageImpl theCCDPUPackage = (CCDPUPackageImpl)(registeredPackage instanceof CCDPUPackageImpl ? registeredPackage : CCDPUPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(IntrepidPowerGridPackage.eNS_URI);
-		IntrepidPowerGridPackageImpl theIntrepidPowerGridPackage = (IntrepidPowerGridPackageImpl)(registeredPackage instanceof IntrepidPowerGridPackageImpl ? registeredPackage : IntrepidPowerGridPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MotorcontrollerPackage.eNS_URI);
+		MotorcontrollerPackageImpl theMotorcontrollerPackage = (MotorcontrollerPackageImpl)(registeredPackage instanceof MotorcontrollerPackageImpl ? registeredPackage : MotorcontrollerPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CantransceiverPackage.eNS_URI);
+		CantransceiverPackageImpl theCantransceiverPackage = (CantransceiverPackageImpl)(registeredPackage instanceof CantransceiverPackageImpl ? registeredPackage : CantransceiverPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(HallsensorPackage.eNS_URI);
+		HallsensorPackageImpl theHallsensorPackage = (HallsensorPackageImpl)(registeredPackage instanceof HallsensorPackageImpl ? registeredPackage : HallsensorPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CpnPackage.eNS_URI);
+		CpnPackageImpl theCpnPackage = (CpnPackageImpl)(registeredPackage instanceof CpnPackageImpl ? registeredPackage : CpnPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(IntrepidpowergridPackage.eNS_URI);
+		IntrepidpowergridPackageImpl theIntrepidpowergridPackage = (IntrepidpowergridPackageImpl)(registeredPackage instanceof IntrepidpowergridPackageImpl ? registeredPackage : IntrepidpowergridPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(IntrepidgatewayPackage.eNS_URI);
+		IntrepidgatewayPackageImpl theIntrepidgatewayPackage = (IntrepidgatewayPackageImpl)(registeredPackage instanceof IntrepidgatewayPackageImpl ? registeredPackage : IntrepidgatewayPackage.eINSTANCE);
 
 		// Create package meta-data objects
-		theRDCPackage.createPackageContents();
+		theRdcPackage.createPackageContents();
 		theUcofPackage.createPackageContents();
 		theEnumsPackage.createPackageContents();
 		theEtypesPackage.createPackageContents();
@@ -312,16 +345,17 @@ public class RDCPackageImpl extends EPackageImpl implements RDCPackage {
 		theDatabasePackage.createPackageContents();
 		theTargetsPackage.createPackageContents();
 		thePowergridPackage.createPackageContents();
-		theADCPackage.createPackageContents();
+		theAdcPackage.createPackageContents();
 		theSheildPackage.createPackageContents();
-		theMotorControllerPackage.createPackageContents();
-		theCanTransceiverPackage.createPackageContents();
-		theHallSensorPackage.createPackageContents();
-		theCCDPUPackage.createPackageContents();
-		theIntrepidPowerGridPackage.createPackageContents();
+		theMotorcontrollerPackage.createPackageContents();
+		theCantransceiverPackage.createPackageContents();
+		theHallsensorPackage.createPackageContents();
+		theCpnPackage.createPackageContents();
+		theIntrepidpowergridPackage.createPackageContents();
+		theIntrepidgatewayPackage.createPackageContents();
 
 		// Initialize created meta-data
-		theRDCPackage.initializePackageContents();
+		theRdcPackage.initializePackageContents();
 		theUcofPackage.initializePackageContents();
 		theEnumsPackage.initializePackageContents();
 		theEtypesPackage.initializePackageContents();
@@ -350,20 +384,21 @@ public class RDCPackageImpl extends EPackageImpl implements RDCPackage {
 		theDatabasePackage.initializePackageContents();
 		theTargetsPackage.initializePackageContents();
 		thePowergridPackage.initializePackageContents();
-		theADCPackage.initializePackageContents();
+		theAdcPackage.initializePackageContents();
 		theSheildPackage.initializePackageContents();
-		theMotorControllerPackage.initializePackageContents();
-		theCanTransceiverPackage.initializePackageContents();
-		theHallSensorPackage.initializePackageContents();
-		theCCDPUPackage.initializePackageContents();
-		theIntrepidPowerGridPackage.initializePackageContents();
+		theMotorcontrollerPackage.initializePackageContents();
+		theCantransceiverPackage.initializePackageContents();
+		theHallsensorPackage.initializePackageContents();
+		theCpnPackage.initializePackageContents();
+		theIntrepidpowergridPackage.initializePackageContents();
+		theIntrepidgatewayPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
-		theRDCPackage.freeze();
+		theRdcPackage.freeze();
 
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(RDCPackage.eNS_URI, theRDCPackage);
-		return theRDCPackage;
+		EPackage.Registry.INSTANCE.put(RdcPackage.eNS_URI, theRdcPackage);
+		return theRdcPackage;
 	}
 
 	/**
@@ -380,8 +415,152 @@ public class RDCPackageImpl extends EPackageImpl implements RDCPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getstm32f446re_Size() {
+		return (EAttribute)stm32f446reEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EReference getstm32f446re_Ports() {
-		return (EReference)stm32f446reEClass.getEStructuralFeatures().get(0);
+		return (EReference)stm32f446reEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getstm32f446re_StmTimingConfig() {
+		return (EReference)stm32f446reEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getstm32f446re_MsgBoxExtension() {
+		return (EReference)stm32f446reEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getstmTimingConfig() {
+		return stmTimingConfigEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getstmTimingConfig_RateDriverFrequencyHz() {
+		return (EAttribute)stmTimingConfigEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getstmTimingConfig_RateGroupDivisor1() {
+		return (EAttribute)stmTimingConfigEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getstmTimingConfig_RateGroupDivisor2() {
+		return (EAttribute)stmTimingConfigEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getstmTimingConfig_RateGroupDivisor3() {
+		return (EAttribute)stmTimingConfigEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getstmTimingConfig_RateGroupDefaultOffset() {
+		return (EAttribute)stmTimingConfigEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getstmTimingConfig_PwmResolutionBits() {
+		return (EAttribute)stmTimingConfigEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getstmTimingConfig_RateDriverFrequencyHzSize() {
+		return (EAttribute)stmTimingConfigEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getstmTimingConfig_RateGroupDivisor1Size() {
+		return (EAttribute)stmTimingConfigEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getstmTimingConfig_RateGroupDivisor2Size() {
+		return (EAttribute)stmTimingConfigEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getstmTimingConfig_RateGroupDivisor3Size() {
+		return (EAttribute)stmTimingConfigEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getstmTimingConfig_RateGroupDefaultOffsetSize() {
+		return (EAttribute)stmTimingConfigEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getstmTimingConfig_PwmResolutionBitsSize() {
+		return (EAttribute)stmTimingConfigEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -434,8 +613,17 @@ public class RDCPackageImpl extends EPackageImpl implements RDCPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RDCFactory getRDCFactory() {
-		return (RDCFactory)getEFactoryInstance();
+	public EAttribute getstmPort_Size() {
+		return (EAttribute)stmPortEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RdcFactory getRdcFactory() {
+		return (RdcFactory)getEFactoryInstance();
 	}
 
 	/**
@@ -458,7 +646,24 @@ public class RDCPackageImpl extends EPackageImpl implements RDCPackage {
 
 		// Create classes and their features
 		stm32f446reEClass = createEClass(STM32F446RE);
+		createEAttribute(stm32f446reEClass, STM32F446RE__SIZE);
 		createEReference(stm32f446reEClass, STM32F446RE__PORTS);
+		createEReference(stm32f446reEClass, STM32F446RE__STM_TIMING_CONFIG);
+		createEReference(stm32f446reEClass, STM32F446RE__MSG_BOX_EXTENSION);
+
+		stmTimingConfigEClass = createEClass(STM_TIMING_CONFIG);
+		createEAttribute(stmTimingConfigEClass, STM_TIMING_CONFIG__RATE_DRIVER_FREQUENCY_HZ);
+		createEAttribute(stmTimingConfigEClass, STM_TIMING_CONFIG__RATE_GROUP_DIVISOR1);
+		createEAttribute(stmTimingConfigEClass, STM_TIMING_CONFIG__RATE_GROUP_DIVISOR2);
+		createEAttribute(stmTimingConfigEClass, STM_TIMING_CONFIG__RATE_GROUP_DIVISOR3);
+		createEAttribute(stmTimingConfigEClass, STM_TIMING_CONFIG__RATE_GROUP_DEFAULT_OFFSET);
+		createEAttribute(stmTimingConfigEClass, STM_TIMING_CONFIG__PWM_RESOLUTION_BITS);
+		createEAttribute(stmTimingConfigEClass, STM_TIMING_CONFIG__RATE_DRIVER_FREQUENCY_HZ_SIZE);
+		createEAttribute(stmTimingConfigEClass, STM_TIMING_CONFIG__RATE_GROUP_DIVISOR1_SIZE);
+		createEAttribute(stmTimingConfigEClass, STM_TIMING_CONFIG__RATE_GROUP_DIVISOR2_SIZE);
+		createEAttribute(stmTimingConfigEClass, STM_TIMING_CONFIG__RATE_GROUP_DIVISOR3_SIZE);
+		createEAttribute(stmTimingConfigEClass, STM_TIMING_CONFIG__RATE_GROUP_DEFAULT_OFFSET_SIZE);
+		createEAttribute(stmTimingConfigEClass, STM_TIMING_CONFIG__PWM_RESOLUTION_BITS_SIZE);
 
 		stmPortsEClass = createEClass(STM_PORTS);
 		createEReference(stmPortsEClass, STM_PORTS__PORT);
@@ -466,6 +671,7 @@ public class RDCPackageImpl extends EPackageImpl implements RDCPackage {
 		stmPortEClass = createEClass(STM_PORT);
 		createEAttribute(stmPortEClass, STM_PORT__PIN_NAME);
 		createEAttribute(stmPortEClass, STM_PORT__PIN_NUMBER);
+		createEAttribute(stmPortEClass, STM_PORT__SIZE);
 	}
 
 	/**
@@ -492,8 +698,9 @@ public class RDCPackageImpl extends EPackageImpl implements RDCPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		TargetsPackage theTargetsPackage = (TargetsPackage)EPackage.Registry.INSTANCE.getEPackage(TargetsPackage.eNS_URI);
 		PowergridPackage thePowergridPackage = (PowergridPackage)EPackage.Registry.INSTANCE.getEPackage(PowergridPackage.eNS_URI);
+		TargetsPackage theTargetsPackage = (TargetsPackage)EPackage.Registry.INSTANCE.getEPackage(TargetsPackage.eNS_URI);
+		IntrepidgatewayPackage theIntrepidgatewayPackage = (IntrepidgatewayPackage)EPackage.Registry.INSTANCE.getEPackage(IntrepidgatewayPackage.eNS_URI);
 		EtypesPackage theEtypesPackage = (EtypesPackage)EPackage.Registry.INSTANCE.getEPackage(EtypesPackage.eNS_URI);
 
 		// Create type parameters
@@ -501,15 +708,34 @@ public class RDCPackageImpl extends EPackageImpl implements RDCPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		stm32f446reEClass.getESuperTypes().add(theTargetsPackage.getSuperTargetType());
 		stm32f446reEClass.getESuperTypes().add(thePowergridPackage.getSuperPowerType());
+		stm32f446reEClass.getESuperTypes().add(theTargetsPackage.getSuperTargetType());
+		stmTimingConfigEClass.getESuperTypes().add(theEtypesPackage.getSuperTrackingType());
+		stmTimingConfigEClass.getESuperTypes().add(theEtypesPackage.getSuperIdentifierType());
 		stmPortsEClass.getESuperTypes().add(theEtypesPackage.getSuperTrackingType());
 		stmPortsEClass.getESuperTypes().add(theEtypesPackage.getSuperIdentifierType());
 		stmPortEClass.getESuperTypes().add(theTargetsPackage.getSuperHardwarePortType());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(stm32f446reEClass, stm32f446re.class, "stm32f446re", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getstm32f446re_Size(), ecorePackage.getEString(), "size", null, 0, 1, stm32f446re.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getstm32f446re_Ports(), this.getstmPorts(), null, "ports", null, 0, 1, stm32f446re.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getstm32f446re_StmTimingConfig(), this.getstmTimingConfig(), null, "stmTimingConfig", null, 0, 1, stm32f446re.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getstm32f446re_MsgBoxExtension(), theIntrepidgatewayPackage.getMsgBoxExtension(), null, "msgBoxExtension", null, 0, 1, stm32f446re.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(stmTimingConfigEClass, stmTimingConfig.class, "stmTimingConfig", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getstmTimingConfig_RateDriverFrequencyHz(), ecorePackage.getEInt(), "rateDriverFrequencyHz", null, 0, 1, stmTimingConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getstmTimingConfig_RateGroupDivisor1(), ecorePackage.getEInt(), "rateGroupDivisor1", null, 0, 1, stmTimingConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getstmTimingConfig_RateGroupDivisor2(), ecorePackage.getEInt(), "rateGroupDivisor2", null, 0, 1, stmTimingConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getstmTimingConfig_RateGroupDivisor3(), ecorePackage.getEInt(), "rateGroupDivisor3", null, 0, 1, stmTimingConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getstmTimingConfig_RateGroupDefaultOffset(), ecorePackage.getEInt(), "rateGroupDefaultOffset", null, 0, 1, stmTimingConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getstmTimingConfig_PwmResolutionBits(), ecorePackage.getEInt(), "pwmResolutionBits", null, 0, 1, stmTimingConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getstmTimingConfig_RateDriverFrequencyHzSize(), ecorePackage.getEString(), "rateDriverFrequencyHzSize", null, 0, 1, stmTimingConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getstmTimingConfig_RateGroupDivisor1Size(), ecorePackage.getEString(), "rateGroupDivisor1Size", null, 0, 1, stmTimingConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getstmTimingConfig_RateGroupDivisor2Size(), ecorePackage.getEString(), "rateGroupDivisor2Size", null, 0, 1, stmTimingConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getstmTimingConfig_RateGroupDivisor3Size(), ecorePackage.getEString(), "rateGroupDivisor3Size", null, 0, 1, stmTimingConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getstmTimingConfig_RateGroupDefaultOffsetSize(), ecorePackage.getEString(), "rateGroupDefaultOffsetSize", null, 0, 1, stmTimingConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getstmTimingConfig_PwmResolutionBitsSize(), ecorePackage.getEString(), "pwmResolutionBitsSize", null, 0, 1, stmTimingConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(stmPortsEClass, stmPorts.class, "stmPorts", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getstmPorts_Port(), this.getstmPort(), null, "port", null, 0, -1, stmPorts.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -517,6 +743,7 @@ public class RDCPackageImpl extends EPackageImpl implements RDCPackage {
 		initEClass(stmPortEClass, stmPort.class, "stmPort", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getstmPort_PinName(), ecorePackage.getEString(), "pinName", null, 0, 1, stmPort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getstmPort_PinNumber(), ecorePackage.getEInt(), "pinNumber", null, 0, 1, stmPort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getstmPort_Size(), ecorePackage.getEString(), "size", null, 0, 1, stmPort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 	}
 
-} //RDCPackageImpl
+} //RdcPackageImpl

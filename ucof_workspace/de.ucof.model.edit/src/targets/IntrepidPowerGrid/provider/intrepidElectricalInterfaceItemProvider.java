@@ -1,6 +1,6 @@
 /**
  */
-package targets.IntrepidPowerGrid.provider;
+package targets.intrepidpowergrid.provider;
 
 
 import java.util.Collection;
@@ -13,14 +13,14 @@ import org.eclipse.emf.common.util.ResourceLocator;
 
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 
-import targets.IntrepidPowerGrid.intrepidElectricalInterface;
+import targets.intrepidpowergrid.intrepidElectricalInterface;
 
 import targets.powergrid.provider.SuperElectricalInterfaceTypeItemProvider;
 
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.IntrepidPowerGrid.intrepidElectricalInterface} object.
+ * This is the item provider adapter for a {@link targets.intrepidpowergrid.intrepidElectricalInterface} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated

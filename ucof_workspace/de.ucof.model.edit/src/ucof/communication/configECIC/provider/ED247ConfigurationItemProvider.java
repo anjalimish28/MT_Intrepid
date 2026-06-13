@@ -17,7 +17,9 @@ import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
 import ucof.common.etypes.provider.SuperSetTypeItemProvider;
+
 import ucof.communication.configECIC.ConfigECICFactory;
 import ucof.communication.configECIC.ConfigECICPackage;
 import ucof.communication.configECIC.ED247Configuration;

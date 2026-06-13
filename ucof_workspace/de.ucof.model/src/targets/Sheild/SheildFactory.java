@@ -1,6 +1,6 @@
 /**
  */
-package targets.Sheild;
+package targets.sheild;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,7 +9,7 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see targets.Sheild.SheildPackage
+ * @see targets.sheild.SheildPackage
  * @generated
  */
 public interface SheildFactory extends EFactory {
@@ -19,7 +19,7 @@ public interface SheildFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	SheildFactory eINSTANCE = targets.Sheild.impl.SheildFactoryImpl.init();
+	SheildFactory eINSTANCE = targets.sheild.impl.SheildFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>arduinosheild</em>'.

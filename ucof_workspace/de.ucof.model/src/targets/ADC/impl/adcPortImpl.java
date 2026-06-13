@@ -1,6 +1,6 @@
 /**
  */
-package targets.ADC.impl;
+package targets.adc.impl;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -8,10 +8,11 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
-import targets.ADC.ADCPackage;
-import targets.ADC.adcPort;
+import targets.adc.AdcPackage;
+import targets.adc.adcPort;
 
 import targets.impl.SuperHardwarePortTypeImpl;
+
 import targets.powergrid.PowergridPackage;
 import targets.powergrid.SuperElectricalInterfaceType;
 import targets.powergrid.interfaceType;
@@ -24,10 +25,10 @@ import targets.powergrid.interfaceType;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link targets.ADC.impl.adcPortImpl#getMinVoltage <em>Min Voltage</em>}</li>
- *   <li>{@link targets.ADC.impl.adcPortImpl#getMaxVoltage <em>Max Voltage</em>}</li>
- *   <li>{@link targets.ADC.impl.adcPortImpl#getType <em>Type</em>}</li>
- *   <li>{@link targets.ADC.impl.adcPortImpl#getPinName <em>Pin Name</em>}</li>
+ *   <li>{@link targets.adc.impl.adcPortImpl#getMinVoltage <em>Min Voltage</em>}</li>
+ *   <li>{@link targets.adc.impl.adcPortImpl#getMaxVoltage <em>Max Voltage</em>}</li>
+ *   <li>{@link targets.adc.impl.adcPortImpl#getType <em>Type</em>}</li>
+ *   <li>{@link targets.adc.impl.adcPortImpl#getPinName <em>Pin Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -129,7 +130,7 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ADCPackage.Literals.ADC_PORT;
+		return AdcPackage.Literals.ADC_PORT;
 	}
 
 	/**
@@ -150,7 +151,7 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 		double oldMinVoltage = minVoltage;
 		minVoltage = newMinVoltage;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ADCPackage.ADC_PORT__MIN_VOLTAGE, oldMinVoltage, minVoltage));
+			eNotify(new ENotificationImpl(this, Notification.SET, AdcPackage.ADC_PORT__MIN_VOLTAGE, oldMinVoltage, minVoltage));
 	}
 
 	/**
@@ -171,7 +172,7 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 		double oldMaxVoltage = maxVoltage;
 		maxVoltage = newMaxVoltage;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ADCPackage.ADC_PORT__MAX_VOLTAGE, oldMaxVoltage, maxVoltage));
+			eNotify(new ENotificationImpl(this, Notification.SET, AdcPackage.ADC_PORT__MAX_VOLTAGE, oldMaxVoltage, maxVoltage));
 	}
 
 	/**
@@ -192,7 +193,7 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 		interfaceType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ADCPackage.ADC_PORT__TYPE, oldType, type));
+			eNotify(new ENotificationImpl(this, Notification.SET, AdcPackage.ADC_PORT__TYPE, oldType, type));
 	}
 
 	/**
@@ -213,7 +214,7 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 		String oldPinName = pinName;
 		pinName = newPinName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ADCPackage.ADC_PORT__PIN_NAME, oldPinName, pinName));
+			eNotify(new ENotificationImpl(this, Notification.SET, AdcPackage.ADC_PORT__PIN_NAME, oldPinName, pinName));
 	}
 
 	/**
@@ -224,13 +225,13 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ADCPackage.ADC_PORT__MIN_VOLTAGE:
+			case AdcPackage.ADC_PORT__MIN_VOLTAGE:
 				return getMinVoltage();
-			case ADCPackage.ADC_PORT__MAX_VOLTAGE:
+			case AdcPackage.ADC_PORT__MAX_VOLTAGE:
 				return getMaxVoltage();
-			case ADCPackage.ADC_PORT__TYPE:
+			case AdcPackage.ADC_PORT__TYPE:
 				return getType();
-			case ADCPackage.ADC_PORT__PIN_NAME:
+			case AdcPackage.ADC_PORT__PIN_NAME:
 				return getPinName();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -244,16 +245,16 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ADCPackage.ADC_PORT__MIN_VOLTAGE:
+			case AdcPackage.ADC_PORT__MIN_VOLTAGE:
 				setMinVoltage((Double)newValue);
 				return;
-			case ADCPackage.ADC_PORT__MAX_VOLTAGE:
+			case AdcPackage.ADC_PORT__MAX_VOLTAGE:
 				setMaxVoltage((Double)newValue);
 				return;
-			case ADCPackage.ADC_PORT__TYPE:
+			case AdcPackage.ADC_PORT__TYPE:
 				setType((interfaceType)newValue);
 				return;
-			case ADCPackage.ADC_PORT__PIN_NAME:
+			case AdcPackage.ADC_PORT__PIN_NAME:
 				setPinName((String)newValue);
 				return;
 		}
@@ -268,16 +269,16 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ADCPackage.ADC_PORT__MIN_VOLTAGE:
+			case AdcPackage.ADC_PORT__MIN_VOLTAGE:
 				setMinVoltage(MIN_VOLTAGE_EDEFAULT);
 				return;
-			case ADCPackage.ADC_PORT__MAX_VOLTAGE:
+			case AdcPackage.ADC_PORT__MAX_VOLTAGE:
 				setMaxVoltage(MAX_VOLTAGE_EDEFAULT);
 				return;
-			case ADCPackage.ADC_PORT__TYPE:
+			case AdcPackage.ADC_PORT__TYPE:
 				setType(TYPE_EDEFAULT);
 				return;
-			case ADCPackage.ADC_PORT__PIN_NAME:
+			case AdcPackage.ADC_PORT__PIN_NAME:
 				setPinName(PIN_NAME_EDEFAULT);
 				return;
 		}
@@ -292,13 +293,13 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ADCPackage.ADC_PORT__MIN_VOLTAGE:
+			case AdcPackage.ADC_PORT__MIN_VOLTAGE:
 				return minVoltage != MIN_VOLTAGE_EDEFAULT;
-			case ADCPackage.ADC_PORT__MAX_VOLTAGE:
+			case AdcPackage.ADC_PORT__MAX_VOLTAGE:
 				return maxVoltage != MAX_VOLTAGE_EDEFAULT;
-			case ADCPackage.ADC_PORT__TYPE:
+			case AdcPackage.ADC_PORT__TYPE:
 				return type != TYPE_EDEFAULT;
-			case ADCPackage.ADC_PORT__PIN_NAME:
+			case AdcPackage.ADC_PORT__PIN_NAME:
 				return PIN_NAME_EDEFAULT == null ? pinName != null : !PIN_NAME_EDEFAULT.equals(pinName);
 		}
 		return super.eIsSet(featureID);
@@ -313,9 +314,9 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
 		if (baseClass == SuperElectricalInterfaceType.class) {
 			switch (derivedFeatureID) {
-				case ADCPackage.ADC_PORT__MIN_VOLTAGE: return PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__MIN_VOLTAGE;
-				case ADCPackage.ADC_PORT__MAX_VOLTAGE: return PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__MAX_VOLTAGE;
-				case ADCPackage.ADC_PORT__TYPE: return PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__TYPE;
+				case AdcPackage.ADC_PORT__MIN_VOLTAGE: return PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__MIN_VOLTAGE;
+				case AdcPackage.ADC_PORT__MAX_VOLTAGE: return PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__MAX_VOLTAGE;
+				case AdcPackage.ADC_PORT__TYPE: return PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__TYPE;
 				default: return -1;
 			}
 		}
@@ -331,9 +332,9 @@ public class adcPortImpl extends SuperHardwarePortTypeImpl implements adcPort {
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
 		if (baseClass == SuperElectricalInterfaceType.class) {
 			switch (baseFeatureID) {
-				case PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__MIN_VOLTAGE: return ADCPackage.ADC_PORT__MIN_VOLTAGE;
-				case PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__MAX_VOLTAGE: return ADCPackage.ADC_PORT__MAX_VOLTAGE;
-				case PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__TYPE: return ADCPackage.ADC_PORT__TYPE;
+				case PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__MIN_VOLTAGE: return AdcPackage.ADC_PORT__MIN_VOLTAGE;
+				case PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__MAX_VOLTAGE: return AdcPackage.ADC_PORT__MAX_VOLTAGE;
+				case PowergridPackage.SUPER_ELECTRICAL_INTERFACE_TYPE__TYPE: return AdcPackage.ADC_PORT__TYPE;
 				default: return -1;
 			}
 		}

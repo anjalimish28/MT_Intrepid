@@ -1,6 +1,6 @@
 /**
  */
-package targets.RDC.presentation;
+package targets.rdc.presentation;
 
 
 import java.util.ArrayList;
@@ -69,8 +69,8 @@ import org.eclipse.ui.dialogs.WizardNewFileCreationPage;
 import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.ui.part.ISetSelectionTarget;
 
-import targets.RDC.RDCFactory;
-import targets.RDC.RDCPackage;
+import targets.rdc.RdcFactory;
+import targets.rdc.RdcPackage;
 import ucof.provider.UcofEditPlugin;
 
 
@@ -93,7 +93,7 @@ import ucof.presentation.UcofEditorPlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class RDCModelWizard extends Wizard implements INewWizard {
+public class RdcModelWizard extends Wizard implements INewWizard {
 	/**
 	 * The supported extensions for created files.
 	 * <!-- begin-user-doc -->
@@ -101,7 +101,7 @@ public class RDCModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final List<String> FILE_EXTENSIONS =
-		Collections.unmodifiableList(Arrays.asList(UcofEditorPlugin.INSTANCE.getString("_UI_RDCEditorFilenameExtensions").split("\\s*,\\s*")));
+		Collections.unmodifiableList(Arrays.asList(UcofEditorPlugin.INSTANCE.getString("_UI_RdcEditorFilenameExtensions").split("\\s*,\\s*")));
 
 	/**
 	 * A formatted list of supported file extensions, suitable for display.
@@ -110,7 +110,7 @@ public class RDCModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final String FORMATTED_FILE_EXTENSIONS =
-		UcofEditorPlugin.INSTANCE.getString("_UI_RDCEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
+		UcofEditorPlugin.INSTANCE.getString("_UI_RdcEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
 
 	/**
 	 * This caches an instance of the model package.
@@ -118,7 +118,7 @@ public class RDCModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RDCPackage rdcPackage = RDCPackage.eINSTANCE;
+	protected RdcPackage rdcPackage = RdcPackage.eINSTANCE;
 
 	/**
 	 * This caches an instance of the model factory.
@@ -126,7 +126,7 @@ public class RDCModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RDCFactory rdcFactory = rdcPackage.getRDCFactory();
+	protected RdcFactory rdcFactory = rdcPackage.getRdcFactory();
 
 	/**
 	 * This is the file creation page.
@@ -134,7 +134,7 @@ public class RDCModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RDCModelWizardNewFileCreationPage newFileCreationPage;
+	protected RdcModelWizardNewFileCreationPage newFileCreationPage;
 
 	/**
 	 * This is the initial object creation page.
@@ -142,7 +142,7 @@ public class RDCModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RDCModelWizardInitialObjectCreationPage initialObjectCreationPage;
+	protected RdcModelWizardInitialObjectCreationPage initialObjectCreationPage;
 
 	/**
 	 * Remember the selection during initialization for populating the default container.
@@ -178,7 +178,7 @@ public class RDCModelWizard extends Wizard implements INewWizard {
 		this.workbench = workbench;
 		this.selection = selection;
 		setWindowTitle(UcofEditorPlugin.INSTANCE.getString("_UI_Wizard_label"));
-		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(UcofEditorPlugin.INSTANCE.getImage("full/wizban/NewRDC")));
+		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(UcofEditorPlugin.INSTANCE.getImage("full/wizban/NewRdc")));
 	}
 
 	/**
@@ -312,14 +312,14 @@ public class RDCModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public class RDCModelWizardNewFileCreationPage extends WizardNewFileCreationPage {
+	public class RdcModelWizardNewFileCreationPage extends WizardNewFileCreationPage {
 		/**
 		 * Pass in the selection.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		public RDCModelWizardNewFileCreationPage(String pageId, IStructuredSelection selection) {
+		public RdcModelWizardNewFileCreationPage(String pageId, IStructuredSelection selection) {
 			super(pageId, selection);
 		}
 
@@ -359,7 +359,7 @@ public class RDCModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public class RDCModelWizardInitialObjectCreationPage extends WizardPage {
+	public class RdcModelWizardInitialObjectCreationPage extends WizardPage {
 		/**
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -387,7 +387,7 @@ public class RDCModelWizard extends Wizard implements INewWizard {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		public RDCModelWizardInitialObjectCreationPage(String pageId) {
+		public RdcModelWizardInitialObjectCreationPage(String pageId) {
 			super(pageId);
 		}
 
@@ -571,10 +571,10 @@ public class RDCModelWizard extends Wizard implements INewWizard {
 	public void addPages() {
 		// Create a page, set the title, and the initial model file name.
 		//
-		newFileCreationPage = new RDCModelWizardNewFileCreationPage("Whatever", selection);
-		newFileCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_RDCModelWizard_label"));
-		newFileCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_RDCModelWizard_description"));
-		newFileCreationPage.setFileName(UcofEditorPlugin.INSTANCE.getString("_UI_RDCEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
+		newFileCreationPage = new RdcModelWizardNewFileCreationPage("Whatever", selection);
+		newFileCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_RdcModelWizard_label"));
+		newFileCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_RdcModelWizard_description"));
+		newFileCreationPage.setFileName(UcofEditorPlugin.INSTANCE.getString("_UI_RdcEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
 		addPage(newFileCreationPage);
 
 		// Try and get the resource selection to determine a current directory for the file dialog.
@@ -600,7 +600,7 @@ public class RDCModelWizard extends Wizard implements INewWizard {
 
 					// Make up a unique new name here.
 					//
-					String defaultModelBaseFilename = UcofEditorPlugin.INSTANCE.getString("_UI_RDCEditorFilenameDefaultBase");
+					String defaultModelBaseFilename = UcofEditorPlugin.INSTANCE.getString("_UI_RdcEditorFilenameDefaultBase");
 					String defaultModelFilenameExtension = FILE_EXTENSIONS.get(0);
 					String modelFilename = defaultModelBaseFilename + "." + defaultModelFilenameExtension;
 					for (int i = 1; ((IContainer)selectedResource).findMember(modelFilename) != null; ++i) {
@@ -610,8 +610,8 @@ public class RDCModelWizard extends Wizard implements INewWizard {
 				}
 			}
 		}
-		initialObjectCreationPage = new RDCModelWizardInitialObjectCreationPage("Whatever2");
-		initialObjectCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_RDCModelWizard_label"));
+		initialObjectCreationPage = new RdcModelWizardInitialObjectCreationPage("Whatever2");
+		initialObjectCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_RdcModelWizard_label"));
 		initialObjectCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_Wizard_initial_object_description"));
 		addPage(initialObjectCreationPage);
 	}

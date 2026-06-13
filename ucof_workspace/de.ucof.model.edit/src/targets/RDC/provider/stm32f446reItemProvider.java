@@ -1,6 +1,6 @@
 /**
  */
-package targets.RDC.provider;
+package targets.rdc.provider;
 
 
 import java.util.Collection;
@@ -13,26 +13,27 @@ import org.eclipse.emf.common.util.ResourceLocator;
 
 import org.eclipse.emf.ecore.EStructuralFeature;
 
+import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.RDC.RDCFactory;
-import targets.RDC.RDCPackage;
-import targets.RDC.stm32f446re;
-
-import targets.powergrid.PowergridFactory;
-import targets.powergrid.PowergridPackage;
-import targets.provider.SuperTargetTypeItemProvider;
+import targets.TargetsPackage;
+import targets.intrepidgateway.IntrepidgatewayFactory;
+import targets.powergrid.provider.SuperPowerTypeItemProvider;
+import targets.rdc.RdcFactory;
+import targets.rdc.RdcPackage;
+import targets.rdc.stm32f446re;
 
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.RDC.stm32f446re} object.
+ * This is the item provider adapter for a {@link targets.rdc.stm32f446re} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class stm32f446reItemProvider extends SuperTargetTypeItemProvider {
+public class stm32f446reItemProvider extends SuperPowerTypeItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -54,8 +55,54 @@ public class stm32f446reItemProvider extends SuperTargetTypeItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addProjectNamePropertyDescriptor(object);
+			addSizePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Project Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addProjectNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTargetType_projectName_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTargetType_projectName_feature", "_UI_SuperTargetType_type"),
+				 TargetsPackage.Literals.SUPER_TARGET_TYPE__PROJECT_NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Size feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addSizePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_stm32f446re_size_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_stm32f446re_size_feature", "_UI_stm32f446re_type"),
+				 RdcPackage.Literals.STM32F446RE__SIZE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
 	}
 
 	/**
@@ -70,8 +117,9 @@ public class stm32f446reItemProvider extends SuperTargetTypeItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES);
-			childrenFeatures.add(RDCPackage.Literals.STM32F446RE__PORTS);
+			childrenFeatures.add(RdcPackage.Literals.STM32F446RE__PORTS);
+			childrenFeatures.add(RdcPackage.Literals.STM32F446RE__STM_TIMING_CONFIG);
+			childrenFeatures.add(RdcPackage.Literals.STM32F446RE__MSG_BOX_EXTENSION);
 		}
 		return childrenFeatures;
 	}
@@ -127,8 +175,13 @@ public class stm32f446reItemProvider extends SuperTargetTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(stm32f446re.class)) {
-			case RDCPackage.STM32F446RE__ELECTRICAL_INTERFACES:
-			case RDCPackage.STM32F446RE__PORTS:
+			case RdcPackage.STM32F446RE__PROJECT_NAME:
+			case RdcPackage.STM32F446RE__SIZE:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+			case RdcPackage.STM32F446RE__PORTS:
+			case RdcPackage.STM32F446RE__STM_TIMING_CONFIG:
+			case RdcPackage.STM32F446RE__MSG_BOX_EXTENSION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -148,13 +201,18 @@ public class stm32f446reItemProvider extends SuperTargetTypeItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES,
-				 PowergridFactory.eINSTANCE.createEletrcialInterfaces()));
+				(RdcPackage.Literals.STM32F446RE__PORTS,
+				 RdcFactory.eINSTANCE.createstmPorts()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(RDCPackage.Literals.STM32F446RE__PORTS,
-				 RDCFactory.eINSTANCE.createstmPorts()));
+				(RdcPackage.Literals.STM32F446RE__STM_TIMING_CONFIG,
+				 RdcFactory.eINSTANCE.createstmTimingConfig()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(RdcPackage.Literals.STM32F446RE__MSG_BOX_EXTENSION,
+				 IntrepidgatewayFactory.eINSTANCE.createMsgBoxExtension()));
 	}
 
 	/**

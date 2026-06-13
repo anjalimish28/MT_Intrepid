@@ -1,6 +1,6 @@
 /**
  */
-package targets.IntrepidPowerGrid.presentation;
+package targets.intrepidpowergrid.presentation;
 
 
 import java.util.ArrayList;
@@ -69,8 +69,8 @@ import org.eclipse.ui.dialogs.WizardNewFileCreationPage;
 import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.ui.part.ISetSelectionTarget;
 
-import targets.IntrepidPowerGrid.IntrepidPowerGridFactory;
-import targets.IntrepidPowerGrid.IntrepidPowerGridPackage;
+import targets.intrepidpowergrid.IntrepidpowergridFactory;
+import targets.intrepidpowergrid.IntrepidpowergridPackage;
 import ucof.provider.UcofEditPlugin;
 
 
@@ -93,7 +93,7 @@ import ucof.presentation.UcofEditorPlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
+public class IntrepidpowergridModelWizard extends Wizard implements INewWizard {
 	/**
 	 * The supported extensions for created files.
 	 * <!-- begin-user-doc -->
@@ -101,7 +101,7 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final List<String> FILE_EXTENSIONS =
-		Collections.unmodifiableList(Arrays.asList(UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidPowerGridEditorFilenameExtensions").split("\\s*,\\s*")));
+		Collections.unmodifiableList(Arrays.asList(UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidpowergridEditorFilenameExtensions").split("\\s*,\\s*")));
 
 	/**
 	 * A formatted list of supported file extensions, suitable for display.
@@ -110,7 +110,7 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final String FORMATTED_FILE_EXTENSIONS =
-		UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidPowerGridEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
+		UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidpowergridEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
 
 	/**
 	 * This caches an instance of the model package.
@@ -118,7 +118,7 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected IntrepidPowerGridPackage intrepidPowerGridPackage = IntrepidPowerGridPackage.eINSTANCE;
+	protected IntrepidpowergridPackage intrepidpowergridPackage = IntrepidpowergridPackage.eINSTANCE;
 
 	/**
 	 * This caches an instance of the model factory.
@@ -126,7 +126,7 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected IntrepidPowerGridFactory intrepidPowerGridFactory = intrepidPowerGridPackage.getIntrepidPowerGridFactory();
+	protected IntrepidpowergridFactory intrepidpowergridFactory = intrepidpowergridPackage.getIntrepidpowergridFactory();
 
 	/**
 	 * This is the file creation page.
@@ -134,7 +134,7 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected IntrepidPowerGridModelWizardNewFileCreationPage newFileCreationPage;
+	protected IntrepidpowergridModelWizardNewFileCreationPage newFileCreationPage;
 
 	/**
 	 * This is the initial object creation page.
@@ -142,7 +142,7 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected IntrepidPowerGridModelWizardInitialObjectCreationPage initialObjectCreationPage;
+	protected IntrepidpowergridModelWizardInitialObjectCreationPage initialObjectCreationPage;
 
 	/**
 	 * Remember the selection during initialization for populating the default container.
@@ -178,7 +178,7 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 		this.workbench = workbench;
 		this.selection = selection;
 		setWindowTitle(UcofEditorPlugin.INSTANCE.getString("_UI_Wizard_label"));
-		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(UcofEditorPlugin.INSTANCE.getImage("full/wizban/NewIntrepidPowerGrid")));
+		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(UcofEditorPlugin.INSTANCE.getImage("full/wizban/NewIntrepidpowergrid")));
 	}
 
 	/**
@@ -190,7 +190,7 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 	protected Collection<String> getInitialObjectNames() {
 		if (initialObjectNames == null) {
 			initialObjectNames = new ArrayList<String>();
-			for (EClassifier eClassifier : intrepidPowerGridPackage.getEClassifiers()) {
+			for (EClassifier eClassifier : intrepidpowergridPackage.getEClassifiers()) {
 				if (eClassifier instanceof EClass) {
 					EClass eClass = (EClass)eClassifier;
 					if (!eClass.isAbstract()) {
@@ -210,8 +210,8 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	protected EObject createInitialModel() {
-		EClass eClass = (EClass)intrepidPowerGridPackage.getEClassifier(initialObjectCreationPage.getInitialObjectName());
-		EObject rootObject = intrepidPowerGridFactory.create(eClass);
+		EClass eClass = (EClass)intrepidpowergridPackage.getEClassifier(initialObjectCreationPage.getInitialObjectName());
+		EObject rootObject = intrepidpowergridFactory.create(eClass);
 		return rootObject;
 	}
 
@@ -312,14 +312,14 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public class IntrepidPowerGridModelWizardNewFileCreationPage extends WizardNewFileCreationPage {
+	public class IntrepidpowergridModelWizardNewFileCreationPage extends WizardNewFileCreationPage {
 		/**
 		 * Pass in the selection.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		public IntrepidPowerGridModelWizardNewFileCreationPage(String pageId, IStructuredSelection selection) {
+		public IntrepidpowergridModelWizardNewFileCreationPage(String pageId, IStructuredSelection selection) {
 			super(pageId, selection);
 		}
 
@@ -359,7 +359,7 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public class IntrepidPowerGridModelWizardInitialObjectCreationPage extends WizardPage {
+	public class IntrepidpowergridModelWizardInitialObjectCreationPage extends WizardPage {
 		/**
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -387,7 +387,7 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		public IntrepidPowerGridModelWizardInitialObjectCreationPage(String pageId) {
+		public IntrepidpowergridModelWizardInitialObjectCreationPage(String pageId) {
 			super(pageId);
 		}
 
@@ -571,10 +571,10 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 	public void addPages() {
 		// Create a page, set the title, and the initial model file name.
 		//
-		newFileCreationPage = new IntrepidPowerGridModelWizardNewFileCreationPage("Whatever", selection);
-		newFileCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidPowerGridModelWizard_label"));
-		newFileCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidPowerGridModelWizard_description"));
-		newFileCreationPage.setFileName(UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidPowerGridEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
+		newFileCreationPage = new IntrepidpowergridModelWizardNewFileCreationPage("Whatever", selection);
+		newFileCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidpowergridModelWizard_label"));
+		newFileCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidpowergridModelWizard_description"));
+		newFileCreationPage.setFileName(UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidpowergridEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
 		addPage(newFileCreationPage);
 
 		// Try and get the resource selection to determine a current directory for the file dialog.
@@ -600,7 +600,7 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 
 					// Make up a unique new name here.
 					//
-					String defaultModelBaseFilename = UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidPowerGridEditorFilenameDefaultBase");
+					String defaultModelBaseFilename = UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidpowergridEditorFilenameDefaultBase");
 					String defaultModelFilenameExtension = FILE_EXTENSIONS.get(0);
 					String modelFilename = defaultModelBaseFilename + "." + defaultModelFilenameExtension;
 					for (int i = 1; ((IContainer)selectedResource).findMember(modelFilename) != null; ++i) {
@@ -610,8 +610,8 @@ public class IntrepidPowerGridModelWizard extends Wizard implements INewWizard {
 				}
 			}
 		}
-		initialObjectCreationPage = new IntrepidPowerGridModelWizardInitialObjectCreationPage("Whatever2");
-		initialObjectCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidPowerGridModelWizard_label"));
+		initialObjectCreationPage = new IntrepidpowergridModelWizardInitialObjectCreationPage("Whatever2");
+		initialObjectCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidpowergridModelWizard_label"));
 		initialObjectCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_Wizard_initial_object_description"));
 		addPage(initialObjectCreationPage);
 	}

@@ -1,13 +1,13 @@
 /**
  */
-package targets.IntrepidPowerGrid.util;
+package targets.intrepidpowergrid.util;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
 
-import targets.IntrepidPowerGrid.*;
+import targets.intrepidpowergrid.*;
 
 import targets.powergrid.SuperElectricalGridType;
 import targets.powergrid.SuperElectricalInterfaceType;
@@ -25,17 +25,17 @@ import ucof.common.etypes.SuperTrackingType;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see targets.IntrepidPowerGrid.IntrepidPowerGridPackage
+ * @see targets.intrepidpowergrid.IntrepidpowergridPackage
  * @generated
  */
-public class IntrepidPowerGridSwitch<T> extends Switch<T> {
+public class IntrepidpowergridSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static IntrepidPowerGridPackage modelPackage;
+	protected static IntrepidpowergridPackage modelPackage;
 
 	/**
 	 * Creates an instance of the switch.
@@ -43,9 +43,9 @@ public class IntrepidPowerGridSwitch<T> extends Switch<T> {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntrepidPowerGridSwitch() {
+	public IntrepidpowergridSwitch() {
 		if (modelPackage == null) {
-			modelPackage = IntrepidPowerGridPackage.eINSTANCE;
+			modelPackage = IntrepidpowergridPackage.eINSTANCE;
 		}
 	}
 
@@ -72,7 +72,7 @@ public class IntrepidPowerGridSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case IntrepidPowerGridPackage.INTREPID_ELECTRICAL_GRID: {
+			case IntrepidpowergridPackage.INTREPID_ELECTRICAL_GRID: {
 				intrepidElectricalGrid intrepidElectricalGrid = (intrepidElectricalGrid)theEObject;
 				T result = caseintrepidElectricalGrid(intrepidElectricalGrid);
 				if (result == null) result = caseSuperElectricalGridType(intrepidElectricalGrid);
@@ -81,7 +81,7 @@ public class IntrepidPowerGridSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IntrepidPowerGridPackage.INTREPID_ELECTRICAL_INTERFACE: {
+			case IntrepidpowergridPackage.INTREPID_ELECTRICAL_INTERFACE: {
 				intrepidElectricalInterface intrepidElectricalInterface = (intrepidElectricalInterface)theEObject;
 				T result = caseintrepidElectricalInterface(intrepidElectricalInterface);
 				if (result == null) result = caseSuperElectricalInterfaceType(intrepidElectricalInterface);
@@ -200,4 +200,4 @@ public class IntrepidPowerGridSwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //IntrepidPowerGridSwitch
+} //IntrepidpowergridSwitch

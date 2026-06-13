@@ -1,6 +1,6 @@
 /**
  */
-package targets.CanTransceiver.util;
+package targets.cantransceiver.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -9,12 +9,13 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
-import targets.CanTransceiver.*;
-
 import targets.SuperHardwarePortType;
 import targets.SuperTargetType;
 
+import targets.cantransceiver.*;
+
 import targets.powergrid.SuperPowerType;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
@@ -23,17 +24,17 @@ import ucof.common.etypes.SuperTrackingType;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see targets.CanTransceiver.CanTransceiverPackage
+ * @see targets.cantransceiver.CantransceiverPackage
  * @generated
  */
-public class CanTransceiverAdapterFactory extends AdapterFactoryImpl {
+public class CantransceiverAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static CanTransceiverPackage modelPackage;
+	protected static CantransceiverPackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -41,9 +42,9 @@ public class CanTransceiverAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CanTransceiverAdapterFactory() {
+	public CantransceiverAdapterFactory() {
 		if (modelPackage == null) {
-			modelPackage = CanTransceiverPackage.eINSTANCE;
+			modelPackage = CantransceiverPackage.eINSTANCE;
 		}
 	}
 
@@ -72,8 +73,8 @@ public class CanTransceiverAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CanTransceiverSwitch<Adapter> modelSwitch =
-		new CanTransceiverSwitch<Adapter>() {
+	protected CantransceiverSwitch<Adapter> modelSwitch =
+		new CantransceiverSwitch<Adapter>() {
 			@Override
 			public Adapter casesn65hvd230(sn65hvd230 object) {
 				return createsn65hvd230Adapter();
@@ -127,13 +128,13 @@ public class CanTransceiverAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.CanTransceiver.sn65hvd230 <em>sn65hvd230</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.cantransceiver.sn65hvd230 <em>sn65hvd230</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.CanTransceiver.sn65hvd230
+	 * @see targets.cantransceiver.sn65hvd230
 	 * @generated
 	 */
 	public Adapter createsn65hvd230Adapter() {
@@ -141,13 +142,13 @@ public class CanTransceiverAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.CanTransceiver.canTransceiverPorts <em>can Transceiver Ports</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.cantransceiver.canTransceiverPorts <em>can Transceiver Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.CanTransceiver.canTransceiverPorts
+	 * @see targets.cantransceiver.canTransceiverPorts
 	 * @generated
 	 */
 	public Adapter createcanTransceiverPortsAdapter() {
@@ -155,13 +156,13 @@ public class CanTransceiverAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.CanTransceiver.canTransceiverPort <em>can Transceiver Port</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.cantransceiver.canTransceiverPort <em>can Transceiver Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.CanTransceiver.canTransceiverPort
+	 * @see targets.cantransceiver.canTransceiverPort
 	 * @generated
 	 */
 	public Adapter createcanTransceiverPortAdapter() {
@@ -250,4 +251,4 @@ public class CanTransceiverAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //CanTransceiverAdapterFactory
+} //CantransceiverAdapterFactory

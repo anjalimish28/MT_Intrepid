@@ -1,6 +1,6 @@
 /**
  */
-package targets.HallSensor.provider;
+package targets.hallsensor.provider;
 
 
 import java.util.Collection;
@@ -16,18 +16,19 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.HallSensor.HallSensorFactory;
-import targets.HallSensor.HallSensorPackage;
-import targets.HallSensor.mts360;
+import targets.hallsensor.HallsensorFactory;
+import targets.hallsensor.HallsensorPackage;
+import targets.hallsensor.mts360;
 
 import targets.powergrid.PowergridFactory;
 import targets.powergrid.PowergridPackage;
+
 import targets.provider.SuperTargetTypeItemProvider;
 
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.HallSensor.mts360} object.
+ * This is the item provider adapter for a {@link targets.hallsensor.mts360} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -71,7 +72,7 @@ public class mts360ItemProvider extends SuperTargetTypeItemProvider {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES);
-			childrenFeatures.add(HallSensorPackage.Literals.MTS360__PORTS);
+			childrenFeatures.add(HallsensorPackage.Literals.MTS360__PORTS);
 		}
 		return childrenFeatures;
 	}
@@ -127,8 +128,8 @@ public class mts360ItemProvider extends SuperTargetTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(mts360.class)) {
-			case HallSensorPackage.MTS360__ELECTRICAL_INTERFACES:
-			case HallSensorPackage.MTS360__PORTS:
+			case HallsensorPackage.MTS360__ELECTRICAL_INTERFACES:
+			case HallsensorPackage.MTS360__PORTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -153,8 +154,8 @@ public class mts360ItemProvider extends SuperTargetTypeItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(HallSensorPackage.Literals.MTS360__PORTS,
-				 HallSensorFactory.eINSTANCE.createhallPorts()));
+				(HallsensorPackage.Literals.MTS360__PORTS,
+				 HallsensorFactory.eINSTANCE.createhallPorts()));
 	}
 
 	/**

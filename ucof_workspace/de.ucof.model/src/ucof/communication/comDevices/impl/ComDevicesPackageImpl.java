@@ -8,26 +8,50 @@ import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import targets.ADC.ADCPackage;
-import targets.ADC.impl.ADCPackageImpl;
-import targets.CCDPU.CCDPUPackage;
-import targets.CCDPU.impl.CCDPUPackageImpl;
-import targets.CanTransceiver.CanTransceiverPackage;
-import targets.CanTransceiver.impl.CanTransceiverPackageImpl;
-import targets.HallSensor.HallSensorPackage;
-import targets.HallSensor.impl.HallSensorPackageImpl;
-import targets.IntrepidPowerGrid.IntrepidPowerGridPackage;
-import targets.IntrepidPowerGrid.impl.IntrepidPowerGridPackageImpl;
-import targets.MotorController.MotorControllerPackage;
-import targets.MotorController.impl.MotorControllerPackageImpl;
-import targets.RDC.RDCPackage;
-import targets.RDC.impl.RDCPackageImpl;
-import targets.Sheild.SheildPackage;
-import targets.Sheild.impl.SheildPackageImpl;
 import targets.TargetsPackage;
+
+import targets.adc.AdcPackage;
+
+import targets.adc.impl.AdcPackageImpl;
+
+import targets.cantransceiver.CantransceiverPackage;
+
+import targets.cantransceiver.impl.CantransceiverPackageImpl;
+
+import targets.cpn.CpnPackage;
+
+import targets.cpn.impl.CpnPackageImpl;
+
+import targets.hallsensor.HallsensorPackage;
+
+import targets.hallsensor.impl.HallsensorPackageImpl;
+
 import targets.impl.TargetsPackageImpl;
+
+import targets.intrepidgateway.IntrepidgatewayPackage;
+
+import targets.intrepidgateway.impl.IntrepidgatewayPackageImpl;
+
+import targets.intrepidpowergrid.IntrepidpowergridPackage;
+
+import targets.intrepidpowergrid.impl.IntrepidpowergridPackageImpl;
+
+import targets.motorcontroller.MotorcontrollerPackage;
+
+import targets.motorcontroller.impl.MotorcontrollerPackageImpl;
+
 import targets.powergrid.PowergridPackage;
+
 import targets.powergrid.impl.PowergridPackageImpl;
+
+import targets.rdc.RdcPackage;
+
+import targets.rdc.impl.RdcPackageImpl;
+
+import targets.sheild.SheildPackage;
+
+import targets.sheild.impl.SheildPackageImpl;
+
 import ucof.UcofPackage;
 
 import ucof.assignments.AssignmentsPackage;
@@ -76,6 +100,7 @@ import ucof.communication.comDevices.ComDevicesFactory;
 import ucof.communication.comDevices.ComDevicesPackage;
 import ucof.communication.comDevices.CommunicationDevices;
 import ucof.communication.comDevices.ED247Gateway;
+import ucof.communication.comDevices.GenericGateway;
 import ucof.communication.comDevices.SuperCommunicationDeviceType;
 
 import ucof.communication.configECIC.ConfigECICPackage;
@@ -95,7 +120,9 @@ import ucof.communication.connectors.ConnectorsPackage;
 import ucof.communication.connectors.impl.ConnectorsPackageImpl;
 
 import ucof.communication.i2c.I2cPackage;
+
 import ucof.communication.i2c.impl.I2cPackageImpl;
+
 import ucof.communication.impl.CommunicationPackageImpl;
 
 import ucof.devices.DevicesPackage;
@@ -159,6 +186,13 @@ public class ComDevicesPackageImpl extends EPackageImpl implements ComDevicesPac
 	 * @generated
 	 */
 	private EClass ed247GatewayEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass genericGatewayEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -261,22 +295,24 @@ public class ComDevicesPackageImpl extends EPackageImpl implements ComDevicesPac
 		TargetsPackageImpl theTargetsPackage = (TargetsPackageImpl)(registeredPackage instanceof TargetsPackageImpl ? registeredPackage : TargetsPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PowergridPackage.eNS_URI);
 		PowergridPackageImpl thePowergridPackage = (PowergridPackageImpl)(registeredPackage instanceof PowergridPackageImpl ? registeredPackage : PowergridPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(RDCPackage.eNS_URI);
-		RDCPackageImpl theRDCPackage = (RDCPackageImpl)(registeredPackage instanceof RDCPackageImpl ? registeredPackage : RDCPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ADCPackage.eNS_URI);
-		ADCPackageImpl theADCPackage = (ADCPackageImpl)(registeredPackage instanceof ADCPackageImpl ? registeredPackage : ADCPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(RdcPackage.eNS_URI);
+		RdcPackageImpl theRdcPackage = (RdcPackageImpl)(registeredPackage instanceof RdcPackageImpl ? registeredPackage : RdcPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AdcPackage.eNS_URI);
+		AdcPackageImpl theAdcPackage = (AdcPackageImpl)(registeredPackage instanceof AdcPackageImpl ? registeredPackage : AdcPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(SheildPackage.eNS_URI);
 		SheildPackageImpl theSheildPackage = (SheildPackageImpl)(registeredPackage instanceof SheildPackageImpl ? registeredPackage : SheildPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MotorControllerPackage.eNS_URI);
-		MotorControllerPackageImpl theMotorControllerPackage = (MotorControllerPackageImpl)(registeredPackage instanceof MotorControllerPackageImpl ? registeredPackage : MotorControllerPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CanTransceiverPackage.eNS_URI);
-		CanTransceiverPackageImpl theCanTransceiverPackage = (CanTransceiverPackageImpl)(registeredPackage instanceof CanTransceiverPackageImpl ? registeredPackage : CanTransceiverPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(HallSensorPackage.eNS_URI);
-		HallSensorPackageImpl theHallSensorPackage = (HallSensorPackageImpl)(registeredPackage instanceof HallSensorPackageImpl ? registeredPackage : HallSensorPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CCDPUPackage.eNS_URI);
-		CCDPUPackageImpl theCCDPUPackage = (CCDPUPackageImpl)(registeredPackage instanceof CCDPUPackageImpl ? registeredPackage : CCDPUPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(IntrepidPowerGridPackage.eNS_URI);
-		IntrepidPowerGridPackageImpl theIntrepidPowerGridPackage = (IntrepidPowerGridPackageImpl)(registeredPackage instanceof IntrepidPowerGridPackageImpl ? registeredPackage : IntrepidPowerGridPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MotorcontrollerPackage.eNS_URI);
+		MotorcontrollerPackageImpl theMotorcontrollerPackage = (MotorcontrollerPackageImpl)(registeredPackage instanceof MotorcontrollerPackageImpl ? registeredPackage : MotorcontrollerPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CantransceiverPackage.eNS_URI);
+		CantransceiverPackageImpl theCantransceiverPackage = (CantransceiverPackageImpl)(registeredPackage instanceof CantransceiverPackageImpl ? registeredPackage : CantransceiverPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(HallsensorPackage.eNS_URI);
+		HallsensorPackageImpl theHallsensorPackage = (HallsensorPackageImpl)(registeredPackage instanceof HallsensorPackageImpl ? registeredPackage : HallsensorPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CpnPackage.eNS_URI);
+		CpnPackageImpl theCpnPackage = (CpnPackageImpl)(registeredPackage instanceof CpnPackageImpl ? registeredPackage : CpnPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(IntrepidpowergridPackage.eNS_URI);
+		IntrepidpowergridPackageImpl theIntrepidpowergridPackage = (IntrepidpowergridPackageImpl)(registeredPackage instanceof IntrepidpowergridPackageImpl ? registeredPackage : IntrepidpowergridPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(IntrepidgatewayPackage.eNS_URI);
+		IntrepidgatewayPackageImpl theIntrepidgatewayPackage = (IntrepidgatewayPackageImpl)(registeredPackage instanceof IntrepidgatewayPackageImpl ? registeredPackage : IntrepidgatewayPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theComDevicesPackage.createPackageContents();
@@ -307,14 +343,15 @@ public class ComDevicesPackageImpl extends EPackageImpl implements ComDevicesPac
 		theDatabasePackage.createPackageContents();
 		theTargetsPackage.createPackageContents();
 		thePowergridPackage.createPackageContents();
-		theRDCPackage.createPackageContents();
-		theADCPackage.createPackageContents();
+		theRdcPackage.createPackageContents();
+		theAdcPackage.createPackageContents();
 		theSheildPackage.createPackageContents();
-		theMotorControllerPackage.createPackageContents();
-		theCanTransceiverPackage.createPackageContents();
-		theHallSensorPackage.createPackageContents();
-		theCCDPUPackage.createPackageContents();
-		theIntrepidPowerGridPackage.createPackageContents();
+		theMotorcontrollerPackage.createPackageContents();
+		theCantransceiverPackage.createPackageContents();
+		theHallsensorPackage.createPackageContents();
+		theCpnPackage.createPackageContents();
+		theIntrepidpowergridPackage.createPackageContents();
+		theIntrepidgatewayPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theComDevicesPackage.initializePackageContents();
@@ -345,14 +382,15 @@ public class ComDevicesPackageImpl extends EPackageImpl implements ComDevicesPac
 		theDatabasePackage.initializePackageContents();
 		theTargetsPackage.initializePackageContents();
 		thePowergridPackage.initializePackageContents();
-		theRDCPackage.initializePackageContents();
-		theADCPackage.initializePackageContents();
+		theRdcPackage.initializePackageContents();
+		theAdcPackage.initializePackageContents();
 		theSheildPackage.initializePackageContents();
-		theMotorControllerPackage.initializePackageContents();
-		theCanTransceiverPackage.initializePackageContents();
-		theHallSensorPackage.initializePackageContents();
-		theCCDPUPackage.initializePackageContents();
-		theIntrepidPowerGridPackage.initializePackageContents();
+		theMotorcontrollerPackage.initializePackageContents();
+		theCantransceiverPackage.initializePackageContents();
+		theHallsensorPackage.initializePackageContents();
+		theCpnPackage.initializePackageContents();
+		theIntrepidpowergridPackage.initializePackageContents();
+		theIntrepidgatewayPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theComDevicesPackage.freeze();
@@ -403,6 +441,15 @@ public class ComDevicesPackageImpl extends EPackageImpl implements ComDevicesPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getGenericGateway() {
+		return genericGatewayEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ComDevicesFactory getComDevicesFactory() {
 		return (ComDevicesFactory)getEFactoryInstance();
 	}
@@ -432,6 +479,8 @@ public class ComDevicesPackageImpl extends EPackageImpl implements ComDevicesPac
 		superCommunicationDeviceTypeEClass = createEClass(SUPER_COMMUNICATION_DEVICE_TYPE);
 
 		ed247GatewayEClass = createEClass(ED247_GATEWAY);
+
+		genericGatewayEClass = createEClass(GENERIC_GATEWAY);
 	}
 
 	/**
@@ -468,6 +517,7 @@ public class ComDevicesPackageImpl extends EPackageImpl implements ComDevicesPac
 		communicationDevicesEClass.getESuperTypes().add(theEtypesPackage.getSuperSetType());
 		superCommunicationDeviceTypeEClass.getESuperTypes().add(theEtypesPackage.getSuperDeviceType());
 		ed247GatewayEClass.getESuperTypes().add(this.getSuperCommunicationDeviceType());
+		genericGatewayEClass.getESuperTypes().add(this.getSuperCommunicationDeviceType());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(communicationDevicesEClass, CommunicationDevices.class, "CommunicationDevices", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -476,6 +526,8 @@ public class ComDevicesPackageImpl extends EPackageImpl implements ComDevicesPac
 		initEClass(superCommunicationDeviceTypeEClass, SuperCommunicationDeviceType.class, "SuperCommunicationDeviceType", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(ed247GatewayEClass, ED247Gateway.class, "ED247Gateway", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(genericGatewayEClass, GenericGateway.class, "GenericGateway", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 	}
 
 } //ComDevicesPackageImpl

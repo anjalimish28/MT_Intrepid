@@ -3,9 +3,11 @@
 package ucof.assignments.impl;
 
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import ucof.assignments.AssignmentsPackage;
 import ucof.assignments.PortToPortAssignment;
 
@@ -33,6 +35,7 @@ public class PortToPortAssignmentImpl extends SuperAssignmentTypeImpl implements
 	 * @ordered
 	 */
 	protected static final float TRANSMISSION_RATE_EDEFAULT = 0.0F;
+
 	/**
 	 * The cached value of the '{@link #getTransmissionRate() <em>Transmission Rate</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -52,6 +55,7 @@ public class PortToPortAssignmentImpl extends SuperAssignmentTypeImpl implements
 	 * @ordered
 	 */
 	protected static final float REFRESH_RATE_EDEFAULT = 0.0F;
+
 	/**
 	 * The cached value of the '{@link #getRefreshRate() <em>Refresh Rate</em>}' attribute.
 	 * <!-- begin-user-doc -->

@@ -1,6 +1,6 @@
 /**
  */
-package targets.Sheild;
+package targets.sheild;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -23,7 +23,7 @@ import ucof.common.etypes.EtypesPackage;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see targets.Sheild.SheildFactory
+ * @see targets.sheild.SheildFactory
  * @model kind="package"
  * @generated
  */
@@ -34,7 +34,7 @@ public interface SheildPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNAME = "Sheild";
+	String eNAME = "sheild";
 
 	/**
 	 * The package namespace URI.
@@ -58,14 +58,14 @@ public interface SheildPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	SheildPackage eINSTANCE = targets.Sheild.impl.SheildPackageImpl.init();
+	SheildPackage eINSTANCE = targets.sheild.impl.SheildPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link targets.Sheild.impl.arduinosheildImpl <em>arduinosheild</em>}' class.
+	 * The meta object id for the '{@link targets.sheild.impl.arduinosheildImpl <em>arduinosheild</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.Sheild.impl.arduinosheildImpl
-	 * @see targets.Sheild.impl.SheildPackageImpl#getarduinosheild()
+	 * @see targets.sheild.impl.arduinosheildImpl
+	 * @see targets.sheild.impl.SheildPackageImpl#getarduinosheild()
 	 * @generated
 	 */
 	int ARDUINOSHEILD = 0;
@@ -206,11 +206,11 @@ public interface SheildPackage extends EPackage {
 	int ARDUINOSHEILD_OPERATION_COUNT = TargetsPackage.SUPER_TARGET_TYPE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link targets.Sheild.impl.sheildPortsImpl <em>sheild Ports</em>}' class.
+	 * The meta object id for the '{@link targets.sheild.impl.sheildPortsImpl <em>sheild Ports</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.Sheild.impl.sheildPortsImpl
-	 * @see targets.Sheild.impl.SheildPackageImpl#getsheildPorts()
+	 * @see targets.sheild.impl.sheildPortsImpl
+	 * @see targets.sheild.impl.SheildPackageImpl#getsheildPorts()
 	 * @generated
 	 */
 	int SHEILD_PORTS = 1;
@@ -324,11 +324,11 @@ public interface SheildPackage extends EPackage {
 	int SHEILD_PORTS_OPERATION_COUNT = EtypesPackage.SUPER_TRACKING_TYPE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link targets.Sheild.impl.sheildPortImpl <em>sheild Port</em>}' class.
+	 * The meta object id for the '{@link targets.sheild.impl.sheildPortImpl <em>sheild Port</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.Sheild.impl.sheildPortImpl
-	 * @see targets.Sheild.impl.SheildPackageImpl#getsheildPort()
+	 * @see targets.sheild.impl.sheildPortImpl
+	 * @see targets.sheild.impl.SheildPackageImpl#getsheildPort()
 	 * @generated
 	 */
 	int SHEILD_PORT = 2;
@@ -470,63 +470,63 @@ public interface SheildPackage extends EPackage {
 
 
 	/**
-	 * Returns the meta object for class '{@link targets.Sheild.arduinosheild <em>arduinosheild</em>}'.
+	 * Returns the meta object for class '{@link targets.sheild.arduinosheild <em>arduinosheild</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>arduinosheild</em>'.
-	 * @see targets.Sheild.arduinosheild
+	 * @see targets.sheild.arduinosheild
 	 * @generated
 	 */
 	EClass getarduinosheild();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link targets.Sheild.arduinosheild#getPorts <em>Ports</em>}'.
+	 * Returns the meta object for the containment reference '{@link targets.sheild.arduinosheild#getPorts <em>Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Ports</em>'.
-	 * @see targets.Sheild.arduinosheild#getPorts()
+	 * @see targets.sheild.arduinosheild#getPorts()
 	 * @see #getarduinosheild()
 	 * @generated
 	 */
 	EReference getarduinosheild_Ports();
 
 	/**
-	 * Returns the meta object for class '{@link targets.Sheild.sheildPorts <em>sheild Ports</em>}'.
+	 * Returns the meta object for class '{@link targets.sheild.sheildPorts <em>sheild Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>sheild Ports</em>'.
-	 * @see targets.Sheild.sheildPorts
+	 * @see targets.sheild.sheildPorts
 	 * @generated
 	 */
 	EClass getsheildPorts();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link targets.Sheild.sheildPorts#getPort <em>Port</em>}'.
+	 * Returns the meta object for the containment reference list '{@link targets.sheild.sheildPorts#getPort <em>Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Port</em>'.
-	 * @see targets.Sheild.sheildPorts#getPort()
+	 * @see targets.sheild.sheildPorts#getPort()
 	 * @see #getsheildPorts()
 	 * @generated
 	 */
 	EReference getsheildPorts_Port();
 
 	/**
-	 * Returns the meta object for class '{@link targets.Sheild.sheildPort <em>sheild Port</em>}'.
+	 * Returns the meta object for class '{@link targets.sheild.sheildPort <em>sheild Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>sheild Port</em>'.
-	 * @see targets.Sheild.sheildPort
+	 * @see targets.sheild.sheildPort
 	 * @generated
 	 */
 	EClass getsheildPort();
 
 	/**
-	 * Returns the meta object for the attribute '{@link targets.Sheild.sheildPort#getPinName <em>Pin Name</em>}'.
+	 * Returns the meta object for the attribute '{@link targets.sheild.sheildPort#getPinName <em>Pin Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Pin Name</em>'.
-	 * @see targets.Sheild.sheildPort#getPinName()
+	 * @see targets.sheild.sheildPort#getPinName()
 	 * @see #getsheildPort()
 	 * @generated
 	 */
@@ -556,11 +556,11 @@ public interface SheildPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link targets.Sheild.impl.arduinosheildImpl <em>arduinosheild</em>}' class.
+		 * The meta object literal for the '{@link targets.sheild.impl.arduinosheildImpl <em>arduinosheild</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.Sheild.impl.arduinosheildImpl
-		 * @see targets.Sheild.impl.SheildPackageImpl#getarduinosheild()
+		 * @see targets.sheild.impl.arduinosheildImpl
+		 * @see targets.sheild.impl.SheildPackageImpl#getarduinosheild()
 		 * @generated
 		 */
 		EClass ARDUINOSHEILD = eINSTANCE.getarduinosheild();
@@ -574,11 +574,11 @@ public interface SheildPackage extends EPackage {
 		EReference ARDUINOSHEILD__PORTS = eINSTANCE.getarduinosheild_Ports();
 
 		/**
-		 * The meta object literal for the '{@link targets.Sheild.impl.sheildPortsImpl <em>sheild Ports</em>}' class.
+		 * The meta object literal for the '{@link targets.sheild.impl.sheildPortsImpl <em>sheild Ports</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.Sheild.impl.sheildPortsImpl
-		 * @see targets.Sheild.impl.SheildPackageImpl#getsheildPorts()
+		 * @see targets.sheild.impl.sheildPortsImpl
+		 * @see targets.sheild.impl.SheildPackageImpl#getsheildPorts()
 		 * @generated
 		 */
 		EClass SHEILD_PORTS = eINSTANCE.getsheildPorts();
@@ -592,11 +592,11 @@ public interface SheildPackage extends EPackage {
 		EReference SHEILD_PORTS__PORT = eINSTANCE.getsheildPorts_Port();
 
 		/**
-		 * The meta object literal for the '{@link targets.Sheild.impl.sheildPortImpl <em>sheild Port</em>}' class.
+		 * The meta object literal for the '{@link targets.sheild.impl.sheildPortImpl <em>sheild Port</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.Sheild.impl.sheildPortImpl
-		 * @see targets.Sheild.impl.SheildPackageImpl#getsheildPort()
+		 * @see targets.sheild.impl.sheildPortImpl
+		 * @see targets.sheild.impl.SheildPackageImpl#getsheildPort()
 		 * @generated
 		 */
 		EClass SHEILD_PORT = eINSTANCE.getsheildPort();

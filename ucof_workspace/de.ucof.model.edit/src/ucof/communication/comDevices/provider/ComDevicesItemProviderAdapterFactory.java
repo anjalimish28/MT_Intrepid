@@ -118,6 +118,29 @@ public class ComDevicesItemProviderAdapterFactory extends ComDevicesAdapterFacto
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link ucof.communication.comDevices.GenericGateway} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected GenericGatewayItemProvider genericGatewayItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link ucof.communication.comDevices.GenericGateway}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createGenericGatewayAdapter() {
+		if (genericGatewayItemProvider == null) {
+			genericGatewayItemProvider = new GenericGatewayItemProvider(this);
+		}
+
+		return genericGatewayItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -218,6 +241,7 @@ public class ComDevicesItemProviderAdapterFactory extends ComDevicesAdapterFacto
 	public void dispose() {
 		if (communicationDevicesItemProvider != null) communicationDevicesItemProvider.dispose();
 		if (ed247GatewayItemProvider != null) ed247GatewayItemProvider.dispose();
+		if (genericGatewayItemProvider != null) genericGatewayItemProvider.dispose();
 	}
 
 }

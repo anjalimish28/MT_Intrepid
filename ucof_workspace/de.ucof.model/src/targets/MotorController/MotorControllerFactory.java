@@ -1,6 +1,6 @@
 /**
  */
-package targets.MotorController;
+package targets.motorcontroller;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,17 +9,17 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see targets.MotorController.MotorControllerPackage
+ * @see targets.motorcontroller.MotorcontrollerPackage
  * @generated
  */
-public interface MotorControllerFactory extends EFactory {
+public interface MotorcontrollerFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	MotorControllerFactory eINSTANCE = targets.MotorController.impl.MotorControllerFactoryImpl.init();
+	MotorcontrollerFactory eINSTANCE = targets.motorcontroller.impl.MotorcontrollerFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>escon409510</em>'.
@@ -55,6 +55,6 @@ public interface MotorControllerFactory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	MotorControllerPackage getMotorControllerPackage();
+	MotorcontrollerPackage getMotorcontrollerPackage();
 
-} //MotorControllerFactory
+} //MotorcontrollerFactory

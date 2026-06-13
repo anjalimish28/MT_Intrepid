@@ -1,6 +1,6 @@
 /**
  */
-package targets.IntrepidPowerGrid;
+package targets.intrepidpowergrid;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -19,18 +19,18 @@ import targets.powergrid.PowergridPackage;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see targets.IntrepidPowerGrid.IntrepidPowerGridFactory
+ * @see targets.intrepidpowergrid.IntrepidpowergridFactory
  * @model kind="package"
  * @generated
  */
-public interface IntrepidPowerGridPackage extends EPackage {
+public interface IntrepidpowergridPackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNAME = "IntrepidPowerGrid";
+	String eNAME = "intrepidpowergrid";
 
 	/**
 	 * The package namespace URI.
@@ -54,14 +54,14 @@ public interface IntrepidPowerGridPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	IntrepidPowerGridPackage eINSTANCE = targets.IntrepidPowerGrid.impl.IntrepidPowerGridPackageImpl.init();
+	IntrepidpowergridPackage eINSTANCE = targets.intrepidpowergrid.impl.IntrepidpowergridPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link targets.IntrepidPowerGrid.impl.intrepidElectricalGridImpl <em>intrepid Electrical Grid</em>}' class.
+	 * The meta object id for the '{@link targets.intrepidpowergrid.impl.intrepidElectricalGridImpl <em>intrepid Electrical Grid</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.IntrepidPowerGrid.impl.intrepidElectricalGridImpl
-	 * @see targets.IntrepidPowerGrid.impl.IntrepidPowerGridPackageImpl#getintrepidElectricalGrid()
+	 * @see targets.intrepidpowergrid.impl.intrepidElectricalGridImpl
+	 * @see targets.intrepidpowergrid.impl.IntrepidpowergridPackageImpl#getintrepidElectricalGrid()
 	 * @generated
 	 */
 	int INTREPID_ELECTRICAL_GRID = 0;
@@ -184,11 +184,11 @@ public interface IntrepidPowerGridPackage extends EPackage {
 	int INTREPID_ELECTRICAL_GRID_OPERATION_COUNT = PowergridPackage.SUPER_ELECTRICAL_GRID_TYPE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link targets.IntrepidPowerGrid.impl.intrepidElectricalInterfaceImpl <em>intrepid Electrical Interface</em>}' class.
+	 * The meta object id for the '{@link targets.intrepidpowergrid.impl.intrepidElectricalInterfaceImpl <em>intrepid Electrical Interface</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.IntrepidPowerGrid.impl.intrepidElectricalInterfaceImpl
-	 * @see targets.IntrepidPowerGrid.impl.IntrepidPowerGridPackageImpl#getintrepidElectricalInterface()
+	 * @see targets.intrepidpowergrid.impl.intrepidElectricalInterfaceImpl
+	 * @see targets.intrepidpowergrid.impl.IntrepidpowergridPackageImpl#getintrepidElectricalInterface()
 	 * @generated
 	 */
 	int INTREPID_ELECTRICAL_INTERFACE = 1;
@@ -321,21 +321,21 @@ public interface IntrepidPowerGridPackage extends EPackage {
 
 
 	/**
-	 * Returns the meta object for class '{@link targets.IntrepidPowerGrid.intrepidElectricalGrid <em>intrepid Electrical Grid</em>}'.
+	 * Returns the meta object for class '{@link targets.intrepidpowergrid.intrepidElectricalGrid <em>intrepid Electrical Grid</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>intrepid Electrical Grid</em>'.
-	 * @see targets.IntrepidPowerGrid.intrepidElectricalGrid
+	 * @see targets.intrepidpowergrid.intrepidElectricalGrid
 	 * @generated
 	 */
 	EClass getintrepidElectricalGrid();
 
 	/**
-	 * Returns the meta object for class '{@link targets.IntrepidPowerGrid.intrepidElectricalInterface <em>intrepid Electrical Interface</em>}'.
+	 * Returns the meta object for class '{@link targets.intrepidpowergrid.intrepidElectricalInterface <em>intrepid Electrical Interface</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>intrepid Electrical Interface</em>'.
-	 * @see targets.IntrepidPowerGrid.intrepidElectricalInterface
+	 * @see targets.intrepidpowergrid.intrepidElectricalInterface
 	 * @generated
 	 */
 	EClass getintrepidElectricalInterface();
@@ -347,7 +347,7 @@ public interface IntrepidPowerGridPackage extends EPackage {
 	 * @return the factory that creates the instances of the model.
 	 * @generated
 	 */
-	IntrepidPowerGridFactory getIntrepidPowerGridFactory();
+	IntrepidpowergridFactory getIntrepidpowergridFactory();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -364,25 +364,25 @@ public interface IntrepidPowerGridPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link targets.IntrepidPowerGrid.impl.intrepidElectricalGridImpl <em>intrepid Electrical Grid</em>}' class.
+		 * The meta object literal for the '{@link targets.intrepidpowergrid.impl.intrepidElectricalGridImpl <em>intrepid Electrical Grid</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.IntrepidPowerGrid.impl.intrepidElectricalGridImpl
-		 * @see targets.IntrepidPowerGrid.impl.IntrepidPowerGridPackageImpl#getintrepidElectricalGrid()
+		 * @see targets.intrepidpowergrid.impl.intrepidElectricalGridImpl
+		 * @see targets.intrepidpowergrid.impl.IntrepidpowergridPackageImpl#getintrepidElectricalGrid()
 		 * @generated
 		 */
 		EClass INTREPID_ELECTRICAL_GRID = eINSTANCE.getintrepidElectricalGrid();
 
 		/**
-		 * The meta object literal for the '{@link targets.IntrepidPowerGrid.impl.intrepidElectricalInterfaceImpl <em>intrepid Electrical Interface</em>}' class.
+		 * The meta object literal for the '{@link targets.intrepidpowergrid.impl.intrepidElectricalInterfaceImpl <em>intrepid Electrical Interface</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.IntrepidPowerGrid.impl.intrepidElectricalInterfaceImpl
-		 * @see targets.IntrepidPowerGrid.impl.IntrepidPowerGridPackageImpl#getintrepidElectricalInterface()
+		 * @see targets.intrepidpowergrid.impl.intrepidElectricalInterfaceImpl
+		 * @see targets.intrepidpowergrid.impl.IntrepidpowergridPackageImpl#getintrepidElectricalInterface()
 		 * @generated
 		 */
 		EClass INTREPID_ELECTRICAL_INTERFACE = eINSTANCE.getintrepidElectricalInterface();
 
 	}
 
-} //IntrepidPowerGridPackage
+} //IntrepidpowergridPackage

@@ -1,6 +1,6 @@
 /**
  */
-package targets.ADC.presentation;
+package targets.adc.presentation;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -42,12 +42,12 @@ import org.eclipse.ui.PartInitException;
 import ucof.presentation.UcofEditorPlugin;
 
 /**
- * This is the action bar contributor for the ADC model editor.
+ * This is the action bar contributor for the Adc model editor.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class ADCActionBarContributor
+public class AdcActionBarContributor
 	extends EditingDomainActionBarContributor
 	implements ISelectionChangedListener {
 	/**
@@ -150,7 +150,7 @@ public class ADCActionBarContributor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ADCActionBarContributor() {
+	public AdcActionBarContributor() {
 		super(ADDITIONS_LAST_STYLE);
 		loadResourceAction = new LoadResourceAction();
 		validateAction = new ValidateAction();
@@ -181,7 +181,7 @@ public class ADCActionBarContributor
 	public void contributeToMenu(IMenuManager menuManager) {
 		super.contributeToMenu(menuManager);
 
-		IMenuManager submenuManager = new MenuManager(UcofEditorPlugin.INSTANCE.getString("_UI_ADCEditor_menu"), "targets.ADCMenuID");
+		IMenuManager submenuManager = new MenuManager(UcofEditorPlugin.INSTANCE.getString("_UI_AdcEditor_menu"), "targets.adcMenuID");
 		menuManager.insertAfter("additions", submenuManager);
 		submenuManager.add(new Separator("settings"));
 		submenuManager.add(new Separator("actions"));

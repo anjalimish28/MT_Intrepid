@@ -1,6 +1,6 @@
 /**
  */
-package targets.MotorController;
+package targets.motorcontroller;
 
 import targets.SuperHardwarePortType;
 
@@ -13,10 +13,10 @@ import targets.SuperHardwarePortType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link targets.MotorController.esconPort#getPinName <em>Pin Name</em>}</li>
+ *   <li>{@link targets.motorcontroller.esconPort#getPinName <em>Pin Name</em>}</li>
  * </ul>
  *
- * @see targets.MotorController.MotorControllerPackage#getesconPort()
+ * @see targets.motorcontroller.MotorcontrollerPackage#getesconPort()
  * @model
  * @generated
  */
@@ -27,14 +27,14 @@ public interface esconPort extends SuperHardwarePortType {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pin Name</em>' attribute.
 	 * @see #setPinName(String)
-	 * @see targets.MotorController.MotorControllerPackage#getesconPort_PinName()
+	 * @see targets.motorcontroller.MotorcontrollerPackage#getesconPort_PinName()
 	 * @model
 	 * @generated
 	 */
 	String getPinName();
 
 	/**
-	 * Sets the value of the '{@link targets.MotorController.esconPort#getPinName <em>Pin Name</em>}' attribute.
+	 * Sets the value of the '{@link targets.motorcontroller.esconPort#getPinName <em>Pin Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Pin Name</em>' attribute.

@@ -3,6 +3,7 @@
 package ucof.devices.functions.routing;
 
 import org.eclipse.emf.common.util.EList;
+
 import ucof.devices.functions.SuperFunctionType;
 
 /**

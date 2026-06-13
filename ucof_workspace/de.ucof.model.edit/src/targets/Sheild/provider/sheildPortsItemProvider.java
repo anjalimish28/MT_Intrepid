@@ -1,6 +1,6 @@
 /**
  */
-package targets.Sheild.provider;
+package targets.sheild.provider;
 
 
 import java.util.Collection;
@@ -18,16 +18,18 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.Sheild.SheildFactory;
-import targets.Sheild.SheildPackage;
-import targets.Sheild.sheildPorts;
+import targets.sheild.SheildFactory;
+import targets.sheild.SheildPackage;
+import targets.sheild.sheildPorts;
 
 import ucof.common.etypes.EtypesPackage;
+
 import ucof.common.etypes.provider.SuperTrackingTypeItemProvider;
+
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.Sheild.sheildPorts} object.
+ * This is the item provider adapter for a {@link targets.sheild.sheildPorts} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated

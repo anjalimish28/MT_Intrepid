@@ -1274,7 +1274,6 @@ public interface DevicetypesPackage extends EPackage {
 	 */
 	int A664_SWITCH_OPERATION_COUNT = SUPER_SWITCH_TYPE_OPERATION_COUNT + 0;
 
-
 	/**
 	 * The meta object id for the '{@link ucof.devices.devicetypes.impl.ComputingModuleImpl <em>Computing Module</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -1447,7 +1446,6 @@ public interface DevicetypesPackage extends EPackage {
 	 */
 	int COMPUTING_MODULE_OPERATION_COUNT = DevicesPackage.SUPER_PLATFORM_DEVICE_TYPE_OPERATION_COUNT + 0;
 
-
 	/**
 	 * The meta object id for the '{@link ucof.devices.devicetypes.impl.PowerRailImpl <em>Power Rail</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -1592,6 +1590,7 @@ public interface DevicetypesPackage extends EPackage {
 	 * @ordered
 	 */
 	int POWER_RAIL_OPERATION_COUNT = DevicesPackage.SUPER_PLATFORM_DEVICE_TYPE_OPERATION_COUNT + 0;
+
 
 	/**
 	 * Returns the meta object for class '{@link ucof.devices.devicetypes.SuperA653ModuleType <em>Super A653 Module Type</em>}'.

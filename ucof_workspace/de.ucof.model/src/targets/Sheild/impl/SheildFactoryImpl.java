@@ -1,6 +1,6 @@
 /**
  */
-package targets.Sheild.impl;
+package targets.sheild.impl;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -10,7 +10,7 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
-import targets.Sheild.*;
+import targets.sheild.*;
 
 /**
  * <!-- begin-user-doc -->

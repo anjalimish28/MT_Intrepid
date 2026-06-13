@@ -1,0 +1,32 @@
+module RDC {
+
+    @ Motor selection enum
+    enum MotorSelect : U8 {
+        MBS         @< MBS
+        GIMBAL      @< Gimbal
+        FLYWHEEL    @< Flywheel
+    }
+
+    @ Motor direction state
+    enum MotorDirection : U8 {
+        REVERSE @< Reverse state
+        FORWARD @< Forward state
+    }
+
+    @ Custom port for motor command interface
+    port MotorCommand(
+        motor_id:   MotorSelect,        @< Motor ID (0=MBS, 1=Gimbal, 2=Flywheel)
+        enable:     Fw.On,              @< Enable flag (0=disabled, 1=enabled)
+        direction:  MotorDirection,     @< Direction (0=reverse, 1=forward)
+        set_speed:  U16                 @< Motor RPM setpoint (maps to 10-90% PWM duty cycle)
+    )
+
+    @ Custom port for motor speed telemetry data output
+    port SpeedData(
+        motor_id: U8,           @< Motor ID (0=MBS, 1=Gimbal, 2=Flywheel)
+        current_speed: F32,     @< Current actual speed reading (RPM)
+        average_speed: F32,     @< Average speed reading (RPM) (only Gimbal and Flywheel)
+        encoder_value: F32      @< Encoder/rotation sensor value (only Gimbal)
+    )
+
+}

@@ -26,6 +26,7 @@ import ucof.communication.basedonethernet.BasedonethernetFactory;
 import ucof.communication.basedonethernet.arinc664.Arinc664Factory;
 
 import ucof.communication.basedonwired.BasedonwiredFactory;
+
 import ucof.communication.i2c.I2cFactory;
 
 /**

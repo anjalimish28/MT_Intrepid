@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
 import ucof.communication.CommunicationFactory;
 import ucof.communication.CommunicationPackage;
 import ucof.communication.SignalSet;

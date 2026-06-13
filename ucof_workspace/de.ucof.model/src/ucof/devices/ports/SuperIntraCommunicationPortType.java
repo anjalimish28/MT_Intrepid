@@ -4,7 +4,6 @@ package ucof.devices.ports;
 
 import ucof.common.etypes.SuperPortType;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Super Intra Communication Port Type</b></em>'.

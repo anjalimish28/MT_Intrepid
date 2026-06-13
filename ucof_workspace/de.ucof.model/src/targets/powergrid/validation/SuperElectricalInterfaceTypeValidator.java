@@ -18,6 +18,4 @@ public interface SuperElectricalInterfaceTypeValidator {
 	boolean validateMinVoltage(double value);
 	boolean validateMaxVoltage(double value);
 	boolean validateType(interfaceType value);
-
-	boolean validateInterfaceType(interfaceType value);
 }

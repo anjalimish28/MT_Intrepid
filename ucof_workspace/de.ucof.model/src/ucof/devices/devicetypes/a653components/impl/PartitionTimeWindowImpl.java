@@ -9,7 +9,9 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import ucof.common.enums.booleanType;
+
 import ucof.common.etypes.EtypesPackage;
 import ucof.common.etypes.SuperTrackingType;
 

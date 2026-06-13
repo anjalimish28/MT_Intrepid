@@ -5,6 +5,7 @@ package ucof.devices.ports.impl;
 import org.eclipse.emf.ecore.EClass;
 
 import ucof.common.etypes.impl.SuperPortTypeImpl;
+
 import ucof.devices.ports.PortsPackage;
 import ucof.devices.ports.SuperIntraCommunicationPortType;
 

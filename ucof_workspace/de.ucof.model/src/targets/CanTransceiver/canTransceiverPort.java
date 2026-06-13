@@ -1,6 +1,6 @@
 /**
  */
-package targets.CanTransceiver;
+package targets.cantransceiver;
 
 import targets.SuperHardwarePortType;
 
@@ -13,11 +13,11 @@ import targets.SuperHardwarePortType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link targets.CanTransceiver.canTransceiverPort#getPinName <em>Pin Name</em>}</li>
- *   <li>{@link targets.CanTransceiver.canTransceiverPort#getPinNumber <em>Pin Number</em>}</li>
+ *   <li>{@link targets.cantransceiver.canTransceiverPort#getPinName <em>Pin Name</em>}</li>
+ *   <li>{@link targets.cantransceiver.canTransceiverPort#getPinNumber <em>Pin Number</em>}</li>
  * </ul>
  *
- * @see targets.CanTransceiver.CanTransceiverPackage#getcanTransceiverPort()
+ * @see targets.cantransceiver.CantransceiverPackage#getcanTransceiverPort()
  * @model
  * @generated
  */
@@ -28,14 +28,14 @@ public interface canTransceiverPort extends SuperHardwarePortType {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pin Name</em>' attribute.
 	 * @see #setPinName(String)
-	 * @see targets.CanTransceiver.CanTransceiverPackage#getcanTransceiverPort_PinName()
+	 * @see targets.cantransceiver.CantransceiverPackage#getcanTransceiverPort_PinName()
 	 * @model
 	 * @generated
 	 */
 	String getPinName();
 
 	/**
-	 * Sets the value of the '{@link targets.CanTransceiver.canTransceiverPort#getPinName <em>Pin Name</em>}' attribute.
+	 * Sets the value of the '{@link targets.cantransceiver.canTransceiverPort#getPinName <em>Pin Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Pin Name</em>' attribute.
@@ -50,14 +50,14 @@ public interface canTransceiverPort extends SuperHardwarePortType {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pin Number</em>' attribute.
 	 * @see #setPinNumber(int)
-	 * @see targets.CanTransceiver.CanTransceiverPackage#getcanTransceiverPort_PinNumber()
+	 * @see targets.cantransceiver.CantransceiverPackage#getcanTransceiverPort_PinNumber()
 	 * @model
 	 * @generated
 	 */
 	int getPinNumber();
 
 	/**
-	 * Sets the value of the '{@link targets.CanTransceiver.canTransceiverPort#getPinNumber <em>Pin Number</em>}' attribute.
+	 * Sets the value of the '{@link targets.cantransceiver.canTransceiverPort#getPinNumber <em>Pin Number</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Pin Number</em>' attribute.

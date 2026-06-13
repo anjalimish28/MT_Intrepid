@@ -1,6 +1,6 @@
 /**
  */
-package targets.ADC.provider;
+package targets.adc.provider;
 
 
 import java.util.Collection;
@@ -16,18 +16,19 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.ADC.ADCFactory;
-import targets.ADC.ADCPackage;
-import targets.ADC.ads1115;
+import targets.adc.AdcFactory;
+import targets.adc.AdcPackage;
+import targets.adc.ads1115;
 
 import targets.powergrid.PowergridFactory;
 import targets.powergrid.PowergridPackage;
+
 import targets.provider.SuperTargetTypeItemProvider;
 
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.ADC.ads1115} object.
+ * This is the item provider adapter for a {@link targets.adc.ads1115} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -71,7 +72,7 @@ public class ads1115ItemProvider extends SuperTargetTypeItemProvider {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES);
-			childrenFeatures.add(ADCPackage.Literals.ADS1115__PORTS);
+			childrenFeatures.add(AdcPackage.Literals.ADS1115__PORTS);
 		}
 		return childrenFeatures;
 	}
@@ -127,8 +128,8 @@ public class ads1115ItemProvider extends SuperTargetTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(ads1115.class)) {
-			case ADCPackage.ADS1115__ELECTRICAL_INTERFACES:
-			case ADCPackage.ADS1115__PORTS:
+			case AdcPackage.ADS1115__ELECTRICAL_INTERFACES:
+			case AdcPackage.ADS1115__PORTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -153,8 +154,8 @@ public class ads1115ItemProvider extends SuperTargetTypeItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(ADCPackage.Literals.ADS1115__PORTS,
-				 ADCFactory.eINSTANCE.createadcPorts()));
+				(AdcPackage.Literals.ADS1115__PORTS,
+				 AdcFactory.eINSTANCE.createadcPorts()));
 	}
 
 	/**

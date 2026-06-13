@@ -1,6 +1,6 @@
 /**
  */
-package targets.IntrepidPowerGrid.presentation;
+package targets.intrepidpowergrid.presentation;
 
 
 import java.io.IOException;
@@ -155,27 +155,29 @@ import org.eclipse.emf.edit.ui.util.EditUIUtil;
 
 import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 
-import targets.IntrepidPowerGrid.provider.IntrepidPowerGridItemProviderAdapterFactory;
+import targets.intrepidpowergrid.provider.IntrepidpowergridItemProviderAdapterFactory;
 
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 
-import targets.ADC.provider.ADCItemProviderAdapterFactory;
+import targets.adc.provider.AdcItemProviderAdapterFactory;
 
-import targets.CCDPU.provider.CCDPUItemProviderAdapterFactory;
+import targets.cantransceiver.provider.CantransceiverItemProviderAdapterFactory;
 
-import targets.CanTransceiver.provider.CanTransceiverItemProviderAdapterFactory;
+import targets.cpn.provider.CpnItemProviderAdapterFactory;
 
-import targets.HallSensor.provider.HallSensorItemProviderAdapterFactory;
+import targets.hallsensor.provider.HallsensorItemProviderAdapterFactory;
 
-import targets.MotorController.provider.MotorControllerItemProviderAdapterFactory;
+import targets.intrepidgateway.provider.IntrepidgatewayItemProviderAdapterFactory;
 
-import targets.RDC.provider.RDCItemProviderAdapterFactory;
-
-import targets.Sheild.provider.SheildItemProviderAdapterFactory;
+import targets.motorcontroller.provider.MotorcontrollerItemProviderAdapterFactory;
 
 import targets.powergrid.provider.PowergridItemProviderAdapterFactory;
 
 import targets.provider.TargetsItemProviderAdapterFactory;
+
+import targets.rdc.provider.RdcItemProviderAdapterFactory;
+
+import targets.sheild.provider.SheildItemProviderAdapterFactory;
 
 import ucof.assignments.database.provider.DatabaseItemProviderAdapterFactory;
 
@@ -229,12 +231,12 @@ import ucof.provider.UcofItemProviderAdapterFactory;
 
 
 /**
- * This is an example of a IntrepidPowerGrid model editor.
+ * This is an example of a Intrepidpowergrid model editor.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class IntrepidPowerGridEditor
+public class IntrepidpowergridEditor
 	extends MultiPageEditorPart
 	implements IEditingDomainProvider, ISelectionProvider, IMenuListener, IViewerProvider, IGotoMarker {
 	/**
@@ -396,18 +398,18 @@ public class IntrepidPowerGridEditor
 			public void partActivated(IWorkbenchPart p) {
 				if (p instanceof ContentOutline) {
 					if (((ContentOutline)p).getCurrentPage() == contentOutlinePage) {
-						getActionBarContributor().setActiveEditor(IntrepidPowerGridEditor.this);
+						getActionBarContributor().setActiveEditor(IntrepidpowergridEditor.this);
 
 						setCurrentViewer(contentOutlineViewer);
 					}
 				}
 				else if (p instanceof PropertySheet) {
 					if (propertySheetPages.contains(((PropertySheet)p).getCurrentPage())) {
-						getActionBarContributor().setActiveEditor(IntrepidPowerGridEditor.this);
+						getActionBarContributor().setActiveEditor(IntrepidpowergridEditor.this);
 						handleActivate();
 					}
 				}
-				else if (p == IntrepidPowerGridEditor.this) {
+				else if (p == IntrepidpowergridEditor.this) {
 					handleActivate();
 				}
 			}
@@ -580,7 +582,7 @@ public class IntrepidPowerGridEditor
 								 public void run() {
 									 removedResources.addAll(visitor.getRemovedResources());
 									 if (!isDirty()) {
-										 getSite().getPage().closeEditor(IntrepidPowerGridEditor.this, false);
+										 getSite().getPage().closeEditor(IntrepidpowergridEditor.this, false);
 									 }
 								 }
 							 });
@@ -591,7 +593,7 @@ public class IntrepidPowerGridEditor
 							(new Runnable() {
 								 public void run() {
 									 changedResources.addAll(visitor.getChangedResources());
-									 if (getSite().getPage().getActiveEditor() == IntrepidPowerGridEditor.this) {
+									 if (getSite().getPage().getActiveEditor() == IntrepidpowergridEditor.this) {
 										 handleActivate();
 									 }
 								 }
@@ -623,7 +625,7 @@ public class IntrepidPowerGridEditor
 
 		if (!removedResources.isEmpty()) {
 			if (handleDirtyConflict()) {
-				getSite().getPage().closeEditor(IntrepidPowerGridEditor.this, false);
+				getSite().getPage().closeEditor(IntrepidpowergridEditor.this, false);
 			}
 			else {
 				removedResources.clear();
@@ -751,7 +753,7 @@ public class IntrepidPowerGridEditor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntrepidPowerGridEditor() {
+	public IntrepidpowergridEditor() {
 		super();
 		initializeEditingDomain();
 	}
@@ -794,14 +796,15 @@ public class IntrepidPowerGridEditor
 		adapterFactory.addAdapterFactory(new DatabaseItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new TargetsItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new PowergridItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new RDCItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new ADCItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new RdcItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new AdcItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new SheildItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new MotorControllerItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new CanTransceiverItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new HallSensorItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new CCDPUItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new IntrepidPowerGridItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new MotorcontrollerItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new CantransceiverItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new HallsensorItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new CpnItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new IntrepidpowergridItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new IntrepidgatewayItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
 		// Create the command stack that will notify this editor as commands are executed.
@@ -1122,7 +1125,7 @@ public class IntrepidPowerGridEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), IntrepidPowerGridEditor.this) {
+					new ViewerPane(getSite().getPage(), IntrepidpowergridEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							Tree tree = new Tree(composite, SWT.MULTI);
@@ -1157,7 +1160,7 @@ public class IntrepidPowerGridEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), IntrepidPowerGridEditor.this) {
+					new ViewerPane(getSite().getPage(), IntrepidpowergridEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							Tree tree = new Tree(composite, SWT.MULTI);
@@ -1186,7 +1189,7 @@ public class IntrepidPowerGridEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), IntrepidPowerGridEditor.this) {
+					new ViewerPane(getSite().getPage(), IntrepidpowergridEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new ListViewer(composite);
@@ -1211,7 +1214,7 @@ public class IntrepidPowerGridEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), IntrepidPowerGridEditor.this) {
+					new ViewerPane(getSite().getPage(), IntrepidpowergridEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TreeViewer(composite);
@@ -1238,7 +1241,7 @@ public class IntrepidPowerGridEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), IntrepidPowerGridEditor.this) {
+					new ViewerPane(getSite().getPage(), IntrepidpowergridEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TableViewer(composite);
@@ -1281,7 +1284,7 @@ public class IntrepidPowerGridEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), IntrepidPowerGridEditor.this) {
+					new ViewerPane(getSite().getPage(), IntrepidpowergridEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TreeViewer(composite);
@@ -1503,8 +1506,8 @@ public class IntrepidPowerGridEditor
 			new ExtendedPropertySheetPage(editingDomain, ExtendedPropertySheetPage.Decoration.NONE, null, 0, false) {
 				@Override
 				public void setSelectionToViewer(List<?> selection) {
-					IntrepidPowerGridEditor.this.setSelectionToViewer(selection);
-					IntrepidPowerGridEditor.this.setFocus();
+					IntrepidpowergridEditor.this.setSelectionToViewer(selection);
+					IntrepidpowergridEditor.this.setFocus();
 				}
 
 				@Override

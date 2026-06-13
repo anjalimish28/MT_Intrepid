@@ -137,7 +137,6 @@ public interface EdataPackage extends EPackage {
 	 */
 	int POSITIVE_INT_TYPE = 7;
 
-
 	/**
 	 * The meta object id for the '<em>MAC Address Type</em>' data type.
 	 * <!-- begin-user-doc -->

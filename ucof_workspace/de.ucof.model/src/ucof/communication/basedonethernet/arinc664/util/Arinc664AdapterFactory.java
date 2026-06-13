@@ -13,8 +13,8 @@ import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
 import ucof.communication.SuperCommunicationInterfaceType;
-
 import ucof.communication.SuperMessageType;
+
 import ucof.communication.basedonethernet.EthernetPort;
 
 import ucof.communication.basedonethernet.arinc664.*;

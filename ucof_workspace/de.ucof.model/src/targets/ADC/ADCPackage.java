@@ -1,6 +1,6 @@
 /**
  */
-package targets.ADC;
+package targets.adc;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -23,18 +23,18 @@ import ucof.common.etypes.EtypesPackage;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see targets.ADC.ADCFactory
+ * @see targets.adc.AdcFactory
  * @model kind="package"
  * @generated
  */
-public interface ADCPackage extends EPackage {
+public interface AdcPackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNAME = "ADC";
+	String eNAME = "adc";
 
 	/**
 	 * The package namespace URI.
@@ -58,14 +58,14 @@ public interface ADCPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	ADCPackage eINSTANCE = targets.ADC.impl.ADCPackageImpl.init();
+	AdcPackage eINSTANCE = targets.adc.impl.AdcPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link targets.ADC.impl.ads1115Impl <em>ads1115</em>}' class.
+	 * The meta object id for the '{@link targets.adc.impl.ads1115Impl <em>ads1115</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.ADC.impl.ads1115Impl
-	 * @see targets.ADC.impl.ADCPackageImpl#getads1115()
+	 * @see targets.adc.impl.ads1115Impl
+	 * @see targets.adc.impl.AdcPackageImpl#getads1115()
 	 * @generated
 	 */
 	int ADS1115 = 0;
@@ -197,11 +197,11 @@ public interface ADCPackage extends EPackage {
 	int ADS1115_OPERATION_COUNT = TargetsPackage.SUPER_TARGET_TYPE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link targets.ADC.impl.adcPortsImpl <em>adc Ports</em>}' class.
+	 * The meta object id for the '{@link targets.adc.impl.adcPortsImpl <em>adc Ports</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.ADC.impl.adcPortsImpl
-	 * @see targets.ADC.impl.ADCPackageImpl#getadcPorts()
+	 * @see targets.adc.impl.adcPortsImpl
+	 * @see targets.adc.impl.AdcPackageImpl#getadcPorts()
 	 * @generated
 	 */
 	int ADC_PORTS = 1;
@@ -315,11 +315,11 @@ public interface ADCPackage extends EPackage {
 	int ADC_PORTS_OPERATION_COUNT = EtypesPackage.SUPER_TRACKING_TYPE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link targets.ADC.impl.adcPortImpl <em>adc Port</em>}' class.
+	 * The meta object id for the '{@link targets.adc.impl.adcPortImpl <em>adc Port</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.ADC.impl.adcPortImpl
-	 * @see targets.ADC.impl.ADCPackageImpl#getadcPort()
+	 * @see targets.adc.impl.adcPortImpl
+	 * @see targets.adc.impl.AdcPackageImpl#getadcPort()
 	 * @generated
 	 */
 	int ADC_PORT = 2;
@@ -461,63 +461,63 @@ public interface ADCPackage extends EPackage {
 
 
 	/**
-	 * Returns the meta object for class '{@link targets.ADC.ads1115 <em>ads1115</em>}'.
+	 * Returns the meta object for class '{@link targets.adc.ads1115 <em>ads1115</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>ads1115</em>'.
-	 * @see targets.ADC.ads1115
+	 * @see targets.adc.ads1115
 	 * @generated
 	 */
 	EClass getads1115();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link targets.ADC.ads1115#getPorts <em>Ports</em>}'.
+	 * Returns the meta object for the containment reference '{@link targets.adc.ads1115#getPorts <em>Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Ports</em>'.
-	 * @see targets.ADC.ads1115#getPorts()
+	 * @see targets.adc.ads1115#getPorts()
 	 * @see #getads1115()
 	 * @generated
 	 */
 	EReference getads1115_Ports();
 
 	/**
-	 * Returns the meta object for class '{@link targets.ADC.adcPorts <em>adc Ports</em>}'.
+	 * Returns the meta object for class '{@link targets.adc.adcPorts <em>adc Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>adc Ports</em>'.
-	 * @see targets.ADC.adcPorts
+	 * @see targets.adc.adcPorts
 	 * @generated
 	 */
 	EClass getadcPorts();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link targets.ADC.adcPorts#getPort <em>Port</em>}'.
+	 * Returns the meta object for the containment reference list '{@link targets.adc.adcPorts#getPort <em>Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Port</em>'.
-	 * @see targets.ADC.adcPorts#getPort()
+	 * @see targets.adc.adcPorts#getPort()
 	 * @see #getadcPorts()
 	 * @generated
 	 */
 	EReference getadcPorts_Port();
 
 	/**
-	 * Returns the meta object for class '{@link targets.ADC.adcPort <em>adc Port</em>}'.
+	 * Returns the meta object for class '{@link targets.adc.adcPort <em>adc Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>adc Port</em>'.
-	 * @see targets.ADC.adcPort
+	 * @see targets.adc.adcPort
 	 * @generated
 	 */
 	EClass getadcPort();
 
 	/**
-	 * Returns the meta object for the attribute '{@link targets.ADC.adcPort#getPinName <em>Pin Name</em>}'.
+	 * Returns the meta object for the attribute '{@link targets.adc.adcPort#getPinName <em>Pin Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Pin Name</em>'.
-	 * @see targets.ADC.adcPort#getPinName()
+	 * @see targets.adc.adcPort#getPinName()
 	 * @see #getadcPort()
 	 * @generated
 	 */
@@ -530,7 +530,7 @@ public interface ADCPackage extends EPackage {
 	 * @return the factory that creates the instances of the model.
 	 * @generated
 	 */
-	ADCFactory getADCFactory();
+	AdcFactory getAdcFactory();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -547,11 +547,11 @@ public interface ADCPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link targets.ADC.impl.ads1115Impl <em>ads1115</em>}' class.
+		 * The meta object literal for the '{@link targets.adc.impl.ads1115Impl <em>ads1115</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.ADC.impl.ads1115Impl
-		 * @see targets.ADC.impl.ADCPackageImpl#getads1115()
+		 * @see targets.adc.impl.ads1115Impl
+		 * @see targets.adc.impl.AdcPackageImpl#getads1115()
 		 * @generated
 		 */
 		EClass ADS1115 = eINSTANCE.getads1115();
@@ -565,11 +565,11 @@ public interface ADCPackage extends EPackage {
 		EReference ADS1115__PORTS = eINSTANCE.getads1115_Ports();
 
 		/**
-		 * The meta object literal for the '{@link targets.ADC.impl.adcPortsImpl <em>adc Ports</em>}' class.
+		 * The meta object literal for the '{@link targets.adc.impl.adcPortsImpl <em>adc Ports</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.ADC.impl.adcPortsImpl
-		 * @see targets.ADC.impl.ADCPackageImpl#getadcPorts()
+		 * @see targets.adc.impl.adcPortsImpl
+		 * @see targets.adc.impl.AdcPackageImpl#getadcPorts()
 		 * @generated
 		 */
 		EClass ADC_PORTS = eINSTANCE.getadcPorts();
@@ -583,11 +583,11 @@ public interface ADCPackage extends EPackage {
 		EReference ADC_PORTS__PORT = eINSTANCE.getadcPorts_Port();
 
 		/**
-		 * The meta object literal for the '{@link targets.ADC.impl.adcPortImpl <em>adc Port</em>}' class.
+		 * The meta object literal for the '{@link targets.adc.impl.adcPortImpl <em>adc Port</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.ADC.impl.adcPortImpl
-		 * @see targets.ADC.impl.ADCPackageImpl#getadcPort()
+		 * @see targets.adc.impl.adcPortImpl
+		 * @see targets.adc.impl.AdcPackageImpl#getadcPort()
 		 * @generated
 		 */
 		EClass ADC_PORT = eINSTANCE.getadcPort();
@@ -602,4 +602,4 @@ public interface ADCPackage extends EPackage {
 
 	}
 
-} //ADCPackage
+} //AdcPackage

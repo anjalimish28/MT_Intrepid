@@ -1,6 +1,6 @@
 /**
  */
-package targets.ADC.impl;
+package targets.adc.impl;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -10,7 +10,7 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
-import targets.ADC.*;
+import targets.adc.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,24 +18,24 @@ import targets.ADC.*;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ADCFactoryImpl extends EFactoryImpl implements ADCFactory {
+public class AdcFactoryImpl extends EFactoryImpl implements AdcFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static ADCFactory init() {
+	public static AdcFactory init() {
 		try {
-			ADCFactory theADCFactory = (ADCFactory)EPackage.Registry.INSTANCE.getEFactory(ADCPackage.eNS_URI);
-			if (theADCFactory != null) {
-				return theADCFactory;
+			AdcFactory theAdcFactory = (AdcFactory)EPackage.Registry.INSTANCE.getEFactory(AdcPackage.eNS_URI);
+			if (theAdcFactory != null) {
+				return theAdcFactory;
 			}
 		}
 		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
-		return new ADCFactoryImpl();
+		return new AdcFactoryImpl();
 	}
 
 	/**
@@ -44,7 +44,7 @@ public class ADCFactoryImpl extends EFactoryImpl implements ADCFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ADCFactoryImpl() {
+	public AdcFactoryImpl() {
 		super();
 	}
 
@@ -56,9 +56,9 @@ public class ADCFactoryImpl extends EFactoryImpl implements ADCFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case ADCPackage.ADS1115: return createads1115();
-			case ADCPackage.ADC_PORTS: return createadcPorts();
-			case ADCPackage.ADC_PORT: return createadcPort();
+			case AdcPackage.ADS1115: return createads1115();
+			case AdcPackage.ADC_PORTS: return createadcPorts();
+			case AdcPackage.ADC_PORT: return createadcPort();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -99,8 +99,8 @@ public class ADCFactoryImpl extends EFactoryImpl implements ADCFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ADCPackage getADCPackage() {
-		return (ADCPackage)getEPackage();
+	public AdcPackage getAdcPackage() {
+		return (AdcPackage)getEPackage();
 	}
 
 	/**
@@ -110,8 +110,8 @@ public class ADCFactoryImpl extends EFactoryImpl implements ADCFactory {
 	 * @generated
 	 */
 	@Deprecated
-	public static ADCPackage getPackage() {
-		return ADCPackage.eINSTANCE;
+	public static AdcPackage getPackage() {
+		return AdcPackage.eINSTANCE;
 	}
 
-} //ADCFactoryImpl
+} //AdcFactoryImpl

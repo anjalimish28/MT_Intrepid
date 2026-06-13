@@ -1,6 +1,6 @@
 /**
  */
-package targets.MotorController.util;
+package targets.motorcontroller.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -9,12 +9,13 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
-import targets.MotorController.*;
-
 import targets.SuperHardwarePortType;
 import targets.SuperTargetType;
 
+import targets.motorcontroller.*;
+
 import targets.powergrid.SuperPowerType;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
@@ -23,17 +24,17 @@ import ucof.common.etypes.SuperTrackingType;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see targets.MotorController.MotorControllerPackage
+ * @see targets.motorcontroller.MotorcontrollerPackage
  * @generated
  */
-public class MotorControllerAdapterFactory extends AdapterFactoryImpl {
+public class MotorcontrollerAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static MotorControllerPackage modelPackage;
+	protected static MotorcontrollerPackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -41,9 +42,9 @@ public class MotorControllerAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MotorControllerAdapterFactory() {
+	public MotorcontrollerAdapterFactory() {
 		if (modelPackage == null) {
-			modelPackage = MotorControllerPackage.eINSTANCE;
+			modelPackage = MotorcontrollerPackage.eINSTANCE;
 		}
 	}
 
@@ -72,8 +73,8 @@ public class MotorControllerAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MotorControllerSwitch<Adapter> modelSwitch =
-		new MotorControllerSwitch<Adapter>() {
+	protected MotorcontrollerSwitch<Adapter> modelSwitch =
+		new MotorcontrollerSwitch<Adapter>() {
 			@Override
 			public Adapter caseescon409510(escon409510 object) {
 				return createescon409510Adapter();
@@ -127,13 +128,13 @@ public class MotorControllerAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.MotorController.escon409510 <em>escon409510</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.motorcontroller.escon409510 <em>escon409510</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.MotorController.escon409510
+	 * @see targets.motorcontroller.escon409510
 	 * @generated
 	 */
 	public Adapter createescon409510Adapter() {
@@ -141,13 +142,13 @@ public class MotorControllerAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.MotorController.esconPorts <em>escon Ports</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.motorcontroller.esconPorts <em>escon Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.MotorController.esconPorts
+	 * @see targets.motorcontroller.esconPorts
 	 * @generated
 	 */
 	public Adapter createesconPortsAdapter() {
@@ -155,13 +156,13 @@ public class MotorControllerAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.MotorController.esconPort <em>escon Port</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.motorcontroller.esconPort <em>escon Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.MotorController.esconPort
+	 * @see targets.motorcontroller.esconPort
 	 * @generated
 	 */
 	public Adapter createesconPortAdapter() {
@@ -250,4 +251,4 @@ public class MotorControllerAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //MotorControllerAdapterFactory
+} //MotorcontrollerAdapterFactory

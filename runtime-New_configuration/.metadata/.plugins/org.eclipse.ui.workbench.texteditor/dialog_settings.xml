@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="java.lang.Class">
+		<item key="replaceBarOpen" value="false"/>
+		<list key="findhistory">
+			<item value="baud"/>
+			<item value="CAN0"/>
+			<item value="nodeAddr"/>
+			<item value="timing"/>
+			<item value="numOfOutgoingMailboxes=&quot;5&quot;"/>
+			<item value="deviceToImplementationAssignment"/>
+			<item value="offset"/>
+			<item value="cpn"/>
+			<item value="ccdpu"/>
+			<item value="abb8dd03-d7c5-44e7-ad4f-e0010f14b8bc"/>
+			<item value="efa5d5e8-0a01-417d-8241-60b48ae1d48b"/>
+			<item value=" stm32"/>
+			<item value="&quot;CPN_CAN_Mailbox_Config&quot;"/>
+			<item value="buffer"/>
+			<item value="09dc9bb6-0501-46d1-ba7d-edf1299a03a4"/>
+		</list>
+	</section>
+</section>

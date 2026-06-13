@@ -1,8 +1,9 @@
 /**
  */
-package targets.CanTransceiver;
+package targets.cantransceiver;
 
 import targets.SuperTargetType;
+
 import targets.powergrid.SuperPowerType;
 
 /**
@@ -14,10 +15,10 @@ import targets.powergrid.SuperPowerType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link targets.CanTransceiver.sn65hvd230#getPorts <em>Ports</em>}</li>
+ *   <li>{@link targets.cantransceiver.sn65hvd230#getPorts <em>Ports</em>}</li>
  * </ul>
  *
- * @see targets.CanTransceiver.CanTransceiverPackage#getsn65hvd230()
+ * @see targets.cantransceiver.CantransceiverPackage#getsn65hvd230()
  * @model
  * @generated
  */
@@ -28,14 +29,14 @@ public interface sn65hvd230 extends SuperTargetType, SuperPowerType {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ports</em>' containment reference.
 	 * @see #setPorts(canTransceiverPorts)
-	 * @see targets.CanTransceiver.CanTransceiverPackage#getsn65hvd230_Ports()
+	 * @see targets.cantransceiver.CantransceiverPackage#getsn65hvd230_Ports()
 	 * @model containment="true"
 	 * @generated
 	 */
 	canTransceiverPorts getPorts();
 
 	/**
-	 * Sets the value of the '{@link targets.CanTransceiver.sn65hvd230#getPorts <em>Ports</em>}' containment reference.
+	 * Sets the value of the '{@link targets.cantransceiver.sn65hvd230#getPorts <em>Ports</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Ports</em>' containment reference.

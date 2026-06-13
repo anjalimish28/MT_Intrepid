@@ -19,5 +19,4 @@ import ucof.devices.SuperPlatformDeviceType;
  * @generated
  */
 public interface PowerRail extends SuperPlatformDeviceType {
-
 } // PowerRail

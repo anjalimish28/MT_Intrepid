@@ -1,6 +1,6 @@
 /**
  */
-package targets.ADC;
+package targets.adc;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,17 +9,17 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see targets.ADC.ADCPackage
+ * @see targets.adc.AdcPackage
  * @generated
  */
-public interface ADCFactory extends EFactory {
+public interface AdcFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	ADCFactory eINSTANCE = targets.ADC.impl.ADCFactoryImpl.init();
+	AdcFactory eINSTANCE = targets.adc.impl.AdcFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>ads1115</em>'.
@@ -55,6 +55,6 @@ public interface ADCFactory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	ADCPackage getADCPackage();
+	AdcPackage getAdcPackage();
 
-} //ADCFactory
+} //AdcFactory

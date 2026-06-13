@@ -159,21 +159,25 @@ import targets.powergrid.provider.PowergridItemProviderAdapterFactory;
 
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 
-import targets.ADC.provider.ADCItemProviderAdapterFactory;
+import targets.adc.provider.AdcItemProviderAdapterFactory;
 
-import targets.CCDPU.provider.CCDPUItemProviderAdapterFactory;
+import targets.cantransceiver.provider.CantransceiverItemProviderAdapterFactory;
 
-import targets.CanTransceiver.provider.CanTransceiverItemProviderAdapterFactory;
+import targets.cpn.provider.CpnItemProviderAdapterFactory;
 
-import targets.HallSensor.provider.HallSensorItemProviderAdapterFactory;
-import targets.IntrepidPowerGrid.provider.IntrepidPowerGridItemProviderAdapterFactory;
-import targets.MotorController.provider.MotorControllerItemProviderAdapterFactory;
+import targets.hallsensor.provider.HallsensorItemProviderAdapterFactory;
 
-import targets.RDC.provider.RDCItemProviderAdapterFactory;
+import targets.intrepidgateway.provider.IntrepidgatewayItemProviderAdapterFactory;
 
-import targets.Sheild.provider.SheildItemProviderAdapterFactory;
+import targets.intrepidpowergrid.provider.IntrepidpowergridItemProviderAdapterFactory;
+
+import targets.motorcontroller.provider.MotorcontrollerItemProviderAdapterFactory;
 
 import targets.provider.TargetsItemProviderAdapterFactory;
+
+import targets.rdc.provider.RdcItemProviderAdapterFactory;
+
+import targets.sheild.provider.SheildItemProviderAdapterFactory;
 
 import ucof.assignments.database.provider.DatabaseItemProviderAdapterFactory;
 
@@ -792,14 +796,15 @@ public class PowergridEditor
 		adapterFactory.addAdapterFactory(new DatabaseItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new TargetsItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new PowergridItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new RDCItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new ADCItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new RdcItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new AdcItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new SheildItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new MotorControllerItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new CanTransceiverItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new HallSensorItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new CCDPUItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new IntrepidPowerGridItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new MotorcontrollerItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new CantransceiverItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new HallsensorItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new CpnItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new IntrepidpowergridItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new IntrepidgatewayItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
 		// Create the command stack that will notify this editor as commands are executed.

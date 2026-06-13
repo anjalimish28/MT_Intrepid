@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import targets.Targets;
+
 import ucof.Platform;
 import ucof.UcofPackage;
 

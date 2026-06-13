@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof"
+            class="ucof.UcofPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/common/enums"
+            class="ucof.common.enums.EnumsPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/common/etypes"
+            class="ucof.common.etypes.EtypesPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/common/edata"
+            class="ucof.common.edata.EdataPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices"
+            class="ucof.devices.DevicesPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/devicetypes"
+            class="ucof.devices.devicetypes.DevicetypesPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/devicetypes/a653components"
+            class="ucof.devices.devicetypes.a653components.A653componentsPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/devicetypes/a653components/a653partition"
+            class="ucof.devices.devicetypes.a653components.a653partition.A653partitionPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/devicetypes/a653components/Hhalthmanagement"
+            class="ucof.devices.devicetypes.a653components.healthmanagement.HealthmanagementPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/functions"
+            class="ucof.devices.functions.FunctionsPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/Functions/Routing"
+            class="ucof.devices.functions.routing.RoutingPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/ports"
+            class="ucof.devices.ports.PortsPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication"
+            class="ucof.communication.CommunicationPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/arinc429"
+            class="ucof.communication.arinc429.Arinc429Package"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/arinc825"
+            class="ucof.communication.arinc825.Arinc825Package"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/basedonethernet"
+            class="ucof.communication.basedonethernet.BasedonethernetPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/basedonethernet/arinc664"
+            class="ucof.communication.basedonethernet.arinc664.Arinc664Package"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/basedonwired"
+            class="ucof.communication.basedonwired.BasedonwiredPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/connectors"
+            class="ucof.communication.connectors.ConnectorsPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/configECIC"
+            class="ucof.communication.configECIC.ConfigECICPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/configECIC/streamTypes"
+            class="ucof.communication.configECIC.streamTypes.StreamTypesPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/configECIC/packageStrategyTypes"
+            class="ucof.communication.configECIC.packageStrategyTypes.PackageStrategyTypesPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/comDevices"
+            class="ucof.communication.comDevices.ComDevicesPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/assignments"
+            class="ucof.assignments.AssignmentsPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/assignments/database"
+            class="ucof.assignments.database.DatabasePackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets"
+            class="targets.TargetsPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/configdesk"
+            class="targets.configdesk.ConfigdeskPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/configdesk/dSpaceArinc825"
+            class="targets.configdesk.dSpaceArinc825.DSpaceArinc825Package"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/configdesk/ethernet"
+            class="targets.configdesk.ethernet.EthernetPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/wired"
+            class="targets.configdesk.wired.WiredPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/tricore299a653p4"
+            class="targets.tricore299a653p4.Tricore299a653p4Package"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated ucof -->
+      <parser
+            type="tricore299a653p4"
+            class="targets.tricore299a653p4.util.Tricore299a653p4ResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/matlab"
+            class="targets.matlab.MatlabPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/a653capabletarget"
+            class="targets.a653capabletarget.A653capabletargetPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/vxworksa653"
+            class="targets.vxworksa653.Vxworksa653Package"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ucof -->
+      <package
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/avip"
+            class="targets.avip.AvipPackage"
+            genModel="model/ucof.genmodel"/>
+   </extension>
+
+   <extension
+         id="ucofproduct"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            name="ucof">
+         <property
+               name="appName"
+               value="ucof">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

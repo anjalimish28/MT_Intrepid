@@ -1458,7 +1458,6 @@ public interface AssignmentsPackage extends EPackage {
 	 */
 	int PORT_TO_PORT_ASSIGNMENT_OPERATION_COUNT = SUPER_ASSIGNMENT_TYPE_OPERATION_COUNT + 0;
 
-
 	/**
 	 * The meta object id for the '{@link ucof.assignments.impl.ED247AssignmentSetImpl <em>ED247 Assignment Set</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -1721,7 +1720,6 @@ public interface AssignmentsPackage extends EPackage {
 	 * @ordered
 	 */
 	int ED247_ASSIGNMENT_OPERATION_COUNT = SUPER_ASSIGNMENT_TYPE_OPERATION_COUNT + 0;
-
 
 	/**
 	 * The meta object id for the '{@link ucof.assignments.impl.UDPSocketExtensionImpl <em>UDP Socket Extension</em>}' class.

@@ -58,6 +58,7 @@ public class ComDevicesFactoryImpl extends EFactoryImpl implements ComDevicesFac
 		switch (eClass.getClassifierID()) {
 			case ComDevicesPackage.COMMUNICATION_DEVICES: return createCommunicationDevices();
 			case ComDevicesPackage.ED247_GATEWAY: return createED247Gateway();
+			case ComDevicesPackage.GENERIC_GATEWAY: return createGenericGateway();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -81,6 +82,16 @@ public class ComDevicesFactoryImpl extends EFactoryImpl implements ComDevicesFac
 	public ED247Gateway createED247Gateway() {
 		ED247GatewayImpl ed247Gateway = new ED247GatewayImpl();
 		return ed247Gateway;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GenericGateway createGenericGateway() {
+		GenericGatewayImpl genericGateway = new GenericGatewayImpl();
+		return genericGateway;
 	}
 
 	/**

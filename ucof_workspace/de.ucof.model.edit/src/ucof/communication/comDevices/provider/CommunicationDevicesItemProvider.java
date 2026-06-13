@@ -146,6 +146,11 @@ public class CommunicationDevicesItemProvider extends SuperSetTypeItemProvider {
 			(createChildParameter
 				(ComDevicesPackage.Literals.COMMUNICATION_DEVICES__COMMUNICATION_DEVICE,
 				 ComDevicesFactory.eINSTANCE.createED247Gateway()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ComDevicesPackage.Literals.COMMUNICATION_DEVICES__COMMUNICATION_DEVICE,
+				 ComDevicesFactory.eINSTANCE.createGenericGateway()));
 	}
 
 	/**

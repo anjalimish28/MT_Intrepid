@@ -66,7 +66,9 @@ public enum DataTypes implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	FLOAT(4, "Float", "Float"), /**
+	FLOAT(4, "Float", "Float"),
+
+	/**
 	 * The '<em><b>Opaque</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

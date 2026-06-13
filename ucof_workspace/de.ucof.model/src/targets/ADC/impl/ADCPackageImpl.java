@@ -1,6 +1,6 @@
 /**
  */
-package targets.ADC.impl;
+package targets.adc.impl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -9,33 +9,52 @@ import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import targets.ADC.ADCFactory;
-import targets.ADC.ADCPackage;
-import targets.ADC.adcPort;
-import targets.ADC.adcPorts;
-import targets.ADC.ads1115;
-
-import targets.CCDPU.CCDPUPackage;
-import targets.CCDPU.impl.CCDPUPackageImpl;
-import targets.CanTransceiver.CanTransceiverPackage;
-import targets.CanTransceiver.impl.CanTransceiverPackageImpl;
-import targets.HallSensor.HallSensorPackage;
-import targets.HallSensor.impl.HallSensorPackageImpl;
-import targets.IntrepidPowerGrid.IntrepidPowerGridPackage;
-import targets.IntrepidPowerGrid.impl.IntrepidPowerGridPackageImpl;
-import targets.MotorController.MotorControllerPackage;
-import targets.MotorController.impl.MotorControllerPackageImpl;
-import targets.RDC.RDCPackage;
-
-import targets.RDC.impl.RDCPackageImpl;
-import targets.Sheild.SheildPackage;
-import targets.Sheild.impl.SheildPackageImpl;
 import targets.TargetsPackage;
+
+import targets.adc.AdcFactory;
+import targets.adc.AdcPackage;
+import targets.adc.adcPort;
+import targets.adc.adcPorts;
+import targets.adc.ads1115;
+
+import targets.cantransceiver.CantransceiverPackage;
+
+import targets.cantransceiver.impl.CantransceiverPackageImpl;
+
+import targets.cpn.CpnPackage;
+
+import targets.cpn.impl.CpnPackageImpl;
+
+import targets.hallsensor.HallsensorPackage;
+
+import targets.hallsensor.impl.HallsensorPackageImpl;
 
 import targets.impl.TargetsPackageImpl;
 
+import targets.intrepidgateway.IntrepidgatewayPackage;
+
+import targets.intrepidgateway.impl.IntrepidgatewayPackageImpl;
+
+import targets.intrepidpowergrid.IntrepidpowergridPackage;
+
+import targets.intrepidpowergrid.impl.IntrepidpowergridPackageImpl;
+
+import targets.motorcontroller.MotorcontrollerPackage;
+
+import targets.motorcontroller.impl.MotorcontrollerPackageImpl;
+
 import targets.powergrid.PowergridPackage;
+
 import targets.powergrid.impl.PowergridPackageImpl;
+
+import targets.rdc.RdcPackage;
+
+import targets.rdc.impl.RdcPackageImpl;
+
+import targets.sheild.SheildPackage;
+
+import targets.sheild.impl.SheildPackageImpl;
+
 import ucof.UcofPackage;
 
 import ucof.assignments.AssignmentsPackage;
@@ -101,7 +120,9 @@ import ucof.communication.connectors.ConnectorsPackage;
 import ucof.communication.connectors.impl.ConnectorsPackageImpl;
 
 import ucof.communication.i2c.I2cPackage;
+
 import ucof.communication.i2c.impl.I2cPackageImpl;
+
 import ucof.communication.impl.CommunicationPackageImpl;
 
 import ucof.devices.DevicesPackage;
@@ -144,7 +165,7 @@ import ucof.impl.UcofPackageImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ADCPackageImpl extends EPackageImpl implements ADCPackage {
+public class AdcPackageImpl extends EPackageImpl implements AdcPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -177,12 +198,12 @@ public class ADCPackageImpl extends EPackageImpl implements ADCPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see targets.ADC.ADCPackage#eNS_URI
+	 * @see targets.adc.AdcPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
-	private ADCPackageImpl() {
-		super(eNS_URI, ADCFactory.eINSTANCE);
+	private AdcPackageImpl() {
+		super(eNS_URI, AdcFactory.eINSTANCE);
 	}
 	/**
 	 * <!-- begin-user-doc -->
@@ -194,7 +215,7 @@ public class ADCPackageImpl extends EPackageImpl implements ADCPackage {
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
 	 *
-	 * <p>This method is used to initialize {@link ADCPackage#eINSTANCE} when that field is accessed.
+	 * <p>This method is used to initialize {@link AdcPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -203,12 +224,12 @@ public class ADCPackageImpl extends EPackageImpl implements ADCPackage {
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static ADCPackage init() {
-		if (isInited) return (ADCPackage)EPackage.Registry.INSTANCE.getEPackage(ADCPackage.eNS_URI);
+	public static AdcPackage init() {
+		if (isInited) return (AdcPackage)EPackage.Registry.INSTANCE.getEPackage(AdcPackage.eNS_URI);
 
 		// Obtain or create and register package
-		Object registeredADCPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
-		ADCPackageImpl theADCPackage = registeredADCPackage instanceof ADCPackageImpl ? (ADCPackageImpl)registeredADCPackage : new ADCPackageImpl();
+		Object registeredAdcPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		AdcPackageImpl theAdcPackage = registeredAdcPackage instanceof AdcPackageImpl ? (AdcPackageImpl)registeredAdcPackage : new AdcPackageImpl();
 
 		isInited = true;
 
@@ -269,23 +290,25 @@ public class ADCPackageImpl extends EPackageImpl implements ADCPackage {
 		TargetsPackageImpl theTargetsPackage = (TargetsPackageImpl)(registeredPackage instanceof TargetsPackageImpl ? registeredPackage : TargetsPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PowergridPackage.eNS_URI);
 		PowergridPackageImpl thePowergridPackage = (PowergridPackageImpl)(registeredPackage instanceof PowergridPackageImpl ? registeredPackage : PowergridPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(RDCPackage.eNS_URI);
-		RDCPackageImpl theRDCPackage = (RDCPackageImpl)(registeredPackage instanceof RDCPackageImpl ? registeredPackage : RDCPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(RdcPackage.eNS_URI);
+		RdcPackageImpl theRdcPackage = (RdcPackageImpl)(registeredPackage instanceof RdcPackageImpl ? registeredPackage : RdcPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(SheildPackage.eNS_URI);
 		SheildPackageImpl theSheildPackage = (SheildPackageImpl)(registeredPackage instanceof SheildPackageImpl ? registeredPackage : SheildPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MotorControllerPackage.eNS_URI);
-		MotorControllerPackageImpl theMotorControllerPackage = (MotorControllerPackageImpl)(registeredPackage instanceof MotorControllerPackageImpl ? registeredPackage : MotorControllerPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CanTransceiverPackage.eNS_URI);
-		CanTransceiverPackageImpl theCanTransceiverPackage = (CanTransceiverPackageImpl)(registeredPackage instanceof CanTransceiverPackageImpl ? registeredPackage : CanTransceiverPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(HallSensorPackage.eNS_URI);
-		HallSensorPackageImpl theHallSensorPackage = (HallSensorPackageImpl)(registeredPackage instanceof HallSensorPackageImpl ? registeredPackage : HallSensorPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CCDPUPackage.eNS_URI);
-		CCDPUPackageImpl theCCDPUPackage = (CCDPUPackageImpl)(registeredPackage instanceof CCDPUPackageImpl ? registeredPackage : CCDPUPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(IntrepidPowerGridPackage.eNS_URI);
-		IntrepidPowerGridPackageImpl theIntrepidPowerGridPackage = (IntrepidPowerGridPackageImpl)(registeredPackage instanceof IntrepidPowerGridPackageImpl ? registeredPackage : IntrepidPowerGridPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MotorcontrollerPackage.eNS_URI);
+		MotorcontrollerPackageImpl theMotorcontrollerPackage = (MotorcontrollerPackageImpl)(registeredPackage instanceof MotorcontrollerPackageImpl ? registeredPackage : MotorcontrollerPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CantransceiverPackage.eNS_URI);
+		CantransceiverPackageImpl theCantransceiverPackage = (CantransceiverPackageImpl)(registeredPackage instanceof CantransceiverPackageImpl ? registeredPackage : CantransceiverPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(HallsensorPackage.eNS_URI);
+		HallsensorPackageImpl theHallsensorPackage = (HallsensorPackageImpl)(registeredPackage instanceof HallsensorPackageImpl ? registeredPackage : HallsensorPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CpnPackage.eNS_URI);
+		CpnPackageImpl theCpnPackage = (CpnPackageImpl)(registeredPackage instanceof CpnPackageImpl ? registeredPackage : CpnPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(IntrepidpowergridPackage.eNS_URI);
+		IntrepidpowergridPackageImpl theIntrepidpowergridPackage = (IntrepidpowergridPackageImpl)(registeredPackage instanceof IntrepidpowergridPackageImpl ? registeredPackage : IntrepidpowergridPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(IntrepidgatewayPackage.eNS_URI);
+		IntrepidgatewayPackageImpl theIntrepidgatewayPackage = (IntrepidgatewayPackageImpl)(registeredPackage instanceof IntrepidgatewayPackageImpl ? registeredPackage : IntrepidgatewayPackage.eINSTANCE);
 
 		// Create package meta-data objects
-		theADCPackage.createPackageContents();
+		theAdcPackage.createPackageContents();
 		theUcofPackage.createPackageContents();
 		theEnumsPackage.createPackageContents();
 		theEtypesPackage.createPackageContents();
@@ -314,16 +337,17 @@ public class ADCPackageImpl extends EPackageImpl implements ADCPackage {
 		theDatabasePackage.createPackageContents();
 		theTargetsPackage.createPackageContents();
 		thePowergridPackage.createPackageContents();
-		theRDCPackage.createPackageContents();
+		theRdcPackage.createPackageContents();
 		theSheildPackage.createPackageContents();
-		theMotorControllerPackage.createPackageContents();
-		theCanTransceiverPackage.createPackageContents();
-		theHallSensorPackage.createPackageContents();
-		theCCDPUPackage.createPackageContents();
-		theIntrepidPowerGridPackage.createPackageContents();
+		theMotorcontrollerPackage.createPackageContents();
+		theCantransceiverPackage.createPackageContents();
+		theHallsensorPackage.createPackageContents();
+		theCpnPackage.createPackageContents();
+		theIntrepidpowergridPackage.createPackageContents();
+		theIntrepidgatewayPackage.createPackageContents();
 
 		// Initialize created meta-data
-		theADCPackage.initializePackageContents();
+		theAdcPackage.initializePackageContents();
 		theUcofPackage.initializePackageContents();
 		theEnumsPackage.initializePackageContents();
 		theEtypesPackage.initializePackageContents();
@@ -352,20 +376,21 @@ public class ADCPackageImpl extends EPackageImpl implements ADCPackage {
 		theDatabasePackage.initializePackageContents();
 		theTargetsPackage.initializePackageContents();
 		thePowergridPackage.initializePackageContents();
-		theRDCPackage.initializePackageContents();
+		theRdcPackage.initializePackageContents();
 		theSheildPackage.initializePackageContents();
-		theMotorControllerPackage.initializePackageContents();
-		theCanTransceiverPackage.initializePackageContents();
-		theHallSensorPackage.initializePackageContents();
-		theCCDPUPackage.initializePackageContents();
-		theIntrepidPowerGridPackage.initializePackageContents();
+		theMotorcontrollerPackage.initializePackageContents();
+		theCantransceiverPackage.initializePackageContents();
+		theHallsensorPackage.initializePackageContents();
+		theCpnPackage.initializePackageContents();
+		theIntrepidpowergridPackage.initializePackageContents();
+		theIntrepidgatewayPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
-		theADCPackage.freeze();
+		theAdcPackage.freeze();
 
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(ADCPackage.eNS_URI, theADCPackage);
-		return theADCPackage;
+		EPackage.Registry.INSTANCE.put(AdcPackage.eNS_URI, theAdcPackage);
+		return theAdcPackage;
 	}
 
 	/**
@@ -427,8 +452,8 @@ public class ADCPackageImpl extends EPackageImpl implements ADCPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ADCFactory getADCFactory() {
-		return (ADCFactory)getEFactoryInstance();
+	public AdcFactory getAdcFactory() {
+		return (AdcFactory)getEFactoryInstance();
 	}
 
 	/**
@@ -511,4 +536,4 @@ public class ADCPackageImpl extends EPackageImpl implements ADCPackage {
 		initEAttribute(getadcPort_PinName(), ecorePackage.getEString(), "pinName", null, 0, 1, adcPort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 	}
 
-} //ADCPackageImpl
+} //AdcPackageImpl

@@ -13,19 +13,17 @@ import org.eclipse.emf.common.util.ResourceLocator;
 
 import org.eclipse.emf.ecore.EStructuralFeature;
 
-import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
-import org.eclipse.emf.edit.provider.IItemLabelProvider;
+import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.IItemPropertySource;
-import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
-import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
-import org.eclipse.emf.edit.provider.ItemProviderAdapter;
+import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 import targets.powergrid.PowergridFactory;
 import targets.powergrid.PowergridPackage;
 import targets.powergrid.SuperPowerType;
 
+import ucof.common.etypes.EtypesPackage;
+import ucof.common.etypes.provider.SuperIdentifierTypeItemProvider;
 import ucof.provider.UcofEditPlugin;
 
 /**
@@ -35,13 +33,7 @@ import ucof.provider.UcofEditPlugin;
  * @generated
  */
 public class SuperPowerTypeItemProvider 
-	extends ItemProviderAdapter
-	implements
-		IEditingDomainItemProvider,
-		IStructuredItemContentProvider,
-		ITreeItemContentProvider,
-		IItemLabelProvider,
-		IItemPropertySource {
+	extends SuperIdentifierTypeItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -63,8 +55,169 @@ public class SuperPowerTypeItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addDocumentationPropertyDescriptor(object);
+			addModifiedPropertyDescriptor(object);
+			addModifierPropertyDescriptor(object);
+			addTraceLinkPropertyDescriptor(object);
+			addCreatedPropertyDescriptor(object);
+			addCreatorPropertyDescriptor(object);
+			addVersionPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Documentation feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addDocumentationPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTrackingType_documentation_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTrackingType_documentation_feature", "_UI_SuperTrackingType_type"),
+				 EtypesPackage.Literals.SUPER_TRACKING_TYPE__DOCUMENTATION,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_TracingPropertyCategory"),
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Modified feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addModifiedPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTrackingType_modified_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTrackingType_modified_feature", "_UI_SuperTrackingType_type"),
+				 EtypesPackage.Literals.SUPER_TRACKING_TYPE__MODIFIED,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_TracingPropertyCategory"),
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Modifier feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addModifierPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTrackingType_modifier_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTrackingType_modifier_feature", "_UI_SuperTrackingType_type"),
+				 EtypesPackage.Literals.SUPER_TRACKING_TYPE__MODIFIER,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_TracingPropertyCategory"),
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Trace Link feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTraceLinkPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTrackingType_traceLink_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTrackingType_traceLink_feature", "_UI_SuperTrackingType_type"),
+				 EtypesPackage.Literals.SUPER_TRACKING_TYPE__TRACE_LINK,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_TracingPropertyCategory"),
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Created feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addCreatedPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTrackingType_created_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTrackingType_created_feature", "_UI_SuperTrackingType_type"),
+				 EtypesPackage.Literals.SUPER_TRACKING_TYPE__CREATED,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_TracingPropertyCategory"),
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Creator feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addCreatorPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTrackingType_creator_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTrackingType_creator_feature", "_UI_SuperTrackingType_type"),
+				 EtypesPackage.Literals.SUPER_TRACKING_TYPE__CREATOR,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_TracingPropertyCategory"),
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Version feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addVersionPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTrackingType_version_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTrackingType_version_feature", "_UI_SuperTrackingType_type"),
+				 EtypesPackage.Literals.SUPER_TRACKING_TYPE__VERSION,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				 getString("_UI_TracingPropertyCategory"),
+				 null));
 	}
 
 	/**
@@ -105,7 +258,10 @@ public class SuperPowerTypeItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_SuperPowerType_type");
+		String label = ((SuperPowerType)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_SuperPowerType_type") :
+			getString("_UI_SuperPowerType_type") + " " + label;
 	}
 
 
@@ -121,6 +277,15 @@ public class SuperPowerTypeItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(SuperPowerType.class)) {
+			case PowergridPackage.SUPER_POWER_TYPE__DOCUMENTATION:
+			case PowergridPackage.SUPER_POWER_TYPE__MODIFIED:
+			case PowergridPackage.SUPER_POWER_TYPE__MODIFIER:
+			case PowergridPackage.SUPER_POWER_TYPE__TRACE_LINK:
+			case PowergridPackage.SUPER_POWER_TYPE__CREATED:
+			case PowergridPackage.SUPER_POWER_TYPE__CREATOR:
+			case PowergridPackage.SUPER_POWER_TYPE__VERSION:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
 			case PowergridPackage.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;

@@ -1,6 +1,6 @@
 /**
  */
-package targets.CanTransceiver.impl;
+package targets.cantransceiver.impl;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -10,11 +10,12 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
-import targets.CanTransceiver.CanTransceiverPackage;
-import targets.CanTransceiver.canTransceiverPorts;
-import targets.CanTransceiver.sn65hvd230;
+import targets.cantransceiver.CantransceiverPackage;
+import targets.cantransceiver.canTransceiverPorts;
+import targets.cantransceiver.sn65hvd230;
 
 import targets.impl.SuperTargetTypeImpl;
+
 import targets.powergrid.EletrcialInterfaces;
 import targets.powergrid.PowergridPackage;
 import targets.powergrid.SuperPowerType;
@@ -27,8 +28,8 @@ import targets.powergrid.SuperPowerType;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link targets.CanTransceiver.impl.sn65hvd230Impl#getElectricalInterfaces <em>Electrical Interfaces</em>}</li>
- *   <li>{@link targets.CanTransceiver.impl.sn65hvd230Impl#getPorts <em>Ports</em>}</li>
+ *   <li>{@link targets.cantransceiver.impl.sn65hvd230Impl#getElectricalInterfaces <em>Electrical Interfaces</em>}</li>
+ *   <li>{@link targets.cantransceiver.impl.sn65hvd230Impl#getPorts <em>Ports</em>}</li>
  * </ul>
  *
  * @generated
@@ -43,6 +44,7 @@ public class sn65hvd230Impl extends SuperTargetTypeImpl implements sn65hvd230 {
 	 * @ordered
 	 */
 	protected EletrcialInterfaces electricalInterfaces;
+
 	/**
 	 * The cached value of the '{@link #getPorts() <em>Ports</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -52,6 +54,7 @@ public class sn65hvd230Impl extends SuperTargetTypeImpl implements sn65hvd230 {
 	 * @ordered
 	 */
 	protected canTransceiverPorts ports;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +71,7 @@ public class sn65hvd230Impl extends SuperTargetTypeImpl implements sn65hvd230 {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return CanTransceiverPackage.Literals.SN65HVD230;
+		return CantransceiverPackage.Literals.SN65HVD230;
 	}
 
 	/**
@@ -89,7 +92,7 @@ public class sn65hvd230Impl extends SuperTargetTypeImpl implements sn65hvd230 {
 		EletrcialInterfaces oldElectricalInterfaces = electricalInterfaces;
 		electricalInterfaces = newElectricalInterfaces;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CanTransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES, oldElectricalInterfaces, newElectricalInterfaces);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CantransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES, oldElectricalInterfaces, newElectricalInterfaces);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -104,14 +107,14 @@ public class sn65hvd230Impl extends SuperTargetTypeImpl implements sn65hvd230 {
 		if (newElectricalInterfaces != electricalInterfaces) {
 			NotificationChain msgs = null;
 			if (electricalInterfaces != null)
-				msgs = ((InternalEObject)electricalInterfaces).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CanTransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES, null, msgs);
+				msgs = ((InternalEObject)electricalInterfaces).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CantransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES, null, msgs);
 			if (newElectricalInterfaces != null)
-				msgs = ((InternalEObject)newElectricalInterfaces).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CanTransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES, null, msgs);
+				msgs = ((InternalEObject)newElectricalInterfaces).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CantransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES, null, msgs);
 			msgs = basicSetElectricalInterfaces(newElectricalInterfaces, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CanTransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES, newElectricalInterfaces, newElectricalInterfaces));
+			eNotify(new ENotificationImpl(this, Notification.SET, CantransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES, newElectricalInterfaces, newElectricalInterfaces));
 	}
 
 	/**
@@ -132,7 +135,7 @@ public class sn65hvd230Impl extends SuperTargetTypeImpl implements sn65hvd230 {
 		canTransceiverPorts oldPorts = ports;
 		ports = newPorts;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CanTransceiverPackage.SN65HVD230__PORTS, oldPorts, newPorts);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CantransceiverPackage.SN65HVD230__PORTS, oldPorts, newPorts);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -147,14 +150,14 @@ public class sn65hvd230Impl extends SuperTargetTypeImpl implements sn65hvd230 {
 		if (newPorts != ports) {
 			NotificationChain msgs = null;
 			if (ports != null)
-				msgs = ((InternalEObject)ports).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CanTransceiverPackage.SN65HVD230__PORTS, null, msgs);
+				msgs = ((InternalEObject)ports).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CantransceiverPackage.SN65HVD230__PORTS, null, msgs);
 			if (newPorts != null)
-				msgs = ((InternalEObject)newPorts).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CanTransceiverPackage.SN65HVD230__PORTS, null, msgs);
+				msgs = ((InternalEObject)newPorts).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CantransceiverPackage.SN65HVD230__PORTS, null, msgs);
 			msgs = basicSetPorts(newPorts, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CanTransceiverPackage.SN65HVD230__PORTS, newPorts, newPorts));
+			eNotify(new ENotificationImpl(this, Notification.SET, CantransceiverPackage.SN65HVD230__PORTS, newPorts, newPorts));
 	}
 
 	/**
@@ -165,9 +168,9 @@ public class sn65hvd230Impl extends SuperTargetTypeImpl implements sn65hvd230 {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case CanTransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES:
+			case CantransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES:
 				return basicSetElectricalInterfaces(null, msgs);
-			case CanTransceiverPackage.SN65HVD230__PORTS:
+			case CantransceiverPackage.SN65HVD230__PORTS:
 				return basicSetPorts(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -181,9 +184,9 @@ public class sn65hvd230Impl extends SuperTargetTypeImpl implements sn65hvd230 {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case CanTransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES:
+			case CantransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES:
 				return getElectricalInterfaces();
-			case CanTransceiverPackage.SN65HVD230__PORTS:
+			case CantransceiverPackage.SN65HVD230__PORTS:
 				return getPorts();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -197,10 +200,10 @@ public class sn65hvd230Impl extends SuperTargetTypeImpl implements sn65hvd230 {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case CanTransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES:
+			case CantransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES:
 				setElectricalInterfaces((EletrcialInterfaces)newValue);
 				return;
-			case CanTransceiverPackage.SN65HVD230__PORTS:
+			case CantransceiverPackage.SN65HVD230__PORTS:
 				setPorts((canTransceiverPorts)newValue);
 				return;
 		}
@@ -215,10 +218,10 @@ public class sn65hvd230Impl extends SuperTargetTypeImpl implements sn65hvd230 {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case CanTransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES:
+			case CantransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES:
 				setElectricalInterfaces((EletrcialInterfaces)null);
 				return;
-			case CanTransceiverPackage.SN65HVD230__PORTS:
+			case CantransceiverPackage.SN65HVD230__PORTS:
 				setPorts((canTransceiverPorts)null);
 				return;
 		}
@@ -233,9 +236,9 @@ public class sn65hvd230Impl extends SuperTargetTypeImpl implements sn65hvd230 {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case CanTransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES:
+			case CantransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES:
 				return electricalInterfaces != null;
-			case CanTransceiverPackage.SN65HVD230__PORTS:
+			case CantransceiverPackage.SN65HVD230__PORTS:
 				return ports != null;
 		}
 		return super.eIsSet(featureID);
@@ -250,7 +253,7 @@ public class sn65hvd230Impl extends SuperTargetTypeImpl implements sn65hvd230 {
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
 		if (baseClass == SuperPowerType.class) {
 			switch (derivedFeatureID) {
-				case CanTransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES: return PowergridPackage.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES;
+				case CantransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES: return PowergridPackage.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES;
 				default: return -1;
 			}
 		}
@@ -266,7 +269,7 @@ public class sn65hvd230Impl extends SuperTargetTypeImpl implements sn65hvd230 {
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
 		if (baseClass == SuperPowerType.class) {
 			switch (baseFeatureID) {
-				case PowergridPackage.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES: return CanTransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES;
+				case PowergridPackage.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES: return CantransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES;
 				default: return -1;
 			}
 		}

@@ -1,18 +1,19 @@
 /**
  */
-package targets.HallSensor.util;
+package targets.hallsensor.util;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
 
-import targets.HallSensor.*;
-
 import targets.SuperHardwarePortType;
 import targets.SuperTargetType;
 
+import targets.hallsensor.*;
+
 import targets.powergrid.SuperPowerType;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
@@ -26,17 +27,17 @@ import ucof.common.etypes.SuperTrackingType;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see targets.HallSensor.HallSensorPackage
+ * @see targets.hallsensor.HallsensorPackage
  * @generated
  */
-public class HallSensorSwitch<T> extends Switch<T> {
+public class HallsensorSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static HallSensorPackage modelPackage;
+	protected static HallsensorPackage modelPackage;
 
 	/**
 	 * Creates an instance of the switch.
@@ -44,9 +45,9 @@ public class HallSensorSwitch<T> extends Switch<T> {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HallSensorSwitch() {
+	public HallsensorSwitch() {
 		if (modelPackage == null) {
-			modelPackage = HallSensorPackage.eINSTANCE;
+			modelPackage = HallsensorPackage.eINSTANCE;
 		}
 	}
 
@@ -73,7 +74,7 @@ public class HallSensorSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case HallSensorPackage.MTS360: {
+			case HallsensorPackage.MTS360: {
 				mts360 mts360 = (mts360)theEObject;
 				T result = casemts360(mts360);
 				if (result == null) result = caseSuperTargetType(mts360);
@@ -83,7 +84,7 @@ public class HallSensorSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case HallSensorPackage.HALL_PORTS: {
+			case HallsensorPackage.HALL_PORTS: {
 				hallPorts hallPorts = (hallPorts)theEObject;
 				T result = casehallPorts(hallPorts);
 				if (result == null) result = caseSuperTrackingType(hallPorts);
@@ -91,7 +92,7 @@ public class HallSensorSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case HallSensorPackage.HALL_PORT: {
+			case HallsensorPackage.HALL_PORT: {
 				hallPort hallPort = (hallPort)theEObject;
 				T result = casehallPort(hallPort);
 				if (result == null) result = caseSuperHardwarePortType(hallPort);
@@ -240,4 +241,4 @@ public class HallSensorSwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //HallSensorSwitch
+} //HallsensorSwitch

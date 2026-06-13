@@ -1,6 +1,6 @@
 /**
  */
-package targets.RDC.impl;
+package targets.rdc.impl;
 
 import java.util.Collection;
 
@@ -17,9 +17,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import targets.RDC.RDCPackage;
-import targets.RDC.stmPort;
-import targets.RDC.stmPorts;
+import targets.rdc.RdcPackage;
+import targets.rdc.stmPort;
+import targets.rdc.stmPorts;
 
 import ucof.common.etypes.EtypesPackage;
 import ucof.common.etypes.SuperIdentifierType;
@@ -34,9 +34,9 @@ import ucof.common.etypes.impl.SuperTrackingTypeImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link targets.RDC.impl.stmPortsImpl#getId <em>Id</em>}</li>
- *   <li>{@link targets.RDC.impl.stmPortsImpl#getName <em>Name</em>}</li>
- *   <li>{@link targets.RDC.impl.stmPortsImpl#getPort <em>Port</em>}</li>
+ *   <li>{@link targets.rdc.impl.stmPortsImpl#getId <em>Id</em>}</li>
+ *   <li>{@link targets.rdc.impl.stmPortsImpl#getName <em>Name</em>}</li>
+ *   <li>{@link targets.rdc.impl.stmPortsImpl#getPort <em>Port</em>}</li>
  * </ul>
  *
  * @generated
@@ -108,7 +108,7 @@ public class stmPortsImpl extends SuperTrackingTypeImpl implements stmPorts {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return RDCPackage.Literals.STM_PORTS;
+		return RdcPackage.Literals.STM_PORTS;
 	}
 
 	/**
@@ -129,7 +129,7 @@ public class stmPortsImpl extends SuperTrackingTypeImpl implements stmPorts {
 		String oldId = id;
 		id = newId;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, RDCPackage.STM_PORTS__ID, oldId, id));
+			eNotify(new ENotificationImpl(this, Notification.SET, RdcPackage.STM_PORTS__ID, oldId, id));
 	}
 
 	/**
@@ -150,7 +150,7 @@ public class stmPortsImpl extends SuperTrackingTypeImpl implements stmPorts {
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, RDCPackage.STM_PORTS__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, RdcPackage.STM_PORTS__NAME, oldName, name));
 	}
 
 	/**
@@ -160,7 +160,7 @@ public class stmPortsImpl extends SuperTrackingTypeImpl implements stmPorts {
 	 */
 	public EList<stmPort> getPort() {
 		if (port == null) {
-			port = new EObjectContainmentEList<stmPort>(stmPort.class, this, RDCPackage.STM_PORTS__PORT);
+			port = new EObjectContainmentEList<stmPort>(stmPort.class, this, RdcPackage.STM_PORTS__PORT);
 		}
 		return port;
 	}
@@ -173,7 +173,7 @@ public class stmPortsImpl extends SuperTrackingTypeImpl implements stmPorts {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case RDCPackage.STM_PORTS__PORT:
+			case RdcPackage.STM_PORTS__PORT:
 				return ((InternalEList<?>)getPort()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -187,11 +187,11 @@ public class stmPortsImpl extends SuperTrackingTypeImpl implements stmPorts {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case RDCPackage.STM_PORTS__ID:
+			case RdcPackage.STM_PORTS__ID:
 				return getId();
-			case RDCPackage.STM_PORTS__NAME:
+			case RdcPackage.STM_PORTS__NAME:
 				return getName();
-			case RDCPackage.STM_PORTS__PORT:
+			case RdcPackage.STM_PORTS__PORT:
 				return getPort();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -206,13 +206,13 @@ public class stmPortsImpl extends SuperTrackingTypeImpl implements stmPorts {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case RDCPackage.STM_PORTS__ID:
+			case RdcPackage.STM_PORTS__ID:
 				setId((String)newValue);
 				return;
-			case RDCPackage.STM_PORTS__NAME:
+			case RdcPackage.STM_PORTS__NAME:
 				setName((String)newValue);
 				return;
-			case RDCPackage.STM_PORTS__PORT:
+			case RdcPackage.STM_PORTS__PORT:
 				getPort().clear();
 				getPort().addAll((Collection<? extends stmPort>)newValue);
 				return;
@@ -228,13 +228,13 @@ public class stmPortsImpl extends SuperTrackingTypeImpl implements stmPorts {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case RDCPackage.STM_PORTS__ID:
+			case RdcPackage.STM_PORTS__ID:
 				setId(ID_EDEFAULT);
 				return;
-			case RDCPackage.STM_PORTS__NAME:
+			case RdcPackage.STM_PORTS__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case RDCPackage.STM_PORTS__PORT:
+			case RdcPackage.STM_PORTS__PORT:
 				getPort().clear();
 				return;
 		}
@@ -249,11 +249,11 @@ public class stmPortsImpl extends SuperTrackingTypeImpl implements stmPorts {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case RDCPackage.STM_PORTS__ID:
+			case RdcPackage.STM_PORTS__ID:
 				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
-			case RDCPackage.STM_PORTS__NAME:
+			case RdcPackage.STM_PORTS__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case RDCPackage.STM_PORTS__PORT:
+			case RdcPackage.STM_PORTS__PORT:
 				return port != null && !port.isEmpty();
 		}
 		return super.eIsSet(featureID);
@@ -268,8 +268,8 @@ public class stmPortsImpl extends SuperTrackingTypeImpl implements stmPorts {
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
 		if (baseClass == SuperIdentifierType.class) {
 			switch (derivedFeatureID) {
-				case RDCPackage.STM_PORTS__ID: return EtypesPackage.SUPER_IDENTIFIER_TYPE__ID;
-				case RDCPackage.STM_PORTS__NAME: return EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME;
+				case RdcPackage.STM_PORTS__ID: return EtypesPackage.SUPER_IDENTIFIER_TYPE__ID;
+				case RdcPackage.STM_PORTS__NAME: return EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME;
 				default: return -1;
 			}
 		}
@@ -285,8 +285,8 @@ public class stmPortsImpl extends SuperTrackingTypeImpl implements stmPorts {
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
 		if (baseClass == SuperIdentifierType.class) {
 			switch (baseFeatureID) {
-				case EtypesPackage.SUPER_IDENTIFIER_TYPE__ID: return RDCPackage.STM_PORTS__ID;
-				case EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME: return RDCPackage.STM_PORTS__NAME;
+				case EtypesPackage.SUPER_IDENTIFIER_TYPE__ID: return RdcPackage.STM_PORTS__ID;
+				case EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME: return RdcPackage.STM_PORTS__NAME;
 				default: return -1;
 			}
 		}

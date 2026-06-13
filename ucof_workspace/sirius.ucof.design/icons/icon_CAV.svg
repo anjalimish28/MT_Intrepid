@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="9mm"
+   height="3.0999999mm"
+   id="svg459"
+   sodipodi:docname="icon_CAV.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+  <metadata
+     id="metadata463">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview461"
+     showgrid="false"
+     inkscape:zoom="7.7137996"
+     inkscape:cx="29.890379"
+     inkscape:cy="9.2096934"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg459" />
+  <defs
+     id="defs15">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1">
+      <path
+         d="M -1.2789211,0.31973027 H 348.66586 V 441.38764 H -1.2789211 Z"
+         id="path2" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath2">
+      <path
+         d="m 98.636788,134.92617 h 11.989882 v 37.40844 H 98.636788 Z"
+         id="path5" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath3">
+      <path
+         d="m 82.170679,264.41693 h 11.989885 v 37.40844 H 82.170679 Z"
+         id="path8" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <image
+       id="EMFimage0"
+       x="0"
+       y="0"
+       width="8"
+       height="8"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAI0lEQVQImWNkYGDYdf4tAwZgxCrKwMDAhFWUaAk3Q2Fa2AEAcYYH+sA58loAAAAASUVORK5CYII="
+       preserveAspectRatio="none" />
+    <pattern
+       id="EMFimage0_ref"
+       x="0"
+       y="0"
+       width="8"
+       height="8"
+       patternUnits="userSpaceOnUse">
+      <use
+         id="EMFimage0_ign"
+         xlink:href="#EMFimage0" />
+    </pattern>
+    <clipPath
+       id="clipEmfPath3-3"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8-7"
+         d="m 82.170679,264.41693 h 11.989885 v 37.40844 H 82.170679 Z" />
+    </clipPath>
+  </defs>
+  <path
+     id="path161"
+     d="m 7.7226255,1.0993781 9.4320405,4.71602 -9.4320405,4.7160199 z"
+     style="fill:none;stroke:#080808;stroke-width:1.99831px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path163"
+     d="m 26.906446,10.531418 -9.43205,-4.7160199 9.43205,-4.71602 z"
+     style="fill:none;stroke:#080808;stroke-width:1.99831px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path165"
+     d="M 7.6027255,5.8953281 H 0.04909748"
+     style="fill:none;stroke:#000000;stroke-width:1.99831px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path167"
+     d="m 34.460066,5.8953281 h -7.55362"
+     style="fill:none;stroke:#000000;stroke-width:1.99831px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:0.664879;stroke-width:0.451836;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke"
+     id="rect31"
+     width="34.348515"
+     height="11.571623"
+     x="-0.092541218"
+     y="-0.021344651" />
+</svg>

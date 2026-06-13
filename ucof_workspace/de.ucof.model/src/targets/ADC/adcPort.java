@@ -1,8 +1,9 @@
 /**
  */
-package targets.ADC;
+package targets.adc;
 
 import targets.SuperHardwarePortType;
+
 import targets.powergrid.SuperElectricalInterfaceType;
 
 /**
@@ -14,10 +15,10 @@ import targets.powergrid.SuperElectricalInterfaceType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link targets.ADC.adcPort#getPinName <em>Pin Name</em>}</li>
+ *   <li>{@link targets.adc.adcPort#getPinName <em>Pin Name</em>}</li>
  * </ul>
  *
- * @see targets.ADC.ADCPackage#getadcPort()
+ * @see targets.adc.AdcPackage#getadcPort()
  * @model
  * @generated
  */
@@ -28,14 +29,14 @@ public interface adcPort extends SuperHardwarePortType, SuperElectricalInterface
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pin Name</em>' attribute.
 	 * @see #setPinName(String)
-	 * @see targets.ADC.ADCPackage#getadcPort_PinName()
+	 * @see targets.adc.AdcPackage#getadcPort_PinName()
 	 * @model
 	 * @generated
 	 */
 	String getPinName();
 
 	/**
-	 * Sets the value of the '{@link targets.ADC.adcPort#getPinName <em>Pin Name</em>}' attribute.
+	 * Sets the value of the '{@link targets.adc.adcPort#getPinName <em>Pin Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Pin Name</em>' attribute.

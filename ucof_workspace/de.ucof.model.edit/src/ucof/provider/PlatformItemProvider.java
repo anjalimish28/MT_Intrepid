@@ -19,6 +19,7 @@ import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 import targets.TargetsFactory;
+
 import ucof.Platform;
 import ucof.UcofPackage;
 

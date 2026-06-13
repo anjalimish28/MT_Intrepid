@@ -1,18 +1,19 @@
 /**
  */
-package targets.MotorController.util;
+package targets.motorcontroller.util;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
 
-import targets.MotorController.*;
-
 import targets.SuperHardwarePortType;
 import targets.SuperTargetType;
 
+import targets.motorcontroller.*;
+
 import targets.powergrid.SuperPowerType;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
@@ -26,17 +27,17 @@ import ucof.common.etypes.SuperTrackingType;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see targets.MotorController.MotorControllerPackage
+ * @see targets.motorcontroller.MotorcontrollerPackage
  * @generated
  */
-public class MotorControllerSwitch<T> extends Switch<T> {
+public class MotorcontrollerSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static MotorControllerPackage modelPackage;
+	protected static MotorcontrollerPackage modelPackage;
 
 	/**
 	 * Creates an instance of the switch.
@@ -44,9 +45,9 @@ public class MotorControllerSwitch<T> extends Switch<T> {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MotorControllerSwitch() {
+	public MotorcontrollerSwitch() {
 		if (modelPackage == null) {
-			modelPackage = MotorControllerPackage.eINSTANCE;
+			modelPackage = MotorcontrollerPackage.eINSTANCE;
 		}
 	}
 
@@ -73,7 +74,7 @@ public class MotorControllerSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case MotorControllerPackage.ESCON409510: {
+			case MotorcontrollerPackage.ESCON409510: {
 				escon409510 escon409510 = (escon409510)theEObject;
 				T result = caseescon409510(escon409510);
 				if (result == null) result = caseSuperTargetType(escon409510);
@@ -83,7 +84,7 @@ public class MotorControllerSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case MotorControllerPackage.ESCON_PORTS: {
+			case MotorcontrollerPackage.ESCON_PORTS: {
 				esconPorts esconPorts = (esconPorts)theEObject;
 				T result = caseesconPorts(esconPorts);
 				if (result == null) result = caseSuperTrackingType(esconPorts);
@@ -91,7 +92,7 @@ public class MotorControllerSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case MotorControllerPackage.ESCON_PORT: {
+			case MotorcontrollerPackage.ESCON_PORT: {
 				esconPort esconPort = (esconPort)theEObject;
 				T result = caseesconPort(esconPort);
 				if (result == null) result = caseSuperHardwarePortType(esconPort);
@@ -240,4 +241,4 @@ public class MotorControllerSwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //MotorControllerSwitch
+} //MotorcontrollerSwitch

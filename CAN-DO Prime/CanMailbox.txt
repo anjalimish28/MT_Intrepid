@@ -1,0 +1,95 @@
+module CandoSvc {
+
+  @| CAN Mailbox component
+  @| ----------------------------------------------------------------------
+  @| The Can Mailbox component provides an extension of the GenericHub pattern for CAN communication.
+  @| Instead of fixed pairs of hubs on different deployments, the CAN Mailbox provides outgoing and
+  @| incoming mailboxes that represent destination and source addresses of deployment nodes.
+  @| This way the processor and hubs are relieved as the CAN hardware will filter the relevant messages
+  @| and only trigger the mailbox when messages of interest are received.
+  @| This extended pattern will require an GenericHub per target node and for multicasting.
+  @|
+    passive component CanMailbox {
+
+        @ This interface provides ports allocate and deallocate
+        import Svc.BufferAllocation
+
+        @ CAN interface
+        import Drv.CanManager
+
+        ###############################################################################
+        # Input Ports                                                                 #
+        ###############################################################################
+
+        @ Polling mailbox for new messages
+        sync input port pollMb: Svc.Sched
+        
+        @ Port receiving back ownership of data buffer sent out on incomingMb port
+        guarded input port recvReturnIn: [CanMailboxCfg.NumOfIncomingMailboxes] Fw.BufferSend
+
+        @ Invoke this port to send data out on mailbox (synchronous)
+        guarded input port outgoingMb: [CanMailboxCfg.NumOfOutgoingMailboxes] Fw.BufferSend
+
+        ###############################################################################
+        # Output Ports - Telemetry                                                    #
+        ###############################################################################
+
+        @ Port invoked by the mailbox when it receives data
+        output port incomingMb: [CanMailboxCfg.NumOfIncomingMailboxes] Fw.BufferSend
+
+        @ Port to return ownership of data buffer received from outgoingMb port
+        output port sendReturnOut: [CanMailboxCfg.NumOfOutgoingMailboxes] Fw.BufferSend
+
+        match incomingMb with recvReturnIn
+
+        match sendReturnOut with outgoingMb
+
+        ###############################################################################
+        # Events                                                                      #
+        ###############################################################################
+
+        @ CAN receive debug
+        event CanReceiveDebug(
+                            device:     U8              @< CAN controller number
+                            $id:        U32             @< CAN message ID
+                            timestamp:  U16             @< Timestamp of the CAN message
+                            dataLength: U8              @< Length of the CAN message data
+                            data:       Drv.CanPayload  @< The data buffer of the CAN message
+                            ) \
+        severity diagnostic \
+        id 1 \
+        format "CAN recv ctrl {}; id {}, timestamp {}, len {}, data {}"
+
+        @ CAN received non configured message
+        event CanReceiveNoMb(
+                            device:     U8              @< CAN controller number
+                            $id:        U32             @< CAN message ID
+                            timestamp:  U16             @< Timestamp of the CAN message
+                            dataLength: U8              @< Length of the CAN message data
+                            data:       Drv.CanPayload  @< The data buffer of the CAN message
+                            ) \
+        severity warning high \
+        id 2 \
+        format "CAN no MB ctrl {}; id {}, timestamp {}, len {}, data {}"
+
+        @ CAN outgoing message failure
+        event CanOutgoingFailure(mbNum: U32) severity warning high format "CAN mailbox {} outgoing message failure!"
+
+        ###############################################################################
+        # Standard AC Ports: Required for Channels, Events, Commands, and Parameters  #
+        ###############################################################################
+
+        @ Port for requesting the current time
+        time get port timeCaller
+
+        @ Ports for Commanding
+        import Fw.Command
+
+        @ Ports for events
+        import Fw.Event
+
+        @ Ports for telemetry
+        import Fw.Channel
+
+    }
+}

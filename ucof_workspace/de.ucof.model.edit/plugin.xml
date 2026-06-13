@@ -348,7 +348,7 @@
       <!-- @generated ucof -->
       <factory
             uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc"
-            class="targets.RDC.provider.RDCItemProviderAdapterFactory"
+            class="targets.rdc.provider.RdcItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider
@@ -361,7 +361,7 @@
       <!-- @generated ucof -->
       <factory
             uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/adc"
-            class="targets.ADC.provider.ADCItemProviderAdapterFactory"
+            class="targets.adc.provider.AdcItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider
@@ -374,7 +374,7 @@
       <!-- @generated ucof -->
       <factory
             uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/sheild"
-            class="targets.Sheild.provider.SheildItemProviderAdapterFactory"
+            class="targets.sheild.provider.SheildItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider
@@ -387,7 +387,7 @@
       <!-- @generated ucof -->
       <factory
             uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/motorcontroller"
-            class="targets.MotorController.provider.MotorControllerItemProviderAdapterFactory"
+            class="targets.motorcontroller.provider.MotorcontrollerItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider
@@ -400,7 +400,7 @@
       <!-- @generated ucof -->
       <factory
             uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cantransceiver"
-            class="targets.CanTransceiver.provider.CanTransceiverItemProviderAdapterFactory"
+            class="targets.cantransceiver.provider.CantransceiverItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider
@@ -413,7 +413,7 @@
       <!-- @generated ucof -->
       <factory
             uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/hallsensor"
-            class="targets.HallSensor.provider.HallSensorItemProviderAdapterFactory"
+            class="targets.hallsensor.provider.HallsensorItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider
@@ -425,8 +425,8 @@
    <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
       <!-- @generated ucof -->
       <factory
-            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/ccdpu"
-            class="targets.CCDPU.provider.CCDPUItemProviderAdapterFactory"
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cpn"
+            class="targets.cpn.provider.CpnItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider
@@ -439,7 +439,20 @@
       <!-- @generated ucof -->
       <factory
             uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidpowergrid"
-            class="targets.IntrepidPowerGrid.provider.IntrepidPowerGridItemProviderAdapterFactory"
+            class="targets.intrepidpowergrid.provider.IntrepidpowergridItemProviderAdapterFactory"
+            supportedTypes=
+              "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
+               org.eclipse.emf.edit.provider.IStructuredItemContentProvider
+               org.eclipse.emf.edit.provider.ITreeItemContentProvider
+               org.eclipse.emf.edit.provider.IItemLabelProvider
+               org.eclipse.emf.edit.provider.IItemPropertySource"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
+      <!-- @generated ucof -->
+      <factory
+            uri="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidgateway"
+            class="targets.intrepidgateway.provider.IntrepidgatewayItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider

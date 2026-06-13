@@ -10,6 +10,7 @@ import org.eclipse.emf.ecore.EReference;
 import ucof.common.etypes.EtypesPackage;
 
 import ucof.communication.CommunicationPackage;
+
 import ucof.communication.basedonethernet.BasedonethernetPackage;
 
 /**
@@ -571,7 +572,6 @@ public interface Arinc664Package extends EPackage {
 	 * @ordered
 	 */
 	int A664_VIRTUAL_LINK_OUT_OPERATION_COUNT = A664_VIRTUAL_LINK_SUPER_OPERATION_COUNT + 0;
-
 
 	/**
 	 * The meta object id for the '{@link ucof.communication.basedonethernet.arinc664.impl.A664MessageImpl <em>A664 Message</em>}' class.

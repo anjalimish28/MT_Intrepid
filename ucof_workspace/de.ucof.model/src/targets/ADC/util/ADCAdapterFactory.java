@@ -1,6 +1,6 @@
 /**
  */
-package targets.ADC.util;
+package targets.adc.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -9,13 +9,14 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
-import targets.ADC.*;
-
 import targets.SuperHardwarePortType;
 import targets.SuperTargetType;
 
+import targets.adc.*;
+
 import targets.powergrid.SuperElectricalInterfaceType;
 import targets.powergrid.SuperPowerType;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
@@ -24,17 +25,17 @@ import ucof.common.etypes.SuperTrackingType;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see targets.ADC.ADCPackage
+ * @see targets.adc.AdcPackage
  * @generated
  */
-public class ADCAdapterFactory extends AdapterFactoryImpl {
+public class AdcAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static ADCPackage modelPackage;
+	protected static AdcPackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -42,9 +43,9 @@ public class ADCAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ADCAdapterFactory() {
+	public AdcAdapterFactory() {
 		if (modelPackage == null) {
-			modelPackage = ADCPackage.eINSTANCE;
+			modelPackage = AdcPackage.eINSTANCE;
 		}
 	}
 
@@ -73,8 +74,8 @@ public class ADCAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ADCSwitch<Adapter> modelSwitch =
-		new ADCSwitch<Adapter>() {
+	protected AdcSwitch<Adapter> modelSwitch =
+		new AdcSwitch<Adapter>() {
 			@Override
 			public Adapter caseads1115(ads1115 object) {
 				return createads1115Adapter();
@@ -132,13 +133,13 @@ public class ADCAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.ADC.ads1115 <em>ads1115</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.adc.ads1115 <em>ads1115</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.ADC.ads1115
+	 * @see targets.adc.ads1115
 	 * @generated
 	 */
 	public Adapter createads1115Adapter() {
@@ -146,13 +147,13 @@ public class ADCAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.ADC.adcPorts <em>adc Ports</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.adc.adcPorts <em>adc Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.ADC.adcPorts
+	 * @see targets.adc.adcPorts
 	 * @generated
 	 */
 	public Adapter createadcPortsAdapter() {
@@ -160,13 +161,13 @@ public class ADCAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.ADC.adcPort <em>adc Port</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.adc.adcPort <em>adc Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.ADC.adcPort
+	 * @see targets.adc.adcPort
 	 * @generated
 	 */
 	public Adapter createadcPortAdapter() {
@@ -269,4 +270,4 @@ public class ADCAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //ADCAdapterFactory
+} //AdcAdapterFactory

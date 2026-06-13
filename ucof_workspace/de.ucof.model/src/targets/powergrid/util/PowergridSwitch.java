@@ -74,6 +74,8 @@ public class PowergridSwitch<T> extends Switch<T> {
 			case PowergridPackage.SUPER_POWER_TYPE: {
 				SuperPowerType superPowerType = (SuperPowerType)theEObject;
 				T result = caseSuperPowerType(superPowerType);
+				if (result == null) result = caseSuperIdentifierType(superPowerType);
+				if (result == null) result = caseSuperTrackingType(superPowerType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}

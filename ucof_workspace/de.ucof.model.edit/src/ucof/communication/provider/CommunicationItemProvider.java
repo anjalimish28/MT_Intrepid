@@ -27,7 +27,9 @@ import ucof.communication.CommunicationFactory;
 import ucof.communication.CommunicationPackage;
 
 import ucof.communication.comDevices.ComDevicesFactory;
+
 import ucof.communication.configECIC.ConfigECICFactory;
+
 import ucof.communication.connectors.ConnectorsFactory;
 
 import ucof.provider.UcofEditPlugin;

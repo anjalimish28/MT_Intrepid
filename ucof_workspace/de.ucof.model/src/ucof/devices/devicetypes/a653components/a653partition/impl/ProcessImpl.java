@@ -5,11 +5,11 @@ package ucof.devices.devicetypes.a653components.a653partition.impl;
 import java.util.Date;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.notify.NotificationChain;
-import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import ucof.common.etypes.EtypesPackage;
@@ -20,6 +20,7 @@ import ucof.common.etypes.impl.SuperIdentifierTypeImpl;
 import ucof.devices.devicetypes.a653components.a653partition.A653partitionPackage;
 import ucof.devices.devicetypes.a653components.a653partition.ProcessDeadlineDefinition;
 import ucof.devices.devicetypes.a653components.a653partition.ProcessSynchronicity;
+
 import ucof.devices.ports.ProcessPorts;
 
 /**

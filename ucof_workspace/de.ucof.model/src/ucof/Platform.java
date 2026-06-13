@@ -3,6 +3,7 @@
 package ucof;
 
 import targets.Targets;
+
 import ucof.assignments.Assignments;
 
 import ucof.common.etypes.SuperIdentifierType;

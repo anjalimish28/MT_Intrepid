@@ -1,0 +1,23 @@
+module Arduino {
+
+    @ CAN Driver for Arduino using STM32_CAN library.
+    passive component CanDriver {
+
+        @ Ports for CAN driver interface
+        import Drv.CanDriver
+
+        ###############################################################################
+        # Standard AC Ports: Required for Channels, Events, Commands, and Parameters  #
+        ###############################################################################
+        
+        @ Port for requesting the current time
+        time get port timeCaller
+
+        @ Ports for events
+        import Fw.Event
+
+        @ Ports for telemetry
+        import Fw.Channel
+
+    }
+}

@@ -1,11 +1,11 @@
 /**
  */
-package targets.IntrepidPowerGrid.impl;
+package targets.intrepidpowergrid.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
-import targets.IntrepidPowerGrid.IntrepidPowerGridPackage;
-import targets.IntrepidPowerGrid.intrepidElectricalGrid;
+import targets.intrepidpowergrid.IntrepidpowergridPackage;
+import targets.intrepidpowergrid.intrepidElectricalGrid;
 
 import targets.powergrid.impl.SuperElectricalGridTypeImpl;
 
@@ -33,7 +33,7 @@ public class intrepidElectricalGridImpl extends SuperElectricalGridTypeImpl impl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IntrepidPowerGridPackage.Literals.INTREPID_ELECTRICAL_GRID;
+		return IntrepidpowergridPackage.Literals.INTREPID_ELECTRICAL_GRID;
 	}
 
 } //intrepidElectricalGridImpl

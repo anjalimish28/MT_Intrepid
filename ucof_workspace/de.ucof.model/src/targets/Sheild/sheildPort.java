@@ -1,8 +1,9 @@
 /**
  */
-package targets.Sheild;
+package targets.sheild;
 
 import targets.SuperHardwarePortType;
+
 import targets.powergrid.SuperElectricalInterfaceType;
 
 /**
@@ -14,10 +15,10 @@ import targets.powergrid.SuperElectricalInterfaceType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link targets.Sheild.sheildPort#getPinName <em>Pin Name</em>}</li>
+ *   <li>{@link targets.sheild.sheildPort#getPinName <em>Pin Name</em>}</li>
  * </ul>
  *
- * @see targets.Sheild.SheildPackage#getsheildPort()
+ * @see targets.sheild.SheildPackage#getsheildPort()
  * @model
  * @generated
  */
@@ -28,14 +29,14 @@ public interface sheildPort extends SuperHardwarePortType, SuperElectricalInterf
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pin Name</em>' attribute.
 	 * @see #setPinName(String)
-	 * @see targets.Sheild.SheildPackage#getsheildPort_PinName()
+	 * @see targets.sheild.SheildPackage#getsheildPort_PinName()
 	 * @model
 	 * @generated
 	 */
 	String getPinName();
 
 	/**
-	 * Sets the value of the '{@link targets.Sheild.sheildPort#getPinName <em>Pin Name</em>}' attribute.
+	 * Sets the value of the '{@link targets.sheild.sheildPort#getPinName <em>Pin Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Pin Name</em>' attribute.

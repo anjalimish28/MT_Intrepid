@@ -2,6 +2,7 @@
  */
 package ucof.devices.devicetypes;
 
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Peripheral</b></em>'.

@@ -12,6 +12,7 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.ResourceLocator;
 
 import org.eclipse.emf.ecore.EStructuralFeature;
+
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
@@ -24,6 +25,7 @@ import ucof.common.etypes.provider.SuperIdentifierTypeItemProvider;
 import ucof.devices.devicetypes.a653components.a653partition.A653partitionPackage;
 
 import ucof.devices.ports.PortsFactory;
+
 import ucof.provider.UcofEditPlugin;
 
 /**

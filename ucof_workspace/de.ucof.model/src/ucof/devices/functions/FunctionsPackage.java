@@ -415,6 +415,7 @@ public interface FunctionsPackage extends EPackage {
 	 */
 	int SUPER_FUNCTION_TYPE_OPERATION_COUNT = EtypesPackage.SUPER_IDENTIFIER_TYPE_OPERATION_COUNT + 0;
 
+
 	/**
 	 * Returns the meta object for class '{@link ucof.devices.functions.DeviceFunctions <em>Device Functions</em>}'.
 	 * <!-- begin-user-doc -->

@@ -1,6 +1,6 @@
 /**
  */
-package targets.MotorController.impl;
+package targets.motorcontroller.impl;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -10,7 +10,7 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
-import targets.MotorController.*;
+import targets.motorcontroller.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,24 +18,24 @@ import targets.MotorController.*;
  * <!-- end-user-doc -->
  * @generated
  */
-public class MotorControllerFactoryImpl extends EFactoryImpl implements MotorControllerFactory {
+public class MotorcontrollerFactoryImpl extends EFactoryImpl implements MotorcontrollerFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static MotorControllerFactory init() {
+	public static MotorcontrollerFactory init() {
 		try {
-			MotorControllerFactory theMotorControllerFactory = (MotorControllerFactory)EPackage.Registry.INSTANCE.getEFactory(MotorControllerPackage.eNS_URI);
-			if (theMotorControllerFactory != null) {
-				return theMotorControllerFactory;
+			MotorcontrollerFactory theMotorcontrollerFactory = (MotorcontrollerFactory)EPackage.Registry.INSTANCE.getEFactory(MotorcontrollerPackage.eNS_URI);
+			if (theMotorcontrollerFactory != null) {
+				return theMotorcontrollerFactory;
 			}
 		}
 		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
-		return new MotorControllerFactoryImpl();
+		return new MotorcontrollerFactoryImpl();
 	}
 
 	/**
@@ -44,7 +44,7 @@ public class MotorControllerFactoryImpl extends EFactoryImpl implements MotorCon
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MotorControllerFactoryImpl() {
+	public MotorcontrollerFactoryImpl() {
 		super();
 	}
 
@@ -56,9 +56,9 @@ public class MotorControllerFactoryImpl extends EFactoryImpl implements MotorCon
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case MotorControllerPackage.ESCON409510: return createescon409510();
-			case MotorControllerPackage.ESCON_PORTS: return createesconPorts();
-			case MotorControllerPackage.ESCON_PORT: return createesconPort();
+			case MotorcontrollerPackage.ESCON409510: return createescon409510();
+			case MotorcontrollerPackage.ESCON_PORTS: return createesconPorts();
+			case MotorcontrollerPackage.ESCON_PORT: return createesconPort();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -99,8 +99,8 @@ public class MotorControllerFactoryImpl extends EFactoryImpl implements MotorCon
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MotorControllerPackage getMotorControllerPackage() {
-		return (MotorControllerPackage)getEPackage();
+	public MotorcontrollerPackage getMotorcontrollerPackage() {
+		return (MotorcontrollerPackage)getEPackage();
 	}
 
 	/**
@@ -110,8 +110,8 @@ public class MotorControllerFactoryImpl extends EFactoryImpl implements MotorCon
 	 * @generated
 	 */
 	@Deprecated
-	public static MotorControllerPackage getPackage() {
-		return MotorControllerPackage.eINSTANCE;
+	public static MotorcontrollerPackage getPackage() {
+		return MotorcontrollerPackage.eINSTANCE;
 	}
 
-} //MotorControllerFactoryImpl
+} //MotorcontrollerFactoryImpl

@@ -1,6 +1,6 @@
 /**
  */
-package targets.HallSensor;
+package targets.hallsensor;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -16,21 +16,21 @@ import ucof.common.etypes.SuperTrackingType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link targets.HallSensor.hallPorts#getPort <em>Port</em>}</li>
+ *   <li>{@link targets.hallsensor.hallPorts#getPort <em>Port</em>}</li>
  * </ul>
  *
- * @see targets.HallSensor.HallSensorPackage#gethallPorts()
+ * @see targets.hallsensor.HallsensorPackage#gethallPorts()
  * @model
  * @generated
  */
 public interface hallPorts extends SuperTrackingType, SuperIdentifierType {
 	/**
 	 * Returns the value of the '<em><b>Port</b></em>' containment reference list.
-	 * The list contents are of type {@link targets.HallSensor.hallPort}.
+	 * The list contents are of type {@link targets.hallsensor.hallPort}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Port</em>' containment reference list.
-	 * @see targets.HallSensor.HallSensorPackage#gethallPorts_Port()
+	 * @see targets.hallsensor.HallsensorPackage#gethallPorts_Port()
 	 * @model containment="true"
 	 * @generated
 	 */

@@ -1,6 +1,6 @@
 /**
  */
-package targets.MotorController.provider;
+package targets.motorcontroller.provider;
 
 
 import java.util.Collection;
@@ -16,18 +16,19 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.MotorController.MotorControllerFactory;
-import targets.MotorController.MotorControllerPackage;
-import targets.MotorController.escon409510;
+import targets.motorcontroller.MotorcontrollerFactory;
+import targets.motorcontroller.MotorcontrollerPackage;
+import targets.motorcontroller.escon409510;
 
 import targets.powergrid.PowergridFactory;
 import targets.powergrid.PowergridPackage;
+
 import targets.provider.SuperTargetTypeItemProvider;
 
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.MotorController.escon409510} object.
+ * This is the item provider adapter for a {@link targets.motorcontroller.escon409510} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -71,7 +72,7 @@ public class escon409510ItemProvider extends SuperTargetTypeItemProvider {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES);
-			childrenFeatures.add(MotorControllerPackage.Literals.ESCON409510__PORTS);
+			childrenFeatures.add(MotorcontrollerPackage.Literals.ESCON409510__PORTS);
 		}
 		return childrenFeatures;
 	}
@@ -127,8 +128,8 @@ public class escon409510ItemProvider extends SuperTargetTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(escon409510.class)) {
-			case MotorControllerPackage.ESCON409510__ELECTRICAL_INTERFACES:
-			case MotorControllerPackage.ESCON409510__PORTS:
+			case MotorcontrollerPackage.ESCON409510__ELECTRICAL_INTERFACES:
+			case MotorcontrollerPackage.ESCON409510__PORTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -153,8 +154,8 @@ public class escon409510ItemProvider extends SuperTargetTypeItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(MotorControllerPackage.Literals.ESCON409510__PORTS,
-				 MotorControllerFactory.eINSTANCE.createesconPorts()));
+				(MotorcontrollerPackage.Literals.ESCON409510__PORTS,
+				 MotorcontrollerFactory.eINSTANCE.createesconPorts()));
 	}
 
 	/**

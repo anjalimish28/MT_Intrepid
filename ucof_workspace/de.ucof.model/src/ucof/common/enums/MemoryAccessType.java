@@ -49,7 +49,9 @@ public enum MemoryAccessType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	READ_WRITE(2, "ReadWrite", "ReadWrite"), /**
+	READ_WRITE(2, "ReadWrite", "ReadWrite"),
+
+	/**
 	 * The '<em><b>Write</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

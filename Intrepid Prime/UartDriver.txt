@@ -1,0 +1,40 @@
+module Va416x0Drv {
+    @ Uart driver for VA416x0.
+    passive component UartDriver {
+
+        @ Polling for receiving data
+        sync input port schedIn: Svc.Sched
+
+        @ Port invoked by dma interrupt when a receive cycle is complete
+        sync input port dmaDoneIrq: Va416x0Svc.ExceptionHandler
+
+        @ Runtime initialization
+        sync input port initialize : Fw.Ready
+
+        import Drv.ByteStreamDriver
+
+        @ Allocation port used for allocating memory in the receive task
+        output port allocate: Fw.BufferGet
+
+        @ Deallocation of allocated buffers
+        output port deallocate: Fw.BufferSend
+
+        @ Start DMA Channel for RX
+        output port startRxDma: Va416x0Drv.StartDmaTransaction
+
+        @ Status DMA Channel for RX
+        output port statusRxDma: Va416x0Drv.StatusDmaTransaction
+
+        @ Stop DMA Channel for RX
+        output port stopRxDma: Va416x0Drv.StopDmaTransaction
+
+        telemetry port Tlm
+        time get port Time
+
+        telemetry BytesReceived: U32 update on change
+        telemetry FailedReceives: U32 update on change
+        telemetry BytesSent: U32 update on change
+        telemetry FailedSends: U32 update on change
+
+    }
+}

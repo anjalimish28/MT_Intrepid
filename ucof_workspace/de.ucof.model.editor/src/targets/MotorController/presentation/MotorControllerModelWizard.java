@@ -1,6 +1,6 @@
 /**
  */
-package targets.MotorController.presentation;
+package targets.motorcontroller.presentation;
 
 
 import java.util.ArrayList;
@@ -69,8 +69,8 @@ import org.eclipse.ui.dialogs.WizardNewFileCreationPage;
 import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.ui.part.ISetSelectionTarget;
 
-import targets.MotorController.MotorControllerFactory;
-import targets.MotorController.MotorControllerPackage;
+import targets.motorcontroller.MotorcontrollerFactory;
+import targets.motorcontroller.MotorcontrollerPackage;
 import ucof.provider.UcofEditPlugin;
 
 
@@ -93,7 +93,7 @@ import ucof.presentation.UcofEditorPlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class MotorControllerModelWizard extends Wizard implements INewWizard {
+public class MotorcontrollerModelWizard extends Wizard implements INewWizard {
 	/**
 	 * The supported extensions for created files.
 	 * <!-- begin-user-doc -->
@@ -101,7 +101,7 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final List<String> FILE_EXTENSIONS =
-		Collections.unmodifiableList(Arrays.asList(UcofEditorPlugin.INSTANCE.getString("_UI_MotorControllerEditorFilenameExtensions").split("\\s*,\\s*")));
+		Collections.unmodifiableList(Arrays.asList(UcofEditorPlugin.INSTANCE.getString("_UI_MotorcontrollerEditorFilenameExtensions").split("\\s*,\\s*")));
 
 	/**
 	 * A formatted list of supported file extensions, suitable for display.
@@ -110,7 +110,7 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final String FORMATTED_FILE_EXTENSIONS =
-		UcofEditorPlugin.INSTANCE.getString("_UI_MotorControllerEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
+		UcofEditorPlugin.INSTANCE.getString("_UI_MotorcontrollerEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
 
 	/**
 	 * This caches an instance of the model package.
@@ -118,7 +118,7 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MotorControllerPackage motorControllerPackage = MotorControllerPackage.eINSTANCE;
+	protected MotorcontrollerPackage motorcontrollerPackage = MotorcontrollerPackage.eINSTANCE;
 
 	/**
 	 * This caches an instance of the model factory.
@@ -126,7 +126,7 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MotorControllerFactory motorControllerFactory = motorControllerPackage.getMotorControllerFactory();
+	protected MotorcontrollerFactory motorcontrollerFactory = motorcontrollerPackage.getMotorcontrollerFactory();
 
 	/**
 	 * This is the file creation page.
@@ -134,7 +134,7 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MotorControllerModelWizardNewFileCreationPage newFileCreationPage;
+	protected MotorcontrollerModelWizardNewFileCreationPage newFileCreationPage;
 
 	/**
 	 * This is the initial object creation page.
@@ -142,7 +142,7 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MotorControllerModelWizardInitialObjectCreationPage initialObjectCreationPage;
+	protected MotorcontrollerModelWizardInitialObjectCreationPage initialObjectCreationPage;
 
 	/**
 	 * Remember the selection during initialization for populating the default container.
@@ -178,7 +178,7 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 		this.workbench = workbench;
 		this.selection = selection;
 		setWindowTitle(UcofEditorPlugin.INSTANCE.getString("_UI_Wizard_label"));
-		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(UcofEditorPlugin.INSTANCE.getImage("full/wizban/NewMotorController")));
+		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(UcofEditorPlugin.INSTANCE.getImage("full/wizban/NewMotorcontroller")));
 	}
 
 	/**
@@ -190,7 +190,7 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 	protected Collection<String> getInitialObjectNames() {
 		if (initialObjectNames == null) {
 			initialObjectNames = new ArrayList<String>();
-			for (EClassifier eClassifier : motorControllerPackage.getEClassifiers()) {
+			for (EClassifier eClassifier : motorcontrollerPackage.getEClassifiers()) {
 				if (eClassifier instanceof EClass) {
 					EClass eClass = (EClass)eClassifier;
 					if (!eClass.isAbstract()) {
@@ -210,8 +210,8 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	protected EObject createInitialModel() {
-		EClass eClass = (EClass)motorControllerPackage.getEClassifier(initialObjectCreationPage.getInitialObjectName());
-		EObject rootObject = motorControllerFactory.create(eClass);
+		EClass eClass = (EClass)motorcontrollerPackage.getEClassifier(initialObjectCreationPage.getInitialObjectName());
+		EObject rootObject = motorcontrollerFactory.create(eClass);
 		return rootObject;
 	}
 
@@ -312,14 +312,14 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public class MotorControllerModelWizardNewFileCreationPage extends WizardNewFileCreationPage {
+	public class MotorcontrollerModelWizardNewFileCreationPage extends WizardNewFileCreationPage {
 		/**
 		 * Pass in the selection.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		public MotorControllerModelWizardNewFileCreationPage(String pageId, IStructuredSelection selection) {
+		public MotorcontrollerModelWizardNewFileCreationPage(String pageId, IStructuredSelection selection) {
 			super(pageId, selection);
 		}
 
@@ -359,7 +359,7 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public class MotorControllerModelWizardInitialObjectCreationPage extends WizardPage {
+	public class MotorcontrollerModelWizardInitialObjectCreationPage extends WizardPage {
 		/**
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -387,7 +387,7 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		public MotorControllerModelWizardInitialObjectCreationPage(String pageId) {
+		public MotorcontrollerModelWizardInitialObjectCreationPage(String pageId) {
 			super(pageId);
 		}
 
@@ -571,10 +571,10 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 	public void addPages() {
 		// Create a page, set the title, and the initial model file name.
 		//
-		newFileCreationPage = new MotorControllerModelWizardNewFileCreationPage("Whatever", selection);
-		newFileCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_MotorControllerModelWizard_label"));
-		newFileCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_MotorControllerModelWizard_description"));
-		newFileCreationPage.setFileName(UcofEditorPlugin.INSTANCE.getString("_UI_MotorControllerEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
+		newFileCreationPage = new MotorcontrollerModelWizardNewFileCreationPage("Whatever", selection);
+		newFileCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_MotorcontrollerModelWizard_label"));
+		newFileCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_MotorcontrollerModelWizard_description"));
+		newFileCreationPage.setFileName(UcofEditorPlugin.INSTANCE.getString("_UI_MotorcontrollerEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
 		addPage(newFileCreationPage);
 
 		// Try and get the resource selection to determine a current directory for the file dialog.
@@ -600,7 +600,7 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 
 					// Make up a unique new name here.
 					//
-					String defaultModelBaseFilename = UcofEditorPlugin.INSTANCE.getString("_UI_MotorControllerEditorFilenameDefaultBase");
+					String defaultModelBaseFilename = UcofEditorPlugin.INSTANCE.getString("_UI_MotorcontrollerEditorFilenameDefaultBase");
 					String defaultModelFilenameExtension = FILE_EXTENSIONS.get(0);
 					String modelFilename = defaultModelBaseFilename + "." + defaultModelFilenameExtension;
 					for (int i = 1; ((IContainer)selectedResource).findMember(modelFilename) != null; ++i) {
@@ -610,8 +610,8 @@ public class MotorControllerModelWizard extends Wizard implements INewWizard {
 				}
 			}
 		}
-		initialObjectCreationPage = new MotorControllerModelWizardInitialObjectCreationPage("Whatever2");
-		initialObjectCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_MotorControllerModelWizard_label"));
+		initialObjectCreationPage = new MotorcontrollerModelWizardInitialObjectCreationPage("Whatever2");
+		initialObjectCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_MotorcontrollerModelWizard_label"));
 		initialObjectCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_Wizard_initial_object_description"));
 		addPage(initialObjectCreationPage);
 	}

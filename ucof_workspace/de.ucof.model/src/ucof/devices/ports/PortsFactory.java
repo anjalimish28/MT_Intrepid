@@ -22,15 +22,6 @@ public interface PortsFactory extends EFactory {
 	PortsFactory eINSTANCE = ucof.devices.ports.impl.PortsFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Process Ports</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Process Ports</em>'.
-	 * @generated
-	 */
-	ProcessPorts createProcessPorts();
-
-	/**
 	 * Returns a new object of class '<em>Partition Ports</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38,6 +29,15 @@ public interface PortsFactory extends EFactory {
 	 * @generated
 	 */
 	PartitionPorts createPartitionPorts();
+
+	/**
+	 * Returns a new object of class '<em>Process Ports</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Process Ports</em>'.
+	 * @generated
+	 */
+	ProcessPorts createProcessPorts();
 
 	/**
 	 * Returns a new object of class '<em>Blackboard</em>'.

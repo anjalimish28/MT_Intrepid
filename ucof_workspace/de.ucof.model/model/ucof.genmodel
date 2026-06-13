@@ -740,6 +740,7 @@
         </genClasses>
         <genClasses image="false" ecoreClass="ucof.ecore#//communication/comDevices/SuperCommunicationDeviceType"/>
         <genClasses ecoreClass="ucof.ecore#//communication/comDevices/ED247Gateway"/>
+        <genClasses ecoreClass="ucof.ecore#//communication/comDevices/GenericGateway"/>
       </nestedGenPackages>
       <nestedGenPackages prefix="I2c" disposableProviderFactory="true" generateModelWizard="false"
           ecorePackage="ucof.ecore#//communication/i2c">
@@ -947,95 +948,153 @@
         <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//powergrid/ElectricalPowerGridSet/electricalGrid"/>
       </genClasses>
     </nestedGenPackages>
-    <nestedGenPackages prefix="RDC" basePackage="targets" disposableProviderFactory="true"
-        ecorePackage="targets.ecore#//RDC">
-      <genClasses ecoreClass="targets.ecore#//RDC/stm32f446re">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//RDC/stm32f446re/ports"/>
+    <nestedGenPackages prefix="Rdc" disposableProviderFactory="true" ecorePackage="targets.ecore#//rdc">
+      <genClasses ecoreClass="targets.ecore#//rdc/stm32f446re">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stm32f446re/size"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//rdc/stm32f446re/ports"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//rdc/stm32f446re/stmTimingConfig"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//rdc/stm32f446re/msgBoxExtension"/>
       </genClasses>
-      <genClasses ecoreClass="targets.ecore#//RDC/stmPorts">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//RDC/stmPorts/port"/>
+      <genClasses ecoreClass="targets.ecore#//rdc/stmTimingConfig">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmTimingConfig/rateDriverFrequencyHz"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmTimingConfig/rateGroupDivisor1"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmTimingConfig/rateGroupDivisor2"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmTimingConfig/rateGroupDivisor3"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmTimingConfig/rateGroupDefaultOffset"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmTimingConfig/pwmResolutionBits"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmTimingConfig/rateDriverFrequencyHzSize"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmTimingConfig/rateGroupDivisor1Size"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmTimingConfig/rateGroupDivisor2Size"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmTimingConfig/rateGroupDivisor3Size"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmTimingConfig/rateGroupDefaultOffsetSize"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmTimingConfig/pwmResolutionBitsSize"/>
       </genClasses>
-      <genClasses ecoreClass="targets.ecore#//RDC/stmPort">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//RDC/stmPort/pinName"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//RDC/stmPort/pinNumber"/>
+      <genClasses ecoreClass="targets.ecore#//rdc/stmPorts">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//rdc/stmPorts/port"/>
       </genClasses>
-    </nestedGenPackages>
-    <nestedGenPackages prefix="ADC" basePackage="targets" disposableProviderFactory="true"
-        ecorePackage="targets.ecore#//ADC">
-      <genClasses ecoreClass="targets.ecore#//ADC/ads1115">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//ADC/ads1115/ports"/>
-      </genClasses>
-      <genClasses ecoreClass="targets.ecore#//ADC/adcPorts">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//ADC/adcPorts/port"/>
-      </genClasses>
-      <genClasses ecoreClass="targets.ecore#//ADC/adcPort">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//ADC/adcPort/pinName"/>
-      </genClasses>
-    </nestedGenPackages>
-    <nestedGenPackages prefix="Sheild" basePackage="targets" disposableProviderFactory="true"
-        ecorePackage="targets.ecore#//Sheild">
-      <genClasses ecoreClass="targets.ecore#//Sheild/arduinosheild">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//Sheild/arduinosheild/ports"/>
-      </genClasses>
-      <genClasses ecoreClass="targets.ecore#//Sheild/sheildPorts">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//Sheild/sheildPorts/port"/>
-      </genClasses>
-      <genClasses ecoreClass="targets.ecore#//Sheild/sheildPort">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//Sheild/sheildPort/pinName"/>
+      <genClasses ecoreClass="targets.ecore#//rdc/stmPort">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmPort/pinName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmPort/pinNumber"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//rdc/stmPort/size"/>
       </genClasses>
     </nestedGenPackages>
-    <nestedGenPackages prefix="MotorController" basePackage="targets" disposableProviderFactory="true"
-        ecorePackage="targets.ecore#//MotorController">
-      <genClasses ecoreClass="targets.ecore#//MotorController/escon409510">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//MotorController/escon409510/ports"/>
+    <nestedGenPackages prefix="Adc" disposableProviderFactory="true" ecorePackage="targets.ecore#//adc">
+      <genClasses ecoreClass="targets.ecore#//adc/ads1115">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//adc/ads1115/ports"/>
       </genClasses>
-      <genClasses ecoreClass="targets.ecore#//MotorController/esconPorts">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//MotorController/esconPorts/port"/>
+      <genClasses ecoreClass="targets.ecore#//adc/adcPorts">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//adc/adcPorts/port"/>
       </genClasses>
-      <genClasses ecoreClass="targets.ecore#//MotorController/esconPort">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//MotorController/esconPort/pinName"/>
-      </genClasses>
-    </nestedGenPackages>
-    <nestedGenPackages prefix="CanTransceiver" disposableProviderFactory="true" ecorePackage="targets.ecore#//CanTransceiver">
-      <genClasses ecoreClass="targets.ecore#//CanTransceiver/sn65hvd230">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//CanTransceiver/sn65hvd230/ports"/>
-      </genClasses>
-      <genClasses ecoreClass="targets.ecore#//CanTransceiver/canTransceiverPorts">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//CanTransceiver/canTransceiverPorts/port"/>
-      </genClasses>
-      <genClasses ecoreClass="targets.ecore#//CanTransceiver/canTransceiverPort">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//CanTransceiver/canTransceiverPort/pinName"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//CanTransceiver/canTransceiverPort/pinNumber"/>
+      <genClasses ecoreClass="targets.ecore#//adc/adcPort">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//adc/adcPort/pinName"/>
       </genClasses>
     </nestedGenPackages>
-    <nestedGenPackages prefix="HallSensor" disposableProviderFactory="true" ecorePackage="targets.ecore#//HallSensor">
-      <genClasses ecoreClass="targets.ecore#//HallSensor/mts360">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//HallSensor/mts360/ports"/>
+    <nestedGenPackages prefix="Sheild" disposableProviderFactory="true" ecorePackage="targets.ecore#//sheild">
+      <genClasses ecoreClass="targets.ecore#//sheild/arduinosheild">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//sheild/arduinosheild/ports"/>
       </genClasses>
-      <genClasses ecoreClass="targets.ecore#//HallSensor/hallPorts">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//HallSensor/hallPorts/port"/>
+      <genClasses ecoreClass="targets.ecore#//sheild/sheildPorts">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//sheild/sheildPorts/port"/>
       </genClasses>
-      <genClasses ecoreClass="targets.ecore#//HallSensor/hallPort">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//HallSensor/hallPort/pinName"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//HallSensor/hallPort/pinNumber"/>
-      </genClasses>
-    </nestedGenPackages>
-    <nestedGenPackages prefix="CCDPU" disposableProviderFactory="true" ecorePackage="targets.ecore#//CCDPU">
-      <genClasses ecoreClass="targets.ecore#//CCDPU/va41620peb1">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//CCDPU/va41620peb1/ports"/>
-      </genClasses>
-      <genClasses ecoreClass="targets.ecore#//CCDPU/voragoPorts">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//CCDPU/voragoPorts/port"/>
-      </genClasses>
-      <genClasses ecoreClass="targets.ecore#//CCDPU/voragoPort">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//CCDPU/voragoPort/pinName"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//CCDPU/voragoPort/pinNumber"/>
+      <genClasses ecoreClass="targets.ecore#//sheild/sheildPort">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//sheild/sheildPort/pinName"/>
       </genClasses>
     </nestedGenPackages>
-    <nestedGenPackages prefix="IntrepidPowerGrid" disposableProviderFactory="true"
-        ecorePackage="targets.ecore#//IntrepidPowerGrid">
-      <genClasses ecoreClass="targets.ecore#//IntrepidPowerGrid/intrepidElectricalGrid"/>
-      <genClasses ecoreClass="targets.ecore#//IntrepidPowerGrid/intrepidElectricalInterface"/>
+    <nestedGenPackages prefix="Motorcontroller" disposableProviderFactory="true" ecorePackage="targets.ecore#//motorcontroller">
+      <genClasses ecoreClass="targets.ecore#//motorcontroller/escon409510">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//motorcontroller/escon409510/ports"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//motorcontroller/esconPorts">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//motorcontroller/esconPorts/port"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//motorcontroller/esconPort">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//motorcontroller/esconPort/pinName"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Cantransceiver" disposableProviderFactory="true" ecorePackage="targets.ecore#//cantransceiver">
+      <genClasses ecoreClass="targets.ecore#//cantransceiver/sn65hvd230">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//cantransceiver/sn65hvd230/ports"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//cantransceiver/canTransceiverPorts">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//cantransceiver/canTransceiverPorts/port"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//cantransceiver/canTransceiverPort">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//cantransceiver/canTransceiverPort/pinName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//cantransceiver/canTransceiverPort/pinNumber"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Hallsensor" disposableProviderFactory="true" ecorePackage="targets.ecore#//hallsensor">
+      <genClasses ecoreClass="targets.ecore#//hallsensor/mts360">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//hallsensor/mts360/ports"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//hallsensor/hallPorts">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//hallsensor/hallPorts/port"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//hallsensor/hallPort">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//hallsensor/hallPort/pinName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//hallsensor/hallPort/pinNumber"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Cpn" disposableProviderFactory="true" ecorePackage="targets.ecore#//cpn">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="targets.ecore#//cpn/CanOperatingMode">
+        <genEnumLiterals ecoreEnumLiteral="targets.ecore#//cpn/CanOperatingMode/NORMAL"/>
+        <genEnumLiterals ecoreEnumLiteral="targets.ecore#//cpn/CanOperatingMode/LOOPBACK"/>
+        <genEnumLiterals ecoreEnumLiteral="targets.ecore#//cpn/CanOperatingMode/SILENT"/>
+        <genEnumLiterals ecoreEnumLiteral="targets.ecore#//cpn/CanOperatingMode/DIAGNOSTIC"/>
+      </genEnums>
+      <genClasses ecoreClass="targets.ecore#//cpn/va41620peb1">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//cpn/va41620peb1/ports"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//cpn/va41620peb1/msgBoxExtension"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//cpn/va41620peb1/canDriverConfig"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//cpn/voragoPorts">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//cpn/voragoPorts/port"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//cpn/voragoPort">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//cpn/voragoPort/pinName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//cpn/voragoPort/pinNumber"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//cpn/CanDriverConfig">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//cpn/CanDriverConfig/interfaceID"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//cpn/CanDriverConfig/canPeripheralInstance"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//cpn/CanDriverConfig/operatingMode"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//cpn/CanDriverConfig/extendedIdEnabled"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//cpn/CanDriverConfig/ringBufferSize"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Intrepidpowergrid" disposableProviderFactory="true"
+        ecorePackage="targets.ecore#//intrepidpowergrid">
+      <genClasses ecoreClass="targets.ecore#//intrepidpowergrid/intrepidElectricalGrid"/>
+      <genClasses ecoreClass="targets.ecore#//intrepidpowergrid/intrepidElectricalInterface"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Intrepidgateway" disposableProviderFactory="true" ecorePackage="targets.ecore#//intrepidgateway">
+      <genClasses ecoreClass="targets.ecore#//intrepidgateway/MsgBoxExtension">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/MsgBoxExtension/numOfOutgoingMailboxes"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/MsgBoxExtension/numOfIncomingMailboxes"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/MsgBoxExtension/smallBufferSize"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/MsgBoxExtension/smallBufferCount"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/MsgBoxExtension/mediumBufferSize"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/MsgBoxExtension/mediumBufferCount"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/MsgBoxExtension/bigBufferSize"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/MsgBoxExtension/bigBufferCount"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/MsgBoxExtension/nodeAddr"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/MsgBoxExtension/nodeAddressSymbol"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//intrepidgateway/MsgBoxExtension/incomingDestinationFilter"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//intrepidgateway/MsgBoxExtension/senderSourceFilter"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference targets.ecore#//intrepidgateway/MsgBoxExtension/outgoingMailboxSlot"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//intrepidgateway/CanMailboxAddressFilter">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/CanMailboxAddressFilter/addressSymbol"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/CanMailboxAddressFilter/addressValue"/>
+      </genClasses>
+      <genClasses ecoreClass="targets.ecore#//intrepidgateway/CanMailboxOutSlot">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/CanMailboxOutSlot/portId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/CanMailboxOutSlot/sourceAddressSymbol"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/CanMailboxOutSlot/sourceAddressValue"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/CanMailboxOutSlot/destinationAddressSymbol"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/CanMailboxOutSlot/destinationAddressValue"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute targets.ecore#//intrepidgateway/CanMailboxOutSlot/multicast"/>
+      </genClasses>
     </nestedGenPackages>
   </genPackages>
 </genmodel:GenModel>

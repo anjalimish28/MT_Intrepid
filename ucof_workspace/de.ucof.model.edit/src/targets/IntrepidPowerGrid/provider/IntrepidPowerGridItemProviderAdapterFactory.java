@@ -1,6 +1,6 @@
 /**
  */
-package targets.IntrepidPowerGrid.provider;
+package targets.intrepidpowergrid.provider;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,7 +21,7 @@ import org.eclipse.emf.edit.provider.INotifyChangedListener;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 
-import targets.IntrepidPowerGrid.util.IntrepidPowerGridAdapterFactory;
+import targets.intrepidpowergrid.util.IntrepidpowergridAdapterFactory;
 
 /**
  * This is the factory that is used to provide the interfaces needed to support Viewers.
@@ -32,7 +32,7 @@ import targets.IntrepidPowerGrid.util.IntrepidPowerGridAdapterFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class IntrepidPowerGridItemProviderAdapterFactory extends IntrepidPowerGridAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
+public class IntrepidpowergridItemProviderAdapterFactory extends IntrepidpowergridAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
 	/**
 	 * This keeps track of the root adapter factory that delegates to this adapter factory.
 	 * <!-- begin-user-doc -->
@@ -63,7 +63,7 @@ public class IntrepidPowerGridItemProviderAdapterFactory extends IntrepidPowerGr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntrepidPowerGridItemProviderAdapterFactory() {
+	public IntrepidpowergridItemProviderAdapterFactory() {
 		supportedTypes.add(IEditingDomainItemProvider.class);
 		supportedTypes.add(IStructuredItemContentProvider.class);
 		supportedTypes.add(ITreeItemContentProvider.class);
@@ -72,7 +72,7 @@ public class IntrepidPowerGridItemProviderAdapterFactory extends IntrepidPowerGr
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.IntrepidPowerGrid.intrepidElectricalGrid} instances.
+	 * This keeps track of the one adapter used for all {@link targets.intrepidpowergrid.intrepidElectricalGrid} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -80,7 +80,7 @@ public class IntrepidPowerGridItemProviderAdapterFactory extends IntrepidPowerGr
 	protected intrepidElectricalGridItemProvider intrepidElectricalGridItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.IntrepidPowerGrid.intrepidElectricalGrid}.
+	 * This creates an adapter for a {@link targets.intrepidpowergrid.intrepidElectricalGrid}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -95,7 +95,7 @@ public class IntrepidPowerGridItemProviderAdapterFactory extends IntrepidPowerGr
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.IntrepidPowerGrid.intrepidElectricalInterface} instances.
+	 * This keeps track of the one adapter used for all {@link targets.intrepidpowergrid.intrepidElectricalInterface} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -103,7 +103,7 @@ public class IntrepidPowerGridItemProviderAdapterFactory extends IntrepidPowerGr
 	protected intrepidElectricalInterfaceItemProvider intrepidElectricalInterfaceItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.IntrepidPowerGrid.intrepidElectricalInterface}.
+	 * This creates an adapter for a {@link targets.intrepidpowergrid.intrepidElectricalInterface}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

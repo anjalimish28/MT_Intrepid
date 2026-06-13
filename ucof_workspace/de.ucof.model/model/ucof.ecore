@@ -1537,6 +1537,7 @@
       <eClassifiers xsi:type="ecore:EClass" name="SuperCommunicationDeviceType" abstract="true"
           eSuperTypes="#//common/etypes/SuperDeviceType"/>
       <eClassifiers xsi:type="ecore:EClass" name="ED247Gateway" eSuperTypes="#//communication/comDevices/SuperCommunicationDeviceType"/>
+      <eClassifiers xsi:type="ecore:EClass" name="GenericGateway" eSuperTypes="#//communication/comDevices/SuperCommunicationDeviceType"/>
     </eSubpackages>
     <eSubpackages name="i2c" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/i2c"
         nsPrefix="de.ucof.model.communication.i2c">

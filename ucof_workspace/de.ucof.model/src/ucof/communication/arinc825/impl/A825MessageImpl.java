@@ -7,7 +7,9 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import ucof.common.enums.booleanType;
+
 import ucof.communication.arinc825.A825Message;
 import ucof.communication.arinc825.Arinc825Package;
 import ucof.communication.arinc825.DLC;

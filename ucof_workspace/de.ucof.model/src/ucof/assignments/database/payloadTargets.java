@@ -36,7 +36,9 @@ public enum payloadTargets implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PORT2_PORT(1, "Port2Port", "Port2Port"), /**
+	PORT2_PORT(1, "Port2Port", "Port2Port"),
+
+	/**
 	 * The '<em><b>Interface</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -54,7 +56,9 @@ public enum payloadTargets implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	MESSAGE(3, "Message", "Message"), /**
+	MESSAGE(3, "Message", "Message"),
+
+	/**
 	 * The '<em><b>HW Port</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

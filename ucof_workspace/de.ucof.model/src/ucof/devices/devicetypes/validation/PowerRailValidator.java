@@ -4,7 +4,6 @@
  */
 package ucof.devices.devicetypes.validation;
 
-import ucof.devices.devicetypes.PowerRailType;
 
 /**
  * A sample validator interface for {@link ucof.devices.devicetypes.PowerRail}.
@@ -15,6 +14,4 @@ import ucof.devices.devicetypes.PowerRailType;
 public interface PowerRailValidator {
 	boolean validate();
 
-	boolean validateVoltage(float value);
-	boolean validateRailType(PowerRailType value);
 }

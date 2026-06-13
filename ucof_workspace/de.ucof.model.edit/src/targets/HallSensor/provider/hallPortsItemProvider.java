@@ -1,6 +1,6 @@
 /**
  */
-package targets.HallSensor.provider;
+package targets.hallsensor.provider;
 
 
 import java.util.Collection;
@@ -18,9 +18,9 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.HallSensor.HallSensorFactory;
-import targets.HallSensor.HallSensorPackage;
-import targets.HallSensor.hallPorts;
+import targets.hallsensor.HallsensorFactory;
+import targets.hallsensor.HallsensorPackage;
+import targets.hallsensor.hallPorts;
 
 import ucof.common.etypes.EtypesPackage;
 
@@ -29,7 +29,7 @@ import ucof.common.etypes.provider.SuperTrackingTypeItemProvider;
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.HallSensor.hallPorts} object.
+ * This is the item provider adapter for a {@link targets.hallsensor.hallPorts} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -118,7 +118,7 @@ public class hallPortsItemProvider extends SuperTrackingTypeItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(HallSensorPackage.Literals.HALL_PORTS__PORT);
+			childrenFeatures.add(HallsensorPackage.Literals.HALL_PORTS__PORT);
 		}
 		return childrenFeatures;
 	}
@@ -174,11 +174,11 @@ public class hallPortsItemProvider extends SuperTrackingTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(hallPorts.class)) {
-			case HallSensorPackage.HALL_PORTS__ID:
-			case HallSensorPackage.HALL_PORTS__NAME:
+			case HallsensorPackage.HALL_PORTS__ID:
+			case HallsensorPackage.HALL_PORTS__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case HallSensorPackage.HALL_PORTS__PORT:
+			case HallsensorPackage.HALL_PORTS__PORT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -198,8 +198,8 @@ public class hallPortsItemProvider extends SuperTrackingTypeItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(HallSensorPackage.Literals.HALL_PORTS__PORT,
-				 HallSensorFactory.eINSTANCE.createhallPort()));
+				(HallsensorPackage.Literals.HALL_PORTS__PORT,
+				 HallsensorFactory.eINSTANCE.createhallPort()));
 	}
 
 	/**

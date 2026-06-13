@@ -1,6 +1,6 @@
 /**
  */
-package targets.HallSensor;
+package targets.hallsensor;
 
 import targets.SuperHardwarePortType;
 
@@ -13,11 +13,11 @@ import targets.SuperHardwarePortType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link targets.HallSensor.hallPort#getPinName <em>Pin Name</em>}</li>
- *   <li>{@link targets.HallSensor.hallPort#getPinNumber <em>Pin Number</em>}</li>
+ *   <li>{@link targets.hallsensor.hallPort#getPinName <em>Pin Name</em>}</li>
+ *   <li>{@link targets.hallsensor.hallPort#getPinNumber <em>Pin Number</em>}</li>
  * </ul>
  *
- * @see targets.HallSensor.HallSensorPackage#gethallPort()
+ * @see targets.hallsensor.HallsensorPackage#gethallPort()
  * @model
  * @generated
  */
@@ -28,14 +28,14 @@ public interface hallPort extends SuperHardwarePortType {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pin Name</em>' attribute.
 	 * @see #setPinName(String)
-	 * @see targets.HallSensor.HallSensorPackage#gethallPort_PinName()
+	 * @see targets.hallsensor.HallsensorPackage#gethallPort_PinName()
 	 * @model
 	 * @generated
 	 */
 	String getPinName();
 
 	/**
-	 * Sets the value of the '{@link targets.HallSensor.hallPort#getPinName <em>Pin Name</em>}' attribute.
+	 * Sets the value of the '{@link targets.hallsensor.hallPort#getPinName <em>Pin Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Pin Name</em>' attribute.
@@ -50,14 +50,14 @@ public interface hallPort extends SuperHardwarePortType {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pin Number</em>' attribute.
 	 * @see #setPinNumber(int)
-	 * @see targets.HallSensor.HallSensorPackage#gethallPort_PinNumber()
+	 * @see targets.hallsensor.HallsensorPackage#gethallPort_PinNumber()
 	 * @model
 	 * @generated
 	 */
 	int getPinNumber();
 
 	/**
-	 * Sets the value of the '{@link targets.HallSensor.hallPort#getPinNumber <em>Pin Number</em>}' attribute.
+	 * Sets the value of the '{@link targets.hallsensor.hallPort#getPinNumber <em>Pin Number</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Pin Number</em>' attribute.

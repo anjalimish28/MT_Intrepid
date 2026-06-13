@@ -372,12 +372,12 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="targets.RDC.presentation.RDCModelWizardID"
-            name="%_UI_RDCModelWizard_label"
-            class="targets.RDC.presentation.RDCModelWizard"
+            id="targets.rdc.presentation.RdcModelWizardID"
+            name="%_UI_RdcModelWizard_label"
+            class="targets.rdc.presentation.RdcModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/RDCModelFile.gif">
-         <description>%_UI_RDCModelWizard_description</description>
+            icon="icons/full/obj16/RdcModelFile.gif">
+         <description>%_UI_RdcModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
    </extension>
@@ -385,12 +385,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated ucof -->
       <editor
-            id="targets.RDC.presentation.RDCEditorID"
-            name="%_UI_RDCEditor_label"
-            icon="icons/full/obj16/RDCModelFile.gif"
+            id="targets.rdc.presentation.RdcEditorID"
+            name="%_UI_RdcEditor_label"
+            icon="icons/full/obj16/RdcModelFile.gif"
             extensions="rdc"
-            class="targets.RDC.presentation.RDCEditor"
-            contributorClass="targets.RDC.presentation.RDCActionBarContributor">
+            class="targets.rdc.presentation.RdcEditor"
+            contributorClass="targets.rdc.presentation.RdcActionBarContributor">
       </editor>
    </extension>
 
@@ -400,12 +400,12 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="targets.ADC.presentation.ADCModelWizardID"
-            name="%_UI_ADCModelWizard_label"
-            class="targets.ADC.presentation.ADCModelWizard"
+            id="targets.adc.presentation.AdcModelWizardID"
+            name="%_UI_AdcModelWizard_label"
+            class="targets.adc.presentation.AdcModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/ADCModelFile.gif">
-         <description>%_UI_ADCModelWizard_description</description>
+            icon="icons/full/obj16/AdcModelFile.gif">
+         <description>%_UI_AdcModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
    </extension>
@@ -413,12 +413,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated ucof -->
       <editor
-            id="targets.ADC.presentation.ADCEditorID"
-            name="%_UI_ADCEditor_label"
-            icon="icons/full/obj16/ADCModelFile.gif"
+            id="targets.adc.presentation.AdcEditorID"
+            name="%_UI_AdcEditor_label"
+            icon="icons/full/obj16/AdcModelFile.gif"
             extensions="adc"
-            class="targets.ADC.presentation.ADCEditor"
-            contributorClass="targets.ADC.presentation.ADCActionBarContributor">
+            class="targets.adc.presentation.AdcEditor"
+            contributorClass="targets.adc.presentation.AdcActionBarContributor">
       </editor>
    </extension>
 
@@ -428,9 +428,9 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="targets.Sheild.presentation.SheildModelWizardID"
+            id="targets.sheild.presentation.SheildModelWizardID"
             name="%_UI_SheildModelWizard_label"
-            class="targets.Sheild.presentation.SheildModelWizard"
+            class="targets.sheild.presentation.SheildModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
             icon="icons/full/obj16/SheildModelFile.gif">
          <description>%_UI_SheildModelWizard_description</description>
@@ -441,12 +441,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated ucof -->
       <editor
-            id="targets.Sheild.presentation.SheildEditorID"
+            id="targets.sheild.presentation.SheildEditorID"
             name="%_UI_SheildEditor_label"
             icon="icons/full/obj16/SheildModelFile.gif"
             extensions="sheild"
-            class="targets.Sheild.presentation.SheildEditor"
-            contributorClass="targets.Sheild.presentation.SheildActionBarContributor">
+            class="targets.sheild.presentation.SheildEditor"
+            contributorClass="targets.sheild.presentation.SheildActionBarContributor">
       </editor>
    </extension>
 
@@ -456,12 +456,12 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="targets.MotorController.presentation.MotorControllerModelWizardID"
-            name="%_UI_MotorControllerModelWizard_label"
-            class="targets.MotorController.presentation.MotorControllerModelWizard"
+            id="targets.motorcontroller.presentation.MotorcontrollerModelWizardID"
+            name="%_UI_MotorcontrollerModelWizard_label"
+            class="targets.motorcontroller.presentation.MotorcontrollerModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/MotorControllerModelFile.gif">
-         <description>%_UI_MotorControllerModelWizard_description</description>
+            icon="icons/full/obj16/MotorcontrollerModelFile.gif">
+         <description>%_UI_MotorcontrollerModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
    </extension>
@@ -469,12 +469,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated ucof -->
       <editor
-            id="targets.MotorController.presentation.MotorControllerEditorID"
-            name="%_UI_MotorControllerEditor_label"
-            icon="icons/full/obj16/MotorControllerModelFile.gif"
+            id="targets.motorcontroller.presentation.MotorcontrollerEditorID"
+            name="%_UI_MotorcontrollerEditor_label"
+            icon="icons/full/obj16/MotorcontrollerModelFile.gif"
             extensions="motorcontroller"
-            class="targets.MotorController.presentation.MotorControllerEditor"
-            contributorClass="targets.MotorController.presentation.MotorControllerActionBarContributor">
+            class="targets.motorcontroller.presentation.MotorcontrollerEditor"
+            contributorClass="targets.motorcontroller.presentation.MotorcontrollerActionBarContributor">
       </editor>
    </extension>
 
@@ -484,12 +484,12 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="targets.CanTransceiver.presentation.CanTransceiverModelWizardID"
-            name="%_UI_CanTransceiverModelWizard_label"
-            class="targets.CanTransceiver.presentation.CanTransceiverModelWizard"
+            id="targets.cantransceiver.presentation.CantransceiverModelWizardID"
+            name="%_UI_CantransceiverModelWizard_label"
+            class="targets.cantransceiver.presentation.CantransceiverModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/CanTransceiverModelFile.gif">
-         <description>%_UI_CanTransceiverModelWizard_description</description>
+            icon="icons/full/obj16/CantransceiverModelFile.gif">
+         <description>%_UI_CantransceiverModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
    </extension>
@@ -497,12 +497,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated ucof -->
       <editor
-            id="targets.CanTransceiver.presentation.CanTransceiverEditorID"
-            name="%_UI_CanTransceiverEditor_label"
-            icon="icons/full/obj16/CanTransceiverModelFile.gif"
+            id="targets.cantransceiver.presentation.CantransceiverEditorID"
+            name="%_UI_CantransceiverEditor_label"
+            icon="icons/full/obj16/CantransceiverModelFile.gif"
             extensions="cantransceiver"
-            class="targets.CanTransceiver.presentation.CanTransceiverEditor"
-            contributorClass="targets.CanTransceiver.presentation.CanTransceiverActionBarContributor">
+            class="targets.cantransceiver.presentation.CantransceiverEditor"
+            contributorClass="targets.cantransceiver.presentation.CantransceiverActionBarContributor">
       </editor>
    </extension>
 
@@ -512,12 +512,12 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="targets.HallSensor.presentation.HallSensorModelWizardID"
-            name="%_UI_HallSensorModelWizard_label"
-            class="targets.HallSensor.presentation.HallSensorModelWizard"
+            id="targets.hallsensor.presentation.HallsensorModelWizardID"
+            name="%_UI_HallsensorModelWizard_label"
+            class="targets.hallsensor.presentation.HallsensorModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/HallSensorModelFile.gif">
-         <description>%_UI_HallSensorModelWizard_description</description>
+            icon="icons/full/obj16/HallsensorModelFile.gif">
+         <description>%_UI_HallsensorModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
    </extension>
@@ -525,12 +525,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated ucof -->
       <editor
-            id="targets.HallSensor.presentation.HallSensorEditorID"
-            name="%_UI_HallSensorEditor_label"
-            icon="icons/full/obj16/HallSensorModelFile.gif"
+            id="targets.hallsensor.presentation.HallsensorEditorID"
+            name="%_UI_HallsensorEditor_label"
+            icon="icons/full/obj16/HallsensorModelFile.gif"
             extensions="hallsensor"
-            class="targets.HallSensor.presentation.HallSensorEditor"
-            contributorClass="targets.HallSensor.presentation.HallSensorActionBarContributor">
+            class="targets.hallsensor.presentation.HallsensorEditor"
+            contributorClass="targets.hallsensor.presentation.HallsensorActionBarContributor">
       </editor>
    </extension>
 
@@ -540,12 +540,12 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="targets.CCDPU.presentation.CCDPUModelWizardID"
-            name="%_UI_CCDPUModelWizard_label"
-            class="targets.CCDPU.presentation.CCDPUModelWizard"
+            id="targets.cpn.presentation.CpnModelWizardID"
+            name="%_UI_CpnModelWizard_label"
+            class="targets.cpn.presentation.CpnModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/CCDPUModelFile.gif">
-         <description>%_UI_CCDPUModelWizard_description</description>
+            icon="icons/full/obj16/CpnModelFile.gif">
+         <description>%_UI_CpnModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
    </extension>
@@ -553,12 +553,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated ucof -->
       <editor
-            id="targets.CCDPU.presentation.CCDPUEditorID"
-            name="%_UI_CCDPUEditor_label"
-            icon="icons/full/obj16/CCDPUModelFile.gif"
-            extensions="ccdpu"
-            class="targets.CCDPU.presentation.CCDPUEditor"
-            contributorClass="targets.CCDPU.presentation.CCDPUActionBarContributor">
+            id="targets.cpn.presentation.CpnEditorID"
+            name="%_UI_CpnEditor_label"
+            icon="icons/full/obj16/CpnModelFile.gif"
+            extensions="cpn"
+            class="targets.cpn.presentation.CpnEditor"
+            contributorClass="targets.cpn.presentation.CpnActionBarContributor">
       </editor>
    </extension>
 
@@ -568,12 +568,12 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="targets.IntrepidPowerGrid.presentation.IntrepidPowerGridModelWizardID"
-            name="%_UI_IntrepidPowerGridModelWizard_label"
-            class="targets.IntrepidPowerGrid.presentation.IntrepidPowerGridModelWizard"
+            id="targets.intrepidpowergrid.presentation.IntrepidpowergridModelWizardID"
+            name="%_UI_IntrepidpowergridModelWizard_label"
+            class="targets.intrepidpowergrid.presentation.IntrepidpowergridModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/IntrepidPowerGridModelFile.gif">
-         <description>%_UI_IntrepidPowerGridModelWizard_description</description>
+            icon="icons/full/obj16/IntrepidpowergridModelFile.gif">
+         <description>%_UI_IntrepidpowergridModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
    </extension>
@@ -581,12 +581,40 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated ucof -->
       <editor
-            id="targets.IntrepidPowerGrid.presentation.IntrepidPowerGridEditorID"
-            name="%_UI_IntrepidPowerGridEditor_label"
-            icon="icons/full/obj16/IntrepidPowerGridModelFile.gif"
+            id="targets.intrepidpowergrid.presentation.IntrepidpowergridEditorID"
+            name="%_UI_IntrepidpowergridEditor_label"
+            icon="icons/full/obj16/IntrepidpowergridModelFile.gif"
             extensions="intrepidpowergrid"
-            class="targets.IntrepidPowerGrid.presentation.IntrepidPowerGridEditor"
-            contributorClass="targets.IntrepidPowerGrid.presentation.IntrepidPowerGridActionBarContributor">
+            class="targets.intrepidpowergrid.presentation.IntrepidpowergridEditor"
+            contributorClass="targets.intrepidpowergrid.presentation.IntrepidpowergridActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated ucof -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="targets.intrepidgateway.presentation.IntrepidgatewayModelWizardID"
+            name="%_UI_IntrepidgatewayModelWizard_label"
+            class="targets.intrepidgateway.presentation.IntrepidgatewayModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/IntrepidgatewayModelFile.gif">
+         <description>%_UI_IntrepidgatewayModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="targets.intrepidgateway.presentation.IntrepidgatewayEditorID"
+            name="%_UI_IntrepidgatewayEditor_label"
+            icon="icons/full/obj16/IntrepidgatewayModelFile.gif"
+            extensions="intrepidgateway"
+            class="targets.intrepidgateway.presentation.IntrepidgatewayEditor"
+            contributorClass="targets.intrepidgateway.presentation.IntrepidgatewayActionBarContributor">
       </editor>
    </extension>
 

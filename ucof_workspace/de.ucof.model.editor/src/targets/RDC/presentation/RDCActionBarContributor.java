@@ -1,6 +1,6 @@
 /**
  */
-package targets.RDC.presentation;
+package targets.rdc.presentation;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -42,12 +42,12 @@ import org.eclipse.ui.PartInitException;
 import ucof.presentation.UcofEditorPlugin;
 
 /**
- * This is the action bar contributor for the RDC model editor.
+ * This is the action bar contributor for the Rdc model editor.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class RDCActionBarContributor
+public class RdcActionBarContributor
 	extends EditingDomainActionBarContributor
 	implements ISelectionChangedListener {
 	/**
@@ -150,7 +150,7 @@ public class RDCActionBarContributor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RDCActionBarContributor() {
+	public RdcActionBarContributor() {
 		super(ADDITIONS_LAST_STYLE);
 		loadResourceAction = new LoadResourceAction();
 		validateAction = new ValidateAction();
@@ -181,7 +181,7 @@ public class RDCActionBarContributor
 	public void contributeToMenu(IMenuManager menuManager) {
 		super.contributeToMenu(menuManager);
 
-		IMenuManager submenuManager = new MenuManager(UcofEditorPlugin.INSTANCE.getString("_UI_RDCEditor_menu"), "targets.RDCMenuID");
+		IMenuManager submenuManager = new MenuManager(UcofEditorPlugin.INSTANCE.getString("_UI_RdcEditor_menu"), "targets.rdcMenuID");
 		menuManager.insertAfter("additions", submenuManager);
 		submenuManager.add(new Separator("settings"));
 		submenuManager.add(new Separator("actions"));

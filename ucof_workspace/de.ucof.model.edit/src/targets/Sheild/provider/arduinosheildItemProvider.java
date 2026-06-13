@@ -1,6 +1,6 @@
 /**
  */
-package targets.Sheild.provider;
+package targets.sheild.provider;
 
 
 import java.util.Collection;
@@ -16,20 +16,22 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.Sheild.SheildFactory;
-import targets.Sheild.SheildPackage;
-import targets.Sheild.arduinosheild;
-
 import targets.TargetsFactory;
 import targets.TargetsPackage;
+
 import targets.powergrid.PowergridFactory;
 import targets.powergrid.PowergridPackage;
+
 import targets.provider.SuperTargetTypeItemProvider;
+
+import targets.sheild.SheildFactory;
+import targets.sheild.SheildPackage;
+import targets.sheild.arduinosheild;
 
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.Sheild.arduinosheild} object.
+ * This is the item provider adapter for a {@link targets.sheild.arduinosheild} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated

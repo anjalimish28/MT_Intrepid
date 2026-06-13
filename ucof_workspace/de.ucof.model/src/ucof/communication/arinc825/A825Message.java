@@ -3,6 +3,7 @@
 package ucof.communication.arinc825;
 
 import ucof.common.enums.booleanType;
+
 import ucof.communication.SuperMessageType;
 
 /**

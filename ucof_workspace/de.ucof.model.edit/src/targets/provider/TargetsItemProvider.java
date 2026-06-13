@@ -18,18 +18,29 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.ADC.ADCFactory;
-import targets.CCDPU.CCDPUFactory;
-import targets.CanTransceiver.CanTransceiverFactory;
-import targets.HallSensor.HallSensorFactory;
-import targets.MotorController.MotorControllerFactory;
-import targets.RDC.RDCFactory;
-import targets.Sheild.SheildFactory;
 import targets.Targets;
 import targets.TargetsPackage;
+
+import targets.adc.AdcFactory;
+
+import targets.cantransceiver.CantransceiverFactory;
+
+import targets.cpn.CpnFactory;
+
+import targets.hallsensor.HallsensorFactory;
+
+import targets.motorcontroller.MotorcontrollerFactory;
+
 import targets.powergrid.PowergridFactory;
+
+import targets.rdc.RdcFactory;
+
+import targets.sheild.SheildFactory;
+
 import ucof.common.etypes.EtypesPackage;
+
 import ucof.common.etypes.provider.SuperIdentifierTypeItemProvider;
+
 import ucof.provider.UcofEditPlugin;
 
 /**
@@ -38,8 +49,7 @@ import ucof.provider.UcofEditPlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class TargetsItemProvider 
-	extends SuperIdentifierTypeItemProvider {
+public class TargetsItemProvider extends SuperIdentifierTypeItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -328,12 +338,12 @@ public class TargetsItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(TargetsPackage.Literals.TARGETS__TARGET_CONFIGURATION,
-				 RDCFactory.eINSTANCE.createstm32f446re()));
+				 RdcFactory.eINSTANCE.createstm32f446re()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(TargetsPackage.Literals.TARGETS__TARGET_CONFIGURATION,
-				 ADCFactory.eINSTANCE.createads1115()));
+				 AdcFactory.eINSTANCE.createads1115()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -343,22 +353,22 @@ public class TargetsItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(TargetsPackage.Literals.TARGETS__TARGET_CONFIGURATION,
-				 MotorControllerFactory.eINSTANCE.createescon409510()));
+				 MotorcontrollerFactory.eINSTANCE.createescon409510()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(TargetsPackage.Literals.TARGETS__TARGET_CONFIGURATION,
-				 CanTransceiverFactory.eINSTANCE.createsn65hvd230()));
+				 CantransceiverFactory.eINSTANCE.createsn65hvd230()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(TargetsPackage.Literals.TARGETS__TARGET_CONFIGURATION,
-				 HallSensorFactory.eINSTANCE.createmts360()));
+				 HallsensorFactory.eINSTANCE.createmts360()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(TargetsPackage.Literals.TARGETS__TARGET_CONFIGURATION,
-				 CCDPUFactory.eINSTANCE.createva41620peb1()));
+				 CpnFactory.eINSTANCE.createva41620peb1()));
 
 		newChildDescriptors.add
 			(createChildParameter

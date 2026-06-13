@@ -1,0 +1,391 @@
+/**
+ */
+package ucof.devices.devicetypes.a653components.provider;
+
+
+import java.util.Collection;
+import java.util.List;
+
+import org.eclipse.emf.common.notify.AdapterFactory;
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.ResourceLocator;
+
+import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
+import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
+import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import ucof.common.etypes.EtypesPackage;
+
+import ucof.common.etypes.provider.SuperIdentifierTypeItemProvider;
+
+import ucof.devices.devicetypes.a653components.A653componentsPackage;
+import ucof.devices.devicetypes.a653components.PartitionTimeWindow;
+
+import ucof.provider.UcofEditPlugin;
+
+/**
+ * This is the item provider adapter for a {@link ucof.devices.devicetypes.a653components.PartitionTimeWindow} object.
+ * <!-- begin-user-doc -->
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class PartitionTimeWindowItemProvider extends SuperIdentifierTypeItemProvider {
+	/**
+	 * This constructs an instance from a factory and a notifier.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PartitionTimeWindowItemProvider(AdapterFactory adapterFactory) {
+		super(adapterFactory);
+	}
+
+	/**
+	 * This returns the property descriptors for the adapted class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public List<IItemPropertyDescriptor> getPropertyDescriptors(Object object) {
+		if (itemPropertyDescriptors == null) {
+			super.getPropertyDescriptors(object);
+
+			addDocumentationPropertyDescriptor(object);
+			addModifiedPropertyDescriptor(object);
+			addModifierPropertyDescriptor(object);
+			addTraceLinkPropertyDescriptor(object);
+			addCreatedPropertyDescriptor(object);
+			addCreatorPropertyDescriptor(object);
+			addVersionPropertyDescriptor(object);
+			addDurationPropertyDescriptor(object);
+			addOffsetPropertyDescriptor(object);
+			addPeriodicProcessingStartPropertyDescriptor(object);
+			addPartitionOrPortIDPropertyDescriptor(object);
+		}
+		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Documentation feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addDocumentationPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTrackingType_documentation_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTrackingType_documentation_feature", "_UI_SuperTrackingType_type"),
+				 EtypesPackage.Literals.SUPER_TRACKING_TYPE__DOCUMENTATION,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_TracingPropertyCategory"),
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Modified feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addModifiedPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTrackingType_modified_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTrackingType_modified_feature", "_UI_SuperTrackingType_type"),
+				 EtypesPackage.Literals.SUPER_TRACKING_TYPE__MODIFIED,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_TracingPropertyCategory"),
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Modifier feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addModifierPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTrackingType_modifier_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTrackingType_modifier_feature", "_UI_SuperTrackingType_type"),
+				 EtypesPackage.Literals.SUPER_TRACKING_TYPE__MODIFIER,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_TracingPropertyCategory"),
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Trace Link feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTraceLinkPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTrackingType_traceLink_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTrackingType_traceLink_feature", "_UI_SuperTrackingType_type"),
+				 EtypesPackage.Literals.SUPER_TRACKING_TYPE__TRACE_LINK,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_TracingPropertyCategory"),
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Created feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addCreatedPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTrackingType_created_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTrackingType_created_feature", "_UI_SuperTrackingType_type"),
+				 EtypesPackage.Literals.SUPER_TRACKING_TYPE__CREATED,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_TracingPropertyCategory"),
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Creator feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addCreatorPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTrackingType_creator_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTrackingType_creator_feature", "_UI_SuperTrackingType_type"),
+				 EtypesPackage.Literals.SUPER_TRACKING_TYPE__CREATOR,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_TracingPropertyCategory"),
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Version feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addVersionPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SuperTrackingType_version_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SuperTrackingType_version_feature", "_UI_SuperTrackingType_type"),
+				 EtypesPackage.Literals.SUPER_TRACKING_TYPE__VERSION,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				 getString("_UI_TracingPropertyCategory"),
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Duration feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addDurationPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_PartitionTimeWindow_duration_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_PartitionTimeWindow_duration_feature", "_UI_PartitionTimeWindow_type"),
+				 A653componentsPackage.Literals.PARTITION_TIME_WINDOW__DURATION,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Offset feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addOffsetPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_PartitionTimeWindow_offset_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_PartitionTimeWindow_offset_feature", "_UI_PartitionTimeWindow_type"),
+				 A653componentsPackage.Literals.PARTITION_TIME_WINDOW__OFFSET,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Periodic Processing Start feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addPeriodicProcessingStartPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_PartitionTimeWindow_periodicProcessingStart_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_PartitionTimeWindow_periodicProcessingStart_feature", "_UI_PartitionTimeWindow_type"),
+				 A653componentsPackage.Literals.PARTITION_TIME_WINDOW__PERIODIC_PROCESSING_START,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Partition Or Port ID feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addPartitionOrPortIDPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_PartitionTimeWindow_partitionOrPortID_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_PartitionTimeWindow_partitionOrPortID_feature", "_UI_PartitionTimeWindow_type"),
+				 A653componentsPackage.Literals.PARTITION_TIME_WINDOW__PARTITION_OR_PORT_ID,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This returns PartitionTimeWindow.gif.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object getImage(Object object) {
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/PartitionTimeWindow"));
+	}
+
+	/**
+	 * This returns the label text for the adapted class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getText(Object object) {
+		String label = ((PartitionTimeWindow)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_PartitionTimeWindow_type") :
+			getString("_UI_PartitionTimeWindow_type") + " " + label;
+	}
+
+
+	/**
+	 * This handles model notifications by calling {@link #updateChildren} to update any cached
+	 * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void notifyChanged(Notification notification) {
+		updateChildren(notification);
+
+		switch (notification.getFeatureID(PartitionTimeWindow.class)) {
+			case A653componentsPackage.PARTITION_TIME_WINDOW__DOCUMENTATION:
+			case A653componentsPackage.PARTITION_TIME_WINDOW__MODIFIED:
+			case A653componentsPackage.PARTITION_TIME_WINDOW__MODIFIER:
+			case A653componentsPackage.PARTITION_TIME_WINDOW__TRACE_LINK:
+			case A653componentsPackage.PARTITION_TIME_WINDOW__CREATED:
+			case A653componentsPackage.PARTITION_TIME_WINDOW__CREATOR:
+			case A653componentsPackage.PARTITION_TIME_WINDOW__VERSION:
+			case A653componentsPackage.PARTITION_TIME_WINDOW__DURATION:
+			case A653componentsPackage.PARTITION_TIME_WINDOW__OFFSET:
+			case A653componentsPackage.PARTITION_TIME_WINDOW__PERIODIC_PROCESSING_START:
+			case A653componentsPackage.PARTITION_TIME_WINDOW__PARTITION_OR_PORT_ID:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+		}
+		super.notifyChanged(notification);
+	}
+
+	/**
+	 * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
+	 * that can be created under this object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+		super.collectNewChildDescriptors(newChildDescriptors, object);
+	}
+
+	/**
+	 * Return the resource locator for this item provider's resources.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ResourceLocator getResourceLocator() {
+		return UcofEditPlugin.INSTANCE;
+	}
+
+}

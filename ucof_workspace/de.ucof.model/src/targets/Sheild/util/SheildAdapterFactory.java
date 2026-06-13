@@ -1,6 +1,6 @@
 /**
  */
-package targets.Sheild.util;
+package targets.sheild.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -9,14 +9,15 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
-import targets.Sheild.*;
-
 import targets.SuperHardwarePortType;
 import targets.SuperIOHardwareType;
 import targets.SuperTargetType;
 
 import targets.powergrid.SuperElectricalInterfaceType;
 import targets.powergrid.SuperPowerType;
+
+import targets.sheild.*;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
@@ -25,7 +26,7 @@ import ucof.common.etypes.SuperTrackingType;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see targets.Sheild.SheildPackage
+ * @see targets.sheild.SheildPackage
  * @generated
  */
 public class SheildAdapterFactory extends AdapterFactoryImpl {
@@ -137,13 +138,13 @@ public class SheildAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.Sheild.arduinosheild <em>arduinosheild</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.sheild.arduinosheild <em>arduinosheild</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.Sheild.arduinosheild
+	 * @see targets.sheild.arduinosheild
 	 * @generated
 	 */
 	public Adapter createarduinosheildAdapter() {
@@ -151,13 +152,13 @@ public class SheildAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.Sheild.sheildPorts <em>sheild Ports</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.sheild.sheildPorts <em>sheild Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.Sheild.sheildPorts
+	 * @see targets.sheild.sheildPorts
 	 * @generated
 	 */
 	public Adapter createsheildPortsAdapter() {
@@ -165,13 +166,13 @@ public class SheildAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.Sheild.sheildPort <em>sheild Port</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.sheild.sheildPort <em>sheild Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.Sheild.sheildPort
+	 * @see targets.sheild.sheildPort
 	 * @generated
 	 */
 	public Adapter createsheildPortAdapter() {

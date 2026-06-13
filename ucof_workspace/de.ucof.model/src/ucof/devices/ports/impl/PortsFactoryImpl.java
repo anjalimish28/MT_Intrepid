@@ -70,9 +70,9 @@ public class PortsFactoryImpl extends EFactoryImpl implements PortsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcessPorts createProcessPorts() {
-		ProcessPortsImpl processPorts = new ProcessPortsImpl();
-		return processPorts;
+	public PartitionPorts createPartitionPorts() {
+		PartitionPortsImpl partitionPorts = new PartitionPortsImpl();
+		return partitionPorts;
 	}
 
 	/**
@@ -80,9 +80,9 @@ public class PortsFactoryImpl extends EFactoryImpl implements PortsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PartitionPorts createPartitionPorts() {
-		PartitionPortsImpl partitionPorts = new PartitionPortsImpl();
-		return partitionPorts;
+	public ProcessPorts createProcessPorts() {
+		ProcessPortsImpl processPorts = new ProcessPortsImpl();
+		return processPorts;
 	}
 
 	/**

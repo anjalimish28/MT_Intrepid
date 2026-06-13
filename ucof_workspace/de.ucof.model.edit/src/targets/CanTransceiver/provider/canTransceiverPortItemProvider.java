@@ -1,6 +1,6 @@
 /**
  */
-package targets.CanTransceiver.provider;
+package targets.cantransceiver.provider;
 
 
 import java.util.Collection;
@@ -16,13 +16,15 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.CanTransceiver.CanTransceiverPackage;
-import targets.CanTransceiver.canTransceiverPort;
+import targets.cantransceiver.CantransceiverPackage;
+import targets.cantransceiver.canTransceiverPort;
+
 import targets.provider.SuperHardwarePortTypeItemProvider;
+
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.CanTransceiver.canTransceiverPort} object.
+ * This is the item provider adapter for a {@link targets.cantransceiver.canTransceiverPort} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -68,7 +70,7 @@ public class canTransceiverPortItemProvider extends SuperHardwarePortTypeItemPro
 				 getResourceLocator(),
 				 getString("_UI_canTransceiverPort_pinName_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_canTransceiverPort_pinName_feature", "_UI_canTransceiverPort_type"),
-				 CanTransceiverPackage.Literals.CAN_TRANSCEIVER_PORT__PIN_NAME,
+				 CantransceiverPackage.Literals.CAN_TRANSCEIVER_PORT__PIN_NAME,
 				 true,
 				 false,
 				 false,
@@ -90,7 +92,7 @@ public class canTransceiverPortItemProvider extends SuperHardwarePortTypeItemPro
 				 getResourceLocator(),
 				 getString("_UI_canTransceiverPort_pinNumber_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_canTransceiverPort_pinNumber_feature", "_UI_canTransceiverPort_type"),
-				 CanTransceiverPackage.Literals.CAN_TRANSCEIVER_PORT__PIN_NUMBER,
+				 CantransceiverPackage.Literals.CAN_TRANSCEIVER_PORT__PIN_NUMBER,
 				 true,
 				 false,
 				 false,
@@ -137,8 +139,8 @@ public class canTransceiverPortItemProvider extends SuperHardwarePortTypeItemPro
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(canTransceiverPort.class)) {
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NAME:
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NUMBER:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NAME:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORT__PIN_NUMBER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

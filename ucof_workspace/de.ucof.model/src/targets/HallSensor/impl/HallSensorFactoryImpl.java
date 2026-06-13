@@ -1,6 +1,6 @@
 /**
  */
-package targets.HallSensor.impl;
+package targets.hallsensor.impl;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -10,7 +10,7 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
-import targets.HallSensor.*;
+import targets.hallsensor.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,24 +18,24 @@ import targets.HallSensor.*;
  * <!-- end-user-doc -->
  * @generated
  */
-public class HallSensorFactoryImpl extends EFactoryImpl implements HallSensorFactory {
+public class HallsensorFactoryImpl extends EFactoryImpl implements HallsensorFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static HallSensorFactory init() {
+	public static HallsensorFactory init() {
 		try {
-			HallSensorFactory theHallSensorFactory = (HallSensorFactory)EPackage.Registry.INSTANCE.getEFactory(HallSensorPackage.eNS_URI);
-			if (theHallSensorFactory != null) {
-				return theHallSensorFactory;
+			HallsensorFactory theHallsensorFactory = (HallsensorFactory)EPackage.Registry.INSTANCE.getEFactory(HallsensorPackage.eNS_URI);
+			if (theHallsensorFactory != null) {
+				return theHallsensorFactory;
 			}
 		}
 		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
-		return new HallSensorFactoryImpl();
+		return new HallsensorFactoryImpl();
 	}
 
 	/**
@@ -44,7 +44,7 @@ public class HallSensorFactoryImpl extends EFactoryImpl implements HallSensorFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HallSensorFactoryImpl() {
+	public HallsensorFactoryImpl() {
 		super();
 	}
 
@@ -56,9 +56,9 @@ public class HallSensorFactoryImpl extends EFactoryImpl implements HallSensorFac
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case HallSensorPackage.MTS360: return createmts360();
-			case HallSensorPackage.HALL_PORTS: return createhallPorts();
-			case HallSensorPackage.HALL_PORT: return createhallPort();
+			case HallsensorPackage.MTS360: return createmts360();
+			case HallsensorPackage.HALL_PORTS: return createhallPorts();
+			case HallsensorPackage.HALL_PORT: return createhallPort();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -99,8 +99,8 @@ public class HallSensorFactoryImpl extends EFactoryImpl implements HallSensorFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HallSensorPackage getHallSensorPackage() {
-		return (HallSensorPackage)getEPackage();
+	public HallsensorPackage getHallsensorPackage() {
+		return (HallsensorPackage)getEPackage();
 	}
 
 	/**
@@ -110,8 +110,8 @@ public class HallSensorFactoryImpl extends EFactoryImpl implements HallSensorFac
 	 * @generated
 	 */
 	@Deprecated
-	public static HallSensorPackage getPackage() {
-		return HallSensorPackage.eINSTANCE;
+	public static HallsensorPackage getPackage() {
+		return HallsensorPackage.eINSTANCE;
 	}
 
-} //HallSensorFactoryImpl
+} //HallsensorFactoryImpl

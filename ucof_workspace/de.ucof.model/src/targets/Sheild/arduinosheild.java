@@ -1,9 +1,10 @@
 /**
  */
-package targets.Sheild;
+package targets.sheild;
 
 import targets.SuperIOHardwareType;
 import targets.SuperTargetType;
+
 import targets.powergrid.SuperPowerType;
 
 /**
@@ -15,10 +16,10 @@ import targets.powergrid.SuperPowerType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link targets.Sheild.arduinosheild#getPorts <em>Ports</em>}</li>
+ *   <li>{@link targets.sheild.arduinosheild#getPorts <em>Ports</em>}</li>
  * </ul>
  *
- * @see targets.Sheild.SheildPackage#getarduinosheild()
+ * @see targets.sheild.SheildPackage#getarduinosheild()
  * @model
  * @generated
  */
@@ -29,14 +30,14 @@ public interface arduinosheild extends SuperTargetType, SuperIOHardwareType, Sup
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ports</em>' containment reference.
 	 * @see #setPorts(sheildPorts)
-	 * @see targets.Sheild.SheildPackage#getarduinosheild_Ports()
+	 * @see targets.sheild.SheildPackage#getarduinosheild_Ports()
 	 * @model containment="true"
 	 * @generated
 	 */
 	sheildPorts getPorts();
 
 	/**
-	 * Sets the value of the '{@link targets.Sheild.arduinosheild#getPorts <em>Ports</em>}' containment reference.
+	 * Sets the value of the '{@link targets.sheild.arduinosheild#getPorts <em>Ports</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Ports</em>' containment reference.

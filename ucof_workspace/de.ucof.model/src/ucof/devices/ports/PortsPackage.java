@@ -62,26 +62,6 @@ public interface PortsPackage extends EPackage {
 	PortsPackage eINSTANCE = ucof.devices.ports.impl.PortsPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link ucof.devices.ports.impl.ProcessPortsImpl <em>Process Ports</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ucof.devices.ports.impl.ProcessPortsImpl
-	 * @see ucof.devices.ports.impl.PortsPackageImpl#getProcessPorts()
-	 * @generated
-	 */
-	int PROCESS_PORTS = 1;
-
-	/**
-	 * The meta object id for the '{@link ucof.devices.ports.impl.SuperIntraCommunicationPortTypeImpl <em>Super Intra Communication Port Type</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see ucof.devices.ports.impl.SuperIntraCommunicationPortTypeImpl
-	 * @see ucof.devices.ports.impl.PortsPackageImpl#getSuperIntraCommunicationPortType()
-	 * @generated
-	 */
-	int SUPER_INTRA_COMMUNICATION_PORT_TYPE = 2;
-
-	/**
 	 * The meta object id for the '{@link ucof.devices.ports.impl.PartitionPortsImpl <em>Partition Ports</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -200,6 +180,16 @@ public interface PortsPackage extends EPackage {
 	int PARTITION_PORTS_OPERATION_COUNT = EtypesPackage.SUPER_TRACKING_TYPE_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link ucof.devices.ports.impl.ProcessPortsImpl <em>Process Ports</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ucof.devices.ports.impl.ProcessPortsImpl
+	 * @see ucof.devices.ports.impl.PortsPackageImpl#getProcessPorts()
+	 * @generated
+	 */
+	int PROCESS_PORTS = 1;
+
+	/**
 	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -306,6 +296,16 @@ public interface PortsPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROCESS_PORTS_OPERATION_COUNT = EtypesPackage.SUPER_TRACKING_TYPE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link ucof.devices.ports.impl.SuperIntraCommunicationPortTypeImpl <em>Super Intra Communication Port Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ucof.devices.ports.impl.SuperIntraCommunicationPortTypeImpl
+	 * @see ucof.devices.ports.impl.PortsPackageImpl#getSuperIntraCommunicationPortType()
+	 * @generated
+	 */
+	int SUPER_INTRA_COMMUNICATION_PORT_TYPE = 2;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -689,6 +689,27 @@ public interface PortsPackage extends EPackage {
 
 
 	/**
+	 * Returns the meta object for class '{@link ucof.devices.ports.PartitionPorts <em>Partition Ports</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Partition Ports</em>'.
+	 * @see ucof.devices.ports.PartitionPorts
+	 * @generated
+	 */
+	EClass getPartitionPorts();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ucof.devices.ports.PartitionPorts#getPort <em>Port</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Port</em>'.
+	 * @see ucof.devices.ports.PartitionPorts#getPort()
+	 * @see #getPartitionPorts()
+	 * @generated
+	 */
+	EReference getPartitionPorts_Port();
+
+	/**
 	 * Returns the meta object for class '{@link ucof.devices.ports.ProcessPorts <em>Process Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -718,27 +739,6 @@ public interface PortsPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSuperIntraCommunicationPortType();
-
-	/**
-	 * Returns the meta object for class '{@link ucof.devices.ports.PartitionPorts <em>Partition Ports</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Partition Ports</em>'.
-	 * @see ucof.devices.ports.PartitionPorts
-	 * @generated
-	 */
-	EClass getPartitionPorts();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link ucof.devices.ports.PartitionPorts#getPort <em>Port</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Port</em>'.
-	 * @see ucof.devices.ports.PartitionPorts#getPort()
-	 * @see #getPartitionPorts()
-	 * @generated
-	 */
-	EReference getPartitionPorts_Port();
 
 	/**
 	 * Returns the meta object for class '{@link ucof.devices.ports.Blackboard <em>Blackboard</em>}'.
@@ -795,6 +795,24 @@ public interface PortsPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
+		 * The meta object literal for the '{@link ucof.devices.ports.impl.PartitionPortsImpl <em>Partition Ports</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ucof.devices.ports.impl.PartitionPortsImpl
+		 * @see ucof.devices.ports.impl.PortsPackageImpl#getPartitionPorts()
+		 * @generated
+		 */
+		EClass PARTITION_PORTS = eINSTANCE.getPartitionPorts();
+
+		/**
+		 * The meta object literal for the '<em><b>Port</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTITION_PORTS__PORT = eINSTANCE.getPartitionPorts_Port();
+
+		/**
 		 * The meta object literal for the '{@link ucof.devices.ports.impl.ProcessPortsImpl <em>Process Ports</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -821,24 +839,6 @@ public interface PortsPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SUPER_INTRA_COMMUNICATION_PORT_TYPE = eINSTANCE.getSuperIntraCommunicationPortType();
-
-		/**
-		 * The meta object literal for the '{@link ucof.devices.ports.impl.PartitionPortsImpl <em>Partition Ports</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see ucof.devices.ports.impl.PartitionPortsImpl
-		 * @see ucof.devices.ports.impl.PortsPackageImpl#getPartitionPorts()
-		 * @generated
-		 */
-		EClass PARTITION_PORTS = eINSTANCE.getPartitionPorts();
-
-		/**
-		 * The meta object literal for the '<em><b>Port</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PARTITION_PORTS__PORT = eINSTANCE.getPartitionPorts_Port();
 
 		/**
 		 * The meta object literal for the '{@link ucof.devices.ports.impl.BlackboardImpl <em>Blackboard</em>}' class.

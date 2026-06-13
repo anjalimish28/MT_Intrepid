@@ -3,8 +3,10 @@
 package targets;
 
 import org.eclipse.emf.common.util.EList;
+
 import targets.powergrid.ElectricalPowerGridSet;
 import targets.powergrid.PowerConnectionSet;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 

@@ -1,6 +1,6 @@
 /**
  */
-package targets.HallSensor.util;
+package targets.hallsensor.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -9,12 +9,13 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
-import targets.HallSensor.*;
-
 import targets.SuperHardwarePortType;
 import targets.SuperTargetType;
 
+import targets.hallsensor.*;
+
 import targets.powergrid.SuperPowerType;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
@@ -23,17 +24,17 @@ import ucof.common.etypes.SuperTrackingType;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see targets.HallSensor.HallSensorPackage
+ * @see targets.hallsensor.HallsensorPackage
  * @generated
  */
-public class HallSensorAdapterFactory extends AdapterFactoryImpl {
+public class HallsensorAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static HallSensorPackage modelPackage;
+	protected static HallsensorPackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -41,9 +42,9 @@ public class HallSensorAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HallSensorAdapterFactory() {
+	public HallsensorAdapterFactory() {
 		if (modelPackage == null) {
-			modelPackage = HallSensorPackage.eINSTANCE;
+			modelPackage = HallsensorPackage.eINSTANCE;
 		}
 	}
 
@@ -72,8 +73,8 @@ public class HallSensorAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected HallSensorSwitch<Adapter> modelSwitch =
-		new HallSensorSwitch<Adapter>() {
+	protected HallsensorSwitch<Adapter> modelSwitch =
+		new HallsensorSwitch<Adapter>() {
 			@Override
 			public Adapter casemts360(mts360 object) {
 				return createmts360Adapter();
@@ -127,13 +128,13 @@ public class HallSensorAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.HallSensor.mts360 <em>mts360</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.hallsensor.mts360 <em>mts360</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.HallSensor.mts360
+	 * @see targets.hallsensor.mts360
 	 * @generated
 	 */
 	public Adapter createmts360Adapter() {
@@ -141,13 +142,13 @@ public class HallSensorAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.HallSensor.hallPorts <em>hall Ports</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.hallsensor.hallPorts <em>hall Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.HallSensor.hallPorts
+	 * @see targets.hallsensor.hallPorts
 	 * @generated
 	 */
 	public Adapter createhallPortsAdapter() {
@@ -155,13 +156,13 @@ public class HallSensorAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.HallSensor.hallPort <em>hall Port</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.hallsensor.hallPort <em>hall Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.HallSensor.hallPort
+	 * @see targets.hallsensor.hallPort
 	 * @generated
 	 */
 	public Adapter createhallPortAdapter() {
@@ -250,4 +251,4 @@ public class HallSensorAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //HallSensorAdapterFactory
+} //HallsensorAdapterFactory

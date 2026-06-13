@@ -1,6 +1,6 @@
 /**
  */
-package targets.RDC.provider;
+package targets.rdc.provider;
 
 
 import java.util.Collection;
@@ -16,14 +16,15 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.RDC.RDCPackage;
-import targets.RDC.stmPort;
-
 import targets.provider.SuperHardwarePortTypeItemProvider;
+
+import targets.rdc.RdcPackage;
+import targets.rdc.stmPort;
+
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.RDC.stmPort} object.
+ * This is the item provider adapter for a {@link targets.rdc.stmPort} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -52,6 +53,7 @@ public class stmPortItemProvider extends SuperHardwarePortTypeItemProvider {
 
 			addPinNamePropertyDescriptor(object);
 			addPinNumberPropertyDescriptor(object);
+			addSizePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -69,7 +71,7 @@ public class stmPortItemProvider extends SuperHardwarePortTypeItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_stmPort_pinName_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_stmPort_pinName_feature", "_UI_stmPort_type"),
-				 RDCPackage.Literals.STM_PORT__PIN_NAME,
+				 RdcPackage.Literals.STM_PORT__PIN_NAME,
 				 true,
 				 false,
 				 false,
@@ -91,11 +93,33 @@ public class stmPortItemProvider extends SuperHardwarePortTypeItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_stmPort_pinNumber_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_stmPort_pinNumber_feature", "_UI_stmPort_type"),
-				 RDCPackage.Literals.STM_PORT__PIN_NUMBER,
+				 RdcPackage.Literals.STM_PORT__PIN_NUMBER,
 				 true,
 				 false,
 				 false,
 				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Size feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addSizePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_stmPort_size_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_stmPort_size_feature", "_UI_stmPort_type"),
+				 RdcPackage.Literals.STM_PORT__SIZE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -138,8 +162,9 @@ public class stmPortItemProvider extends SuperHardwarePortTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(stmPort.class)) {
-			case RDCPackage.STM_PORT__PIN_NAME:
-			case RDCPackage.STM_PORT__PIN_NUMBER:
+			case RdcPackage.STM_PORT__PIN_NAME:
+			case RdcPackage.STM_PORT__PIN_NUMBER:
+			case RdcPackage.STM_PORT__SIZE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

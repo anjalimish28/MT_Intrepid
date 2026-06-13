@@ -137,7 +137,6 @@ public interface EnumsPackage extends EPackage {
 	 */
 	int SDI_TYPES = 7;
 
-
 	/**
 	 * The meta object id for the '{@link ucof.common.enums.ImplementationType <em>Implementation Type</em>}' enum.
 	 * <!-- begin-user-doc -->

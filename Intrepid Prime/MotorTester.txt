@@ -1,0 +1,72 @@
+module IntrepidPrime {
+    @ RDC selection enum
+    enum RdcSelect : U8 {
+        RDC_1       @< RDC 1
+        TEST        @< Test RDC without Shield
+    }
+
+    @ Testing component to communicate with Remote Data Concentrator that controlls motor.
+    queued component MotorTester {
+
+        ###############################################################################
+        # Input Ports                                                                 #
+        ###############################################################################
+
+        @ Rate group input port
+        sync input port run: Svc.Sched
+
+        @ Speed data input port (polled during run)
+        async input port speed_data: RDC.SpeedData
+
+        @ Test data input port (polled during run)
+        async input port test_data: RDC.SpeedData
+
+        ###############################################################################
+        # Output Ports - Motor Control                                                #
+        ###############################################################################
+
+        @ Motor command output port - commands all 3 motors
+        output port motor_cmd: [2] RDC.MotorCommand
+
+        ###############################################################################
+        # Commands                                                                    #
+        ###############################################################################
+
+        async command MOTOR_CMD(
+            rdc_id:     RdcSelect,                  @< RDC ID (0=RDC_1, 1=TEST)
+            motor_id:   RDC.MotorSelect,            @< Motor ID (0=MBS, 1=Gimbal, 2=Flywheel)
+            enable:     Fw.On,                      @< Enable
+            direction:  RDC.MotorDirection,         @< Direction
+            set_speed:  U16                         @< Motor RPM setpoint (maps to 10-90% PWM duty cycle)
+        ) 
+
+        ###############################################################################
+        # Telemetry Channels                                                          #
+        ###############################################################################
+
+        telemetry ESCON_MBS_CURRENT_SPEED: F32
+        telemetry ESCON_GIMBAL_CURRENT_SPEED: F32
+        telemetry ESCON_GIMBAL_AVERAGE_SPEED: F32
+        telemetry ESCON_GIMBAL_ROTATION: F32
+        telemetry ESCON_FLYWHEEL_CURRENT_SPEED: F32
+        telemetry ESCON_FLYWHEEL_AVERAGE_SPEED: F32
+
+        telemetry TEST_COUNTER: U32
+
+        ###############################################################################
+        # Standard AC Ports: Required for Channels, Events, Commands, and Parameters  #
+        ###############################################################################
+        @ Port for requesting the current time
+        time get port timeCaller
+
+        @ Enables command handling
+        import Fw.Command
+
+        @ Enables event handling
+        import Fw.Event
+
+        @ Enables telemetry channels handling
+        import Fw.Channel
+
+    }
+}

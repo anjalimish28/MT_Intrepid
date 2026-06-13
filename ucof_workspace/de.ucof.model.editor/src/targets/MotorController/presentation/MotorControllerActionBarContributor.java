@@ -1,6 +1,6 @@
 /**
  */
-package targets.MotorController.presentation;
+package targets.motorcontroller.presentation;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -42,12 +42,12 @@ import org.eclipse.ui.PartInitException;
 import ucof.presentation.UcofEditorPlugin;
 
 /**
- * This is the action bar contributor for the MotorController model editor.
+ * This is the action bar contributor for the Motorcontroller model editor.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class MotorControllerActionBarContributor
+public class MotorcontrollerActionBarContributor
 	extends EditingDomainActionBarContributor
 	implements ISelectionChangedListener {
 	/**
@@ -150,7 +150,7 @@ public class MotorControllerActionBarContributor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MotorControllerActionBarContributor() {
+	public MotorcontrollerActionBarContributor() {
 		super(ADDITIONS_LAST_STYLE);
 		loadResourceAction = new LoadResourceAction();
 		validateAction = new ValidateAction();
@@ -181,7 +181,7 @@ public class MotorControllerActionBarContributor
 	public void contributeToMenu(IMenuManager menuManager) {
 		super.contributeToMenu(menuManager);
 
-		IMenuManager submenuManager = new MenuManager(UcofEditorPlugin.INSTANCE.getString("_UI_MotorControllerEditor_menu"), "targets.MotorControllerMenuID");
+		IMenuManager submenuManager = new MenuManager(UcofEditorPlugin.INSTANCE.getString("_UI_MotorcontrollerEditor_menu"), "targets.motorcontrollerMenuID");
 		menuManager.insertAfter("additions", submenuManager);
 		submenuManager.add(new Separator("settings"));
 		submenuManager.add(new Separator("actions"));

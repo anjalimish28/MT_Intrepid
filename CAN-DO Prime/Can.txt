@@ -1,0 +1,68 @@
+module Drv {
+
+    @ CAN header struct
+    struct CanHeader {
+        isExtended:     bool    @< Extended id flag (true for extended)
+        isRemoteFrame:  bool    @< Remote flag (true for remote frame)
+        $id:            U32     @< CAN message id (11 bit standard; 29 bit extended)
+        dataLength:     U8      @< CAN payload length (O to 8 bytes possible)
+        timestamp:      U16     @< Receive timestamp (not used)
+        device:         U8      @< CAN Controller id (dependent on peripherals)
+    } default {isExtended = false, isRemoteFrame = false, $id = 0, dataLength = 0, timestamp = 0, device = 0}
+
+    @ CAN Payload Array
+    array CanPayload = [8] U8 default 0 format "0x{} "
+
+    @ This port is used for exchanging CAN messages with driver
+    port CanMessage(
+        ref header: CanHeader
+        ref data:   CanPayload
+    ) -> ByteStreamStatus
+
+    port CanFilter(
+        bankNum:        U8      @< Bank/Mailbox number
+        $id:            U32     @< Partial or full CAN id to match (11 or 29 bit)
+        mask:           U32     @< Filter mask fitting the id match pattern (11 or 29 bit)
+        isGlobal:       bool    @< Global filter flag
+        isExtended:     bool    @< Extended flag
+        $priority:      U8      @< Priority number (implementation dependent on CAN peripheral)
+        enable:         bool    @< Enable flag (false to disable filter on mailbox)
+    ) -> bool                   @< Return success flag
+
+    @ Synchronous CAN input interface
+    interface CanDriver {
+
+        @ Set CAN rx mailbox filter
+        @ Success flag is returned
+        guarded input port setRxFilter: CanFilter
+
+        @ Port to invoke readout of CAN buffer by reference
+        @ Status is returned
+        guarded input port canRx: CanMessage
+
+        @ Invoke this port to send data out the driver (synchronous)
+        @ Status is returned
+        guarded input port canTx: CanMessage
+
+        @ Port invoked when the driver is ready to send/receive data
+        output port ready: Drv.ByteStreamReady
+
+    }
+
+    @ Synchronous CAN output interface
+    interface CanManager {
+
+        @ Ready signal when CAN driver is connected
+        sync input port drvConnected: Drv.ByteStreamReady
+        
+        @ Set CAN mailbox filter
+        output port setRxFilter: CanFilter
+
+        @ Port to invoke CAN receive
+        output port canRx: CanMessage
+
+        @ Port to invoke CAN transmit
+        output port canTx: CanMessage
+        
+    }
+}

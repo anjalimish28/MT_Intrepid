@@ -99,6 +99,16 @@ public class ComDevicesSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ComDevicesPackage.GENERIC_GATEWAY: {
+				GenericGateway genericGateway = (GenericGateway)theEObject;
+				T result = caseGenericGateway(genericGateway);
+				if (result == null) result = caseSuperCommunicationDeviceType(genericGateway);
+				if (result == null) result = caseSuperDeviceType(genericGateway);
+				if (result == null) result = caseSuperIdentifierType(genericGateway);
+				if (result == null) result = caseSuperTrackingType(genericGateway);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -145,6 +155,21 @@ public class ComDevicesSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseED247Gateway(ED247Gateway object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Generic Gateway</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Generic Gateway</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGenericGateway(GenericGateway object) {
 		return null;
 	}
 

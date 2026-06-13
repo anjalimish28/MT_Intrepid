@@ -3,11 +3,14 @@
 package ucof.communication;
 
 import org.eclipse.emf.common.util.EList;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
 import ucof.communication.comDevices.CommunicationDevices;
+
 import ucof.communication.configECIC.ED247Configurations;
+
 import ucof.communication.connectors.Connectors;
 
 /**

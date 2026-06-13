@@ -3,7 +3,9 @@
 package ucof.communication.comDevices.impl;
 
 import org.eclipse.emf.ecore.EClass;
+
 import ucof.common.etypes.impl.SuperDeviceTypeImpl;
+
 import ucof.communication.comDevices.ComDevicesPackage;
 import ucof.communication.comDevices.SuperCommunicationDeviceType;
 

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="targets" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets"
+    nsPrefix="de.ucof.model.targets">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="generateModelWizard" value="false"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Targets" eSuperTypes="../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperIdentifierType ../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperTrackingType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetConfiguration" upperBound="-1"
+        eType="#//SuperTargetType" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SuperTargetType" abstract="true" eSuperTypes="../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperIdentifierType ../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperTrackingType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="projectName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SuperIOHardwareType" abstract="true"
+      eSuperTypes="../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperIdentifierType ../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperTrackingType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="assignmentSpecification"
+        upperBound="-1" eType="#//SuperAssignmentSpecificationType" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SuperClassExtensionType" abstract="true"
+      eSuperTypes="../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperIdentifierType ../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperTrackingType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="extendedClassID" eType="ecore:EDataType ../../de.ucof.model/model/ucof.ecore#//common/edata/UUIDType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SuperAssignmentSpecificationType" abstract="true"
+      eSuperTypes="../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperIdentifierType ../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperTrackingType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="referencedAssignmentID"
+        eType="ecore:EDataType ../../de.ucof.model/model/ucof.ecore#//common/edata/UUIDType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeDatatypeConversion" eSuperTypes="#//SuperAssignmentSpecificationType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetDataType" eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/TargetDataType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valuePrefix" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valuePostfix" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="HardwareInformation" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hardwareTopologyName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameOfHardwareSystem" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="iPAddressOfHardwareSystem"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eSubpackages name="configdesk" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/configdesk"
+      nsPrefix="de.ucof.model.targets.configdesk">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="generateModelWizard" value="false"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EClass" name="ConfigurationDesk" eSuperTypes="#//HardwareInformation #//SuperTargetType">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="configurationDeskIOHardware"
+          upperBound="-1" eType="#//configdesk/SuperConfigurationDeskIOHardwareType"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelTopologyName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="applicationName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SuperConfigurationDeskIOHardwareType"
+        abstract="true" eSuperTypes="#//SuperIOHardwareType"/>
+    <eSubpackages name="dSpaceArinc825" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/configdesk/dSpaceArinc825"
+        nsPrefix="de.ucof.model.targets.configdesk.dSpaceArinc825">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="generateModelWizard" value="false"/>
+      </eAnnotations>
+      <eClassifiers xsi:type="ecore:EClass" name="A825Configuration" eSuperTypes="#//configdesk/SuperConfigurationDeskIOHardwareType">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="channelName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="terminated" eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="assignedChannelSet"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="canChannel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelAccess" eType="#//configdesk/dSpaceArinc825/ModelAccess"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelPortBlockStructure"
+            eType="#//configdesk/dSpaceArinc825/ModelPortBlockStructure"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="eCU" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="statusExtension" upperBound="-1"
+            eType="#//configdesk/dSpaceArinc825/SuperConfigurationDeskA825StatusExtensionType"
+            containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="SuperConfigurationDeskA825StatusExtensionType"
+          abstract="true" eSuperTypes="#//SuperClassExtensionType"/>
+      <eClassifiers xsi:type="ecore:EClass" name="SignalModelAccessStatus" eSuperTypes="#//configdesk/dSpaceArinc825/SuperConfigurationDeskA825StatusExtensionType">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelAccessEnabled"
+            eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="SuperFeatureType" abstract="true"
+          eSuperTypes="#//configdesk/dSpaceArinc825/SuperConfigurationDeskA825StatusExtensionType"/>
+      <eClassifiers xsi:type="ecore:EClass" name="FeatureTrigger" eSuperTypes="#//configdesk/dSpaceArinc825/SuperFeatureType">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="trigger" eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="FeatureCyclicTimingControl" eSuperTypes="#//configdesk/dSpaceArinc825/SuperFeatureType">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="controlPeriodModelAccess"
+            eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="controlOffsetModelAccess"
+            eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="FeatureRawData" eSuperTypes="#//configdesk/dSpaceArinc825/SuperFeatureType">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="rawDataModelAccess"
+            eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="FeatureEnable" eSuperTypes="#//configdesk/dSpaceArinc825/SuperFeatureType">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="enableModelAccess"
+            eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="FeatureFrameAccess" eSuperTypes="#//configdesk/dSpaceArinc825/SuperFeatureType">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="triggerModelAccess"
+            eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="lengthModelAccess"
+            eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="rawDataModelAccess"
+            eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifierModelAccess"
+            eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="extendedAddressingModelAccess"
+            eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="canFDFrameSupportModelAccess"
+            eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="bitRateSwitchModelAccess"
+            eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="ModelAccess">
+        <eLiterals name="NotSet"/>
+        <eLiterals name="Enabled" value="1" literal="Enabled"/>
+        <eLiterals name="Disabled" value="2" literal="Disabled"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="ModelAccessiblePortsRX">
+        <eLiterals name="NotSet"/>
+        <eLiterals name="DataVector" value="1"/>
+        <eLiterals name="VectorSize" value="2"/>
+        <eLiterals name="SourceIPAddress" value="3"/>
+        <eLiterals name="SourcePort" value="4"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="ModelAccessiblePortsTX">
+        <eLiterals name="NotSet"/>
+        <eLiterals name="DataVector" value="1"/>
+        <eLiterals name="MaxVectorSize" value="2"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="ModelPortBlockStructure">
+        <eLiterals name="NotSet"/>
+        <eLiterals name="Ungrouped" value="1" literal="Ungrouped"/>
+        <eLiterals name="Grouped" value="2" literal="Grouped"/>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages name="ethernet" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/configdesk/ethernet"
+        nsPrefix="de.ucof.model.targets.configdesk.ethernet">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="generateModelWizard" value="false"/>
+      </eAnnotations>
+      <eClassifiers xsi:type="ecore:EClass" name="ETHSetup" eSuperTypes="#//configdesk/SuperConfigurationDeskIOHardwareType">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="channelSet" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="channel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelAccessiblePorts"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="ethernetPort" eType="ecore:EClass ../../de.ucof.model/model/ucof.ecore#//communication/basedonethernet/EthernetPort"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="uDPConnection" upperBound="-1"
+            eType="#//configdesk/ethernet/UDPConnection" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="UDPConnection" abstract="true" eSuperTypes="../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperIdentifierType ../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperTrackingType">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxVectorSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="UDPTX" eSuperTypes="#//configdesk/ethernet/UDPConnection">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelAccessiblePorts"
+            upperBound="-1" eType="#//configdesk/dSpaceArinc825/ModelAccessiblePortsTX"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="variableVectorSize"
+            eType="ecore:EEnum ../../de.ucof.model/model/ucof.ecore#//common/enums/booleanType"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="UDPRX" eSuperTypes="#//configdesk/ethernet/UDPConnection">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelAccessiblePorts"
+            upperBound="-1" eType="#//configdesk/dSpaceArinc825/ModelAccessiblePortsRX"/>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages name="wired" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/wired"
+        nsPrefix="de.ucof.model.targets.configdesk.wired">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="generateModelWizard" value="false"/>
+      </eAnnotations>
+      <eClassifiers xsi:type="ecore:EClass" name="Analogues"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Analogue"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Digitals"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Digital"/>
+    </eSubpackages>
+  </eSubpackages>
+  <eSubpackages name="tricore299a653p4" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/tricore299a653p4"
+      nsPrefix="de.ucof.model.targets.tricore299a653p4">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="generateModelWizard" value="false"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EClass" name="TriCore299" eSuperTypes="#//HardwareInformation #//a653capabletarget/SuperA653CapableTargetType #//SuperTargetType">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="iODriver" eType="#//tricore299a653p4/SuperTriCore299IOHardwareType"
+          containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SuperTriCore299IOHardwareType" abstract="true"
+        eSuperTypes="#//SuperIOHardwareType"/>
+    <eClassifiers xsi:type="ecore:EClass" name="A825DriverConfiguration" eSuperTypes="#//tricore299a653p4/SuperTriCore299IOHardwareType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="firstMsgBox" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+          unsettable="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="FirstMsgBox"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="node" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+          unsettable="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="Node"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rJW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+          unsettable="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="RJW"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rXSEL" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+          unsettable="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="kind" value="attribute"/>
+          <details key="name" value="RXSEL"/>
+          <details key="namespace" value="##targetNamespace"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="MessagePostBoxSpecifier" eSuperTypes="#//SuperAssignmentSpecificationType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="postBox" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="matlab" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/matlab"
+      nsPrefix="de.ucof.model.targets.matlab">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="generateModelWizard" value="false"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EClass" name="SimulinkProject" eSuperTypes="#//SuperTargetType">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="simulinkBlock" upperBound="-1"
+          eType="#//matlab/SimulinkBlock" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="simulinkLibrary" eType="#//matlab/SimulinkLibrary"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sampleTime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SimulinkBlock" eSuperTypes="../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperIdentifierType ../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperTrackingType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="libraryLink" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SimulinkLibrary" eSuperTypes="../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperIdentifierType ../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperTrackingType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="libraryLink" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="a653capabletarget" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/a653capabletarget"
+      nsPrefix="de.ucof.model.targets.a653capabletarget">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="generateModelWizard" value="false"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EClass" name="SuperA653CapableTargetType" abstract="true"
+        eSuperTypes="../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperIdentifierType ../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperTrackingType">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="operatingSytem" eType="#//a653capabletarget/OperatingSystem"
+          containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OperatingSystem" eSuperTypes="../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperIdentifierType ../../de.ucof.model/model/ucof.ecore#//common/etypes/SuperTrackingType">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="memory" eType="ecore:EClass ../../de.ucof.model/model/ucof.ecore#//common/etypes/Memory"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="processes" eType="ecore:EClass ../../de.ucof.model/model/ucof.ecore#//devices/devicetypes/a653components/a653partition/Processes"
+          containment="true"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="vxworksa653" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/vxworksa653"
+      nsPrefix="de.ucof.model.targets.vxworksa653">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="generateModelWizard" value="false"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EClass" name="VxWorksA653" eSuperTypes="#//HardwareInformation #//a653capabletarget/SuperA653CapableTargetType #//SuperTargetType"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SuperVxWorksAssignmentSpecificationType"
+        abstract="true" eSuperTypes="#//SuperAssignmentSpecificationType"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SimulatedDevices" eSuperTypes="#//vxworksa653/SuperVxWorksAssignmentSpecificationType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="simulatedDevices" upperBound="-1"
+          eType="#//vxworksa653/SimulatedDevicesList"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="SimulatedDevicesList" instanceTypeName="SimulatedDevicesList">
+      <eLiterals name="NotSet" literal="NotSet"/>
+      <eLiterals name="law" value="1" literal="law"/>
+      <eLiterals name="rst" value="2" literal="rst"/>
+      <eLiterals name="pamu" value="3" literal="pamu"/>
+      <eLiterals name="i2c0" value="4"/>
+      <eLiterals name="i2c1" value="5"/>
+      <eLiterals name="i2c2" value="6"/>
+      <eLiterals name="i2c3" value="7"/>
+      <eLiterals name="espi" value="8"/>
+      <eLiterals name="esdhc" value="9"/>
+      <eLiterals name="usb0" value="10"/>
+      <eLiterals name="usb1" value="11"/>
+      <eLiterals name="uart0" value="12"/>
+      <eLiterals name="uart0poll" value="13"/>
+      <eLiterals name="uart1" value="14"/>
+      <eLiterals name="uart1poll" value="15"/>
+      <eLiterals name="uart2" value="16"/>
+      <eLiterals name="uart2poll" value="17"/>
+      <eLiterals name="uart3" value="18"/>
+      <eLiterals name="uart3poll" value="19"/>
+      <eLiterals name="pcie1" value="20"/>
+      <eLiterals name="pcie2" value="21"/>
+      <eLiterals name="pcie3" value="22"/>
+      <eLiterals name="pcie4" value="23"/>
+      <eLiterals name="rio" value="24"/>
+      <eLiterals name="sata0" value="25"/>
+      <eLiterals name="sata1" value="26"/>
+      <eLiterals name="dma0" value="27"/>
+      <eLiterals name="dma1" value="28"/>
+      <eLiterals name="qman" value="29"/>
+      <eLiterals name="bman" value="30"/>
+      <eLiterals name="portal0" value="31"/>
+      <eLiterals name="portal1" value="32"/>
+      <eLiterals name="portal2" value="33"/>
+      <eLiterals name="portal3" value="34"/>
+      <eLiterals name="portal4" value="35"/>
+      <eLiterals name="portal5" value="36"/>
+      <eLiterals name="portal6" value="37"/>
+      <eLiterals name="portal7" value="38"/>
+      <eLiterals name="portal8" value="39"/>
+      <eLiterals name="portal9" value="40"/>
+      <eLiterals name="fman" value="41"/>
+      <eLiterals name="memac0" value="42"/>
+      <eLiterals name="memac1" value="43"/>
+      <eLiterals name="memac2" value="44"/>
+      <eLiterals name="memac3" value="45"/>
+      <eLiterals name="memac4" value="46"/>
+      <eLiterals name="memac5" value="47"/>
+      <eLiterals name="memac8" value="48"/>
+      <eLiterals name="memac9" value="49"/>
+      <eLiterals name="mdio0" value="50"/>
+      <eLiterals name="mdio1" value="51"/>
+      <eLiterals name="mpic_cpu_private" value="52"/>
+      <eLiterals name="mpic" value="53"/>
+      <eLiterals name="picTimerA" value="54"/>
+      <eLiterals name="picTimerB" value="55"/>
+      <eLiterals name="dcfg" value="56"/>
+      <eLiterals name="gpio0" value="57"/>
+      <eLiterals name="gpio1" value="58"/>
+      <eLiterals name="gpio2" value="59"/>
+      <eLiterals name="gpio3" value="60"/>
+      <eLiterals name="qixis" value="61"/>
+      <eLiterals name="nvram" value="62"/>
+      <eLiterals name="vxnvram" value="63"/>
+      <eLiterals name="mdio_shared" value="64"/>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>

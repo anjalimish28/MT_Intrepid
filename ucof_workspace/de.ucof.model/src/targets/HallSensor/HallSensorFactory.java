@@ -1,6 +1,6 @@
 /**
  */
-package targets.HallSensor;
+package targets.hallsensor;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,17 +9,17 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see targets.HallSensor.HallSensorPackage
+ * @see targets.hallsensor.HallsensorPackage
  * @generated
  */
-public interface HallSensorFactory extends EFactory {
+public interface HallsensorFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	HallSensorFactory eINSTANCE = targets.HallSensor.impl.HallSensorFactoryImpl.init();
+	HallsensorFactory eINSTANCE = targets.hallsensor.impl.HallsensorFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>mts360</em>'.
@@ -55,6 +55,6 @@ public interface HallSensorFactory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	HallSensorPackage getHallSensorPackage();
+	HallsensorPackage getHallsensorPackage();
 
-} //HallSensorFactory
+} //HallsensorFactory

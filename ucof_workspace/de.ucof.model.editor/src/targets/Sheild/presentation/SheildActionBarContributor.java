@@ -1,6 +1,6 @@
 /**
  */
-package targets.Sheild.presentation;
+package targets.sheild.presentation;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -181,7 +181,7 @@ public class SheildActionBarContributor
 	public void contributeToMenu(IMenuManager menuManager) {
 		super.contributeToMenu(menuManager);
 
-		IMenuManager submenuManager = new MenuManager(UcofEditorPlugin.INSTANCE.getString("_UI_SheildEditor_menu"), "targets.SheildMenuID");
+		IMenuManager submenuManager = new MenuManager(UcofEditorPlugin.INSTANCE.getString("_UI_SheildEditor_menu"), "targets.sheildMenuID");
 		menuManager.insertAfter("additions", submenuManager);
 		submenuManager.add(new Separator("settings"));
 		submenuManager.add(new Separator("actions"));

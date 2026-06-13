@@ -25,7 +25,6 @@ package ucof.assignments;
  * @generated
  */
 public interface PortToPortAssignment extends SuperAssignmentType {
-
 	/**
 	 * Returns the value of the '<em><b>Transmission Rate</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -69,4 +68,5 @@ public interface PortToPortAssignment extends SuperAssignmentType {
 	 * @generated
 	 */
 	void setRefreshRate(float value);
+
 } // PortToPortAssignment

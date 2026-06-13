@@ -1,6 +1,6 @@
 /**
  */
-package targets.HallSensor.provider;
+package targets.hallsensor.provider;
 
 
 import java.util.Collection;
@@ -16,14 +16,15 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.HallSensor.HallSensorPackage;
-import targets.HallSensor.hallPort;
+import targets.hallsensor.HallsensorPackage;
+import targets.hallsensor.hallPort;
 
 import targets.provider.SuperHardwarePortTypeItemProvider;
+
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.HallSensor.hallPort} object.
+ * This is the item provider adapter for a {@link targets.hallsensor.hallPort} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -69,7 +70,7 @@ public class hallPortItemProvider extends SuperHardwarePortTypeItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_hallPort_pinName_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_hallPort_pinName_feature", "_UI_hallPort_type"),
-				 HallSensorPackage.Literals.HALL_PORT__PIN_NAME,
+				 HallsensorPackage.Literals.HALL_PORT__PIN_NAME,
 				 true,
 				 false,
 				 false,
@@ -91,7 +92,7 @@ public class hallPortItemProvider extends SuperHardwarePortTypeItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_hallPort_pinNumber_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_hallPort_pinNumber_feature", "_UI_hallPort_type"),
-				 HallSensorPackage.Literals.HALL_PORT__PIN_NUMBER,
+				 HallsensorPackage.Literals.HALL_PORT__PIN_NUMBER,
 				 true,
 				 false,
 				 false,
@@ -138,8 +139,8 @@ public class hallPortItemProvider extends SuperHardwarePortTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(hallPort.class)) {
-			case HallSensorPackage.HALL_PORT__PIN_NAME:
-			case HallSensorPackage.HALL_PORT__PIN_NUMBER:
+			case HallsensorPackage.HALL_PORT__PIN_NAME:
+			case HallsensorPackage.HALL_PORT__PIN_NUMBER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

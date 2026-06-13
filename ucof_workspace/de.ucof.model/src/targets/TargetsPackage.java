@@ -6,6 +6,7 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+
 import ucof.common.etypes.EtypesPackage;
 
 /**
@@ -1018,7 +1019,6 @@ public interface TargetsPackage extends EPackage {
 	 * @ordered
 	 */
 	int HARDWARE_INFORMATION_OPERATION_COUNT = 0;
-
 
 	/**
 	 * The meta object id for the '{@link targets.impl.SuperHardwarePortTypeImpl <em>Super Hardware Port Type</em>}' class.

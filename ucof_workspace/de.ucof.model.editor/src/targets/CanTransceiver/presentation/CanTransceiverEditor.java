@@ -1,6 +1,6 @@
 /**
  */
-package targets.CanTransceiver.presentation;
+package targets.cantransceiver.presentation;
 
 
 import java.io.IOException;
@@ -155,22 +155,29 @@ import org.eclipse.emf.edit.ui.util.EditUIUtil;
 
 import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 
-import targets.CanTransceiver.provider.CanTransceiverItemProviderAdapterFactory;
+import targets.cantransceiver.provider.CantransceiverItemProviderAdapterFactory;
 
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 
-import targets.ADC.provider.ADCItemProviderAdapterFactory;
+import targets.adc.provider.AdcItemProviderAdapterFactory;
 
-import targets.CCDPU.provider.CCDPUItemProviderAdapterFactory;
-import targets.HallSensor.provider.HallSensorItemProviderAdapterFactory;
-import targets.IntrepidPowerGrid.provider.IntrepidPowerGridItemProviderAdapterFactory;
-import targets.MotorController.provider.MotorControllerItemProviderAdapterFactory;
-import targets.RDC.provider.RDCItemProviderAdapterFactory;
+import targets.cpn.provider.CpnItemProviderAdapterFactory;
 
-import targets.Sheild.provider.SheildItemProviderAdapterFactory;
+import targets.hallsensor.provider.HallsensorItemProviderAdapterFactory;
+
+import targets.intrepidgateway.provider.IntrepidgatewayItemProviderAdapterFactory;
+
+import targets.intrepidpowergrid.provider.IntrepidpowergridItemProviderAdapterFactory;
+
+import targets.motorcontroller.provider.MotorcontrollerItemProviderAdapterFactory;
 
 import targets.powergrid.provider.PowergridItemProviderAdapterFactory;
+
 import targets.provider.TargetsItemProviderAdapterFactory;
+
+import targets.rdc.provider.RdcItemProviderAdapterFactory;
+
+import targets.sheild.provider.SheildItemProviderAdapterFactory;
 
 import ucof.assignments.database.provider.DatabaseItemProviderAdapterFactory;
 
@@ -224,12 +231,12 @@ import ucof.provider.UcofItemProviderAdapterFactory;
 
 
 /**
- * This is an example of a CanTransceiver model editor.
+ * This is an example of a Cantransceiver model editor.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class CanTransceiverEditor
+public class CantransceiverEditor
 	extends MultiPageEditorPart
 	implements IEditingDomainProvider, ISelectionProvider, IMenuListener, IViewerProvider, IGotoMarker {
 	/**
@@ -391,18 +398,18 @@ public class CanTransceiverEditor
 			public void partActivated(IWorkbenchPart p) {
 				if (p instanceof ContentOutline) {
 					if (((ContentOutline)p).getCurrentPage() == contentOutlinePage) {
-						getActionBarContributor().setActiveEditor(CanTransceiverEditor.this);
+						getActionBarContributor().setActiveEditor(CantransceiverEditor.this);
 
 						setCurrentViewer(contentOutlineViewer);
 					}
 				}
 				else if (p instanceof PropertySheet) {
 					if (propertySheetPages.contains(((PropertySheet)p).getCurrentPage())) {
-						getActionBarContributor().setActiveEditor(CanTransceiverEditor.this);
+						getActionBarContributor().setActiveEditor(CantransceiverEditor.this);
 						handleActivate();
 					}
 				}
-				else if (p == CanTransceiverEditor.this) {
+				else if (p == CantransceiverEditor.this) {
 					handleActivate();
 				}
 			}
@@ -575,7 +582,7 @@ public class CanTransceiverEditor
 								 public void run() {
 									 removedResources.addAll(visitor.getRemovedResources());
 									 if (!isDirty()) {
-										 getSite().getPage().closeEditor(CanTransceiverEditor.this, false);
+										 getSite().getPage().closeEditor(CantransceiverEditor.this, false);
 									 }
 								 }
 							 });
@@ -586,7 +593,7 @@ public class CanTransceiverEditor
 							(new Runnable() {
 								 public void run() {
 									 changedResources.addAll(visitor.getChangedResources());
-									 if (getSite().getPage().getActiveEditor() == CanTransceiverEditor.this) {
+									 if (getSite().getPage().getActiveEditor() == CantransceiverEditor.this) {
 										 handleActivate();
 									 }
 								 }
@@ -618,7 +625,7 @@ public class CanTransceiverEditor
 
 		if (!removedResources.isEmpty()) {
 			if (handleDirtyConflict()) {
-				getSite().getPage().closeEditor(CanTransceiverEditor.this, false);
+				getSite().getPage().closeEditor(CantransceiverEditor.this, false);
 			}
 			else {
 				removedResources.clear();
@@ -746,7 +753,7 @@ public class CanTransceiverEditor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CanTransceiverEditor() {
+	public CantransceiverEditor() {
 		super();
 		initializeEditingDomain();
 	}
@@ -789,14 +796,15 @@ public class CanTransceiverEditor
 		adapterFactory.addAdapterFactory(new DatabaseItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new TargetsItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new PowergridItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new RDCItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new ADCItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new RdcItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new AdcItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new SheildItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new MotorControllerItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new CanTransceiverItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new HallSensorItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new CCDPUItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new IntrepidPowerGridItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new MotorcontrollerItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new CantransceiverItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new HallsensorItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new CpnItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new IntrepidpowergridItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new IntrepidgatewayItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
 		// Create the command stack that will notify this editor as commands are executed.
@@ -1117,7 +1125,7 @@ public class CanTransceiverEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), CanTransceiverEditor.this) {
+					new ViewerPane(getSite().getPage(), CantransceiverEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							Tree tree = new Tree(composite, SWT.MULTI);
@@ -1152,7 +1160,7 @@ public class CanTransceiverEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), CanTransceiverEditor.this) {
+					new ViewerPane(getSite().getPage(), CantransceiverEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							Tree tree = new Tree(composite, SWT.MULTI);
@@ -1181,7 +1189,7 @@ public class CanTransceiverEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), CanTransceiverEditor.this) {
+					new ViewerPane(getSite().getPage(), CantransceiverEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new ListViewer(composite);
@@ -1206,7 +1214,7 @@ public class CanTransceiverEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), CanTransceiverEditor.this) {
+					new ViewerPane(getSite().getPage(), CantransceiverEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TreeViewer(composite);
@@ -1233,7 +1241,7 @@ public class CanTransceiverEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), CanTransceiverEditor.this) {
+					new ViewerPane(getSite().getPage(), CantransceiverEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TableViewer(composite);
@@ -1276,7 +1284,7 @@ public class CanTransceiverEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), CanTransceiverEditor.this) {
+					new ViewerPane(getSite().getPage(), CantransceiverEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TreeViewer(composite);
@@ -1498,8 +1506,8 @@ public class CanTransceiverEditor
 			new ExtendedPropertySheetPage(editingDomain, ExtendedPropertySheetPage.Decoration.NONE, null, 0, false) {
 				@Override
 				public void setSelectionToViewer(List<?> selection) {
-					CanTransceiverEditor.this.setSelectionToViewer(selection);
-					CanTransceiverEditor.this.setFocus();
+					CantransceiverEditor.this.setSelectionToViewer(selection);
+					CantransceiverEditor.this.setFocus();
 				}
 
 				@Override

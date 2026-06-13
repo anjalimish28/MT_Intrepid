@@ -1,6 +1,6 @@
 /**
  */
-package targets.RDC.presentation;
+package targets.rdc.presentation;
 
 
 import java.io.IOException;
@@ -155,19 +155,29 @@ import org.eclipse.emf.edit.ui.util.EditUIUtil;
 
 import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 
-import targets.RDC.provider.RDCItemProviderAdapterFactory;
+import targets.rdc.provider.RdcItemProviderAdapterFactory;
 
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 
-import targets.ADC.provider.ADCItemProviderAdapterFactory;
-import targets.CCDPU.provider.CCDPUItemProviderAdapterFactory;
-import targets.CanTransceiver.provider.CanTransceiverItemProviderAdapterFactory;
-import targets.HallSensor.provider.HallSensorItemProviderAdapterFactory;
-import targets.IntrepidPowerGrid.provider.IntrepidPowerGridItemProviderAdapterFactory;
-import targets.MotorController.provider.MotorControllerItemProviderAdapterFactory;
-import targets.Sheild.provider.SheildItemProviderAdapterFactory;
+import targets.adc.provider.AdcItemProviderAdapterFactory;
+
+import targets.cantransceiver.provider.CantransceiverItemProviderAdapterFactory;
+
+import targets.cpn.provider.CpnItemProviderAdapterFactory;
+
+import targets.hallsensor.provider.HallsensorItemProviderAdapterFactory;
+
+import targets.intrepidgateway.provider.IntrepidgatewayItemProviderAdapterFactory;
+
+import targets.intrepidpowergrid.provider.IntrepidpowergridItemProviderAdapterFactory;
+
+import targets.motorcontroller.provider.MotorcontrollerItemProviderAdapterFactory;
+
 import targets.powergrid.provider.PowergridItemProviderAdapterFactory;
+
 import targets.provider.TargetsItemProviderAdapterFactory;
+
+import targets.sheild.provider.SheildItemProviderAdapterFactory;
 
 import ucof.assignments.database.provider.DatabaseItemProviderAdapterFactory;
 
@@ -196,6 +206,7 @@ import ucof.communication.configECIC.streamTypes.provider.StreamTypesItemProvide
 import ucof.communication.connectors.provider.ConnectorsItemProviderAdapterFactory;
 
 import ucof.communication.i2c.provider.I2cItemProviderAdapterFactory;
+
 import ucof.communication.provider.CommunicationItemProviderAdapterFactory;
 
 import ucof.devices.devicetypes.a653components.a653partition.provider.A653partitionItemProviderAdapterFactory;
@@ -220,12 +231,12 @@ import ucof.provider.UcofItemProviderAdapterFactory;
 
 
 /**
- * This is an example of a RDC model editor.
+ * This is an example of a Rdc model editor.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class RDCEditor
+public class RdcEditor
 	extends MultiPageEditorPart
 	implements IEditingDomainProvider, ISelectionProvider, IMenuListener, IViewerProvider, IGotoMarker {
 	/**
@@ -387,18 +398,18 @@ public class RDCEditor
 			public void partActivated(IWorkbenchPart p) {
 				if (p instanceof ContentOutline) {
 					if (((ContentOutline)p).getCurrentPage() == contentOutlinePage) {
-						getActionBarContributor().setActiveEditor(RDCEditor.this);
+						getActionBarContributor().setActiveEditor(RdcEditor.this);
 
 						setCurrentViewer(contentOutlineViewer);
 					}
 				}
 				else if (p instanceof PropertySheet) {
 					if (propertySheetPages.contains(((PropertySheet)p).getCurrentPage())) {
-						getActionBarContributor().setActiveEditor(RDCEditor.this);
+						getActionBarContributor().setActiveEditor(RdcEditor.this);
 						handleActivate();
 					}
 				}
-				else if (p == RDCEditor.this) {
+				else if (p == RdcEditor.this) {
 					handleActivate();
 				}
 			}
@@ -571,7 +582,7 @@ public class RDCEditor
 								 public void run() {
 									 removedResources.addAll(visitor.getRemovedResources());
 									 if (!isDirty()) {
-										 getSite().getPage().closeEditor(RDCEditor.this, false);
+										 getSite().getPage().closeEditor(RdcEditor.this, false);
 									 }
 								 }
 							 });
@@ -582,7 +593,7 @@ public class RDCEditor
 							(new Runnable() {
 								 public void run() {
 									 changedResources.addAll(visitor.getChangedResources());
-									 if (getSite().getPage().getActiveEditor() == RDCEditor.this) {
+									 if (getSite().getPage().getActiveEditor() == RdcEditor.this) {
 										 handleActivate();
 									 }
 								 }
@@ -614,7 +625,7 @@ public class RDCEditor
 
 		if (!removedResources.isEmpty()) {
 			if (handleDirtyConflict()) {
-				getSite().getPage().closeEditor(RDCEditor.this, false);
+				getSite().getPage().closeEditor(RdcEditor.this, false);
 			}
 			else {
 				removedResources.clear();
@@ -742,7 +753,7 @@ public class RDCEditor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RDCEditor() {
+	public RdcEditor() {
 		super();
 		initializeEditingDomain();
 	}
@@ -785,14 +796,15 @@ public class RDCEditor
 		adapterFactory.addAdapterFactory(new DatabaseItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new TargetsItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new PowergridItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new RDCItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new ADCItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new RdcItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new AdcItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new SheildItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new MotorControllerItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new CanTransceiverItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new HallSensorItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new CCDPUItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new IntrepidPowerGridItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new MotorcontrollerItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new CantransceiverItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new HallsensorItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new CpnItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new IntrepidpowergridItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new IntrepidgatewayItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
 		// Create the command stack that will notify this editor as commands are executed.
@@ -1113,7 +1125,7 @@ public class RDCEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), RDCEditor.this) {
+					new ViewerPane(getSite().getPage(), RdcEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							Tree tree = new Tree(composite, SWT.MULTI);
@@ -1148,7 +1160,7 @@ public class RDCEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), RDCEditor.this) {
+					new ViewerPane(getSite().getPage(), RdcEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							Tree tree = new Tree(composite, SWT.MULTI);
@@ -1177,7 +1189,7 @@ public class RDCEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), RDCEditor.this) {
+					new ViewerPane(getSite().getPage(), RdcEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new ListViewer(composite);
@@ -1202,7 +1214,7 @@ public class RDCEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), RDCEditor.this) {
+					new ViewerPane(getSite().getPage(), RdcEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TreeViewer(composite);
@@ -1229,7 +1241,7 @@ public class RDCEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), RDCEditor.this) {
+					new ViewerPane(getSite().getPage(), RdcEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TableViewer(composite);
@@ -1272,7 +1284,7 @@ public class RDCEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), RDCEditor.this) {
+					new ViewerPane(getSite().getPage(), RdcEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TreeViewer(composite);
@@ -1494,8 +1506,8 @@ public class RDCEditor
 			new ExtendedPropertySheetPage(editingDomain, ExtendedPropertySheetPage.Decoration.NONE, null, 0, false) {
 				@Override
 				public void setSelectionToViewer(List<?> selection) {
-					RDCEditor.this.setSelectionToViewer(selection);
-					RDCEditor.this.setFocus();
+					RdcEditor.this.setSelectionToViewer(selection);
+					RdcEditor.this.setFocus();
 				}
 
 				@Override

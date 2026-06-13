@@ -1,6 +1,6 @@
 /**
  */
-package targets.IntrepidPowerGrid.util;
+package targets.intrepidpowergrid.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -9,7 +9,7 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
-import targets.IntrepidPowerGrid.*;
+import targets.intrepidpowergrid.*;
 
 import targets.powergrid.SuperElectricalGridType;
 import targets.powergrid.SuperElectricalInterfaceType;
@@ -22,17 +22,17 @@ import ucof.common.etypes.SuperTrackingType;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see targets.IntrepidPowerGrid.IntrepidPowerGridPackage
+ * @see targets.intrepidpowergrid.IntrepidpowergridPackage
  * @generated
  */
-public class IntrepidPowerGridAdapterFactory extends AdapterFactoryImpl {
+public class IntrepidpowergridAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static IntrepidPowerGridPackage modelPackage;
+	protected static IntrepidpowergridPackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -40,9 +40,9 @@ public class IntrepidPowerGridAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntrepidPowerGridAdapterFactory() {
+	public IntrepidpowergridAdapterFactory() {
 		if (modelPackage == null) {
-			modelPackage = IntrepidPowerGridPackage.eINSTANCE;
+			modelPackage = IntrepidpowergridPackage.eINSTANCE;
 		}
 	}
 
@@ -71,8 +71,8 @@ public class IntrepidPowerGridAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected IntrepidPowerGridSwitch<Adapter> modelSwitch =
-		new IntrepidPowerGridSwitch<Adapter>() {
+	protected IntrepidpowergridSwitch<Adapter> modelSwitch =
+		new IntrepidpowergridSwitch<Adapter>() {
 			@Override
 			public Adapter caseintrepidElectricalGrid(intrepidElectricalGrid object) {
 				return createintrepidElectricalGridAdapter();
@@ -118,13 +118,13 @@ public class IntrepidPowerGridAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.IntrepidPowerGrid.intrepidElectricalGrid <em>intrepid Electrical Grid</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.intrepidpowergrid.intrepidElectricalGrid <em>intrepid Electrical Grid</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.IntrepidPowerGrid.intrepidElectricalGrid
+	 * @see targets.intrepidpowergrid.intrepidElectricalGrid
 	 * @generated
 	 */
 	public Adapter createintrepidElectricalGridAdapter() {
@@ -132,13 +132,13 @@ public class IntrepidPowerGridAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.IntrepidPowerGrid.intrepidElectricalInterface <em>intrepid Electrical Interface</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.intrepidpowergrid.intrepidElectricalInterface <em>intrepid Electrical Interface</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.IntrepidPowerGrid.intrepidElectricalInterface
+	 * @see targets.intrepidpowergrid.intrepidElectricalInterface
 	 * @generated
 	 */
 	public Adapter createintrepidElectricalInterfaceAdapter() {
@@ -213,4 +213,4 @@ public class IntrepidPowerGridAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //IntrepidPowerGridAdapterFactory
+} //IntrepidpowergridAdapterFactory

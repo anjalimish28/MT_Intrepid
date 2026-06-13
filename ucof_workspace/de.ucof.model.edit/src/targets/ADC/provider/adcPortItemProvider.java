@@ -1,6 +1,6 @@
 /**
  */
-package targets.ADC.provider;
+package targets.adc.provider;
 
 
 import java.util.Collection;
@@ -16,15 +16,17 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.ADC.ADCPackage;
-import targets.ADC.adcPort;
+import targets.adc.AdcPackage;
+import targets.adc.adcPort;
 
 import targets.powergrid.PowergridPackage;
+
 import targets.provider.SuperHardwarePortTypeItemProvider;
+
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.ADC.adcPort} object.
+ * This is the item provider adapter for a {@link targets.adc.adcPort} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -138,7 +140,7 @@ public class adcPortItemProvider extends SuperHardwarePortTypeItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_adcPort_pinName_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_adcPort_pinName_feature", "_UI_adcPort_type"),
-				 ADCPackage.Literals.ADC_PORT__PIN_NAME,
+				 AdcPackage.Literals.ADC_PORT__PIN_NAME,
 				 true,
 				 false,
 				 false,
@@ -185,10 +187,10 @@ public class adcPortItemProvider extends SuperHardwarePortTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(adcPort.class)) {
-			case ADCPackage.ADC_PORT__MIN_VOLTAGE:
-			case ADCPackage.ADC_PORT__MAX_VOLTAGE:
-			case ADCPackage.ADC_PORT__TYPE:
-			case ADCPackage.ADC_PORT__PIN_NAME:
+			case AdcPackage.ADC_PORT__MIN_VOLTAGE:
+			case AdcPackage.ADC_PORT__MAX_VOLTAGE:
+			case AdcPackage.ADC_PORT__TYPE:
+			case AdcPackage.ADC_PORT__PIN_NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

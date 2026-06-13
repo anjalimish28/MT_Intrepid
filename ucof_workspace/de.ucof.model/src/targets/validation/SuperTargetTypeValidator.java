@@ -15,6 +15,4 @@ public interface SuperTargetTypeValidator {
 	boolean validate();
 
 	boolean validateProjectName(String value);
-
-	boolean validatePartNumber(String value);
 }

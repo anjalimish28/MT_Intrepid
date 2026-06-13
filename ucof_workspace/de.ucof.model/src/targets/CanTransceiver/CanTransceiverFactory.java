@@ -1,6 +1,6 @@
 /**
  */
-package targets.CanTransceiver;
+package targets.cantransceiver;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,17 +9,17 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see targets.CanTransceiver.CanTransceiverPackage
+ * @see targets.cantransceiver.CantransceiverPackage
  * @generated
  */
-public interface CanTransceiverFactory extends EFactory {
+public interface CantransceiverFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	CanTransceiverFactory eINSTANCE = targets.CanTransceiver.impl.CanTransceiverFactoryImpl.init();
+	CantransceiverFactory eINSTANCE = targets.cantransceiver.impl.CantransceiverFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>sn65hvd230</em>'.
@@ -55,6 +55,6 @@ public interface CanTransceiverFactory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	CanTransceiverPackage getCanTransceiverPackage();
+	CantransceiverPackage getCantransceiverPackage();
 
-} //CanTransceiverFactory
+} //CantransceiverFactory

@@ -1,6 +1,6 @@
 /**
  */
-package targets.IntrepidPowerGrid.presentation;
+package targets.intrepidpowergrid.presentation;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -42,12 +42,12 @@ import org.eclipse.ui.PartInitException;
 import ucof.presentation.UcofEditorPlugin;
 
 /**
- * This is the action bar contributor for the IntrepidPowerGrid model editor.
+ * This is the action bar contributor for the Intrepidpowergrid model editor.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class IntrepidPowerGridActionBarContributor
+public class IntrepidpowergridActionBarContributor
 	extends EditingDomainActionBarContributor
 	implements ISelectionChangedListener {
 	/**
@@ -150,7 +150,7 @@ public class IntrepidPowerGridActionBarContributor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntrepidPowerGridActionBarContributor() {
+	public IntrepidpowergridActionBarContributor() {
 		super(ADDITIONS_LAST_STYLE);
 		loadResourceAction = new LoadResourceAction();
 		validateAction = new ValidateAction();
@@ -181,7 +181,7 @@ public class IntrepidPowerGridActionBarContributor
 	public void contributeToMenu(IMenuManager menuManager) {
 		super.contributeToMenu(menuManager);
 
-		IMenuManager submenuManager = new MenuManager(UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidPowerGridEditor_menu"), "targets.IntrepidPowerGridMenuID");
+		IMenuManager submenuManager = new MenuManager(UcofEditorPlugin.INSTANCE.getString("_UI_IntrepidpowergridEditor_menu"), "targets.intrepidpowergridMenuID");
 		menuManager.insertAfter("additions", submenuManager);
 		submenuManager.add(new Separator("settings"));
 		submenuManager.add(new Separator("actions"));

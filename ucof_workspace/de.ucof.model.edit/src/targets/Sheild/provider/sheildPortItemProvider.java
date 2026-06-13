@@ -1,6 +1,6 @@
 /**
  */
-package targets.Sheild.provider;
+package targets.sheild.provider;
 
 
 import java.util.Collection;
@@ -16,15 +16,17 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.Sheild.SheildPackage;
-import targets.Sheild.sheildPort;
-
 import targets.powergrid.PowergridPackage;
+
 import targets.provider.SuperHardwarePortTypeItemProvider;
+
+import targets.sheild.SheildPackage;
+import targets.sheild.sheildPort;
+
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.Sheild.sheildPort} object.
+ * This is the item provider adapter for a {@link targets.sheild.sheildPort} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated

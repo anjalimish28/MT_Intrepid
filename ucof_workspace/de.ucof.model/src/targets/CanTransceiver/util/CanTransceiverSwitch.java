@@ -1,18 +1,19 @@
 /**
  */
-package targets.CanTransceiver.util;
+package targets.cantransceiver.util;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
 
-import targets.CanTransceiver.*;
-
 import targets.SuperHardwarePortType;
 import targets.SuperTargetType;
 
+import targets.cantransceiver.*;
+
 import targets.powergrid.SuperPowerType;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
@@ -26,17 +27,17 @@ import ucof.common.etypes.SuperTrackingType;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see targets.CanTransceiver.CanTransceiverPackage
+ * @see targets.cantransceiver.CantransceiverPackage
  * @generated
  */
-public class CanTransceiverSwitch<T> extends Switch<T> {
+public class CantransceiverSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static CanTransceiverPackage modelPackage;
+	protected static CantransceiverPackage modelPackage;
 
 	/**
 	 * Creates an instance of the switch.
@@ -44,9 +45,9 @@ public class CanTransceiverSwitch<T> extends Switch<T> {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CanTransceiverSwitch() {
+	public CantransceiverSwitch() {
 		if (modelPackage == null) {
-			modelPackage = CanTransceiverPackage.eINSTANCE;
+			modelPackage = CantransceiverPackage.eINSTANCE;
 		}
 	}
 
@@ -73,7 +74,7 @@ public class CanTransceiverSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case CanTransceiverPackage.SN65HVD230: {
+			case CantransceiverPackage.SN65HVD230: {
 				sn65hvd230 sn65hvd230 = (sn65hvd230)theEObject;
 				T result = casesn65hvd230(sn65hvd230);
 				if (result == null) result = caseSuperTargetType(sn65hvd230);
@@ -83,7 +84,7 @@ public class CanTransceiverSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS: {
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS: {
 				canTransceiverPorts canTransceiverPorts = (canTransceiverPorts)theEObject;
 				T result = casecanTransceiverPorts(canTransceiverPorts);
 				if (result == null) result = caseSuperTrackingType(canTransceiverPorts);
@@ -91,7 +92,7 @@ public class CanTransceiverSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORT: {
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORT: {
 				canTransceiverPort canTransceiverPort = (canTransceiverPort)theEObject;
 				T result = casecanTransceiverPort(canTransceiverPort);
 				if (result == null) result = caseSuperHardwarePortType(canTransceiverPort);
@@ -240,4 +241,4 @@ public class CanTransceiverSwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //CanTransceiverSwitch
+} //CantransceiverSwitch

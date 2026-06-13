@@ -1,6 +1,6 @@
 /**
  */
-package targets.CanTransceiver.provider;
+package targets.cantransceiver.provider;
 
 
 import java.util.Collection;
@@ -18,9 +18,9 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.CanTransceiver.CanTransceiverFactory;
-import targets.CanTransceiver.CanTransceiverPackage;
-import targets.CanTransceiver.canTransceiverPorts;
+import targets.cantransceiver.CantransceiverFactory;
+import targets.cantransceiver.CantransceiverPackage;
+import targets.cantransceiver.canTransceiverPorts;
 
 import ucof.common.etypes.EtypesPackage;
 
@@ -29,7 +29,7 @@ import ucof.common.etypes.provider.SuperTrackingTypeItemProvider;
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.CanTransceiver.canTransceiverPorts} object.
+ * This is the item provider adapter for a {@link targets.cantransceiver.canTransceiverPorts} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -118,7 +118,7 @@ public class canTransceiverPortsItemProvider extends SuperTrackingTypeItemProvid
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(CanTransceiverPackage.Literals.CAN_TRANSCEIVER_PORTS__PORT);
+			childrenFeatures.add(CantransceiverPackage.Literals.CAN_TRANSCEIVER_PORTS__PORT);
 		}
 		return childrenFeatures;
 	}
@@ -174,11 +174,11 @@ public class canTransceiverPortsItemProvider extends SuperTrackingTypeItemProvid
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(canTransceiverPorts.class)) {
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__ID:
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__ID:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__PORT:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__PORT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -198,8 +198,8 @@ public class canTransceiverPortsItemProvider extends SuperTrackingTypeItemProvid
 
 		newChildDescriptors.add
 			(createChildParameter
-				(CanTransceiverPackage.Literals.CAN_TRANSCEIVER_PORTS__PORT,
-				 CanTransceiverFactory.eINSTANCE.createcanTransceiverPort()));
+				(CantransceiverPackage.Literals.CAN_TRANSCEIVER_PORTS__PORT,
+				 CantransceiverFactory.eINSTANCE.createcanTransceiverPort()));
 	}
 
 	/**

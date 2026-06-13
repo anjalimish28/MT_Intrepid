@@ -1,6 +1,6 @@
 /**
  */
-package targets.IntrepidPowerGrid;
+package targets.intrepidpowergrid;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,17 +9,17 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see targets.IntrepidPowerGrid.IntrepidPowerGridPackage
+ * @see targets.intrepidpowergrid.IntrepidpowergridPackage
  * @generated
  */
-public interface IntrepidPowerGridFactory extends EFactory {
+public interface IntrepidpowergridFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	IntrepidPowerGridFactory eINSTANCE = targets.IntrepidPowerGrid.impl.IntrepidPowerGridFactoryImpl.init();
+	IntrepidpowergridFactory eINSTANCE = targets.intrepidpowergrid.impl.IntrepidpowergridFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>intrepid Electrical Grid</em>'.
@@ -46,6 +46,6 @@ public interface IntrepidPowerGridFactory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	IntrepidPowerGridPackage getIntrepidPowerGridPackage();
+	IntrepidpowergridPackage getIntrepidpowergridPackage();
 
-} //IntrepidPowerGridFactory
+} //IntrepidpowergridFactory

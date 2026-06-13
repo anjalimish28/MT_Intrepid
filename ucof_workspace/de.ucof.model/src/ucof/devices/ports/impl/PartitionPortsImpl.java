@@ -13,12 +13,14 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import ucof.common.etypes.EtypesPackage;
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperInterCommunicationPortType;
+
 import ucof.common.etypes.impl.SuperTrackingTypeImpl;
 
 import ucof.devices.ports.PartitionPorts;
@@ -49,6 +51,7 @@ public class PartitionPortsImpl extends SuperTrackingTypeImpl implements Partiti
 	 * @ordered
 	 */
 	protected static final String ID_EDEFAULT = null;
+
 	/**
 	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -58,6 +61,7 @@ public class PartitionPortsImpl extends SuperTrackingTypeImpl implements Partiti
 	 * @ordered
 	 */
 	protected String id = ID_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -67,6 +71,7 @@ public class PartitionPortsImpl extends SuperTrackingTypeImpl implements Partiti
 	 * @ordered
 	 */
 	protected static final String NAME_EDEFAULT = null;
+
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -76,6 +81,7 @@ public class PartitionPortsImpl extends SuperTrackingTypeImpl implements Partiti
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
+
 	/**
 	 * The cached value of the '{@link #getPort() <em>Port</em>}' containment reference list.
 	 * <!-- begin-user-doc -->

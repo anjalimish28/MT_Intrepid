@@ -1,6 +1,6 @@
 /**
  */
-package targets.CanTransceiver;
+package targets.cantransceiver;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -23,18 +23,18 @@ import ucof.common.etypes.EtypesPackage;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see targets.CanTransceiver.CanTransceiverFactory
+ * @see targets.cantransceiver.CantransceiverFactory
  * @model kind="package"
  * @generated
  */
-public interface CanTransceiverPackage extends EPackage {
+public interface CantransceiverPackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNAME = "CanTransceiver";
+	String eNAME = "cantransceiver";
 
 	/**
 	 * The package namespace URI.
@@ -58,14 +58,14 @@ public interface CanTransceiverPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	CanTransceiverPackage eINSTANCE = targets.CanTransceiver.impl.CanTransceiverPackageImpl.init();
+	CantransceiverPackage eINSTANCE = targets.cantransceiver.impl.CantransceiverPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link targets.CanTransceiver.impl.sn65hvd230Impl <em>sn65hvd230</em>}' class.
+	 * The meta object id for the '{@link targets.cantransceiver.impl.sn65hvd230Impl <em>sn65hvd230</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.CanTransceiver.impl.sn65hvd230Impl
-	 * @see targets.CanTransceiver.impl.CanTransceiverPackageImpl#getsn65hvd230()
+	 * @see targets.cantransceiver.impl.sn65hvd230Impl
+	 * @see targets.cantransceiver.impl.CantransceiverPackageImpl#getsn65hvd230()
 	 * @generated
 	 */
 	int SN65HVD230 = 0;
@@ -197,11 +197,11 @@ public interface CanTransceiverPackage extends EPackage {
 	int SN65HVD230_OPERATION_COUNT = TargetsPackage.SUPER_TARGET_TYPE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link targets.CanTransceiver.impl.canTransceiverPortsImpl <em>can Transceiver Ports</em>}' class.
+	 * The meta object id for the '{@link targets.cantransceiver.impl.canTransceiverPortsImpl <em>can Transceiver Ports</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.CanTransceiver.impl.canTransceiverPortsImpl
-	 * @see targets.CanTransceiver.impl.CanTransceiverPackageImpl#getcanTransceiverPorts()
+	 * @see targets.cantransceiver.impl.canTransceiverPortsImpl
+	 * @see targets.cantransceiver.impl.CantransceiverPackageImpl#getcanTransceiverPorts()
 	 * @generated
 	 */
 	int CAN_TRANSCEIVER_PORTS = 1;
@@ -315,11 +315,11 @@ public interface CanTransceiverPackage extends EPackage {
 	int CAN_TRANSCEIVER_PORTS_OPERATION_COUNT = EtypesPackage.SUPER_TRACKING_TYPE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link targets.CanTransceiver.impl.canTransceiverPortImpl <em>can Transceiver Port</em>}' class.
+	 * The meta object id for the '{@link targets.cantransceiver.impl.canTransceiverPortImpl <em>can Transceiver Port</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.CanTransceiver.impl.canTransceiverPortImpl
-	 * @see targets.CanTransceiver.impl.CanTransceiverPackageImpl#getcanTransceiverPort()
+	 * @see targets.cantransceiver.impl.canTransceiverPortImpl
+	 * @see targets.cantransceiver.impl.CantransceiverPackageImpl#getcanTransceiverPort()
 	 * @generated
 	 */
 	int CAN_TRANSCEIVER_PORT = 2;
@@ -443,74 +443,74 @@ public interface CanTransceiverPackage extends EPackage {
 
 
 	/**
-	 * Returns the meta object for class '{@link targets.CanTransceiver.sn65hvd230 <em>sn65hvd230</em>}'.
+	 * Returns the meta object for class '{@link targets.cantransceiver.sn65hvd230 <em>sn65hvd230</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>sn65hvd230</em>'.
-	 * @see targets.CanTransceiver.sn65hvd230
+	 * @see targets.cantransceiver.sn65hvd230
 	 * @generated
 	 */
 	EClass getsn65hvd230();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link targets.CanTransceiver.sn65hvd230#getPorts <em>Ports</em>}'.
+	 * Returns the meta object for the containment reference '{@link targets.cantransceiver.sn65hvd230#getPorts <em>Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Ports</em>'.
-	 * @see targets.CanTransceiver.sn65hvd230#getPorts()
+	 * @see targets.cantransceiver.sn65hvd230#getPorts()
 	 * @see #getsn65hvd230()
 	 * @generated
 	 */
 	EReference getsn65hvd230_Ports();
 
 	/**
-	 * Returns the meta object for class '{@link targets.CanTransceiver.canTransceiverPorts <em>can Transceiver Ports</em>}'.
+	 * Returns the meta object for class '{@link targets.cantransceiver.canTransceiverPorts <em>can Transceiver Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>can Transceiver Ports</em>'.
-	 * @see targets.CanTransceiver.canTransceiverPorts
+	 * @see targets.cantransceiver.canTransceiverPorts
 	 * @generated
 	 */
 	EClass getcanTransceiverPorts();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link targets.CanTransceiver.canTransceiverPorts#getPort <em>Port</em>}'.
+	 * Returns the meta object for the containment reference list '{@link targets.cantransceiver.canTransceiverPorts#getPort <em>Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Port</em>'.
-	 * @see targets.CanTransceiver.canTransceiverPorts#getPort()
+	 * @see targets.cantransceiver.canTransceiverPorts#getPort()
 	 * @see #getcanTransceiverPorts()
 	 * @generated
 	 */
 	EReference getcanTransceiverPorts_Port();
 
 	/**
-	 * Returns the meta object for class '{@link targets.CanTransceiver.canTransceiverPort <em>can Transceiver Port</em>}'.
+	 * Returns the meta object for class '{@link targets.cantransceiver.canTransceiverPort <em>can Transceiver Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>can Transceiver Port</em>'.
-	 * @see targets.CanTransceiver.canTransceiverPort
+	 * @see targets.cantransceiver.canTransceiverPort
 	 * @generated
 	 */
 	EClass getcanTransceiverPort();
 
 	/**
-	 * Returns the meta object for the attribute '{@link targets.CanTransceiver.canTransceiverPort#getPinName <em>Pin Name</em>}'.
+	 * Returns the meta object for the attribute '{@link targets.cantransceiver.canTransceiverPort#getPinName <em>Pin Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Pin Name</em>'.
-	 * @see targets.CanTransceiver.canTransceiverPort#getPinName()
+	 * @see targets.cantransceiver.canTransceiverPort#getPinName()
 	 * @see #getcanTransceiverPort()
 	 * @generated
 	 */
 	EAttribute getcanTransceiverPort_PinName();
 
 	/**
-	 * Returns the meta object for the attribute '{@link targets.CanTransceiver.canTransceiverPort#getPinNumber <em>Pin Number</em>}'.
+	 * Returns the meta object for the attribute '{@link targets.cantransceiver.canTransceiverPort#getPinNumber <em>Pin Number</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Pin Number</em>'.
-	 * @see targets.CanTransceiver.canTransceiverPort#getPinNumber()
+	 * @see targets.cantransceiver.canTransceiverPort#getPinNumber()
 	 * @see #getcanTransceiverPort()
 	 * @generated
 	 */
@@ -523,7 +523,7 @@ public interface CanTransceiverPackage extends EPackage {
 	 * @return the factory that creates the instances of the model.
 	 * @generated
 	 */
-	CanTransceiverFactory getCanTransceiverFactory();
+	CantransceiverFactory getCantransceiverFactory();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -540,11 +540,11 @@ public interface CanTransceiverPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link targets.CanTransceiver.impl.sn65hvd230Impl <em>sn65hvd230</em>}' class.
+		 * The meta object literal for the '{@link targets.cantransceiver.impl.sn65hvd230Impl <em>sn65hvd230</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.CanTransceiver.impl.sn65hvd230Impl
-		 * @see targets.CanTransceiver.impl.CanTransceiverPackageImpl#getsn65hvd230()
+		 * @see targets.cantransceiver.impl.sn65hvd230Impl
+		 * @see targets.cantransceiver.impl.CantransceiverPackageImpl#getsn65hvd230()
 		 * @generated
 		 */
 		EClass SN65HVD230 = eINSTANCE.getsn65hvd230();
@@ -558,11 +558,11 @@ public interface CanTransceiverPackage extends EPackage {
 		EReference SN65HVD230__PORTS = eINSTANCE.getsn65hvd230_Ports();
 
 		/**
-		 * The meta object literal for the '{@link targets.CanTransceiver.impl.canTransceiverPortsImpl <em>can Transceiver Ports</em>}' class.
+		 * The meta object literal for the '{@link targets.cantransceiver.impl.canTransceiverPortsImpl <em>can Transceiver Ports</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.CanTransceiver.impl.canTransceiverPortsImpl
-		 * @see targets.CanTransceiver.impl.CanTransceiverPackageImpl#getcanTransceiverPorts()
+		 * @see targets.cantransceiver.impl.canTransceiverPortsImpl
+		 * @see targets.cantransceiver.impl.CantransceiverPackageImpl#getcanTransceiverPorts()
 		 * @generated
 		 */
 		EClass CAN_TRANSCEIVER_PORTS = eINSTANCE.getcanTransceiverPorts();
@@ -576,11 +576,11 @@ public interface CanTransceiverPackage extends EPackage {
 		EReference CAN_TRANSCEIVER_PORTS__PORT = eINSTANCE.getcanTransceiverPorts_Port();
 
 		/**
-		 * The meta object literal for the '{@link targets.CanTransceiver.impl.canTransceiverPortImpl <em>can Transceiver Port</em>}' class.
+		 * The meta object literal for the '{@link targets.cantransceiver.impl.canTransceiverPortImpl <em>can Transceiver Port</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.CanTransceiver.impl.canTransceiverPortImpl
-		 * @see targets.CanTransceiver.impl.CanTransceiverPackageImpl#getcanTransceiverPort()
+		 * @see targets.cantransceiver.impl.canTransceiverPortImpl
+		 * @see targets.cantransceiver.impl.CantransceiverPackageImpl#getcanTransceiverPort()
 		 * @generated
 		 */
 		EClass CAN_TRANSCEIVER_PORT = eINSTANCE.getcanTransceiverPort();
@@ -603,4 +603,4 @@ public interface CanTransceiverPackage extends EPackage {
 
 	}
 
-} //CanTransceiverPackage
+} //CantransceiverPackage

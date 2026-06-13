@@ -1,6 +1,6 @@
 /**
  */
-package targets.RDC.provider;
+package targets.rdc.provider;
 
 
 import java.util.Collection;
@@ -18,9 +18,9 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.RDC.RDCFactory;
-import targets.RDC.RDCPackage;
-import targets.RDC.stmPorts;
+import targets.rdc.RdcFactory;
+import targets.rdc.RdcPackage;
+import targets.rdc.stmPorts;
 
 import ucof.common.etypes.EtypesPackage;
 
@@ -29,7 +29,7 @@ import ucof.common.etypes.provider.SuperTrackingTypeItemProvider;
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.RDC.stmPorts} object.
+ * This is the item provider adapter for a {@link targets.rdc.stmPorts} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -118,7 +118,7 @@ public class stmPortsItemProvider extends SuperTrackingTypeItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(RDCPackage.Literals.STM_PORTS__PORT);
+			childrenFeatures.add(RdcPackage.Literals.STM_PORTS__PORT);
 		}
 		return childrenFeatures;
 	}
@@ -174,11 +174,11 @@ public class stmPortsItemProvider extends SuperTrackingTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(stmPorts.class)) {
-			case RDCPackage.STM_PORTS__ID:
-			case RDCPackage.STM_PORTS__NAME:
+			case RdcPackage.STM_PORTS__ID:
+			case RdcPackage.STM_PORTS__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case RDCPackage.STM_PORTS__PORT:
+			case RdcPackage.STM_PORTS__PORT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -198,8 +198,8 @@ public class stmPortsItemProvider extends SuperTrackingTypeItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(RDCPackage.Literals.STM_PORTS__PORT,
-				 RDCFactory.eINSTANCE.createstmPort()));
+				(RdcPackage.Literals.STM_PORTS__PORT,
+				 RdcFactory.eINSTANCE.createstmPort()));
 	}
 
 	/**

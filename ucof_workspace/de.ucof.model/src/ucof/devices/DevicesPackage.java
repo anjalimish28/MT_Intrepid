@@ -324,6 +324,7 @@ public interface DevicesPackage extends EPackage {
 	 */
 	int SUPER_PLATFORM_DEVICE_TYPE_OPERATION_COUNT = EtypesPackage.SUPER_DEVICE_TYPE_OPERATION_COUNT + 0;
 
+
 	/**
 	 * Returns the meta object for class '{@link ucof.devices.Devices <em>Devices</em>}'.
 	 * <!-- begin-user-doc -->

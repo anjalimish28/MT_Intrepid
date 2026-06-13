@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<de.ucof.model:Platform xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.ucof.model="https://gitlab.com/ucof/ucof.de/model/v001/ucof" xmlns:de.ucof.model.assignments="https://gitlab.com/ucof/ucof.de/model/v001/ucof/assignments" xmlns:de.ucof.model.common.etypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/common/etypes" xmlns:de.ucof.model.communication="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication" xmlns:de.ucof.model.communication.arinc825="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/arinc825" xmlns:de.ucof.model.communication.i2c="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/i2c" xmlns:de.ucof.model.devices.devicetypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/devicetypes" xmlns:de.ucof.model.targets="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets" xmlns:de.ucof.model.targets.adc="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/adc" xmlns:de.ucof.model.targets.cantransceiver="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cantransceiver" xmlns:de.ucof.model.targets.ccdpu="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/ccdpu" xmlns:de.ucof.model.targets.hallsensor="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/hallsensor" xmlns:de.ucof.model.targets.intrepidpowergrid="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidpowergrid" xmlns:de.ucof.model.targets.motorcontroller="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/motorcontroller" xmlns:de.ucof.model.targets.rdc="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc" xmlns:de.ucof.model.targets.sheild="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/sheild" id="1e21f09c-95ba-49f7-9f34-d46e434da93d">
+<de.ucof.model:Platform xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.ucof.model="https://gitlab.com/ucof/ucof.de/model/v001/ucof" xmlns:de.ucof.model.assignments="https://gitlab.com/ucof/ucof.de/model/v001/ucof/assignments" xmlns:de.ucof.model.common.etypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/common/etypes" xmlns:de.ucof.model.communication="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication" xmlns:de.ucof.model.communication.arinc825="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/arinc825" xmlns:de.ucof.model.communication.i2c="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/i2c" xmlns:de.ucof.model.devices.devicetypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/devicetypes" xmlns:de.ucof.model.targets="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets" xmlns:de.ucof.model.targets.adc="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/adc" xmlns:de.ucof.model.targets.cantransceiver="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cantransceiver" xmlns:de.ucof.model.targets.cpn="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cpn" xmlns:de.ucof.model.targets.hallsensor="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/hallsensor" xmlns:de.ucof.model.targets.intrepidpowergrid="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidpowergrid" xmlns:de.ucof.model.targets.motorcontroller="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/motorcontroller" xmlns:de.ucof.model.targets.rdc="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc" xmlns:de.ucof.model.targets.sheild="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/sheild" id="1e21f09c-95ba-49f7-9f34-d46e434da93d">
   <devices>
     <device xsi:type="de.ucof.model.devices.devicetypes:IOModule" id="86e9d0c4-5eb4-4f52-9ba0-08415d300cac" name="RDC" implementationType="Hardware">
       <ports>
@@ -124,7 +124,7 @@
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="fb456831-f13f-45bb-940b-631ff02f81b0" name="SIGNAL" portDirection="Out"/>
       </ports>
     </device>
-    <device xsi:type="de.ucof.model.devices.devicetypes:ComputingModule" id="abb8dd03-d7c5-44e7-ad4f-e0010f14b8bc" name="CCDPU" implementationType="Hardware" processorFamily="Arm® Cortex®-M4" vendor="Vorago Technologies" model="va41620">
+    <device xsi:type="de.ucof.model.devices.devicetypes:ComputingModule" id="abb8dd03-d7c5-44e7-ad4f-e0010f14b8bc" name="cpn" implementationType="Hardware" processorFamily="Arm® Cortex®-M4" vendor="Vorago Technologies" model="va41620">
       <ports name="PEB1">
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="a26ab63f-c577-432c-85bd-25e6185fca84" name="CANL" portDirection="InOut"/>
         <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="5c1d22f2-9e1e-4e5d-97e5-e28ac1590e62" name="CANH" portDirection="InOut"/>
@@ -135,7 +135,7 @@
   <communication>
     <database id="90d70995-56ce-4e18-a7d9-bb83da876638">
       <communicationSet xsi:type="de.ucof.model.communication:InterfaceSet" id="76c8ea2d-d714-4396-85f1-9c0ecc9a87af">
-        <interface xsi:type="de.ucof.model.communication.arinc825:A825Bus" id="c404d97c-1a89-4d90-bfe9-dc3f00fbcafe" name="CAN1" baudRate="1000"/>
+        <interface xsi:type="de.ucof.model.communication.arinc825:A825Bus" id="c404d97c-1a89-4d90-bfe9-dc3f00fbcafe" name="CAN1" baudRate="500"/>
         <interface xsi:type="de.ucof.model.communication.i2c:I2CBus" id="980b3116-6561-4ee0-9d0a-1ffe5a2d9b72" name="I2C1" busMode="FastMode_400kbps" addressMode="Bit7" pullUpResistanceOhm="4700" clockStretchingEnabled="false" multiControllerEnabled="false"/>
       </communicationSet>
     </database>
@@ -255,9 +255,9 @@
       <swPortToHWPortAssignment id="c91f16ea-aeb4-447f-b8ed-a62118fd122a" name="CAN_CANL_pin6" sourceID="0699dd9c-f426-4a88-9ed5-2788cc52a0cb" targetID="36420397-4540-440f-ae38-f9a74ba2ddd7"/>
       <swPortToHWPortAssignment id="713ceb68-814e-4c14-abf6-4cb31263d8a7" name="CAN_CANH_pin7" sourceID="ed7a4c2d-26b6-4e38-9a48-9085e0bf1c77" targetID="571382a1-4fd7-4a3a-9ced-0a9fc7612e50"/>
       <swPortToHWPortAssignment id="d84b76d7-0451-4512-b09e-f62c4e6804e6" name="HALL_SIGNAL_OUTPUT" sourceID="fb456831-f13f-45bb-940b-631ff02f81b0" targetID="d29dabdf-9807-4f1d-9d38-a466d066ba0e"/>
-      <swPortToHWPortAssignment id="f6dc3184-5eaa-4665-ae37-b305ed95d0eb" name="CCDPU_CANH_J61_pin2" sourceID="5c1d22f2-9e1e-4e5d-97e5-e28ac1590e62" targetID="70ce3df6-e3ed-4252-bfab-1b5294bd407b"/>
-      <swPortToHWPortAssignment id="7d79aaa3-8e54-496b-9530-11b534c27e9b" name="CCDPU_CANL_J61_pin3" sourceID="a26ab63f-c577-432c-85bd-25e6185fca84" targetID="ad672fc7-4a11-4812-bd6f-225d07527e10"/>
-      <swPortToHWPortAssignment id="cb42301a-addf-41de-ae65-a2e235152796" name="CCDPU_RESISTOR_JP61_R60" sourceID="a18d4942-033c-4a1c-bcc9-29612aee3364" targetID="5213dc1e-d8fa-462c-82af-baacd3f7ccd3"/>
+      <swPortToHWPortAssignment id="f6dc3184-5eaa-4665-ae37-b305ed95d0eb" name="CPN_CANH_J61_pin2" sourceID="5c1d22f2-9e1e-4e5d-97e5-e28ac1590e62" targetID="70ce3df6-e3ed-4252-bfab-1b5294bd407b"/>
+      <swPortToHWPortAssignment id="7d79aaa3-8e54-496b-9530-11b534c27e9b" name="CPN_CANL_J61_pin3" sourceID="a26ab63f-c577-432c-85bd-25e6185fca84" targetID="ad672fc7-4a11-4812-bd6f-225d07527e10"/>
+      <swPortToHWPortAssignment id="cb42301a-addf-41de-ae65-a2e235152796" name="CPN_RESISTOR_JP61_R60" sourceID="a18d4942-033c-4a1c-bcc9-29612aee3364" targetID="5213dc1e-d8fa-462c-82af-baacd3f7ccd3"/>
       <swPortToHWPortAssignment id="1604ec9b-33f6-4054-b7a9-ee80a18ab3c8" name="DigIN 1_TO_Enable" sourceID="e29fa1e9-c7be-4fd6-9d25-1f105f7afe6e" targetID="1e0aecb4-c6e3-4f03-9f0a-733af7bf7673"/>
       <swPortToHWPortAssignment id="5f888a6b-cc0d-4574-bbd4-c2dcafed521e" name="DigIN 2_TO_Direction" sourceID="be21ee39-74a9-4a20-ad71-33590b97e577" targetID="7bed69e7-c763-43f4-a1e9-1f96dbb39d76"/>
       <swPortToHWPortAssignment id="e9b1d47a-6994-4df6-9406-722ee81773ec" name="DigIN/OUT 3_TO_Speed_PWM" sourceID="fd267fce-041b-4175-a97d-cc2cd2ad121d" targetID="01bf245b-2f59-4071-8133-12a69ed618f7"/>
@@ -287,9 +287,13 @@
       <swPortToHWPortAssignment id="5cd03c68-ca32-4df1-9c5a-3ebab774fda6" name="SDA_TO_SDA" sourceID="a65dd2c5-021a-41d0-b246-1e37a330a4b5" targetID="64e578f1-2c84-42d0-94d3-3f0a6b58db65"/>
       <swPortToHWPortAssignment id="2e599163-bf25-43e1-9ce8-d4c4bfee1f82" name="SCL_TO_SCL" sourceID="99fe4dcf-59df-4888-ad09-1c19254fec99" targetID="760590e1-e7c1-4190-8f44-c6c508a2777a"/>
     </assignmentSet>
+    <assignmentSet xsi:type="de.ucof.model.assignments:DeviceToImplementationAssignmentSet">
+      <deviceToImplementationAssignment id="b3c28861-0158-481c-b636-e3fc0d6f1021" name="RDC_TO_STM32F446RE" sourceID="86e9d0c4-5eb4-4f52-9ba0-08415d300cac" targetID="09dc9bb6-0501-46d1-ba7d-edf1299a03a4"/>
+      <deviceToImplementationAssignment name="cpn_TO_VA41620PEB1" sourceID="abb8dd03-d7c5-44e7-ad4f-e0010f14b8bc" targetID="efa5d5e8-0a01-417d-8241-60b48ae1d48b"/>
+    </assignmentSet>
   </assignments>
   <targets id="922cb2e4-26e4-46ac-9ba8-547aa85dccc9">
-    <targetConfiguration xsi:type="de.ucof.model.targets.rdc:stm32f446re" id="09dc9bb6-0501-46d1-ba7d-edf1299a03a4" name=" stm32">
+    <targetConfiguration xsi:type="de.ucof.model.targets.rdc:stm32f446re" id="09dc9bb6-0501-46d1-ba7d-edf1299a03a4" name="stm32">
       <electricalInterfaces id="aa472069-f492-492e-a9bd-43381c4610fc">
         <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="61ad3980-d1fc-4e5b-a5ad-4354a5ea16a4" name="VDD_5V" minVoltage="4.75" maxVoltage="5.25" type="sinkSource"/>
         <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="e68608af-f59d-4697-b9f1-954c107ba3b8" name="VDD_3.3V" minVoltage="3.6" maxVoltage="3.0" type="source"/>
@@ -297,16 +301,16 @@
         <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="3b2a2072-9386-4109-b626-be92bc8f703d" name="IOREF" minVoltage="3.0" maxVoltage="3.6" type="analogReference"/>
         <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="414defad-1d2f-4ea0-be26-3d8cfcc9fec3" name="GND" type="sink"/>
       </electricalInterfaces>
-      <ports name=" stm32">
-        <port id="03c32fa8-d0a6-479d-8af8-d6486fd8c753" name="Balance_Engine_0_Enable" pinName="D7" pinNumber="41"/>
-        <port id="3955dea2-f6af-4070-afdd-1bc4c8414777" name="Balance_Engine_0_Speed_PWM" pinName="PWM/D3" pinNumber="55"/>
-        <port id="15586e9a-6947-4203-833a-7ada5cbe4d99" name="Balance_Engine_0_Direction" pinName="PWM/D6" pinNumber="29"/>
-        <port id="860bdb47-7dc6-4093-aa4d-1bd74e50dd3d" name="Gimbal_Engine_1_Enable" pinName="PWM/MOSI/D11" pinNumber="23"/>
-        <port id="ab44aa2f-5e2f-441a-b796-b7751de44e53" name="Gimbal_Engine_1_Speed_PWM" pinName="PWM/D9" pinNumber="38"/>
-        <port id="5dcac8ac-aeee-4d49-aef9-495d5b270270" name="Gimbal_Engine_1_Direction" pinName="D8" pinNumber="42"/>
-        <port id="b708a832-c778-445f-a855-a47525e33cf4" name="Spindal_Engine_2_Enable" pinName="SCK/D13" pinNumber="21"/>
-        <port id="1e4cf1df-a598-42d0-9a59-cb3abfb59ab8" name="Spindal_Engine_2_Speed_PWM" pinName="PWM/CS/D10" pinNumber="58"/>
-        <port id="b6153f0d-1fb7-472a-a46a-4f6d601a68ad" name="Spindal_Engine_2_Direction" pinName="MISO/D12" pinNumber="22"/>
+      <ports name="stm32">
+        <port id="03c32fa8-d0a6-479d-8af8-d6486fd8c753" name="Balance_Engine_0_Enable" pinName="7" pinNumber="41" size="U8"/>
+        <port id="3955dea2-f6af-4070-afdd-1bc4c8414777" name="Balance_Engine_0_Speed_PWM" pinName="3" pinNumber="55" size="U8"/>
+        <port id="15586e9a-6947-4203-833a-7ada5cbe4d99" name="Balance_Engine_0_Direction" pinName="6" pinNumber="29" size="U8"/>
+        <port id="860bdb47-7dc6-4093-aa4d-1bd74e50dd3d" name="Gimbal_Engine_1_Enable" pinName="11" pinNumber="23" size="U8"/>
+        <port id="ab44aa2f-5e2f-441a-b796-b7751de44e53" name="Gimbal_Engine_1_Speed_PWM" pinName="9" pinNumber="38" size="U8"/>
+        <port id="5dcac8ac-aeee-4d49-aef9-495d5b270270" name="Gimbal_Engine_1_Direction" pinName="8" pinNumber="42" size="U8"/>
+        <port id="b708a832-c778-445f-a855-a47525e33cf4" name="Spindal_Engine_2_Enable" pinName="13" pinNumber="21" size="U8"/>
+        <port id="1e4cf1df-a598-42d0-9a59-cb3abfb59ab8" name="Spindal_Engine_2_Speed_PWM" pinName="10" pinNumber="58" size="U8"/>
+        <port id="b6153f0d-1fb7-472a-a46a-4f6d601a68ad" name="Spindal_Engine_2_Direction" pinName="12" pinNumber="22" size="U8"/>
         <port id="4b5935e7-d0e4-47ac-9cb4-625e2d5915eb" name="CAN_RX" pinName="PA11" pinNumber="44"/>
         <port id="a8f2340b-b4b4-4a6c-bbd3-7446b9e3c991" name="CAN_TX" pinName="PA12" pinNumber="45"/>
         <port id="4f818bd7-578e-4f61-afe2-ea12c259ac33" name="I2C_SCL" pinName="A5" pinNumber="8"/>
@@ -322,6 +326,13 @@
         <port id="d67100a2-9ed1-48df-a245-924eae37866b" name="A2" pinName="A2"/>
         <port id="0da53268-431a-4138-ae82-6a9487d41dcc" name="A3" pinName="A3"/>
       </ports>
+      <stmTimingConfig name="timing" rateDriverFrequencyHz="1000" rateGroupDivisor1="1" rateGroupDivisor2="5" rateGroupDefaultOffset="0" rateGroupDivisor3="10" pwmResolutionBits="16" rateDriverFrequencyHzSize="U8" rateGroupDivisor1Size="U8" rateGroupDivisor2Size="U8" rateGroupDivisor3Size="U8" rateGroupDefaultOffsetSize="U8" pwmResolutionBitsSize="U8"/>
+      <msgBoxExtension name="RDC_CAN_Mailbox_Config" numOfOutgoingMailboxes="5" numOfIncomingMailboxes="5" smallBufferSize="32" smallBufferCount="10" mediumBufferSize="128" mediumBufferCount="5" bigBufferSize="512" bigBufferCount="1" nodeAddr="2" nodeAddressSymbol="CAN_ADDR_RDC_2">
+        <incomingDestinationFilter name="RDC_2_RX_Filter" addressSymbol="CAN_ADDR_RDC_2" addressValue="2"/>
+        <incomingDestinationFilter name="RDC_Multicast_RX_Filter" addressSymbol="CAN_ADDR_RDC_MC"/>
+        <senderSourceFilter name="Accept_CPN" addressSymbol="CAN_ADDR_CPN"/>
+        <outgoingMailboxSlot name="RDC_2_to_CPN" portId="0x0" sourceAddressSymbol="CAN_ADDR_RDC_2" sourceAddressValue="2" destinationAddressSymbol="CAN_ADDR_CPN"/>
+      </msgBoxExtension>
     </targetConfiguration>
     <targetConfiguration xsi:type="de.ucof.model.targets.sheild:arduinosheild" id="c164fd4e-9e7d-412c-b0dd-1208c1c5b74f" name="sheild">
       <assignmentSpecification xsi:type="de.ucof.model.targets:ResistorInfo" id="d5b92aea-48c5-415b-aa16-32c8c8577607" name="R2" referencedAssignmentID="b4ac4e0a-d448-44b7-b955-a46ebe232ffd" resistanceOhm="4700" resistorPartNumber="R2" mountLocation="ProtoShield_I2C_SDA_line"/>
@@ -417,7 +428,7 @@
         <port id="d29dabdf-9807-4f1d-9d38-a466d066ba0e" name="SIGNAL_OUTPUT" pinName="SIGNAL_OUTPUT" pinNumber="5"/>
       </ports>
     </targetConfiguration>
-    <targetConfiguration xsi:type="de.ucof.model.targets.ccdpu:va41620peb1" id="efa5d5e8-0a01-417d-8241-60b48ae1d48b" name="ebi-ethernet board">
+    <targetConfiguration xsi:type="de.ucof.model.targets.cpn:va41620peb1" id="efa5d5e8-0a01-417d-8241-60b48ae1d48b" name="ebi-ethernet board">
       <electricalInterfaces id="5f7f12aa-ed2f-434b-a877-98980e9cc2c1" name="Vorago Power Ports">
         <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="1be1dd18-277f-467c-8447-354cd41ac4a2" name="CVCC" minVoltage="3.0" maxVoltage="3.6" type="sink"/>
         <electricalInterface xsi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" id="784eddaa-7ee6-47fe-8207-99b07153bbdb" name="GND" type="sink"/>
@@ -427,6 +438,13 @@
         <port id="70ce3df6-e3ed-4252-bfab-1b5294bd407b" name="J61_CANH" pinName="CAN0 P" pinNumber="2"/>
         <port id="5213dc1e-d8fa-462c-82af-baacd3f7ccd3" name="JP61_R60" pinName="R60"/>
       </ports>
+      <msgBoxExtension name="CPN_CAN_Mailbox_Config" numOfOutgoingMailboxes="5" numOfIncomingMailboxes="5" smallBufferSize="32" smallBufferCount="10" mediumBufferSize="128" mediumBufferCount="5" bigBufferSize="512" bigBufferCount="1" nodeAddr="0" nodeAddressSymbol="CAN_ADDR_CPN">
+        <incomingDestinationFilter name="CPN_RX_Filter" addressSymbol="CAN_ADDR_CPN"/>
+        <senderSourceFilter name="Accept_RDC_2" addressSymbol="CAN_ADDR_RDC_2" addressValue="2"/>
+        <outgoingMailboxSlot name="CPN_to_RDC_2" portId="0x0" sourceAddressSymbol="CAN_ADDR_CPN" destinationAddressSymbol="CAN_ADDR_RDC_2" destinationAddressValue="2"/>
+        <outgoingMailboxSlot name="CPN_to_RDC_Multicast" portId="0x0" sourceAddressSymbol="CAN_ADDR_CPN" destinationAddressSymbol="CAN_ADDR_RDC_MC" multicast="true"/>
+      </msgBoxExtension>
+      <canDriverConfig name="canDriver" interfaceID="c404d97c-1a89-4d90-bfe9-dc3f00fbcafe" canPeripheralInstance="CAN0" operatingMode="DIAGNOSTIC" extendedIdEnabled="true" ringBufferSize="64"/>
     </targetConfiguration>
     <powerConnectionSet id="28bab16b-2f72-4ca9-8c15-02d404a3afa3">
       <powerConnection id="4ab1226e-bb99-45f1-97cf-fefbc4b6897b" name="3.3V_TO_VDD" sourceID="e5afff1e-3a48-4081-97f1-bb0e916ff309" targetID="587196bd-a7e1-4d8a-a2b9-7b3a3164c650"/>

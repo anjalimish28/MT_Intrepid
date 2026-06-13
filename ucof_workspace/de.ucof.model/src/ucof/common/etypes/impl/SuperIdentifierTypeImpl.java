@@ -2,8 +2,6 @@
  */
 package ucof.common.etypes.impl;
 
-import java.util.UUID;
-
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -72,11 +70,10 @@ public abstract class SuperIdentifierTypeImpl extends MinimalEObjectImpl.Contain
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated NOT
+	 * @generated
 	 */
 	protected SuperIdentifierTypeImpl() {
 		super();
-		setId(UUID.randomUUID().toString());
 	}
 
 	/**

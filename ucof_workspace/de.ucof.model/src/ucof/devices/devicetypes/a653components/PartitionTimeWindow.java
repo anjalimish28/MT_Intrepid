@@ -3,6 +3,7 @@
 package ucof.devices.devicetypes.a653components;
 
 import ucof.common.enums.booleanType;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 

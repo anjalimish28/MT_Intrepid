@@ -1,12 +1,14 @@
 /**
  */
-package targets.Sheild.impl;
+package targets.sheild.impl;
 
 import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
@@ -14,17 +16,20 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-import targets.Sheild.SheildPackage;
-import targets.Sheild.arduinosheild;
-import targets.Sheild.sheildPorts;
 
 import targets.SuperAssignmentSpecificationType;
 import targets.SuperIOHardwareType;
 import targets.TargetsPackage;
+
 import targets.impl.SuperTargetTypeImpl;
+
 import targets.powergrid.EletrcialInterfaces;
 import targets.powergrid.PowergridPackage;
 import targets.powergrid.SuperPowerType;
+
+import targets.sheild.SheildPackage;
+import targets.sheild.arduinosheild;
+import targets.sheild.sheildPorts;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,9 +39,9 @@ import targets.powergrid.SuperPowerType;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link targets.Sheild.impl.arduinosheildImpl#getAssignmentSpecification <em>Assignment Specification</em>}</li>
- *   <li>{@link targets.Sheild.impl.arduinosheildImpl#getElectricalInterfaces <em>Electrical Interfaces</em>}</li>
- *   <li>{@link targets.Sheild.impl.arduinosheildImpl#getPorts <em>Ports</em>}</li>
+ *   <li>{@link targets.sheild.impl.arduinosheildImpl#getAssignmentSpecification <em>Assignment Specification</em>}</li>
+ *   <li>{@link targets.sheild.impl.arduinosheildImpl#getElectricalInterfaces <em>Electrical Interfaces</em>}</li>
+ *   <li>{@link targets.sheild.impl.arduinosheildImpl#getPorts <em>Ports</em>}</li>
  * </ul>
  *
  * @generated
@@ -51,6 +56,7 @@ public class arduinosheildImpl extends SuperTargetTypeImpl implements arduinoshe
 	 * @ordered
 	 */
 	protected EList<SuperAssignmentSpecificationType> assignmentSpecification;
+
 	/**
 	 * The cached value of the '{@link #getElectricalInterfaces() <em>Electrical Interfaces</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -60,6 +66,7 @@ public class arduinosheildImpl extends SuperTargetTypeImpl implements arduinoshe
 	 * @ordered
 	 */
 	protected EletrcialInterfaces electricalInterfaces;
+
 	/**
 	 * The cached value of the '{@link #getPorts() <em>Ports</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -69,6 +76,7 @@ public class arduinosheildImpl extends SuperTargetTypeImpl implements arduinoshe
 	 * @ordered
 	 */
 	protected sheildPorts ports;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

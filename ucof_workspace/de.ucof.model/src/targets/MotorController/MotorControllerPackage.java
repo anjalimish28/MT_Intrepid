@@ -1,6 +1,6 @@
 /**
  */
-package targets.MotorController;
+package targets.motorcontroller;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -23,18 +23,18 @@ import ucof.common.etypes.EtypesPackage;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see targets.MotorController.MotorControllerFactory
+ * @see targets.motorcontroller.MotorcontrollerFactory
  * @model kind="package"
  * @generated
  */
-public interface MotorControllerPackage extends EPackage {
+public interface MotorcontrollerPackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNAME = "MotorController";
+	String eNAME = "motorcontroller";
 
 	/**
 	 * The package namespace URI.
@@ -58,14 +58,14 @@ public interface MotorControllerPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	MotorControllerPackage eINSTANCE = targets.MotorController.impl.MotorControllerPackageImpl.init();
+	MotorcontrollerPackage eINSTANCE = targets.motorcontroller.impl.MotorcontrollerPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link targets.MotorController.impl.escon409510Impl <em>escon409510</em>}' class.
+	 * The meta object id for the '{@link targets.motorcontroller.impl.escon409510Impl <em>escon409510</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.MotorController.impl.escon409510Impl
-	 * @see targets.MotorController.impl.MotorControllerPackageImpl#getescon409510()
+	 * @see targets.motorcontroller.impl.escon409510Impl
+	 * @see targets.motorcontroller.impl.MotorcontrollerPackageImpl#getescon409510()
 	 * @generated
 	 */
 	int ESCON409510 = 0;
@@ -197,11 +197,11 @@ public interface MotorControllerPackage extends EPackage {
 	int ESCON409510_OPERATION_COUNT = TargetsPackage.SUPER_TARGET_TYPE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link targets.MotorController.impl.esconPortsImpl <em>escon Ports</em>}' class.
+	 * The meta object id for the '{@link targets.motorcontroller.impl.esconPortsImpl <em>escon Ports</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.MotorController.impl.esconPortsImpl
-	 * @see targets.MotorController.impl.MotorControllerPackageImpl#getesconPorts()
+	 * @see targets.motorcontroller.impl.esconPortsImpl
+	 * @see targets.motorcontroller.impl.MotorcontrollerPackageImpl#getesconPorts()
 	 * @generated
 	 */
 	int ESCON_PORTS = 1;
@@ -315,11 +315,11 @@ public interface MotorControllerPackage extends EPackage {
 	int ESCON_PORTS_OPERATION_COUNT = EtypesPackage.SUPER_TRACKING_TYPE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link targets.MotorController.impl.esconPortImpl <em>escon Port</em>}' class.
+	 * The meta object id for the '{@link targets.motorcontroller.impl.esconPortImpl <em>escon Port</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see targets.MotorController.impl.esconPortImpl
-	 * @see targets.MotorController.impl.MotorControllerPackageImpl#getesconPort()
+	 * @see targets.motorcontroller.impl.esconPortImpl
+	 * @see targets.motorcontroller.impl.MotorcontrollerPackageImpl#getesconPort()
 	 * @generated
 	 */
 	int ESCON_PORT = 2;
@@ -434,63 +434,63 @@ public interface MotorControllerPackage extends EPackage {
 
 
 	/**
-	 * Returns the meta object for class '{@link targets.MotorController.escon409510 <em>escon409510</em>}'.
+	 * Returns the meta object for class '{@link targets.motorcontroller.escon409510 <em>escon409510</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>escon409510</em>'.
-	 * @see targets.MotorController.escon409510
+	 * @see targets.motorcontroller.escon409510
 	 * @generated
 	 */
 	EClass getescon409510();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link targets.MotorController.escon409510#getPorts <em>Ports</em>}'.
+	 * Returns the meta object for the containment reference '{@link targets.motorcontroller.escon409510#getPorts <em>Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Ports</em>'.
-	 * @see targets.MotorController.escon409510#getPorts()
+	 * @see targets.motorcontroller.escon409510#getPorts()
 	 * @see #getescon409510()
 	 * @generated
 	 */
 	EReference getescon409510_Ports();
 
 	/**
-	 * Returns the meta object for class '{@link targets.MotorController.esconPorts <em>escon Ports</em>}'.
+	 * Returns the meta object for class '{@link targets.motorcontroller.esconPorts <em>escon Ports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>escon Ports</em>'.
-	 * @see targets.MotorController.esconPorts
+	 * @see targets.motorcontroller.esconPorts
 	 * @generated
 	 */
 	EClass getesconPorts();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link targets.MotorController.esconPorts#getPort <em>Port</em>}'.
+	 * Returns the meta object for the containment reference list '{@link targets.motorcontroller.esconPorts#getPort <em>Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Port</em>'.
-	 * @see targets.MotorController.esconPorts#getPort()
+	 * @see targets.motorcontroller.esconPorts#getPort()
 	 * @see #getesconPorts()
 	 * @generated
 	 */
 	EReference getesconPorts_Port();
 
 	/**
-	 * Returns the meta object for class '{@link targets.MotorController.esconPort <em>escon Port</em>}'.
+	 * Returns the meta object for class '{@link targets.motorcontroller.esconPort <em>escon Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>escon Port</em>'.
-	 * @see targets.MotorController.esconPort
+	 * @see targets.motorcontroller.esconPort
 	 * @generated
 	 */
 	EClass getesconPort();
 
 	/**
-	 * Returns the meta object for the attribute '{@link targets.MotorController.esconPort#getPinName <em>Pin Name</em>}'.
+	 * Returns the meta object for the attribute '{@link targets.motorcontroller.esconPort#getPinName <em>Pin Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Pin Name</em>'.
-	 * @see targets.MotorController.esconPort#getPinName()
+	 * @see targets.motorcontroller.esconPort#getPinName()
 	 * @see #getesconPort()
 	 * @generated
 	 */
@@ -503,7 +503,7 @@ public interface MotorControllerPackage extends EPackage {
 	 * @return the factory that creates the instances of the model.
 	 * @generated
 	 */
-	MotorControllerFactory getMotorControllerFactory();
+	MotorcontrollerFactory getMotorcontrollerFactory();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -520,11 +520,11 @@ public interface MotorControllerPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link targets.MotorController.impl.escon409510Impl <em>escon409510</em>}' class.
+		 * The meta object literal for the '{@link targets.motorcontroller.impl.escon409510Impl <em>escon409510</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.MotorController.impl.escon409510Impl
-		 * @see targets.MotorController.impl.MotorControllerPackageImpl#getescon409510()
+		 * @see targets.motorcontroller.impl.escon409510Impl
+		 * @see targets.motorcontroller.impl.MotorcontrollerPackageImpl#getescon409510()
 		 * @generated
 		 */
 		EClass ESCON409510 = eINSTANCE.getescon409510();
@@ -538,11 +538,11 @@ public interface MotorControllerPackage extends EPackage {
 		EReference ESCON409510__PORTS = eINSTANCE.getescon409510_Ports();
 
 		/**
-		 * The meta object literal for the '{@link targets.MotorController.impl.esconPortsImpl <em>escon Ports</em>}' class.
+		 * The meta object literal for the '{@link targets.motorcontroller.impl.esconPortsImpl <em>escon Ports</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.MotorController.impl.esconPortsImpl
-		 * @see targets.MotorController.impl.MotorControllerPackageImpl#getesconPorts()
+		 * @see targets.motorcontroller.impl.esconPortsImpl
+		 * @see targets.motorcontroller.impl.MotorcontrollerPackageImpl#getesconPorts()
 		 * @generated
 		 */
 		EClass ESCON_PORTS = eINSTANCE.getesconPorts();
@@ -556,11 +556,11 @@ public interface MotorControllerPackage extends EPackage {
 		EReference ESCON_PORTS__PORT = eINSTANCE.getesconPorts_Port();
 
 		/**
-		 * The meta object literal for the '{@link targets.MotorController.impl.esconPortImpl <em>escon Port</em>}' class.
+		 * The meta object literal for the '{@link targets.motorcontroller.impl.esconPortImpl <em>escon Port</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see targets.MotorController.impl.esconPortImpl
-		 * @see targets.MotorController.impl.MotorControllerPackageImpl#getesconPort()
+		 * @see targets.motorcontroller.impl.esconPortImpl
+		 * @see targets.motorcontroller.impl.MotorcontrollerPackageImpl#getesconPort()
 		 * @generated
 		 */
 		EClass ESCON_PORT = eINSTANCE.getesconPort();
@@ -575,4 +575,4 @@ public interface MotorControllerPackage extends EPackage {
 
 	}
 
-} //MotorControllerPackage
+} //MotorcontrollerPackage

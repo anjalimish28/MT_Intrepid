@@ -1,6 +1,6 @@
 /**
  */
-package targets.HallSensor.presentation;
+package targets.hallsensor.presentation;
 
 
 import java.util.ArrayList;
@@ -69,8 +69,8 @@ import org.eclipse.ui.dialogs.WizardNewFileCreationPage;
 import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.ui.part.ISetSelectionTarget;
 
-import targets.HallSensor.HallSensorFactory;
-import targets.HallSensor.HallSensorPackage;
+import targets.hallsensor.HallsensorFactory;
+import targets.hallsensor.HallsensorPackage;
 import ucof.provider.UcofEditPlugin;
 
 
@@ -93,7 +93,7 @@ import ucof.presentation.UcofEditorPlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class HallSensorModelWizard extends Wizard implements INewWizard {
+public class HallsensorModelWizard extends Wizard implements INewWizard {
 	/**
 	 * The supported extensions for created files.
 	 * <!-- begin-user-doc -->
@@ -101,7 +101,7 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final List<String> FILE_EXTENSIONS =
-		Collections.unmodifiableList(Arrays.asList(UcofEditorPlugin.INSTANCE.getString("_UI_HallSensorEditorFilenameExtensions").split("\\s*,\\s*")));
+		Collections.unmodifiableList(Arrays.asList(UcofEditorPlugin.INSTANCE.getString("_UI_HallsensorEditorFilenameExtensions").split("\\s*,\\s*")));
 
 	/**
 	 * A formatted list of supported file extensions, suitable for display.
@@ -110,7 +110,7 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final String FORMATTED_FILE_EXTENSIONS =
-		UcofEditorPlugin.INSTANCE.getString("_UI_HallSensorEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
+		UcofEditorPlugin.INSTANCE.getString("_UI_HallsensorEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
 
 	/**
 	 * This caches an instance of the model package.
@@ -118,7 +118,7 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected HallSensorPackage hallSensorPackage = HallSensorPackage.eINSTANCE;
+	protected HallsensorPackage hallsensorPackage = HallsensorPackage.eINSTANCE;
 
 	/**
 	 * This caches an instance of the model factory.
@@ -126,7 +126,7 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected HallSensorFactory hallSensorFactory = hallSensorPackage.getHallSensorFactory();
+	protected HallsensorFactory hallsensorFactory = hallsensorPackage.getHallsensorFactory();
 
 	/**
 	 * This is the file creation page.
@@ -134,7 +134,7 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected HallSensorModelWizardNewFileCreationPage newFileCreationPage;
+	protected HallsensorModelWizardNewFileCreationPage newFileCreationPage;
 
 	/**
 	 * This is the initial object creation page.
@@ -142,7 +142,7 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected HallSensorModelWizardInitialObjectCreationPage initialObjectCreationPage;
+	protected HallsensorModelWizardInitialObjectCreationPage initialObjectCreationPage;
 
 	/**
 	 * Remember the selection during initialization for populating the default container.
@@ -178,7 +178,7 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 		this.workbench = workbench;
 		this.selection = selection;
 		setWindowTitle(UcofEditorPlugin.INSTANCE.getString("_UI_Wizard_label"));
-		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(UcofEditorPlugin.INSTANCE.getImage("full/wizban/NewHallSensor")));
+		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(UcofEditorPlugin.INSTANCE.getImage("full/wizban/NewHallsensor")));
 	}
 
 	/**
@@ -190,7 +190,7 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 	protected Collection<String> getInitialObjectNames() {
 		if (initialObjectNames == null) {
 			initialObjectNames = new ArrayList<String>();
-			for (EClassifier eClassifier : hallSensorPackage.getEClassifiers()) {
+			for (EClassifier eClassifier : hallsensorPackage.getEClassifiers()) {
 				if (eClassifier instanceof EClass) {
 					EClass eClass = (EClass)eClassifier;
 					if (!eClass.isAbstract()) {
@@ -210,8 +210,8 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	protected EObject createInitialModel() {
-		EClass eClass = (EClass)hallSensorPackage.getEClassifier(initialObjectCreationPage.getInitialObjectName());
-		EObject rootObject = hallSensorFactory.create(eClass);
+		EClass eClass = (EClass)hallsensorPackage.getEClassifier(initialObjectCreationPage.getInitialObjectName());
+		EObject rootObject = hallsensorFactory.create(eClass);
 		return rootObject;
 	}
 
@@ -312,14 +312,14 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public class HallSensorModelWizardNewFileCreationPage extends WizardNewFileCreationPage {
+	public class HallsensorModelWizardNewFileCreationPage extends WizardNewFileCreationPage {
 		/**
 		 * Pass in the selection.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		public HallSensorModelWizardNewFileCreationPage(String pageId, IStructuredSelection selection) {
+		public HallsensorModelWizardNewFileCreationPage(String pageId, IStructuredSelection selection) {
 			super(pageId, selection);
 		}
 
@@ -359,7 +359,7 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public class HallSensorModelWizardInitialObjectCreationPage extends WizardPage {
+	public class HallsensorModelWizardInitialObjectCreationPage extends WizardPage {
 		/**
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -387,7 +387,7 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		public HallSensorModelWizardInitialObjectCreationPage(String pageId) {
+		public HallsensorModelWizardInitialObjectCreationPage(String pageId) {
 			super(pageId);
 		}
 
@@ -571,10 +571,10 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 	public void addPages() {
 		// Create a page, set the title, and the initial model file name.
 		//
-		newFileCreationPage = new HallSensorModelWizardNewFileCreationPage("Whatever", selection);
-		newFileCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_HallSensorModelWizard_label"));
-		newFileCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_HallSensorModelWizard_description"));
-		newFileCreationPage.setFileName(UcofEditorPlugin.INSTANCE.getString("_UI_HallSensorEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
+		newFileCreationPage = new HallsensorModelWizardNewFileCreationPage("Whatever", selection);
+		newFileCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_HallsensorModelWizard_label"));
+		newFileCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_HallsensorModelWizard_description"));
+		newFileCreationPage.setFileName(UcofEditorPlugin.INSTANCE.getString("_UI_HallsensorEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
 		addPage(newFileCreationPage);
 
 		// Try and get the resource selection to determine a current directory for the file dialog.
@@ -600,7 +600,7 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 
 					// Make up a unique new name here.
 					//
-					String defaultModelBaseFilename = UcofEditorPlugin.INSTANCE.getString("_UI_HallSensorEditorFilenameDefaultBase");
+					String defaultModelBaseFilename = UcofEditorPlugin.INSTANCE.getString("_UI_HallsensorEditorFilenameDefaultBase");
 					String defaultModelFilenameExtension = FILE_EXTENSIONS.get(0);
 					String modelFilename = defaultModelBaseFilename + "." + defaultModelFilenameExtension;
 					for (int i = 1; ((IContainer)selectedResource).findMember(modelFilename) != null; ++i) {
@@ -610,8 +610,8 @@ public class HallSensorModelWizard extends Wizard implements INewWizard {
 				}
 			}
 		}
-		initialObjectCreationPage = new HallSensorModelWizardInitialObjectCreationPage("Whatever2");
-		initialObjectCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_HallSensorModelWizard_label"));
+		initialObjectCreationPage = new HallsensorModelWizardInitialObjectCreationPage("Whatever2");
+		initialObjectCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_HallsensorModelWizard_label"));
 		initialObjectCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_Wizard_initial_object_description"));
 		addPage(initialObjectCreationPage);
 	}

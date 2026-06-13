@@ -10,7 +10,9 @@ import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.ResourceLocator;
+
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
 import ucof.devices.devicetypes.PowerRail;
 
 import ucof.devices.provider.SuperPlatformDeviceTypeItemProvider;

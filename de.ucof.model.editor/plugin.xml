@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated ucof -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="ucof.presentation.UcofModelWizardID"
+            name="%_UI_UcofModelWizard_label"
+            class="ucof.presentation.UcofModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/UcofModelFile.gif">
+         <description>%_UI_UcofModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.presentation.UcofEditorID"
+            name="%_UI_UcofEditor_label"
+            icon="icons/full/obj16/UcofModelFile.gif"
+            extensions="ucof"
+            class="ucof.presentation.UcofEditor"
+            contributorClass="ucof.presentation.UcofActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.common.etypes.presentation.EtypesEditorID"
+            name="%_UI_EtypesEditor_label"
+            icon="icons/full/obj16/EtypesModelFile.gif"
+            extensions="etypes"
+            class="ucof.common.etypes.presentation.EtypesEditor"
+            contributorClass="ucof.common.etypes.presentation.EtypesActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.devices.presentation.DevicesEditorID"
+            name="%_UI_DevicesEditor_label"
+            icon="icons/full/obj16/DevicesModelFile.gif"
+            extensions="devices"
+            class="ucof.devices.presentation.DevicesEditor"
+            contributorClass="ucof.devices.presentation.DevicesActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.devices.devicetypes.presentation.DevicetypesEditorID"
+            name="%_UI_DevicetypesEditor_label"
+            icon="icons/full/obj16/DevicetypesModelFile.gif"
+            extensions="devicetypes"
+            class="ucof.devices.devicetypes.presentation.DevicetypesEditor"
+            contributorClass="ucof.devices.devicetypes.presentation.DevicetypesActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.devices.devicetypes.a653components.presentation.A653componentsEditorID"
+            name="%_UI_A653componentsEditor_label"
+            icon="icons/full/obj16/A653componentsModelFile.gif"
+            extensions="a653components"
+            class="ucof.devices.devicetypes.a653components.presentation.A653componentsEditor"
+            contributorClass="ucof.devices.devicetypes.a653components.presentation.A653componentsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.devices.devicetypes.a653components.a653partition.presentation.A653partitionEditorID"
+            name="%_UI_A653partitionEditor_label"
+            icon="icons/full/obj16/A653partitionModelFile.gif"
+            extensions="a653partition"
+            class="ucof.devices.devicetypes.a653components.a653partition.presentation.A653partitionEditor"
+            contributorClass="ucof.devices.devicetypes.a653components.a653partition.presentation.A653partitionActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.devices.devicetypes.a653components.healthmanagement.presentation.HealthmanagementEditorID"
+            name="%_UI_HealthmanagementEditor_label"
+            icon="icons/full/obj16/HealthmanagementModelFile.gif"
+            extensions="healthmanagement"
+            class="ucof.devices.devicetypes.a653components.healthmanagement.presentation.HealthmanagementEditor"
+            contributorClass="ucof.devices.devicetypes.a653components.healthmanagement.presentation.HealthmanagementActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.devices.functions.presentation.FunctionsEditorID"
+            name="%_UI_FunctionsEditor_label"
+            icon="icons/full/obj16/FunctionsModelFile.gif"
+            extensions="functions"
+            class="ucof.devices.functions.presentation.FunctionsEditor"
+            contributorClass="ucof.devices.functions.presentation.FunctionsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.devices.functions.routing.presentation.RoutingEditorID"
+            name="%_UI_RoutingEditor_label"
+            icon="icons/full/obj16/RoutingModelFile.gif"
+            extensions="routing"
+            class="ucof.devices.functions.routing.presentation.RoutingEditor"
+            contributorClass="ucof.devices.functions.routing.presentation.RoutingActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.devices.ports.presentation.PortsEditorID"
+            name="%_UI_PortsEditor_label"
+            icon="icons/full/obj16/PortsModelFile.gif"
+            extensions="ports"
+            class="ucof.devices.ports.presentation.PortsEditor"
+            contributorClass="ucof.devices.ports.presentation.PortsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.communication.presentation.CommunicationEditorID"
+            name="%_UI_CommunicationEditor_label"
+            icon="icons/full/obj16/CommunicationModelFile.gif"
+            extensions="communication"
+            class="ucof.communication.presentation.CommunicationEditor"
+            contributorClass="ucof.communication.presentation.CommunicationActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.communication.arinc429.presentation.Arinc429EditorID"
+            name="%_UI_Arinc429Editor_label"
+            icon="icons/full/obj16/Arinc429ModelFile.gif"
+            extensions="arinc429"
+            class="ucof.communication.arinc429.presentation.Arinc429Editor"
+            contributorClass="ucof.communication.arinc429.presentation.Arinc429ActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.communication.arinc825.presentation.Arinc825EditorID"
+            name="%_UI_Arinc825Editor_label"
+            icon="icons/full/obj16/Arinc825ModelFile.gif"
+            extensions="arinc825"
+            class="ucof.communication.arinc825.presentation.Arinc825Editor"
+            contributorClass="ucof.communication.arinc825.presentation.Arinc825ActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.communication.basedonethernet.presentation.BasedonethernetEditorID"
+            name="%_UI_BasedonethernetEditor_label"
+            icon="icons/full/obj16/BasedonethernetModelFile.gif"
+            extensions="basedonethernet"
+            class="ucof.communication.basedonethernet.presentation.BasedonethernetEditor"
+            contributorClass="ucof.communication.basedonethernet.presentation.BasedonethernetActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.communication.basedonethernet.arinc664.presentation.Arinc664EditorID"
+            name="%_UI_Arinc664Editor_label"
+            icon="icons/full/obj16/Arinc664ModelFile.gif"
+            extensions="arinc664"
+            class="ucof.communication.basedonethernet.arinc664.presentation.Arinc664Editor"
+            contributorClass="ucof.communication.basedonethernet.arinc664.presentation.Arinc664ActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.communication.basedonwired.presentation.BasedonwiredEditorID"
+            name="%_UI_BasedonwiredEditor_label"
+            icon="icons/full/obj16/BasedonwiredModelFile.gif"
+            extensions="basedonwired"
+            class="ucof.communication.basedonwired.presentation.BasedonwiredEditor"
+            contributorClass="ucof.communication.basedonwired.presentation.BasedonwiredActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.communication.connectors.presentation.ConnectorsEditorID"
+            name="%_UI_ConnectorsEditor_label"
+            icon="icons/full/obj16/ConnectorsModelFile.gif"
+            extensions="connectors"
+            class="ucof.communication.connectors.presentation.ConnectorsEditor"
+            contributorClass="ucof.communication.connectors.presentation.ConnectorsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.communication.configECIC.presentation.ConfigECICEditorID"
+            name="%_UI_ConfigECICEditor_label"
+            icon="icons/full/obj16/ConfigECICModelFile.gif"
+            extensions="configecic"
+            class="ucof.communication.configECIC.presentation.ConfigECICEditor"
+            contributorClass="ucof.communication.configECIC.presentation.ConfigECICActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.communication.configECIC.streamTypes.presentation.StreamTypesEditorID"
+            name="%_UI_StreamTypesEditor_label"
+            icon="icons/full/obj16/StreamTypesModelFile.gif"
+            extensions="streamtypes"
+            class="ucof.communication.configECIC.streamTypes.presentation.StreamTypesEditor"
+            contributorClass="ucof.communication.configECIC.streamTypes.presentation.StreamTypesActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.communication.configECIC.packageStrategyTypes.presentation.PackageStrategyTypesEditorID"
+            name="%_UI_PackageStrategyTypesEditor_label"
+            icon="icons/full/obj16/PackageStrategyTypesModelFile.gif"
+            extensions="packagestrategytypes"
+            class="ucof.communication.configECIC.packageStrategyTypes.presentation.PackageStrategyTypesEditor"
+            contributorClass="ucof.communication.configECIC.packageStrategyTypes.presentation.PackageStrategyTypesActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated ucof -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="ucof.communication.comDevices.presentation.ComDevicesModelWizardID"
+            name="%_UI_ComDevicesModelWizard_label"
+            class="ucof.communication.comDevices.presentation.ComDevicesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ComDevicesModelFile.gif">
+         <description>%_UI_ComDevicesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.communication.comDevices.presentation.ComDevicesEditorID"
+            name="%_UI_ComDevicesEditor_label"
+            icon="icons/full/obj16/ComDevicesModelFile.gif"
+            extensions="comdevices"
+            class="ucof.communication.comDevices.presentation.ComDevicesEditor"
+            contributorClass="ucof.communication.comDevices.presentation.ComDevicesActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.assignments.presentation.AssignmentsEditorID"
+            name="%_UI_AssignmentsEditor_label"
+            icon="icons/full/obj16/AssignmentsModelFile.gif"
+            extensions="assignments"
+            class="ucof.assignments.presentation.AssignmentsEditor"
+            contributorClass="ucof.assignments.presentation.AssignmentsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="ucof.assignments.database.presentation.DatabaseEditorID"
+            name="%_UI_DatabaseEditor_label"
+            icon="icons/full/obj16/DatabaseModelFile.gif"
+            extensions="database"
+            class="ucof.assignments.database.presentation.DatabaseEditor"
+            contributorClass="ucof.assignments.database.presentation.DatabaseActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="targets.presentation.TargetsEditorID"
+            name="%_UI_TargetsEditor_label"
+            icon="icons/full/obj16/TargetsModelFile.gif"
+            extensions="targets"
+            class="targets.presentation.TargetsEditor"
+            contributorClass="targets.presentation.TargetsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="targets.configdesk.presentation.ConfigdeskEditorID"
+            name="%_UI_ConfigdeskEditor_label"
+            icon="icons/full/obj16/ConfigdeskModelFile.gif"
+            extensions="configdesk"
+            class="targets.configdesk.presentation.ConfigdeskEditor"
+            contributorClass="targets.configdesk.presentation.ConfigdeskActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="targets.configdesk.dSpaceArinc825.presentation.DSpaceArinc825EditorID"
+            name="%_UI_DSpaceArinc825Editor_label"
+            icon="icons/full/obj16/DSpaceArinc825ModelFile.gif"
+            extensions="dspacearinc825"
+            class="targets.configdesk.dSpaceArinc825.presentation.DSpaceArinc825Editor"
+            contributorClass="targets.configdesk.dSpaceArinc825.presentation.DSpaceArinc825ActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="targets.configdesk.ethernet.presentation.EthernetEditorID"
+            name="%_UI_EthernetEditor_label"
+            icon="icons/full/obj16/EthernetModelFile.gif"
+            extensions="ethernet"
+            class="targets.configdesk.ethernet.presentation.EthernetEditor"
+            contributorClass="targets.configdesk.ethernet.presentation.EthernetActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="targets.configdesk.wired.presentation.WiredEditorID"
+            name="%_UI_WiredEditor_label"
+            icon="icons/full/obj16/WiredModelFile.gif"
+            extensions="wired"
+            class="targets.configdesk.wired.presentation.WiredEditor"
+            contributorClass="targets.configdesk.wired.presentation.WiredActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="targets.tricore299a653p4.presentation.Tricore299a653p4EditorID"
+            name="%_UI_Tricore299a653p4Editor_label"
+            icon="icons/full/obj16/Tricore299a653p4ModelFile.gif"
+            extensions="tricore299a653p4"
+            class="targets.tricore299a653p4.presentation.Tricore299a653p4Editor"
+            contributorClass="targets.tricore299a653p4.presentation.Tricore299a653p4ActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="targets.matlab.presentation.MatlabEditorID"
+            name="%_UI_MatlabEditor_label"
+            icon="icons/full/obj16/MatlabModelFile.gif"
+            extensions="matlab"
+            class="targets.matlab.presentation.MatlabEditor"
+            contributorClass="targets.matlab.presentation.MatlabActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="targets.a653capabletarget.presentation.A653capabletargetEditorID"
+            name="%_UI_A653capabletargetEditor_label"
+            icon="icons/full/obj16/A653capabletargetModelFile.gif"
+            extensions="a653capabletarget"
+            class="targets.a653capabletarget.presentation.A653capabletargetEditor"
+            contributorClass="targets.a653capabletarget.presentation.A653capabletargetActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="targets.vxworksa653.presentation.Vxworksa653EditorID"
+            name="%_UI_Vxworksa653Editor_label"
+            icon="icons/full/obj16/Vxworksa653ModelFile.gif"
+            extensions="vxworksa653"
+            class="targets.vxworksa653.presentation.Vxworksa653Editor"
+            contributorClass="targets.vxworksa653.presentation.Vxworksa653ActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated ucof -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="targets.avip.presentation.AvipModelWizardID"
+            name="%_UI_AvipModelWizard_label"
+            class="targets.avip.presentation.AvipModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AvipModelFile.gif">
+         <description>%_UI_AvipModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucof -->
+      <editor
+            id="targets.avip.presentation.AvipEditorID"
+            name="%_UI_AvipEditor_label"
+            icon="icons/full/obj16/AvipModelFile.gif"
+            extensions="avip"
+            class="targets.avip.presentation.AvipEditor"
+            contributorClass="targets.avip.presentation.AvipActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

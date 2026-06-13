@@ -1,6 +1,6 @@
 /**
  */
-package targets.Sheild.provider;
+package targets.sheild.provider;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,7 +21,7 @@ import org.eclipse.emf.edit.provider.INotifyChangedListener;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 
-import targets.Sheild.util.SheildAdapterFactory;
+import targets.sheild.util.SheildAdapterFactory;
 
 /**
  * This is the factory that is used to provide the interfaces needed to support Viewers.
@@ -72,7 +72,7 @@ public class SheildItemProviderAdapterFactory extends SheildAdapterFactory imple
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.Sheild.arduinosheild} instances.
+	 * This keeps track of the one adapter used for all {@link targets.sheild.arduinosheild} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -80,7 +80,7 @@ public class SheildItemProviderAdapterFactory extends SheildAdapterFactory imple
 	protected arduinosheildItemProvider arduinosheildItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.Sheild.arduinosheild}.
+	 * This creates an adapter for a {@link targets.sheild.arduinosheild}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -95,7 +95,7 @@ public class SheildItemProviderAdapterFactory extends SheildAdapterFactory imple
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.Sheild.sheildPorts} instances.
+	 * This keeps track of the one adapter used for all {@link targets.sheild.sheildPorts} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -103,7 +103,7 @@ public class SheildItemProviderAdapterFactory extends SheildAdapterFactory imple
 	protected sheildPortsItemProvider sheildPortsItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.Sheild.sheildPorts}.
+	 * This creates an adapter for a {@link targets.sheild.sheildPorts}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -118,7 +118,7 @@ public class SheildItemProviderAdapterFactory extends SheildAdapterFactory imple
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.Sheild.sheildPort} instances.
+	 * This keeps track of the one adapter used for all {@link targets.sheild.sheildPort} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -126,7 +126,7 @@ public class SheildItemProviderAdapterFactory extends SheildAdapterFactory imple
 	protected sheildPortItemProvider sheildPortItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.Sheild.sheildPort}.
+	 * This creates an adapter for a {@link targets.sheild.sheildPort}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

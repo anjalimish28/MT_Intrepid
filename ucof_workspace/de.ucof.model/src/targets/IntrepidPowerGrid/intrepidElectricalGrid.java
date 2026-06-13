@@ -1,6 +1,6 @@
 /**
  */
-package targets.IntrepidPowerGrid;
+package targets.intrepidpowergrid;
 
 import targets.powergrid.SuperElectricalGridType;
 
@@ -10,7 +10,7 @@ import targets.powergrid.SuperElectricalGridType;
  * <!-- end-user-doc -->
  *
  *
- * @see targets.IntrepidPowerGrid.IntrepidPowerGridPackage#getintrepidElectricalGrid()
+ * @see targets.intrepidpowergrid.IntrepidpowergridPackage#getintrepidElectricalGrid()
  * @model
  * @generated
  */

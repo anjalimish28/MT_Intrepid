@@ -10,7 +10,9 @@ import org.eclipse.emf.ecore.util.Switch;
 import ucof.common.etypes.SuperDeviceType;
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
+
 import ucof.devices.SuperPlatformDeviceType;
+
 import ucof.devices.devicetypes.*;
 
 /**

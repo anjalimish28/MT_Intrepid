@@ -2,7 +2,8 @@
  */
 package targets.powergrid;
 
-import org.eclipse.emf.ecore.EObject;
+import ucof.common.etypes.SuperIdentifierType;
+import ucof.common.etypes.SuperTrackingType;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,7 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model abstract="true"
  * @generated
  */
-public interface SuperPowerType extends EObject {
+public interface SuperPowerType extends SuperIdentifierType, SuperTrackingType {
 	/**
 	 * Returns the value of the '<em><b>Electrical Interfaces</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

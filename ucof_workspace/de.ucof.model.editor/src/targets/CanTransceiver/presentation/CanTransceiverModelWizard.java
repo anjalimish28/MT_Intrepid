@@ -1,6 +1,6 @@
 /**
  */
-package targets.CanTransceiver.presentation;
+package targets.cantransceiver.presentation;
 
 
 import java.util.ArrayList;
@@ -69,8 +69,8 @@ import org.eclipse.ui.dialogs.WizardNewFileCreationPage;
 import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.ui.part.ISetSelectionTarget;
 
-import targets.CanTransceiver.CanTransceiverFactory;
-import targets.CanTransceiver.CanTransceiverPackage;
+import targets.cantransceiver.CantransceiverFactory;
+import targets.cantransceiver.CantransceiverPackage;
 import ucof.provider.UcofEditPlugin;
 
 
@@ -93,7 +93,7 @@ import ucof.presentation.UcofEditorPlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class CanTransceiverModelWizard extends Wizard implements INewWizard {
+public class CantransceiverModelWizard extends Wizard implements INewWizard {
 	/**
 	 * The supported extensions for created files.
 	 * <!-- begin-user-doc -->
@@ -101,7 +101,7 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final List<String> FILE_EXTENSIONS =
-		Collections.unmodifiableList(Arrays.asList(UcofEditorPlugin.INSTANCE.getString("_UI_CanTransceiverEditorFilenameExtensions").split("\\s*,\\s*")));
+		Collections.unmodifiableList(Arrays.asList(UcofEditorPlugin.INSTANCE.getString("_UI_CantransceiverEditorFilenameExtensions").split("\\s*,\\s*")));
 
 	/**
 	 * A formatted list of supported file extensions, suitable for display.
@@ -110,7 +110,7 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final String FORMATTED_FILE_EXTENSIONS =
-		UcofEditorPlugin.INSTANCE.getString("_UI_CanTransceiverEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
+		UcofEditorPlugin.INSTANCE.getString("_UI_CantransceiverEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
 
 	/**
 	 * This caches an instance of the model package.
@@ -118,7 +118,7 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CanTransceiverPackage canTransceiverPackage = CanTransceiverPackage.eINSTANCE;
+	protected CantransceiverPackage cantransceiverPackage = CantransceiverPackage.eINSTANCE;
 
 	/**
 	 * This caches an instance of the model factory.
@@ -126,7 +126,7 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CanTransceiverFactory canTransceiverFactory = canTransceiverPackage.getCanTransceiverFactory();
+	protected CantransceiverFactory cantransceiverFactory = cantransceiverPackage.getCantransceiverFactory();
 
 	/**
 	 * This is the file creation page.
@@ -134,7 +134,7 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CanTransceiverModelWizardNewFileCreationPage newFileCreationPage;
+	protected CantransceiverModelWizardNewFileCreationPage newFileCreationPage;
 
 	/**
 	 * This is the initial object creation page.
@@ -142,7 +142,7 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CanTransceiverModelWizardInitialObjectCreationPage initialObjectCreationPage;
+	protected CantransceiverModelWizardInitialObjectCreationPage initialObjectCreationPage;
 
 	/**
 	 * Remember the selection during initialization for populating the default container.
@@ -178,7 +178,7 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 		this.workbench = workbench;
 		this.selection = selection;
 		setWindowTitle(UcofEditorPlugin.INSTANCE.getString("_UI_Wizard_label"));
-		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(UcofEditorPlugin.INSTANCE.getImage("full/wizban/NewCanTransceiver")));
+		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(UcofEditorPlugin.INSTANCE.getImage("full/wizban/NewCantransceiver")));
 	}
 
 	/**
@@ -190,7 +190,7 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 	protected Collection<String> getInitialObjectNames() {
 		if (initialObjectNames == null) {
 			initialObjectNames = new ArrayList<String>();
-			for (EClassifier eClassifier : canTransceiverPackage.getEClassifiers()) {
+			for (EClassifier eClassifier : cantransceiverPackage.getEClassifiers()) {
 				if (eClassifier instanceof EClass) {
 					EClass eClass = (EClass)eClassifier;
 					if (!eClass.isAbstract()) {
@@ -210,8 +210,8 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	protected EObject createInitialModel() {
-		EClass eClass = (EClass)canTransceiverPackage.getEClassifier(initialObjectCreationPage.getInitialObjectName());
-		EObject rootObject = canTransceiverFactory.create(eClass);
+		EClass eClass = (EClass)cantransceiverPackage.getEClassifier(initialObjectCreationPage.getInitialObjectName());
+		EObject rootObject = cantransceiverFactory.create(eClass);
 		return rootObject;
 	}
 
@@ -312,14 +312,14 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public class CanTransceiverModelWizardNewFileCreationPage extends WizardNewFileCreationPage {
+	public class CantransceiverModelWizardNewFileCreationPage extends WizardNewFileCreationPage {
 		/**
 		 * Pass in the selection.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		public CanTransceiverModelWizardNewFileCreationPage(String pageId, IStructuredSelection selection) {
+		public CantransceiverModelWizardNewFileCreationPage(String pageId, IStructuredSelection selection) {
 			super(pageId, selection);
 		}
 
@@ -359,7 +359,7 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public class CanTransceiverModelWizardInitialObjectCreationPage extends WizardPage {
+	public class CantransceiverModelWizardInitialObjectCreationPage extends WizardPage {
 		/**
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -387,7 +387,7 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		public CanTransceiverModelWizardInitialObjectCreationPage(String pageId) {
+		public CantransceiverModelWizardInitialObjectCreationPage(String pageId) {
 			super(pageId);
 		}
 
@@ -571,10 +571,10 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 	public void addPages() {
 		// Create a page, set the title, and the initial model file name.
 		//
-		newFileCreationPage = new CanTransceiverModelWizardNewFileCreationPage("Whatever", selection);
-		newFileCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_CanTransceiverModelWizard_label"));
-		newFileCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_CanTransceiverModelWizard_description"));
-		newFileCreationPage.setFileName(UcofEditorPlugin.INSTANCE.getString("_UI_CanTransceiverEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
+		newFileCreationPage = new CantransceiverModelWizardNewFileCreationPage("Whatever", selection);
+		newFileCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_CantransceiverModelWizard_label"));
+		newFileCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_CantransceiverModelWizard_description"));
+		newFileCreationPage.setFileName(UcofEditorPlugin.INSTANCE.getString("_UI_CantransceiverEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
 		addPage(newFileCreationPage);
 
 		// Try and get the resource selection to determine a current directory for the file dialog.
@@ -600,7 +600,7 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 
 					// Make up a unique new name here.
 					//
-					String defaultModelBaseFilename = UcofEditorPlugin.INSTANCE.getString("_UI_CanTransceiverEditorFilenameDefaultBase");
+					String defaultModelBaseFilename = UcofEditorPlugin.INSTANCE.getString("_UI_CantransceiverEditorFilenameDefaultBase");
 					String defaultModelFilenameExtension = FILE_EXTENSIONS.get(0);
 					String modelFilename = defaultModelBaseFilename + "." + defaultModelFilenameExtension;
 					for (int i = 1; ((IContainer)selectedResource).findMember(modelFilename) != null; ++i) {
@@ -610,8 +610,8 @@ public class CanTransceiverModelWizard extends Wizard implements INewWizard {
 				}
 			}
 		}
-		initialObjectCreationPage = new CanTransceiverModelWizardInitialObjectCreationPage("Whatever2");
-		initialObjectCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_CanTransceiverModelWizard_label"));
+		initialObjectCreationPage = new CantransceiverModelWizardInitialObjectCreationPage("Whatever2");
+		initialObjectCreationPage.setTitle(UcofEditorPlugin.INSTANCE.getString("_UI_CantransceiverModelWizard_label"));
 		initialObjectCreationPage.setDescription(UcofEditorPlugin.INSTANCE.getString("_UI_Wizard_initial_object_description"));
 		addPage(initialObjectCreationPage);
 	}

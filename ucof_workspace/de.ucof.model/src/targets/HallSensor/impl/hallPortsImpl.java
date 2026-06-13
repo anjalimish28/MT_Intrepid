@@ -1,6 +1,6 @@
 /**
  */
-package targets.HallSensor.impl;
+package targets.hallsensor.impl;
 
 import java.util.Collection;
 
@@ -17,9 +17,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import targets.HallSensor.HallSensorPackage;
-import targets.HallSensor.hallPort;
-import targets.HallSensor.hallPorts;
+import targets.hallsensor.HallsensorPackage;
+import targets.hallsensor.hallPort;
+import targets.hallsensor.hallPorts;
 
 import ucof.common.etypes.EtypesPackage;
 import ucof.common.etypes.SuperIdentifierType;
@@ -34,9 +34,9 @@ import ucof.common.etypes.impl.SuperTrackingTypeImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link targets.HallSensor.impl.hallPortsImpl#getId <em>Id</em>}</li>
- *   <li>{@link targets.HallSensor.impl.hallPortsImpl#getName <em>Name</em>}</li>
- *   <li>{@link targets.HallSensor.impl.hallPortsImpl#getPort <em>Port</em>}</li>
+ *   <li>{@link targets.hallsensor.impl.hallPortsImpl#getId <em>Id</em>}</li>
+ *   <li>{@link targets.hallsensor.impl.hallPortsImpl#getName <em>Name</em>}</li>
+ *   <li>{@link targets.hallsensor.impl.hallPortsImpl#getPort <em>Port</em>}</li>
  * </ul>
  *
  * @generated
@@ -108,7 +108,7 @@ public class hallPortsImpl extends SuperTrackingTypeImpl implements hallPorts {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return HallSensorPackage.Literals.HALL_PORTS;
+		return HallsensorPackage.Literals.HALL_PORTS;
 	}
 
 	/**
@@ -129,7 +129,7 @@ public class hallPortsImpl extends SuperTrackingTypeImpl implements hallPorts {
 		String oldId = id;
 		id = newId;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HallSensorPackage.HALL_PORTS__ID, oldId, id));
+			eNotify(new ENotificationImpl(this, Notification.SET, HallsensorPackage.HALL_PORTS__ID, oldId, id));
 	}
 
 	/**
@@ -150,7 +150,7 @@ public class hallPortsImpl extends SuperTrackingTypeImpl implements hallPorts {
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HallSensorPackage.HALL_PORTS__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, HallsensorPackage.HALL_PORTS__NAME, oldName, name));
 	}
 
 	/**
@@ -160,7 +160,7 @@ public class hallPortsImpl extends SuperTrackingTypeImpl implements hallPorts {
 	 */
 	public EList<hallPort> getPort() {
 		if (port == null) {
-			port = new EObjectContainmentEList<hallPort>(hallPort.class, this, HallSensorPackage.HALL_PORTS__PORT);
+			port = new EObjectContainmentEList<hallPort>(hallPort.class, this, HallsensorPackage.HALL_PORTS__PORT);
 		}
 		return port;
 	}
@@ -173,7 +173,7 @@ public class hallPortsImpl extends SuperTrackingTypeImpl implements hallPorts {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case HallSensorPackage.HALL_PORTS__PORT:
+			case HallsensorPackage.HALL_PORTS__PORT:
 				return ((InternalEList<?>)getPort()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -187,11 +187,11 @@ public class hallPortsImpl extends SuperTrackingTypeImpl implements hallPorts {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case HallSensorPackage.HALL_PORTS__ID:
+			case HallsensorPackage.HALL_PORTS__ID:
 				return getId();
-			case HallSensorPackage.HALL_PORTS__NAME:
+			case HallsensorPackage.HALL_PORTS__NAME:
 				return getName();
-			case HallSensorPackage.HALL_PORTS__PORT:
+			case HallsensorPackage.HALL_PORTS__PORT:
 				return getPort();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -206,13 +206,13 @@ public class hallPortsImpl extends SuperTrackingTypeImpl implements hallPorts {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case HallSensorPackage.HALL_PORTS__ID:
+			case HallsensorPackage.HALL_PORTS__ID:
 				setId((String)newValue);
 				return;
-			case HallSensorPackage.HALL_PORTS__NAME:
+			case HallsensorPackage.HALL_PORTS__NAME:
 				setName((String)newValue);
 				return;
-			case HallSensorPackage.HALL_PORTS__PORT:
+			case HallsensorPackage.HALL_PORTS__PORT:
 				getPort().clear();
 				getPort().addAll((Collection<? extends hallPort>)newValue);
 				return;
@@ -228,13 +228,13 @@ public class hallPortsImpl extends SuperTrackingTypeImpl implements hallPorts {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case HallSensorPackage.HALL_PORTS__ID:
+			case HallsensorPackage.HALL_PORTS__ID:
 				setId(ID_EDEFAULT);
 				return;
-			case HallSensorPackage.HALL_PORTS__NAME:
+			case HallsensorPackage.HALL_PORTS__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case HallSensorPackage.HALL_PORTS__PORT:
+			case HallsensorPackage.HALL_PORTS__PORT:
 				getPort().clear();
 				return;
 		}
@@ -249,11 +249,11 @@ public class hallPortsImpl extends SuperTrackingTypeImpl implements hallPorts {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case HallSensorPackage.HALL_PORTS__ID:
+			case HallsensorPackage.HALL_PORTS__ID:
 				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
-			case HallSensorPackage.HALL_PORTS__NAME:
+			case HallsensorPackage.HALL_PORTS__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case HallSensorPackage.HALL_PORTS__PORT:
+			case HallsensorPackage.HALL_PORTS__PORT:
 				return port != null && !port.isEmpty();
 		}
 		return super.eIsSet(featureID);
@@ -268,8 +268,8 @@ public class hallPortsImpl extends SuperTrackingTypeImpl implements hallPorts {
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
 		if (baseClass == SuperIdentifierType.class) {
 			switch (derivedFeatureID) {
-				case HallSensorPackage.HALL_PORTS__ID: return EtypesPackage.SUPER_IDENTIFIER_TYPE__ID;
-				case HallSensorPackage.HALL_PORTS__NAME: return EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME;
+				case HallsensorPackage.HALL_PORTS__ID: return EtypesPackage.SUPER_IDENTIFIER_TYPE__ID;
+				case HallsensorPackage.HALL_PORTS__NAME: return EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME;
 				default: return -1;
 			}
 		}
@@ -285,8 +285,8 @@ public class hallPortsImpl extends SuperTrackingTypeImpl implements hallPorts {
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
 		if (baseClass == SuperIdentifierType.class) {
 			switch (baseFeatureID) {
-				case EtypesPackage.SUPER_IDENTIFIER_TYPE__ID: return HallSensorPackage.HALL_PORTS__ID;
-				case EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME: return HallSensorPackage.HALL_PORTS__NAME;
+				case EtypesPackage.SUPER_IDENTIFIER_TYPE__ID: return HallsensorPackage.HALL_PORTS__ID;
+				case EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME: return HallsensorPackage.HALL_PORTS__NAME;
 				default: return -1;
 			}
 		}

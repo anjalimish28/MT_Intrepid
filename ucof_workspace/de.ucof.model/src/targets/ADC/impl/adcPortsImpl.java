@@ -1,8 +1,9 @@
 /**
  */
-package targets.ADC.impl;
+package targets.adc.impl;
 
 import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -16,12 +17,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import targets.ADC.ADCPackage;
-import targets.ADC.adcPort;
-import targets.ADC.adcPorts;
+import targets.adc.AdcPackage;
+import targets.adc.adcPort;
+import targets.adc.adcPorts;
 
 import ucof.common.etypes.EtypesPackage;
 import ucof.common.etypes.SuperIdentifierType;
+
 import ucof.common.etypes.impl.SuperTrackingTypeImpl;
 
 /**
@@ -32,9 +34,9 @@ import ucof.common.etypes.impl.SuperTrackingTypeImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link targets.ADC.impl.adcPortsImpl#getId <em>Id</em>}</li>
- *   <li>{@link targets.ADC.impl.adcPortsImpl#getName <em>Name</em>}</li>
- *   <li>{@link targets.ADC.impl.adcPortsImpl#getPort <em>Port</em>}</li>
+ *   <li>{@link targets.adc.impl.adcPortsImpl#getId <em>Id</em>}</li>
+ *   <li>{@link targets.adc.impl.adcPortsImpl#getName <em>Name</em>}</li>
+ *   <li>{@link targets.adc.impl.adcPortsImpl#getPort <em>Port</em>}</li>
  * </ul>
  *
  * @generated
@@ -106,7 +108,7 @@ public class adcPortsImpl extends SuperTrackingTypeImpl implements adcPorts {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ADCPackage.Literals.ADC_PORTS;
+		return AdcPackage.Literals.ADC_PORTS;
 	}
 
 	/**
@@ -127,7 +129,7 @@ public class adcPortsImpl extends SuperTrackingTypeImpl implements adcPorts {
 		String oldId = id;
 		id = newId;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ADCPackage.ADC_PORTS__ID, oldId, id));
+			eNotify(new ENotificationImpl(this, Notification.SET, AdcPackage.ADC_PORTS__ID, oldId, id));
 	}
 
 	/**
@@ -148,7 +150,7 @@ public class adcPortsImpl extends SuperTrackingTypeImpl implements adcPorts {
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ADCPackage.ADC_PORTS__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, AdcPackage.ADC_PORTS__NAME, oldName, name));
 	}
 
 	/**
@@ -158,7 +160,7 @@ public class adcPortsImpl extends SuperTrackingTypeImpl implements adcPorts {
 	 */
 	public EList<adcPort> getPort() {
 		if (port == null) {
-			port = new EObjectContainmentEList<adcPort>(adcPort.class, this, ADCPackage.ADC_PORTS__PORT);
+			port = new EObjectContainmentEList<adcPort>(adcPort.class, this, AdcPackage.ADC_PORTS__PORT);
 		}
 		return port;
 	}
@@ -171,7 +173,7 @@ public class adcPortsImpl extends SuperTrackingTypeImpl implements adcPorts {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case ADCPackage.ADC_PORTS__PORT:
+			case AdcPackage.ADC_PORTS__PORT:
 				return ((InternalEList<?>)getPort()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -185,11 +187,11 @@ public class adcPortsImpl extends SuperTrackingTypeImpl implements adcPorts {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ADCPackage.ADC_PORTS__ID:
+			case AdcPackage.ADC_PORTS__ID:
 				return getId();
-			case ADCPackage.ADC_PORTS__NAME:
+			case AdcPackage.ADC_PORTS__NAME:
 				return getName();
-			case ADCPackage.ADC_PORTS__PORT:
+			case AdcPackage.ADC_PORTS__PORT:
 				return getPort();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -204,13 +206,13 @@ public class adcPortsImpl extends SuperTrackingTypeImpl implements adcPorts {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ADCPackage.ADC_PORTS__ID:
+			case AdcPackage.ADC_PORTS__ID:
 				setId((String)newValue);
 				return;
-			case ADCPackage.ADC_PORTS__NAME:
+			case AdcPackage.ADC_PORTS__NAME:
 				setName((String)newValue);
 				return;
-			case ADCPackage.ADC_PORTS__PORT:
+			case AdcPackage.ADC_PORTS__PORT:
 				getPort().clear();
 				getPort().addAll((Collection<? extends adcPort>)newValue);
 				return;
@@ -226,13 +228,13 @@ public class adcPortsImpl extends SuperTrackingTypeImpl implements adcPorts {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ADCPackage.ADC_PORTS__ID:
+			case AdcPackage.ADC_PORTS__ID:
 				setId(ID_EDEFAULT);
 				return;
-			case ADCPackage.ADC_PORTS__NAME:
+			case AdcPackage.ADC_PORTS__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case ADCPackage.ADC_PORTS__PORT:
+			case AdcPackage.ADC_PORTS__PORT:
 				getPort().clear();
 				return;
 		}
@@ -247,11 +249,11 @@ public class adcPortsImpl extends SuperTrackingTypeImpl implements adcPorts {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ADCPackage.ADC_PORTS__ID:
+			case AdcPackage.ADC_PORTS__ID:
 				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
-			case ADCPackage.ADC_PORTS__NAME:
+			case AdcPackage.ADC_PORTS__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case ADCPackage.ADC_PORTS__PORT:
+			case AdcPackage.ADC_PORTS__PORT:
 				return port != null && !port.isEmpty();
 		}
 		return super.eIsSet(featureID);
@@ -266,8 +268,8 @@ public class adcPortsImpl extends SuperTrackingTypeImpl implements adcPorts {
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
 		if (baseClass == SuperIdentifierType.class) {
 			switch (derivedFeatureID) {
-				case ADCPackage.ADC_PORTS__ID: return EtypesPackage.SUPER_IDENTIFIER_TYPE__ID;
-				case ADCPackage.ADC_PORTS__NAME: return EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME;
+				case AdcPackage.ADC_PORTS__ID: return EtypesPackage.SUPER_IDENTIFIER_TYPE__ID;
+				case AdcPackage.ADC_PORTS__NAME: return EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME;
 				default: return -1;
 			}
 		}
@@ -283,8 +285,8 @@ public class adcPortsImpl extends SuperTrackingTypeImpl implements adcPorts {
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
 		if (baseClass == SuperIdentifierType.class) {
 			switch (baseFeatureID) {
-				case EtypesPackage.SUPER_IDENTIFIER_TYPE__ID: return ADCPackage.ADC_PORTS__ID;
-				case EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME: return ADCPackage.ADC_PORTS__NAME;
+				case EtypesPackage.SUPER_IDENTIFIER_TYPE__ID: return AdcPackage.ADC_PORTS__ID;
+				case EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME: return AdcPackage.ADC_PORTS__NAME;
 				default: return -1;
 			}
 		}

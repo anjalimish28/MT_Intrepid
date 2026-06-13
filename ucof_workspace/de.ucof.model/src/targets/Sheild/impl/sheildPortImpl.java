@@ -1,6 +1,6 @@
 /**
  */
-package targets.Sheild.impl;
+package targets.sheild.impl;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -8,13 +8,14 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
-import targets.Sheild.SheildPackage;
-import targets.Sheild.sheildPort;
-
 import targets.impl.SuperHardwarePortTypeImpl;
+
 import targets.powergrid.PowergridPackage;
 import targets.powergrid.SuperElectricalInterfaceType;
 import targets.powergrid.interfaceType;
+
+import targets.sheild.SheildPackage;
+import targets.sheild.sheildPort;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,10 +25,10 @@ import targets.powergrid.interfaceType;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link targets.Sheild.impl.sheildPortImpl#getMinVoltage <em>Min Voltage</em>}</li>
- *   <li>{@link targets.Sheild.impl.sheildPortImpl#getMaxVoltage <em>Max Voltage</em>}</li>
- *   <li>{@link targets.Sheild.impl.sheildPortImpl#getType <em>Type</em>}</li>
- *   <li>{@link targets.Sheild.impl.sheildPortImpl#getPinName <em>Pin Name</em>}</li>
+ *   <li>{@link targets.sheild.impl.sheildPortImpl#getMinVoltage <em>Min Voltage</em>}</li>
+ *   <li>{@link targets.sheild.impl.sheildPortImpl#getMaxVoltage <em>Max Voltage</em>}</li>
+ *   <li>{@link targets.sheild.impl.sheildPortImpl#getType <em>Type</em>}</li>
+ *   <li>{@link targets.sheild.impl.sheildPortImpl#getPinName <em>Pin Name</em>}</li>
  * </ul>
  *
  * @generated

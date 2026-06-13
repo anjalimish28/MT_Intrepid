@@ -1,6 +1,6 @@
 /**
  */
-package targets.RDC.provider;
+package targets.rdc.provider;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,7 +21,7 @@ import org.eclipse.emf.edit.provider.INotifyChangedListener;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 
-import targets.RDC.util.RDCAdapterFactory;
+import targets.rdc.util.RdcAdapterFactory;
 
 /**
  * This is the factory that is used to provide the interfaces needed to support Viewers.
@@ -32,7 +32,7 @@ import targets.RDC.util.RDCAdapterFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class RDCItemProviderAdapterFactory extends RDCAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
+public class RdcItemProviderAdapterFactory extends RdcAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
 	/**
 	 * This keeps track of the root adapter factory that delegates to this adapter factory.
 	 * <!-- begin-user-doc -->
@@ -63,7 +63,7 @@ public class RDCItemProviderAdapterFactory extends RDCAdapterFactory implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RDCItemProviderAdapterFactory() {
+	public RdcItemProviderAdapterFactory() {
 		supportedTypes.add(IEditingDomainItemProvider.class);
 		supportedTypes.add(IStructuredItemContentProvider.class);
 		supportedTypes.add(ITreeItemContentProvider.class);
@@ -72,7 +72,7 @@ public class RDCItemProviderAdapterFactory extends RDCAdapterFactory implements 
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.RDC.stm32f446re} instances.
+	 * This keeps track of the one adapter used for all {@link targets.rdc.stm32f446re} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -80,7 +80,7 @@ public class RDCItemProviderAdapterFactory extends RDCAdapterFactory implements 
 	protected stm32f446reItemProvider stm32f446reItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.RDC.stm32f446re}.
+	 * This creates an adapter for a {@link targets.rdc.stm32f446re}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -95,7 +95,30 @@ public class RDCItemProviderAdapterFactory extends RDCAdapterFactory implements 
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.RDC.stmPorts} instances.
+	 * This keeps track of the one adapter used for all {@link targets.rdc.stmTimingConfig} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected stmTimingConfigItemProvider stmTimingConfigItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link targets.rdc.stmTimingConfig}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createstmTimingConfigAdapter() {
+		if (stmTimingConfigItemProvider == null) {
+			stmTimingConfigItemProvider = new stmTimingConfigItemProvider(this);
+		}
+
+		return stmTimingConfigItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link targets.rdc.stmPorts} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -103,7 +126,7 @@ public class RDCItemProviderAdapterFactory extends RDCAdapterFactory implements 
 	protected stmPortsItemProvider stmPortsItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.RDC.stmPorts}.
+	 * This creates an adapter for a {@link targets.rdc.stmPorts}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -118,7 +141,7 @@ public class RDCItemProviderAdapterFactory extends RDCAdapterFactory implements 
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.RDC.stmPort} instances.
+	 * This keeps track of the one adapter used for all {@link targets.rdc.stmPort} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -126,7 +149,7 @@ public class RDCItemProviderAdapterFactory extends RDCAdapterFactory implements 
 	protected stmPortItemProvider stmPortItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.RDC.stmPort}.
+	 * This creates an adapter for a {@link targets.rdc.stmPort}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -240,6 +263,7 @@ public class RDCItemProviderAdapterFactory extends RDCAdapterFactory implements 
 	 */
 	public void dispose() {
 		if (stm32f446reItemProvider != null) stm32f446reItemProvider.dispose();
+		if (stmTimingConfigItemProvider != null) stmTimingConfigItemProvider.dispose();
 		if (stmPortsItemProvider != null) stmPortsItemProvider.dispose();
 		if (stmPortItemProvider != null) stmPortItemProvider.dispose();
 	}

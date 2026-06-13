@@ -17,11 +17,15 @@ import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-import targets.ADC.ADCFactory;
-import targets.IntrepidPowerGrid.IntrepidPowerGridFactory;
-import targets.Sheild.SheildFactory;
+
+import targets.adc.AdcFactory;
+
+import targets.intrepidpowergrid.IntrepidpowergridFactory;
+
 import targets.powergrid.EletrcialInterfaces;
 import targets.powergrid.PowergridPackage;
+
+import targets.sheild.SheildFactory;
 
 import ucof.common.etypes.EtypesPackage;
 
@@ -320,7 +324,7 @@ public class EletrcialInterfacesItemProvider extends SuperIdentifierTypeItemProv
 		newChildDescriptors.add
 			(createChildParameter
 				(PowergridPackage.Literals.ELETRCIAL_INTERFACES__ELECTRICAL_INTERFACE,
-				 ADCFactory.eINSTANCE.createadcPort()));
+				 AdcFactory.eINSTANCE.createadcPort()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -330,7 +334,7 @@ public class EletrcialInterfacesItemProvider extends SuperIdentifierTypeItemProv
 		newChildDescriptors.add
 			(createChildParameter
 				(PowergridPackage.Literals.ELETRCIAL_INTERFACES__ELECTRICAL_INTERFACE,
-				 IntrepidPowerGridFactory.eINSTANCE.createintrepidElectricalInterface()));
+				 IntrepidpowergridFactory.eINSTANCE.createintrepidElectricalInterface()));
 	}
 
 	/**

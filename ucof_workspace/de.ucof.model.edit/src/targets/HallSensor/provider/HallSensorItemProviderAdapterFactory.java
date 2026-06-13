@@ -1,6 +1,6 @@
 /**
  */
-package targets.HallSensor.provider;
+package targets.hallsensor.provider;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,7 +21,7 @@ import org.eclipse.emf.edit.provider.INotifyChangedListener;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 
-import targets.HallSensor.util.HallSensorAdapterFactory;
+import targets.hallsensor.util.HallsensorAdapterFactory;
 
 /**
  * This is the factory that is used to provide the interfaces needed to support Viewers.
@@ -32,7 +32,7 @@ import targets.HallSensor.util.HallSensorAdapterFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class HallSensorItemProviderAdapterFactory extends HallSensorAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
+public class HallsensorItemProviderAdapterFactory extends HallsensorAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
 	/**
 	 * This keeps track of the root adapter factory that delegates to this adapter factory.
 	 * <!-- begin-user-doc -->
@@ -63,7 +63,7 @@ public class HallSensorItemProviderAdapterFactory extends HallSensorAdapterFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HallSensorItemProviderAdapterFactory() {
+	public HallsensorItemProviderAdapterFactory() {
 		supportedTypes.add(IEditingDomainItemProvider.class);
 		supportedTypes.add(IStructuredItemContentProvider.class);
 		supportedTypes.add(ITreeItemContentProvider.class);
@@ -72,7 +72,7 @@ public class HallSensorItemProviderAdapterFactory extends HallSensorAdapterFacto
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.HallSensor.mts360} instances.
+	 * This keeps track of the one adapter used for all {@link targets.hallsensor.mts360} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -80,7 +80,7 @@ public class HallSensorItemProviderAdapterFactory extends HallSensorAdapterFacto
 	protected mts360ItemProvider mts360ItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.HallSensor.mts360}.
+	 * This creates an adapter for a {@link targets.hallsensor.mts360}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -95,7 +95,7 @@ public class HallSensorItemProviderAdapterFactory extends HallSensorAdapterFacto
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.HallSensor.hallPorts} instances.
+	 * This keeps track of the one adapter used for all {@link targets.hallsensor.hallPorts} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -103,7 +103,7 @@ public class HallSensorItemProviderAdapterFactory extends HallSensorAdapterFacto
 	protected hallPortsItemProvider hallPortsItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.HallSensor.hallPorts}.
+	 * This creates an adapter for a {@link targets.hallsensor.hallPorts}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -118,7 +118,7 @@ public class HallSensorItemProviderAdapterFactory extends HallSensorAdapterFacto
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.HallSensor.hallPort} instances.
+	 * This keeps track of the one adapter used for all {@link targets.hallsensor.hallPort} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -126,7 +126,7 @@ public class HallSensorItemProviderAdapterFactory extends HallSensorAdapterFacto
 	protected hallPortItemProvider hallPortItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.HallSensor.hallPort}.
+	 * This creates an adapter for a {@link targets.hallsensor.hallPort}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

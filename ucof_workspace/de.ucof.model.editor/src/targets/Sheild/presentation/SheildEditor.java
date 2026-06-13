@@ -1,6 +1,6 @@
 /**
  */
-package targets.Sheild.presentation;
+package targets.sheild.presentation;
 
 
 import java.io.IOException;
@@ -155,21 +155,29 @@ import org.eclipse.emf.edit.ui.util.EditUIUtil;
 
 import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 
-import targets.Sheild.provider.SheildItemProviderAdapterFactory;
+import targets.sheild.provider.SheildItemProviderAdapterFactory;
 
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 
-import targets.ADC.provider.ADCItemProviderAdapterFactory;
+import targets.adc.provider.AdcItemProviderAdapterFactory;
 
-import targets.CCDPU.provider.CCDPUItemProviderAdapterFactory;
-import targets.CanTransceiver.provider.CanTransceiverItemProviderAdapterFactory;
-import targets.HallSensor.provider.HallSensorItemProviderAdapterFactory;
-import targets.IntrepidPowerGrid.provider.IntrepidPowerGridItemProviderAdapterFactory;
-import targets.MotorController.provider.MotorControllerItemProviderAdapterFactory;
-import targets.RDC.provider.RDCItemProviderAdapterFactory;
+import targets.cantransceiver.provider.CantransceiverItemProviderAdapterFactory;
+
+import targets.cpn.provider.CpnItemProviderAdapterFactory;
+
+import targets.hallsensor.provider.HallsensorItemProviderAdapterFactory;
+
+import targets.intrepidgateway.provider.IntrepidgatewayItemProviderAdapterFactory;
+
+import targets.intrepidpowergrid.provider.IntrepidpowergridItemProviderAdapterFactory;
+
+import targets.motorcontroller.provider.MotorcontrollerItemProviderAdapterFactory;
 
 import targets.powergrid.provider.PowergridItemProviderAdapterFactory;
+
 import targets.provider.TargetsItemProviderAdapterFactory;
+
+import targets.rdc.provider.RdcItemProviderAdapterFactory;
 
 import ucof.assignments.database.provider.DatabaseItemProviderAdapterFactory;
 
@@ -198,6 +206,7 @@ import ucof.communication.configECIC.streamTypes.provider.StreamTypesItemProvide
 import ucof.communication.connectors.provider.ConnectorsItemProviderAdapterFactory;
 
 import ucof.communication.i2c.provider.I2cItemProviderAdapterFactory;
+
 import ucof.communication.provider.CommunicationItemProviderAdapterFactory;
 
 import ucof.devices.devicetypes.a653components.a653partition.provider.A653partitionItemProviderAdapterFactory;
@@ -787,14 +796,15 @@ public class SheildEditor
 		adapterFactory.addAdapterFactory(new DatabaseItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new TargetsItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new PowergridItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new RDCItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new ADCItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new RdcItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new AdcItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new SheildItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new MotorControllerItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new CanTransceiverItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new HallSensorItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new CCDPUItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new IntrepidPowerGridItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new MotorcontrollerItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new CantransceiverItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new HallsensorItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new CpnItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new IntrepidpowergridItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new IntrepidgatewayItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
 		// Create the command stack that will notify this editor as commands are executed.

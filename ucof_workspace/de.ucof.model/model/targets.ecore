@@ -51,7 +51,7 @@
       eSuperTypes="ucof.ecore#//common/etypes/SuperIdentifierType ucof.ecore#//common/etypes/SuperTrackingType"/>
   <eSubpackages name="powergrid" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/powergrid"
       nsPrefix="de.ucof.model.targets.powergrid">
-    <eClassifiers xsi:type="ecore:EClass" name="SuperPowerType" abstract="true">
+    <eClassifiers xsi:type="ecore:EClass" name="SuperPowerType" abstract="true" eSuperTypes="ucof.ecore#//common/etypes/SuperIdentifierType ucof.ecore#//common/etypes/SuperTrackingType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="electricalInterfaces"
           eType="#//powergrid/EletrcialInterfaces" containment="true"/>
     </eClassifiers>
@@ -95,111 +95,195 @@
           eType="#//powergrid/SuperElectricalGridType" containment="true"/>
     </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="RDC" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc"
+  <eSubpackages name="rdc" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc"
       nsPrefix="de.ucof.model.targets.rdc">
-    <eClassifiers xsi:type="ecore:EClass" name="stm32f446re" eSuperTypes="#//SuperTargetType #//powergrid/SuperPowerType">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//RDC/stmPorts"
+    <eClassifiers xsi:type="ecore:EClass" name="stm32f446re" eSuperTypes="#//powergrid/SuperPowerType #//SuperTargetType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//rdc/stmPorts"
           containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="stmTimingConfig" eType="#//rdc/stmTimingConfig"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="msgBoxExtension" eType="#//intrepidgateway/MsgBoxExtension"
+          containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="stmTimingConfig" eSuperTypes="ucof.ecore#//common/etypes/SuperTrackingType ucof.ecore#//common/etypes/SuperIdentifierType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rateDriverFrequencyHz"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rateGroupDivisor1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rateGroupDivisor2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rateGroupDivisor3" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rateGroupDefaultOffset"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="pwmResolutionBits" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rateDriverFrequencyHzSize"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rateGroupDivisor1Size"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rateGroupDivisor2Size"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rateGroupDivisor3Size"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="rateGroupDefaultOffsetSize"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="pwmResolutionBitsSize"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="stmPorts" eSuperTypes="ucof.ecore#//common/etypes/SuperTrackingType ucof.ecore#//common/etypes/SuperIdentifierType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="port" upperBound="-1"
-          eType="#//RDC/stmPort" containment="true"/>
+          eType="#//rdc/stmPort" containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="stmPort" eSuperTypes="#//SuperHardwarePortType">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="ADC" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/adc"
+  <eSubpackages name="adc" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/adc"
       nsPrefix="de.ucof.model.targets.adc">
     <eClassifiers xsi:type="ecore:EClass" name="ads1115" eSuperTypes="#//SuperTargetType #//powergrid/SuperPowerType">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//ADC/adcPorts"
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//adc/adcPorts"
           containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="adcPorts" eSuperTypes="ucof.ecore#//common/etypes/SuperTrackingType ucof.ecore#//common/etypes/SuperIdentifierType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="port" upperBound="-1"
-          eType="#//ADC/adcPort" containment="true"/>
+          eType="#//adc/adcPort" containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="adcPort" eSuperTypes="#//SuperHardwarePortType #//powergrid/SuperElectricalInterfaceType">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="Sheild" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/sheild"
+  <eSubpackages name="sheild" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/sheild"
       nsPrefix="de.ucof.model.targets.sheild">
     <eClassifiers xsi:type="ecore:EClass" name="arduinosheild" eSuperTypes="#//SuperTargetType #//SuperIOHardwareType #//powergrid/SuperPowerType">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//Sheild/sheildPorts"
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//sheild/sheildPorts"
           containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="sheildPorts" eSuperTypes="ucof.ecore#//common/etypes/SuperTrackingType ucof.ecore#//common/etypes/SuperIdentifierType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="port" upperBound="-1"
-          eType="#//Sheild/sheildPort" containment="true"/>
+          eType="#//sheild/sheildPort" containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="sheildPort" eSuperTypes="#//SuperHardwarePortType #//powergrid/SuperElectricalInterfaceType">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="MotorController" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/motorcontroller"
+  <eSubpackages name="motorcontroller" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/motorcontroller"
       nsPrefix="de.ucof.model.targets.motorcontroller">
     <eClassifiers xsi:type="ecore:EClass" name="escon409510" eSuperTypes="#//SuperTargetType #//powergrid/SuperPowerType">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//MotorController/esconPorts"
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//motorcontroller/esconPorts"
           containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="esconPorts" eSuperTypes="ucof.ecore#//common/etypes/SuperTrackingType ucof.ecore#//common/etypes/SuperIdentifierType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="port" upperBound="-1"
-          eType="#//MotorController/esconPort" containment="true"/>
+          eType="#//motorcontroller/esconPort" containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="esconPort" eSuperTypes="#//SuperHardwarePortType">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="CanTransceiver" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cantransceiver"
+  <eSubpackages name="cantransceiver" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cantransceiver"
       nsPrefix="de.ucof.model.targets.cantransceiver">
     <eClassifiers xsi:type="ecore:EClass" name="sn65hvd230" eSuperTypes="#//SuperTargetType #//powergrid/SuperPowerType">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//CanTransceiver/canTransceiverPorts"
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//cantransceiver/canTransceiverPorts"
           containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="canTransceiverPorts" eSuperTypes="ucof.ecore#//common/etypes/SuperTrackingType ucof.ecore#//common/etypes/SuperIdentifierType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="port" upperBound="-1"
-          eType="#//CanTransceiver/canTransceiverPort" containment="true"/>
+          eType="#//cantransceiver/canTransceiverPort" containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="canTransceiverPort" eSuperTypes="#//SuperHardwarePortType">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="HallSensor" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/hallsensor"
+  <eSubpackages name="hallsensor" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/hallsensor"
       nsPrefix="de.ucof.model.targets.hallsensor">
     <eClassifiers xsi:type="ecore:EClass" name="mts360" eSuperTypes="#//SuperTargetType #//powergrid/SuperPowerType">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//HallSensor/hallPorts"
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//hallsensor/hallPorts"
           containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="hallPorts" eSuperTypes="ucof.ecore#//common/etypes/SuperTrackingType ucof.ecore#//common/etypes/SuperIdentifierType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="port" upperBound="-1"
-          eType="#//HallSensor/hallPort" containment="true"/>
+          eType="#//hallsensor/hallPort" containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="hallPort" eSuperTypes="#//SuperHardwarePortType">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="CCDPU" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/ccdpu"
-      nsPrefix="de.ucof.model.targets.ccdpu">
+  <eSubpackages name="cpn" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cpn"
+      nsPrefix="de.ucof.model.targets.cpn">
     <eClassifiers xsi:type="ecore:EClass" name="va41620peb1" eSuperTypes="#//SuperTargetType #//powergrid/SuperPowerType">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//CCDPU/voragoPorts"
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" eType="#//cpn/voragoPorts"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="msgBoxExtension" eType="#//intrepidgateway/MsgBoxExtension"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="canDriverConfig" eType="#//cpn/CanDriverConfig"
           containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="voragoPorts" eSuperTypes="ucof.ecore#//common/etypes/SuperTrackingType ucof.ecore#//common/etypes/SuperIdentifierType">
       <eStructuralFeatures xsi:type="ecore:EReference" name="port" upperBound="-1"
-          eType="#//CCDPU/voragoPort" containment="true"/>
+          eType="#//cpn/voragoPort" containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="voragoPort" eSuperTypes="#//SuperHardwarePortType">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="CanOperatingMode">
+      <eLiterals name="NORMAL"/>
+      <eLiterals name="LOOPBACK" value="1"/>
+      <eLiterals name="SILENT" value="2"/>
+      <eLiterals name="DIAGNOSTIC" value="3"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CanDriverConfig" eSuperTypes="ucof.ecore#//common/etypes/SuperIdentifierType ucof.ecore#//common/etypes/SuperTrackingType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="interfaceID" eType="ecore:EDataType ucof.ecore#//common/edata/UUIDType"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="canPeripheralInstance"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="operatingMode" eType="#//cpn/CanOperatingMode"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="extendedIdEnabled" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="ringBufferSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="IntrepidPowerGrid" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidpowergrid"
+  <eSubpackages name="intrepidpowergrid" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidpowergrid"
       nsPrefix="de.ucof.model.targets.intrepidpowergrid">
     <eClassifiers xsi:type="ecore:EClass" name="intrepidElectricalGrid" eSuperTypes="#//powergrid/SuperElectricalGridType"/>
     <eClassifiers xsi:type="ecore:EClass" name="intrepidElectricalInterface" eSuperTypes="#//powergrid/SuperElectricalInterfaceType"/>
+  </eSubpackages>
+  <eSubpackages name="intrepidgateway" nsURI="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidgateway"
+      nsPrefix="de.ucof.model.targets.intrepidgateway">
+    <eClassifiers xsi:type="ecore:EClass" name="MsgBoxExtension" eSuperTypes="#//SuperClassExtensionType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="numOfOutgoingMailboxes"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="numOfIncomingMailboxes"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="smallBufferSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="smallBufferCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="mediumBufferSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="mediumBufferCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="bigBufferSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="bigBufferCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="nodeAddr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="nodeAddressSymbol" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="incomingDestinationFilter"
+          upperBound="-1" eType="#//intrepidgateway/CanMailboxAddressFilter" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="senderSourceFilter" upperBound="-1"
+          eType="#//intrepidgateway/CanMailboxAddressFilter" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="outgoingMailboxSlot"
+          upperBound="-1" eType="#//intrepidgateway/CanMailboxOutSlot" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CanMailboxAddressFilter" eSuperTypes="ucof.ecore#//common/etypes/SuperIdentifierType ucof.ecore#//common/etypes/SuperTrackingType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="addressSymbol" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="addressValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CanMailboxOutSlot" eSuperTypes="ucof.ecore#//common/etypes/SuperIdentifierType ucof.ecore#//common/etypes/SuperTrackingType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="portId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceAddressSymbol"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceAddressValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="destinationAddressSymbol"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="destinationAddressValue"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="multicast" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </eClassifiers>
   </eSubpackages>
 </ecore:EPackage>

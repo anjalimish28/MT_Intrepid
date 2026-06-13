@@ -1,18 +1,19 @@
 /**
  */
-package targets.RDC.util;
+package targets.rdc.util;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
 
-import targets.RDC.*;
-
 import targets.SuperHardwarePortType;
 import targets.SuperTargetType;
 
 import targets.powergrid.SuperPowerType;
+
+import targets.rdc.*;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
@@ -26,17 +27,17 @@ import ucof.common.etypes.SuperTrackingType;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see targets.RDC.RDCPackage
+ * @see targets.rdc.RdcPackage
  * @generated
  */
-public class RDCSwitch<T> extends Switch<T> {
+public class RdcSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static RDCPackage modelPackage;
+	protected static RdcPackage modelPackage;
 
 	/**
 	 * Creates an instance of the switch.
@@ -44,9 +45,9 @@ public class RDCSwitch<T> extends Switch<T> {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RDCSwitch() {
+	public RdcSwitch() {
 		if (modelPackage == null) {
-			modelPackage = RDCPackage.eINSTANCE;
+			modelPackage = RdcPackage.eINSTANCE;
 		}
 	}
 
@@ -73,17 +74,25 @@ public class RDCSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case RDCPackage.STM32F446RE: {
+			case RdcPackage.STM32F446RE: {
 				stm32f446re stm32f446re = (stm32f446re)theEObject;
 				T result = casestm32f446re(stm32f446re);
-				if (result == null) result = caseSuperTargetType(stm32f446re);
 				if (result == null) result = caseSuperPowerType(stm32f446re);
+				if (result == null) result = caseSuperTargetType(stm32f446re);
 				if (result == null) result = caseSuperIdentifierType(stm32f446re);
 				if (result == null) result = caseSuperTrackingType(stm32f446re);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case RDCPackage.STM_PORTS: {
+			case RdcPackage.STM_TIMING_CONFIG: {
+				stmTimingConfig stmTimingConfig = (stmTimingConfig)theEObject;
+				T result = casestmTimingConfig(stmTimingConfig);
+				if (result == null) result = caseSuperTrackingType(stmTimingConfig);
+				if (result == null) result = caseSuperIdentifierType(stmTimingConfig);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RdcPackage.STM_PORTS: {
 				stmPorts stmPorts = (stmPorts)theEObject;
 				T result = casestmPorts(stmPorts);
 				if (result == null) result = caseSuperTrackingType(stmPorts);
@@ -91,7 +100,7 @@ public class RDCSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case RDCPackage.STM_PORT: {
+			case RdcPackage.STM_PORT: {
 				stmPort stmPort = (stmPort)theEObject;
 				T result = casestmPort(stmPort);
 				if (result == null) result = caseSuperHardwarePortType(stmPort);
@@ -116,6 +125,21 @@ public class RDCSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T casestm32f446re(stm32f446re object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>stm Timing Config</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>stm Timing Config</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casestmTimingConfig(stmTimingConfig object) {
 		return null;
 	}
 
@@ -240,4 +264,4 @@ public class RDCSwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //RDCSwitch
+} //RdcSwitch

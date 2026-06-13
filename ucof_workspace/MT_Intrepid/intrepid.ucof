@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<de.ucof.model:Platform xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.ucof.model="https://gitlab.com/ucof/ucof.de/model/v001/ucof" xmlns:de.ucof.model.assignments="https://gitlab.com/ucof/ucof.de/model/v001/ucof/assignments" xmlns:de.ucof.model.common.etypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/common/etypes" xmlns:de.ucof.model.communication="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication" xmlns:de.ucof.model.communication.arinc825="https://gitlab.com/ucof/ucof.de/model/v001/ucof/communication/arinc825" xmlns:de.ucof.model.devices.devicetypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/devicetypes" xmlns:de.ucof.model.targets.rdc="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc" id="a3d0ee17-69f9-4bb8-a17d-1f61cbba884e">
+  <devices>
+    <device xsi:type="de.ucof.model.devices.devicetypes:IOModule" id="86e9d0c4-5eb4-4f52-9ba0-08415d300cac" name="RDC_1">
+      <ports>
+        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="e98f493d-aec4-4eae-9385-6a07dc166d8d" name="CAN_RX_Port" portDirection="In"/>
+        <port xsi:type="de.ucof.model.common.etypes:SamplingPort" id="3be3654c-54eb-4446-8590-1382cef228a5" name="CAN_TX_Port" portDirection="Out"/>
+      </ports>
+    </device>
+  </devices>
+  <communication>
+    <database id="90d70995-56ce-4e18-a7d9-bb83da876638">
+      <communicationSet xsi:type="de.ucof.model.communication:InterfaceSet" id="76c8ea2d-d714-4396-85f1-9c0ecc9a87af">
+        <interface xsi:type="de.ucof.model.communication.arinc825:A825Bus" id="c404d97c-1a89-4d90-bfe9-dc3f00fbcafe" name="CAN1" baudRate="1000"/>
+      </communicationSet>
+    </database>
+  </communication>
+  <assignments id="bfa0368f-1bf5-4bf4-8bbc-e8106060f03b">
+    <assignmentSet xsi:type="de.ucof.model.assignments:PortToPortAssignmentSet" id="cc8a9573-1042-4cef-8c14-807a22d902d8">
+      <portToPortAssignment id="1a4f0587-9ae4-4948-9ac5-3496fb7a12f8" name="RDC_TO_CCU" sourceID="3be3654c-54eb-4446-8590-1382cef228a5"/>
+      <portToPortAssignment id="1026d804-6a29-44b0-9ba4-590dd793a883" name="CCU_TO_RDC" targetID="e98f493d-aec4-4eae-9385-6a07dc166d8d"/>
+    </assignmentSet>
+    <assignmentSet xsi:type="de.ucof.model.assignments:SWPortToHWPortAssignmentSet" id="19fd62eb-8b3b-4681-b877-185570ae0c64">
+      <swPortToHWPortAssignment id="8bd69d52-8ec4-4ded-a531-8acb8eed79b7" sourceID="e98f493d-aec4-4eae-9385-6a07dc166d8d" targetID="4b5935e7-d0e4-47ac-9cb4-625e2d5915eb"/>
+      <swPortToHWPortAssignment id="f05056ee-e00f-4a4f-bb49-d4115550fc27" sourceID="3be3654c-54eb-4446-8590-1382cef228a5" targetID="f05056ee-e00f-4a4f-bb49-d4115550fc27"/>
+    </assignmentSet>
+  </assignments>
+  <targets id="922cb2e4-26e4-46ac-9ba8-547aa85dccc9">
+    <targetConfiguration xsi:type="de.ucof.model.targets.rdc:stm32f446re" id="09dc9bb6-0501-46d1-ba7d-edf1299a03a4">
+      <stmPorts>
+        <stmPort id="4b5935e7-d0e4-47ac-9cb4-625e2d5915eb" name="CAN_RX" pinName="PA11" pinNumber="44"/>
+        <stmPort id="a8f2340b-b4b4-4a6c-bbd3-7446b9e3c991" name="CAN_TX" pinName="PA12" pinNumber="45"/>
+      </stmPorts>
+    </targetConfiguration>
+  </targets>
+</de.ucof.model:Platform>

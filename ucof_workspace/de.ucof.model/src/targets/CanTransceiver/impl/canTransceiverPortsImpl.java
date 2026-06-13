@@ -1,6 +1,6 @@
 /**
  */
-package targets.CanTransceiver.impl;
+package targets.cantransceiver.impl;
 
 import java.util.Collection;
 
@@ -17,9 +17,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import targets.CanTransceiver.CanTransceiverPackage;
-import targets.CanTransceiver.canTransceiverPort;
-import targets.CanTransceiver.canTransceiverPorts;
+import targets.cantransceiver.CantransceiverPackage;
+import targets.cantransceiver.canTransceiverPort;
+import targets.cantransceiver.canTransceiverPorts;
 
 import ucof.common.etypes.EtypesPackage;
 import ucof.common.etypes.SuperIdentifierType;
@@ -34,9 +34,9 @@ import ucof.common.etypes.impl.SuperTrackingTypeImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link targets.CanTransceiver.impl.canTransceiverPortsImpl#getId <em>Id</em>}</li>
- *   <li>{@link targets.CanTransceiver.impl.canTransceiverPortsImpl#getName <em>Name</em>}</li>
- *   <li>{@link targets.CanTransceiver.impl.canTransceiverPortsImpl#getPort <em>Port</em>}</li>
+ *   <li>{@link targets.cantransceiver.impl.canTransceiverPortsImpl#getId <em>Id</em>}</li>
+ *   <li>{@link targets.cantransceiver.impl.canTransceiverPortsImpl#getName <em>Name</em>}</li>
+ *   <li>{@link targets.cantransceiver.impl.canTransceiverPortsImpl#getPort <em>Port</em>}</li>
  * </ul>
  *
  * @generated
@@ -108,7 +108,7 @@ public class canTransceiverPortsImpl extends SuperTrackingTypeImpl implements ca
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return CanTransceiverPackage.Literals.CAN_TRANSCEIVER_PORTS;
+		return CantransceiverPackage.Literals.CAN_TRANSCEIVER_PORTS;
 	}
 
 	/**
@@ -129,7 +129,7 @@ public class canTransceiverPortsImpl extends SuperTrackingTypeImpl implements ca
 		String oldId = id;
 		id = newId;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__ID, oldId, id));
+			eNotify(new ENotificationImpl(this, Notification.SET, CantransceiverPackage.CAN_TRANSCEIVER_PORTS__ID, oldId, id));
 	}
 
 	/**
@@ -150,7 +150,7 @@ public class canTransceiverPortsImpl extends SuperTrackingTypeImpl implements ca
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, CantransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME, oldName, name));
 	}
 
 	/**
@@ -160,7 +160,7 @@ public class canTransceiverPortsImpl extends SuperTrackingTypeImpl implements ca
 	 */
 	public EList<canTransceiverPort> getPort() {
 		if (port == null) {
-			port = new EObjectContainmentEList<canTransceiverPort>(canTransceiverPort.class, this, CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__PORT);
+			port = new EObjectContainmentEList<canTransceiverPort>(canTransceiverPort.class, this, CantransceiverPackage.CAN_TRANSCEIVER_PORTS__PORT);
 		}
 		return port;
 	}
@@ -173,7 +173,7 @@ public class canTransceiverPortsImpl extends SuperTrackingTypeImpl implements ca
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__PORT:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__PORT:
 				return ((InternalEList<?>)getPort()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -187,11 +187,11 @@ public class canTransceiverPortsImpl extends SuperTrackingTypeImpl implements ca
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__ID:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__ID:
 				return getId();
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME:
 				return getName();
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__PORT:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__PORT:
 				return getPort();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -206,13 +206,13 @@ public class canTransceiverPortsImpl extends SuperTrackingTypeImpl implements ca
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__ID:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__ID:
 				setId((String)newValue);
 				return;
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME:
 				setName((String)newValue);
 				return;
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__PORT:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__PORT:
 				getPort().clear();
 				getPort().addAll((Collection<? extends canTransceiverPort>)newValue);
 				return;
@@ -228,13 +228,13 @@ public class canTransceiverPortsImpl extends SuperTrackingTypeImpl implements ca
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__ID:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__ID:
 				setId(ID_EDEFAULT);
 				return;
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__PORT:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__PORT:
 				getPort().clear();
 				return;
 		}
@@ -249,11 +249,11 @@ public class canTransceiverPortsImpl extends SuperTrackingTypeImpl implements ca
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__ID:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__ID:
 				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__PORT:
+			case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__PORT:
 				return port != null && !port.isEmpty();
 		}
 		return super.eIsSet(featureID);
@@ -268,8 +268,8 @@ public class canTransceiverPortsImpl extends SuperTrackingTypeImpl implements ca
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
 		if (baseClass == SuperIdentifierType.class) {
 			switch (derivedFeatureID) {
-				case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__ID: return EtypesPackage.SUPER_IDENTIFIER_TYPE__ID;
-				case CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME: return EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME;
+				case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__ID: return EtypesPackage.SUPER_IDENTIFIER_TYPE__ID;
+				case CantransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME: return EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME;
 				default: return -1;
 			}
 		}
@@ -285,8 +285,8 @@ public class canTransceiverPortsImpl extends SuperTrackingTypeImpl implements ca
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
 		if (baseClass == SuperIdentifierType.class) {
 			switch (baseFeatureID) {
-				case EtypesPackage.SUPER_IDENTIFIER_TYPE__ID: return CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__ID;
-				case EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME: return CanTransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME;
+				case EtypesPackage.SUPER_IDENTIFIER_TYPE__ID: return CantransceiverPackage.CAN_TRANSCEIVER_PORTS__ID;
+				case EtypesPackage.SUPER_IDENTIFIER_TYPE__NAME: return CantransceiverPackage.CAN_TRANSCEIVER_PORTS__NAME;
 				default: return -1;
 			}
 		}

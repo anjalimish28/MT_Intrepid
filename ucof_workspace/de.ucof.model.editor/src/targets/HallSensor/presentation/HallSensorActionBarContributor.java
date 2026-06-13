@@ -1,6 +1,6 @@
 /**
  */
-package targets.HallSensor.presentation;
+package targets.hallsensor.presentation;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -42,12 +42,12 @@ import org.eclipse.ui.PartInitException;
 import ucof.presentation.UcofEditorPlugin;
 
 /**
- * This is the action bar contributor for the HallSensor model editor.
+ * This is the action bar contributor for the Hallsensor model editor.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class HallSensorActionBarContributor
+public class HallsensorActionBarContributor
 	extends EditingDomainActionBarContributor
 	implements ISelectionChangedListener {
 	/**
@@ -150,7 +150,7 @@ public class HallSensorActionBarContributor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HallSensorActionBarContributor() {
+	public HallsensorActionBarContributor() {
 		super(ADDITIONS_LAST_STYLE);
 		loadResourceAction = new LoadResourceAction();
 		validateAction = new ValidateAction();
@@ -181,7 +181,7 @@ public class HallSensorActionBarContributor
 	public void contributeToMenu(IMenuManager menuManager) {
 		super.contributeToMenu(menuManager);
 
-		IMenuManager submenuManager = new MenuManager(UcofEditorPlugin.INSTANCE.getString("_UI_HallSensorEditor_menu"), "targets.HallSensorMenuID");
+		IMenuManager submenuManager = new MenuManager(UcofEditorPlugin.INSTANCE.getString("_UI_HallsensorEditor_menu"), "targets.hallsensorMenuID");
 		menuManager.insertAfter("additions", submenuManager);
 		submenuManager.add(new Separator("settings"));
 		submenuManager.add(new Separator("actions"));

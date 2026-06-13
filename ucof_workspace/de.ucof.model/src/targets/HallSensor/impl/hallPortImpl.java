@@ -1,6 +1,6 @@
 /**
  */
-package targets.HallSensor.impl;
+package targets.hallsensor.impl;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -8,8 +8,8 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
-import targets.HallSensor.HallSensorPackage;
-import targets.HallSensor.hallPort;
+import targets.hallsensor.HallsensorPackage;
+import targets.hallsensor.hallPort;
 
 import targets.impl.SuperHardwarePortTypeImpl;
 
@@ -21,8 +21,8 @@ import targets.impl.SuperHardwarePortTypeImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link targets.HallSensor.impl.hallPortImpl#getPinName <em>Pin Name</em>}</li>
- *   <li>{@link targets.HallSensor.impl.hallPortImpl#getPinNumber <em>Pin Number</em>}</li>
+ *   <li>{@link targets.hallsensor.impl.hallPortImpl#getPinName <em>Pin Name</em>}</li>
+ *   <li>{@link targets.hallsensor.impl.hallPortImpl#getPinNumber <em>Pin Number</em>}</li>
  * </ul>
  *
  * @generated
@@ -84,7 +84,7 @@ public class hallPortImpl extends SuperHardwarePortTypeImpl implements hallPort 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return HallSensorPackage.Literals.HALL_PORT;
+		return HallsensorPackage.Literals.HALL_PORT;
 	}
 
 	/**
@@ -105,7 +105,7 @@ public class hallPortImpl extends SuperHardwarePortTypeImpl implements hallPort 
 		String oldPinName = pinName;
 		pinName = newPinName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HallSensorPackage.HALL_PORT__PIN_NAME, oldPinName, pinName));
+			eNotify(new ENotificationImpl(this, Notification.SET, HallsensorPackage.HALL_PORT__PIN_NAME, oldPinName, pinName));
 	}
 
 	/**
@@ -126,7 +126,7 @@ public class hallPortImpl extends SuperHardwarePortTypeImpl implements hallPort 
 		int oldPinNumber = pinNumber;
 		pinNumber = newPinNumber;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HallSensorPackage.HALL_PORT__PIN_NUMBER, oldPinNumber, pinNumber));
+			eNotify(new ENotificationImpl(this, Notification.SET, HallsensorPackage.HALL_PORT__PIN_NUMBER, oldPinNumber, pinNumber));
 	}
 
 	/**
@@ -137,9 +137,9 @@ public class hallPortImpl extends SuperHardwarePortTypeImpl implements hallPort 
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case HallSensorPackage.HALL_PORT__PIN_NAME:
+			case HallsensorPackage.HALL_PORT__PIN_NAME:
 				return getPinName();
-			case HallSensorPackage.HALL_PORT__PIN_NUMBER:
+			case HallsensorPackage.HALL_PORT__PIN_NUMBER:
 				return getPinNumber();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -153,10 +153,10 @@ public class hallPortImpl extends SuperHardwarePortTypeImpl implements hallPort 
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case HallSensorPackage.HALL_PORT__PIN_NAME:
+			case HallsensorPackage.HALL_PORT__PIN_NAME:
 				setPinName((String)newValue);
 				return;
-			case HallSensorPackage.HALL_PORT__PIN_NUMBER:
+			case HallsensorPackage.HALL_PORT__PIN_NUMBER:
 				setPinNumber((Integer)newValue);
 				return;
 		}
@@ -171,10 +171,10 @@ public class hallPortImpl extends SuperHardwarePortTypeImpl implements hallPort 
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case HallSensorPackage.HALL_PORT__PIN_NAME:
+			case HallsensorPackage.HALL_PORT__PIN_NAME:
 				setPinName(PIN_NAME_EDEFAULT);
 				return;
-			case HallSensorPackage.HALL_PORT__PIN_NUMBER:
+			case HallsensorPackage.HALL_PORT__PIN_NUMBER:
 				setPinNumber(PIN_NUMBER_EDEFAULT);
 				return;
 		}
@@ -189,9 +189,9 @@ public class hallPortImpl extends SuperHardwarePortTypeImpl implements hallPort 
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case HallSensorPackage.HALL_PORT__PIN_NAME:
+			case HallsensorPackage.HALL_PORT__PIN_NAME:
 				return PIN_NAME_EDEFAULT == null ? pinName != null : !PIN_NAME_EDEFAULT.equals(pinName);
-			case HallSensorPackage.HALL_PORT__PIN_NUMBER:
+			case HallsensorPackage.HALL_PORT__PIN_NUMBER:
 				return pinNumber != PIN_NUMBER_EDEFAULT;
 		}
 		return super.eIsSet(featureID);

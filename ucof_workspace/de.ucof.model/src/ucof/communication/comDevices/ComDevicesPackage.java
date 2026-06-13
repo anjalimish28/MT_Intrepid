@@ -438,6 +438,133 @@ public interface ComDevicesPackage extends EPackage {
 	 */
 	int ED247_GATEWAY_OPERATION_COUNT = SUPER_COMMUNICATION_DEVICE_TYPE_OPERATION_COUNT + 0;
 
+	/**
+	 * The meta object id for the '{@link ucof.communication.comDevices.impl.GenericGatewayImpl <em>Generic Gateway</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ucof.communication.comDevices.impl.GenericGatewayImpl
+	 * @see ucof.communication.comDevices.impl.ComDevicesPackageImpl#getGenericGateway()
+	 * @generated
+	 */
+	int GENERIC_GATEWAY = 3;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERIC_GATEWAY__ID = SUPER_COMMUNICATION_DEVICE_TYPE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERIC_GATEWAY__NAME = SUPER_COMMUNICATION_DEVICE_TYPE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERIC_GATEWAY__DOCUMENTATION = SUPER_COMMUNICATION_DEVICE_TYPE__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Modified</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERIC_GATEWAY__MODIFIED = SUPER_COMMUNICATION_DEVICE_TYPE__MODIFIED;
+
+	/**
+	 * The feature id for the '<em><b>Modifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERIC_GATEWAY__MODIFIER = SUPER_COMMUNICATION_DEVICE_TYPE__MODIFIER;
+
+	/**
+	 * The feature id for the '<em><b>Trace Link</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERIC_GATEWAY__TRACE_LINK = SUPER_COMMUNICATION_DEVICE_TYPE__TRACE_LINK;
+
+	/**
+	 * The feature id for the '<em><b>Created</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERIC_GATEWAY__CREATED = SUPER_COMMUNICATION_DEVICE_TYPE__CREATED;
+
+	/**
+	 * The feature id for the '<em><b>Creator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERIC_GATEWAY__CREATOR = SUPER_COMMUNICATION_DEVICE_TYPE__CREATOR;
+
+	/**
+	 * The feature id for the '<em><b>Version</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERIC_GATEWAY__VERSION = SUPER_COMMUNICATION_DEVICE_TYPE__VERSION;
+
+	/**
+	 * The feature id for the '<em><b>Configuration Link</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERIC_GATEWAY__CONFIGURATION_LINK = SUPER_COMMUNICATION_DEVICE_TYPE__CONFIGURATION_LINK;
+
+	/**
+	 * The feature id for the '<em><b>Ports</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERIC_GATEWAY__PORTS = SUPER_COMMUNICATION_DEVICE_TYPE__PORTS;
+
+	/**
+	 * The number of structural features of the '<em>Generic Gateway</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERIC_GATEWAY_FEATURE_COUNT = SUPER_COMMUNICATION_DEVICE_TYPE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Generic Gateway</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERIC_GATEWAY_OPERATION_COUNT = SUPER_COMMUNICATION_DEVICE_TYPE_OPERATION_COUNT + 0;
+
 
 	/**
 	 * Returns the meta object for class '{@link ucof.communication.comDevices.CommunicationDevices <em>Communication Devices</em>}'.
@@ -479,6 +606,16 @@ public interface ComDevicesPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getED247Gateway();
+
+	/**
+	 * Returns the meta object for class '{@link ucof.communication.comDevices.GenericGateway <em>Generic Gateway</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Generic Gateway</em>'.
+	 * @see ucof.communication.comDevices.GenericGateway
+	 * @generated
+	 */
+	EClass getGenericGateway();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -540,6 +677,16 @@ public interface ComDevicesPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ED247_GATEWAY = eINSTANCE.getED247Gateway();
+
+		/**
+		 * The meta object literal for the '{@link ucof.communication.comDevices.impl.GenericGatewayImpl <em>Generic Gateway</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ucof.communication.comDevices.impl.GenericGatewayImpl
+		 * @see ucof.communication.comDevices.impl.ComDevicesPackageImpl#getGenericGateway()
+		 * @generated
+		 */
+		EClass GENERIC_GATEWAY = eINSTANCE.getGenericGateway();
 
 	}
 

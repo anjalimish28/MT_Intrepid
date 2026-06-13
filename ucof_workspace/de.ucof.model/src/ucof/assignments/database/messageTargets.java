@@ -36,7 +36,9 @@ public enum messageTargets implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PORT2_PORT(1, "Port2Port", "Port2Port"), /**
+	PORT2_PORT(1, "Port2Port", "Port2Port"),
+
+	/**
 	 * The '<em><b>Interface</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -44,7 +46,9 @@ public enum messageTargets implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	INTERFACE(2, "Interface", "Interface"), /**
+	INTERFACE(2, "Interface", "Interface"),
+
+	/**
 	 * The '<em><b>HW Port</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

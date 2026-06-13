@@ -1,6 +1,6 @@
 /**
  */
-package targets.CanTransceiver;
+package targets.cantransceiver;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -16,21 +16,21 @@ import ucof.common.etypes.SuperTrackingType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link targets.CanTransceiver.canTransceiverPorts#getPort <em>Port</em>}</li>
+ *   <li>{@link targets.cantransceiver.canTransceiverPorts#getPort <em>Port</em>}</li>
  * </ul>
  *
- * @see targets.CanTransceiver.CanTransceiverPackage#getcanTransceiverPorts()
+ * @see targets.cantransceiver.CantransceiverPackage#getcanTransceiverPorts()
  * @model
  * @generated
  */
 public interface canTransceiverPorts extends SuperTrackingType, SuperIdentifierType {
 	/**
 	 * Returns the value of the '<em><b>Port</b></em>' containment reference list.
-	 * The list contents are of type {@link targets.CanTransceiver.canTransceiverPort}.
+	 * The list contents are of type {@link targets.cantransceiver.canTransceiverPort}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Port</em>' containment reference list.
-	 * @see targets.CanTransceiver.CanTransceiverPackage#getcanTransceiverPorts_Port()
+	 * @see targets.cantransceiver.CantransceiverPackage#getcanTransceiverPorts_Port()
 	 * @model containment="true"
 	 * @generated
 	 */

@@ -1,6 +1,6 @@
 /**
  */
-package targets.MotorController.provider;
+package targets.motorcontroller.provider;
 
 
 import java.util.Collection;
@@ -16,14 +16,15 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.MotorController.MotorControllerPackage;
-import targets.MotorController.esconPort;
+import targets.motorcontroller.MotorcontrollerPackage;
+import targets.motorcontroller.esconPort;
 
 import targets.provider.SuperHardwarePortTypeItemProvider;
+
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.MotorController.esconPort} object.
+ * This is the item provider adapter for a {@link targets.motorcontroller.esconPort} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -68,7 +69,7 @@ public class esconPortItemProvider extends SuperHardwarePortTypeItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_esconPort_pinName_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_esconPort_pinName_feature", "_UI_esconPort_type"),
-				 MotorControllerPackage.Literals.ESCON_PORT__PIN_NAME,
+				 MotorcontrollerPackage.Literals.ESCON_PORT__PIN_NAME,
 				 true,
 				 false,
 				 false,
@@ -115,7 +116,7 @@ public class esconPortItemProvider extends SuperHardwarePortTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(esconPort.class)) {
-			case MotorControllerPackage.ESCON_PORT__PIN_NAME:
+			case MotorcontrollerPackage.ESCON_PORT__PIN_NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

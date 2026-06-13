@@ -1,6 +1,6 @@
 /**
  */
-package targets.CanTransceiver.presentation;
+package targets.cantransceiver.presentation;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -42,12 +42,12 @@ import org.eclipse.ui.PartInitException;
 import ucof.presentation.UcofEditorPlugin;
 
 /**
- * This is the action bar contributor for the CanTransceiver model editor.
+ * This is the action bar contributor for the Cantransceiver model editor.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class CanTransceiverActionBarContributor
+public class CantransceiverActionBarContributor
 	extends EditingDomainActionBarContributor
 	implements ISelectionChangedListener {
 	/**
@@ -150,7 +150,7 @@ public class CanTransceiverActionBarContributor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CanTransceiverActionBarContributor() {
+	public CantransceiverActionBarContributor() {
 		super(ADDITIONS_LAST_STYLE);
 		loadResourceAction = new LoadResourceAction();
 		validateAction = new ValidateAction();
@@ -181,7 +181,7 @@ public class CanTransceiverActionBarContributor
 	public void contributeToMenu(IMenuManager menuManager) {
 		super.contributeToMenu(menuManager);
 
-		IMenuManager submenuManager = new MenuManager(UcofEditorPlugin.INSTANCE.getString("_UI_CanTransceiverEditor_menu"), "targets.CanTransceiverMenuID");
+		IMenuManager submenuManager = new MenuManager(UcofEditorPlugin.INSTANCE.getString("_UI_CantransceiverEditor_menu"), "targets.cantransceiverMenuID");
 		menuManager.insertAfter("additions", submenuManager);
 		submenuManager.add(new Separator("settings"));
 		submenuManager.add(new Separator("actions"));

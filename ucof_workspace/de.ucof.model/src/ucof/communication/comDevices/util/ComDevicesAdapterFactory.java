@@ -85,6 +85,10 @@ public class ComDevicesAdapterFactory extends AdapterFactoryImpl {
 				return createED247GatewayAdapter();
 			}
 			@Override
+			public Adapter caseGenericGateway(GenericGateway object) {
+				return createGenericGatewayAdapter();
+			}
+			@Override
 			public Adapter caseSuperIdentifierType(SuperIdentifierType object) {
 				return createSuperIdentifierTypeAdapter();
 			}
@@ -159,6 +163,20 @@ public class ComDevicesAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createED247GatewayAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ucof.communication.comDevices.GenericGateway <em>Generic Gateway</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ucof.communication.comDevices.GenericGateway
+	 * @generated
+	 */
+	public Adapter createGenericGatewayAdapter() {
 		return null;
 	}
 

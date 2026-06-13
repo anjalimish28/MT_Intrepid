@@ -1,6 +1,6 @@
 /**
  */
-package targets.MotorController.presentation;
+package targets.motorcontroller.presentation;
 
 
 import java.io.IOException;
@@ -155,22 +155,29 @@ import org.eclipse.emf.edit.ui.util.EditUIUtil;
 
 import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 
-import targets.MotorController.provider.MotorControllerItemProviderAdapterFactory;
+import targets.motorcontroller.provider.MotorcontrollerItemProviderAdapterFactory;
 
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 
-import targets.ADC.provider.ADCItemProviderAdapterFactory;
+import targets.adc.provider.AdcItemProviderAdapterFactory;
 
-import targets.CCDPU.provider.CCDPUItemProviderAdapterFactory;
-import targets.CanTransceiver.provider.CanTransceiverItemProviderAdapterFactory;
-import targets.HallSensor.provider.HallSensorItemProviderAdapterFactory;
-import targets.IntrepidPowerGrid.provider.IntrepidPowerGridItemProviderAdapterFactory;
-import targets.RDC.provider.RDCItemProviderAdapterFactory;
+import targets.cantransceiver.provider.CantransceiverItemProviderAdapterFactory;
 
-import targets.Sheild.provider.SheildItemProviderAdapterFactory;
+import targets.cpn.provider.CpnItemProviderAdapterFactory;
+
+import targets.hallsensor.provider.HallsensorItemProviderAdapterFactory;
+
+import targets.intrepidgateway.provider.IntrepidgatewayItemProviderAdapterFactory;
+
+import targets.intrepidpowergrid.provider.IntrepidpowergridItemProviderAdapterFactory;
 
 import targets.powergrid.provider.PowergridItemProviderAdapterFactory;
+
 import targets.provider.TargetsItemProviderAdapterFactory;
+
+import targets.rdc.provider.RdcItemProviderAdapterFactory;
+
+import targets.sheild.provider.SheildItemProviderAdapterFactory;
 
 import ucof.assignments.database.provider.DatabaseItemProviderAdapterFactory;
 
@@ -199,6 +206,7 @@ import ucof.communication.configECIC.streamTypes.provider.StreamTypesItemProvide
 import ucof.communication.connectors.provider.ConnectorsItemProviderAdapterFactory;
 
 import ucof.communication.i2c.provider.I2cItemProviderAdapterFactory;
+
 import ucof.communication.provider.CommunicationItemProviderAdapterFactory;
 
 import ucof.devices.devicetypes.a653components.a653partition.provider.A653partitionItemProviderAdapterFactory;
@@ -223,12 +231,12 @@ import ucof.provider.UcofItemProviderAdapterFactory;
 
 
 /**
- * This is an example of a MotorController model editor.
+ * This is an example of a Motorcontroller model editor.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class MotorControllerEditor
+public class MotorcontrollerEditor
 	extends MultiPageEditorPart
 	implements IEditingDomainProvider, ISelectionProvider, IMenuListener, IViewerProvider, IGotoMarker {
 	/**
@@ -390,18 +398,18 @@ public class MotorControllerEditor
 			public void partActivated(IWorkbenchPart p) {
 				if (p instanceof ContentOutline) {
 					if (((ContentOutline)p).getCurrentPage() == contentOutlinePage) {
-						getActionBarContributor().setActiveEditor(MotorControllerEditor.this);
+						getActionBarContributor().setActiveEditor(MotorcontrollerEditor.this);
 
 						setCurrentViewer(contentOutlineViewer);
 					}
 				}
 				else if (p instanceof PropertySheet) {
 					if (propertySheetPages.contains(((PropertySheet)p).getCurrentPage())) {
-						getActionBarContributor().setActiveEditor(MotorControllerEditor.this);
+						getActionBarContributor().setActiveEditor(MotorcontrollerEditor.this);
 						handleActivate();
 					}
 				}
-				else if (p == MotorControllerEditor.this) {
+				else if (p == MotorcontrollerEditor.this) {
 					handleActivate();
 				}
 			}
@@ -574,7 +582,7 @@ public class MotorControllerEditor
 								 public void run() {
 									 removedResources.addAll(visitor.getRemovedResources());
 									 if (!isDirty()) {
-										 getSite().getPage().closeEditor(MotorControllerEditor.this, false);
+										 getSite().getPage().closeEditor(MotorcontrollerEditor.this, false);
 									 }
 								 }
 							 });
@@ -585,7 +593,7 @@ public class MotorControllerEditor
 							(new Runnable() {
 								 public void run() {
 									 changedResources.addAll(visitor.getChangedResources());
-									 if (getSite().getPage().getActiveEditor() == MotorControllerEditor.this) {
+									 if (getSite().getPage().getActiveEditor() == MotorcontrollerEditor.this) {
 										 handleActivate();
 									 }
 								 }
@@ -617,7 +625,7 @@ public class MotorControllerEditor
 
 		if (!removedResources.isEmpty()) {
 			if (handleDirtyConflict()) {
-				getSite().getPage().closeEditor(MotorControllerEditor.this, false);
+				getSite().getPage().closeEditor(MotorcontrollerEditor.this, false);
 			}
 			else {
 				removedResources.clear();
@@ -745,7 +753,7 @@ public class MotorControllerEditor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MotorControllerEditor() {
+	public MotorcontrollerEditor() {
 		super();
 		initializeEditingDomain();
 	}
@@ -788,14 +796,15 @@ public class MotorControllerEditor
 		adapterFactory.addAdapterFactory(new DatabaseItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new TargetsItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new PowergridItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new RDCItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new ADCItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new RdcItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new AdcItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new SheildItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new MotorControllerItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new CanTransceiverItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new HallSensorItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new CCDPUItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new IntrepidPowerGridItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new MotorcontrollerItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new CantransceiverItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new HallsensorItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new CpnItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new IntrepidpowergridItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new IntrepidgatewayItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
 		// Create the command stack that will notify this editor as commands are executed.
@@ -1116,7 +1125,7 @@ public class MotorControllerEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), MotorControllerEditor.this) {
+					new ViewerPane(getSite().getPage(), MotorcontrollerEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							Tree tree = new Tree(composite, SWT.MULTI);
@@ -1151,7 +1160,7 @@ public class MotorControllerEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), MotorControllerEditor.this) {
+					new ViewerPane(getSite().getPage(), MotorcontrollerEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							Tree tree = new Tree(composite, SWT.MULTI);
@@ -1180,7 +1189,7 @@ public class MotorControllerEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), MotorControllerEditor.this) {
+					new ViewerPane(getSite().getPage(), MotorcontrollerEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new ListViewer(composite);
@@ -1205,7 +1214,7 @@ public class MotorControllerEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), MotorControllerEditor.this) {
+					new ViewerPane(getSite().getPage(), MotorcontrollerEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TreeViewer(composite);
@@ -1232,7 +1241,7 @@ public class MotorControllerEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), MotorControllerEditor.this) {
+					new ViewerPane(getSite().getPage(), MotorcontrollerEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TableViewer(composite);
@@ -1275,7 +1284,7 @@ public class MotorControllerEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), MotorControllerEditor.this) {
+					new ViewerPane(getSite().getPage(), MotorcontrollerEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TreeViewer(composite);
@@ -1497,8 +1506,8 @@ public class MotorControllerEditor
 			new ExtendedPropertySheetPage(editingDomain, ExtendedPropertySheetPage.Decoration.NONE, null, 0, false) {
 				@Override
 				public void setSelectionToViewer(List<?> selection) {
-					MotorControllerEditor.this.setSelectionToViewer(selection);
-					MotorControllerEditor.this.setFocus();
+					MotorcontrollerEditor.this.setSelectionToViewer(selection);
+					MotorcontrollerEditor.this.setFocus();
 				}
 
 				@Override

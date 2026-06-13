@@ -10,9 +10,13 @@ import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.ResourceLocator;
+
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
 import ucof.common.etypes.provider.SuperPortTypeItemProvider;
+
 import ucof.devices.ports.SuperIntraCommunicationPortType;
+
 import ucof.provider.UcofEditPlugin;
 
 /**

@@ -1,6 +1,6 @@
 /**
  */
-package targets.MotorController.provider;
+package targets.motorcontroller.provider;
 
 
 import java.util.Collection;
@@ -18,9 +18,9 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.MotorController.MotorControllerFactory;
-import targets.MotorController.MotorControllerPackage;
-import targets.MotorController.esconPorts;
+import targets.motorcontroller.MotorcontrollerFactory;
+import targets.motorcontroller.MotorcontrollerPackage;
+import targets.motorcontroller.esconPorts;
 
 import ucof.common.etypes.EtypesPackage;
 
@@ -29,7 +29,7 @@ import ucof.common.etypes.provider.SuperTrackingTypeItemProvider;
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.MotorController.esconPorts} object.
+ * This is the item provider adapter for a {@link targets.motorcontroller.esconPorts} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -118,7 +118,7 @@ public class esconPortsItemProvider extends SuperTrackingTypeItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(MotorControllerPackage.Literals.ESCON_PORTS__PORT);
+			childrenFeatures.add(MotorcontrollerPackage.Literals.ESCON_PORTS__PORT);
 		}
 		return childrenFeatures;
 	}
@@ -174,11 +174,11 @@ public class esconPortsItemProvider extends SuperTrackingTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(esconPorts.class)) {
-			case MotorControllerPackage.ESCON_PORTS__ID:
-			case MotorControllerPackage.ESCON_PORTS__NAME:
+			case MotorcontrollerPackage.ESCON_PORTS__ID:
+			case MotorcontrollerPackage.ESCON_PORTS__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case MotorControllerPackage.ESCON_PORTS__PORT:
+			case MotorcontrollerPackage.ESCON_PORTS__PORT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -198,8 +198,8 @@ public class esconPortsItemProvider extends SuperTrackingTypeItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(MotorControllerPackage.Literals.ESCON_PORTS__PORT,
-				 MotorControllerFactory.eINSTANCE.createesconPort()));
+				(MotorcontrollerPackage.Literals.ESCON_PORTS__PORT,
+				 MotorcontrollerFactory.eINSTANCE.createesconPort()));
 	}
 
 	/**

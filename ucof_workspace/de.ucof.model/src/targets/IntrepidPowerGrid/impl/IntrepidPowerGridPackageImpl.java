@@ -1,52 +1,56 @@
 /**
  */
-package targets.IntrepidPowerGrid.impl;
+package targets.intrepidpowergrid.impl;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import targets.ADC.ADCPackage;
-
-import targets.ADC.impl.ADCPackageImpl;
-
-import targets.CCDPU.CCDPUPackage;
-
-import targets.CCDPU.impl.CCDPUPackageImpl;
-
-import targets.CanTransceiver.CanTransceiverPackage;
-
-import targets.CanTransceiver.impl.CanTransceiverPackageImpl;
-
-import targets.HallSensor.HallSensorPackage;
-
-import targets.HallSensor.impl.HallSensorPackageImpl;
-
-import targets.IntrepidPowerGrid.IntrepidPowerGridFactory;
-import targets.IntrepidPowerGrid.IntrepidPowerGridPackage;
-import targets.IntrepidPowerGrid.intrepidElectricalGrid;
-import targets.IntrepidPowerGrid.intrepidElectricalInterface;
-
-import targets.MotorController.MotorControllerPackage;
-
-import targets.MotorController.impl.MotorControllerPackageImpl;
-
-import targets.RDC.RDCPackage;
-
-import targets.RDC.impl.RDCPackageImpl;
-
-import targets.Sheild.SheildPackage;
-
-import targets.Sheild.impl.SheildPackageImpl;
-
 import targets.TargetsPackage;
 
+import targets.adc.AdcPackage;
+
+import targets.adc.impl.AdcPackageImpl;
+
+import targets.cantransceiver.CantransceiverPackage;
+
+import targets.cantransceiver.impl.CantransceiverPackageImpl;
+
+import targets.cpn.CpnPackage;
+
+import targets.cpn.impl.CpnPackageImpl;
+
+import targets.hallsensor.HallsensorPackage;
+
+import targets.hallsensor.impl.HallsensorPackageImpl;
+
 import targets.impl.TargetsPackageImpl;
+
+import targets.intrepidgateway.IntrepidgatewayPackage;
+
+import targets.intrepidgateway.impl.IntrepidgatewayPackageImpl;
+
+import targets.intrepidpowergrid.IntrepidpowergridFactory;
+import targets.intrepidpowergrid.IntrepidpowergridPackage;
+import targets.intrepidpowergrid.intrepidElectricalGrid;
+import targets.intrepidpowergrid.intrepidElectricalInterface;
+
+import targets.motorcontroller.MotorcontrollerPackage;
+
+import targets.motorcontroller.impl.MotorcontrollerPackageImpl;
 
 import targets.powergrid.PowergridPackage;
 
 import targets.powergrid.impl.PowergridPackageImpl;
+
+import targets.rdc.RdcPackage;
+
+import targets.rdc.impl.RdcPackageImpl;
+
+import targets.sheild.SheildPackage;
+
+import targets.sheild.impl.SheildPackageImpl;
 
 import ucof.UcofPackage;
 
@@ -158,7 +162,7 @@ import ucof.impl.UcofPackageImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class IntrepidPowerGridPackageImpl extends EPackageImpl implements IntrepidPowerGridPackage {
+public class IntrepidpowergridPackageImpl extends EPackageImpl implements IntrepidpowergridPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -184,12 +188,12 @@ public class IntrepidPowerGridPackageImpl extends EPackageImpl implements Intrep
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see targets.IntrepidPowerGrid.IntrepidPowerGridPackage#eNS_URI
+	 * @see targets.intrepidpowergrid.IntrepidpowergridPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
-	private IntrepidPowerGridPackageImpl() {
-		super(eNS_URI, IntrepidPowerGridFactory.eINSTANCE);
+	private IntrepidpowergridPackageImpl() {
+		super(eNS_URI, IntrepidpowergridFactory.eINSTANCE);
 	}
 	/**
 	 * <!-- begin-user-doc -->
@@ -201,7 +205,7 @@ public class IntrepidPowerGridPackageImpl extends EPackageImpl implements Intrep
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
 	 *
-	 * <p>This method is used to initialize {@link IntrepidPowerGridPackage#eINSTANCE} when that field is accessed.
+	 * <p>This method is used to initialize {@link IntrepidpowergridPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -210,12 +214,12 @@ public class IntrepidPowerGridPackageImpl extends EPackageImpl implements Intrep
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static IntrepidPowerGridPackage init() {
-		if (isInited) return (IntrepidPowerGridPackage)EPackage.Registry.INSTANCE.getEPackage(IntrepidPowerGridPackage.eNS_URI);
+	public static IntrepidpowergridPackage init() {
+		if (isInited) return (IntrepidpowergridPackage)EPackage.Registry.INSTANCE.getEPackage(IntrepidpowergridPackage.eNS_URI);
 
 		// Obtain or create and register package
-		Object registeredIntrepidPowerGridPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
-		IntrepidPowerGridPackageImpl theIntrepidPowerGridPackage = registeredIntrepidPowerGridPackage instanceof IntrepidPowerGridPackageImpl ? (IntrepidPowerGridPackageImpl)registeredIntrepidPowerGridPackage : new IntrepidPowerGridPackageImpl();
+		Object registeredIntrepidpowergridPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		IntrepidpowergridPackageImpl theIntrepidpowergridPackage = registeredIntrepidpowergridPackage instanceof IntrepidpowergridPackageImpl ? (IntrepidpowergridPackageImpl)registeredIntrepidpowergridPackage : new IntrepidpowergridPackageImpl();
 
 		isInited = true;
 
@@ -276,23 +280,25 @@ public class IntrepidPowerGridPackageImpl extends EPackageImpl implements Intrep
 		TargetsPackageImpl theTargetsPackage = (TargetsPackageImpl)(registeredPackage instanceof TargetsPackageImpl ? registeredPackage : TargetsPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PowergridPackage.eNS_URI);
 		PowergridPackageImpl thePowergridPackage = (PowergridPackageImpl)(registeredPackage instanceof PowergridPackageImpl ? registeredPackage : PowergridPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(RDCPackage.eNS_URI);
-		RDCPackageImpl theRDCPackage = (RDCPackageImpl)(registeredPackage instanceof RDCPackageImpl ? registeredPackage : RDCPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ADCPackage.eNS_URI);
-		ADCPackageImpl theADCPackage = (ADCPackageImpl)(registeredPackage instanceof ADCPackageImpl ? registeredPackage : ADCPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(RdcPackage.eNS_URI);
+		RdcPackageImpl theRdcPackage = (RdcPackageImpl)(registeredPackage instanceof RdcPackageImpl ? registeredPackage : RdcPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AdcPackage.eNS_URI);
+		AdcPackageImpl theAdcPackage = (AdcPackageImpl)(registeredPackage instanceof AdcPackageImpl ? registeredPackage : AdcPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(SheildPackage.eNS_URI);
 		SheildPackageImpl theSheildPackage = (SheildPackageImpl)(registeredPackage instanceof SheildPackageImpl ? registeredPackage : SheildPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MotorControllerPackage.eNS_URI);
-		MotorControllerPackageImpl theMotorControllerPackage = (MotorControllerPackageImpl)(registeredPackage instanceof MotorControllerPackageImpl ? registeredPackage : MotorControllerPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CanTransceiverPackage.eNS_URI);
-		CanTransceiverPackageImpl theCanTransceiverPackage = (CanTransceiverPackageImpl)(registeredPackage instanceof CanTransceiverPackageImpl ? registeredPackage : CanTransceiverPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(HallSensorPackage.eNS_URI);
-		HallSensorPackageImpl theHallSensorPackage = (HallSensorPackageImpl)(registeredPackage instanceof HallSensorPackageImpl ? registeredPackage : HallSensorPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CCDPUPackage.eNS_URI);
-		CCDPUPackageImpl theCCDPUPackage = (CCDPUPackageImpl)(registeredPackage instanceof CCDPUPackageImpl ? registeredPackage : CCDPUPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MotorcontrollerPackage.eNS_URI);
+		MotorcontrollerPackageImpl theMotorcontrollerPackage = (MotorcontrollerPackageImpl)(registeredPackage instanceof MotorcontrollerPackageImpl ? registeredPackage : MotorcontrollerPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CantransceiverPackage.eNS_URI);
+		CantransceiverPackageImpl theCantransceiverPackage = (CantransceiverPackageImpl)(registeredPackage instanceof CantransceiverPackageImpl ? registeredPackage : CantransceiverPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(HallsensorPackage.eNS_URI);
+		HallsensorPackageImpl theHallsensorPackage = (HallsensorPackageImpl)(registeredPackage instanceof HallsensorPackageImpl ? registeredPackage : HallsensorPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CpnPackage.eNS_URI);
+		CpnPackageImpl theCpnPackage = (CpnPackageImpl)(registeredPackage instanceof CpnPackageImpl ? registeredPackage : CpnPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(IntrepidgatewayPackage.eNS_URI);
+		IntrepidgatewayPackageImpl theIntrepidgatewayPackage = (IntrepidgatewayPackageImpl)(registeredPackage instanceof IntrepidgatewayPackageImpl ? registeredPackage : IntrepidgatewayPackage.eINSTANCE);
 
 		// Create package meta-data objects
-		theIntrepidPowerGridPackage.createPackageContents();
+		theIntrepidpowergridPackage.createPackageContents();
 		theUcofPackage.createPackageContents();
 		theEnumsPackage.createPackageContents();
 		theEtypesPackage.createPackageContents();
@@ -321,16 +327,17 @@ public class IntrepidPowerGridPackageImpl extends EPackageImpl implements Intrep
 		theDatabasePackage.createPackageContents();
 		theTargetsPackage.createPackageContents();
 		thePowergridPackage.createPackageContents();
-		theRDCPackage.createPackageContents();
-		theADCPackage.createPackageContents();
+		theRdcPackage.createPackageContents();
+		theAdcPackage.createPackageContents();
 		theSheildPackage.createPackageContents();
-		theMotorControllerPackage.createPackageContents();
-		theCanTransceiverPackage.createPackageContents();
-		theHallSensorPackage.createPackageContents();
-		theCCDPUPackage.createPackageContents();
+		theMotorcontrollerPackage.createPackageContents();
+		theCantransceiverPackage.createPackageContents();
+		theHallsensorPackage.createPackageContents();
+		theCpnPackage.createPackageContents();
+		theIntrepidgatewayPackage.createPackageContents();
 
 		// Initialize created meta-data
-		theIntrepidPowerGridPackage.initializePackageContents();
+		theIntrepidpowergridPackage.initializePackageContents();
 		theUcofPackage.initializePackageContents();
 		theEnumsPackage.initializePackageContents();
 		theEtypesPackage.initializePackageContents();
@@ -359,20 +366,21 @@ public class IntrepidPowerGridPackageImpl extends EPackageImpl implements Intrep
 		theDatabasePackage.initializePackageContents();
 		theTargetsPackage.initializePackageContents();
 		thePowergridPackage.initializePackageContents();
-		theRDCPackage.initializePackageContents();
-		theADCPackage.initializePackageContents();
+		theRdcPackage.initializePackageContents();
+		theAdcPackage.initializePackageContents();
 		theSheildPackage.initializePackageContents();
-		theMotorControllerPackage.initializePackageContents();
-		theCanTransceiverPackage.initializePackageContents();
-		theHallSensorPackage.initializePackageContents();
-		theCCDPUPackage.initializePackageContents();
+		theMotorcontrollerPackage.initializePackageContents();
+		theCantransceiverPackage.initializePackageContents();
+		theHallsensorPackage.initializePackageContents();
+		theCpnPackage.initializePackageContents();
+		theIntrepidgatewayPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
-		theIntrepidPowerGridPackage.freeze();
+		theIntrepidpowergridPackage.freeze();
 
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(IntrepidPowerGridPackage.eNS_URI, theIntrepidPowerGridPackage);
-		return theIntrepidPowerGridPackage;
+		EPackage.Registry.INSTANCE.put(IntrepidpowergridPackage.eNS_URI, theIntrepidpowergridPackage);
+		return theIntrepidpowergridPackage;
 	}
 
 	/**
@@ -398,8 +406,8 @@ public class IntrepidPowerGridPackageImpl extends EPackageImpl implements Intrep
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntrepidPowerGridFactory getIntrepidPowerGridFactory() {
-		return (IntrepidPowerGridFactory)getEFactoryInstance();
+	public IntrepidpowergridFactory getIntrepidpowergridFactory() {
+		return (IntrepidpowergridFactory)getEFactoryInstance();
 	}
 
 	/**
@@ -466,4 +474,4 @@ public class IntrepidPowerGridPackageImpl extends EPackageImpl implements Intrep
 		initEClass(intrepidElectricalInterfaceEClass, intrepidElectricalInterface.class, "intrepidElectricalInterface", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 	}
 
-} //IntrepidPowerGridPackageImpl
+} //IntrepidpowergridPackageImpl

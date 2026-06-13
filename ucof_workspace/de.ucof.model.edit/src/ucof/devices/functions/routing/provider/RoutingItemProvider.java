@@ -15,7 +15,9 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
 import ucof.devices.functions.provider.SuperFunctionTypeItemProvider;
+
 import ucof.devices.functions.routing.Routing;
 import ucof.devices.functions.routing.RoutingFactory;
 import ucof.devices.functions.routing.RoutingPackage;

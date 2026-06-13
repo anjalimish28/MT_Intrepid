@@ -1,6 +1,6 @@
 /**
  */
-package targets.RDC;
+package targets.rdc;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,17 +9,17 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see targets.RDC.RDCPackage
+ * @see targets.rdc.RdcPackage
  * @generated
  */
-public interface RDCFactory extends EFactory {
+public interface RdcFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	RDCFactory eINSTANCE = targets.RDC.impl.RDCFactoryImpl.init();
+	RdcFactory eINSTANCE = targets.rdc.impl.RdcFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>stm32f446re</em>'.
@@ -29,6 +29,15 @@ public interface RDCFactory extends EFactory {
 	 * @generated
 	 */
 	stm32f446re createstm32f446re();
+
+	/**
+	 * Returns a new object of class '<em>stm Timing Config</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>stm Timing Config</em>'.
+	 * @generated
+	 */
+	stmTimingConfig createstmTimingConfig();
 
 	/**
 	 * Returns a new object of class '<em>stm Ports</em>'.
@@ -55,6 +64,6 @@ public interface RDCFactory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	RDCPackage getRDCPackage();
+	RdcPackage getRdcPackage();
 
-} //RDCFactory
+} //RdcFactory

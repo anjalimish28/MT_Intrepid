@@ -13,7 +13,9 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
+
 import ucof.devices.functions.impl.SuperFunctionTypeImpl;
+
 import ucof.devices.functions.routing.PayloadRouting;
 import ucof.devices.functions.routing.Routing;
 import ucof.devices.functions.routing.RoutingPackage;

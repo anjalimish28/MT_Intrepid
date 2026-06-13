@@ -1,6 +1,6 @@
 /**
  */
-package targets.CanTransceiver.provider;
+package targets.cantransceiver.provider;
 
 
 import java.util.Collection;
@@ -16,18 +16,19 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.CanTransceiver.CanTransceiverFactory;
-import targets.CanTransceiver.CanTransceiverPackage;
-import targets.CanTransceiver.sn65hvd230;
+import targets.cantransceiver.CantransceiverFactory;
+import targets.cantransceiver.CantransceiverPackage;
+import targets.cantransceiver.sn65hvd230;
 
 import targets.powergrid.PowergridFactory;
 import targets.powergrid.PowergridPackage;
+
 import targets.provider.SuperTargetTypeItemProvider;
 
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.CanTransceiver.sn65hvd230} object.
+ * This is the item provider adapter for a {@link targets.cantransceiver.sn65hvd230} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -71,7 +72,7 @@ public class sn65hvd230ItemProvider extends SuperTargetTypeItemProvider {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(PowergridPackage.Literals.SUPER_POWER_TYPE__ELECTRICAL_INTERFACES);
-			childrenFeatures.add(CanTransceiverPackage.Literals.SN65HVD230__PORTS);
+			childrenFeatures.add(CantransceiverPackage.Literals.SN65HVD230__PORTS);
 		}
 		return childrenFeatures;
 	}
@@ -127,8 +128,8 @@ public class sn65hvd230ItemProvider extends SuperTargetTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(sn65hvd230.class)) {
-			case CanTransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES:
-			case CanTransceiverPackage.SN65HVD230__PORTS:
+			case CantransceiverPackage.SN65HVD230__ELECTRICAL_INTERFACES:
+			case CantransceiverPackage.SN65HVD230__PORTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -153,8 +154,8 @@ public class sn65hvd230ItemProvider extends SuperTargetTypeItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(CanTransceiverPackage.Literals.SN65HVD230__PORTS,
-				 CanTransceiverFactory.eINSTANCE.createcanTransceiverPorts()));
+				(CantransceiverPackage.Literals.SN65HVD230__PORTS,
+				 CantransceiverFactory.eINSTANCE.createcanTransceiverPorts()));
 	}
 
 	/**

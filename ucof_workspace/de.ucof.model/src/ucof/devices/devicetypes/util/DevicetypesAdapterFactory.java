@@ -12,7 +12,9 @@ import org.eclipse.emf.ecore.EObject;
 import ucof.common.etypes.SuperDeviceType;
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
+
 import ucof.devices.SuperPlatformDeviceType;
+
 import ucof.devices.devicetypes.*;
 
 /**

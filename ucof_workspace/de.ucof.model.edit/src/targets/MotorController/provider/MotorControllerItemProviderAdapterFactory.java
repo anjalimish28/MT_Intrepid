@@ -1,6 +1,6 @@
 /**
  */
-package targets.MotorController.provider;
+package targets.motorcontroller.provider;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,7 +21,7 @@ import org.eclipse.emf.edit.provider.INotifyChangedListener;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 
-import targets.MotorController.util.MotorControllerAdapterFactory;
+import targets.motorcontroller.util.MotorcontrollerAdapterFactory;
 
 /**
  * This is the factory that is used to provide the interfaces needed to support Viewers.
@@ -32,7 +32,7 @@ import targets.MotorController.util.MotorControllerAdapterFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class MotorControllerItemProviderAdapterFactory extends MotorControllerAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
+public class MotorcontrollerItemProviderAdapterFactory extends MotorcontrollerAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
 	/**
 	 * This keeps track of the root adapter factory that delegates to this adapter factory.
 	 * <!-- begin-user-doc -->
@@ -63,7 +63,7 @@ public class MotorControllerItemProviderAdapterFactory extends MotorControllerAd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MotorControllerItemProviderAdapterFactory() {
+	public MotorcontrollerItemProviderAdapterFactory() {
 		supportedTypes.add(IEditingDomainItemProvider.class);
 		supportedTypes.add(IStructuredItemContentProvider.class);
 		supportedTypes.add(ITreeItemContentProvider.class);
@@ -72,7 +72,7 @@ public class MotorControllerItemProviderAdapterFactory extends MotorControllerAd
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.MotorController.escon409510} instances.
+	 * This keeps track of the one adapter used for all {@link targets.motorcontroller.escon409510} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -80,7 +80,7 @@ public class MotorControllerItemProviderAdapterFactory extends MotorControllerAd
 	protected escon409510ItemProvider escon409510ItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.MotorController.escon409510}.
+	 * This creates an adapter for a {@link targets.motorcontroller.escon409510}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -95,7 +95,7 @@ public class MotorControllerItemProviderAdapterFactory extends MotorControllerAd
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.MotorController.esconPorts} instances.
+	 * This keeps track of the one adapter used for all {@link targets.motorcontroller.esconPorts} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -103,7 +103,7 @@ public class MotorControllerItemProviderAdapterFactory extends MotorControllerAd
 	protected esconPortsItemProvider esconPortsItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.MotorController.esconPorts}.
+	 * This creates an adapter for a {@link targets.motorcontroller.esconPorts}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -118,7 +118,7 @@ public class MotorControllerItemProviderAdapterFactory extends MotorControllerAd
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link targets.MotorController.esconPort} instances.
+	 * This keeps track of the one adapter used for all {@link targets.motorcontroller.esconPort} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -126,7 +126,7 @@ public class MotorControllerItemProviderAdapterFactory extends MotorControllerAd
 	protected esconPortItemProvider esconPortItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link targets.MotorController.esconPort}.
+	 * This creates an adapter for a {@link targets.motorcontroller.esconPort}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

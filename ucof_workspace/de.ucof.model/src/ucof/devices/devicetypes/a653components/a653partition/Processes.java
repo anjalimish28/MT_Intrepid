@@ -3,6 +3,7 @@
 package ucof.devices.devicetypes.a653components.a653partition;
 
 import org.eclipse.emf.common.util.EList;
+
 import ucof.common.etypes.SuperIdentifierType;
 
 /**

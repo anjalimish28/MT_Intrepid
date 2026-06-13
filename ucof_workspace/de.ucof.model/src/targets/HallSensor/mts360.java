@@ -1,8 +1,9 @@
 /**
  */
-package targets.HallSensor;
+package targets.hallsensor;
 
 import targets.SuperTargetType;
+
 import targets.powergrid.SuperPowerType;
 
 /**
@@ -14,10 +15,10 @@ import targets.powergrid.SuperPowerType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link targets.HallSensor.mts360#getPorts <em>Ports</em>}</li>
+ *   <li>{@link targets.hallsensor.mts360#getPorts <em>Ports</em>}</li>
  * </ul>
  *
- * @see targets.HallSensor.HallSensorPackage#getmts360()
+ * @see targets.hallsensor.HallsensorPackage#getmts360()
  * @model
  * @generated
  */
@@ -28,14 +29,14 @@ public interface mts360 extends SuperTargetType, SuperPowerType {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ports</em>' containment reference.
 	 * @see #setPorts(hallPorts)
-	 * @see targets.HallSensor.HallSensorPackage#getmts360_Ports()
+	 * @see targets.hallsensor.HallsensorPackage#getmts360_Ports()
 	 * @model containment="true"
 	 * @generated
 	 */
 	hallPorts getPorts();
 
 	/**
-	 * Sets the value of the '{@link targets.HallSensor.mts360#getPorts <em>Ports</em>}' containment reference.
+	 * Sets the value of the '{@link targets.hallsensor.mts360#getPorts <em>Ports</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Ports</em>' containment reference.

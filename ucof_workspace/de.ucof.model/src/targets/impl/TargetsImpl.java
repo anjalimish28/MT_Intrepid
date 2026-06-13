@@ -3,8 +3,8 @@
 package targets.impl;
 
 import java.util.Collection;
-
 import java.util.Date;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -14,15 +14,20 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
+
 import targets.SuperTargetType;
 import targets.Targets;
 import targets.TargetsPackage;
+
 import targets.powergrid.ElectricalPowerGridSet;
 import targets.powergrid.PowerConnectionSet;
+
 import ucof.common.etypes.EtypesPackage;
 import ucof.common.etypes.SuperTrackingType;
+
 import ucof.common.etypes.impl.SuperIdentifierTypeImpl;
 
 /**
@@ -57,6 +62,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected static final String DOCUMENTATION_EDEFAULT = "";
+
 	/**
 	 * The cached value of the '{@link #getDocumentation() <em>Documentation</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -66,6 +72,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected String documentation = DOCUMENTATION_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getModified() <em>Modified</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -75,6 +82,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected static final Date MODIFIED_EDEFAULT = null;
+
 	/**
 	 * The cached value of the '{@link #getModified() <em>Modified</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -84,6 +92,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected Date modified = MODIFIED_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getModifier() <em>Modifier</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -93,6 +102,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected static final String MODIFIER_EDEFAULT = null;
+
 	/**
 	 * The cached value of the '{@link #getModifier() <em>Modifier</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -102,6 +112,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected String modifier = MODIFIER_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getTraceLink() <em>Trace Link</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -111,6 +122,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected static final String TRACE_LINK_EDEFAULT = "";
+
 	/**
 	 * The cached value of the '{@link #getTraceLink() <em>Trace Link</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -120,6 +132,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected String traceLink = TRACE_LINK_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getCreated() <em>Created</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -129,6 +142,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected static final Date CREATED_EDEFAULT = null;
+
 	/**
 	 * The cached value of the '{@link #getCreated() <em>Created</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -138,6 +152,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected Date created = CREATED_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getCreator() <em>Creator</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -147,6 +162,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected static final String CREATOR_EDEFAULT = null;
+
 	/**
 	 * The cached value of the '{@link #getCreator() <em>Creator</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -156,6 +172,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected String creator = CREATOR_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getVersion() <em>Version</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -165,6 +182,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected static final float VERSION_EDEFAULT = 0.0F;
+
 	/**
 	 * The cached value of the '{@link #getVersion() <em>Version</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -174,6 +192,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected float version = VERSION_EDEFAULT;
+
 	/**
 	 * The cached value of the '{@link #getTargetConfiguration() <em>Target Configuration</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -193,6 +212,7 @@ public class TargetsImpl extends SuperIdentifierTypeImpl implements Targets {
 	 * @ordered
 	 */
 	protected EList<PowerConnectionSet> powerConnectionSet;
+
 	/**
 	 * The cached value of the '{@link #getElectricalPowerGridSet() <em>Electrical Power Grid Set</em>}' containment reference list.
 	 * <!-- begin-user-doc -->

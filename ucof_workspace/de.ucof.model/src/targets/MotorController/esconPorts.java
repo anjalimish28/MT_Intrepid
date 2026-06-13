@@ -1,6 +1,6 @@
 /**
  */
-package targets.MotorController;
+package targets.motorcontroller;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -16,21 +16,21 @@ import ucof.common.etypes.SuperTrackingType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link targets.MotorController.esconPorts#getPort <em>Port</em>}</li>
+ *   <li>{@link targets.motorcontroller.esconPorts#getPort <em>Port</em>}</li>
  * </ul>
  *
- * @see targets.MotorController.MotorControllerPackage#getesconPorts()
+ * @see targets.motorcontroller.MotorcontrollerPackage#getesconPorts()
  * @model
  * @generated
  */
 public interface esconPorts extends SuperTrackingType, SuperIdentifierType {
 	/**
 	 * Returns the value of the '<em><b>Port</b></em>' containment reference list.
-	 * The list contents are of type {@link targets.MotorController.esconPort}.
+	 * The list contents are of type {@link targets.motorcontroller.esconPort}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Port</em>' containment reference list.
-	 * @see targets.MotorController.MotorControllerPackage#getesconPorts_Port()
+	 * @see targets.motorcontroller.MotorcontrollerPackage#getesconPorts_Port()
 	 * @model containment="true"
 	 * @generated
 	 */

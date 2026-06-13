@@ -1,6 +1,6 @@
 /**
  */
-package targets.RDC.util;
+package targets.rdc.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -9,12 +9,13 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
-import targets.RDC.*;
-
 import targets.SuperHardwarePortType;
 import targets.SuperTargetType;
 
 import targets.powergrid.SuperPowerType;
+
+import targets.rdc.*;
+
 import ucof.common.etypes.SuperIdentifierType;
 import ucof.common.etypes.SuperTrackingType;
 
@@ -23,17 +24,17 @@ import ucof.common.etypes.SuperTrackingType;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see targets.RDC.RDCPackage
+ * @see targets.rdc.RdcPackage
  * @generated
  */
-public class RDCAdapterFactory extends AdapterFactoryImpl {
+public class RdcAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static RDCPackage modelPackage;
+	protected static RdcPackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -41,9 +42,9 @@ public class RDCAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RDCAdapterFactory() {
+	public RdcAdapterFactory() {
 		if (modelPackage == null) {
-			modelPackage = RDCPackage.eINSTANCE;
+			modelPackage = RdcPackage.eINSTANCE;
 		}
 	}
 
@@ -72,11 +73,15 @@ public class RDCAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RDCSwitch<Adapter> modelSwitch =
-		new RDCSwitch<Adapter>() {
+	protected RdcSwitch<Adapter> modelSwitch =
+		new RdcSwitch<Adapter>() {
 			@Override
 			public Adapter casestm32f446re(stm32f446re object) {
 				return createstm32f446reAdapter();
+			}
+			@Override
+			public Adapter casestmTimingConfig(stmTimingConfig object) {
+				return createstmTimingConfigAdapter();
 			}
 			@Override
 			public Adapter casestmPorts(stmPorts object) {
@@ -95,12 +100,12 @@ public class RDCAdapterFactory extends AdapterFactoryImpl {
 				return createSuperTrackingTypeAdapter();
 			}
 			@Override
-			public Adapter caseSuperTargetType(SuperTargetType object) {
-				return createSuperTargetTypeAdapter();
-			}
-			@Override
 			public Adapter caseSuperPowerType(SuperPowerType object) {
 				return createSuperPowerTypeAdapter();
+			}
+			@Override
+			public Adapter caseSuperTargetType(SuperTargetType object) {
+				return createSuperTargetTypeAdapter();
 			}
 			@Override
 			public Adapter caseSuperHardwarePortType(SuperHardwarePortType object) {
@@ -127,13 +132,13 @@ public class RDCAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.RDC.stm32f446re <em>stm32f446re</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.rdc.stm32f446re <em>stm32f446re</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.RDC.stm32f446re
+	 * @see targets.rdc.stm32f446re
 	 * @generated
 	 */
 	public Adapter createstm32f446reAdapter() {
@@ -141,13 +146,27 @@ public class RDCAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.RDC.stmPorts <em>stm Ports</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.rdc.stmTimingConfig <em>stm Timing Config</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.RDC.stmPorts
+	 * @see targets.rdc.stmTimingConfig
+	 * @generated
+	 */
+	public Adapter createstmTimingConfigAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link targets.rdc.stmPorts <em>stm Ports</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see targets.rdc.stmPorts
 	 * @generated
 	 */
 	public Adapter createstmPortsAdapter() {
@@ -155,13 +174,13 @@ public class RDCAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link targets.RDC.stmPort <em>stm Port</em>}'.
+	 * Creates a new adapter for an object of class '{@link targets.rdc.stmPort <em>stm Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see targets.RDC.stmPort
+	 * @see targets.rdc.stmPort
 	 * @generated
 	 */
 	public Adapter createstmPortAdapter() {
@@ -250,4 +269,4 @@ public class RDCAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //RDCAdapterFactory
+} //RdcAdapterFactory

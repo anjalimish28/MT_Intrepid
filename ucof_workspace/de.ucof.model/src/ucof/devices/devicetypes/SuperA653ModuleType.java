@@ -3,6 +3,7 @@
 package ucof.devices.devicetypes;
 
 import ucof.devices.SuperPlatformDeviceType;
+
 import ucof.devices.devicetypes.a653components.ModuleSchedule;
 
 import ucof.devices.devicetypes.a653components.a653partition.ModulePartitions;

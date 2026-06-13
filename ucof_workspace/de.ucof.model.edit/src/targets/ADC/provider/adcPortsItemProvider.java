@@ -1,6 +1,6 @@
 /**
  */
-package targets.ADC.provider;
+package targets.adc.provider;
 
 
 import java.util.Collection;
@@ -18,16 +18,18 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import targets.ADC.ADCFactory;
-import targets.ADC.ADCPackage;
-import targets.ADC.adcPorts;
+import targets.adc.AdcFactory;
+import targets.adc.AdcPackage;
+import targets.adc.adcPorts;
 
 import ucof.common.etypes.EtypesPackage;
+
 import ucof.common.etypes.provider.SuperTrackingTypeItemProvider;
+
 import ucof.provider.UcofEditPlugin;
 
 /**
- * This is the item provider adapter for a {@link targets.ADC.adcPorts} object.
+ * This is the item provider adapter for a {@link targets.adc.adcPorts} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -116,7 +118,7 @@ public class adcPortsItemProvider extends SuperTrackingTypeItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(ADCPackage.Literals.ADC_PORTS__PORT);
+			childrenFeatures.add(AdcPackage.Literals.ADC_PORTS__PORT);
 		}
 		return childrenFeatures;
 	}
@@ -172,11 +174,11 @@ public class adcPortsItemProvider extends SuperTrackingTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(adcPorts.class)) {
-			case ADCPackage.ADC_PORTS__ID:
-			case ADCPackage.ADC_PORTS__NAME:
+			case AdcPackage.ADC_PORTS__ID:
+			case AdcPackage.ADC_PORTS__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case ADCPackage.ADC_PORTS__PORT:
+			case AdcPackage.ADC_PORTS__PORT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -196,8 +198,8 @@ public class adcPortsItemProvider extends SuperTrackingTypeItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(ADCPackage.Literals.ADC_PORTS__PORT,
-				 ADCFactory.eINSTANCE.createadcPort()));
+				(AdcPackage.Literals.ADC_PORTS__PORT,
+				 AdcFactory.eINSTANCE.createadcPort()));
 	}
 
 	/**
