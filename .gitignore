@@ -1,0 +1,30 @@
+# Large installers
+*.exe
+*.zip
+*.7z
+*.rar
+
+# Eclipse workspace metadata
+.metadata/
+workspace_MT/.metadata/
+**/.metadata/
+
+# Eclipse local files
+.recommenders/
+RemoteSystemsTempFiles/
+*.log
+*.tmp
+*.bak
+
+# Build outputs
+bin/
+target/
+build/
+out/
+
+.metadata/
+**/.metadata/
+workspace_MT/
+desktop.ini
+*.exe
+*.zip

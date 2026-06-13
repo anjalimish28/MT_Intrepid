@@ -1,7 +1,0 @@
-module Va416x0Drv {
-    @ Va416x0 driver for GPIO control.
-    passive component GpioDriver {
-        # Import of Drv.Gpio interface, providing gpioWrite, gpioRead, and gpioInterrupt ports
-        import Drv.Gpio
-    }
-}
