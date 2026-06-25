@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ccdpu="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/ccdpu" xmlns:de.ucof.model="https://gitlab.com/ucof/ucof.de/model/v001/ucof" xmlns:de.ucof.model.assignments="https://gitlab.com/ucof/ucof.de/model/v001/ucof/assignments" xmlns:de.ucof.model.common.etypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/common/etypes" xmlns:de.ucof.model.devices.devicetypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/devicetypes" xmlns:de.ucof.model.targets.adc="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/adc" xmlns:de.ucof.model.targets.cantransceiver="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cantransceiver" xmlns:de.ucof.model.targets.hallsensor="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/hallsensor" xmlns:de.ucof.model.targets.intrepidpowergrid="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidpowergrid" xmlns:de.ucof.model.targets.motorcontroller="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/motorcontroller" xmlns:de.ucof.model.targets.powergrid="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/powergrid" xmlns:de.ucof.model.targets.rdc="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc" xmlns:de.ucof.model.targets.sheild="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/sheild" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="https://gitlab.com/ucof/ucof.de/model/v001/ucof/assignments https://gitlab.com/ucof/ucof.de/model/v001/ucof#//assignments https://gitlab.com/ucof/ucof.de/model/v001/ucof/common/etypes https://gitlab.com/ucof/ucof.de/model/v001/ucof#//etypes https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/devicetypes https://gitlab.com/ucof/ucof.de/model/v001/ucof#//devices/devicetypes https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/adc https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//adc https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cantransceiver https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//cantransceiver https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/hallsensor https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//hallsensor https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidpowergrid https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//intrepidpowergrid https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/motorcontroller https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//motorcontroller https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/powergrid https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//powergrid https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//rdc https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/sheild https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//sheild http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.ucof.model="https://gitlab.com/ucof/ucof.de/model/v001/ucof" xmlns:de.ucof.model.assignments="https://gitlab.com/ucof/ucof.de/model/v001/ucof/assignments" xmlns:de.ucof.model.common.etypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/common/etypes" xmlns:de.ucof.model.devices.devicetypes="https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/devicetypes" xmlns:de.ucof.model.targets.adc="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/adc" xmlns:de.ucof.model.targets.cantransceiver="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cantransceiver" xmlns:de.ucof.model.targets.ccdpu="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/ccdpu" xmlns:de.ucof.model.targets.hallsensor="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/hallsensor" xmlns:de.ucof.model.targets.intrepidpowergrid="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidpowergrid" xmlns:de.ucof.model.targets.motorcontroller="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/motorcontroller" xmlns:de.ucof.model.targets.powergrid="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/powergrid" xmlns:de.ucof.model.targets.rdc="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc" xmlns:de.ucof.model.targets.sheild="https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/sheild" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="https://gitlab.com/ucof/ucof.de/model/v001/ucof/assignments https://gitlab.com/ucof/ucof.de/model/v001/ucof#//assignments https://gitlab.com/ucof/ucof.de/model/v001/ucof/common/etypes https://gitlab.com/ucof/ucof.de/model/v001/ucof#//etypes https://gitlab.com/ucof/ucof.de/model/v001/ucof/devices/devicetypes https://gitlab.com/ucof/ucof.de/model/v001/ucof#//devices/devicetypes https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/adc https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//ADC https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/cantransceiver https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//CanTransceiver https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/ccdpu https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//CCDPU https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/hallsensor https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//HallSensor https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/intrepidpowergrid https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//IntrepidPowerGrid https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/motorcontroller https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//MotorController https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/powergrid https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//powergrid https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/rdc https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//RDC https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets/sheild https://gitlab.com/ucof/ucof.de/model/v001/ucof/targets#//Sheild http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_QGTp4AwjEfGRe_Cexz2eQg" selectedViews="_Of4rYAwzEfGRe_Cexz2eQg _La5YwAwlEfGRe_Cexz2eQg" version="15.4.1.202403191723">
     <referencedAnalysis xmi:type="viewpoint:DAnalysis" href="newDiagrams.aird#_px7vICzTEfG9zOh0OE6F7g"/>
     <semanticResources>intrepid.ucof</semanticResources>
@@ -4837,33 +4837,33 @@
       </ownedDiagramElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_PTjzIi6lEfGxSf4HU1Ltcw">
+      <target xmi:type="de.ucof.model.targets.ccdpu:va41620peb1" href="intrepid.ucof#efa5d5e8-0a01-417d-8241-60b48ae1d48b"/>
+      <semanticElements xmi:type="de.ucof.model.targets.ccdpu:va41620peb1" href="intrepid.ucof#efa5d5e8-0a01-417d-8241-60b48ae1d48b"/>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Hardware%20Assignment']/@defaultLayer/@containerMappings[name='targetContainer']"/>
       <ownedDiagramElements xmi:type="diagram:DNode" uid="_PUIa5S6lEfGxSf4HU1Ltcw" name="J61_CANL" incomingEdges="_lXdIJy6lEfGxSf4HU1Ltcw" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.ccdpu:voragoPort" href="intrepid.ucof#ad672fc7-4a11-4812-bd6f-225d07527e10"/>
+        <semanticElements xmi:type="de.ucof.model.targets.ccdpu:voragoPort" href="intrepid.ucof#ad672fc7-4a11-4812-bd6f-225d07527e10"/>
         <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_PUIa5i6lEfGxSf4HU1Ltcw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
           <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Hardware%20Assignment']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='hardwarePort']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Hardware%20Assignment']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='hardwarePort']"/>
-        <target xmi:type="ccdpu:voragoPort" href="intrepid.ucof#ad672fc7-4a11-4812-bd6f-225d07527e10"/>
-        <semanticElements xmi:type="ccdpu:voragoPort" href="intrepid.ucof#ad672fc7-4a11-4812-bd6f-225d07527e10"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNode" uid="_PUJB8S6lEfGxSf4HU1Ltcw" name="J61_CANH" incomingEdges="_lXdIIi6lEfGxSf4HU1Ltcw" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.ccdpu:voragoPort" href="intrepid.ucof#70ce3df6-e3ed-4252-bfab-1b5294bd407b"/>
+        <semanticElements xmi:type="de.ucof.model.targets.ccdpu:voragoPort" href="intrepid.ucof#70ce3df6-e3ed-4252-bfab-1b5294bd407b"/>
         <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_PUJB8i6lEfGxSf4HU1Ltcw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
           <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Hardware%20Assignment']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='hardwarePort']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Hardware%20Assignment']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='hardwarePort']"/>
-        <target xmi:type="ccdpu:voragoPort" href="intrepid.ucof#70ce3df6-e3ed-4252-bfab-1b5294bd407b"/>
-        <semanticElements xmi:type="ccdpu:voragoPort" href="intrepid.ucof#70ce3df6-e3ed-4252-bfab-1b5294bd407b"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNode" uid="_PUJB9C6lEfGxSf4HU1Ltcw" name="JP61_R60" incomingEdges="_lXdvPi6lEfGxSf4HU1Ltcw" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="de.ucof.model.targets.ccdpu:voragoPort" href="intrepid.ucof#5213dc1e-d8fa-462c-82af-baacd3f7ccd3"/>
+        <semanticElements xmi:type="de.ucof.model.targets.ccdpu:voragoPort" href="intrepid.ucof#5213dc1e-d8fa-462c-82af-baacd3f7ccd3"/>
         <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_PUJB9S6lEfGxSf4HU1Ltcw" labelSize="12" workspacePath="/sirius.ucof.design/icons/icon_SamplingPort.svg">
           <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Hardware%20Assignment']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='hardwarePort']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Hardware%20Assignment']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='hardwarePort']"/>
-        <target xmi:type="ccdpu:voragoPort" href="intrepid.ucof#5213dc1e-d8fa-462c-82af-baacd3f7ccd3"/>
-        <semanticElements xmi:type="ccdpu:voragoPort" href="intrepid.ucof#5213dc1e-d8fa-462c-82af-baacd3f7ccd3"/>
       </ownedDiagramElements>
-      <target xmi:type="ccdpu:va41620peb1" href="intrepid.ucof#efa5d5e8-0a01-417d-8241-60b48ae1d48b"/>
-      <semanticElements xmi:type="ccdpu:va41620peb1" href="intrepid.ucof#efa5d5e8-0a01-417d-8241-60b48ae1d48b"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_lWe3wC6lEfGxSf4HU1Ltcw" sourceNode="_tXL0QS6kEfGGV4z-Rfiz2A" targetNode="_PToEki6lEfGxSf4HU1Ltcw">
       <target xmi:type="de.ucof.model.assignments:SWPortToHWPortAssignment" href="intrepid.ucof#8bd69d52-8ec4-4ded-a531-8acb8eed79b7"/>
@@ -7474,6 +7474,8 @@
       </ownedDiagramElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_SxZTAzTnEfGc8arTlxXT3g">
+      <target xmi:type="de.ucof.model.targets.ccdpu:va41620peb1" href="intrepid.ucof#efa5d5e8-0a01-417d-8241-60b48ae1d48b"/>
+      <semanticElements xmi:type="de.ucof.model.targets.ccdpu:va41620peb1" href="intrepid.ucof#efa5d5e8-0a01-417d-8241-60b48ae1d48b"/>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']"/>
       <ownedDiagramElements xmi:type="diagram:DNode" uid="_WoGERTWWEfGKiYJ8pPo7HA" name="CVCC" outgoingEdges="_NYGN0DWYEfGKiYJ8pPo7HA" width="2" height="2" resizeKind="NSEW">
         <target xmi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalInterface" href="intrepid.ucof#1be1dd18-277f-467c-8447-354cd41ac4a2"/>
@@ -7491,8 +7493,6 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@containerMappings[name='targetContainer']/@subNodeMappings[name='electricalInterface']"/>
       </ownedDiagramElements>
-      <target xmi:type="ccdpu:va41620peb1" href="intrepid.ucof#efa5d5e8-0a01-417d-8241-60b48ae1d48b"/>
-      <semanticElements xmi:type="ccdpu:va41620peb1" href="intrepid.ucof#efa5d5e8-0a01-417d-8241-60b48ae1d48b"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_VCPQEDTuEfGfOsYHPpkAXg" name="GND" incomingEdges="_W7wN2DWbEfGKiYJ8pPo7HA _YVH0njWbEfGKiYJ8pPo7HA _Z5OrsjWbEfGKiYJ8pPo7HA _d_CDdjWbEfGKiYJ8pPo7HA _lvSTujWbEfGKiYJ8pPo7HA _oHzDJjWbEfGKiYJ8pPo7HA _l8fGRjpREfGGPa0YNCW_HQ _mtS4GjpREfGGPa0YNCW_HQ _W-1lxjpSEfGGPa0YNCW_HQ _NDQmKDpVEfGGPa0YNCW_HQ" width="3" height="3" resizeKind="NSEW">
       <target xmi:type="de.ucof.model.targets.intrepidpowergrid:intrepidElectricalGrid" href="intrepid.ucof#9045fd64-d782-412b-91fc-86e77418b9d0"/>
@@ -7705,8 +7705,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_cJvZoDpREfGGPa0YNCW_HQ" sourceNode="_nRz5VjmYEfGTro2sD9CXMw" targetNode="_Wn7FIDWWEfGKiYJ8pPo7HA">
-      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#94373880-250d-4363-a491-77d4ab680e2c"/>
-      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#94373880-250d-4363-a491-77d4ab680e2c"/>
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.20"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.20"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_cJ0SIDpREfGGPa0YNCW_HQ" size="2" strokeColor="239,41,41">
         <customFeatures>strokeColor</customFeatures>
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
@@ -7715,8 +7715,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hf0GojpREfGGPa0YNCW_HQ" sourceNode="_nR0gYjmYEfGTro2sD9CXMw" targetNode="_Wn7FIDWWEfGKiYJ8pPo7HA">
-      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#b4ac4e0a-d448-44b7-b955-a46ebe232ffd"/>
-      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#b4ac4e0a-d448-44b7-b955-a46ebe232ffd"/>
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.21"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.21"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hf0tgDpREfGGPa0YNCW_HQ" size="2" strokeColor="239,41,41">
         <customFeatures>strokeColor</customFeatures>
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
@@ -7725,8 +7725,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_l8fGRjpREfGGPa0YNCW_HQ" sourceNode="_nR1ugjmYEfGTro2sD9CXMw" targetNode="_VCPQEDTuEfGfOsYHPpkAXg">
-      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#d13e19d2-b103-425f-bcef-5221f7f380af"/>
-      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#d13e19d2-b103-425f-bcef-5221f7f380af"/>
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.22"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.22"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_l8ftIDpREfGGPa0YNCW_HQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_l8ftITpREfGGPa0YNCW_HQ" labelSize="12"/>
@@ -7734,8 +7734,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mtS4GjpREfGGPa0YNCW_HQ" sourceNode="_nR1HdjmYEfGTro2sD9CXMw" targetNode="_VCPQEDTuEfGfOsYHPpkAXg">
-      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#3c0ff35f-4367-4164-8419-33f4ae87a938"/>
-      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#3c0ff35f-4367-4164-8419-33f4ae87a938"/>
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.23"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.23"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mtS4GzpREfGGPa0YNCW_HQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_mtS4HDpREfGGPa0YNCW_HQ" labelSize="12"/>
@@ -7743,8 +7743,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_W-1lxjpSEfGGPa0YNCW_HQ" sourceNode="_WoEPETWWEfGKiYJ8pPo7HA" targetNode="_VCPQEDTuEfGfOsYHPpkAXg">
-      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#daf2265c-23da-4105-9220-c9694f9e040f"/>
-      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#daf2265c-23da-4105-9220-c9694f9e040f"/>
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.24"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.24"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_W-1lxzpSEfGGPa0YNCW_HQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_W-1lyDpSEfGGPa0YNCW_HQ" labelSize="12"/>
@@ -7752,8 +7752,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_GNMtLDpVEfGGPa0YNCW_HQ" sourceNode="_nR9DRjmYEfGTro2sD9CXMw" targetNode="_Wn7FIDWWEfGKiYJ8pPo7HA">
-      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#5bc48f9f-ad95-4638-84d0-d6f91b659784"/>
-      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#5bc48f9f-ad95-4638-84d0-d6f91b659784"/>
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.25"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.25"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_GNMtLTpVEfGGPa0YNCW_HQ" size="2" strokeColor="239,41,41">
         <customFeatures>strokeColor</customFeatures>
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
@@ -7762,8 +7762,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_NDQmKDpVEfGGPa0YNCW_HQ" sourceNode="_nR9DRjmYEfGTro2sD9CXMw" targetNode="_VCPQEDTuEfGfOsYHPpkAXg">
-      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#037e10e8-954d-4b3e-98f7-31771912e145"/>
-      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#037e10e8-954d-4b3e-98f7-31771912e145"/>
+      <target xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.26"/>
+      <semanticElements xmi:type="de.ucof.model.targets.powergrid:PowerConnection" href="intrepid.ucof#//@targets/@powerConnectionSet.0/@powerConnection.26"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_NDRM8DpVEfGGPa0YNCW_HQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/sirius.ucof.design/description/ucof.odesign#//@ownedViewpoints[name='devices']/@ownedRepresentations[name='Power%20Grid']/@defaultLayer/@edgeMappings[name='PowerConnection']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_NDRM8TpVEfGGPa0YNCW_HQ" labelSize="12"/>
